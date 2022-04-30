@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+#key1=a
+#key2=a^b
+#key3=a^b^c
+#flag=d^key1^key2^key3
+#flag=d^(key3)^(a^a^b)=d^(key3)^b=d^(a^b^c)^b=d^a^c
+a="a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313"
+b="37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e"
+c="c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1"
+d="04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf"
+print(len(a))
+a="0x"+a
+b="0x"+b
+c="0x"+c
+d="0x"+d
+p=int(a,16)
+q=int(b,16)
+r=int(c,16)
+s=int(d,16)
+flag=p^r^s
+print(p.bit_length())
+print(len(bin(p)))
+print(bin(p))
+flag=flag.to_bytes(52,'big')
+flag=flag.decode()
+print(flag)
+#flag is crypto{x0r_i5_ass0c1at1v3}

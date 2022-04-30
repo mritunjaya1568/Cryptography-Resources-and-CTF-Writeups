@@ -1,0 +1,22 @@
+Lets check the file info of the certificate
+
+file 2048b-rsa-example-cert.der
+
+
+Cool! openssl for the win lets check out various options
+
+openssl x509 -inform der -in 2048b-rsa-example-cert.der
+
+Note: -inform der is used to specify that format of input file is .der
+
+
+MEH! humans dont understand base64! Lets try the -text flag
+
+openssl x509 -inform der -in 2048b-rsa-example-cert.der -text
+
+But seriously this base64 thingy is killing me! Lets use -noout flag
+
+Now we talking! -modulus flag ouputs modulus separately since we need it specifically a lot of places
+
+and now we have nice hex modulus!
+

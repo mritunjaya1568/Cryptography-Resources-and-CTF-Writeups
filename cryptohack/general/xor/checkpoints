@@ -1,0 +1,185 @@
+#!/usr/bin/python3
+XOR is a bitwise operator which returns 0 if the bits are the same, and 1 otherwise.
+ In textbooks the XOR operator is denoted by ⊕, but in most challenges and 
+ programming languages you will see the caret ^ used instead.
+
+ A	B	Output
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+For longer binary numbers we XOR bit by bit: 0110 ^ 1010 = 1100. 
+We can XOR integers by first converting the integer from decimal to binary.
+We can XOR strings by first converting each character to the integer representing the Unicode character.
+
+string="label"
+string2="".join(chr(ord(i)^(13)) for i in string)//here ord(13) will find out its unicode code point
+print(string2)
+#flag is crypto{aloha}
+
+XOR PROPERTIES
+
+In the last challenge, you saw how XOR worked at the level of bits. 
+In this one, we're going to cover the properties of the XOR operation and then 
+use them to undo a chain of operations that have encrypted a flag. Gaining an intuition
+  for how this works will help greatly when you come to attacking real cryptosystems later, 
+  especially in the block ciphers category.
+
+There are four main properties we should consider when we solve challenges using the XOR operator
+
+Commutative: A ⊕ B = B ⊕ A
+Associative: A ⊕ (B ⊕ C) = (A ⊕ B) ⊕ C
+Identity: A ⊕ 0 = A
+Self-Inverse: A ⊕ A = 0
+
+Let's break this down. Commutative means that the order of the XOR operations is not important.
+Associative means that a chain of operations can be carried 
+out without order (we do not need to worry about brackets).
+ The identity is 0, so XOR with 0 "does nothing", and lastly 
+ something XOR'd with itself returns zero.
+
+Let's try this out in action! Below is a series of outputs where three random keys have been XOR'd together and with the flag. Use the above properties to undo the encryption in the final line to obtain the flag.
+
+KEY1 = a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313
+KEY2 ^ KEY1 = 37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e
+KEY2 ^ KEY3 = c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1
+FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
+
+Before you XOR these objects, be sure to decode from hex to bytes. If you have pwntools installed, you have a xor function for byte strings: from pwn import xor
+
+pwn can do xor of byte strings.
+
+
+from pwn import xor 
+a="a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313"
+b="37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e"
+c="c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1"
+d="04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf"
+a=bytes.fromhex(a)
+b=bytes.fromhex(b)
+c=bytes.fromhex(c)
+d=bytes.fromhex(d)
+flag=xor(a,c,d).decode()
+print(flag)
+
+
+we can also do this with the help of integer format also
+
+a="a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313"
+b="37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e"
+c="c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1"
+d="04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf"
+print(len(a))
+a="0x"+a
+b="0x"+b
+c="0x"+c
+d="0x"+d
+p=int(a,16)
+q=int(b,16)
+r=int(c,16)
+s=int(d,16)
+flag=p^r^s
+print(p.bit_length())
+print(len(bin(p)))
+print(bin(p))
+flag=flag.to_bytes(52,'big')
+flag=flag.decode()
+print(flag)
+
+
+Favourite byte
+
+I've hidden my data using XOR with a single byte. Don't forget to decode from hex first.
+
+73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d
+
+
+1st solution-
+#!/usr/bin/python3
+from pwn import *
+from Crypto.Util.number import long_to_bytes
+a="73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
+a_bytes=bytes.fromhex(a)
+print(a_bytes)
+for i in range(128):
+	print(xor(a_bytes,long_to_bytes(i)).decode())
+
+
+#here is the flag-crypto{0x10_15_my_f4v0ur173_by7e}
+try to dont use int.to_bytes or int.from_bytes it may sometimes cause the problem so be aware
+btw still if you want to use here is the 2nd code
+
+2nd method-
+
+
+from pwn import *
+a="73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
+print(len(a))
+a=int(a,16)
+a=a.to_bytes(33,'big')
+print(a)
+for i in range(128):
+		#print(i.to_bytes(1,'big'))
+		print(xor(a,i.to_bytes(1,'big')).decode())
+#flag=crypto{0x10_15_my_f4v0ur173_by7e}
+
+3rd-solution-It is one of the best solution,I liked
+#!/usr/bin/python3
+import binascii
+string=binascii.unhexlify(b"73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d").decode()
+
+for i in range(256):
+	f="".join(chr(ord(j)^i) for j in string)
+	if f.startswith("crypto"):
+		print(f)
+# it will directly print out the flag,we dont need to find it out crypto{0x10_15_my_f4v0ur173_by7e}
+
+this is the 4th and best of all methods I have encountered 
+
+from pwn import xor
+string="73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
+#we know that same character will be used to do the xor again so we can calculate it very easily
+string=bytes.fromhex(string)
+x=string[0]
+#we know the starting characters of the flag its crypto{ and we know it's the first character
+y='c'
+y=y.encode()
+xor_byte=xor(x,y)
+flag=xor(xor_byte,string)
+print(flag.decode())
+#here is our flag crypto{0x10_15_my_f4v0ur173_by7e}
+
+you never know it unless you see it 
+
+You either know, XOR you don't
+
+#!/usr/bin/python3
+from Crypto.Util.number import long_to_bytes,bytes_to_long
+from pwn import xor
+string="0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f27342e175d0e077e263451150104"
+string=bytes.fromhex(string)
+print(string)
+str2="crypto{"
+str2=str2.encode()
+#str3=xor(str2,string[0:len(str2)])
+str3=xor(str2,string)#from here also we can see the starting part myXORke+y so it will be this only so enjoy
+print(str3.decode())#here it comes out to be myXORke and we can interpret that it will be myXORkey only 
+#so take this and do the xor and you are done
+str4="myXORkey"
+str5=xor(string,str4.encode())
+print(str5)
+
+here is the solution it was really good
+
+
+
+
+
+
+
+
+
+
+
+

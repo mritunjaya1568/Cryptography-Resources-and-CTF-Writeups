@@ -1,0 +1,116 @@
+#!/usr/bin/python3
+
+Source-https://www.cryptologie.net/article/260/asn1-vs-der-vs-pem-vs-x509-vs-pkcs7-vs/
+https://pycryptodome.readthedocs.io/en/latest/src/public_key/rsa.html
+https://www.dlitz.net/software/pycrypto/api/2.6/Crypto.Signature.PKCS1_v1_5-module.html
+
+
+ASN.1 vs DER vs PEM vs x509 vs PKCS#7 vs ....
+ posted April 2015
+I was really confused about all those acronyms when I started digging into OpenSSL and RFCs. So here's a no bullshit quick intro to them.
+
+PKCS#7
+Or Public-Key Crypto Standard number 7. It's just a guideline, set of rules, on how to send messages, sign messages, etc... There are a bunch of PKCS that tells you exactly how to do stuff using crypto. PKCS#7 is the one who tells you how to sign and encrypt messages using certificates. If you ever see "pkcs#7 padding", it just refers to the padding explained in pkcs#7.
+
+X509
+In a lot of things in the world (I'm being very vague), we use certificates. For example each person can have a certificate, and each person's certificate can be signed by the government certificate. So if you want to verify that this person is really the person he pretends to be, you can check his certificate and check if the government signature on his certificate is valid.
+
+TLS use x509 certificates to authenticate servers. If you go on https://www.facebook.com, you will first check their certificate, see who signed it, checked the signer's certificate, and on and on until you end up with a certificate you can trust. And then! And only then, you will encrypt your session.
+
+So x509 certificates are just objects with the name of the server, the name of who signed his certificate, the signature, etc...
+
+Example from wikipedia:
+
+    Certificate
+        Version
+        Serial Number
+        Algorithm ID
+        Issuer
+        Validity
+            Not Before
+            Not After
+        Subject
+        Subject Public Key Info
+            Public Key Algorithm
+            Subject Public Key
+        Issuer Unique Identifier (optional)
+        Subject Unique Identifier (optional)
+        Extensions (optional)
+            ...
+    Certificate Signature Algorithm
+    Certificate Signature
+ASN.1
+So, how should we write our certificate in a computer format? There are a billion ways of formating a document and if we don't agree on one then we will never be able to ask a computer to parse a x509 certificate.
+
+That's what ASN.1 is for, it tells you exactly how you should write your object/certificate
+
+DER
+ASN.1 defines the abstract syntax of information but does not restrict the way the information is encoded. Various ASN.1 encoding rules provide the transfer syntax (a concrete representation) of the data values whose abstract syntax is described in ASN.1.
+
+Now to encode our ASN.1 object we can use a bunch of different encodings specified in ASN.1, the most common one being used in TLS is DER
+
+DER is a TLV kind of encoding, meaning you first write the Tag (for example, "serial number"), and then the Length of the following value, and then the Value (in our example, the serial number).
+
+DER is also more than that:
+
+DER is intended for situations when a unique encoding is needed, such as in cryptography, and ensures that a data structure that needs to be digitally signed produces a unique serialized representation.
+
+So there is only one way to write a DER document, you can't re-order the elements.
+
+And a made up example for an ASN.1 object:
+
+OPERATION ::= CLASS
+{
+&operationCode INTEGER UNIQUE,
+
+&InvocationParsType,
+
+&ResponseParsAndResultType,
+
+&ExceptionList ERROR OPTIONAL
+}
+And its DER encoding:
+
+0110 0111 0010 110...
+Base64
+Base64 is just a way of writing binary data in a string, so you can pass it to someone on facebook messenger for exemple
+
+From the openssl Wiki:
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+0000000000111111111122222222223333333333444444444455555555556666
+0123456789012345678901234567890123456789012345678901234567890123
+And if you see any equal sign =, it's for padding.
+
+So if the first 6 bits of your file is '01' in base 10, then you will write that as B in plaintext. See an example if you still have no idea about what I'm talking about.
+
+PEM
+A pem file is just two comments (that are very important) and the data in base64 in the middle. For example the pem file of an encrypted private key:
+
+-----BEGIN ENCRYPTED PRIVATE KEY-----
+MIIFDjBABgkqhkiG9w0BBQ0wMzAbBgkqhkiG9w0BBQwwDgQIS2qgprFqPxECAggA
+MBQGCCqGSIb3DQMHBAgD1kGN4ZslJgSCBMi1xk9jhlPxP3FyaMIUq8QmckXCs3Sa
+9g73NQbtqZwI+9X5OhpSg/2ALxlCCjbqvzgSu8gfFZ4yo+Xd8VucZDmDSpzZGDod
+X0R+meOaudPTBxoSgCCM51poFgaqt4l6VlTN4FRpj+c/WZeoMM/BVXO+nayuIMyH
+blK948UAda/bWVmZjXfY4Tztah0CuqlAldOQBzu8TwE7WDwo5S7lo5u0EXEoqCCq
+H0ga/iLNvWYexG7FHLRiq5hTj0g9mUPEbeTXuPtOkTEb/0ckVE2iZH9l7g5edmUZ
+GEs=
+-----END ENCRYPTED PRIVATE KEY-----
+And yes the number of - are important
+
+
+PEM(Privacy-Enhanced Mail)
+PEM is a popular format for sending and receiving keys, certificates, and other cryptographic material. It looks like:
+
+-----BEGIN RSA PUBLIC KEY-----
+MIIBCgKC... (a whole bunch of base64)
+-----END RSA PUBLIC KEY-----
+
+It wraps base64-encoded data by a one-line header and footer to indicate how to parse the data within. Perhaps unexpectedly, it's important for there to be the correct number of hyphens in the header and footer, otherwise cryptographic tools won't be able to recognise the file.
+
+The data that gets base64-encoded is DER-encoded ASN.1 values. Confused? Here is more information about what these acronyms mean but the complexity is there for historical reasons and going too deep into the details may drive you insane.
+
+Extract the private key d as a decimal integer from this PEM-formatted RSA key.
+
+

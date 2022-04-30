@@ -1,0 +1,202 @@
+#!/usr/bin/python3
+
+Source-https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/tutorial/
+https://cp-algorithms.com/(see its algebra section)
+
+
+GCD 
+
+
+The Greatest Common Divisor (GCD), sometimes known as the highest common factor, is the largest number which divides two positive integers (a,b).
+
+For a = 12, b = 8 we can calculate the divisors of a: {1,2,3,4,6,12} and the divisors of b: {1,2,4,8}. Comparing these two, we see that gcd(a,b) = 4.
+
+Now imagine we take a = 11, b = 17. Both a and b are prime numbers. As a prime number has only itself and 1 as divisors, gcd(a,b) = 1.
+
+We say that for any two integers a,b, if gcd(a,b) = 1 then a and b are coprime integers.
+
+If a and b are prime, they are also coprime. If a is prime and b < a then a and b are coprime.
+
+Think about the case for a prime and b > a, why are these not necessarily coprime?
+//because for b=2*a and any multiples of a and after that their common factor will be the prime no. itself
+
+There are many tools to calculate the GCD of two integers, but for this task we recommend looking up Euclid's Algorithm.
+
+Try coding it up; it's only a couple of lines. Use a = 12, b = 8 to test it.
+
+Now calculate gcd(a,b) for a = 66528, b = 52920 and enter it below.
+
+
+EGCD
+
+
+ 4. Extended Euclidean algorithm
+
+This algorithm is an extended form of Euclid’s algorithm.  has a special property so that it can always be represented in the form of an equation i.e. .
+
+The coefficients (x and y) of this equation will be used to find the modular multiplicative inverse. The coefficients can be zero, positive or negative in value.
+
+This algorithm takes two inputs as A and B and returns  and coefficients of the above equation as output.
+
+Example
+
+If A=30 and B=20, then  where 10 is the GCD of 20 and 30.
+
+Key idea
+
+A.x+B.y=GCD(A,B). ---(1)
+
+You know that . Therefore, you can write the equation as follows: B.+ (A % B).=GCD(A,B). ---(2)
+
+You can write  where  means floor value .B and substitute it in equation 2. Your equation will be as follows: B.+ (A - .B).=GCD(A,B)
+
+When you solve it further, your equation is as follows: B.( - .)+A.=GCD(A,B). ---(3)
+
+Comparing coefficients in equations 1 and 3, you get the following:
+
+x=
+y= - .
+These equations are key in understanding the extended Euclidean algorithm.
+
+In this algorithm, recursive calls are made to . The values that are returned from recursive calls are  and , which are used to get x and y.
+
+Implementation
+
+#include < iostream >
+
+int d, x, y;
+void extendedEuclid(int A, int B) {
+    if(B == 0) {
+        d = A;
+        x = 1;
+        y = 0;
+    }
+    else {
+        extendedEuclid(B, A%B);
+        int temp = x;
+        x = y;
+        y = temp - (A/B)*y;
+    }
+}
+
+int main( ) {
+extendedEuclid(16, 10);
+cout << ”The GCD of 16 and 10 is ” << d << endl;
+cout << ”Coefficients x and y are ”<< x <<  “and  “ << y << endl;
+return 0;   
+}
+Output
+The GCD of 16 and 10 is 2.
+Coefficients x and y are 2 and -3.
+
+
+
+Let a and b be positive integers.
+The extended Euclidean algorithm is an efficient way to find integers u,v such that
+ * u + b * v = gcd(a,b)
+
+ Later, when we learn to decrypt RSA, we will need this algorithm to calculate the modular inverse of the public exponent.
+
+
+Using the two primes p = 26513, q = 32321, find the integers u,v such that
+
+p * u + q * v = gcd(p,q)
+
+ Knowing that p,q are prime, what would you expect gcd(p,q) to be?//it will be 1
+
+
+
+
+Modular Arithmetic 
+
+Imagine you lean over and look at a cryptographer's notebook. You see some notes in the margin:
+
+4 + 9 = 1
+5 - 7 = 10
+2 + 3 = 5
+
+At first you might think they've gone mad. Maybe this is why there are so many data leaks nowadays you'd think, but this is nothing more than modular arithmetic modulo 12 (albeit with some sloppy notation).
+
+You may not have been calling it modular arithmetic, but you've been doing these kinds of calculations since you learnt to tell the time (look again at those equations and think about adding hours).
+
+Formally, "calculating time" is described by the theory of congruences. We say that two integers are congruent modulo m if a ≡ b mod m.
+
+Another way of saying this, is that when we divide the integer a by m, the remainder is b. This tells you that if m divides a (this can be written as m | a) then a ≡ 0 mod m.
+
+Calculate the following integers:
+
+11 ≡ a mod 6
+8146798528947 ≡ b mod 17
+
+The solution is the smaller of the two integers.
+
+
+Modular Arithmetic 2
+Fermat's little theorem
+
+a^p= a mod p
+if a and p are coprime 
+then 
+a^(p-1)= a mod p
+
+and if a and p are coprime
+then 
+a^(-1)=a^(p-2)mod p 
+for finding its multiplicative inverse
+
+We'll pick up from the last challenge and imagine we've picked a modulus p, and we will restrict ourselves to the case when p is prime.
+
+The integers modulo p define a field, denoted Fp.
+
+If the modulus is not prime, the set of integers modulo n define a ring.
+
+
+A finite field Fp is the set of integers {0,1,...,p-1}, and under both addition and multiplication there is an inverse element b for every element a in the set, such that a + b = 0 and a * b = 1.
+
+ A field is a general name for a commutative ring in which every non-zero element has a multiplicative inverse.
+
+
+ Note that the identity element for addition and multiplication is different! This is because the identity when acted with the operator should do nothing: a + 0 = a and a * 1 = a.
+
+
+
+Lets say we pick p = 17.
+ Calculate 3^17 mod 17.//fermat's principle//3 
+Now do the same but with 5^17 mod 17.//5
+
+What would you expect to get for 7^16 mod 17?
+ Try calculating that.
+//1
+
+This interesting fact is known as Fermat's little theorem.
+ We'll be needing this (and its generalisations) when we look at RSA cryptography.
+
+Now take the prime p = 65537. Calculate 27324678765465536 mod 65537.
+
+Did you need a calculator?
+no (ans will be 1 as gcd of p and a is 1)
+Now take the prime p = 65537. Calculate 27324678765465536 mod 65537.
+
+Did you need a calculator?
+no
+
+Modular Inverting
+
+As we've seen, we can work within a finite field Fp, adding and multiplying elements, and always obtain another element of the field.
+
+For all elements g in the field, there exists a unique integer d such that g * d ≡ 1 mod p.
+
+This is the multiplicative inverse of g.
+
+Example: 7 * 8 = 56 ≡ 1 mod 11
+
+
+What is the inverse element: 3 * d ≡ 1 mod 13?
+
+ Think about the little theorem we just worked with. How does this help you find the inverse of an element?
+
+so it will be a^(p-2)%p 
+
+
+
+
