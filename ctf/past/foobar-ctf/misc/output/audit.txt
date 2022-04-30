@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Apr  1 08:31:27 2021
+Invocation: foremost -i misc.png 
+Output directory: /home/mritunjya/ctf/foobar-ctf/misc/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: misc.png
+Start: Thu Apr  1 08:31:27 2021
+Length: 1 KB (1094 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	       1 KB 	          0 	  (200 x 200)
+Finish: Thu Apr  1 08:31:27 2021
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Apr  1 08:31:27 2021

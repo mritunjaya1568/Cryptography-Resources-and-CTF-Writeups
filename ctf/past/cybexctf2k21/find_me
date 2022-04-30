@@ -1,0 +1,43 @@
+root/Escritorio/volcado.xmlUT
+
+since you are here
+find the flag
+
+cd C:\tools
+
+ipconfig
+
+history -c
+
+clear
+
+echo "Something Is Here"
+
+echo "ZXN0YW5vZXNsYWZsYWc=" | base64 -d
+line 15-estanoeslaflag  
+
+
+
+echo "=AjdxQXMzBDcfBzcsRjZ" | base64 -d -->>reverse the string and then do base64 -->> f4ls0_p0s1t1v0 
+
+echo "QzByMG40djFyNXM=" | base64 -d       -->>  C0r0n4v1r5s
+
+locate flag.txt
+
+python -c "print(Hello World!!!)"	
+
+python -m http.server 8000
+
+echo "ZXN0YW5vZXNsYWZsYWc=" | base64 -d      -->>estanoeslaflag-->>  [flag stoles]
+
+john --wordlist=rockyou.txt hash.txt	
+
+echo "ZXN0YW5vZXNsYWZsYWc=" | base64 -d	   -->> estanoeslaflag -->> [flag stoles]
+
+echo "9dGNsZ2X3Q3XxQ3cz8lM1FXM7hVRCl1Q" | base64 -d
+
+echo "YXl1ZGFtZV9hX2VuY29udHJhcl9sYV9mbGFn" | base64 -d    -->>  ayudame_a_encontrar_la_flag  -->>  help me find the flag
+
+ping ctfcybex2021.xyz 
+
+sudo apt search 7zip

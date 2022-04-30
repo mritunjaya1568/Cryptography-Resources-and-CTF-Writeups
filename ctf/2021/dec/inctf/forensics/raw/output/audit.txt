@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Dec 18 00:50:21 2021
+Invocation: foremost -i ccKhJ.mp3 
+Output directory: /home/mritunjya/ctf/2021/dec/inctf/forensics/raw/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: ccKhJ.mp3
+Start: Sat Dec 18 00:50:21 2021
+Length: 8 MB (8584900 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	     187 KB 	        186 	 
+Finish: Sat Dec 18 00:50:21 2021
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Dec 18 00:50:21 2021

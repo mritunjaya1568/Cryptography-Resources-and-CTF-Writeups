@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mr. Johnson's Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="message-wrapper">
+    <div class="message">
+        <div class="x">X</div>
+        <div class="message-content">
+            Dear Customer,
+            <br>
+            <br>
+            Thank you for choosing Mr. Johnson's Bank!
+            <br>
+            <br>
+            Welcome to our brand new website! You can access your banking details, pay bills, and send money any <b>time</b> with
+            the click of a button!
+            <br>
+            <b>Tick Tock</b>,
+            <br>
+            <br>
+            William Johnson,<br>
+            Founder and CEO of Mr. Johnson's Bank
+            <br>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="header">
+        <span>Mr. Johnson's Bank</span>
+    </div>
+    <div class="content-wrapper">
+        <form class="content" method="post">
+            <div class="login">Login</div>
+            <div class="error"></div>
+            <div class="input-wrapper">
+                <div class="message-link">A message from Mr. Johnson...</div>
+                <label for="username">Username</label>
+                <input id="username" name="username">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </div>
+            <div class="button-wrapper">
+                <button class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.message-link').addEventListener("click", () => {
+            document.querySelector('.message-wrapper').classList.add("active");
+        });
+        document.querySelector('.message-wrapper').addEventListener("click", () => {
+            document.querySelector('.message-wrapper').classList.remove("active");
+        });
+        document.querySelector('.x').addEventListener("click", () => {
+            document.querySelector('.message-wrapper').classList.remove("active");
+        });
+        document.querySelector('.message').addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('error')) {
+            document.querySelector('.error').innerText = urlParams.get('error');
+        }
+        if (urlParams.has('username') && urlParams.get('username').match(/^\w+$/)) {
+            document.querySelector('#username').value = urlParams.get('username');
+        }
+    </script>
+</div>
+</body>
+</html>

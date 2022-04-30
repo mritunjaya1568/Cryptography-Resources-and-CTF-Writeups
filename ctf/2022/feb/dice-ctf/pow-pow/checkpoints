@@ -1,0 +1,10 @@
+The challenge is based on a common verifiable delay function
+If it were implemented securely, then yes it would take 2^64 operations 
+
+it is not possible to calculate it directly
+
+while True:
+	get-an-idea
+	get happy 
+	idea fails 
+	feel dumb again 

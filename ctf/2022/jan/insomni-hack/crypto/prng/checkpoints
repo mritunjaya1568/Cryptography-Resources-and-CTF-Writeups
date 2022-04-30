@@ -1,0 +1,47 @@
+[*]  -  http://repository.insomnihack.ch/TODO
+
+Following the last security audit, some critical issues were identified in the application.
+Here are the ones that need to be taken care of immediately:
+
+- [x] Use prepared statements to prevent SQL injections
+- [x] Escape user inputs to prevent XSS
+- [x] Configure rate limit to prevent bruteforce attacks
+- [ ] Make sure to delete ALL *.bak files
+
+
+
+
+
+http://repository.insomnihack.ch/passwordreset.php.bak
+
+commons_531cd8.php
+reset_e93ab5.php
+
+Cookie: PHPSESSID=oeim05r068mkdhk25ip60em91v; APPSESSID=8b40002c848551e3c0774113ab1bc7b7
+
+for seeing the timestamp go to network and ask for a request- ctrl-R 
+and click on the name of the website 
+
+this time here is used from the time we send when email
+on this site with user admin
+http://repository.insomnihack.ch/passwordrecovery.php
+time = Mon, 31 Jan 2022 04:10:56 GMT
+
+use this website for calculating unix timestamp - https://www.epochconverter.com/
+
+unix timestamp = 1643602256
+
+seed = 4569936
+reset-token = f8d35ac00c1098db0ac795d2ee0d2f0c67f10d8c%
+
+http://repository.insomnihack.ch/passwordreset.php
+
+this is the password reset site
+
+
+
+
+
+
+
+

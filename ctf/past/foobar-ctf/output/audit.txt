@@ -1,0 +1,33 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Apr  1 03:25:24 2021
+Invocation: foremost -i sdcard 
+Output directory: /home/mritunjya/ctf/foobar-ctf/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: sdcard
+Start: Thu Apr  1 03:25:24 2021
+Length: 8 MB (8388608 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00002730.jpg 	     200 KB 	    1397760 	 
+1:	00003136.jpg 	      71 KB 	    1605632 	 
+2:	00003280.jpg 	     178 KB 	    1679360 	 
+3:	00003640.jpg 	     543 KB 	    1863680 	 
+4:	00004728.jpg 	      50 KB 	    2420736 	 
+5:	00012290.jpg 	     304 KB 	    6292480 	 
+6:	00014338.jpg 	     354 KB 	    7341056 	 
+7:	00015048.jpg 	     301 KB 	    7704576 	 
+8:	00015874.jpg 	     209 KB 	    8127488 	 
+9:	00004832.png 	     423 KB 	    2473984 	  (918 x 900)
+Finish: Thu Apr  1 03:25:25 2021
+
+10 FILES EXTRACTED
+	
+jpg:= 9
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Apr  1 03:25:25 2021

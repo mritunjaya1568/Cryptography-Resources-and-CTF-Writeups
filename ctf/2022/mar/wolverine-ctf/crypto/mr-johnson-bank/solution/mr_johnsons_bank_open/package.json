@@ -1,0 +1,14 @@
+{
+  "name": "mr_johnsons_bank_1",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "node-dev src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "node-dev": "^7.1.0"
+  }
+}

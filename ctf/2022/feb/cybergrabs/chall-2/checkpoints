@@ -1,0 +1,19 @@
+flag = "cybergrabs{50m3_func710nS_n3v3r_c3A5e_t0_4m4z3_m3}"
+
+(n*(n+1)*(n+2))//6
+
+
+# generating script
+
+flag = "cybergrabs{50m3_func710nS_n3v3r_c3A5e_t0_4m4z3_m3}"
+
+def functor(n):
+    return (n*(n+1)*(n+2))//6
+
+lest = []
+for i in flag:
+    lest.append(functor(ord(i)*6969696969))
+
+print(lest)
+
+

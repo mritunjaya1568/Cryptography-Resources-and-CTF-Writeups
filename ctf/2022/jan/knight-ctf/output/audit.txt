@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Jan 21 00:21:17 2022
+Invocation: foremost -i unknown file 
+Output directory: /home/mritunjya/ctf/2022/jan/knight-ctf/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: unknown file
+Start: Fri Jan 21 00:21:17 2022
+Length: 159 KB (163650 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Fri Jan 21 00:21:17 2022
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Fri Jan 21 00:21:17 2022

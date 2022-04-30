@@ -1,0 +1,11 @@
+16 bit AES encryption key
+IV -16 bit NULL
+cypher-text-
+b6094505efd8e2824e8cc8698e5e68e3b2c306a2c8179fbefbfb7d2fc1a0cfb921a89f94dde88b04e655ad87d15efcc7466af652d6a330e92babceca94be63b126702153ad83d24baf7d8848bb71202771a2d80870fbd17462a715906dfc63bc
+
+AES encryption mode=ECB
+
+horcrux_length=16
+horcrux_count=2
+wizard_age=3000
+

@@ -1,0 +1,118 @@
+<?php
+
+/*
+	BEGIN Database functions
+*/
+function getUserFromDatabase($dbh, $username) {
+    $sql = "SELECT * FROM users WHERE username = :username";
+    $sth = $dbh->prepare($sql);
+    $sth->bindParam(':username', $username);
+    $sth->execute();
+    return $sth->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function saveTokenToDatabase($dbh, $username, $token) {
+    $sql = "UPDATE users SET token = :token WHERE username = :username";
+    $sth = $dbh->prepare($sql);
+    $sth->bindParam(':token', $token);
+    $sth->bindParam(':username', $username);
+    $sth->execute();
+}
+
+function saveNewUserToDatabase($dbh, $username, $email, $passwordHash, $token) {
+    $data = [
+        'username' => $username,
+        'email' => $email,
+        'password' => $passwordHash,
+        'token' => $token
+    ];
+    $sql = "INSERT INTO users (username, email, password, token) VALUES (:username, :email, :password, :token)";
+    $sth = $dbh->prepare($sql);
+    $sth->execute($data);
+}
+
+function saveNewPasswordToDatabase($dbh, $username, $passwordHash) {
+    $sql = "UPDATE users SET password = :password WHERE username = :username";
+    $sth = $dbh->prepare($sql);
+    $sth->bindParam(':username', $username);
+    $sth->bindParam(':password', $passwordHash);
+    $sth->execute(); 
+}
+
+function saveNewRepositoryEntryToDatabase($dbh, $userid, $entry) {
+    $sql = "INSERT INTO repository (userid, data) VALUES (:userid, :data)";
+    $sth = $dbh->prepare($sql);
+    $sth->bindParam(':userid', $userid);
+    $sth->bindParam(':data', $entry);
+    $sth->execute(); 
+}
+
+function getUserRepositoryEntriesFromDatabase($dbh, $userid) {
+    $sql = "SELECT * FROM repository WHERE userid = :userid";
+    $sth = $dbh->prepare($sql);
+    $sth->bindParam(':userid', $userid);
+    $sth->execute();
+    return $sth->fetchAll(PDO::FETCH_ASSOC); 
+}
+/*
+	END Database functions
+*/
+
+/*
+	BEGIN Util functions
+*/
+function generatePasswordHash($password) {
+    return password_hash($password, PASSWORD_DEFAULT);
+}
+
+function getMaxInt() {
+    return pow(2, 24);
+}
+
+function getMaxIteration() {
+    $max = getMaxInt();
+    mt_srand(time(), MT_RAND_PHP);
+    $nb1 = mt_rand() % $max;
+    $nb2 = mt_rand() % $max;
+    return max($nb1, $nb2);
+}
+
+function getSeed() {
+    $max = getMaxInt();
+    return random_int(0, $max);
+}
+
+function initializeSessionCrypto() {
+    $nb_iter = getMaxIteration();
+    $seed = getSeed();
+    $_SESSION['nb_iter'] = $nb_iter;
+    $_SESSION['seed'] = $seed;
+}
+
+function generateRandomValues($seed, $iter) {
+    mt_srand($seed, MT_RAND_PHP);
+    $rand_values = array();
+    for ($i = 0; $i < $iter; $i++) {
+        $rand = mt_rand();
+        if ($i >= $iter - 3) {
+            array_push($rand_values, $rand); 
+        }
+    }
+    return $rand_values;
+}
+
+function generatePasswordResetToken($seed, $iter) {
+    $rand_values = generateRandomValues($seed, $iter);
+    $concat = implode("", $rand_values);
+    return sha1($concat);
+}
+
+function generateSessionToken($seed, $iter) {
+    $rand_values = generateRandomValues($seed, 3);
+    $concat = implode("", $rand_values);
+    return md5($concat);
+}
+/*
+	END Util functions
+*/
+?>

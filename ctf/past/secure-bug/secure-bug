@@ -1,0 +1,26 @@
+file.what
+
+Article1.jpg
+Password: 3a24869a641d60c09ceb71af4f99cffc1
+
+misplaced
+SBCTF{n1c3_c4rv1n6_w3ll_d0n3}
+
+Cookie: filemanager=69o8kcauteetsc2qpr8htduv5s
+fm_usr=admin&fm_pwd=admin123
+
+duck.pcapng
+
+SB[2E][2E]
+chunk invalid
+
+IHDR is a special chunk that contains file information. It's always 13 bytes
+
+header IHDR-chunk IDAT-chunk
+
+ A valid PNG image must contain an IHDR chunk, one or more IDAT chunks, and an IEND chunk.
+
+invalid chunk name "SB.." (53 42 2e 2e)
+
+SBCTF{1n53cur3_commun1c471on}
+

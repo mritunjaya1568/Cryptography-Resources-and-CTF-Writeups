@@ -1,0 +1,5 @@
+
+Disallow: /admin/
+Disallow: /secr3t.php
+Disallow: /flag.txt
+Disallow: /dev/notes.md

@@ -1,0 +1,11 @@
+Error                           : First 5.0 kB of file is binary zeros
+
+sudo snap install volatility-phocean-to download volatility in ubuntu
+
+volatility imageinfo -f mem.raw
+Volatility Foundation Volatility Framework 2.6.1
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile(s) : No suggestion (Instantiated with no profile)
+                     AS Layer1 : FileAddressSpace (/home/mritunjya/ctf/aero-ctf/mem.raw)
+                      PAE type : No PAE
+ 

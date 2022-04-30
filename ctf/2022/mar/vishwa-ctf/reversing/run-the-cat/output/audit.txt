@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Mon Mar 21 06:11:19 2022
+Invocation: foremost -i image.png 
+Output directory: /home/mritunjya/ctf/2022/mar/vishwa-ctf/reversing/run-the-cat/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: image.png
+Start: Mon Mar 21 06:11:19 2022
+Length: 345 KB (353625 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      28 KB 	          0 	  (512 x 288)
+Finish: Mon Mar 21 06:11:19 2022
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Mon Mar 21 06:11:19 2022

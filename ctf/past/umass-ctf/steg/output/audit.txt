@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Mar 27 19:50:46 2021
+Invocation: foremost -i clue.jpg 
+Output directory: /home/mritunjya/ctf/umass-ctf/steg/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: clue.jpg
+Start: Sat Mar 27 19:50:46 2021
+Length: 5 MB (5861221 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	       5 MB 	          0 	 
+Finish: Sat Mar 27 19:50:46 2021
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Mar 27 19:50:46 2021

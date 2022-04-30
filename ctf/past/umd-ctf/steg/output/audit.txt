@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Apr 18 21:30:23 2021
+Invocation: foremost -i testudos_message.png 
+Output directory: /home/mritunjya/ctf/umd-ctf/steg/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: testudos_message.png
+Start: Sun Apr 18 21:30:23 2021
+Length: 58 KB (59998 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      58 KB 	          0 	  (256 x 320)
+Finish: Sun Apr 18 21:30:23 2021
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Apr 18 21:30:23 2021

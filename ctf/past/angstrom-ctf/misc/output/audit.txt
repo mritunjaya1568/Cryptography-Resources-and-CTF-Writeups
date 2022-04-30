@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Apr  3 05:49:14 2021
+Invocation: foremost -i fish.png 
+Output directory: /home/mritunjya/ctf/angstrom-ctf/misc/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: fish.png
+Start: Sat Apr  3 05:49:14 2021
+Length: 228 KB (234340 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     228 KB 	          0 	  (500 x 500)
+Finish: Sat Apr  3 05:49:14 2021
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Apr  3 05:49:14 2021
