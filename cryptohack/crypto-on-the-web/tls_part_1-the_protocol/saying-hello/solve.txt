@@ -1,0 +1,52 @@
+1st way - use online tool to get all the TLS information about the server - https://www.ssllabs.com/ssltest/analyze.html
+
+
+
+another way using curl 
+
+
+1st command - curl --insecure -vvI https://tls1.cryptohack.org 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }' --tlsv1.2 --tls-max 1.2
+2nd command with tls version tlsv1.2 - curl --insecure --tlsv1.2 --tls-max 1.2 -vvI https://tls1.cryptohack.org 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
+
+results -> 
+
+''' ➜  saying-hello git:(main) curl --insecure -vvI https://tls1.cryptohack.org 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
+
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=tls1.cryptohack.org
+*  start date: Jun 16 06:38:08 2022 GMT
+*  expire date: Sep 14 06:38:07 2022 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x55676c2dc2f0)
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+* Connection #0 to host tls1.cryptohack.org left intact
+➜  saying-hello git:(main) curl --insecure -vvI https://tls1.cryptohack.org 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }' --tlsv1.2 --tls-max 1.2
+
+awk: cannot open --tlsv1.2 (No such file or directory)
+➜  saying-hello git:(main) curl --insecure --tlsv1.2 --tls-max 1.2 -vvI https://tls1.cryptohack.org 2>&1 | awk 'BEGIN { cert=0 } /^\* SSL connection/ { cert=1 } /^\*/ { if (cert) print }'
+
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=tls1.cryptohack.org
+*  start date: Jun 16 06:38:08 2022 GMT
+*  expire date: Sep 14 06:38:07 2022 GMT
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x560964fd52f0)
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+* Connection #0 to host tls1.cryptohack.org left intact
+➜  saying-hello git:(main) 
+
+
+'''
