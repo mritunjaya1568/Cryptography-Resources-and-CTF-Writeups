@@ -1,0 +1,6 @@
+https://mosullivan.sdsu.edu/Teaching/sdsu-sage-tutorial/sagecalc.html#:~:text=The%20sqrt()%20command%20calculates,decimal%20number%20as%20the%20input.&text=To%20compute%20other%20roots%2C%20we,can%20compute%20any%20rational%20power.
+
+sage intro - https://melczer.ca/files/SageIntro.html
+
+reset() - to reset all variables and other stuff 
+
