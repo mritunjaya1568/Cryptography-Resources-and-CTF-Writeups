@@ -19,7 +19,7 @@ import requests
 import string
 
 padding = b""
-for i in range(130,200):
+for i in range(130,150):
 	padding += chr(i).encode()
 
 charset = string.ascii_lowercase + string.digits + "{}_"
@@ -27,7 +27,7 @@ charset = charset.encode()
 
 print(padding , charset)
 
-known_flag = b'c'
+known_flag = b'crypto{CRIME_571ll_p4y5}'
 candidate = b'a'
 pt = padding + candidate + known_flag + padding
 r = requests.get(f'https://aes.cryptohack.org/ctrime/encrypt/{pt.hex()}/')
@@ -38,11 +38,11 @@ while True:
 	best_len = 100000
 	count = 0
 	candidate_list = []
-	for candidate in charset:
-		pt = padding + chr(candidate).encode() + known_flag + padding
+	for candidate in range(30,128):
+		pt = known_flag + chr(candidate).encode() * 5
 		r = requests.get(f'https://aes.cryptohack.org/ctrime/encrypt/{pt.hex()}/')
 		length = len(r.json()["ciphertext"])
-		if length < best_len and candidate != known_flag[0]:
+		if length < best_len:
 			best_candidate = candidate
 			best_len = length
 			count = 1
@@ -52,10 +52,48 @@ while True:
 			count += 1
 			candidate_list.append(candidate)
 
-	known_flag = chr(best_candidate).encode() + known_flag
+	known_flag = known_flag + chr(best_candidate).encode()
 	print(known_flag)
 	print(candidate_list , count)
 
 
 
 
+
+
+''' b'crypto{C'
+[67, 99, 123] 3
+b'crypto{CR'
+[67, 82, 99] 3
+b'crypto{CRI'
+[73, 82, 99] 3
+b'crypto{CRII'
+[73, 77, 99] 3
+b'crypto{CRIME'
+[69, 77, 99] 3
+b'crypto{CRIMEE'
+[69, 95, 99] 3
+b'crypto{CRIME_5'
+[53, 95, 99] 3
+b'crypto{CRIME_55'
+[53, 55, 99] 3
+b'crypto{CRIME_571'
+[49, 55, 99] 3
+b'crypto{CRIME_571l'
+[108] 1
+b'crypto{CRIME_571ll'
+[108] 1
+b'crypto{CRIME_571lll'
+[108] 1
+b'crypto{CRIME_571ll__'
+[95, 99, 112] 3
+b'crypto{CRIME_571ll_p4'
+[52, 99, 112] 3
+b'crypto{CRIME_571ll_p44'
+[52, 99, 121] 3
+b'crypto{CRIME_571ll_p4y5'
+[53, 99, 121] 3
+b'crypto{CRIME_571ll_p4y55'
+[53, 99, 125] 3
+
+'''
