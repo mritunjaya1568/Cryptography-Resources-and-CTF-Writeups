@@ -1,0 +1,10 @@
+Hello! Welcome to the Argand-Noether encryption oracle!
+[0.999134408101731 -0.041598492126561]
+[0.041598492126561 0.999134408101731]
+
+Please input a number m: 1
+Under 1, the flag gets encrypted to
+[0.957878940978472 -0.287172307909310]
+[0.287172307909310 0.957878940978473]
+
+

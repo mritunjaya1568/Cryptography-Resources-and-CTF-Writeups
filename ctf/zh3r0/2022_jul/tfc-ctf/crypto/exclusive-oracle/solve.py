@@ -1,0 +1,18 @@
+#   nc 01.linux.challenges.ctf.thefewchosen.com 50500
+
+from pwn import xor
+
+string = b'a' * 40
+print(string)
+
+ct = b"\xd5V\\\xb5\x04\xa6'\xe2\xc5\xe1\x82;\xcb^\xa4a\x08?1\x83ab\xfe\x19\xeb\xab\xa5\xba\x05.\xde\x82\x17,5\x9b\xda\xd7\x80\x03\xe0q~\x971\x81=\xf4\xcc\xb4\x97}\xd9`\xb1hZ\x01'\xd2ro\xfb'\xfd\xfb\xb0\xb3T:\x88\xbcE#e\x9d\xd6\x82\xde\x1f"
+
+print(len(ct))
+
+key = xor(ct[40:] , string)
+print(key)
+
+print(xor(ct , key))
+
+
+''' TFCCTF{wh4t's_th3_w0rld_w1th0u7_3n1gm4?} '''

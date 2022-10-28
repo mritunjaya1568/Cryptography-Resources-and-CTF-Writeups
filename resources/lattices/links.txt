@@ -1,0 +1,3 @@
+https://trac.sagemath.org/ticket/9411
+https://eprint.iacr.org/2009/091.pdf
+https://jbootle.github.io/LabSlides/Lab%204%20-%20LLL%20and%20Elliptic%20Curves.pdf

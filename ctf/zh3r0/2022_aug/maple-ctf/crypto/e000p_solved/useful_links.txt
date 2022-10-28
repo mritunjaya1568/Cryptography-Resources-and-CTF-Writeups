@@ -1,0 +1,10 @@
+https://cryptohack.gitbook.io/cryptobook/lattices/definitions
+https://cryptohack.org/challenges/eisenstein/solutions/ - 1st one was of aloof and 2nd one was of ndh
+
+# sage LLL solver - https://github.com/nneonneo/pwn-stuff/blob/master/math/solvelinmod.py 
+
+# yadlp writeup by zhed from maple bacon - https://ctftime.org/writeup/30584
+
+# edwards curve - https://hyperelliptic.org/EFD/g1p/auto-edwards.html
+
+

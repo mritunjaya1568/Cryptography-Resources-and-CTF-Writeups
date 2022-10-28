@@ -1,0 +1,53 @@
+> ccpw("S pyaabf tgltmj! Tuag'p iqyt pm uaylra uc.")
+> betmle("Jhrk tjq bmkgmr nbt, Prpekbgr Xrrkzra.", y)
+> mfwchtr("Qtrq twef if rrxph ro jtgw.", k)
+> y = "Geq acakbgr zoqrxn, rhib'k tue xbk. Cfab'a lhr pyxon G'vm tsiq ml qdjn."
+> y.ixhead("Fxhn rhm Zwbrlyfaw! Qadm lhr debmv!")
+> voz("Bze Soezq vmvma vaekyv znyr i kjenthoq cfab qk aoohq fx iitt.", "Duxe")
+> Qxdcf Vilwr - rxrzgcc("Bm ksrrfhi zxr tw kzoxe bk kxsr iahieagfawq, Dqzwcgoe.")
+> boqm("Rmjwlyibke jpe jcalg oa eayc.")
+> smvv("Rbghb Awc, pctdiag ntmh.")
+> v = niuw_os_tub_faycs(Ywmo3iOib1x)
+> v = x.twoee().rrmxjae(" ", "_")
+> xzang(f"wxpnATN{f}")
+
+
+vignear auto decode
+
+> echo("A planet killer! That's what he called it.")
+> delete("When has become now, Director Krennic.", y)
+> execute("This town is ready to blow.", x)
+> y = "The reactor module, that's the key. That's the place I've laid my trap."
+> y.append("Save the Rebellion! Save the dream!")
+> xor("The Force moves darkly near a creature that is about to kill.", "Luke")
+> Darth Vader - execute("Be careful not to choke on your aspirations, Director.")
+> echo("Rebellions are built on hope.")
+> send("Rogue One, pulling away.")
+> x = name_of_the_track(Qemb3iBlp1o)
+> x = x.lower().replace(" ", "_")
+> print(f"jadeCTF{x}")
+
+
+search this ``` Qemb3iBlp1o star wars ```
+
+https://www.youtube.com/watch?v=Qemb3iBlp1o
+
+
+
+In [26]: x = "Your Father Would Be Proud"
+
+In [27]: x
+Out[27]: 'Your Father Would Be Proud'
+
+In [28]: x.lower().replace(" ","_")
+Out[28]: 'your_father_would_be_proud'
+
+In [29]: print(f"jadeCTF{x}")
+jadeCTFYour Father Would Be Proud
+
+In [30]: x = x.lower().replace(" ","_")
+
+In [31]: print(f"jadeCTF{x}")
+jadeCTFyour_father_would_be_proud
+
+In [32]: jadeCTF{your_father_would_be_proud}

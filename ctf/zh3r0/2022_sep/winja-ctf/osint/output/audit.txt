@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Sep  9 15:35:03 2022
+Invocation: foremost -i harry.jpg 
+Output directory: /home/mritunjya/rooms/cryptography/crypto-hack/ctf/zh3r0/2022_sep/winja-ctf/osint/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: harry.jpg
+Start: Fri Sep  9 15:35:03 2022
+Length: 5 KB (5509 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	       5 KB 	          0 	 
+Finish: Fri Sep  9 15:35:03 2022
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Sep  9 15:35:03 2022

@@ -1,0 +1,12 @@
+> echo("A planet killer! That's what he called it.")
+> delete("When has become now, Director Krennic.", y)
+> execute("This town is ready to blow.", x)
+> y = "The reactor module, that's the key. That's the place I've laid my trap."
+> y.append("Save the Rebellion! Save the dream!")
+> xor("The Force moves darkly near a creature that is about to kill.", "Luke")
+> Darth Vader - execute("Be careful not to choke on your aspirations, Director.")
+> echo("Rebellions are built on hope.")
+> send("Rogue One, pulling away.")
+> x = name_of_the_track(Qemb3iBlp1o)
+> x = x.lower().replace(" ", "_")
+> print(f"jadeCTF{x}")
