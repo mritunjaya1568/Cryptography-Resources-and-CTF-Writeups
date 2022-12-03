@@ -44,7 +44,7 @@
 
 
 
-## gdb wont work in the embryoasm modules FYI, will work in shellcoding challenges though , for embryoasm challenges dont use gdb, use int3. For shellcoding challenges, gdb can be more useful, but when you use gdb instead of running directly the suid binary, you will lose the elevated privileges, it will run as hacker instead of root 
+## gdb wont work in the embryoasm modules FYI, will work in shellcoding challenges though , for embryoasm challenges dont use gdb, use int3. For shellcoding challenges, gdb can be more useful, but when you use gdb instead of running directly the suid binary, you will lose the elevated privileges, it will run as hacker instead of root 	
 
 # GDB crash course - till 30 mins - from robert video
 
@@ -714,13 +714,56 @@ F4_U57 — 06/24/2022
 well, found the issues. start here, in the challenge text [x], where x = rdi 
 neon_leitz — 06/24/2022
 thanks, I got it
-
 ```
 
+## my first try with movsx with which I failed miserably
+```x86asm
+.global _start
 
+_start:
+	.intel_syntax noprefix
+	mov esi, [rdi]
+	mov ebx, [rdi + 4]
+	mov ecx, [rdi + 8]
+	mov edx, [rdi + 12]
+	mov eax, 0
+	movsx rax, eax
+	movsx rbx, ebx 
+	movsx rcx, ecx
+	movsx rdx, edx
+
+	int3
+	cmp esi, 0x7f454c46
+	jne elif_label
+	add rax, rbx
+	add rax, rcx
+	add rax, rdx
+	int3
+	jmp done
+
+	elif_label:
+		cmp esi, 0x00005A4D
+		jne else_label
+
+		add rax, rbx
+		sub rax, rcx
+		sub rax, rdx
+		int3
+		jmp done
+
+	else_label:
+		mov rax, rbx
+		imul rax, rcx
+		imul rax, rdx
+		int3 
+
+
+	done:
+		mov rax, rax
+```
 
 
 
 Good challenges to try later on - 
 
-6, 11, 12, 14, 17 - best question to learn about jmps and rip, 
+6, 11, 12, 14, 17, 18 - best question to learn about jmps and rip, 

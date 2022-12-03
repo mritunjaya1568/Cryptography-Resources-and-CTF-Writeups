@@ -1,0 +1,12 @@
+Wireshark SSL debug log 
+
+Wireshark version: 3.2.3 (Git v3.2.3 packaged as 3.2.3-1)
+GnuTLS version:    3.6.13
+Libgcrypt version: 1.8.5
+
+KeyID[20]:
+| e5 89 57 d3 80 97 3e 5e d3 a3 fb a6 ed 73 e1 3c |..W...>^.....s.<|
+| 37 e9 0d 64                                     |7..d            |
+ssl_init private key file /home/mritunjya/rooms/cryptography/crypto-hack/ctf/zh3r0/2022_nov/square-ctf/hard-copy/private.pem successfully loaded.
+ssl_init port '8631' filename '/home/mritunjya/rooms/cryptography/crypto-hack/ctf/zh3r0/2022_nov/square-ctf/hard-copy/private.pem' password(only for p12 file) ''
+association_add tls.port port 8631 handle 0x55674d75b470

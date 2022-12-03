@@ -77,13 +77,13 @@ class Untwister:
         if self.index >= 624:
             name = next(SYMBOLIC_COUNTER)
             next_mt = self.symbolic_twist(self.MT)
-            self.MT = [BitVec(f'MT_{i}_{name}', 32) for i in range(624)]
+            self.MT = [BitVec(f'MT_{i}_symbolic_untamper{name}', 32) for i in range(624)]
             for i in range(624):
                 self.solver.add(self.MT[i] == next_mt[i])
             self.index = 0
 
         symbolic_guess = self.get_symbolic(guess)
-        symbolic_guess = self.symbolic_untamper(self.solver, symbolic_guess)
+        symbolic_guess = self.(self.solver, symbolic_guess)
         self.solver.add(self.MT[self.index] == symbolic_guess)
         self.index += 1
 
