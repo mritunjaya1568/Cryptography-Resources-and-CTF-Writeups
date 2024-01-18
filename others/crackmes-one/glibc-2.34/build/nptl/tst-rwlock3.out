@@ -1,0 +1,6 @@
+rwlock_init succeeded
+rwlock_trywrlock on unlocked rwlock succeeded
+rwlock_rdlock on rwlock with writer failed with EDEADLK
+rwlock_wrlock on rwlock with writer failed with EDEADLK
+rwlock_unlock succeeded
+rwlock_destroy succeeded

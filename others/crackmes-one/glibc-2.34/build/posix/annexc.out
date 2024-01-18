@@ -1,0 +1,339 @@
+The following identifiers will be ignored since the compiler defines them
+by default:
+unix
+linux
+Tested files:
+=== aio.h ===
+*  invalid macro `SIGEV_THREAD_ID'
+*  invalid macro `sigev_notify_function'
+*  invalid macro `sigev_notify_attributes'
+** macro `FD_CLOEXEC' not defined
+** macro `F_DUPFD' not defined
+** macro `F_GETFD' not defined
+** macro `F_GETFL' not defined
+** macro `F_GETLK' not defined
+** macro `F_RDLCK' not defined
+** macro `F_SETFD' not defined
+** macro `F_SETFL' not defined
+** macro `F_SETLK' not defined
+** macro `F_SETLKW' not defined
+** macro `F_UNLCK' not defined
+** macro `F_WRLCK' not defined
+** macro `O_ACCMODE' not defined
+** macro `O_APPEND' not defined
+** macro `O_CREAT' not defined
+** macro `O_DSYNC' not defined
+** macro `O_EXCL' not defined
+** macro `O_NOCTTY' not defined
+** macro `O_NONBLOCK' not defined
+** macro `O_RDONLY' not defined
+** macro `O_RDWR' not defined
+** macro `O_RSYNC' not defined
+** macro `O_SYNC' not defined
+** macro `O_TRUNC' not defined
+** macro `O_WRONLY' not defined
+** macro `SA_NOCLDSTOP' not defined
+** macro `SA_SIGINFO' not defined
+** macro `SIGABRT' not defined
+** macro `SIGALRM' not defined
+** macro `SIGBUS' not defined
+** macro `SIGCHLD' not defined
+** macro `SIGCONT' not defined
+** macro `SIGEV_SIGNAL' not defined
+** macro `SIGFPE' not defined
+** macro `SIGHUP' not defined
+** macro `SIGILL' not defined
+** macro `SIGINT' not defined
+** macro `SIGKILL' not defined
+** macro `SIGPIPE' not defined
+** macro `SIGQUIT' not defined
+** macro `SIGRTMAX' not defined
+** macro `SIGRTMIN' not defined
+** macro `SIGSEGV' not defined
+** macro `SIGSTOP' not defined
+** macro `SIGTERM' not defined
+** macro `SIGTSTP' not defined
+** macro `SIGTTIN' not defined
+** macro `SIGTTOU' not defined
+** macro `SIGUSR1' not defined
+** macro `SIGUSR2' not defined
+** macro `SIG_BLOCK' not defined
+** macro `SIG_DFL' not defined
+** macro `SIG_ERR' not defined
+** macro `SIG_IGN' not defined
+** macro `SIG_SETMASK' not defined
+** macro `SIG_UNBLOCK' not defined
+** macro `SI_ASYNCIO' not defined
+** macro `SI_MESGQ' not defined
+** macro `SI_QUEUE' not defined
+** macro `SI_TIMER' not defined
+** macro `SI_USER' not defined
+=== assert.h ===
+*  invalid macro `static_assert'
+=== ctype.h ===
+*  invalid macro `isblank'
+=== dirent.h ===
+*  invalid macro `d_fileno'
+=== errno.h ===
+=== fcntl.h ===
+*  invalid macro `F_EXLCK'
+*  invalid macro `O_NDELAY'
+*  invalid macro `O_ASYNC'
+*  invalid macro `O_FSYNC'
+*  invalid macro `F_SHLCK'
+*  invalid macro `F_SETLKW64'
+*  invalid macro `F_SETLK64'
+*  invalid macro `F_GETLK64'
+** macro `O_DSYNC' not defined
+** macro `O_RSYNC' not defined
+=== float.h ===
+*  invalid macro `LDBL_HAS_SUBNORM'
+*  invalid macro `FLT64X_EPSILON'
+*  invalid macro `FLT32_MANT_DIG'
+*  invalid macro `FLT64X_MAX_EXP'
+*  invalid macro `LDBL_DECIMAL_DIG'
+*  invalid macro `FLT32X_EPSILON'
+*  invalid macro `FLT64_MIN_10_EXP'
+*  invalid macro `FLT32X_DIG'
+*  invalid macro `FLT_TRUE_MIN'
+*  invalid macro `FLT32X_TRUE_MIN'
+*  invalid macro `FLT32X_MAX_EXP'
+*  invalid macro `DECIMAL_DIG'
+*  invalid macro `FLT64_TRUE_MIN'
+*  invalid macro `DBL_HAS_SUBNORM'
+*  invalid macro `FLT32_DIG'
+*  invalid macro `FLT64X_MAX'
+*  invalid macro `FLT128_MIN_10_EXP'
+*  invalid macro `FLT64X_MIN_10_EXP'
+*  invalid macro `FLT64X_MIN'
+*  invalid macro `FLT64X_MANT_DIG'
+*  invalid macro `DBL_DECIMAL_DIG'
+*  invalid macro `FLT32_TRUE_MIN'
+*  invalid macro `FLT64_MAX_10_EXP'
+*  invalid macro `FLT32_MIN_EXP'
+*  invalid macro `FLT64_DIG'
+*  invalid macro `FLT32_MIN_10_EXP'
+*  invalid macro `DBL_TRUE_MIN'
+*  invalid macro `FLT32_DECIMAL_DIG'
+*  invalid macro `FLT64_MIN_EXP'
+*  invalid macro `LDBL_TRUE_MIN'
+*  invalid macro `FLT128_MIN_EXP'
+*  invalid macro `FLT64X_DECIMAL_DIG'
+*  invalid macro `FLT128_MAX_10_EXP'
+*  invalid macro `FLT64X_MAX_10_EXP'
+*  invalid macro `FLT128_DIG'
+*  invalid macro `FLT32X_MAX'
+*  invalid macro `FLT64X_TRUE_MIN'
+*  invalid macro `FLT32_MAX_10_EXP'
+*  invalid macro `FLT64X_MIN_EXP'
+*  invalid macro `FLT32X_MIN'
+*  invalid macro `FLT32_MAX'
+*  invalid macro `FLT128_MANT_DIG'
+*  invalid macro `FLT32_MIN'
+*  invalid macro `FLT32X_DECIMAL_DIG'
+*  invalid macro `FLT32X_MIN_EXP'
+*  invalid macro `FLT32X_MIN_10_EXP'
+*  invalid macro `FLT32_EPSILON'
+*  invalid macro `FLT128_DECIMAL_DIG'
+*  invalid macro `FLT64_MAX'
+*  invalid macro `FLT64X_DIG'
+*  invalid macro `FLT64_MIN'
+*  invalid macro `FLT64_EPSILON'
+*  invalid macro `FLT32_MAX_EXP'
+*  invalid macro `FLT_DECIMAL_DIG'
+*  invalid macro `FLT_EVAL_METHOD'
+*  invalid macro `FLT128_EPSILON'
+*  invalid macro `FLT32X_MANT_DIG'
+*  invalid macro `FLT_HAS_SUBNORM'
+*  invalid macro `FLT64_MAX_EXP'
+*  invalid macro `FLT64_MANT_DIG'
+*  invalid macro `FLT32X_MAX_10_EXP'
+*  invalid macro `FLT128_MAX'
+*  invalid macro `FLT128_MAX_EXP'
+*  invalid macro `FLT128_TRUE_MIN'
+*  invalid macro `FLT64_DECIMAL_DIG'
+*  invalid macro `FLT128_MIN'
+=== grp.h ===
+=== limits.h ===
+*  invalid macro `XATTR_SIZE_MAX'
+*  invalid macro `SSIZE_MAX'
+*  invalid macro `HOST_NAME_MAX'
+*  invalid macro `AIO_PRIO_DELTA_MAX'
+*  invalid macro `XATTR_LIST_MAX'
+*  invalid macro `ULLONG_MAX'
+*  invalid macro `TTY_NAME_MAX'
+*  invalid macro `LLONG_MAX'
+*  invalid macro `SEM_VALUE_MAX'
+*  invalid macro `LLONG_MIN'
+*  invalid macro `XATTR_NAME_MAX'
+** macro `_POSIX_CLOCKRES_MAX' not defined
+** macro `_POSIX_THREAD_DESTRUCTOR_ITERATIONS' not defined
+** macro `PAGESIZE' not defined
+=== locale.h ===
+=== math.h ===
+*  invalid macro `isless'
+*  invalid macro `FP_NAN'
+*  invalid macro `isinf'
+*  invalid macro `HUGE_VALF'
+*  invalid macro `HUGE_VALL'
+*  invalid macro `FP_NORMAL'
+*  invalid macro `FP_ILOGB0'
+*  invalid macro `NAN'
+*  invalid macro `islessgreater'
+*  invalid macro `INFINITY'
+*  invalid macro `isnan'
+*  invalid macro `math_errhandling'
+*  invalid macro `isnormal'
+*  invalid macro `FP_SUBNORMAL'
+*  invalid macro `islessequal'
+*  invalid macro `FP_INFINITE'
+*  invalid macro `FP_ILOGBNAN'
+*  invalid macro `MATH_ERRNO'
+*  invalid macro `FP_ZERO'
+*  invalid macro `fpclassify'
+*  invalid macro `isfinite'
+*  invalid macro `signbit'
+*  invalid macro `isunordered'
+*  invalid macro `MATH_ERREXCEPT'
+*  invalid macro `isgreater'
+*  invalid macro `isgreaterequal'
+=== mqueue.h ===
+*  invalid macro `O_NOCTTY'
+*  invalid macro `O_ACCMODE'
+*  invalid macro `F_RDLCK'
+*  invalid macro `F_EXLCK'
+*  invalid macro `O_NDELAY'
+*  invalid macro `O_ASYNC'
+*  invalid macro `F_DUPFD'
+*  invalid macro `O_APPEND'
+*  invalid macro `O_FSYNC'
+*  invalid macro `FD_CLOEXEC'
+*  invalid macro `O_NONBLOCK'
+*  invalid macro `F_UNLCK'
+*  invalid macro `F_SHLCK'
+*  invalid macro `F_GETFD'
+*  invalid macro `F_GETFL'
+*  invalid macro `F_SETLKW64'
+*  invalid macro `F_GETLK'
+*  invalid macro `O_RDWR'
+*  invalid macro `F_SETFL'
+*  invalid macro `F_SETLK'
+*  invalid macro `F_WRLCK'
+*  invalid macro `F_SETLK64'
+*  invalid macro `O_SYNC'
+*  invalid macro `O_CREAT'
+*  invalid macro `F_GETLK64'
+*  invalid macro `F_SETLKW'
+*  invalid macro `sigev_notify_function'
+*  invalid macro `O_RDONLY'
+*  invalid macro `O_TRUNC'
+*  invalid macro `O_WRONLY'
+*  invalid macro `O_EXCL'
+*  invalid macro `sigev_notify_attributes'
+*  invalid macro `F_SETFD'
+=== pthread.h ===
+*  invalid macro `TIME_UTC'
+*  invalid macro `sched_priority'
+** macro `PTHREAD_PRIO_INHERIT' not defined
+** macro `PTHREAD_PRIO_NONE' not defined
+** macro `PTHREAD_PRIO_PROTECT' not defined
+** macro `CLOCK_REALTIME' not defined
+** macro `TIMER_ABSTIME' not defined
+=== pwd.h ===
+=== sched.h ===
+*  invalid macro `TIME_UTC'
+*  invalid macro `sched_priority'
+=== semaphore.h ===
+*  invalid macro `SEM_FAILED'
+=== setjmp.h ===
+=== signal.h ===
+*  invalid macro `SIGPROF'
+*  invalid macro `SIGSTKFLT'
+*  invalid macro `SIGURG'
+*  invalid macro `SIGIO'
+*  invalid macro `SIGPOLL'
+*  invalid macro `SIGCLD'
+*  invalid macro `SIGTRAP'
+*  invalid macro `SIGVTALRM'
+*  invalid macro `SIGWINCH'
+*  invalid macro `SIGXFSZ'
+*  invalid macro `SIGSYS'
+*  invalid macro `SIGXCPU'
+*  invalid macro `SIGPWR'
+*  invalid macro `SA_NOCLDWAIT'
+*  invalid macro `SIGIOT'
+** macro `SIGEV_NONE' not defined
+** macro `SIGEV_SIGNAL' not defined
+** macro `SIGEV_THREAD' not defined
+** macro `SI_ASYNCIO' not defined
+** macro `SI_MESGQ' not defined
+** macro `SI_QUEUE' not defined
+** macro `SI_TIMER' not defined
+** macro `SI_USER' not defined
+=== stdarg.h ===
+*  invalid macro `va_copy'
+=== stddef.h ===
+=== stdio.h ===
+** macro `STREAM_MAX' not defined
+=== stdlib.h ===
+=== string.h ===
+=== sys/mman.h ===
+*  invalid macro `PROT_GROWSDOWN'
+*  invalid macro `MCL_ONFAULT'
+*  invalid macro `PROT_GROWSUP'
+=== sys/stat.h ===
+*  invalid macro `S_ISLNK'
+** macro `S_TYPEISMQ' not defined
+** macro `S_TYPEISSEM' not defined
+** macro `S_TYPEISSHM' not defined
+=== sys/times.h ===
+=== sys/types.h ===
+=== sys/utsname.h ===
+=== sys/wait.h ===
+=== termios.h ===
+*  invalid macro `VSWTC'
+*  invalid macro `OFILL'
+*  invalid macro `INLCR'
+*  invalid macro `VWERASE'
+*  invalid macro `VTDLY'
+*  invalid macro `IUCLC'
+*  invalid macro `B230400'
+*  invalid macro `B576000'
+*  invalid macro `B460800'
+*  invalid macro `ONLRET'
+*  invalid macro `B2500000'
+*  invalid macro `B500000'
+*  invalid macro `B3000000'
+*  invalid macro `B1000000'
+*  invalid macro `OCRNL'
+*  invalid macro `VLNEXT'
+*  invalid macro `IMAXBEL'
+*  invalid macro `IUTF8'
+*  invalid macro `VT0'
+*  invalid macro `VT1'
+*  invalid macro `ONOCR'
+*  invalid macro `B115200'
+*  invalid macro `VDISCARD'
+*  invalid macro `OLCUC'
+*  invalid macro `TCION'
+*  invalid macro `OFDEL'
+*  invalid macro `ONLCR'
+*  invalid macro `VREPRINT'
+*  invalid macro `B57600'
+*  invalid macro `IXANY'
+*  invalid macro `VEOL2'
+*  invalid macro `B1152000'
+*  invalid macro `B921600'
+*  invalid macro `B3500000'
+*  invalid macro `B4000000'
+*  invalid macro `B1500000'
+*  invalid macro `B2000000'
+*  invalid macro `CSTOPB'
+** macro `CSTOPN' not defined
+** macro `INCLR' not defined
+=== time.h ===
+*  invalid macro `TIME_UTC'
+** macro `CLOCK_REALTIME' not defined
+** macro `TIMER_ABSTIME' not defined
+=== unistd.h ===
+=== utime.h ===

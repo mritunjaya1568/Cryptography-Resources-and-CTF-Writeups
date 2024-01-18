@@ -1,0 +1,110 @@
+preload tst-tls5mod{a,b,c,d}.so
+===============
+&a = 0x7fb3b9b8d740, size 32, align 64
+&d = 0x7fb3b9b8d774, size 4, align 4
+&c = 0x7fb3b9b8d778, size 4, align 4
+&b = 0x7fb3b9b8d77c, size 4, align 4
+pthread_self () = 0x7fb3b9b8d780, size 2496, align 64
+Initial TLS used block size 64
+
+preload tst-tls5mod{b,a,c,d}.so
+===============
+&a = 0x7fe09ebd3740, size 32, align 64
+&d = 0x7fe09ebd3774, size 4, align 4
+&c = 0x7fe09ebd3778, size 4, align 4
+&b = 0x7fe09ebd377c, size 4, align 4
+pthread_self () = 0x7fe09ebd3780, size 2496, align 64
+Initial TLS used block size 64
+
+preload tst-tls5mod{b,c,d,a}.so
+===============
+&a = 0x7f1485f7e740, size 32, align 64
+&d = 0x7f1485f7e774, size 4, align 4
+&c = 0x7f1485f7e778, size 4, align 4
+&b = 0x7f1485f7e77c, size 4, align 4
+pthread_self () = 0x7f1485f7e780, size 2496, align 64
+Initial TLS used block size 64
+
+preload tst-tls5mod{e,b,c,d}.so
+===============
+&e1 = 0x7f9682826740, size 4, align 4
+&e2 = 0x7f9682826780, size 32, align 64
+&d = 0x7f96828267b4, size 4, align 4
+&c = 0x7f96828267b8, size 4, align 4
+&b = 0x7f96828267bc, size 4, align 4
+pthread_self () = 0x7f96828267c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{b,e,c,d}.so
+===============
+&e1 = 0x7f7199899740, size 4, align 4
+&e2 = 0x7f7199899780, size 32, align 64
+&d = 0x7f71998997b4, size 4, align 4
+&c = 0x7f71998997b8, size 4, align 4
+&b = 0x7f71998997bc, size 4, align 4
+pthread_self () = 0x7f71998997c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{b,c,d,e}.so
+===============
+&e1 = 0x7f4658109740, size 4, align 4
+&e2 = 0x7f4658109780, size 32, align 64
+&d = 0x7f46581097b4, size 4, align 4
+&c = 0x7f46581097b8, size 4, align 4
+&b = 0x7f46581097bc, size 4, align 4
+pthread_self () = 0x7f46581097c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{f,b,c,d}.so
+===============
+&f1 = 0x7f5ba6107740, size 4, align 4
+&f2 = 0x7f5ba6107780, size 32, align 64
+&d = 0x7f5ba61077b4, size 4, align 4
+&c = 0x7f5ba61077b8, size 4, align 4
+&b = 0x7f5ba61077bc, size 4, align 4
+pthread_self () = 0x7f5ba61077c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{b,f,c,d}.so
+===============
+&f1 = 0x7feb78b25740, size 4, align 4
+&f2 = 0x7feb78b25780, size 32, align 64
+&d = 0x7feb78b257b4, size 4, align 4
+&c = 0x7feb78b257b8, size 4, align 4
+&b = 0x7feb78b257bc, size 4, align 4
+pthread_self () = 0x7feb78b257c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{b,c,d,f}.so
+===============
+&f1 = 0x7f1cd7fec740, size 4, align 4
+&f2 = 0x7f1cd7fec780, size 32, align 64
+&d = 0x7f1cd7fec7b4, size 4, align 4
+&c = 0x7f1cd7fec7b8, size 4, align 4
+&b = 0x7f1cd7fec7bc, size 4, align 4
+pthread_self () = 0x7f1cd7fec7c0, size 2496, align 64
+Initial TLS used block size 128
+
+preload tst-tls5mod{d,a,b,c,e}
+===============
+&e1 = 0x7f3c6bb34c40, size 4, align 4
+&e2 = 0x7f3c6bb34c80, size 32, align 64
+&a = 0x7f3c6bb34cc0, size 32, align 64
+&c = 0x7f3c6bb34cf4, size 4, align 4
+&b = 0x7f3c6bb34cf8, size 4, align 4
+&d = 0x7f3c6bb34cfc, size 4, align 4
+pthread_self () = 0x7f3c6bb34d00, size 2496, align 64
+Initial TLS used block size 192
+
+preload tst-tls5mod{d,a,b,e,f}
+===============
+&f1 = 0x7f04efe3dc40, size 4, align 4
+&f2 = 0x7f04efe3dc80, size 32, align 64
+&e1 = 0x7f04efe3dcc0, size 4, align 4
+&e2 = 0x7f04efe3dd00, size 32, align 64
+&a = 0x7f04efe3dd40, size 32, align 64
+&b = 0x7f04efe3dd78, size 4, align 4
+&d = 0x7f04efe3dd7c, size 4, align 4
+pthread_self () = 0x7f04efe3dd80, size 2496, align 64
+Initial TLS used block size 320
+

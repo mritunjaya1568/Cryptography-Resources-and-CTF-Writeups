@@ -1,0 +1,5 @@
+child: calling sigwait now
+sending the signal now
+sigwait returned
+child thread terminating now
+join succeeded

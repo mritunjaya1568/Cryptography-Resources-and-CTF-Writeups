@@ -1,0 +1,15 @@
+This program runs on de_DE.UTF-8 locale.
+--
+Read a byte sequence which is invalid as a wide character string.
+ bytes: 0xe3, 0x81, '\0'
+Return Value: NULL
+errno = EILSEQ
+--
+Read a byte sequence which is invalid as a wide character string.
+ bytes: '0', '\n', 'A', 'B', 0xe3, 0x81, 'c', '\0'
+Return Value: 0x7ffd0242e750
+ wcs[0] = 0x0030 wcs[1] = 0x000a wcs[2] = 0x0000
+
+second line
+Return Value: NULL
+errno = EILSEQ

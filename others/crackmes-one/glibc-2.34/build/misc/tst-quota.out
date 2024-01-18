@@ -1,0 +1,2 @@
+info: sizeof (struct if_dqblk) [72] == sizeof (struct dqblk) [72]
+info: sizeof (struct if_dqinfo) [24] == sizeof (struct dqinfo) [24]

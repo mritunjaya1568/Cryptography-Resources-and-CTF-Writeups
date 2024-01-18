@@ -1,0 +1,6 @@
+strcoll ("config", "choose") = -99
+strcoll ("choose", "config") = 99
+PASS: config < choose
+strcoll ("AS", "AA") = -28
+strcoll ("AA", "AS") = 28
+PASS: AS < AA

@@ -1,0 +1,2 @@
+PASS: malloc/tst-dynarray-at-fail
+original exit status 0

@@ -1,0 +1,2 @@
+UNSUPPORTED: string/tst-memchr-rtm
+original exit status 77

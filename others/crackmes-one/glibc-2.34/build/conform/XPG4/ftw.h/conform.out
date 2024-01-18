@@ -1,0 +1,14 @@
+PASS: Availability of <ftw.h>
+PASS: Combined <ftw.h> test
+PASSCOMBINED: Availability of macro FTW_F
+PASSCOMBINED: Availability of macro FTW_D
+PASSCOMBINED: Availability of macro FTW_DNR
+PASSCOMBINED: Availability of macro FTW_NS
+PASSCOMBINED: Availability of function ftw
+PASSCOMBINED: Type of function ftw
+PASS: Namespace of <ftw.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    8
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

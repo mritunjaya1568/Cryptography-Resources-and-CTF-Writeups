@@ -1,0 +1,1 @@
+info: exit status: 32512, message: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-latepthread: symbol lookup error: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-latepthreadmod.so: undefined symbol: this_function_is_not_defined

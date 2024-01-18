@@ -1,0 +1,6 @@
+PASS: lgammaf (0.5) setting signgam
+PASS: lgammaf (-0.5) setting signgam
+PASS: lgamma (0.5) setting signgam
+PASS: lgamma (-0.5) setting signgam
+PASS: lgammal (0.5) setting signgam
+PASS: lgammal (-0.5) setting signgam

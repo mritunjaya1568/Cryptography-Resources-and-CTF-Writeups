@@ -1,0 +1,4 @@
+This program runs on de_DE.UTF-8 locale.
+After get a character: 1
+After unget a character: 0
+After reget a character: 1

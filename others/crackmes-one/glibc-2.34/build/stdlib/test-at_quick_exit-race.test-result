@@ -1,0 +1,2 @@
+PASS: stdlib/test-at_quick_exit-race
+original exit status 0

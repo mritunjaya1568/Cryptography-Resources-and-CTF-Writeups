@@ -1,0 +1,4 @@
+info: acquired root-like privileges
+info: entered network namespace
+info: also entered UTS namespace
+info: testing loopback interface with multiple addresses

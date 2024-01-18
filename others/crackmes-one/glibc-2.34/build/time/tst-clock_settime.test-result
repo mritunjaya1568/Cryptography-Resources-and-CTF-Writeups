@@ -1,0 +1,2 @@
+UNSUPPORTED: time/tst-clock_settime
+original exit status 77

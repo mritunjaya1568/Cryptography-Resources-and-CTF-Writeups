@@ -1,0 +1,32 @@
+
+Elf file type is DYN (Shared object file)
+Entry point 0x10a0
+There are 11 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x000678 0x000678 R   0x1000
+  LOAD           0x001000 0x0000000000001000 0x0000000000001000 0x001081 0x001081 R E 0x1000
+  LOAD           0x003000 0x0000000000003000 0x0000000000003000 0x000a40 0x000a40 R   0x1000
+  LOAD           0x003e00 0x0000000000004e00 0x0000000000004e00 0x000238 0x000240 RW  0x1000
+  DYNAMIC        0x003e10 0x0000000000004e10 0x0000000000004e10 0x0001d0 0x0001d0 RW  0x8
+  NOTE           0x0002a8 0x00000000000002a8 0x00000000000002a8 0x000030 0x000030 R   0x8
+  NOTE           0x0002d8 0x00000000000002d8 0x00000000000002d8 0x000044 0x000044 R   0x4
+  GNU_PROPERTY   0x0002a8 0x00000000000002a8 0x00000000000002a8 0x000030 0x000030 R   0x8
+  GNU_EH_FRAME   0x0038c0 0x00000000000038c0 0x00000000000038c0 0x00003c 0x00003c R   0x4
+  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10
+  GNU_RELRO      0x003e00 0x0000000000004e00 0x0000000000004e00 0x000200 0x000200 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .note.gnu.property .note.gnu.build-id .note.ABI-tag .hash .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt 
+   01     .init .plt .plt.got .plt.sec .text .fini 
+   02     .rodata .eh_frame_hdr .eh_frame 
+   03     .init_array .fini_array .dynamic .got .got.plt .data .bss 
+   04     .dynamic 
+   05     .note.gnu.property 
+   06     .note.gnu.build-id .note.ABI-tag 
+   07     .note.gnu.property 
+   08     .eh_frame_hdr 
+   09     
+   10     .init_array .fini_array .dynamic .got 

@@ -1,0 +1,52 @@
+PASS: Availability of <signal.h>
+PASS: Combined <signal.h> test
+PASSCOMBINED: Availability of macro SIG_DFL
+PASSCOMBINED: Availability of constant SIG_DFL
+PASSCOMBINED: Type of symbol SIG_DFL
+PASSCOMBINED: Availability of macro SIG_ERR
+PASSCOMBINED: Availability of constant SIG_ERR
+PASSCOMBINED: Type of symbol SIG_ERR
+PASSCOMBINED: Availability of macro SIG_IGN
+PASSCOMBINED: Availability of constant SIG_IGN
+PASSCOMBINED: Type of symbol SIG_IGN
+PASSCOMBINED: Availability of type sig_atomic_t
+PASSCOMBINED: Availability of macro SIGABRT
+PASSCOMBINED: Availability of constant SIGABRT
+PASSCOMBINED: #if usability of symbol SIGABRT
+PASSCOMBINED: Type of symbol SIGABRT
+PASSCOMBINED: Value of symbol SIGABRT
+PASSCOMBINED: Availability of macro SIGFPE
+PASSCOMBINED: Availability of constant SIGFPE
+PASSCOMBINED: #if usability of symbol SIGFPE
+PASSCOMBINED: Type of symbol SIGFPE
+PASSCOMBINED: Value of symbol SIGFPE
+PASSCOMBINED: Availability of macro SIGILL
+PASSCOMBINED: Availability of constant SIGILL
+PASSCOMBINED: #if usability of symbol SIGILL
+PASSCOMBINED: Type of symbol SIGILL
+PASSCOMBINED: Value of symbol SIGILL
+PASSCOMBINED: Availability of macro SIGINT
+PASSCOMBINED: Availability of constant SIGINT
+PASSCOMBINED: #if usability of symbol SIGINT
+PASSCOMBINED: Type of symbol SIGINT
+PASSCOMBINED: Value of symbol SIGINT
+PASSCOMBINED: Availability of macro SIGSEGV
+PASSCOMBINED: Availability of constant SIGSEGV
+PASSCOMBINED: #if usability of symbol SIGSEGV
+PASSCOMBINED: Type of symbol SIGSEGV
+PASSCOMBINED: Value of symbol SIGSEGV
+PASSCOMBINED: Availability of macro SIGTERM
+PASSCOMBINED: Availability of constant SIGTERM
+PASSCOMBINED: #if usability of symbol SIGTERM
+PASSCOMBINED: Type of symbol SIGTERM
+PASSCOMBINED: Value of symbol SIGTERM
+PASSCOMBINED: Availability of function signal
+PASSCOMBINED: Type of function signal
+PASSCOMBINED: Availability of function raise
+PASSCOMBINED: Type of function raise
+PASS: Namespace of <signal.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   46
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

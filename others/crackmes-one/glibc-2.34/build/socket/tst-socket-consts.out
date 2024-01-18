@@ -1,0 +1,156 @@
+First source:
+#include <sys/socket.h>
+
+
+Second source:
+#include <sys/types.h>
+#include <asm/socket.h>
+
+
+Only in first source: SOL_AAL
+Only in first source: SOL_ALG
+Only in first source: SOL_ATM
+Only in first source: SOL_BLUETOOTH
+Only in first source: SOL_CAIF
+Only in first source: SOL_DCCP
+Only in first source: SOL_DECNET
+Only in first source: SOL_IRDA
+Only in first source: SOL_IUCV
+Only in first source: SOL_KCM
+Only in first source: SOL_LLC
+Only in first source: SOL_NETBEUI
+Only in first source: SOL_NETLINK
+Only in first source: SOL_NFC
+Only in first source: SOL_PACKET
+Only in first source: SOL_PNPIPE
+Only in first source: SOL_PPPOL2TP
+Only in first source: SOL_RAW
+Only in first source: SOL_RDS
+Only in first source: SOL_RXRPC
+Only in first source: SOL_TIPC
+Only in first source: SOL_TLS
+Only in first source: SOL_X25
+Only in first source: SOL_XDP
+First source:
+#undef _GNU_SOURCE
+#include <sys/socket.h>
+
+
+Second source:
+#include <sys/types.h>
+#include <asm/socket.h>
+
+
+Only in first source: SOL_AAL
+Only in first source: SOL_ALG
+Only in first source: SOL_ATM
+Only in first source: SOL_BLUETOOTH
+Only in first source: SOL_CAIF
+Only in first source: SOL_DCCP
+Only in first source: SOL_DECNET
+Only in first source: SOL_IRDA
+Only in first source: SOL_IUCV
+Only in first source: SOL_KCM
+Only in first source: SOL_LLC
+Only in first source: SOL_NETBEUI
+Only in first source: SOL_NETLINK
+Only in first source: SOL_NFC
+Only in first source: SOL_PACKET
+Only in first source: SOL_PNPIPE
+Only in first source: SOL_PPPOL2TP
+Only in first source: SOL_RAW
+Only in first source: SOL_RDS
+Only in first source: SOL_RXRPC
+Only in first source: SOL_TIPC
+Only in first source: SOL_TLS
+Only in first source: SOL_X25
+Only in first source: SOL_XDP
+First source:
+#undef _GNU_SOURCE
+#define _POSIX_SOURCE 1
+#include <sys/socket.h>
+
+
+Second source:
+#include <sys/types.h>
+#include <asm/socket.h>
+
+
+Only in first source: SOL_AAL
+Only in first source: SOL_ALG
+Only in first source: SOL_ATM
+Only in first source: SOL_BLUETOOTH
+Only in first source: SOL_CAIF
+Only in first source: SOL_DCCP
+Only in first source: SOL_DECNET
+Only in first source: SOL_IRDA
+Only in first source: SOL_IUCV
+Only in first source: SOL_KCM
+Only in first source: SOL_LLC
+Only in first source: SOL_NETBEUI
+Only in first source: SOL_NETLINK
+Only in first source: SOL_NFC
+Only in first source: SOL_PACKET
+Only in first source: SOL_PNPIPE
+Only in first source: SOL_PPPOL2TP
+Only in first source: SOL_RAW
+Only in first source: SOL_RDS
+Only in first source: SOL_RXRPC
+Only in first source: SOL_TIPC
+Only in first source: SOL_TLS
+Only in first source: SOL_X25
+Only in first source: SOL_XDP
+Only in second source: SO_ATTACH_BPF
+Only in second source: SO_ATTACH_FILTER
+Only in second source: SO_ATTACH_REUSEPORT_CBPF
+Only in second source: SO_ATTACH_REUSEPORT_EBPF
+Only in second source: SO_BINDTODEVICE
+Only in second source: SO_BINDTOIFINDEX
+Only in second source: SO_BPF_EXTENSIONS
+Only in second source: SO_BSDCOMPAT
+Only in second source: SO_BUSY_POLL
+Only in second source: SO_CNX_ADVICE
+Only in second source: SO_COOKIE
+Only in second source: SO_DETACH_BPF
+Only in second source: SO_DETACH_FILTER
+Only in second source: SO_DETACH_REUSEPORT_BPF
+Only in second source: SO_DOMAIN
+Only in second source: SO_GET_FILTER
+Only in second source: SO_INCOMING_CPU
+Only in second source: SO_INCOMING_NAPI_ID
+Only in second source: SO_LOCK_FILTER
+Only in second source: SO_MARK
+Only in second source: SO_MAX_PACING_RATE
+Only in second source: SO_MEMINFO
+Only in second source: SO_NOFCS
+Only in second source: SO_NO_CHECK
+Only in second source: SO_PASSCRED
+Only in second source: SO_PASSSEC
+Only in second source: SO_PEEK_OFF
+Only in second source: SO_PEERCRED
+Only in second source: SO_PEERGROUPS
+Only in second source: SO_PEERNAME
+Only in second source: SO_PEERSEC
+Only in second source: SO_PRIORITY
+Only in second source: SO_PROTOCOL
+Only in second source: SO_RCVBUFFORCE
+Only in second source: SO_RCVTIMEO_NEW
+Only in second source: SO_RCVTIMEO_OLD
+Only in second source: SO_REUSEPORT
+Only in second source: SO_RXQ_OVFL
+Only in second source: SO_SECURITY_AUTHENTICATION
+Only in second source: SO_SECURITY_ENCRYPTION_NETWORK
+Only in second source: SO_SECURITY_ENCRYPTION_TRANSPORT
+Only in second source: SO_SELECT_ERR_QUEUE
+Only in second source: SO_SNDBUFFORCE
+Only in second source: SO_SNDTIMEO_NEW
+Only in second source: SO_SNDTIMEO_OLD
+Only in second source: SO_TIMESTAMPING_NEW
+Only in second source: SO_TIMESTAMPING_OLD
+Only in second source: SO_TIMESTAMPNS_NEW
+Only in second source: SO_TIMESTAMPNS_OLD
+Only in second source: SO_TIMESTAMP_NEW
+Only in second source: SO_TIMESTAMP_OLD
+Only in second source: SO_TXTIME
+Only in second source: SO_WIFI_STATUS
+Only in second source: SO_ZEROCOPY

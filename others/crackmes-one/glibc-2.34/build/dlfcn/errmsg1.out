@@ -1,0 +1,2 @@
+dlerror() without prior dl*() call returned: (null)
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dlfcn/errmsg1mod.so: undefined symbol: bar

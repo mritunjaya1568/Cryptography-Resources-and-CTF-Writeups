@@ -1,0 +1,16 @@
+
+Symbol table '.dynsym' contains 13 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND free@GLIBC_2.2.5 (2)
+     2: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __gconv_transliterate@GLIBC_PRIVATE (3)
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __assert_fail@GLIBC_2.2.5 (2)
+     5: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND malloc@GLIBC_2.2.5 (2)
+     7: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _dl_mcount_wrapper_check@GLIBC_2.2.5 (2)
+     8: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+     9: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
+    10: 0000000000001260  4226 FUNC    GLOBAL DEFAULT   16 gconv
+    11: 00000000000011a0   167 FUNC    GLOBAL DEFAULT   16 gconv_init
+    12: 0000000000001250    13 FUNC    GLOBAL DEFAULT   16 gconv_end

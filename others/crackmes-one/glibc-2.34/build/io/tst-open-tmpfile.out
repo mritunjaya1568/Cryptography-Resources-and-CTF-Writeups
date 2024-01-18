@@ -1,0 +1,12 @@
+info: testing open at: .
+info: testing openat at: .
+info: testing open64 at: .
+info: testing openat64 at: .
+info: testing open at: /dev/shm
+info: testing openat at: /dev/shm
+info: testing open64 at: /dev/shm
+info: testing openat64 at: /dev/shm
+info: testing open at: /tmp
+info: testing openat at: /tmp
+info: testing open64 at: /tmp
+info: testing openat64 at: /tmp

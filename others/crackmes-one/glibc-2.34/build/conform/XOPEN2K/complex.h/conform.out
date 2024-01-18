@@ -1,0 +1,151 @@
+PASS: Availability of <complex.h>
+PASS: Combined <complex.h> test
+PASSCOMBINED: Availability of macro complex
+PASSCOMBINED: Availability of macro _Complex_I
+/tmp/tmp2bvsokk1/test.c:3:3: error: #error "Macro imaginary not defined"
+ # error "Macro imaginary not defined"
+   ^~~~~
+MISSING: Availability of macro imaginary
+/tmp/tmp2bvsokk1/test.c:3:3: error: #error "Macro _Imaginary_I not defined"
+ # error "Macro _Imaginary_I not defined"
+   ^~~~~
+MISSING: Availability of macro _Imaginary_I
+PASSCOMBINED: Availability of macro I
+PASSCOMBINED: Availability of function cabs
+PASSCOMBINED: Type of function cabs
+PASSCOMBINED: Availability of function cacos
+PASSCOMBINED: Type of function cacos
+PASSCOMBINED: Availability of function cacosh
+PASSCOMBINED: Type of function cacosh
+PASSCOMBINED: Availability of function carg
+PASSCOMBINED: Type of function carg
+PASSCOMBINED: Availability of function casin
+PASSCOMBINED: Type of function casin
+PASSCOMBINED: Availability of function casinh
+PASSCOMBINED: Type of function casinh
+PASSCOMBINED: Availability of function catan
+PASSCOMBINED: Type of function catan
+PASSCOMBINED: Availability of function catanh
+PASSCOMBINED: Type of function catanh
+PASSCOMBINED: Availability of function ccos
+PASSCOMBINED: Type of function ccos
+PASSCOMBINED: Availability of function ccosh
+PASSCOMBINED: Type of function ccosh
+PASSCOMBINED: Availability of function cexp
+PASSCOMBINED: Type of function cexp
+PASSCOMBINED: Availability of function cimag
+PASSCOMBINED: Type of function cimag
+PASSCOMBINED: Availability of function clog
+PASSCOMBINED: Type of function clog
+PASSCOMBINED: Availability of function conj
+PASSCOMBINED: Type of function conj
+PASSCOMBINED: Availability of function cpow
+PASSCOMBINED: Type of function cpow
+PASSCOMBINED: Availability of function cproj
+PASSCOMBINED: Type of function cproj
+PASSCOMBINED: Availability of function creal
+PASSCOMBINED: Type of function creal
+PASSCOMBINED: Availability of function csin
+PASSCOMBINED: Type of function csin
+PASSCOMBINED: Availability of function csinh
+PASSCOMBINED: Type of function csinh
+PASSCOMBINED: Availability of function csqrt
+PASSCOMBINED: Type of function csqrt
+PASSCOMBINED: Availability of function ctan
+PASSCOMBINED: Type of function ctan
+PASSCOMBINED: Availability of function ctanh
+PASSCOMBINED: Type of function ctanh
+PASSCOMBINED: Availability of function cabsf
+PASSCOMBINED: Type of function cabsf
+PASSCOMBINED: Availability of function cacosf
+PASSCOMBINED: Type of function cacosf
+PASSCOMBINED: Availability of function cacoshf
+PASSCOMBINED: Type of function cacoshf
+PASSCOMBINED: Availability of function cargf
+PASSCOMBINED: Type of function cargf
+PASSCOMBINED: Availability of function casinf
+PASSCOMBINED: Type of function casinf
+PASSCOMBINED: Availability of function casinhf
+PASSCOMBINED: Type of function casinhf
+PASSCOMBINED: Availability of function catanf
+PASSCOMBINED: Type of function catanf
+PASSCOMBINED: Availability of function catanhf
+PASSCOMBINED: Type of function catanhf
+PASSCOMBINED: Availability of function ccosf
+PASSCOMBINED: Type of function ccosf
+PASSCOMBINED: Availability of function ccoshf
+PASSCOMBINED: Type of function ccoshf
+PASSCOMBINED: Availability of function cexpf
+PASSCOMBINED: Type of function cexpf
+PASSCOMBINED: Availability of function cimagf
+PASSCOMBINED: Type of function cimagf
+PASSCOMBINED: Availability of function clogf
+PASSCOMBINED: Type of function clogf
+PASSCOMBINED: Availability of function conjf
+PASSCOMBINED: Type of function conjf
+PASSCOMBINED: Availability of function cpowf
+PASSCOMBINED: Type of function cpowf
+PASSCOMBINED: Availability of function cprojf
+PASSCOMBINED: Type of function cprojf
+PASSCOMBINED: Availability of function crealf
+PASSCOMBINED: Type of function crealf
+PASSCOMBINED: Availability of function csinf
+PASSCOMBINED: Type of function csinf
+PASSCOMBINED: Availability of function csinhf
+PASSCOMBINED: Type of function csinhf
+PASSCOMBINED: Availability of function csqrtf
+PASSCOMBINED: Type of function csqrtf
+PASSCOMBINED: Availability of function ctanf
+PASSCOMBINED: Type of function ctanf
+PASSCOMBINED: Availability of function ctanhf
+PASSCOMBINED: Type of function ctanhf
+PASSCOMBINED: Availability of function cabsl
+PASSCOMBINED: Type of function cabsl
+PASSCOMBINED: Availability of function cacosl
+PASSCOMBINED: Type of function cacosl
+PASSCOMBINED: Availability of function cacoshl
+PASSCOMBINED: Type of function cacoshl
+PASSCOMBINED: Availability of function cargl
+PASSCOMBINED: Type of function cargl
+PASSCOMBINED: Availability of function casinhl
+PASSCOMBINED: Type of function casinhl
+PASSCOMBINED: Availability of function casinl
+PASSCOMBINED: Type of function casinl
+PASSCOMBINED: Availability of function catanhl
+PASSCOMBINED: Type of function catanhl
+PASSCOMBINED: Availability of function catanl
+PASSCOMBINED: Type of function catanl
+PASSCOMBINED: Availability of function ccoshl
+PASSCOMBINED: Type of function ccoshl
+PASSCOMBINED: Availability of function ccosl
+PASSCOMBINED: Type of function ccosl
+PASSCOMBINED: Availability of function cexpl
+PASSCOMBINED: Type of function cexpl
+PASSCOMBINED: Availability of function cimagl
+PASSCOMBINED: Type of function cimagl
+PASSCOMBINED: Availability of function clogl
+PASSCOMBINED: Type of function clogl
+PASSCOMBINED: Availability of function conjl
+PASSCOMBINED: Type of function conjl
+PASSCOMBINED: Availability of function cpowl
+PASSCOMBINED: Type of function cpowl
+PASSCOMBINED: Availability of function cprojl
+PASSCOMBINED: Type of function cprojl
+PASSCOMBINED: Availability of function creall
+PASSCOMBINED: Type of function creall
+PASSCOMBINED: Availability of function csinhl
+PASSCOMBINED: Type of function csinhl
+PASSCOMBINED: Availability of function csinl
+PASSCOMBINED: Type of function csinl
+PASSCOMBINED: Availability of function csqrtl
+PASSCOMBINED: Type of function csqrtl
+PASSCOMBINED: Availability of function ctanhl
+PASSCOMBINED: Type of function ctanhl
+PASSCOMBINED: Availability of function ctanl
+PASSCOMBINED: Type of function ctanl
+PASS: Namespace of <complex.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  139
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

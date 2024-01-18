@@ -1,0 +1,56 @@
+/tmp/tmps366rpym/undef.c:17:1: warning: ‘sighold’ is deprecated: Use the sigprocmask function instead [-Wdeprecated-declarations]
+ void *__glibc_test_sighold = (void *) &sighold;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:355:12: note: declared here
+ extern int sighold (int __sig) __THROW
+            ^~~~~~~
+/tmp/tmps366rpym/undef.c:18:1: warning: ‘sigignore’ is deprecated: Use the signal function instead [-Wdeprecated-declarations]
+ void *__glibc_test_sigignore = (void *) &sigignore;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:363:12: note: declared here
+ extern int sigignore (int __sig) __THROW
+            ^~~~~~~~~
+/tmp/tmps366rpym/undef.c:19:1: warning: ‘siginterrupt’ is deprecated: Use sigaction with SA_RESTART instead [-Wdeprecated-declarations]
+ void *__glibc_test_siginterrupt = (void *) &siginterrupt;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:324:12: note: declared here
+ extern int siginterrupt (int __sig, int __interrupt) __THROW
+            ^~~~~~~~~~~~
+/tmp/tmps366rpym/undef.c:22:1: warning: ‘sigpause’ is deprecated: Use the sigsuspend function instead [-Wdeprecated-declarations]
+ void *__glibc_test_sigpause = (void *) &sigpause;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:151:12: note: declared here
+ extern int sigpause (int __sig) __asm__ ("__xpg_sigpause")
+            ^~~~~~~~
+/tmp/tmps366rpym/undef.c:26:1: warning: ‘sigrelse’ is deprecated: Use the sigprocmask function instead [-Wdeprecated-declarations]
+ void *__glibc_test_sigrelse = (void *) &sigrelse;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:359:12: note: declared here
+ extern int sigrelse (int __sig) __THROW
+            ^~~~~~~~
+/tmp/tmps366rpym/undef.c:27:1: warning: ‘sigset’ is deprecated: Use the signal and sigprocmask functions instead [-Wdeprecated-declarations]
+ void *__glibc_test_sigset = (void *) &sigset;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:367:23: note: declared here
+ extern __sighandler_t sigset (int __sig, __sighandler_t __disp) __THROW
+                       ^~~~~~
+/tmp/tmps366rpym/undef.c:28:1: warning: ‘sigstack’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_sigstack = (void *) &sigstack;
+ ^~~~
+In file included from ../include/signal.h:2,
+                 from /tmp/tmps366rpym/undef.c:1:
+../signal/signal.h:347:12: note: declared here
+ extern int sigstack (struct sigstack *__ss, struct sigstack *__oss)
+            ^~~~~~~~

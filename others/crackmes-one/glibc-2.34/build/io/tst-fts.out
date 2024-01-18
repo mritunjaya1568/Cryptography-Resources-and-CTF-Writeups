@@ -1,0 +1,15 @@
+tst-fts.21AvMV =>
+  12
+  345
+  6789
+  aaa =>
+    1234
+    5678
+  <= aaa
+  bbb =>
+    1234
+    5678
+    90ab
+  <= bbb
+<= tst-fts.21AvMV
+PASS

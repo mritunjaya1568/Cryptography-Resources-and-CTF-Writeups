@@ -1,0 +1,6 @@
+testing long double (without inline functions)
+
+Test suite completed:
+  236 test cases plus 232 tests for exception flags and
+    232 tests for errno executed.
+  All tests passed successfully.

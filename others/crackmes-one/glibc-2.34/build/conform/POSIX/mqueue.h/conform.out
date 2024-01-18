@@ -1,0 +1,45 @@
+PASS: Availability of <mqueue.h>
+PASS: Combined <mqueue.h> test
+PASSCOMBINED: Availability of type mqd_t
+PASSCOMBINED: Availability of type struct sigevent
+PASSCOMBINED: Availability of member sigev_notify
+PASSCOMBINED: Type of member sigev_notify
+PASSCOMBINED: Availability of member sigev_signo
+PASSCOMBINED: Type of member sigev_signo
+PASSCOMBINED: Availability of member sigev_value
+PASSCOMBINED: Type of member sigev_value
+PASSCOMBINED: Availability of member sigev_notify_function
+PASSCOMBINED: Type of member sigev_notify_function
+PASSCOMBINED: Availability of member sigev_notify_attributes
+PASSCOMBINED: Type of member sigev_notify_attributes
+PASSCOMBINED: Availability of type struct mq_attr
+PASSCOMBINED: Availability of member mq_flags
+PASSCOMBINED: Type of member mq_flags
+PASSCOMBINED: Availability of member mq_maxmsg
+PASSCOMBINED: Type of member mq_maxmsg
+PASSCOMBINED: Availability of member mq_msgsize
+PASSCOMBINED: Type of member mq_msgsize
+PASSCOMBINED: Availability of member mq_curmsgs
+PASSCOMBINED: Type of member mq_curmsgs
+PASSCOMBINED: Availability of function mq_close
+PASSCOMBINED: Type of function mq_close
+PASSCOMBINED: Availability of function mq_getattr
+PASSCOMBINED: Type of function mq_getattr
+PASSCOMBINED: Availability of function mq_notify
+PASSCOMBINED: Type of function mq_notify
+PASSCOMBINED: Availability of function mq_open
+PASSCOMBINED: Type of function mq_open
+PASSCOMBINED: Availability of function mq_receive
+PASSCOMBINED: Type of function mq_receive
+PASSCOMBINED: Availability of function mq_send
+PASSCOMBINED: Type of function mq_send
+PASSCOMBINED: Availability of function mq_setattr
+PASSCOMBINED: Type of function mq_setattr
+PASSCOMBINED: Availability of function mq_unlink
+PASSCOMBINED: Type of function mq_unlink
+PASS: Namespace of <mqueue.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   39
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

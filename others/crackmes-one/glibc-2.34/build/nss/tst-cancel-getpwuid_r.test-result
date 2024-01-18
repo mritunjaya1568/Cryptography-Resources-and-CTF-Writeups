@@ -1,0 +1,2 @@
+FAIL: nss/tst-cancel-getpwuid_r
+original exit status 1

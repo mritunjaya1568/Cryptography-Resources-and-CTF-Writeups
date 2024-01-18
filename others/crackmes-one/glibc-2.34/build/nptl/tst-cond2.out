@@ -1,0 +1,85 @@
+&cond = 0x7f329aa5c060
+&mut = 0x7f329aa5c0a0
+create thread 0
+wait for child 0
+child 0: lock
+child 0: sync
+child 0: wait
+create thread 1
+wait for child 1
+child 1: lock
+child 1: sync
+child 1: wait
+create thread 2
+wait for child 2
+child 2: lock
+child 2: sync
+child 2: wait
+create thread 3
+wait for child 3
+child 3: lock
+child 3: sync
+child 3: wait
+create thread 4
+wait for child 4
+child 4: lock
+child 4: sync
+child 4: wait
+create thread 5
+wait for child 5
+child 5: lock
+child 5: sync
+child 5: wait
+create thread 6
+wait for child 6
+child 6: lock
+child 6: sync
+child 6: wait
+create thread 7
+wait for child 7
+child 7: lock
+child 7: sync
+child 7: wait
+create thread 8
+wait for child 8
+child 8: lock
+child 8: sync
+child 8: wait
+create thread 9
+wait for child 9
+child 9: lock
+child 9: sync
+child 9: wait
+get lock outselves
+broadcast
+child 6: woken up
+child 6: done
+join thread 0
+child 2: woken up
+child 2: done
+child 1: woken up
+child 1: done
+child 4: woken up
+child 4: done
+child 5: woken up
+child 5: done
+child 3: woken up
+child 3: done
+child 8: woken up
+child 8: done
+child 9: woken up
+child 9: done
+child 7: woken up
+child 7: done
+child 0: woken up
+child 0: done
+join thread 1
+join thread 2
+join thread 3
+join thread 4
+join thread 5
+join thread 6
+join thread 7
+join thread 8
+join thread 9
+done

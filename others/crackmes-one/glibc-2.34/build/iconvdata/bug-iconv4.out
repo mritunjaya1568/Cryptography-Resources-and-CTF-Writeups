@@ -1,0 +1,8 @@
+EUC-TW: 0xc4a8
+---
+expected 7 (E2BIG), got 7 (Argument list too long)
+---
+EUC-JP: 0xc6f3
+---
+expected 7 (E2BIG), got 7 (Argument list too long)
+---

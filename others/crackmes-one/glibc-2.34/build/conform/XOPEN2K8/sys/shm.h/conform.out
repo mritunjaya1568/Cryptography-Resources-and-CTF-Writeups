@@ -1,0 +1,41 @@
+PASS: Availability of <sys/shm.h>
+PASS: Combined <sys/shm.h> test
+PASSCOMBINED: Availability of constant SHM_RDONLY
+PASSCOMBINED: Availability of symbol SHMLBA
+PASSCOMBINED: Availability of constant SHM_RND
+PASSCOMBINED: Availability of type shmatt_t
+PASSCOMBINED: Availability of type struct shmid_ds
+PASSCOMBINED: Availability of member shm_perm
+PASSCOMBINED: Type of member shm_perm
+PASSCOMBINED: Availability of member shm_segsz
+PASSCOMBINED: Type of member shm_segsz
+PASSCOMBINED: Availability of member shm_lpid
+PASSCOMBINED: Type of member shm_lpid
+PASSCOMBINED: Availability of member shm_cpid
+PASSCOMBINED: Type of member shm_cpid
+PASSCOMBINED: Availability of member shm_nattch
+PASSCOMBINED: Type of member shm_nattch
+PASSCOMBINED: Availability of member shm_atime
+PASSCOMBINED: Type of member shm_atime
+PASSCOMBINED: Availability of member shm_dtime
+PASSCOMBINED: Type of member shm_dtime
+PASSCOMBINED: Availability of member shm_ctime
+PASSCOMBINED: Type of member shm_ctime
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of function shmat
+PASSCOMBINED: Type of function shmat
+PASSCOMBINED: Availability of function shmctl
+PASSCOMBINED: Type of function shmctl
+PASSCOMBINED: Availability of function shmdt
+PASSCOMBINED: Type of function shmdt
+PASSCOMBINED: Availability of function shmget
+PASSCOMBINED: Type of function shmget
+PASS: Namespace of <sys/shm.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   35
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

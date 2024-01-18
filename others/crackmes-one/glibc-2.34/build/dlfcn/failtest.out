@@ -1,0 +1,50 @@
+Round 0: Try loading "a-file-with-this-name-does-not-exist"
+Round 0: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 0: Loaded "failtestmod.so"
+Round 0: Unloaded "failtestmod.so"
+Round 1: Try loading "a-file-with-this-name-does-not-exist"
+Round 1: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 1: Loaded "failtestmod.so"
+Round 1: Unloaded "failtestmod.so"
+Round 2: Try loading "a-file-with-this-name-does-not-exist"
+Round 2: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 2: Loaded "failtestmod.so"
+Round 2: Unloaded "failtestmod.so"
+Round 3: Try loading "a-file-with-this-name-does-not-exist"
+Round 3: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 3: Loaded "failtestmod.so"
+Round 3: Unloaded "failtestmod.so"
+Round 4: Try loading "a-file-with-this-name-does-not-exist"
+Round 4: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 4: Loaded "failtestmod.so"
+Round 4: Unloaded "failtestmod.so"
+Round 5: Try loading "a-file-with-this-name-does-not-exist"
+Round 5: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 5: Loaded "failtestmod.so"
+Round 5: Unloaded "failtestmod.so"
+Round 6: Try loading "a-file-with-this-name-does-not-exist"
+Round 6: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 6: Loaded "failtestmod.so"
+Round 6: Unloaded "failtestmod.so"
+Round 7: Try loading "a-file-with-this-name-does-not-exist"
+Round 7: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 7: Loaded "failtestmod.so"
+Round 7: Unloaded "failtestmod.so"
+Round 8: Try loading "a-file-with-this-name-does-not-exist"
+Round 8: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 8: Loaded "failtestmod.so"
+Round 8: Unloaded "failtestmod.so"
+Round 9: Try loading "a-file-with-this-name-does-not-exist"
+Round 9: loading "a-file-with-this-name-does-not-exist" failed
+called dlsym() to get main
+Round 9: Loaded "failtestmod.so"
+Round 9: Unloaded "failtestmod.so"

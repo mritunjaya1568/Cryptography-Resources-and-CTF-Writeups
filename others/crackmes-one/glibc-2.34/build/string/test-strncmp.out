@@ -1,0 +1,1 @@
+                       	simple_strncmp	stupid_strncmp	__strncmp_avx2	__strncmp_sse42	__strncmp_ssse3	__strncmp_sse2

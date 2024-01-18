@@ -1,0 +1,17 @@
+PASS: Availability of <sys/uio.h>
+PASS: Combined <sys/uio.h> test
+PASSCOMBINED: Availability of type struct iovec
+PASSCOMBINED: Availability of member iov_base
+PASSCOMBINED: Type of member iov_base
+PASSCOMBINED: Availability of member iov_len
+PASSCOMBINED: Type of member iov_len
+PASSCOMBINED: Availability of function readv
+PASSCOMBINED: Type of function readv
+PASSCOMBINED: Availability of function writev
+PASSCOMBINED: Type of function writev
+PASS: Namespace of <sys/uio.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   11
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

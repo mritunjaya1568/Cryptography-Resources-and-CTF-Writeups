@@ -1,0 +1,43 @@
+CODESET = "UTF-8"
+  0: got "       ₀", expected "       ₀"  -> OK
+  1: got "       ₁", expected "       ₁"  -> OK
+  2: got "       ₂", expected "       ₂"  -> OK
+  3: got "       ₃", expected "       ₃"  -> OK
+  4: got "       ₄", expected "       ₄"  -> OK
+  5: got "       ₅", expected "       ₅"  -> OK
+  6: got "       ₆", expected "       ₆"  -> OK
+  7: got "       ₇", expected "       ₇"  -> OK
+  8: got "       ₈", expected "       ₈"  -> OK
+  9: got "       ₉", expected "       ₉"  -> OK
+ 10: got "    ₁₁", expected "    ₁₁"  -> OK
+ 11: got "    ₁₂", expected "    ₁₂"  -> OK
+ 12: got " ₁₂₃", expected " ₁₂₃"  -> OK
+ 13: got " ₁₂₃", expected " ₁₂₃"  -> OK
+ 14: got "₁₂₃₄", expected "₁₂₃₄"  -> OK
+ 15: got "₁,₂₃₄", expected "₁,₂₃₄"  -> OK
+ 16: got "₁₂,₃₄₅", expected "₁₂,₃₄₅"  -> OK
+ 17: got "₁₂₃,₄₅₆", expected "₁₂₃,₄₅₆"  -> OK
+ 18: got "₁,₂₃₄,₅₆₇", expected "₁,₂₃₄,₅₆₇"  -> OK
+0 failures in printf tests
+  0: got "         ₀", expected "         ₀"  -> OK
+  1: got "         ₁", expected "         ₁"  -> OK
+  2: got "         ₂", expected "         ₂"  -> OK
+  3: got "         ₃", expected "         ₃"  -> OK
+  4: got "         ₄", expected "         ₄"  -> OK
+  5: got "         ₅", expected "         ₅"  -> OK
+  6: got "         ₆", expected "         ₆"  -> OK
+  7: got "         ₇", expected "         ₇"  -> OK
+  8: got "         ₈", expected "         ₈"  -> OK
+  9: got "         ₉", expected "         ₉"  -> OK
+ 10: got "        ₁₁", expected "        ₁₁"  -> OK
+ 11: got "        ₁₂", expected "        ₁₂"  -> OK
+ 12: got "       ₁₂₃", expected "       ₁₂₃"  -> OK
+ 13: got "       ₁₂₃", expected "       ₁₂₃"  -> OK
+ 14: got "      ₁₂₃₄", expected "      ₁₂₃₄"  -> OK
+ 15: got "     ₁,₂₃₄", expected "     ₁,₂₃₄"  -> OK
+ 16: got "    ₁₂,₃₄₅", expected "    ₁₂,₃₄₅"  -> OK
+ 17: got "   ₁₂₃,₄₅₆", expected "   ₁₂₃,₄₅₆"  -> OK
+ 18: got " ₁,₂₃₄,₅₆₇", expected " ₁,₂₃₄,₅₆₇"  -> OK
+0 failures in wprintf tests
+0 failures in ctype tests
+0 failures in wctype tests

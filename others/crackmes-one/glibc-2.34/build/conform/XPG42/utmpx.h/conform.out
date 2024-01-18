@@ -1,0 +1,53 @@
+PASS: Availability of <utmpx.h>
+PASS: Combined <utmpx.h> test
+PASSCOMBINED: Availability of type struct utmpx
+PASSCOMBINED: Availability of member ut_user
+PASSCOMBINED: Type of member ut_user
+PASSCOMBINED: Availability of member ut_id
+PASSCOMBINED: Type of member ut_id
+PASSCOMBINED: Availability of member ut_line
+PASSCOMBINED: Type of member ut_line
+PASSCOMBINED: Availability of member ut_pid
+PASSCOMBINED: Type of member ut_pid
+PASSCOMBINED: Availability of member ut_type
+PASSCOMBINED: Type of member ut_type
+PASS: Availability of member ut_tv
+/tmp/tmp_b4b9imx/test.c:4:32: error: conflicting types for ‘b2_6’
+ extern __typeof__ (a2_6.ut_tv) b2_6;
+                                ^~~~
+/tmp/tmp_b4b9imx/test.c:3:23: note: previous declaration of ‘b2_6’ was here
+ extern struct timeval b2_6;
+                       ^~~~
+XFAIL: Type of member ut_tv
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type struct timeval
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_usec
+PASSCOMBINED: Type of member tv_usec
+PASSCOMBINED: Availability of constant EMPTY
+PASSCOMBINED: Availability of constant BOOT_TIME
+PASSCOMBINED: Availability of constant OLD_TIME
+PASSCOMBINED: Availability of constant NEW_TIME
+PASSCOMBINED: Availability of constant USER_PROCESS
+PASSCOMBINED: Availability of constant INIT_PROCESS
+PASSCOMBINED: Availability of constant LOGIN_PROCESS
+PASSCOMBINED: Availability of constant DEAD_PROCESS
+PASSCOMBINED: Availability of function endutxent
+PASSCOMBINED: Type of function endutxent
+PASSCOMBINED: Availability of function getutxent
+PASSCOMBINED: Type of function getutxent
+PASSCOMBINED: Availability of function getutxid
+PASSCOMBINED: Type of function getutxid
+PASSCOMBINED: Availability of function getutxline
+PASSCOMBINED: Type of function getutxline
+PASSCOMBINED: Availability of function pututxline
+PASSCOMBINED: Type of function pututxline
+PASSCOMBINED: Availability of function setutxent
+PASSCOMBINED: Type of function setutxent
+PASS: Namespace of <utmpx.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   41
+  Number of failed tests  :    0
+  Number of xfailed tests :    1
+  Number of skipped tests :    0

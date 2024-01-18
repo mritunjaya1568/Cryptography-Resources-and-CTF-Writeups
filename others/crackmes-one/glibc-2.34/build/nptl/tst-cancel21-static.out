@@ -1,0 +1,4 @@
+sa_flags = 0 test
+sa_flags = SA_ONSTACK test
+sa_flags = SA_SIGINFO test
+sa_flags = SA_SIGINFO|SA_ONSTACK test

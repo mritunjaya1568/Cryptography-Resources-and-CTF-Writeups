@@ -1,0 +1,4 @@
+loaded "ltglobmod1.so" without RTLD_GLOBAL
+about to call `bar'
+bar returned 42
+back in main

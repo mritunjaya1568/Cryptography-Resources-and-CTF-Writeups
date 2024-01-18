@@ -1,0 +1,2 @@
+PASS: elf/tst-getauxval-static
+original exit status 0

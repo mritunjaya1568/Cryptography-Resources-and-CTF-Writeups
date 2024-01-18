@@ -1,0 +1,30 @@
+PASS: Availability of <grp.h>
+PASS: Combined <grp.h> test
+PASSCOMBINED: Availability of type struct group
+PASSCOMBINED: Availability of member gr_name
+PASSCOMBINED: Type of member gr_name
+PASSCOMBINED: Availability of member gr_gid
+PASSCOMBINED: Type of member gr_gid
+PASSCOMBINED: Availability of member gr_mem
+PASSCOMBINED: Type of member gr_mem
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of function getgrgid
+PASSCOMBINED: Type of function getgrgid
+PASSCOMBINED: Availability of function getgrnam
+PASSCOMBINED: Type of function getgrnam
+PASSCOMBINED: Availability of function getgrgid_r
+PASSCOMBINED: Type of function getgrgid_r
+PASSCOMBINED: Availability of function getgrnam_r
+PASSCOMBINED: Type of function getgrnam_r
+PASSCOMBINED: Availability of function getgrent
+PASSCOMBINED: Type of function getgrent
+PASSCOMBINED: Availability of function endgrent
+PASSCOMBINED: Type of function endgrent
+PASSCOMBINED: Availability of function setgrent
+PASSCOMBINED: Type of function setgrent
+PASS: Namespace of <grp.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   24
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

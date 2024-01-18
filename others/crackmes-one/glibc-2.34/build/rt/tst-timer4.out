@@ -1,0 +1,2 @@
+clock_gettime returned timespec = { 1670090209, 752250567 }
+clock_getres returned timespec = { 0, 1 }

@@ -1,0 +1,3 @@
+feof = 0, ferror = 0 immediately after fgets
+fgetc -> EOF (feof = 1, ferror = 0)
+wrote more to file

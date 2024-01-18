@@ -1,0 +1,12 @@
+PASS: Availability of <stdarg.h>
+PASS: Combined <stdarg.h> test
+PASSCOMBINED: Availability of type va_list
+PASSCOMBINED: Availability of macro va_start
+PASSCOMBINED: Availability of macro va_arg
+PASSCOMBINED: Availability of macro va_end
+PASS: Namespace of <stdarg.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    6
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

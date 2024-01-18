@@ -1,0 +1,4 @@
+PASS: termios/check-installed-headers-c
+PASS: termios/check-installed-headers-cxx
+PASS: termios/check-obsolete-constructs
+PASS: termios/check-wrapper-headers

@@ -1,0 +1,12 @@
+PASS: Availability of <libgen.h>
+PASS: Combined <libgen.h> test
+PASSCOMBINED: Availability of function basename
+PASSCOMBINED: Type of function basename
+PASSCOMBINED: Availability of function dirname
+PASSCOMBINED: Type of function dirname
+PASS: Namespace of <libgen.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    6
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

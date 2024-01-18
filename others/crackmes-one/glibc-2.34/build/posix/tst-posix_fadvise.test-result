@@ -1,0 +1,2 @@
+PASS: posix/tst-posix_fadvise
+original exit status 0

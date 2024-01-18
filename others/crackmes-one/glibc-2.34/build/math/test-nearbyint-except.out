@@ -1,0 +1,6 @@
+PASS: float
+PASS: float sNaN
+PASS: double
+PASS: double sNaN
+PASS: long double
+PASS: long double sNaN

@@ -1,0 +1,5 @@
+tst-deep1mod1.c:foo
+tst-deep1mod2.c:bar
+tst-deep1mod3.c:baz
+tst-deep1mod2.c:back
+tst-deep1mod3.c:xyzzy

@@ -1,0 +1,86 @@
+PASS: Availability of <limits.h>
+PASS: Combined <limits.h> test
+PASSCOMBINED: Availability of macro CHAR_BIT
+PASSCOMBINED: Availability of constant CHAR_BIT
+PASSCOMBINED: #if usability of symbol CHAR_BIT
+PASSCOMBINED: Value of symbol CHAR_BIT
+PASSCOMBINED: Availability of macro SCHAR_MIN
+PASSCOMBINED: Availability of constant SCHAR_MIN
+PASSCOMBINED: #if usability of symbol SCHAR_MIN
+PASSCOMBINED: Type of symbol SCHAR_MIN
+PASSCOMBINED: Value of symbol SCHAR_MIN
+PASSCOMBINED: Availability of macro SCHAR_MAX
+PASSCOMBINED: Availability of constant SCHAR_MAX
+PASSCOMBINED: #if usability of symbol SCHAR_MAX
+PASSCOMBINED: Type of symbol SCHAR_MAX
+PASSCOMBINED: Value of symbol SCHAR_MAX
+PASSCOMBINED: Availability of macro UCHAR_MAX
+PASSCOMBINED: Availability of constant UCHAR_MAX
+PASSCOMBINED: #if usability of symbol UCHAR_MAX
+PASSCOMBINED: Type of symbol UCHAR_MAX
+PASSCOMBINED: Value of symbol UCHAR_MAX
+PASSCOMBINED: Availability of macro CHAR_MIN
+PASSCOMBINED: Availability of constant CHAR_MIN
+PASSCOMBINED: #if usability of symbol CHAR_MIN
+PASSCOMBINED: Type of symbol CHAR_MIN
+PASSCOMBINED: Value of symbol CHAR_MIN
+PASSCOMBINED: Availability of macro CHAR_MAX
+PASSCOMBINED: Availability of constant CHAR_MAX
+PASSCOMBINED: #if usability of symbol CHAR_MAX
+PASSCOMBINED: Type of symbol CHAR_MAX
+PASSCOMBINED: Value of symbol CHAR_MAX
+PASSCOMBINED: Availability of macro MB_LEN_MAX
+PASSCOMBINED: Availability of constant MB_LEN_MAX
+PASSCOMBINED: #if usability of symbol MB_LEN_MAX
+PASSCOMBINED: Value of symbol MB_LEN_MAX
+PASSCOMBINED: Availability of macro SHRT_MIN
+PASSCOMBINED: Availability of constant SHRT_MIN
+PASSCOMBINED: #if usability of symbol SHRT_MIN
+PASSCOMBINED: Type of symbol SHRT_MIN
+PASSCOMBINED: Value of symbol SHRT_MIN
+PASSCOMBINED: Availability of macro SHRT_MAX
+PASSCOMBINED: Availability of constant SHRT_MAX
+PASSCOMBINED: #if usability of symbol SHRT_MAX
+PASSCOMBINED: Type of symbol SHRT_MAX
+PASSCOMBINED: Value of symbol SHRT_MAX
+PASSCOMBINED: Availability of macro USHRT_MAX
+PASSCOMBINED: Availability of constant USHRT_MAX
+PASSCOMBINED: #if usability of symbol USHRT_MAX
+PASSCOMBINED: Type of symbol USHRT_MAX
+PASSCOMBINED: Value of symbol USHRT_MAX
+PASSCOMBINED: Availability of macro INT_MAX
+PASSCOMBINED: Availability of constant INT_MAX
+PASSCOMBINED: #if usability of symbol INT_MAX
+PASSCOMBINED: Type of symbol INT_MAX
+PASSCOMBINED: Value of symbol INT_MAX
+PASSCOMBINED: Availability of macro INT_MIN
+PASSCOMBINED: Availability of constant INT_MIN
+PASSCOMBINED: #if usability of symbol INT_MIN
+PASSCOMBINED: Type of symbol INT_MIN
+PASSCOMBINED: Value of symbol INT_MIN
+PASSCOMBINED: Availability of macro UINT_MAX
+PASSCOMBINED: Availability of constant UINT_MAX
+PASSCOMBINED: #if usability of symbol UINT_MAX
+PASSCOMBINED: Type of symbol UINT_MAX
+PASSCOMBINED: Value of symbol UINT_MAX
+PASSCOMBINED: Availability of macro LONG_MAX
+PASSCOMBINED: Availability of constant LONG_MAX
+PASSCOMBINED: #if usability of symbol LONG_MAX
+PASSCOMBINED: Type of symbol LONG_MAX
+PASSCOMBINED: Value of symbol LONG_MAX
+PASSCOMBINED: Availability of macro LONG_MIN
+PASSCOMBINED: Availability of constant LONG_MIN
+PASSCOMBINED: #if usability of symbol LONG_MIN
+PASSCOMBINED: Type of symbol LONG_MIN
+PASSCOMBINED: Value of symbol LONG_MIN
+PASSCOMBINED: Availability of macro ULONG_MAX
+PASSCOMBINED: Availability of constant ULONG_MAX
+PASSCOMBINED: #if usability of symbol ULONG_MAX
+PASSCOMBINED: Type of symbol ULONG_MAX
+PASSCOMBINED: Value of symbol ULONG_MAX
+PASS: Namespace of <limits.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   80
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

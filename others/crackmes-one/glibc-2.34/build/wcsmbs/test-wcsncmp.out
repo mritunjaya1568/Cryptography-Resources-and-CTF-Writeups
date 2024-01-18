@@ -1,0 +1,1 @@
+                       	simple_wcsncmp	stupid_wcsncmp	__wcsncmp_avx2	__wcsncmp_sse2

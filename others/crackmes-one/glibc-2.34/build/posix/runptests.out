@@ -1,0 +1,420 @@
+
+2.8.2  Regular Expression General Requirement
+---------------------------------------------
+regexp: "bb*", string: "abbbc" -> match, OK
+regexp: "bb*", string: "ababbbc" -> match, OK
+regexp: "A#*::", string: "A:A#:qA::qA#::qA##::q" -> match, OK
+regexp: "A#*::", string: "A##::A#::qA::qA#:q" -> match, OK
+
+2.8.3.1.2  BRE Special Characters
+---------------------------------
+
+GA108
+-----
+regexp: "\.", string: "a.c" -> match, OK
+regexp: "\[", string: "a[c" -> match, OK
+regexp: "\\", string: "a\c" -> match, OK
+regexp: "\*", string: "a*c" -> match, OK
+regexp: "\^", string: "a^c" -> match, OK
+regexp: "\$", string: "a$c" -> match, OK
+regexp: "X\*Y\*8", string: "Y*8X*8X*Y*8" -> match, OK
+
+GA109
+-----
+regexp: "[.]", string: "a.c" -> match, OK
+regexp: "[[]", string: "a[c" -> match, OK
+regexp: "[[]", string: "ac" -> no match, OK
+regexp: "[\]", string: "a\c" -> match, OK
+regexp: "[\a]", string: "abc" -> match, OK
+regexp: "[\.]", string: "a\.c" -> match, OK
+regexp: "[\.]", string: "a.\c" -> match, OK
+regexp: "[*]", string: "a*c" -> match, OK
+regexp: "[$]", string: "a$c" -> match, OK
+regexp: "[X*Y8]", string: "7*8YX" -> match, OK
+
+GA110
+-----
+regexp: "*", string: "a*c" -> match, OK
+regexp: "*a", string: "*b*a*c" -> match, OK
+regexp: "**9=", string: "***9=9" -> match, OK
+
+GA111
+-----
+regexp: "^*", string: "*bc" -> match, OK
+regexp: "^*", string: "a*c" -> no match, OK
+regexp: "^*", string: "^*ab" -> no match, OK
+regexp: "^**9=", string: "***9=" -> match, OK
+regexp: "^*5<*9", string: "5<9*5<*9" -> no match, OK
+
+GA112
+-----
+regexp: "\(*b\)", string: "a*b" -> match, OK
+regexp: "\(*b\)", string: "ac" -> no match, OK
+regexp: "A\(**9\)=", string: "A***9=79" -> match, OK
+
+GA113(1)
+--------
+regexp: "\(^*ab\)", string: "*ab" -> match, OK
+regexp: "\(^*ab\)", string: "^*ab" -> no match, OK
+regexp: "\(^*b\)", string: "a*b" -> no match, OK
+regexp: "\(^*b\)", string: "^*b" -> no match, OK
+
+GA114
+-----
+regexp: "a^b", string: "a^b" -> match, OK
+regexp: "a\^b", string: "a^b" -> match, OK
+regexp: "^^", string: "^bc" -> match, OK
+regexp: "\^", string: "a^c" -> match, OK
+regexp: "[c^b]", string: "^abc" -> match, OK
+regexp: "[\^ab]", string: "^ab" -> match, OK
+regexp: "[\^ab]", string: "c\d" -> match, OK
+regexp: "[^^]", string: "^" -> no match, OK
+regexp: "\(a^b\)", string: "a^b" -> match, OK
+regexp: "\(a\^b\)", string: "a^b" -> match, OK
+regexp: "\(\^\)", string: "a^b" -> match, OK
+
+GA115
+-----
+regexp: "$$", string: "ab$" -> match, OK
+regexp: "$$", string: "$ab" -> no match, OK
+regexp: "$c", string: "a$c" -> match, OK
+regexp: "[$]", string: "a$c" -> match, OK
+regexp: "\$a", string: "$a" -> match, OK
+regexp: "\$$", string: "ab$" -> match, OK
+regexp: "A\([34]$[34]\)B", string: "XA4$3BY" -> match, OK
+
+2.8.3.1.3  Periods in BREs
+--------------------------
+
+GA116
+-----
+regexp: ".", string: "abc" -> match, OK
+regexp: ".ab", string: "abc" -> no match, OK
+regexp: "ab.", string: "abc" -> match, OK
+regexp: "a.b", string: "a,b" -> match, OK
+regexp: ".......", string: "PqRs6" -> no match, OK
+regexp: ".......", string: "PqRs6T8" -> match, OK
+
+2.8.3.2  RE Bracket Expression
+------------------------------
+
+GA118
+-----
+regexp: "[abc]", string: "xbyz" -> match, OK
+regexp: "[abc]", string: "xyz" -> no match, OK
+regexp: "[abc]", string: "xbay" -> match, OK
+
+GA119
+-----
+regexp: "[^a]", string: "abc" -> match, OK
+regexp: "[^]cd]", string: "cd]ef" -> match, OK
+regexp: "[^abc]", string: "axyz" -> match, OK
+regexp: "[^abc]", string: "abc" -> no match, OK
+regexp: "[^[.a.]b]", string: "abc" -> match, OK
+regexp: "[^[=a=]b]", string: "abc" -> match, OK
+regexp: "[^-ac]", string: "abcde-" -> match, OK
+regexp: "[^ac-]", string: "abcde-" -> match, OK
+regexp: "[^a-b]", string: "abcde" -> match, OK
+regexp: "[^a-bd-e]", string: "dec" -> match, OK
+regexp: "[^---]", string: "-ab" -> match, OK
+regexp: "[^a-zA-Z0-9]", string: "pqrstVWXYZ23579#" -> match, OK
+
+GA120(1)
+--------
+regexp: "[]a]", string: "cd]ef" -> match, OK
+regexp: "[]-a]", string: "a_b" -> match, OK
+regexp: "[][.-.]-0]", string: "ab0-]" -> match, OK
+regexp: "[]^a-z]", string: "string" -> match, OK
+
+GA120(2)
+--------
+regexp: "[^]cd]", string: "cd]ef" -> match, OK
+regexp: "[^]]*", string: "]]]]]]]]X" -> match, OK
+regexp: "[^]]*", string: "]]]]]]]]" -> match, OK
+regexp: "[^]]\{1,\}", string: "]]]]]]]]X" -> match, OK
+regexp: "[^]]\{1,\}", string: "]]]]]]]]" -> no match, OK
+
+GA120(3)
+--------
+regexp: "[c[.].]d]", string: "ab]cd" -> match, OK
+regexp: "[a-z]*[[.].]][A-Z]*", string: "Abcd]DEFg" -> match, OK
+
+GA121
+-----
+regexp: "[[.a.]b]", string: "Abc" -> match, OK
+regexp: "[[.a.]b]", string: "aBc" -> match, OK
+regexp: "[[.a.]b]", string: "ABc" -> no match, OK
+regexp: "[^[.a.]b]", string: "abc" -> match, OK
+regexp: "[][.-.]-0]", string: "ab0-]" -> match, OK
+regexp: "[A-[.].]c]", string: "ab]!" -> match, OK
+
+GA122
+-----
+regexp: "[[.ch.]]", string: "abc" -> compiling failed, OK
+regexp: "[[.ab.][.CD.][.EF.]]", string: "yZabCDEFQ9" -> compiling failed, OK
+
+GA125
+-----
+regexp: "[[=a=]b]", string: "Abc" -> match, OK
+regexp: "[[=a=]b]", string: "aBc" -> match, OK
+regexp: "[[=a=]b]", string: "ABc" -> no match, OK
+regexp: "[^[=a=]b]", string: "abc" -> match, OK
+
+GA126
+-----
+!!! the expected result for [[:alnum:]]* is 2-7 which is wrong
+regexp: "[[:alnum:]]*", string: " aB28gH" -> match, OK
+regexp: "[[:alnum:]][[:alnum:]]*", string: " aB28gH" -> match, OK
+!!! the expected result for [^[:alnum:]]* is 2-5 which is wrong
+regexp: "[^[:alnum:]]*", string: "2 	,a" -> match, OK
+regexp: "[^[:alnum:]][^[:alnum:]]*", string: "2 	,a" -> match, OK
+!!! the expected result for [[:alpha:]]* is 2-5 which is wrong
+regexp: "[[:alpha:]]*", string: " aBgH2" -> match, OK
+regexp: "[[:alpha:]][[:alpha:]]*", string: " aBgH2" -> match, OK
+regexp: "[^[:alpha:]]*", string: "2 	8,a" -> match, OK
+regexp: "[[:blank:]]*", string: " 	" -> match, OK
+regexp: "[^[:blank:]]*", string: "aB28gH, " -> match, OK
+regexp: "[[:cntrl:]]*", string: "	 " -> match, OK
+regexp: "[^[:cntrl:]]*", string: "aB2 8gh," -> match, OK
+!!! the expected result for [[:digit:]]* is 2-3 which is wrong
+regexp: "[[:digit:]]*", string: "a28" -> match, OK
+regexp: "[[:digit:]][[:digit:]]*", string: "a28" -> match, OK
+regexp: "[^[:digit:]]*", string: "aB 	gH," -> match, OK
+regexp: "[[:graph:]]*", string: "aB28gH, " -> match, OK
+regexp: "[^[:graph:]]*", string: " 	," -> match, OK
+regexp: "[[:lower:]]*", string: "agB" -> match, OK
+regexp: "[^[:lower:]]*", string: "B2 	8H,a" -> match, OK
+regexp: "[[:print:]]*", string: "aB2 8gH,	" -> match, OK
+regexp: "[^[:print:]]*", string: "	 " -> match, OK
+!!! the expected result for [[:punct:]]* is 2-2 which is wrong
+regexp: "[[:punct:]]*", string: "a,2" -> match, OK
+regexp: "[[:punct:]][[:punct:]]*", string: "a,,2" -> match, OK
+regexp: "[^[:punct:]]*", string: "aB2 	8gH" -> match, OK
+regexp: "[[:space:]]*", string: " 	" -> match, OK
+!!! the expected result for [^[:space:]]* is 2-9 which is wrong
+regexp: "[^[:space:]]*", string: " aB28gH,	" -> match, OK
+regexp: "[^[:space:]][^[:space:]]*", string: " aB28gH,	" -> match, OK
+!!! the expected result for [[:upper:]]* is 2-3 which is wrong
+regexp: "[[:upper:]]*", string: "aBH2" -> match, OK
+regexp: "[[:upper:]][[:upper:]]*", string: "aBH2" -> match, OK
+regexp: "[^[:upper:]]*", string: "a2 	8g,B" -> match, OK
+!!! the expected result for [[:xdigit:]]* is 2-5 which is wrong
+regexp: "[[:xdigit:]]*", string: "gaB28h" -> match, OK
+regexp: "[[:xdigit:]][[:xdigit:]]*", string: "gaB28h" -> match, OK
+!!! the expected result for [^[:xdigit:]]* is 2-7 which is wrong
+regexp: "[^[:xdigit:]][^[:xdigit:]]*", string: "a 	gH,2" -> match, OK
+
+GA127
+-----
+regexp: "[b-a]", string: "abc" -> compiling failed, OK
+regexp: "[a-c]", string: "bbccde" -> match, OK
+regexp: "[a-b]", string: "-bc" -> match, OK
+regexp: "[a-z0-9]", string: "AB0" -> match, OK
+regexp: "[^a-b]", string: "abcde" -> match, OK
+regexp: "[^a-bd-e]", string: "dec" -> match, OK
+regexp: "[]-a]", string: "a_b" -> match, OK
+regexp: "[+--]", string: "a,b" -> match, OK
+regexp: "[--/]", string: "a.b" -> match, OK
+regexp: "[^---]", string: "-ab" -> match, OK
+regexp: "[][.-.]-0]", string: "ab0-]" -> match, OK
+regexp: "[A-[.].]c]", string: "ab]!" -> match, OK
+regexp: "bc[d-w]xy", string: "abchxyz" -> match, OK
+
+GA129
+-----
+regexp: "[a-cd-f]", string: "dbccde" -> match, OK
+regexp: "[a-ce-f]", string: "dBCCdE" -> no match, OK
+regexp: "b[n-zA-M]Y", string: "absY9Z" -> match, OK
+regexp: "b[n-zA-M]Y", string: "abGY9Z" -> match, OK
+
+GA130
+-----
+regexp: "[-xy]", string: "ac-" -> match, OK
+regexp: "c[-xy]D", string: "ac-D+" -> match, OK
+regexp: "[--/]", string: "a.b" -> match, OK
+regexp: "c[--/]D", string: "ac.D+b" -> match, OK
+regexp: "[^-ac]", string: "abcde-" -> match, OK
+regexp: "a[^-ac]c", string: "abcde-" -> match, OK
+regexp: "[xy-]", string: "zc-" -> match, OK
+regexp: "c[xy-]7", string: "zc-786" -> match, OK
+regexp: "[^ac-]", string: "abcde-" -> match, OK
+regexp: "a[^ac-]c", string: "5abcde-" -> match, OK
+regexp: "[+--]", string: "a,b" -> match, OK
+regexp: "a[+--]B", string: "Xa,By" -> match, OK
+regexp: "[^---]", string: "-ab" -> match, OK
+regexp: "X[^---]Y", string: "X-YXaYXbY" -> match, OK
+
+2.8.3.3  BREs Matching Multiple Characters
+------------------------------------------
+
+GA131
+-----
+regexp: "cd", string: "abcdeabcde" -> match, OK
+regexp: "ag*b", string: "abcde" -> match, OK
+regexp: "[a-c][e-f]", string: "abcdef" -> no match, OK
+regexp: "[a-c][e-f]", string: "acbedf" -> match, OK
+regexp: "abc*XYZ", string: "890abXYZ#*" -> match, OK
+regexp: "abc*XYZ", string: "890abcXYZ#*" -> match, OK
+regexp: "abc*XYZ", string: "890abcccccccXYZ#*" -> match, OK
+regexp: "abc*XYZ", string: "890abc*XYZ#*" -> no match, OK
+
+GA132
+-----
+regexp: "\(*bc\)", string: "a*bc" -> match, OK
+regexp: "\(ab\)", string: "abcde" -> match, OK
+regexp: "\(a\(b\(c\(d\(e\(f\(g\)h\(i\(j\)\)\)\)\)\)\)\)", string: "abcdefghijk" -> match, OK
+regexp: "43\(2\(6\)*0\)AB", string: "654320ABCD" -> match, OK
+regexp: "43\(2\(7\)*0\)AB", string: "6543270ABCD" -> match, OK
+regexp: "43\(2\(7\)*0\)AB", string: "6543277770ABCD" -> match, OK
+
+GA133
+-----
+regexp: "\(a\(b\(c\(d\(e\(f\(g\)h\(i\(j\)\)\)\)\)\)\)\)", string: "abcdefghijk" -> match, OK
+regexp: "\(a\(b\(c\(d\(e\(f\(g\)h\(i\(k\)\)\)\)\)\)\)\)", string: "abcdefghijk" -> no match, OK
+
+GA134
+-----
+regexp: "\(bb*\)", string: "abbbc" -> match, OK
+regexp: "\(bb*\)", string: "ababbbc" -> match, OK
+regexp: "a\(.*b\)", string: "ababbbc" -> match, OK
+regexp: "a\(b*\)", string: "ababbbc" -> match, OK
+regexp: "a\(.*b\)c", string: "axcaxbbbcsxbbbbbbbbc" -> match, OK
+
+GA135
+-----
+regexp: "\(a\(b\(c\(d\(e\)\)\)\)\)\4", string: "abcdededede" -> match, OK
+!!! POSIX does not really specify whether a\(b\)*c\1 matches acb.
+!!! back references are supposed to expand to the last match, but what
+!!! if there never was a match as in this case?
+regexp: "a\(b\)*c\1", string: "acb" -> no match, OK
+regexp: "\(a\(b\(c\(d\(e\(f\(g\)h\(i\(j\)\)\)\)\)\)\)\)\9", string: "abcdefghijjk" -> match, OK
+
+GA136
+-----
+!!! These two tests have the same problem as the test in GA135.  No match
+!!! of a subexpression, why should the back reference be usable?
+!!! 1 2 a\(b\)*c\1 acb
+!!! 4 7 a\(b\(c\(d\(f\)*\)\)\)\4¦xYzabcdePQRST
+regexp: "a\(b\)*c\1", string: "acb" -> no match, OK
+regexp: "a\(b\(c\(d\(f\)*\)\)\)\4", string: "xYzabcdePQRST" -> no match, OK
+
+GA137
+-----
+regexp: "\(a\(b\)\)\3", string: "foo" -> compiling failed, OK
+regexp: "\(a\(b\)\)\(a\(b\)\)\5", string: "foo" -> compiling failed, OK
+
+GA138
+-----
+regexp: "ag*b", string: "abcde" -> match, OK
+regexp: "a.*b", string: "abababvbabc" -> match, OK
+regexp: "b*c", string: "abbbcdeabbbbbbcde" -> match, OK
+regexp: "bbb*c", string: "abbbcdeabbbbbbcde" -> match, OK
+regexp: "a\(b\)*c\1", string: "abbcbbb" -> match, OK
+regexp: "a\(b\)*c\1", string: "abbdbd" -> no match, OK
+regexp: "\([a-c]*\)\1", string: "abcacdef" -> match, OK
+regexp: "\([a-c]*\)\1", string: "abcabcabcd" -> match, OK
+regexp: "a^*b", string: "ab" -> match, OK
+regexp: "a^*b", string: "a^^^b" -> match, OK
+
+GA139
+-----
+regexp: "a\{2\}", string: "aaaa" -> match, OK
+regexp: "\([a-c]*\)\{0,\}", string: "aabcaab" -> match, OK
+regexp: "\(a\)\1\{1,2\}", string: "aabc" -> match, OK
+regexp: "\(a\)\1\{1,2\}", string: "aaaabc" -> match, OK
+!!! the expression \(\(a\)\1\)\{1,2\} is ill-formed, using \2
+regexp: "\(\(a\)\2\)\{1,2\}", string: "aaaabc" -> match, OK
+
+GA140
+-----
+regexp: "a\{2\}", string: "aaaa" -> match, OK
+regexp: "a\{2\}", string: "abcd" -> no match, OK
+regexp: "a\{0\}", string: "aaaa" -> match, OK
+regexp: "a\{64\}", string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -> match, OK
+
+GA141
+-----
+regexp: "\([a-c]*\)\{0,\}", string: "aabcaab" -> match, OK
+!!! the expected result for \([a-c]*\)\{2,\} is failure which isn't correct
+regexp: "\([a-c]*\)\{2,\}", string: "abcdefg" -> match, OK
+regexp: "\([a-c]*\)\{1,\}", string: "abcdefg" -> match, OK
+regexp: "a\{64,\}", string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -> no match, OK
+
+GA142
+-----
+regexp: "a\{2,3\}", string: "aaaa" -> match, OK
+regexp: "a\{2,3\}", string: "abcd" -> no match, OK
+regexp: "\([a-c]*\)\{0,0\}", string: "foo" -> match, OK
+regexp: "a\{1,63\}", string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" -> match, OK
+
+2.8.3.4  BRE Precedence
+-----------------------
+
+GA143
+-----
+!!! There are numerous bugs in the original version.
+regexp: "\^\[[[.].]]\\(\\1\\)\*\\{1,2\\}\$", string: "a^[]\(\1\)*\{1,2\}$b" -> match, OK
+regexp: "[[=*=]][[=\=]][[=]=]][[===]][[...]][[:punct:]]", string: "*\]=.;" -> match, OK
+regexp: "[$\(*\)^]*", string: "$\()*^" -> match, OK
+regexp: "[\1]", string: "1" -> match, OK
+regexp: "[\{1,2\}]", string: "{" -> match, OK
+!!! the expected result for \(*\)*\1* is 2-2 which isn't correct
+regexp: "\(*\)*\1*", string: "a*b*11" -> match, OK
+regexp: "\(*\)*\1*b", string: "a*b*11" -> match, OK
+!!! the expected result for \(a\(b\{1,2\}\)\{1,2\}\) is 1-5 which isn't correct
+regexp: "\(a\(b\{1,2\}\)\{1,2\}\)", string: "abbab" -> match, OK
+regexp: "\(a\(b\{1,2\}\)\)\{1,2\}", string: "abbab" -> match, OK
+regexp: "^\(^\(^a$\)$\)$", string: "a" -> match, OK
+regexp: "\(a\)\1$", string: "aa" -> match, OK
+regexp: "ab*", string: "abb" -> match, OK
+regexp: "ab\{2,4\}", string: "abbbc" -> match, OK
+
+2.8.3.5  BRE Expression Anchoring
+---------------------------------
+
+GA144
+-----
+regexp: "^a", string: "abc" -> match, OK
+regexp: "^b", string: "abc" -> no match, OK
+regexp: "^[a-zA-Z]", string: "99Nine" -> no match, OK
+regexp: "^[a-zA-Z]*", string: "Nine99" -> match, OK
+
+GA145(1)
+--------
+regexp: "\(^a\)\1", string: "aabc" -> match, OK
+regexp: "\(^a\)\1", string: "^a^abc" -> no match, OK
+regexp: "\(^^a\)", string: "^a" -> match, OK
+regexp: "\(^^\)", string: "^^" -> match, OK
+regexp: "\(^abc\)", string: "abcdef" -> match, OK
+regexp: "\(^def\)", string: "abcdef" -> no match, OK
+
+GA146
+-----
+regexp: "a$", string: "cba" -> match, OK
+regexp: "a$", string: "abc" -> no match, OK
+regexp: "[a-z]*$", string: "99ZZxyz" -> match, OK
+!!! the expected result for [a-z]*$ is failure which isn't correct
+regexp: "[a-z]*$", string: "99ZZxyz99" -> match, OK
+regexp: "$$", string: "ab$" -> match, OK
+regexp: "$$", string: "$ab" -> no match, OK
+regexp: "\$$", string: "ab$" -> match, OK
+
+GA147(1)
+--------
+regexp: "\(a$\)\1", string: "bcaa" -> no match, OK
+regexp: "\(a$\)\1", string: "ba$" -> no match, OK
+regexp: "\(ab$\)", string: "ab$" -> no match, OK
+regexp: "\(ab$\)", string: "ab" -> match, OK
+regexp: "\(def$\)", string: "abcdef" -> match, OK
+regexp: "\(abc$\)", string: "abcdef" -> no match, OK
+
+GA148
+-----
+regexp: "^$", string: "" -> match, OK
+regexp: "^abc$", string: "abc" -> match, OK
+regexp: "^xyz$", string: "^xyz^" -> no match, OK
+regexp: "^234$", string: "^234$" -> no match, OK
+regexp: "^[a-zA-Z0-9]*$", string: "2aA3bB9zZ" -> match, OK
+regexp: "^[a-z0-9]*$", string: "2aA3b#B9zZ" -> no match, OK
+
+326 tests, 0 errors

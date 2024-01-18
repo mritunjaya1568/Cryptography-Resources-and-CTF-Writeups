@@ -1,0 +1,15 @@
+PASS: Availability of <stddef.h>
+PASS: Combined <stddef.h> test
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of macro offsetof
+PASSCOMBINED: Availability of type ptrdiff_t
+PASSCOMBINED: Availability of type wchar_t
+PASSCOMBINED: Availability of type size_t
+PASS: Namespace of <stddef.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    9
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

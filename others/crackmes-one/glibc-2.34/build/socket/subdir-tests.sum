@@ -1,0 +1,7 @@
+PASS: socket/check-installed-headers-c
+PASS: socket/check-installed-headers-cxx
+PASS: socket/check-obsolete-constructs
+PASS: socket/check-wrapper-headers
+PASS: socket/tst-accept4
+PASS: socket/tst-socket-consts
+PASS: socket/tst-sockopt

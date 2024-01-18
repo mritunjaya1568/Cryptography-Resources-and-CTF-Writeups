@@ -1,0 +1,106 @@
+PASS: Availability of <sys/stat.h>
+PASS: Combined <sys/stat.h> test
+PASSCOMBINED: Availability of type dev_t
+PASSCOMBINED: Availability of type ino_t
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type nlink_t
+PASSCOMBINED: Availability of type uid_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type struct stat
+PASSCOMBINED: Availability of member st_dev
+PASSCOMBINED: Type of member st_dev
+PASSCOMBINED: Availability of member st_ino
+PASSCOMBINED: Type of member st_ino
+PASSCOMBINED: Availability of member st_mode
+PASSCOMBINED: Type of member st_mode
+PASSCOMBINED: Availability of member st_nlink
+PASSCOMBINED: Type of member st_nlink
+PASSCOMBINED: Availability of member st_uid
+PASSCOMBINED: Type of member st_uid
+PASSCOMBINED: Availability of member st_gid
+PASSCOMBINED: Type of member st_gid
+PASSCOMBINED: Availability of member st_size
+PASSCOMBINED: Type of member st_size
+PASSCOMBINED: Availability of member st_atime
+PASSCOMBINED: Type of member st_atime
+PASSCOMBINED: Availability of member st_mtime
+PASSCOMBINED: Type of member st_mtime
+PASSCOMBINED: Availability of member st_ctime
+PASSCOMBINED: Type of member st_ctime
+PASSCOMBINED: Availability of member st_atim
+PASSCOMBINED: Type of member st_atim
+PASSCOMBINED: Availability of member st_mtim
+PASSCOMBINED: Type of member st_mtim
+PASSCOMBINED: Availability of member st_ctim
+PASSCOMBINED: Type of member st_ctim
+PASSCOMBINED: Availability of type struct timespec
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_nsec
+PASSCOMBINED: Type of member tv_nsec
+PASSCOMBINED: Availability of constant S_IRWXU
+PASSCOMBINED: Availability of constant S_IRUSR
+PASSCOMBINED: Availability of constant S_IWUSR
+PASSCOMBINED: Availability of constant S_IXUSR
+PASSCOMBINED: Availability of constant S_IRWXG
+PASSCOMBINED: Availability of constant S_IRGRP
+PASSCOMBINED: Availability of constant S_IWGRP
+PASSCOMBINED: Availability of constant S_IXGRP
+PASSCOMBINED: Availability of constant S_IRWXO
+PASSCOMBINED: Availability of constant S_IROTH
+PASSCOMBINED: Availability of constant S_IWOTH
+PASSCOMBINED: Availability of constant S_IXOTH
+PASSCOMBINED: Availability of constant S_ISUID
+PASSCOMBINED: Availability of constant S_ISGID
+PASSCOMBINED: Availability of macro S_ISBLK
+PASSCOMBINED: Availability of macro S_ISCHR
+PASSCOMBINED: Availability of macro S_ISDIR
+PASSCOMBINED: Availability of macro S_ISFIFO
+PASSCOMBINED: Availability of macro S_ISREG
+PASSCOMBINED: Availability of macro S_ISLNK
+PASSCOMBINED: Availability of macro S_ISSOCK
+PASS: Availability of macro S_TYPEISMQ
+PASS: Availability of macro S_TYPEISSEM
+PASS: Availability of macro S_TYPEISSHM
+/tmp/tmp8_ea0c65/test.c:3:3: error: #error "Macro S_TYPEISTMO not defined"
+ # error "Macro S_TYPEISTMO not defined"
+   ^~~~~
+MISSING: Availability of macro S_TYPEISTMO
+PASSCOMBINED: Availability of constant UTIME_NOW
+PASSCOMBINED: Availability of constant UTIME_OMIT
+PASSCOMBINED: Availability of function chmod
+PASSCOMBINED: Type of function chmod
+PASSCOMBINED: Availability of function fchmod
+PASSCOMBINED: Type of function fchmod
+PASSCOMBINED: Availability of function fchmodat
+PASSCOMBINED: Type of function fchmodat
+PASSCOMBINED: Availability of function fstat
+PASSCOMBINED: Type of function fstat
+PASSCOMBINED: Availability of function fstatat
+PASSCOMBINED: Type of function fstatat
+PASSCOMBINED: Availability of function futimens
+PASSCOMBINED: Type of function futimens
+PASSCOMBINED: Availability of function lstat
+PASSCOMBINED: Type of function lstat
+PASSCOMBINED: Availability of function mkdir
+PASSCOMBINED: Type of function mkdir
+PASSCOMBINED: Availability of function mkdirat
+PASSCOMBINED: Type of function mkdirat
+PASSCOMBINED: Availability of function mkfifo
+PASSCOMBINED: Type of function mkfifo
+PASSCOMBINED: Availability of function mkfifoat
+PASSCOMBINED: Type of function mkfifoat
+PASSCOMBINED: Availability of function stat
+PASSCOMBINED: Type of function stat
+PASSCOMBINED: Availability of function umask
+PASSCOMBINED: Type of function umask
+PASSCOMBINED: Availability of function utimensat
+PASSCOMBINED: Type of function utimensat
+PASS: Namespace of <sys/stat.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   97
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

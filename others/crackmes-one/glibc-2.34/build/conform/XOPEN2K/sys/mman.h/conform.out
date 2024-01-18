@@ -1,0 +1,107 @@
+PASS: Availability of <sys/mman.h>
+PASS: Combined <sys/mman.h> test
+PASSCOMBINED: Availability of constant PROT_READ
+PASSCOMBINED: Availability of constant PROT_WRITE
+PASSCOMBINED: Availability of constant PROT_EXEC
+PASSCOMBINED: Availability of constant PROT_NONE
+PASSCOMBINED: Availability of constant MAP_SHARED
+PASSCOMBINED: Availability of constant MAP_PRIVATE
+PASSCOMBINED: Availability of constant MAP_FIXED
+PASSCOMBINED: Availability of constant MS_ASYNC
+PASSCOMBINED: Availability of constant MS_SYNC
+PASSCOMBINED: Availability of constant MS_INVALIDATE
+PASSCOMBINED: Availability of constant MCL_CURRENT
+PASSCOMBINED: Availability of constant MCL_FUTURE
+PASSCOMBINED: Availability of constant MAP_FAILED
+PASSCOMBINED: Availability of constant POSIX_MADV_NORMAL
+PASSCOMBINED: Availability of constant POSIX_MADV_SEQUENTIAL
+PASSCOMBINED: Availability of constant POSIX_MADV_RANDOM
+PASSCOMBINED: Availability of constant POSIX_MADV_WILLNEED
+PASSCOMBINED: Availability of constant POSIX_MADV_DONTNEED
+/tmp/tmp709hrda0/test.c:2:13: error: ‘POSIX_TYPED_MEM_ALLOCATE’ undeclared here (not in a function)
+ __typeof__ (POSIX_TYPED_MEM_ALLOCATE) a_18 = POSIX_TYPED_MEM_ALLOCATE;
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of constant POSIX_TYPED_MEM_ALLOCATE
+/tmp/tmp709hrda0/test.c:2:13: error: ‘POSIX_TYPED_MEM_ALLOCATE_CONTIG’ undeclared here (not in a function)
+ __typeof__ (POSIX_TYPED_MEM_ALLOCATE_CONTIG) a_19 = POSIX_TYPED_MEM_ALLOCATE_CONTIG;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of constant POSIX_TYPED_MEM_ALLOCATE_CONTIG
+/tmp/tmp709hrda0/test.c:2:13: error: ‘POSIX_TYPED_MEM_MAP_ALLOCATABLE’ undeclared here (not in a function)
+ __typeof__ (POSIX_TYPED_MEM_MAP_ALLOCATABLE) a_20 = POSIX_TYPED_MEM_MAP_ALLOCATABLE;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of constant POSIX_TYPED_MEM_MAP_ALLOCATABLE
+PASSCOMBINED: Availability of type mode_t
+/tmp/tmp709hrda0/test.c:2:28: error: storage size of ‘a_22’ isn’t known
+ struct posix_typedmem_info a_22;
+                            ^~~~
+MISSING: Availability of type struct posix_typedmem_info
+/tmp/tmp709hrda0/test.c:4:40: error: invalid use of undefined type ‘struct posix_typedmem_info’
+ extern void xyzzy_23 (__typeof__ (&b_23.posix_tmi_length), __typeof__ (&a_23.posix_tmi_length), unsigned);
+                                        ^
+/tmp/tmp709hrda0/test.c:4:77: error: invalid use of undefined type ‘struct posix_typedmem_info’
+ extern void xyzzy_23 (__typeof__ (&b_23.posix_tmi_length), __typeof__ (&a_23.posix_tmi_length), unsigned);
+                                                                             ^
+/tmp/tmp709hrda0/test.c: In function ‘foobarbaz_23’:
+/tmp/tmp709hrda0/test.c:6:16: error: invalid use of undefined type ‘struct posix_typedmem_info’
+ xyzzy_23 (&a_23.posix_tmi_length, &b_23.posix_tmi_length, sizeof (a_23.posix_tmi_length));
+                ^
+/tmp/tmp709hrda0/test.c:6:40: error: invalid use of undefined type ‘struct posix_typedmem_info’
+ xyzzy_23 (&a_23.posix_tmi_length, &b_23.posix_tmi_length, sizeof (a_23.posix_tmi_length));
+                                        ^
+/tmp/tmp709hrda0/test.c:6:71: error: invalid use of undefined type ‘struct posix_typedmem_info’
+ xyzzy_23 (&a_23.posix_tmi_length, &b_23.posix_tmi_length, sizeof (a_23.posix_tmi_length));
+                                                                       ^
+/tmp/tmp709hrda0/test.c: At top level:
+/tmp/tmp709hrda0/test.c:2:28: error: storage size of ‘a_23’ isn’t known
+ struct posix_typedmem_info a_23;
+                            ^~~~
+/tmp/tmp709hrda0/test.c:3:28: error: storage size of ‘b_23’ isn’t known
+ struct posix_typedmem_info b_23;
+                            ^~~~
+MISSING: Availability of member posix_tmi_length
+PASSCOMBINED: Availability of function posix_madvise
+PASSCOMBINED: Type of function posix_madvise
+/tmp/tmp709hrda0/test.c:2:68: error: ‘posix_mem_offset’ undeclared here (not in a function); did you mean ‘posix_madvise’?
+ int (*foobarbaz_25) (const void*, size_t, off_t*, size_t*, int*) = posix_mem_offset;
+                                                                    ^~~~~~~~~~~~~~~~
+                                                                    posix_madvise
+MISSING: Availability of function posix_mem_offset
+/tmp/tmp709hrda0/test.c:2:34: warning: ‘struct posix_typed_mem_info’ declared inside parameter list will not be visible outside of this definition or declaration
+ int (*foobarbaz_26) (int, struct posix_typed_mem_info*) = posix_typed_mem_get_info;
+                                  ^~~~~~~~~~~~~~~~~~~~
+/tmp/tmp709hrda0/test.c:2:59: error: ‘posix_typed_mem_get_info’ undeclared here (not in a function)
+ int (*foobarbaz_26) (int, struct posix_typed_mem_info*) = posix_typed_mem_get_info;
+                                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of function posix_typed_mem_get_info
+/tmp/tmp709hrda0/test.c:2:47: error: ‘posix_typed_mem_open’ undeclared here (not in a function)
+ int (*foobarbaz_27) (const char*, int, int) = posix_typed_mem_open;
+                                               ^~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of function posix_typed_mem_open
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of function mlock
+PASSCOMBINED: Type of function mlock
+PASSCOMBINED: Availability of function mlockall
+PASSCOMBINED: Type of function mlockall
+PASSCOMBINED: Availability of function mmap
+PASSCOMBINED: Type of function mmap
+PASSCOMBINED: Availability of function mprotect
+PASSCOMBINED: Type of function mprotect
+PASSCOMBINED: Availability of function msync
+PASSCOMBINED: Type of function msync
+PASSCOMBINED: Availability of function munlock
+PASSCOMBINED: Type of function munlock
+PASSCOMBINED: Availability of function munlockall
+PASSCOMBINED: Type of function munlockall
+PASSCOMBINED: Availability of function munmap
+PASSCOMBINED: Type of function munmap
+PASSCOMBINED: Availability of function shm_open
+PASSCOMBINED: Type of function shm_open
+PASSCOMBINED: Availability of function shm_unlink
+PASSCOMBINED: Type of function shm_unlink
+PASS: Namespace of <sys/mman.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   57
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

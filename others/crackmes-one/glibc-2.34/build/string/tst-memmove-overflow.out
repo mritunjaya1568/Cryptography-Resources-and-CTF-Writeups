@@ -1,0 +1,7 @@
+info: testing __memmove_avx_unaligned
+info: testing __memmove_avx_unaligned_erms
+info: testing __memmove_ssse3_back
+info: testing __memmove_ssse3
+info: testing __memmove_erms
+info: testing __memmove_sse2_unaligned
+info: testing __memmove_sse2_unaligned_erms

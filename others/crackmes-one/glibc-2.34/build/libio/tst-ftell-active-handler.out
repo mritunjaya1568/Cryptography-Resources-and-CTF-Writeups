@@ -1,0 +1,84 @@
+Regular mode:
+	ftell: fdopen (file, "w"): old offset = 0, new offset = 6, offset after EOF = 0
+	ftell: fdopen (file, "w+"): old offset = 0, new offset = 6, offset after EOF = 12
+	ftell: fdopen (file, "r+"): old offset = 0, new offset = 6, offset after EOF = 18
+	ftell: fdopen (file, "a"): old offset = 18, new offset = 24
+	ftell: fdopen (file, "a+"): old offset = 0, new offset = 30, offset after EOF = 36
+	ftell: fopen (file, "w"): old offset = 0, new offset = 6, offset after EOF = 0
+	ftell: fopen (file, "w+"): old offset = 0, new offset = 6, offset after EOF = 12
+	ftell: fopen (file, "r+"): old offset = 0, new offset = 6, offset after EOF = 18
+	ftell: fopen (file, "a"): old offset = 18, new offset = 24
+	ftell: fopen (file, "a+"): old offset = 0, new offset = 30, offset after EOF = 36
+	write: fopen (file, "w"): offset = 11
+	write: fopen (file, "w+"): offset = 16
+	write: fopen (file, "r+"): offset = 21
+	write: fdopen (file, "w"): offset = 26
+	write: fdopen (file, "w+"): offset = 31
+	write: fdopen (file, "r+"): offset = 36
+	append: fopen (file, "a"): offset = 42
+	append: fopen (file, "a+"): offset = 48
+	append: fdopen (file, "a"): offset = 54
+	append: fdopen (file, "a+"): offset = 60
+	append: fdopen (file, "a"): O_APPEND: retained current file offset 59, ftello reported correct offset 59
+	rewind: fdopen (file, "w"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "w+"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "r+"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "a"): old offset = 0, new offset = 18
+	rewind: fdopen (file, "a+"): old offset = 0, new offset = 24
+	rewind: fopen (file, "w"): old offset = 0, new offset = 6
+	rewind: fopen (file, "w+"): old offset = 0, new offset = 6
+	rewind: fopen (file, "r+"): old offset = 0, new offset = 6
+	rewind: fopen (file, "a"): old offset = 0, new offset = 18
+	rewind: fopen (file, "a+"): old offset = 0, new offset = 24
+	ftruncate: fopen (file, "r+"): offset = 6
+	ftruncate: fopen (file, "w"): offset = 6
+	ftruncate: fopen (file, "w+"): offset = 6
+	ftruncate: fopen (file, "a"): offset = 6
+	ftruncate: fopen (file, "a+"): offset = 6
+	ftruncate: fdopen (file, "r+"): offset = 6
+	ftruncate: fdopen (file, "w"): offset = 6
+	ftruncate: fdopen (file, "w+"): offset = 6
+	ftruncate: fdopen (file, "a"): offset = 6
+	ftruncate: fdopen (file, "a+"): offset = 6
+Wide mode:
+	ftell: fdopen (file, "w"): old offset = 0, new offset = 6, offset after EOF = 0
+	ftell: fdopen (file, "w+"): old offset = 0, new offset = 6, offset after EOF = 12
+	ftell: fdopen (file, "r+"): old offset = 0, new offset = 6, offset after EOF = 18
+	ftell: fdopen (file, "a"): old offset = 18, new offset = 24
+	ftell: fdopen (file, "a+"): old offset = 0, new offset = 30, offset after EOF = 36
+	ftell: fopen (file, "w"): old offset = 0, new offset = 6, offset after EOF = 0
+	ftell: fopen (file, "w+"): old offset = 0, new offset = 6, offset after EOF = 12
+	ftell: fopen (file, "r+"): old offset = 0, new offset = 6, offset after EOF = 18
+	ftell: fopen (file, "a"): old offset = 18, new offset = 24
+	ftell: fopen (file, "a+"): old offset = 0, new offset = 30, offset after EOF = 36
+	write: fopen (file, "w"): offset = 65
+	write: fopen (file, "w+"): offset = 70
+	write: fopen (file, "r+"): offset = 75
+	write: fdopen (file, "w"): offset = 80
+	write: fdopen (file, "w+"): offset = 85
+	write: fdopen (file, "r+"): offset = 90
+	append: fopen (file, "a"): offset = 96
+	append: fopen (file, "a+"): offset = 102
+	append: fdopen (file, "a"): offset = 108
+	append: fdopen (file, "a+"): offset = 114
+	append: fdopen (file, "a"): O_APPEND: retained current file offset 113, ftello reported correct offset 113
+	rewind: fdopen (file, "w"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "w+"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "r+"): old offset = 0, new offset = 6
+	rewind: fdopen (file, "a"): old offset = 0, new offset = 18
+	rewind: fdopen (file, "a+"): old offset = 0, new offset = 24
+	rewind: fopen (file, "w"): old offset = 0, new offset = 6
+	rewind: fopen (file, "w+"): old offset = 0, new offset = 6
+	rewind: fopen (file, "r+"): old offset = 0, new offset = 6
+	rewind: fopen (file, "a"): old offset = 0, new offset = 18
+	rewind: fopen (file, "a+"): old offset = 0, new offset = 24
+	ftruncate: fopen (file, "r+"): offset = 6
+	ftruncate: fopen (file, "w"): offset = 6
+	ftruncate: fopen (file, "w+"): offset = 6
+	ftruncate: fopen (file, "a"): offset = 6
+	ftruncate: fopen (file, "a+"): offset = 6
+	ftruncate: fdopen (file, "r+"): offset = 6
+	ftruncate: fdopen (file, "w"): offset = 6
+	ftruncate: fdopen (file, "w+"): offset = 6
+	ftruncate: fdopen (file, "a"): offset = 6
+	ftruncate: fdopen (file, "a+"): offset = 6

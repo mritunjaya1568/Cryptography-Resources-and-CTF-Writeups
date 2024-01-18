@@ -1,0 +1,3 @@
+INFO: Exiting...
+INFO: Done.
+PASS: No pthread_rwlock_tryrwlock stalls detected.

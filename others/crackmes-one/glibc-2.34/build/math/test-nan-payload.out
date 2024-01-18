@@ -1,0 +1,47 @@
+PASS: float n123
+PASS: float s123
+PASS: float n456
+PASS: float s456
+PASS: float n123x
+PASS: float nemp
+PASS: float semp
+PASS: float sx
+PASS: float n123 = s123
+PASS: float n456 = s456
+PASS: float nemp = semp
+PASS: float n123x = sx
+PASS: float n123 != n456
+PASS: float n123 != nemp
+PASS: float n123 != n123x
+PASS: float n456 != nemp
+PASS: float n456 != n123x
+PASS: double n123
+PASS: double s123
+PASS: double n456
+PASS: double s456
+PASS: double n123x
+PASS: double nemp
+PASS: double semp
+PASS: double sx
+PASS: double n123 = s123
+PASS: double n456 = s456
+PASS: double nemp = semp
+PASS: double n123x = sx
+PASS: double n123 != n456
+PASS: double n123 != nemp
+PASS: double n123 != n123x
+PASS: double n456 != nemp
+PASS: double n456 != n123x
+PASS: long double n123
+PASS: long double s123
+PASS: long double n456
+PASS: long double s456
+PASS: long double n123x
+PASS: long double nemp
+PASS: long double semp
+PASS: long double sx
+PASS: long double n123 != n456
+PASS: long double n123 != nemp
+PASS: long double n123 != n123x
+PASS: long double n456 != nemp
+PASS: long double n456 != n123x

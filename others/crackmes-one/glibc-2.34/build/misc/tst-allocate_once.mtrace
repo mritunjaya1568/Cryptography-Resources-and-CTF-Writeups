@@ -1,0 +1,7 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__strdup+1e)[0x7fb268b8d3ce] + 0x555555c772a0 0xe
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__strdup+1e)[0x7fb268b8d3ce] + 0x555555c776b0 0xe
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__strdup+1e)[0x7fb268b8d3ce] + 0x555555c776d0 0xc
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__libc_allocate_once_slow+5e)[0x7fb268bfda7e] - 0x555555c776d0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/misc/tst-allocate_once:[0x7fb268d04cc4] - 0x555555c776b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/misc/tst-allocate_once:[0x7fb268d04cce] - 0x555555c772a0

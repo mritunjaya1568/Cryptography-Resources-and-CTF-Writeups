@@ -1,0 +1,20 @@
+PASS: Availability of <uchar.h>
+PASS: Combined <uchar.h> test
+PASSCOMBINED: Availability of type mbstate_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type char16_t
+PASSCOMBINED: Availability of type char32_t
+PASSCOMBINED: Availability of function mbrtoc16
+PASSCOMBINED: Type of function mbrtoc16
+PASSCOMBINED: Availability of function c16rtomb
+PASSCOMBINED: Type of function c16rtomb
+PASSCOMBINED: Availability of function mbrtoc32
+PASSCOMBINED: Type of function mbrtoc32
+PASSCOMBINED: Availability of function c32rtomb
+PASSCOMBINED: Type of function c32rtomb
+PASS: Namespace of <uchar.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

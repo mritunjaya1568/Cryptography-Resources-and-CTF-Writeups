@@ -1,0 +1,23 @@
+PASS: Availability of <errno.h>
+PASS: Combined <errno.h> test
+PASSCOMBINED: Availability of macro EDOM
+PASSCOMBINED: Availability of constant EDOM
+PASSCOMBINED: #if usability of symbol EDOM
+PASSCOMBINED: Type of symbol EDOM
+PASSCOMBINED: Value of symbol EDOM
+PASSCOMBINED: Availability of macro EILSEQ
+PASSCOMBINED: Availability of constant EILSEQ
+PASSCOMBINED: #if usability of symbol EILSEQ
+PASSCOMBINED: Type of symbol EILSEQ
+PASSCOMBINED: Value of symbol EILSEQ
+PASSCOMBINED: Availability of macro ERANGE
+PASSCOMBINED: Availability of constant ERANGE
+PASSCOMBINED: #if usability of symbol ERANGE
+PASSCOMBINED: Type of symbol ERANGE
+PASSCOMBINED: Value of symbol ERANGE
+PASS: Namespace of <errno.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   17
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

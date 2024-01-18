@@ -1,0 +1,42 @@
+info: After allocation:
+<malloc version="1">
+<heap nr="0">
+<sizes>
+</sizes>
+<total type="fast" count="0" size="0"/>
+<total type="rest" count="1" size="132928"/>
+<system type="current" size="859127808"/>
+<system type="max" size="859127808"/>
+<aspace type="total" size="859127808"/>
+<aspace type="mprotect" size="859127808"/>
+</heap>
+<total type="fast" count="0" size="0"/>
+<total type="rest" count="1" size="132928"/>
+<total type="mmap" count="0" size="0"/>
+<system type="current" size="859127808"/>
+<system type="max" size="859127808"/>
+<aspace type="total" size="859127808"/>
+<aspace type="mprotect" size="859127808"/>
+</malloc>
+
+info: After deallocation:
+<malloc version="1">
+<heap nr="0">
+<sizes>
+  <size from="49" to="64" total="858993664" count="13421776"/>
+</sizes>
+<total type="fast" count="13421776" size="858993664"/>
+<total type="rest" count="1" size="132928"/>
+<system type="current" size="859127808"/>
+<system type="max" size="859127808"/>
+<aspace type="total" size="859127808"/>
+<aspace type="mprotect" size="859127808"/>
+</heap>
+<total type="fast" count="13421776" size="858993664"/>
+<total type="rest" count="1" size="132928"/>
+<total type="mmap" count="0" size="0"/>
+<system type="current" size="859127808"/>
+<system type="max" size="859127808"/>
+<aspace type="total" size="859127808"/>
+<aspace type="mprotect" size="859127808"/>
+</malloc>

@@ -1,0 +1,2 @@
+FAIL: malloc/tst-malloc-stats-cancellation-malloc-check
+original exit status 1

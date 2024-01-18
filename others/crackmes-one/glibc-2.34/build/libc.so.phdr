@@ -1,0 +1,39 @@
+
+Elf file type is DYN (Shared object file)
+Entry point 0x2d770
+There are 14 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000000040 0x0000000000000040 0x000310 0x000310 R   0x8
+  INTERP         0x1bfc40 0x00000000001bfc40 0x00000000001bfc40 0x000055 0x000055 R   0x20
+      [Requesting program interpreter: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/ld-linux-x86-64.so.2]
+  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x02bd18 0x02bd18 R   0x1000
+  LOAD           0x02c000 0x000000000002c000 0x000000000002c000 0x16df07 0x16df07 R E 0x1000
+  LOAD           0x19a000 0x000000000019a000 0x000000000019a000 0x054805 0x054805 R   0x1000
+  LOAD           0x1ef780 0x00000000001f0780 0x00000000001f0780 0x004f50 0x012510 RW  0x1000
+  DYNAMIC        0x1f1bc0 0x00000000001f2bc0 0x00000000001f2bc0 0x0001d0 0x0001d0 RW  0x8
+  NOTE           0x000350 0x0000000000000350 0x0000000000000350 0x000030 0x000030 R   0x8
+  NOTE           0x000380 0x0000000000000380 0x0000000000000380 0x000044 0x000044 R   0x4
+  TLS            0x1ef780 0x00000000001f0780 0x00000000001f0780 0x000010 0x000090 R   0x8
+  GNU_PROPERTY   0x000350 0x0000000000000350 0x0000000000000350 0x000030 0x000030 R   0x8
+  GNU_EH_FRAME   0x1bfc98 0x00000000001bfc98 0x00000000001bfc98 0x0073e4 0x0073e4 R   0x4
+  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10
+  GNU_RELRO      0x1ef780 0x00000000001f0780 0x00000000001f0780 0x002880 0x002880 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .interp 
+   02     .note.gnu.property .note.gnu.build-id .note.ABI-tag .hash .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_d .gnu.version_r .rela.dyn .rela.plt 
+   03     .plt .plt.got .plt.sec .text __libc_freeres_fn 
+   04     .rodata .interp .eh_frame_hdr .eh_frame .gcc_except_table 
+   05     .tdata .init_array .data.rel.ro .dynamic .got .got.plt .data __libc_subfreeres __libc_IO_vtables __libc_atexit .bss __libc_freeres_ptrs 
+   06     .dynamic 
+   07     .note.gnu.property 
+   08     .note.gnu.build-id .note.ABI-tag 
+   09     .tdata .tbss 
+   10     .note.gnu.property 
+   11     .eh_frame_hdr 
+   12     
+   13     .tdata .init_array .data.rel.ro .dynamic .got 

@@ -1,0 +1,46 @@
+version: 1
+objopen: 0, 
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2
+activity: add
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+symbind64: symname=calloc, st_value=0x7f101cb907e0, ndx=2921, flags=8
+symbind64: symname=free, st_value=0x7f101cb90010, ndx=1468, flags=8
+symbind64: symname=malloc, st_value=0x7f101cb8fac0, ndx=375, flags=8
+symbind64: symname=realloc, st_value=0x7f101cb90240, ndx=1934, flags=8
+symbind64: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f101d023740, ndx=20, flags=0
+activity: consistent
+preinit
+symbind64: symname=mtrace, st_value=0x7f101cb91450, ndx=2059, flags=0
+pltenter: symname=mtrace, st_value=0x7f101cb91450, ndx=2059, flags=0
+symbind64: symname=getcwd, st_value=0x7f101cbf4250, ndx=2310, flags=0
+pltenter: symname=getcwd, st_value=0x7f101cbf4250, ndx=2310, flags=0
+symbind64: symname=realloc, st_value=0x7f101cb90240, ndx=1934, flags=0
+pltenter: symname=realloc, st_value=0x7f101cb90240, ndx=1934, flags=0
+symbind64: symname=puts, st_value=0x7f101cb6f3b0, ndx=1425, flags=0
+pltenter: symname=puts, st_value=0x7f101cb6f3b0, ndx=1425, flags=0
+symbind64: symname=free, st_value=0x7f101cb90010, ndx=1468, flags=0
+pltenter: symname=free, st_value=0x7f101cb90010, ndx=1468, flags=0
+objclose
+objclose
+objclose
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/elf

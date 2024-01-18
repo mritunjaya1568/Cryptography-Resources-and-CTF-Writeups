@@ -1,0 +1,2 @@
+PASS: nptl/tst-pthread_exit-nothreads-static
+original exit status 0

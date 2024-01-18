@@ -1,0 +1,40 @@
+
+new locale: "C"
+swscanf ("aabbccddaabb", "%[abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[abc]", ...) OK
+swscanf ("aabbccddaabb", "%[^def]", ...) OK
+swscanf ("aabbccddaabb", "%l[^def]", ...) OK
+swscanf ("aabbccddaabb", "%[^abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[^abc]", ...) OK
+swscanf ("aabbccddaabb", "%[a-c]", ...) OK
+swscanf ("aabbccddaabb", "%l[a-c]", ...) OK
+swscanf ("aabbccddaabb", "%[^d-f]", ...) OK
+swscanf ("aabbccddaabb", "%l[^d-f]", ...) OK
+swscanf ("aabbccddaabb", "%[^a-c]", ...) OK
+swscanf ("aabbccddaabb", "%l[^a-c]", ...) OK
+swscanf ("bbccddaabb", "%[^a-c]", ...) OK
+swscanf ("bbccddaabb", "%l[^a-c]", ...) OK
+
+new locale: "de_DE.ISO-8859-1"
+swscanf ("aabbccddaabb", "%[abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[abc]", ...) OK
+swscanf ("aabbccddaabb", "%[^def]", ...) OK
+swscanf ("aabbccddaabb", "%l[^def]", ...) OK
+swscanf ("aabbccddaabb", "%[^abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[^abc]", ...) OK
+
+new locale: "de_DE.UTF-8"
+swscanf ("aabbccddaabb", "%[abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[abc]", ...) OK
+swscanf ("aabbccddaabb", "%[^def]", ...) OK
+swscanf ("aabbccddaabb", "%l[^def]", ...) OK
+swscanf ("aabbccddaabb", "%[^abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[^abc]", ...) OK
+
+new locale: "ja_JP.EUC-JP"
+swscanf ("aabbccddaabb", "%[abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[abc]", ...) OK
+swscanf ("aabbccddaabb", "%[^def]", ...) OK
+swscanf ("aabbccddaabb", "%l[^def]", ...) OK
+swscanf ("aabbccddaabb", "%[^abc]", ...) OK
+swscanf ("aabbccddaabb", "%l[^abc]", ...) OK

@@ -1,0 +1,2 @@
+PASS: wcsmbs/tst-wcstod-nan-sign
+original exit status 0

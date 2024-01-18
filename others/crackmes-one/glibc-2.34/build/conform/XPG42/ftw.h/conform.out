@@ -1,0 +1,27 @@
+PASS: Availability of <ftw.h>
+PASS: Combined <ftw.h> test
+PASSCOMBINED: Availability of type struct FTW
+PASSCOMBINED: Availability of member base
+PASSCOMBINED: Type of member base
+PASSCOMBINED: Availability of member level
+PASSCOMBINED: Type of member level
+PASSCOMBINED: Availability of macro FTW_F
+PASSCOMBINED: Availability of macro FTW_D
+PASSCOMBINED: Availability of macro FTW_DNR
+PASSCOMBINED: Availability of macro FTW_NS
+PASSCOMBINED: Availability of macro FTW_SL
+PASSCOMBINED: Availability of macro FTW_SLN
+PASSCOMBINED: Availability of macro FTW_PHYS
+PASSCOMBINED: Availability of macro FTW_MOUNT
+PASSCOMBINED: Availability of macro FTW_DEPTH
+PASSCOMBINED: Availability of macro FTW_CHDIR
+PASSCOMBINED: Availability of function ftw
+PASSCOMBINED: Type of function ftw
+PASSCOMBINED: Availability of function nftw
+PASSCOMBINED: Type of function nftw
+PASS: Namespace of <ftw.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   21
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

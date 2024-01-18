@@ -1,0 +1,8 @@
+-R .gnu.glibc-stub.sigreturn
+-R .gnu.glibc-stub.revoke
+-R .gnu.glibc-stub.gtty
+-R .gnu.glibc-stub.stty
+-R .gnu.glibc-stub.chflags
+-R .gnu.glibc-stub.fchflags
+-R .gnu.glibc-stub.__compat_bdflush
+-R .gnu.glibc-stub.setlogin

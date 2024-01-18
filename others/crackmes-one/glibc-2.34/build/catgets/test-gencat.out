@@ -1,0 +1,8 @@
+LC_MESSAGES = ja_JP.SJIS
+sample1:ABCDEF:
+sample2:日本語:
+sample3:予定表:
+sample4:TEST	TAB:
+sample5:機能	十種類:
+double slash\
+another line

@@ -1,0 +1,6 @@
+PASS: nptl_db/check-abi-libthread_db
+PASS: nptl_db/check-installed-headers-c
+PASS: nptl_db/check-installed-headers-cxx
+PASS: nptl_db/check-obsolete-constructs
+PASS: nptl_db/check-wrapper-headers
+PASS: nptl_db/db-symbols

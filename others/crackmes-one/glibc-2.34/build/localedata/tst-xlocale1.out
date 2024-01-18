@@ -1,0 +1,10 @@
+
+strcasecmp_l ("TRANSLIT", "translit", loc)
+
+strcasecmp_l ("TRANSLIT", "translit", loc)
+
+strcasecmp_l ("TRANSLIT", "trÄnslit", loc)
+
+strcasecmp_l ("TRANSLIT", "translit", loc)
+
+strcasecmp_l ("ä", "Ä", loc)

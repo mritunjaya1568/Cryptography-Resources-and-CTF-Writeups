@@ -1,0 +1,2 @@
+PASS: malloc/tst-free-errno-mcheck
+original exit status 0

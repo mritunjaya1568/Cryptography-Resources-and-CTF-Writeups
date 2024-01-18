@@ -1,0 +1,50 @@
+PASS: Availability of <cpio.h>
+PASS: Combined <cpio.h> test
+PASSCOMBINED: Availability of constant C_IRUSR
+PASSCOMBINED: Value of symbol C_IRUSR
+PASSCOMBINED: Availability of constant C_IWUSR
+PASSCOMBINED: Value of symbol C_IWUSR
+PASSCOMBINED: Availability of constant C_IXUSR
+PASSCOMBINED: Value of symbol C_IXUSR
+PASSCOMBINED: Availability of constant C_IRGRP
+PASSCOMBINED: Value of symbol C_IRGRP
+PASSCOMBINED: Availability of constant C_IWGRP
+PASSCOMBINED: Value of symbol C_IWGRP
+PASSCOMBINED: Availability of constant C_IXGRP
+PASSCOMBINED: Value of symbol C_IXGRP
+PASSCOMBINED: Availability of constant C_IROTH
+PASSCOMBINED: Value of symbol C_IROTH
+PASSCOMBINED: Availability of constant C_IWOTH
+PASSCOMBINED: Value of symbol C_IWOTH
+PASSCOMBINED: Availability of constant C_IXOTH
+PASSCOMBINED: Value of symbol C_IXOTH
+PASSCOMBINED: Availability of constant C_ISUID
+PASSCOMBINED: Value of symbol C_ISUID
+PASSCOMBINED: Availability of constant C_ISGID
+PASSCOMBINED: Value of symbol C_ISGID
+PASSCOMBINED: Availability of constant C_ISVTX
+PASSCOMBINED: Value of symbol C_ISVTX
+PASSCOMBINED: Availability of constant C_ISDIR
+PASSCOMBINED: Value of symbol C_ISDIR
+PASSCOMBINED: Availability of constant C_ISFIFO
+PASSCOMBINED: Value of symbol C_ISFIFO
+PASSCOMBINED: Availability of constant C_ISREG
+PASSCOMBINED: Value of symbol C_ISREG
+PASSCOMBINED: Availability of constant C_ISBLK
+PASSCOMBINED: Value of symbol C_ISBLK
+PASSCOMBINED: Availability of constant C_ISCHR
+PASSCOMBINED: Value of symbol C_ISCHR
+PASSCOMBINED: Availability of constant C_ISCTG
+PASSCOMBINED: Value of symbol C_ISCTG
+PASSCOMBINED: Availability of constant C_ISLNK
+PASSCOMBINED: Value of symbol C_ISLNK
+PASSCOMBINED: Availability of constant C_ISSOCK
+PASSCOMBINED: Value of symbol C_ISSOCK
+PASSCOMBINED: Availability of macro MAGIC
+PASS: Value of macro MAGIC
+PASS: Namespace of <cpio.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   44
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

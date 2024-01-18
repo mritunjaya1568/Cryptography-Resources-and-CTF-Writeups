@@ -1,0 +1,2 @@
+PASS: conform/POSIX/setjmp.h/linknamespace
+original exit status 0

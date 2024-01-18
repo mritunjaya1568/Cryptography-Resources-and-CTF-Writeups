@@ -1,0 +1,39 @@
+PASS: Availability of <sys/statvfs.h>
+PASS: Combined <sys/statvfs.h> test
+PASSCOMBINED: Availability of type struct statvfs
+PASSCOMBINED: Availability of member f_bsize
+PASSCOMBINED: Type of member f_bsize
+PASSCOMBINED: Availability of member f_frsize
+PASSCOMBINED: Type of member f_frsize
+PASSCOMBINED: Availability of member f_blocks
+PASSCOMBINED: Type of member f_blocks
+PASSCOMBINED: Availability of member f_bfree
+PASSCOMBINED: Type of member f_bfree
+PASSCOMBINED: Availability of member f_bavail
+PASSCOMBINED: Type of member f_bavail
+PASSCOMBINED: Availability of member f_files
+PASSCOMBINED: Type of member f_files
+PASSCOMBINED: Availability of member f_ffree
+PASSCOMBINED: Type of member f_ffree
+PASSCOMBINED: Availability of member f_favail
+PASSCOMBINED: Type of member f_favail
+PASSCOMBINED: Availability of member f_fsid
+PASSCOMBINED: Type of member f_fsid
+PASSCOMBINED: Availability of member f_flag
+PASSCOMBINED: Type of member f_flag
+PASSCOMBINED: Availability of member f_namemax
+PASSCOMBINED: Type of member f_namemax
+PASSCOMBINED: Availability of type fsblkcnt_t
+PASSCOMBINED: Availability of type fsfilcnt_t
+PASSCOMBINED: Availability of constant ST_RDONLY
+PASSCOMBINED: Availability of constant ST_NOSUID
+PASSCOMBINED: Availability of function statvfs
+PASSCOMBINED: Type of function statvfs
+PASSCOMBINED: Availability of function fstatvfs
+PASSCOMBINED: Type of function fstatvfs
+PASS: Namespace of <sys/statvfs.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   33
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

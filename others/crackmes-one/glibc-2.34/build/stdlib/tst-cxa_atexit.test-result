@@ -1,0 +1,2 @@
+PASS: stdlib/tst-cxa_atexit
+original exit status 0

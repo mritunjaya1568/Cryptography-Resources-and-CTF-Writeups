@@ -1,0 +1,11 @@
+# normal mode
+loader cannot load itself
+# exit status 127
+# list mode
+	statically linked
+# exit status 0
+# verify mode
+# exit status 2
+# trace mode
+	statically linked
+# exit status 0

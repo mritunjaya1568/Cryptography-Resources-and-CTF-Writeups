@@ -1,0 +1,5 @@
+PASS: intl/check-installed-headers-c
+PASS: intl/check-installed-headers-cxx
+PASS: intl/check-obsolete-constructs
+PASS: intl/check-wrapper-headers
+PASS: intl/tst-ngettext

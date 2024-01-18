@@ -1,0 +1,19 @@
+PASS: Availability of <iso646.h>
+PASS: Combined <iso646.h> test
+PASSCOMBINED: Availability of macro and
+PASSCOMBINED: Availability of macro and_eq
+PASSCOMBINED: Availability of macro bitand
+PASSCOMBINED: Availability of macro bitor
+PASSCOMBINED: Availability of macro compl
+PASSCOMBINED: Availability of macro not
+PASSCOMBINED: Availability of macro not_eq
+PASSCOMBINED: Availability of macro or
+PASSCOMBINED: Availability of macro or_eq
+PASSCOMBINED: Availability of macro xor
+PASSCOMBINED: Availability of macro xor_eq
+PASS: Namespace of <iso646.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   13
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

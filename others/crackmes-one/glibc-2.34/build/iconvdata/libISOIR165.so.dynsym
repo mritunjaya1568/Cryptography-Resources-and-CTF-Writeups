@@ -1,0 +1,11 @@
+
+Symbol table '.dynsym' contains 8 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     2: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     3: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+     4: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
+     5: 0000000000006520 29852 OBJECT  GLOBAL DEFAULT   16 __isoir165_from_tab
+     6: 000000000000d9c0  4152 OBJECT  GLOBAL DEFAULT   16 __isoir165_from_idx
+     7: 0000000000002000 17672 OBJECT  GLOBAL DEFAULT   16 __isoir165_to_tab

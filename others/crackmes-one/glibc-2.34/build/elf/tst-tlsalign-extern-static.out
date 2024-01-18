@@ -1,0 +1,6 @@
+tdata1 TLS address 0xcbf014 % 4 = 0
+tdata2 TLS address 0xcbf010 % 16 = 0
+tdata3 TLS address 0xcbf000 % 4096 = 0
+tbss1 TLS address 0xcc0014 % 4 = 0
+tbss2 TLS address 0xcc0010 % 16 = 0
+tbss3 TLS address 0xcc0000 % 4096 = 0

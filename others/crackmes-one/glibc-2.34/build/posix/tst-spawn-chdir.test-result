@@ -1,0 +1,2 @@
+PASS: posix/tst-spawn-chdir
+original exit status 0

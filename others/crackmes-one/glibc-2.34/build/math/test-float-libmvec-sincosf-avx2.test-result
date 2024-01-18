@@ -1,0 +1,2 @@
+PASS: math/test-float-libmvec-sincosf-avx2
+original exit status 0

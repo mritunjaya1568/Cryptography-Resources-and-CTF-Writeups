@@ -1,0 +1,2 @@
+PASS: stdio-common/tst-vfprintf-mbs-prec
+original exit status 0

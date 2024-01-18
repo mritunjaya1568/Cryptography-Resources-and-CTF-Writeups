@@ -1,0 +1,20 @@
+PASS: Availability of <stdalign.h>
+PASS: Combined <stdalign.h> test
+PASSCOMBINED: Availability of macro alignas
+PASSCOMBINED: Availability of macro alignof
+PASSCOMBINED: Availability of macro __alignas_is_defined
+PASSCOMBINED: Availability of constant __alignas_is_defined
+PASSCOMBINED: #if usability of symbol __alignas_is_defined
+PASSCOMBINED: Type of symbol __alignas_is_defined
+PASSCOMBINED: Value of symbol __alignas_is_defined
+PASSCOMBINED: Availability of macro __alignof_is_defined
+PASSCOMBINED: Availability of constant __alignof_is_defined
+PASSCOMBINED: #if usability of symbol __alignof_is_defined
+PASSCOMBINED: Type of symbol __alignof_is_defined
+PASSCOMBINED: Value of symbol __alignof_is_defined
+PASS: Namespace of <stdalign.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

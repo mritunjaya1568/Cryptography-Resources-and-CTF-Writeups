@@ -1,0 +1,110 @@
+PASS: Availability of <fcntl.h>
+PASS: Combined <fcntl.h> test
+PASSCOMBINED: Availability of constant F_DUPFD
+PASSCOMBINED: Availability of constant F_GETFD
+PASSCOMBINED: Availability of constant F_SETFD
+PASSCOMBINED: Availability of constant F_GETFL
+PASSCOMBINED: Availability of constant F_SETFL
+PASSCOMBINED: Availability of constant F_GETLK
+PASSCOMBINED: Availability of constant F_SETLK
+PASSCOMBINED: Availability of constant F_SETLKW
+PASSCOMBINED: Availability of constant F_GETOWN
+PASSCOMBINED: Availability of constant F_SETOWN
+PASSCOMBINED: Availability of constant FD_CLOEXEC
+PASSCOMBINED: Availability of constant F_RDLCK
+PASSCOMBINED: Availability of constant F_UNLCK
+PASSCOMBINED: Availability of constant F_WRLCK
+PASSCOMBINED: Availability of constant SEEK_SET
+PASSCOMBINED: Availability of constant SEEK_CUR
+PASSCOMBINED: Availability of constant SEEK_END
+PASSCOMBINED: Availability of constant O_CREAT
+PASSCOMBINED: Availability of constant O_EXCL
+PASSCOMBINED: Availability of constant O_NOCTTY
+PASSCOMBINED: Availability of constant O_TRUNC
+PASSCOMBINED: Availability of constant O_APPEND
+PASSCOMBINED: Availability of constant O_NONBLOCK
+PASSCOMBINED: Availability of constant O_SYNC
+PASSCOMBINED: Availability of constant O_DSYNC
+PASSCOMBINED: Availability of constant O_RSYNC
+PASSCOMBINED: Availability of constant O_ACCMODE
+PASSCOMBINED: Availability of constant O_RDONLY
+PASSCOMBINED: Availability of constant O_RDWR
+PASSCOMBINED: Availability of constant O_WRONLY
+PASSCOMBINED: Availability of constant S_IRWXU
+PASSCOMBINED: Availability of constant S_IRUSR
+PASSCOMBINED: Availability of constant S_IWUSR
+PASSCOMBINED: Availability of constant S_IXUSR
+PASSCOMBINED: Availability of constant S_IRWXG
+PASSCOMBINED: Availability of constant S_IRGRP
+PASSCOMBINED: Availability of constant S_IWGRP
+PASSCOMBINED: Availability of constant S_IXGRP
+PASSCOMBINED: Availability of constant S_IRWXO
+PASSCOMBINED: Availability of constant S_IROTH
+PASSCOMBINED: Availability of constant S_IWOTH
+PASSCOMBINED: Availability of constant S_IXOTH
+PASSCOMBINED: Availability of constant S_ISUID
+PASSCOMBINED: Availability of constant S_ISGID
+PASSCOMBINED: Availability of constant S_ISVTX
+PASSCOMBINED: Availability of constant POSIX_FADV_NORMAL
+PASSCOMBINED: Availability of constant POSIX_FADV_SEQUENTIAL
+PASSCOMBINED: Availability of constant POSIX_FADV_RANDOM
+PASSCOMBINED: Availability of constant POSIX_FADV_WILLNEED
+PASSCOMBINED: Availability of constant POSIX_FADV_DONTNEED
+PASSCOMBINED: Availability of constant POSIX_FADV_NOREUSE
+PASSCOMBINED: Availability of type struct flock
+PASSCOMBINED: Availability of member l_type
+PASSCOMBINED: Type of member l_type
+PASSCOMBINED: Availability of member l_whence
+PASSCOMBINED: Type of member l_whence
+PASSCOMBINED: Availability of member l_start
+PASSCOMBINED: Type of member l_start
+PASSCOMBINED: Availability of member l_len
+PASSCOMBINED: Type of member l_len
+PASSCOMBINED: Availability of member l_pid
+PASSCOMBINED: Type of member l_pid
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of function creat
+PASSCOMBINED: Type of function creat
+PASSCOMBINED: Availability of function fcntl
+PASSCOMBINED: Type of function fcntl
+PASSCOMBINED: Availability of function open
+PASSCOMBINED: Type of function open
+PASSCOMBINED: Availability of function openat
+PASSCOMBINED: Type of function openat
+PASSCOMBINED: Availability of function posix_fadvise
+PASSCOMBINED: Type of function posix_fadvise
+PASSCOMBINED: Availability of function posix_fallocate
+PASSCOMBINED: Type of function posix_fallocate
+/tmp/tmpxi8cnzqb/test.c:2:13: error: ‘O_TTY_INIT’ undeclared here (not in a function)
+ __typeof__ (O_TTY_INIT) a_66 = O_TTY_INIT;
+             ^~~~~~~~~~
+XFAIL: Availability of constant O_TTY_INIT
+PASSCOMBINED: Availability of constant O_CLOEXEC
+/tmp/tmpxi8cnzqb/test.c:2:13: error: ‘O_EXEC’ undeclared here (not in a function); did you mean ‘O_EXCL’?
+ __typeof__ (O_EXEC) a_68 = O_EXEC;
+             ^~~~~~
+             O_EXCL
+XFAIL: Availability of constant O_EXEC
+/tmp/tmpxi8cnzqb/test.c:2:13: error: ‘O_SEARCH’ undeclared here (not in a function); did you mean ‘O_EXCL’?
+ __typeof__ (O_SEARCH) a_69 = O_SEARCH;
+             ^~~~~~~~
+             O_EXCL
+XFAIL: Availability of constant O_SEARCH
+PASSCOMBINED: Availability of constant O_DIRECTORY
+PASSCOMBINED: Availability of constant O_NOFOLLOW
+PASSCOMBINED: Availability of constant F_DUPFD_CLOEXEC
+PASSCOMBINED: Availability of constant AT_FDCWD
+PASSCOMBINED: Availability of constant AT_EACCESS
+PASSCOMBINED: Availability of constant AT_SYMLINK_NOFOLLOW
+PASSCOMBINED: Availability of constant AT_SYMLINK_FOLLOW
+PASSCOMBINED: Availability of constant AT_REMOVEDIR
+PASSCOMBINED: Availability of function openat
+PASSCOMBINED: Type of function openat
+PASS: Namespace of <fcntl.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   93
+  Number of failed tests  :    0
+  Number of xfailed tests :    3
+  Number of skipped tests :    0

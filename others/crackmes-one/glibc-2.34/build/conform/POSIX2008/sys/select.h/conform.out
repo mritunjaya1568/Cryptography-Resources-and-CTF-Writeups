@@ -1,0 +1,31 @@
+PASS: Availability of <sys/select.h>
+PASS: Combined <sys/select.h> test
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type suseconds_t
+PASSCOMBINED: Availability of type struct timeval
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_usec
+PASSCOMBINED: Type of member tv_usec
+PASSCOMBINED: Availability of type sigset_t
+PASSCOMBINED: Availability of type struct timespec
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_nsec
+PASSCOMBINED: Type of member tv_nsec
+PASSCOMBINED: Availability of type fd_set
+PASSCOMBINED: Availability of macro FD_CLR
+PASSCOMBINED: Availability of macro FD_ISSET
+PASSCOMBINED: Availability of macro FD_SET
+PASSCOMBINED: Availability of macro FD_ZERO
+PASSCOMBINED: Availability of macro FD_SETSIZE
+PASSCOMBINED: Availability of function pselect
+PASSCOMBINED: Type of function pselect
+PASSCOMBINED: Availability of function select
+PASSCOMBINED: Type of function select
+PASS: Namespace of <sys/select.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   25
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

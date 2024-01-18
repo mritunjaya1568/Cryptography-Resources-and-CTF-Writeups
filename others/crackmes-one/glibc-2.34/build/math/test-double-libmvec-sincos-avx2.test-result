@@ -1,0 +1,2 @@
+PASS: math/test-double-libmvec-sincos-avx2
+original exit status 0

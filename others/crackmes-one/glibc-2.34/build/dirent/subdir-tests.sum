@@ -1,0 +1,13 @@
+PASS: dirent/bug-readdir1
+PASS: dirent/check-installed-headers-c
+PASS: dirent/check-installed-headers-cxx
+PASS: dirent/check-obsolete-constructs
+PASS: dirent/check-wrapper-headers
+PASS: dirent/list
+PASS: dirent/opendir-tst1
+PASS: dirent/tst-fdopendir
+PASS: dirent/tst-fdopendir2
+PASS: dirent/tst-getdents64
+PASS: dirent/tst-scandir
+PASS: dirent/tst-scandir64
+PASS: dirent/tst-seekdir

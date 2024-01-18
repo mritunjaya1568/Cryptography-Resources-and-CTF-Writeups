@@ -1,0 +1,4 @@
+Initial state for write-only stream: 0 1
+Initial state for read-only stream:  1 0
+Initial state for read-write stream: 0 0
+Initial state for read-write stream: 0 0

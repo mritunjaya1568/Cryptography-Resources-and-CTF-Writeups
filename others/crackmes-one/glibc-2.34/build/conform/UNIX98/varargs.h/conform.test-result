@@ -1,0 +1,2 @@
+XFAIL: conform/UNIX98/varargs.h/conform
+original exit status 1

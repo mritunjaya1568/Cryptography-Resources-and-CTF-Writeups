@@ -1,0 +1,8 @@
+in main
+int_al16:  0x7ffd6c3b01b0 16
+double:  12 0x7ffd6c3b0148 8
+ldouble: 15 0x7ffd6c3b0150 16
+in f
+int_al16:  0x7ffd6c3d0150 16
+double:  12 0x7ffd6c3d0138 8
+ldouble: 15 0x7ffd6c3d0140 16

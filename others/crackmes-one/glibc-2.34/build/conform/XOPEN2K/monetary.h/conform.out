@@ -1,0 +1,12 @@
+PASS: Availability of <monetary.h>
+PASS: Combined <monetary.h> test
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type ssize_t
+PASSCOMBINED: Availability of function strfmon
+PASSCOMBINED: Type of function strfmon
+PASS: Namespace of <monetary.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    6
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

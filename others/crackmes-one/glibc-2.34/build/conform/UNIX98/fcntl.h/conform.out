@@ -1,0 +1,70 @@
+PASS: Availability of <fcntl.h>
+PASS: Combined <fcntl.h> test
+PASSCOMBINED: Availability of constant F_DUPFD
+PASSCOMBINED: Availability of constant F_GETFD
+PASSCOMBINED: Availability of constant F_SETFD
+PASSCOMBINED: Availability of constant F_GETFL
+PASSCOMBINED: Availability of constant F_SETFL
+PASSCOMBINED: Availability of constant F_GETLK
+PASSCOMBINED: Availability of constant F_SETLK
+PASSCOMBINED: Availability of constant F_SETLKW
+PASSCOMBINED: Availability of constant FD_CLOEXEC
+PASSCOMBINED: Availability of constant F_RDLCK
+PASSCOMBINED: Availability of constant F_UNLCK
+PASSCOMBINED: Availability of constant F_WRLCK
+PASSCOMBINED: Availability of constant SEEK_SET
+PASSCOMBINED: Availability of constant SEEK_CUR
+PASSCOMBINED: Availability of constant SEEK_END
+PASSCOMBINED: Availability of constant O_CREAT
+PASSCOMBINED: Availability of constant O_EXCL
+PASSCOMBINED: Availability of constant O_NOCTTY
+PASSCOMBINED: Availability of constant O_TRUNC
+PASSCOMBINED: Availability of constant O_APPEND
+PASSCOMBINED: Availability of constant O_NONBLOCK
+PASSCOMBINED: Availability of constant O_SYNC
+PASSCOMBINED: Availability of constant O_DSYNC
+PASSCOMBINED: Availability of constant O_RSYNC
+PASSCOMBINED: Availability of constant O_ACCMODE
+PASSCOMBINED: Availability of constant O_RDONLY
+PASSCOMBINED: Availability of constant O_RDWR
+PASSCOMBINED: Availability of constant O_WRONLY
+PASSCOMBINED: Availability of constant S_IRWXU
+PASSCOMBINED: Availability of constant S_IRUSR
+PASSCOMBINED: Availability of constant S_IWUSR
+PASSCOMBINED: Availability of constant S_IXUSR
+PASSCOMBINED: Availability of constant S_IRWXG
+PASSCOMBINED: Availability of constant S_IRGRP
+PASSCOMBINED: Availability of constant S_IWGRP
+PASSCOMBINED: Availability of constant S_IXGRP
+PASSCOMBINED: Availability of constant S_IRWXO
+PASSCOMBINED: Availability of constant S_IROTH
+PASSCOMBINED: Availability of constant S_IWOTH
+PASSCOMBINED: Availability of constant S_IXOTH
+PASSCOMBINED: Availability of constant S_ISUID
+PASSCOMBINED: Availability of constant S_ISGID
+PASSCOMBINED: Availability of constant S_ISVTX
+PASSCOMBINED: Availability of type struct flock
+PASSCOMBINED: Availability of member l_type
+PASSCOMBINED: Type of member l_type
+PASSCOMBINED: Availability of member l_whence
+PASSCOMBINED: Type of member l_whence
+PASSCOMBINED: Availability of member l_start
+PASSCOMBINED: Type of member l_start
+PASSCOMBINED: Availability of member l_len
+PASSCOMBINED: Type of member l_len
+PASSCOMBINED: Availability of member l_pid
+PASSCOMBINED: Type of member l_pid
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of function creat
+PASSCOMBINED: Type of function creat
+PASSCOMBINED: Availability of function fcntl
+PASSCOMBINED: Type of function fcntl
+PASSCOMBINED: Availability of function open
+PASSCOMBINED: Type of function open
+PASS: Namespace of <fcntl.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   64
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

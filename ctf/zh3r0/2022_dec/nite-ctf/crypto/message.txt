@@ -1,0 +1,82 @@
+```
+void __fastcall sub_7FFFFFFFD826(__int64 a1)
+{
+  __m128i *flag_buffer; // rdi
+  __m128i v2; // xmm1
+  __int64 v7; // rcx
+  __int64 v10; // rcx
+  __int64 v13; // rcx
+  __int64 v16; // rcx
+  __int64 v19; // rcx
+  __int64 v22; // rcx
+  __int64 v25; // rcx
+  __int64 v28; // rcx
+  __int64 v31; // rcx
+  __int64 v34; // rcx
+  __int64 v37; // rcx
+  __int64 v40; // rcx
+  __int64 v43; // rcx
+  __int64 v46; // rcx
+  __int64 v49; // rcx
+  __int64 v50; // r11
+  __m128i evil_vec; // xmm2
+  const __m128i *v53; // r10
+  __int64 i; // rcx
+  __int64 v58; // [rsp+0h] [rbp-180h] BYREF
+
+  v2 = _mm_loadu_si128((const __m128i *)&evil_keys);
+  _XMM5 = v2;
+  __asm { aeskeygenassist xmm2, xmm5, 1 }
+  sub_7FFFFFFFD98E(a1, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 3 }
+  sub_7FFFFFFFD98E(v7, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 9 }
+  sub_7FFFFFFFD98E(v10, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 1Bh }
+  sub_7FFFFFFFD98E(v13, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 51h ; 'Q' }
+  sub_7FFFFFFFD98E(v16, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0F3h }
+  sub_7FFFFFFFD98E(v19, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0D9h }
+  sub_7FFFFFFFD98E(v22, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 8Bh }
+  sub_7FFFFFFFD98E(v25, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0A1h }
+  sub_7FFFFFFFD98E(v28, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0E3h }
+  sub_7FFFFFFFD98E(v31, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0A9h }
+  sub_7FFFFFFFD98E(v34, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0FBh }
+  sub_7FFFFFFFD98E(v37, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0F1h }
+  sub_7FFFFFFFD98E(v40, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 0D3h }
+  sub_7FFFFFFFD98E(v43, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 79h ; 'y' }
+  sub_7FFFFFFFD98E(v46, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  __asm { aeskeygenassist xmm2, xmm5, 6Bh ; 'k' }
+  sub_7FFFFFFFD98E(v49, *(double *)v2.m128i_i64, *(double *)&_XMM2);
+  evil_vec = _mm_loadu_si128((const __m128i *)&::evil_vec);
+  do
+  {
+    _XMM0 = _mm_xor_si128(
+              _mm_xor_si128(_mm_loadu_si128(flag_buffer), evil_vec),
+              _mm_loadu_si128((const __m128i *)&evil_keys));
+    v53 = (const __m128i *)&v58;
+    for ( i = 0i64; i < 15; ++i )
+    {
+      _XMM1 = _mm_loadu_si128(v53);
+      __asm { aesenc  xmm0, xmm1 }
+      ++v53;
+    }
+    _XMM1 = _mm_loadu_si128(v53);
+    __asm { aesenclast xmm0, xmm1 }
+    *flag_buffer = _XMM0;
+    evil_vec = _XMM0;
+    ++flag_buffer;
+  }
+  while ( (__int64)flag_buffer < v50 );
+}
+```

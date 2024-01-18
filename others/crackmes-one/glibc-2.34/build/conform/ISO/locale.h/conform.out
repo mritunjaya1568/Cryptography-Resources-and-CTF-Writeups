@@ -1,0 +1,70 @@
+PASS: Availability of <locale.h>
+PASS: Combined <locale.h> test
+PASSCOMBINED: Availability of type struct lconv
+PASSCOMBINED: Availability of member currency_symbol
+PASSCOMBINED: Type of member currency_symbol
+PASSCOMBINED: Availability of member decimal_point
+PASSCOMBINED: Type of member decimal_point
+PASSCOMBINED: Availability of member frac_digits
+PASSCOMBINED: Type of member frac_digits
+PASSCOMBINED: Availability of member grouping
+PASSCOMBINED: Type of member grouping
+PASSCOMBINED: Availability of member int_curr_symbol
+PASSCOMBINED: Type of member int_curr_symbol
+PASSCOMBINED: Availability of member int_frac_digits
+PASSCOMBINED: Type of member int_frac_digits
+PASSCOMBINED: Availability of member mon_decimal_point
+PASSCOMBINED: Type of member mon_decimal_point
+PASSCOMBINED: Availability of member mon_thousands_sep
+PASSCOMBINED: Type of member mon_thousands_sep
+PASSCOMBINED: Availability of member mon_grouping
+PASSCOMBINED: Type of member mon_grouping
+PASSCOMBINED: Availability of member negative_sign
+PASSCOMBINED: Type of member negative_sign
+PASSCOMBINED: Availability of member n_cs_precedes
+PASSCOMBINED: Type of member n_cs_precedes
+PASSCOMBINED: Availability of member n_sep_by_space
+PASSCOMBINED: Type of member n_sep_by_space
+PASSCOMBINED: Availability of member n_sign_posn
+PASSCOMBINED: Type of member n_sign_posn
+PASSCOMBINED: Availability of member positive_sign
+PASSCOMBINED: Type of member positive_sign
+PASSCOMBINED: Availability of member p_cs_precedes
+PASSCOMBINED: Type of member p_cs_precedes
+PASSCOMBINED: Availability of member p_sep_by_space
+PASSCOMBINED: Type of member p_sep_by_space
+PASSCOMBINED: Availability of member p_sign_posn
+PASSCOMBINED: Type of member p_sign_posn
+PASSCOMBINED: Availability of member thousands_sep
+PASSCOMBINED: Type of member thousands_sep
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of macro LC_ALL
+PASSCOMBINED: Availability of constant LC_ALL
+PASSCOMBINED: #if usability of symbol LC_ALL
+PASSCOMBINED: Availability of macro LC_COLLATE
+PASSCOMBINED: Availability of constant LC_COLLATE
+PASSCOMBINED: #if usability of symbol LC_COLLATE
+PASSCOMBINED: Availability of macro LC_CTYPE
+PASSCOMBINED: Availability of constant LC_CTYPE
+PASSCOMBINED: #if usability of symbol LC_CTYPE
+PASSCOMBINED: Availability of macro LC_MONETARY
+PASSCOMBINED: Availability of constant LC_MONETARY
+PASSCOMBINED: #if usability of symbol LC_MONETARY
+PASSCOMBINED: Availability of macro LC_NUMERIC
+PASSCOMBINED: Availability of constant LC_NUMERIC
+PASSCOMBINED: #if usability of symbol LC_NUMERIC
+PASSCOMBINED: Availability of macro LC_TIME
+PASSCOMBINED: Availability of constant LC_TIME
+PASSCOMBINED: #if usability of symbol LC_TIME
+PASSCOMBINED: Availability of function localeconv
+PASSCOMBINED: Type of function localeconv
+PASSCOMBINED: Availability of function setlocale
+PASSCOMBINED: Type of function setlocale
+PASS: Namespace of <locale.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   64
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

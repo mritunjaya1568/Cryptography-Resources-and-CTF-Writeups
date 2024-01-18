@@ -1,0 +1,1 @@
+                       	simple_strcmp	stupid_strcmp	__strcmp_avx2	__strcmp_sse42	__strcmp_ssse3	__strcmp_sse2_unaligned	__strcmp_sse2

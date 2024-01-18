@@ -1,0 +1,2 @@
+PASS: malloc/tst-malloc-thread-exit-malloc-check
+original exit status 0

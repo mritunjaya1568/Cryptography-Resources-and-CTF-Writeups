@@ -1,0 +1,67 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x55555663d6b0 0x1b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+ad)[0x7fd96d12ddcd] - 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x55555663d6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catclose+2a)[0x7fd96d12dcea] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x55555663d6b0 0x1b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+ad)[0x7fd96d12ddcd] - 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x55555663d6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catclose+2a)[0x7fd96d12dcea] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x55555663d6b0 0x1b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+ad)[0x7fd96d12ddcd] - 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x55555663d6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catclose+2a)[0x7fd96d12dcea] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x55555663d6b0 0x1b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+ad)[0x7fd96d12ddcd] - 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x55555663d6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catclose+2a)[0x7fd96d12dcea] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x55555663d6b0 0x1b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+ad)[0x7fd96d12ddcd] - 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x55555663d6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catclose+2a)[0x7fd96d12dcea] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/catgets/tst-catgets:[0x7fd96d30a8f8] + 0x7fd96cfea010 0x100001
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7fd96d1319dc] + 0x7fd96cee9010 0x100009
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__tsearch+e1)[0x7fd96d1f6d41] + 0x55555663d2a0 0x18
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+f5)[0x7fd96d12db45] + 0x7fd96cde8010 0x100156
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+38)[0x7fd96d12da88] + 0x55555663d870 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] + 0x55555663d8b0 0x101
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x202
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x404
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x808
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x1010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x2020
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x4040
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x8080
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x10100
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x55555663d8b0 0x20200
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x55555663d8b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x7fd96cda7010 0x40400
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x7fd96cda7010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x7fd96cd26010 0x80800
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] < 0x7fd96cd26010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+57b)[0x7fd96d12e29b] > 0x7fd96cc24010 0x101000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(__open_catalog+14d)[0x7fd96d12de6d] - 0x7fd96cc24010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+177)[0x7fd96d12dbc7] - 0x55555663d870
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(catopen+65)[0x7fd96d12dab5] - 0x7fd96cde8010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/catgets/tst-catgets:[0x7fd96d30a947] - 0x7fd96cfea010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7fd96d1f6ac4] - 0x7fd96cee9010
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7fd96d287620] - 0x55555663d2a0

@@ -1,0 +1,2 @@
+PASS: libio/bug-mmap-fflush
+original exit status 0

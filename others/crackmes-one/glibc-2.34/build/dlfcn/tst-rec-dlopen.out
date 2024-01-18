@@ -1,0 +1,6 @@
+Called dummy2()
+Called dummy2()
+Called dummy2()
+Called dummy1()
+Returned result is 1
+PASS: Function call_func() called more than once.

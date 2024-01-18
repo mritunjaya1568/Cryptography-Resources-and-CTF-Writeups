@@ -1,0 +1,58 @@
+PASS: Availability of <spawn.h>
+PASS: Combined <spawn.h> test
+PASSCOMBINED: Availability of type posix_spawnattr_t
+PASSCOMBINED: Availability of type posix_spawn_file_actions_t
+PASSCOMBINED: Availability of constant POSIX_SPAWN_RESETIDS
+PASSCOMBINED: Availability of constant POSIX_SPAWN_SETPGROUP
+PASSCOMBINED: Availability of constant POSIX_SPAWN_SETSCHEDPARAM
+PASSCOMBINED: Availability of constant POSIX_SPAWN_SETSCHEDULER
+PASSCOMBINED: Availability of constant POSIX_SPAWN_SETSIGDEF
+PASSCOMBINED: Availability of constant POSIX_SPAWN_SETSIGMASK
+PASSCOMBINED: Availability of function posix_spawnattr_destroy
+PASSCOMBINED: Type of function posix_spawnattr_destroy
+PASSCOMBINED: Availability of function posix_spawnattr_getsigdefault
+PASSCOMBINED: Type of function posix_spawnattr_getsigdefault
+PASSCOMBINED: Availability of function posix_spawnattr_getflags
+PASSCOMBINED: Type of function posix_spawnattr_getflags
+PASSCOMBINED: Availability of function posix_spawnattr_getpgroup
+PASSCOMBINED: Type of function posix_spawnattr_getpgroup
+PASSCOMBINED: Availability of function posix_spawnattr_getschedparam
+PASSCOMBINED: Type of function posix_spawnattr_getschedparam
+PASSCOMBINED: Availability of function posix_spawnattr_getschedpolicy
+PASSCOMBINED: Type of function posix_spawnattr_getschedpolicy
+PASSCOMBINED: Availability of function posix_spawnattr_getsigmask
+PASSCOMBINED: Type of function posix_spawnattr_getsigmask
+PASSCOMBINED: Availability of function posix_spawnattr_init
+PASSCOMBINED: Type of function posix_spawnattr_init
+PASSCOMBINED: Availability of function posix_spawnattr_setsigdefault
+PASSCOMBINED: Type of function posix_spawnattr_setsigdefault
+PASSCOMBINED: Availability of function posix_spawnattr_setflags
+PASSCOMBINED: Type of function posix_spawnattr_setflags
+PASSCOMBINED: Availability of function posix_spawnattr_setpgroup
+PASSCOMBINED: Type of function posix_spawnattr_setpgroup
+PASSCOMBINED: Availability of function posix_spawnattr_setschedparam
+PASSCOMBINED: Type of function posix_spawnattr_setschedparam
+PASSCOMBINED: Availability of function posix_spawnattr_setschedpolicy
+PASSCOMBINED: Type of function posix_spawnattr_setschedpolicy
+PASSCOMBINED: Availability of function posix_spawnattr_setsigmask
+PASSCOMBINED: Type of function posix_spawnattr_setsigmask
+PASSCOMBINED: Availability of function posix_spawn_file_actions_addclose
+PASSCOMBINED: Type of function posix_spawn_file_actions_addclose
+PASSCOMBINED: Availability of function posix_spawn_file_actions_adddup2
+PASSCOMBINED: Type of function posix_spawn_file_actions_adddup2
+PASSCOMBINED: Availability of function posix_spawn_file_actions_addopen
+PASSCOMBINED: Type of function posix_spawn_file_actions_addopen
+PASSCOMBINED: Availability of function posix_spawn_file_actions_destroy
+PASSCOMBINED: Type of function posix_spawn_file_actions_destroy
+PASSCOMBINED: Availability of function posix_spawn_file_actions_init
+PASSCOMBINED: Type of function posix_spawn_file_actions_init
+PASSCOMBINED: Availability of function posix_spawn
+PASSCOMBINED: Type of function posix_spawn
+PASSCOMBINED: Availability of function posix_spawnp
+PASSCOMBINED: Type of function posix_spawnp
+PASS: Namespace of <spawn.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   52
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,2 @@
+PASS: math/test-double-vlen4-avx2-exp
+original exit status 0

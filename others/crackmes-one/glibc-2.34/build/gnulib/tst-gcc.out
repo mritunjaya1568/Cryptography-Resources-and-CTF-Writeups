@@ -1,0 +1,6 @@
+integer         is 1: OK
+pointer         is 5: OK
+real            is 8: OK
+complex         is 9: OK
+record          is 12: OK
+union           is 13: OK

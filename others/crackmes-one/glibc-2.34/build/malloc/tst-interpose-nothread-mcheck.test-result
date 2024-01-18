@@ -1,0 +1,2 @@
+PASS: malloc/tst-interpose-nothread-mcheck
+original exit status 0

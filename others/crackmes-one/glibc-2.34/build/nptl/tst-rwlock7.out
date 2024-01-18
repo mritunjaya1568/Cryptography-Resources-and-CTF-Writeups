@@ -1,0 +1,10 @@
+0: got timedrdlock
+child: timedwrlock failed with ETIMEDOUTchild: timedwrlock failed with EINVAL1: got timedrdlock
+child: timedwrlock failed with ETIMEDOUTchild: timedwrlock failed with EINVAL2: got timedrdlock
+child: timedwrlock failed with ETIMEDOUTchild: timedwrlock failed with EINVAL0: got clock(monotonic)rdlock
+child: clock(monotonic)wrlock failed with ETIMEDOUTchild: clock(monotonic)wrlock failed with EINVAL1: got clock(monotonic)rdlock
+child: clock(monotonic)wrlock failed with ETIMEDOUTchild: clock(monotonic)wrlock failed with EINVAL2: got clock(monotonic)rdlock
+child: clock(monotonic)wrlock failed with ETIMEDOUTchild: clock(monotonic)wrlock failed with EINVAL0: got clock(realtime)rdlock
+child: clock(realtime)wrlock failed with ETIMEDOUTchild: clock(realtime)wrlock failed with EINVAL1: got clock(realtime)rdlock
+child: clock(realtime)wrlock failed with ETIMEDOUTchild: clock(realtime)wrlock failed with EINVAL2: got clock(realtime)rdlock
+child: clock(realtime)wrlock failed with ETIMEDOUTchild: clock(realtime)wrlock failed with EINVAL

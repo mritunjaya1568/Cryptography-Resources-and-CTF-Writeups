@@ -1,0 +1,30 @@
+PASS: Availability of <semaphore.h>
+PASS: Combined <semaphore.h> test
+PASSCOMBINED: Availability of type sem_t
+PASSCOMBINED: Availability of constant SEM_FAILED
+PASSCOMBINED: Availability of function sem_close
+PASSCOMBINED: Type of function sem_close
+PASSCOMBINED: Availability of function sem_destroy
+PASSCOMBINED: Type of function sem_destroy
+PASSCOMBINED: Availability of function sem_getvalue
+PASSCOMBINED: Type of function sem_getvalue
+PASSCOMBINED: Availability of function sem_init
+PASSCOMBINED: Type of function sem_init
+PASSCOMBINED: Availability of function sem_open
+PASSCOMBINED: Type of function sem_open
+PASSCOMBINED: Availability of function sem_post
+PASSCOMBINED: Type of function sem_post
+PASSCOMBINED: Availability of function sem_timedwait
+PASSCOMBINED: Type of function sem_timedwait
+PASSCOMBINED: Availability of function sem_trywait
+PASSCOMBINED: Type of function sem_trywait
+PASSCOMBINED: Availability of function sem_unlink
+PASSCOMBINED: Type of function sem_unlink
+PASSCOMBINED: Availability of function sem_wait
+PASSCOMBINED: Type of function sem_wait
+PASS: Namespace of <semaphore.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   24
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

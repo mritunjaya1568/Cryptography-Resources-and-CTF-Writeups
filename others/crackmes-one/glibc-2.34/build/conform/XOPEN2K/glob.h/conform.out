@@ -1,0 +1,30 @@
+PASS: Availability of <glob.h>
+PASS: Combined <glob.h> test
+PASSCOMBINED: Availability of type glob_t
+PASSCOMBINED: Availability of member gl_pathc
+PASSCOMBINED: Type of member gl_pathc
+PASSCOMBINED: Availability of member gl_pathv
+PASSCOMBINED: Type of member gl_pathv
+PASSCOMBINED: Availability of member gl_offs
+PASSCOMBINED: Type of member gl_offs
+PASSCOMBINED: Availability of constant GLOB_APPEND
+PASSCOMBINED: Availability of constant GLOB_DOOFFS
+PASSCOMBINED: Availability of constant GLOB_ERR
+PASSCOMBINED: Availability of constant GLOB_MARK
+PASSCOMBINED: Availability of constant GLOB_NOCHECK
+PASSCOMBINED: Availability of constant GLOB_NOESCAPE
+PASSCOMBINED: Availability of constant GLOB_NOSORT
+PASSCOMBINED: Availability of constant GLOB_ABORTED
+PASSCOMBINED: Availability of constant GLOB_NOMATCH
+PASSCOMBINED: Availability of constant GLOB_NOSPACE
+PASSCOMBINED: Availability of constant GLOB_NOSYS
+PASSCOMBINED: Availability of function glob
+PASSCOMBINED: Type of function glob
+PASSCOMBINED: Availability of function globfree
+PASSCOMBINED: Type of function globfree
+PASS: Namespace of <glob.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   24
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

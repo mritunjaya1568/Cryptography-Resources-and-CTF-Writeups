@@ -1,0 +1,2508 @@
+/* Test exp2.
+   Copyright (C) 1997-2021 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+   The GNU C Library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   The GNU C Library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with the GNU C Library; if not, see
+   <https://www.gnu.org/licenses/>.  */
+
+#include "libm-test-driver.c"
+
+static const struct test_f_f_data exp2_test_data[] =
+  {
+    { "inf", plus_infty, { plus_infty, ERRNO_UNCHANGED }, { plus_infty, ERRNO_UNCHANGED }, { plus_infty, ERRNO_UNCHANGED }, { plus_infty, ERRNO_UNCHANGED } },
+    { "-inf", minus_infty, { 0, ERRNO_UNCHANGED }, { 0, ERRNO_UNCHANGED }, { 0, ERRNO_UNCHANGED }, { 0, ERRNO_UNCHANGED } },
+    { "qNaN", qnan_value, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED } },
+    { "-qNaN", -qnan_value, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED }, { qnan_value, NO_INEXACT_EXCEPTION|ERRNO_UNCHANGED } },
+    { "sNaN", snan_value, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION } },
+    { "-sNaN", -snan_value, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION }, { qnan_value, TEST_SNAN|INVALID_EXCEPTION } },
+
+#if (TEST_COND_binary128)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0xd.3ce16388003d339d8e42c2ed708p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed7088p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed708p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed7088p-308), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d5ccd21bad0545e3ae48d3b2cp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3b3p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3b2cp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3b3p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe0085ef004d24004a566c1b27p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b274p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b27p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b274p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.ffffffffffffffffffffffff4e88p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff4e9p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff4e88p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff4e9p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-10000", LIT (-0x1p-10000), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4e8debe025e24128a3d4607p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d4607p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d4607p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d46078p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffffff4e8de8082e6e05d035p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05d035p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05d035p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05d0358p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.ffffffffffffff4e8de8082e308p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e3088p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e308p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e3088p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x1p-600", LIT (-0x1p-600), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x2p-16384", LIT (-0x2p-16384), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x8.00162e61bed4a48e84c2e1a4634p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a46348p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a4634p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a46348p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c8ffffffffffep+8", LIT (-0x3.c8ffffffffffep+8), { LIT (0x8.0000000000b17217f7d1d7299b48p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d7299b48p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d7299b48p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d7299b5p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c8fffffffffffffcp+8", LIT (-0x3.c8fffffffffffffcp+8), { LIT (0x8.000000000000162e42fefa39ef5p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39ef58p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39ef5p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39ef58p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c8ffffffffffffffffffffffffp+8", LIT (-0x3.c8ffffffffffffffffffffffffp+8), { LIT (0x8.0000000000000000000000058b9p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000000000000000058b9p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000000000000000058b9p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000000000000000058b98p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c9000000000000000000000001p+8", LIT (-0x3.c9000000000000000000000001p+8), { LIT (0x7.fffffffffffffffffffffffa746cp-972), ERRNO_UNCHANGED }, { LIT (0x7.fffffffffffffffffffffffa747p-972), ERRNO_UNCHANGED }, { LIT (0x7.fffffffffffffffffffffffa746cp-972), ERRNO_UNCHANGED }, { LIT (0x7.fffffffffffffffffffffffa747p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c900000000000004p+8", LIT (-0x3.c900000000000004p+8), { LIT (0x7.ffffffffffffe9d1bd0105c610e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9d1bd0105c610e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9d1bd0105c610e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9d1bd0105c610ecp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c900000000002p+8", LIT (-0x3.c900000000002p+8), { LIT (0x7.ffffffffff4e8de8082e383643b4p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8082e383643b4p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8082e383643b4p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8082e383643b8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87f5p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87f5p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87f5p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87f54p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea96p-1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0xb.504f333f9de6484597d89b3754a8p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754bp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x5.a827999fcef32422cbec4d9baa54p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa54p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa54p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa58p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x4.000b1730df6a5247426170d231ap-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5247426170d231a4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5247426170d231ap-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5247426170d231a4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fdffffffffffep+8", LIT (-0x3.fdffffffffffep+8), { LIT (0x4.000000000058b90bfbe8eb94cda4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b90bfbe8eb94cda4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b90bfbe8eb94cda4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b90bfbe8eb94cda8p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe00000000002p+8", LIT (-0x3.fe00000000002p+8), { LIT (0x3.ffffffffffa746f404171c1b21dap-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f404171c1b21dap-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f404171c1b21dap-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f404171c1b21dcp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x3.fff4e8ede053ad4f35d8a75c3fa8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad4f35d8a75c3fa8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad4f35d8a75c3fa8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad4f35d8a75c3faap-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1bap-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1bap-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x3.3bed4179f82bc002979648b91cf8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc002979648b91cfap-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc002979648b91cf8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc002979648b91cfap-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b6p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x3.35ec906f22fbbffeffc0d272938p-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbbffeffc0d272938p-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbbffeffc0d272938p-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbbffeffc0d2729382p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x3.159ca845541b6b74f8ab43259376p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259376p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259376p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259378p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x2.d413cccfe779921165f626cdd52ap-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52ap-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52ap-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c42p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c42p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x2.60dfc14636e2a5bd1ab48c60b90ap-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90ap-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6296p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x4.00b18178ba33b141b486ff22688cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b141b486ff22689p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b141b486ff22688cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b141b486ff22689p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffdfffffffffep+12", LIT (-0x3.ffdfffffffffep+12), { LIT (0x4.00000000058b90bfbe9253c51e3cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90bfbe9253c51e4p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90bfbe9253c51e3cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90bfbe9253c51e4p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffdffffffffffffcp+12", LIT (-0x3.ffdffffffffffffcp+12), { LIT (0x4.000000000000b17217f7d1cf8908p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17217f7d1cf890cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17217f7d1cf8908p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17217f7d1cf890cp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffdffffffffffffffffffffffffep+12", LIT (-0x3.ffdffffffffffffffffffffffffep+12), { LIT (0x4.00000000000000000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000000058bcp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffdfffffffffffffffffffffffp+12", LIT (-0x3.ffdfffffffffffffffffffffffp+12), { LIT (0x4.00000000000000000000002c5c84p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000002c5c84p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000002c5c84p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000000000000000002c5c88p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe0000000000000000000000002p+12", LIT (-0x3.ffe0000000000000000000000002p+12), { LIT (0x3.ffffffffffffffffffffffffa744p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffffa748p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffffa744p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffffa748p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe00000000000000000000001p+12", LIT (-0x3.ffe00000000000000000000001p+12), { LIT (0x3.ffffffffffffffffffffffd3a378p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffd3a37cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffd3a378p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffffffffffffffd3a37cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe0000000000004p+12", LIT (-0x3.ffe0000000000004p+12), { LIT (0x3.ffffffffffff4e8de8082e3095b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e8de8082e3095b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e8de8082e3095b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e8de8082e3095b8p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe0000000002p+12", LIT (-0x3.ffe0000000002p+12), { LIT (0x3.fffffffffa746f4041755c2a61ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f4041755c2a61ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f4041755c2a61ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f4041755c2a61a4p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x3.ff4e9d4703df842f4ee7e2b804bcp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df842f4ee7e2b804cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df842f4ee7e2b804bcp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df842f4ee7e2b804cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1bcp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b8p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x3.159ca845541b6b74f8ab43259374p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b74f8ab43259378p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b74f8ab43259374p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b74f8ab43259378p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x2.d413cccfe779921165f626cdd528p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779921165f626cdd52cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779921165f626cdd528p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779921165f626cdd52cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c44p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x2.60dfc14636e2a5bd1ab48c60b908p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b908p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5b9bef918a1d6298p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x2.0058c0bc5d19d8a0da437f913444p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8a0da437f913448p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8a0da437f913444p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8a0da437f913448p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffefffffffffep+12", LIT (-0x3.ffefffffffffep+12), { LIT (0x2.0000000002c5c85fdf4929e28f1cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c85fdf4929e28f2p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c85fdf4929e28f1cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c85fdf4929e28f2p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffeffffffffffffcp+12", LIT (-0x3.ffeffffffffffffcp+12), { LIT (0x2.00000000000058b90bfbe8e7c484p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058b90bfbe8e7c484p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058b90bfbe8e7c484p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058b90bfbe8e7c488p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fff0000000000004p+12", LIT (-0x3.fff0000000000004p+12), { LIT (0x1.ffffffffffffa746f40417184ad8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa746f40417184adcp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa746f40417184ad8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa746f40417184adcp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fff0000000002p+12", LIT (-0x3.fff0000000002p+12), { LIT (0x1.fffffffffd3a37a020baae1530dp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37a020baae1530dp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37a020baae1530dp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37a020baae1530d4p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x1.ffa74ea381efc217a773f15c025cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc217a773f15c026p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc217a773f15c025cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc217a773f15c026p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271e170997ffff8d5111790ddp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111790ddp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111790ddp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111790dd8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-1024", LIT (-0x4p-1024), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-1076", LIT (-0x4p-1076), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae013p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-16384", LIT (-0x4p-16384), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-16448", LIT (-0x4p-16448), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-16496", LIT (-0x4p-16496), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.ffffffd3a37a02490b9d93da3c18p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da3c2p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da3c18p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da3c2p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffffffffd3a37a020b8c256dp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256dp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256dp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256d8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f333f9de6484597d89b3754a8p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754bp-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea96p-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f333f9de6484597d89b3754a8p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754a8p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754bp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a827999fcef32422cbec4d9baa54p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa54p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa54p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baa58p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.000162e46d6f26b8bbb607a6df5p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6df54p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6df5p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6df54p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe9d1c0d8fd145509b5db1d8acp-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d8aep-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d8acp-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d8aep-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1bap-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1bap-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b4p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee640b6p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca845541b6b74f8ab43259376p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259376p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259376p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab43259378p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413cccfe779921165f626cdd52ap-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52ap-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52ap-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd52cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c42p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c4p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885c42p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfc14636e2a5bd1ab48c60b90ap-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90ap-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b90cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6294p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d6296p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x8p-16448", LIT (-0x8p-16448), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x8p-972", LIT (-0x8p-972), { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79b6bee6bd7ffc6db60f67e94p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67e948p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67e94p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67e948p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744fff686ede7e5204943f8a98p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f8a98p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f8a98p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f8aap-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.ffffffffffff8p+1020", LIT (-0xf.ffffffffffff8p+1020), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.ffffffffffffbffffffffffffcp+1020", LIT (-0xf.ffffffffffffbffffffffffffcp+1020), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.fffffffffffffffffffffffffff8p+16380", LIT (-0xf.fffffffffffffffffffffffffff8p+16380), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.fffffffffffffffp+16380", LIT (-0xf.fffffffffffffffp+16380), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16496), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary128)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1.0000000000000000000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000b18p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-10000", LIT (0x1p-10000), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000b1721bcfc99d9f890ea0691p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea0691p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea0691p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea0692p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1.0000000000b17217f7d20cf927c8p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf927c9p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf927c8p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf927c9p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1.000000000000000b17217f7d1cf7p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1cf8p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1cf7p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1cf8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x1p-600", LIT (0x1p-600), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x2p-16384", LIT (0x2p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0x1.306fe0a31b7152de8d5a46305c85p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305c86p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305c85p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305c86p+1000), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae012f8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae013p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.ffd3a3b7814eb53cd7629d70feap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d70feap+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d70feap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d70fea8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.ffffffffffffep+12", LIT (0x3.ffffffffffffep+12), { LIT (0xf.ffffffffe9d1bd0105d570a9868p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bd0105d570a98688p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bd0105d570a9868p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bd0105d570a98688p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.ffffffffffffep+8", LIT (0x3.ffffffffffffep+8), { LIT (0xf.fffffffffe9d1bd0105c706c8768p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c8768p+1020), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c8768p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c877p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffff8p+8", LIT (0x3.fffffffffffffff8p+8), { LIT (0xf.ffffffffffffa746f4041718442p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f4041718442p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f4041718442p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f40417184428p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffffa3aae26b51fp+8", LIT (0x3.fffffffffffffffa3aae26b51fp+8), { LIT (0xf.ffffffffffffbffffffffffd3568p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd357p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd3568p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd357p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffffa3aae26b52p+8", LIT (0x3.fffffffffffffffa3aae26b52p+8), { LIT (0xf.ffffffffffffc000000000084c88p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffc000000000084c9p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffc000000000084c88p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffc000000000084c9p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffffcp+12", LIT (0x3.fffffffffffffffcp+12), { LIT (0xf.fffffffffffd3a37a020b8c256dp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256dp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256dp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c256d8p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffffcp+8", LIT (0x3.fffffffffffffffcp+8), { LIT (0xf.ffffffffffffd3a37a020b8c21dp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3a37a020b8c21dp+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3a37a020b8c21dp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3a37a020b8c21d8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffffffffffffffffffffffffffep+12", LIT (0x3.fffffffffffffffffffffffffffep+12), { LIT (0xf.fffffffffffffffffffffffe9d18p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffe9d18p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffe9d18p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffe9d2p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.ffffffffffffffffffffffffffp+12", LIT (0x3.ffffffffffffffffffffffffffp+12), { LIT (0xf.ffffffffffffffffffffff4e8de8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffff4e8de8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffff4e8de8p+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffff4e8dfp+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.0000000000000000000000000004p+12", LIT (0x4.0000000000000000000000000004p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.00000000000000000000000002p+12", LIT (0x4.00000000000000000000000002p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.0000000000000008p+12", LIT (0x4.0000000000000008p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.0000000000004p+12", LIT (0x4.0000000000004p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.0000000000004p+8", LIT (0x4.0000000000004p+8), { LIT (0x1.00000000002c5c85fdf477b662b2p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c85fdf477b662b2p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c85fdf477b662b2p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c85fdf477b662b3p+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0x1.00058ba01fb9f96d6cacd4b18091p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96d6cacd4b18091p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96d6cacd4b18091p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96d6cacd4b18092p+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-1024", LIT (0x4p-1024), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-1076", LIT (0x4p-1076), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c605e2e8cec506d21bfc89a23p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89a24p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89a23p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89a24p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-16384", LIT (0x4p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-16448", LIT (0x4p-16448), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-16496", LIT (0x4p-16496), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1.00000002c5c85fe31f35a6a30da1p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30da2p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30da1p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30da2p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1.0000000000002c5c85fdf473e242p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e243p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e242p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e243p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea95p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea96p+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7470363f4515426d76c762bp+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c762b8p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c762bp+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c762b8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0x1.0000b17255775c040618bf4a4adep+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4adfp+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4adep+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4adfp+128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x8p-16448", LIT (0x8p-16448), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0x8p-972", LIT (0x8p-972), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfd7fd625f811d85ee0f45e71p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e71p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e71p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e714p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722ff862d74360c22ab25d2cdp+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d2cdp+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d2cdp+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d2cep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd736c287aa8000406087bccf4p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bccf5p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bccf4p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bccf5p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f995ad3ad5e8734d1773205ap+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d1773205ap+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d1773205ap+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d1773205bp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e67fd7ff858c3dda97946a1a2p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a1a2p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a1a2p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a1a4p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.93d18bf7be8d272p-4", LIT (0xf.93d18bf7be8d272p-4), { LIT (0x1.f6b64a10a015e20774d776dcd952p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd953p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd952p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd953p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.93d18bf7be8d8p-4", LIT (0xf.93d18bf7be8d8p-4), { LIT (0x1.f6b64a10a015e99701a69e715b1ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715b1fp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715b1ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715b1fp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.93d18bf7be8dp-4", LIT (0xf.93d18bf7be8dp-4), { LIT (0x1.f6b64a10a015deb360fb026c4e2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4e21p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4e2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4e21p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b6490bfcd17676f008c989d539p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d53ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d539p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d53ap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64a6870e6ae124dad946fb894p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb894p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb894p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb895p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.ffffffffffff8p+1020", LIT (0xf.ffffffffffff8p+1020), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.ffffffffffffbffffffffffffcp+1020", LIT (0xf.ffffffffffffbffffffffffffcp+1020), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.fffffffffffffffffffffffffff8p+16380", LIT (0xf.fffffffffffffffffffffffffff8p+16380), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.fffffffffffffffp+16380", LIT (0xf.fffffffffffffffp+16380), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary128)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffffffffffffff8p+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d58p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d6p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d58p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d6p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe008p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe008p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe008p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe01p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff5p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff5p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271p-4), ERRNO_UNCHANGED }, { LIT (0xd.23272p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271p-4), ERRNO_UNCHANGED }, { LIT (0xd.23272p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a7p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a7p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a7p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f3p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f3p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f3p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f4p-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e6p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e6p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e6p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e8p-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f3p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f3p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f3p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f4p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a82798p-128), ERRNO_UNCHANGED }, { LIT (0x5.a82798p-128), ERRNO_UNCHANGED }, { LIT (0x5.a82798p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827ap-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.00016p-128), ERRNO_UNCHANGED }, { LIT (0x4.00016p-128), ERRNO_UNCHANGED }, { LIT (0x4.00016p-128), ERRNO_UNCHANGED }, { LIT (0x4.000168p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe98p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffeap-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffe98p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffeap-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab0318p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab0318p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab0318p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab032p-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13fp-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13fp-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13fp-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f8p-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca8p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca8p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca8p-128), UNDERFLOW_EXCEPTION }, { LIT (0x3.159cbp-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413c8p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413dp-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413c8p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413dp-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb58p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb58p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb58p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb6p-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfcp-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfcp-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfcp-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc8p-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e5708p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57p-128), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e5708p-128), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79bp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79bp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79bp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79cp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8745p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8745p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-152), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary32)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.00000cp+0), ERRNO_UNCHANGED }, { LIT (0x1.00000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.00000cp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.fffffp+124), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0xf.fffffp+124), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c6p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c6p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c6p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c62p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e6p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e6p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e6p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e8p+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfdp+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd8p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfdp+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd8p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44724p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd72p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd74p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd72p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd74p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89fap+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89fap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e64p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e68p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e64p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e68p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b648p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b648p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64ap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64cp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary32)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffp+124), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0xd.3ce16388003dp-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003dp-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003dp-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d8p-308), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d5ccd21bacp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bacp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bacp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bbp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe0085ef004cp-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004cp-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004cp-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef005p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4e8debep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe08p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffffff4e88p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e9p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e88p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e9p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x1p-600", LIT (-0x1p-600), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x8.00162e61bed48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed5p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.c8ffffffffffep+8", LIT (-0x3.c8ffffffffffep+8), { LIT (0x8.0000000000b1p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b18p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b18p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.c900000000002p+8", LIT (-0x3.c900000000002p+8), { LIT (0x7.ffffffffff4e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4ecp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x7.ffe9d1dbc0a74p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a74p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a74p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a78p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x1.6a09e667f3bccp-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bccp-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp-1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0xb.504f333f9de6p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x5.a827999fcef3p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef34p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef34p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x4.000b1730df6a4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a4p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a8p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fdffffffffffep+8", LIT (-0x3.fdffffffffffep+8), { LIT (0x4.0000000000588p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058cp-1024), ERRNO_UNCHANGED }, { LIT (0x4.0000000000588p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe00000000002p+8", LIT (-0x3.fe00000000002p+8), { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa78p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x3.fff4e8ede0538p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede053cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede0538p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede053cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x3.ab031b9f7490cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7491p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7491p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x3.5d13f32b5a758p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a758p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x3.35ec906f22fb8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fbcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fb8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fbcp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x3.159ca845541b4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b8p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x2.97fb5aa6c544cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c545p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c545p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x2.60dfc14636e28p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e28p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f8p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffdfffffffffep+12", LIT (-0x3.ffdfffffffffep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe0000000002p+12", LIT (-0x3.ffe0000000002p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffefffffffffep+12", LIT (-0x3.ffefffffffffep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fff0000000002p+12", LIT (-0x3.fff0000000002p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271e1709978p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e1709978p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-1024", LIT (-0x4p-1024), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-1076", LIT (-0x4p-1076), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a751c0f7ep-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7ep-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7ep-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.ffffffd3a37ap-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37ap-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37ap-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffffffffdp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffdp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffdp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f333f9de6p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e667f3bccp-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bccp-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f333f9de6p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de68p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a827999fcef3p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef34p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef34p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.000162e46d6fp-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f4p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6fp-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f4p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe9d1c0d8fcp-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fep-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fcp-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fep-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab031b9f7490ep-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490ep-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490ep-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7491p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13f32b5a75ap-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75ap-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75ap-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca845541b6p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b8p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413cccfe7798p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779ap-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7798p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779ap-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb5aa6c544ep-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544ep-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544ep-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c545p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfc14636e2ap-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2ap-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2ap-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57078faa2f4p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f6p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f4p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f6p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x8p-972", LIT (-0x8p-972), { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffff8p-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79b6bee6bdp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bdp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744fff686e8p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686fp-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686e8p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686fp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0xf.ffffffffffff8p+1020", LIT (-0xf.ffffffffffff8p+1020), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_binary64)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000b1721bcfp+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bdp+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfp+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bdp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1.0000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b18p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x1p-600", LIT (0x1p-600), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0x1.306fe0a31b715p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b715p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b715p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b716p+1000), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.ffd3a3b7814e8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814e8p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814e8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814fp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.ffffffffffffep+12", LIT (0x3.ffffffffffffep+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.ffffffffffffep+8", LIT (0x3.ffffffffffffep+8), { LIT (0xf.fffffffffe9dp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9dp+1020), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9dp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4.0000000000004p+12", LIT (0x4.0000000000004p+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4.0000000000004p+8", LIT (0x4.0000000000004p+8), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0xf.ffffffffffff8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-1024", LIT (0x4p-1024), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-1076", LIT (0x4p-1076), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c605e2e8cep+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cfp+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cep+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cfp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1.00000002c5c85p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c86p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c86p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1.0000000000002p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000003p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000003p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e667f3bccp+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bccp+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcdp+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7470363fp+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f8p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363fp+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0x1.0000b17255775p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255776p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255776p+128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0x8p-972", LIT (0x8p-972), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000001p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfd7fd625f8p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f8p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f8p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625fcp+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722ff862d7p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd736c287aap+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287abp+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aap+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287abp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f995ad3adp+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3adp+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3adp+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3aep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e67fd7ff84p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff86p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff84p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff86p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.93d18bf7be8d8p-4", LIT (0xf.93d18bf7be8d8p-4), { LIT (0x1.f6b64a10a015ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015fp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015fp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.93d18bf7be8dp-4", LIT (0xf.93d18bf7be8dp-4), { LIT (0x1.f6b64a10a015dp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015dp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015ep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b6490bfcd17p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd18p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64a6870e6ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6bp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ap+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6bp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.ffffffffffff8p+1020", LIT (0xf.ffffffffffff8p+1020), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_binary64)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffff8p+1020), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0xd.3ce16388003d339d8e42c2ed7p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed7p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed7p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339d8e42c2ed74p-308), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d5ccd21bad0545e3ae48d3ap-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3cp-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3ap-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad0545e3ae48d3cp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe0085ef004d24004a566c1b2p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b2p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b2p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24004a566c1b4p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.ffffffffffffffffffffffff4cp-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff5p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff4cp-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffffffffffffff5p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4e8debe025e24128a3d46p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d46p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d46p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025e24128a3d464p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffffff4e8de8082e6e05dp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05d04p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05dp-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8082e6e05d04p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.ffffffffffffff4e8de8082e3p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e3p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e3p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4e8de8082e34p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x1p-600", LIT (-0x1p-600), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x8.00162e61bed4a48e84c2e1a46p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a464p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a46p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48e84c2e1a464p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c8ffffffffffep+8", LIT (-0x3.c8ffffffffffep+8), { LIT (0x8.0000000000b17217f7d1d72998p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d7299cp-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d72998p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b17217f7d1d7299cp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c8fffffffffffffcp+8", LIT (-0x3.c8fffffffffffffcp+8), { LIT (0x8.000000000000162e42fefa39ecp-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39fp-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39ecp-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162e42fefa39fp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c8ffffffffffffffffffffffffp+8", LIT (-0x3.c8ffffffffffffffffffffffffp+8), { LIT (0x8.00000000000000000000000588p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000000000000000058cp-972), ERRNO_UNCHANGED }, { LIT (0x8.00000000000000000000000588p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000000000000000058cp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c9000000000000000000000001p+8", LIT (-0x3.c9000000000000000000000001p+8), { LIT (0x7.fffffffffffffffffffffffa74p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.fffffffffffffffffffffffa74p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.fffffffffffffffffffffffa74p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.fffffffffffffffffffffffa78p-972), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c900000000000004p+8", LIT (-0x3.c900000000000004p+8), { LIT (0x7.ffffffffffffe9d1bd0105c61p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffffffe9d1bd0105c61p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffffffe9d1bd0105c61p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffffffe9d1bd0105c614p-972), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c900000000002p+8", LIT (-0x3.c900000000002p+8), { LIT (0x7.ffffffffff4e8de8082e38364p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffff4e8de8082e383644p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffff4e8de8082e38364p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffffffffff4e8de8082e383644p-972), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87cp-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb88p-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb87cp-972), UNDERFLOW_EXCEPTION }, { LIT (0x7.ffe9d1dbc0a75a9e6bb14eb88p-972), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x8p-972), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-972), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-972), UNDERFLOW_EXCEPTION_OK }, { LIT (0x8p-972), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x1.6a09e667f3bcc8p-1020), UNDERFLOW_EXCEPTION }, { LIT (0x1.6a09e667f3bcc8p-1020), UNDERFLOW_EXCEPTION }, { LIT (0x1.6a09e667f3bcc8p-1020), UNDERFLOW_EXCEPTION }, { LIT (0x1.6a09e667f3bcccp-1020), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0xb.504f333f9de64p-1024), UNDERFLOW_EXCEPTION }, { LIT (0xb.504f333f9de64p-1024), UNDERFLOW_EXCEPTION }, { LIT (0xb.504f333f9de64p-1024), UNDERFLOW_EXCEPTION }, { LIT (0xb.504f333f9de68p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x5.a827999fcef3p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x5.a827999fcef34p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x5.a827999fcef3p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x5.a827999fcef34p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x4.000b1730df6a4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.000b1730df6a4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.000b1730df6a4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.000b1730df6a8p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fdffffffffffep+8", LIT (-0x3.fdffffffffffep+8), { LIT (0x4.0000000000588p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.000000000058cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.0000000000588p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x4.000000000058cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe00000000002p+8", LIT (-0x3.fe00000000002p+8), { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa74p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffa78p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x3.fff4e8ede0538p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede053cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede0538p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.fff4e8ede053cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x3.ab031b9f7490cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7491p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7491p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82bcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.3bed4179f82cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x3.5d13f32b5a758p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a758p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x3.35ec906f22fb8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fbcp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fb8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.35ec906f22fbcp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x3.159ca845541b4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b8p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b8p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe7798p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x2.97fb5aa6c544cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c545p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c545p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x2.60dfc14636e28p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2cp-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e28p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2cp-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f4p-1024), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f8p-1024), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1024), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffdfffffffffep+12", LIT (-0x3.ffdfffffffffep+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffdffffffffffffcp+12", LIT (-0x3.ffdffffffffffffcp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffdfffffffffffffffffffffffp+12", LIT (-0x3.ffdfffffffffffffffffffffffp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe00000000000000000000001p+12", LIT (-0x3.ffe00000000000000000000001p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe0000000000004p+12", LIT (-0x3.ffe0000000000004p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe0000000002p+12", LIT (-0x3.ffe0000000002p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffefffffffffep+12", LIT (-0x3.ffefffffffffep+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffeffffffffffffcp+12", LIT (-0x3.ffeffffffffffffcp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fff0000000000004p+12", LIT (-0x3.fff0000000000004p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fff0000000002p+12", LIT (-0x3.fff0000000002p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-1076), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271e170997ffff8d5111790cp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111790cp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111790cp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997ffff8d5111791p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-1024", LIT (-0x4p-1024), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-1076", LIT (-0x4p-1076), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a751c0f7e10bd3b9f8ae01p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae014p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae01p-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bd3b9f8ae014p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.ffffffd3a37a02490b9d93da3cp-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da3cp-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da3cp-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a02490b9d93da4p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffffffffd3a37a020b8c254p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c258p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c254p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a37a020b8c258p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f333f9de6484597d89b3754p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3758p-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ebp-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f333f9de6484597d89b3754p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3754p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484597d89b3758p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a827999fcef32422cbec4d9baap-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baap-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9baap-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32422cbec4d9bacp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.000162e46d6f26b8bbb607a6dep-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6ep-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6dep-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8bbb607a6ep-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe9d1c0d8fd145509b5db1d8p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d9p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d8p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd145509b5db1d9p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc2p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc1p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bb40b5d6cdc2p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13f32b5a75abd0e69a2ee64p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee641p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee64p-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd0e69a2ee641p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca845541b6b74f8ab432593p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab432593p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab432593p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74f8ab432594p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413cccfe779921165f626cdd5p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd5p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd5p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921165f626cdd6p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb5aa6c544e3a872f5fd885cp-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885cp-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885cp-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a872f5fd885dp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfc14636e2a5bd1ab48c60b9p-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b9p-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60b9p-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bd1ab48c60bap-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57078faa2f5b9bef918a1d62p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d63p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d62p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9bef918a1d63p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x8p-972", LIT (-0x8p-972), { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffffffffffffcp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79b6bee6bd7ffc6db60f67e8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67e8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67e8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffc6db60f67ecp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744fff686ede7e5204943f88p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f8cp-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f88p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7e5204943f8cp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xf.ffffffffffff8p+1020", LIT (-0xf.ffffffffffff8p+1020), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xf.ffffffffffffbffffffffffffcp+1020", LIT (-0xf.ffffffffffffbffffffffffffcp+1020), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-1076), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_ibm128)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1.0000000000000000000000000bp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000bp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000bp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000000000000000b8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000b1721bcfc99d9f890ea068p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea068p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea068p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc99d9f890ea07p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1.0000000000b17217f7d20cf9278p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf928p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf9278p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17217f7d20cf928p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1.000000000000000b17217f7d1c8p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1dp+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1c8p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000b17217f7d1dp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x1p-600", LIT (0x1p-600), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0x1.306fe0a31b7152de8d5a46305c8p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305c8p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305c8p+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152de8d5a46305dp+1000), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.ffd3a3b7814eb53cd7629d70fcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d71p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d70fcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53cd7629d71p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.ffffffffffffep+12", LIT (0x3.ffffffffffffep+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.ffffffffffffep+8", LIT (0x3.ffffffffffffep+8), { LIT (0xf.fffffffffe9d1bd0105c706c84p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c88p+1020), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c84p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bd0105c706c88p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffffffffffff8p+8", LIT (0x3.fffffffffffffff8p+8), { LIT (0xf.ffffffffffffa746f404171844p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f404171844p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f404171844p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa746f404171848p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffffffffffffa3aae26b51fp+8", LIT (0x3.fffffffffffffffa3aae26b51fp+8), { LIT (0xf.ffffffffffffbffffffffffd34p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd34p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd34p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffbffffffffffd38p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffffffffffffa3aae26b52p+8", LIT (0x3.fffffffffffffffa3aae26b52p+8), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffffffffffffcp+12", LIT (0x3.fffffffffffffffcp+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffffffffffffffcp+8", LIT (0x3.fffffffffffffffcp+8), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.ffffffffffffffffffffffffffp+12", LIT (0x3.ffffffffffffffffffffffffffp+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.00000000000000000000000002p+12", LIT (0x4.00000000000000000000000002p+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.0000000000000008p+12", LIT (0x4.0000000000000008p+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.0000000000004p+12", LIT (0x4.0000000000004p+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.0000000000004p+8", LIT (0x4.0000000000004p+8), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) || (TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-1024", LIT (0x4p-1024), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-1076", LIT (0x4p-1076), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c605e2e8cec506d21bfc89ap+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89ap+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89ap+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec506d21bfc89a8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1.00000002c5c85fe31f35a6a30d8p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30d8p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30d8p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe31f35a6a30ep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1.0000000000002c5c85fdf473e2p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e28p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e2p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5c85fdf473e28p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ea8p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908b2fb1366ebp+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7470363f4515426d76c76p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c764p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c76p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f4515426d76c764p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0x1.0000b17255775c040618bf4a4a8p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4bp+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4a8p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c040618bf4a4bp+128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0x8p-972", LIT (0x8p-972), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000000000000008p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfd7fd625f811d85ee0f45e6p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e8p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e6p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f811d85ee0f45e8p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722ff862d74360c22ab25d28p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d3p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d28p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d74360c22ab25d3p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd736c287aa8000406087bcc8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bcdp+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bcc8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8000406087bcdp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f995ad3ad5e8734d17732p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d1773208p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d17732p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8734d1773208p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e67fd7ff858c3dda97946a1p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a2p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a1p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c3dda97946a2p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.93d18bf7be8d272p-4", LIT (0xf.93d18bf7be8d272p-4), { LIT (0x1.f6b64a10a015e20774d776dcd9p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd98p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd9p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e20774d776dcd98p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.93d18bf7be8d8p-4", LIT (0xf.93d18bf7be8d8p-4), { LIT (0x1.f6b64a10a015e99701a69e715bp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715bp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715bp+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e99701a69e715b8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.93d18bf7be8dp-4", LIT (0xf.93d18bf7be8dp-4), { LIT (0x1.f6b64a10a015deb360fb026c4ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4ep+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb360fb026c4e8p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b6490bfcd17676f008c989d5p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d5p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d5p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676f008c989d58p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64a6870e6ae124dad946fb88p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb88p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb88p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae124dad946fb9p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.ffffffffffff8p+1020", LIT (0xf.ffffffffffff8p+1020), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.ffffffffffffbffffffffffffcp+1020", LIT (0xf.ffffffffffffbffffffffffffcp+1020), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_ibm128)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.ffffffffffffbffffffffffffcp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION }, { plus_infty, ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0xd.3ce16388003d339p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d33ap-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d33ap-308), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d5ccd21bad05p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad058p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad05p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad058p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d248p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-10000", LIT (-0x1p-10000), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025fp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de9p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.ffffffffffffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff5p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff5p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x1p-600", LIT (-0x1p-600), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x2p-16384", LIT (-0x2p-16384), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x8.00162e61bed4a48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a49p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a49p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c8ffffffffffep+8", LIT (-0x3.c8ffffffffffep+8), { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1722p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c8fffffffffffffcp+8", LIT (-0x3.c8fffffffffffffcp+8), { LIT (0x8.000000000000162p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000163p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000163p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c900000000000004p+8", LIT (-0x3.c900000000000004p+8), { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9d8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c900000000002p+8", LIT (-0x3.c900000000002p+8), { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8dfp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x7.ffe9d1dbc0a75a98p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75aap-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75a98p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75aap-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap-1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32428p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x4.000b1730df6a524p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5248p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a524p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5248p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fdffffffffffep+8", LIT (-0x3.fdffffffffffep+8), { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b91p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe00000000002p+8", LIT (-0x3.fe00000000002p+8), { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f8p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x3.fff4e8ede053ad4cp-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad5p-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad4cp-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad5p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x3.ab031b9f7490e4b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x3.3bed4179f82bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc004p-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc004p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x3.35ec906f22fbbffcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbbffcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbcp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b78p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7799214p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3acp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x2.2e57078faa2f5b98p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b98p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b148p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffdfffffffffep+12", LIT (-0x3.ffdfffffffffep+12), { LIT (0x4.00000000058b90b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90cp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffdffffffffffffcp+12", LIT (-0x3.ffdffffffffffffcp+12), { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b178p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe0000000000004p+12", LIT (-0x3.ffe0000000000004p+12), { LIT (0x3.ffffffffffff4e88p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e9p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e88p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ffffffffffff4e9p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe0000000002p+12", LIT (-0x3.ffe0000000002p+12), { LIT (0x3.fffffffffa746f4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f4p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.fffffffffa746f48p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x3.ff4e9d4703df8428p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df843p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df8428p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ff4e9d4703df843p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x3.ab031b9f7490e4b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.ab031b9f7490e4cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x3.5d13f32b5a75abdp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abdp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abdp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.5d13f32b5a75abd8p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x3.159ca845541b6b7p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b78p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b7p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x3.159ca845541b6b78p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x2.d413cccfe779921p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779921p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe779921p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.d413cccfe7799218p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x2.97fb5aa6c544e3a8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3a8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3a8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.97fb5aa6c544e3bp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x2.60dfc14636e2a5b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5cp-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.60dfc14636e2a5cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x2.2e57078faa2f5b98p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5b98p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5b98p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.2e57078faa2f5bap-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x2.0058c0bc5d19d8ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0058c0bc5d19d8a8p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffefffffffffep+12", LIT (-0x3.ffefffffffffep+12), { LIT (0x2.0000000002c5c858p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c86p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c858p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.0000000002c5c86p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffeffffffffffffcp+12", LIT (-0x3.ffeffffffffffffcp+12), { LIT (0x2.00000000000058b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058b8p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x2.00000000000058cp-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x4p-16384), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fff0000000000004p+12", LIT (-0x3.fff0000000000004p+12), { LIT (0x1.ffffffffffffa74p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa748p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa74p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa748p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fff0000000002p+12", LIT (-0x3.fff0000000002p+12), { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37a8p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x1.ffa74ea381efc21p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc218p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc21p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc218p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271e170997fffp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997fffp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-1024", LIT (-0x4p-1024), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-1076", LIT (-0x4p-1076), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a751c0f7e10bp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-16384", LIT (-0x4p-16384), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.ffffffd3a37a024p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a025p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a024p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a025p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a4p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32428p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd148p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab031b9f7490e4b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd4p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b78p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7799214p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3acp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57078faa2f5b98p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b98p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x8p-16448", LIT (-0x8p-16448), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x8p-972", LIT (-0x8p-972), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79b6bee6bd7ffp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744fff686ede7p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede8p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xf.ffffffffffff8p+1020", LIT (-0xf.ffffffffffff8p+1020), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xf.fffffffffffffffp+16380", LIT (-0xf.fffffffffffffffp+16380), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x8p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_intel96)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-10000", LIT (0x1p-10000), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000b1721bcfc98p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc9ap+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc98p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc9ap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1.0000000000b17216p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17218p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17216p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17218p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1.000000000000000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000cp+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000cp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x1p-600", LIT (0x1p-600), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x2p-16384", LIT (0x2p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152ep+1000), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.fd3a751c0f7e10bp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.ffd3a3b7814eb53p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb54p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb54p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.ffffffffffffep+12", LIT (0x3.ffffffffffffep+12), { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bd1p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.ffffffffffffep+8", LIT (0x3.ffffffffffffep+8), { LIT (0xf.fffffffffe9d1bdp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bdp+1020), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bdp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bep+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffffffffffffff8p+8", LIT (0x3.fffffffffffffff8p+8), { LIT (0xf.ffffffffffffa74p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa74p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa74p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa75p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffffffffffffffcp+12", LIT (0x3.fffffffffffffffcp+12), { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a4p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffffffffffffffcp+8", LIT (0x3.fffffffffffffffcp+8), { LIT (0xf.ffffffffffffd3ap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3ap+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3ap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3bp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4.0000000000000008p+12", LIT (0x4.0000000000000008p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4.0000000000004p+12", LIT (0x4.0000000000004p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4.0000000000004p+8", LIT (0x4.0000000000004p+8), { LIT (0x1.00000000002c5c84p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c86p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c84p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c86p+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0x1.00058ba01fb9f96cp+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96ep+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96cp+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96ep+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-1024", LIT (0x4p-1024), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-1076", LIT (0x4p-1076), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec52p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-16384", LIT (0x4p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1.00000002c5c85fe2p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe4p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe2p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe4p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5ep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f452p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c06p+128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x8p-16448", LIT (0x8p-16448), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0x8p-972", LIT (0x8p-972), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfd7fd625f8118p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f812p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f8118p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f812p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7438p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa802p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5eap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e67fd7ff858cp+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c4p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858cp+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c4p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.93d18bf7be8d272p-4", LIT (0xf.93d18bf7be8d272p-4), { LIT (0x1.f6b64a10a015e206p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e208p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e206p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e208p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.93d18bf7be8d8p-4", LIT (0xf.93d18bf7be8d8p-4), { LIT (0x1.f6b64a10a015e996p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e998p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e996p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e998p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.93d18bf7be8dp-4", LIT (0xf.93d18bf7be8dp-4), { LIT (0x1.f6b64a10a015deb2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb4p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb4p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17678p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae14p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.ffffffffffff8p+1020", LIT (0xf.ffffffffffff8p+1020), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.fffffffffffffffp+16380", LIT (0xf.fffffffffffffffp+16380), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_intel96)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0", LIT (-0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1.3045fep+8", LIT (-0x1.3045fep+8), { LIT (0xd.3ce16388003d339p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d33ap-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d339p-308), ERRNO_UNCHANGED }, { LIT (0xd.3ce16388003d33ap-308), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1.567cc8p+0", LIT (-0x1.567cc8p+0), { LIT (0x6.546d5ccd21bad05p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad058p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad05p-4), ERRNO_UNCHANGED }, { LIT (0x6.546d5ccd21bad058p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1.bbbd76p+0", LIT (-0x1.bbbd76p+0), { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d24p-4), ERRNO_UNCHANGED }, { LIT (0x4.cfe0085ef004d248p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p+0", LIT (-0x1p+0), { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED }, { LIT (0x8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-100", LIT (-0x1p-100), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-10000", LIT (-0x1p-10000), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-20", LIT (-0x1p-20), { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025ep-4), ERRNO_UNCHANGED }, { LIT (0xf.ffff4e8debe025fp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-40", LIT (-0x1p-40), { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de8p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffff4e8de9p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-60", LIT (-0x1p-60), { LIT (0xf.ffffffffffffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff5p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff4p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffff5p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x1p-600", LIT (-0x1p-600), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x2p-16384", LIT (-0x2p-16384), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c8fffcp+8", LIT (-0x3.c8fffcp+8), { LIT (0x8.00162e61bed4a48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a49p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a48p-972), ERRNO_UNCHANGED }, { LIT (0x8.00162e61bed4a49p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c8ffffffffffep+8", LIT (-0x3.c8ffffffffffep+8), { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1721p-972), ERRNO_UNCHANGED }, { LIT (0x8.0000000000b1722p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c8fffffffffffffcp+8", LIT (-0x3.c8fffffffffffffcp+8), { LIT (0x8.000000000000162p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000163p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000162p-972), ERRNO_UNCHANGED }, { LIT (0x8.000000000000163p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c900000000000004p+8", LIT (-0x3.c900000000000004p+8), { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9dp-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffffffe9d8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c900000000002p+8", LIT (-0x3.c900000000002p+8), { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8de8p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffffffffff4e8dfp-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c90004p+8", LIT (-0x3.c90004p+8), { LIT (0x7.ffe9d1dbc0a75a98p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75aap-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75a98p-972), ERRNO_UNCHANGED }, { LIT (0x7.ffe9d1dbc0a75aap-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.c9p+8", LIT (-0x3.c9p+8), { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED }, { LIT (0x8p-972), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fb8p+8", LIT (-0x3.fb8p+8), { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-1020), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap-1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fc8p+8", LIT (-0x3.fc8p+8), { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-1024), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fd8p+8", LIT (-0x3.fd8p+8), { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-1024), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32428p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fdfffcp+8", LIT (-0x3.fdfffcp+8), { LIT (0x4.000b1730df6a524p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5248p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a524p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000b1730df6a5248p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fdffffffffffep+8", LIT (-0x3.fdffffffffffep+8), { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b908p-1024), ERRNO_UNCHANGED }, { LIT (0x4.000000000058b91p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe00000000002p+8", LIT (-0x3.fe00000000002p+8), { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f4p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffa746f8p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe0004p+8", LIT (-0x3.fe0004p+8), { LIT (0x3.fff4e8ede053ad4cp-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad5p-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad4cp-1024), ERRNO_UNCHANGED }, { LIT (0x3.fff4e8ede053ad5p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe2p+8", LIT (-0x3.fe2p+8), { LIT (0x3.ab031b9f7490e4b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4b8p-1024), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe4e8p+8", LIT (-0x3.fe4e8p+8), { LIT (0x3.3bed4179f82bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc004p-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.3bed4179f82bc004p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe4p+8", LIT (-0x3.fe4p+8), { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-1024), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe513p+8", LIT (-0x3.fe513p+8), { LIT (0x3.35ec906f22fbbffcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbbffcp-1024), ERRNO_UNCHANGED }, { LIT (0x3.35ec906f22fbcp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe6p+8", LIT (-0x3.fe6p+8), { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-1024), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b78p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fe8p+8", LIT (-0x3.fe8p+8), { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-1024), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7799214p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.feap+8", LIT (-0x3.feap+8), { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-1024), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3acp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fecp+8", LIT (-0x3.fecp+8), { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-1024), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.feep+8", LIT (-0x3.feep+8), { LIT (0x2.2e57078faa2f5b98p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b98p-1024), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fep+8", LIT (-0x3.fep+8), { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED }, { LIT (0x4p-1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffdffcp+12", LIT (-0x3.ffdffcp+12), { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b14p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00b18178ba33b148p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffdfffffffffep+12", LIT (-0x3.ffdfffffffffep+12), { LIT (0x4.00000000058b90b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90cp-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90b8p-16384), ERRNO_UNCHANGED }, { LIT (0x4.00000000058b90cp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffdffffffffffffcp+12", LIT (-0x3.ffdffffffffffffcp+12), { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b17p-16384), ERRNO_UNCHANGED }, { LIT (0x4.000000000000b178p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe0000000000004p+12", LIT (-0x3.ffe0000000000004p+12), { LIT (0x3.ffffffffffff4e8cp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffff4e8cp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffff4e8cp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ffffffffffff4e9p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe0000000002p+12", LIT (-0x3.ffe0000000002p+12), { LIT (0x3.fffffffffa746f4p-16384), ERRNO_UNCHANGED }, { LIT (0x3.fffffffffa746f4p-16384), ERRNO_UNCHANGED }, { LIT (0x3.fffffffffa746f4p-16384), ERRNO_UNCHANGED }, { LIT (0x3.fffffffffa746f44p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe004p+12", LIT (-0x3.ffe004p+12), { LIT (0x3.ff4e9d4703df842cp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ff4e9d4703df843p-16384), ERRNO_UNCHANGED }, { LIT (0x3.ff4e9d4703df842cp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ff4e9d4703df843p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe2p+12", LIT (-0x3.ffe2p+12), { LIT (0x3.ab031b9f7490e4b8p-16384), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-16384), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4b8p-16384), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe4p+12", LIT (-0x3.ffe4p+12), { LIT (0x3.5d13f32b5a75abdp-16384), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-16384), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-16384), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd4p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe6p+12", LIT (-0x3.ffe6p+12), { LIT (0x3.159ca845541b6b74p-16384), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-16384), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-16384), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b78p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffe8p+12", LIT (-0x3.ffe8p+12), { LIT (0x2.d413cccfe779921p-16384), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-16384), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-16384), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7799214p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffeap+12", LIT (-0x3.ffeap+12), { LIT (0x2.97fb5aa6c544e3a8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3acp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffecp+12", LIT (-0x3.ffecp+12), { LIT (0x2.60dfc14636e2a5bcp-16384), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-16384), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-16384), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5cp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffeep+12", LIT (-0x3.ffeep+12), { LIT (0x2.2e57078faa2f5b98p-16384), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-16384), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b98p-16384), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffeffcp+12", LIT (-0x3.ffeffcp+12), { LIT (0x2.0058c0bc5d19d8ap-16384), ERRNO_UNCHANGED }, { LIT (0x2.0058c0bc5d19d8ap-16384), ERRNO_UNCHANGED }, { LIT (0x2.0058c0bc5d19d8ap-16384), ERRNO_UNCHANGED }, { LIT (0x2.0058c0bc5d19d8a4p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffefffffffffep+12", LIT (-0x3.ffefffffffffep+12), { LIT (0x2.0000000002c5c85cp-16384), ERRNO_UNCHANGED }, { LIT (0x2.0000000002c5c86p-16384), ERRNO_UNCHANGED }, { LIT (0x2.0000000002c5c85cp-16384), ERRNO_UNCHANGED }, { LIT (0x2.0000000002c5c86p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffeffffffffffffcp+12", LIT (-0x3.ffeffffffffffffcp+12), { LIT (0x2.00000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.00000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.00000000000058b8p-16384), ERRNO_UNCHANGED }, { LIT (0x2.00000000000058bcp-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.ffep+12", LIT (-0x3.ffep+12), { LIT (0x4p-16384), ERRNO_UNCHANGED }, { LIT (0x4p-16384), ERRNO_UNCHANGED }, { LIT (0x4p-16384), ERRNO_UNCHANGED }, { LIT (0x4p-16384), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fff0000000000004p+12", LIT (-0x3.fff0000000000004p+12), { LIT (0x1.ffffffffffffa744p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa748p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa744p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffffffffffffa748p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fff0000000002p+12", LIT (-0x3.fff0000000002p+12), { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37ap-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.fffffffffd3a37a4p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fff004p+12", LIT (-0x3.fff004p+12), { LIT (0x1.ffa74ea381efc214p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc218p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc214p-16384), UNDERFLOW_EXCEPTION }, { LIT (0x1.ffa74ea381efc218p-16384), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x3.fffp+12", LIT (-0x3.fffp+12), { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK }, { LIT (0x2p-16384), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4.01p+12", LIT (-0x4.01p+12), { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK }, { LIT (0x1p-16400), UNDERFLOW_EXCEPTION_OK } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4.32p+8", LIT (-0x4.32p+8), { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED }, { LIT (0x4p-1076), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4.8ce878p-4", LIT (-0x4.8ce878p-4), { LIT (0xd.23271e170997fffp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170997fffp-4), ERRNO_UNCHANGED }, { LIT (0xd.23271e170998p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-1024", LIT (-0x4p-1024), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-1076", LIT (-0x4p-1076), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-12", LIT (-0x4p-12), { LIT (0xf.fd3a751c0f7e10bp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bp-4), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-128", LIT (-0x4p-128), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-16384", LIT (-0x4p-16384), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-16448", LIT (-0x4p-16448), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-32", LIT (-0x4p-32), { LIT (0xf.ffffffd3a37a024p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a025p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a024p-4), ERRNO_UNCHANGED }, { LIT (0xf.ffffffd3a37a025p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x4p-52", LIT (-0x4p-52), { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p-4), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a4p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.48p+4", LIT (-0x7.48p+4), { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-120), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-120), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.b8p+4", LIT (-0x7.b8p+4), { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p-124), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap-124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.c8p+4", LIT (-0x7.c8p+4), { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6484p-128), ERRNO_UNCHANGED }, { LIT (0xb.504f333f9de6485p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.d8p+4", LIT (-0x7.d8p+4), { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef3242p-128), ERRNO_UNCHANGED }, { LIT (0x5.a827999fcef32428p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.dffff8p+4", LIT (-0x7.dffff8p+4), { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26b8p-128), ERRNO_UNCHANGED }, { LIT (0x4.000162e46d6f26cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.e00008p+4", LIT (-0x7.e00008p+4), { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd144p-128), ERRNO_UNCHANGED }, { LIT (0x3.fffe9d1c0d8fd148p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.e2p+4", LIT (-0x7.e2p+4), { LIT (0x3.ab031b9f7490e4b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4b8p-128), ERRNO_UNCHANGED }, { LIT (0x3.ab031b9f7490e4bcp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.e4p+4", LIT (-0x7.e4p+4), { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abdp-128), ERRNO_UNCHANGED }, { LIT (0x3.5d13f32b5a75abd4p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.e6p+4", LIT (-0x7.e6p+4), { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b74p-128), ERRNO_UNCHANGED }, { LIT (0x3.159ca845541b6b78p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.e8p+4", LIT (-0x7.e8p+4), { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe779921p-128), ERRNO_UNCHANGED }, { LIT (0x2.d413cccfe7799214p-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.eap+4", LIT (-0x7.eap+4), { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3a8p-128), ERRNO_UNCHANGED }, { LIT (0x2.97fb5aa6c544e3acp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.ecp+4", LIT (-0x7.ecp+4), { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5bcp-128), ERRNO_UNCHANGED }, { LIT (0x2.60dfc14636e2a5cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x7.eep+4", LIT (-0x7.eep+4), { LIT (0x2.2e57078faa2f5b98p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b98p-128), ERRNO_UNCHANGED }, { LIT (0x2.2e57078faa2f5b9cp-128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x8p-152", LIT (-0x8p-152), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x8p-16448", LIT (-0x8p-16448), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x8p-972", LIT (-0x8p-972), { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffffffp-4), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0x9.5p+4", LIT (-0x9.5p+4), { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED }, { LIT (0x8p-152), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xc.1bf12p-16", LIT (-0xc.1bf12p-16), { LIT (0xf.ff79b6bee6bd7ffp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd7ffp-4), ERRNO_UNCHANGED }, { LIT (0xf.ff79b6bee6bd8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xe.2ce69p-4", LIT (-0xe.2ce69p-4), { LIT (0x8.a8744fff686ede7p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede8p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede7p-4), ERRNO_UNCHANGED }, { LIT (0x8.a8744fff686ede8p-4), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xf.424p+16", LIT (-0xf.424p+16), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xf.ffffffffffff8p+1020", LIT (-0xf.ffffffffffff8p+1020), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xf.fffffffffffffffp+16380", LIT (-0xf.fffffffffffffffp+16380), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "-0xf.fffffp+124", LIT (-0xf.fffffp+124), { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x0p+0), UNDERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0x4p-16448), UNDERFLOW_EXCEPTION } },
+#endif
+#if (TEST_COND_m68k96)
+    { "+0", LIT (0x0p+0), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-100", LIT (0x1p-100), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-10000", LIT (0x1p-10000), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-20", LIT (0x1p-20), { LIT (0x1.00000b1721bcfc98p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc9ap+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc98p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000b1721bcfc9ap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-40", LIT (0x1p-40), { LIT (0x1.0000000000b17216p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17218p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17216p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000b17218p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-60", LIT (0x1p-60), { LIT (0x1.000000000000000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000cp+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000ap+0), ERRNO_UNCHANGED }, { LIT (0x1.000000000000000cp+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x1p-600", LIT (0x1p-600), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x2p-16384", LIT (0x2p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.e84p+8", LIT (0x3.e84p+8), { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152dep+1000), ERRNO_UNCHANGED }, { LIT (0x1.306fe0a31b7152ep+1000), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffffcp+12", LIT (0x3.fffffcp+12), { LIT (0xf.fd3a751c0f7e10bp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10bp+16380), ERRNO_UNCHANGED }, { LIT (0xf.fd3a751c0f7e10cp+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffffcp+8", LIT (0x3.fffffcp+8), { LIT (0xf.ffd3a3b7814eb53p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb54p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb53p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffd3a3b7814eb54p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.ffffffffffffep+12", LIT (0x3.ffffffffffffep+12), { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bdp+16380), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffe9d1bd1p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.ffffffffffffep+8", LIT (0x3.ffffffffffffep+8), { LIT (0xf.fffffffffe9d1bdp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bdp+1020), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bdp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.fffffffffe9d1bep+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffffffffffffff8p+8", LIT (0x3.fffffffffffffff8p+8), { LIT (0xf.ffffffffffffa74p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa74p+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa74p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffa75p+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffffffffffffffcp+12", LIT (0x3.fffffffffffffffcp+12), { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a3p+16380), ERRNO_UNCHANGED }, { LIT (0xf.fffffffffffd3a4p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffffffffffffffcp+8", LIT (0x3.fffffffffffffffcp+8), { LIT (0xf.ffffffffffffd3ap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3ap+1020), ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3ap+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0xf.ffffffffffffd3bp+1020), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.fffp+12", LIT (0x3.fffp+12), { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED }, { LIT (0x8p+16380), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x3.ffp+8", LIT (0x3.ffp+8), { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED }, { LIT (0x8p+1020), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4.0000000000000008p+12", LIT (0x4.0000000000000008p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4.0000000000004p+12", LIT (0x4.0000000000004p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4.0000000000004p+8", LIT (0x4.0000000000004p+8), { LIT (0x1.00000000002c5c84p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c86p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c84p+1024), ERRNO_UNCHANGED }, { LIT (0x1.00000000002c5c86p+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4.000008p+12", LIT (0x4.000008p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4.000008p+8", LIT (0x4.000008p+8), { LIT (0x1.00058ba01fb9f96cp+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96ep+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96cp+1024), ERRNO_UNCHANGED }, { LIT (0x1.00058ba01fb9f96ep+1024), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p+12", LIT (0x4p+12), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p+8", LIT (0x4p+8), { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED }, { LIT (0x1p+1024), ((TEST_COND_ibm128_libgcc) ? XFAIL_TEST : 0) | ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-1024", LIT (0x4p-1024), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-1076", LIT (0x4p-1076), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-12", LIT (0x4p-12), { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec5p+0), ERRNO_UNCHANGED }, { LIT (0x1.002c605e2e8cec52p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-128", LIT (0x4p-128), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-16384", LIT (0x4p-16384), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-16448", LIT (0x4p-16448), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-32", LIT (0x4p-32), { LIT (0x1.00000002c5c85fe2p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe4p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe2p+0), ERRNO_UNCHANGED }, { LIT (0x1.00000002c5c85fe4p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x4p-52", LIT (0x4p-52), { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5cp+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000002c5ep+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x6.48p+4", LIT (0x6.48p+4), { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc908p+100), ERRNO_UNCHANGED }, { LIT (0x1.6a09e667f3bcc90ap+100), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x7.fffff8p+4", LIT (0x7.fffff8p+4), { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f451p+124), ERRNO_UNCHANGED }, { LIT (0xf.fffa7470363f452p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x7.fp+4", LIT (0x7.fp+4), { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED }, { LIT (0x8p+124), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x8.00001p+4", LIT (0x8.00001p+4), { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c04p+128), ERRNO_UNCHANGED }, { LIT (0x1.0000b17255775c06p+128), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x8p-152", LIT (0x8p-152), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x8p-16448", LIT (0x8p-16448), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0x8p-972", LIT (0x8p-972), { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1p+0), ERRNO_UNCHANGED }, { LIT (0x1.0000000000000002p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xa.87b8bp+0", LIT (0xa.87b8bp+0), { LIT (0x5.c6bfd7fd625f8118p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f812p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f8118p+8), ERRNO_UNCHANGED }, { LIT (0x5.c6bfd7fd625f812p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xap+0", LIT (0xap+0), { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED }, { LIT (0x4p+8), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xb.71754p-4", LIT (0xb.71754p-4), { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7436p+0), ERRNO_UNCHANGED }, { LIT (0x1.a44722ff862d7438p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xc.122c4p-4", LIT (0xc.122c4p-4), { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa8p+0), ERRNO_UNCHANGED }, { LIT (0x1.afdd736c287aa802p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xcp-4", LIT (0xcp-4), { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5e8p+0), ERRNO_UNCHANGED }, { LIT (0x1.ae89f995ad3ad5eap+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xd.d77dp+0", LIT (0xd.d77dp+0), { LIT (0x3.959e67fd7ff858cp+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c4p+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858cp+12), ERRNO_UNCHANGED }, { LIT (0x3.959e67fd7ff858c4p+12), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.424p+16", LIT (0xf.424p+16), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.93d18bf7be8d272p-4", LIT (0xf.93d18bf7be8d272p-4), { LIT (0x1.f6b64a10a015e206p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e208p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e206p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e208p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.93d18bf7be8d8p-4", LIT (0xf.93d18bf7be8d8p-4), { LIT (0x1.f6b64a10a015e996p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e998p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e996p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015e998p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.93d18bf7be8dp-4", LIT (0xf.93d18bf7be8dp-4), { LIT (0x1.f6b64a10a015deb2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb4p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb2p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a10a015deb4p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.93d18p-4", LIT (0xf.93d18p-4), { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17676p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b6490bfcd17678p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.93d19p-4", LIT (0xf.93d19p-4), { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae12p+0), ERRNO_UNCHANGED }, { LIT (0x1.f6b64a6870e6ae14p+0), ERRNO_UNCHANGED } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.ffffffffffff8p+1020", LIT (0xf.ffffffffffff8p+1020), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.fffffffffffffffp+16380", LIT (0xf.fffffffffffffffp+16380), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+#if (TEST_COND_m68k96)
+    { "0xf.fffffp+124", LIT (0xf.fffffp+124), { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE }, { LIT (0xf.fffffffffffffffp+16380), OVERFLOW_EXCEPTION }, { plus_infty, OVERFLOW_EXCEPTION | ERRNO_ERANGE } },
+#endif
+  };
+
+static void
+exp2_test (void)
+{
+  ALL_RM_TEST (exp2, 0, exp2_test_data, RUN_TEST_LOOP_f_f, END);
+}
+
+static void
+do_test (void)
+{
+  exp2_test ();
+}
+
+/*
+ * Local Variables:
+ * mode:c
+ * End:
+ */

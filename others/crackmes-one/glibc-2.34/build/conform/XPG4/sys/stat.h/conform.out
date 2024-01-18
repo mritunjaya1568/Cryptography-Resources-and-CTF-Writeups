@@ -1,0 +1,88 @@
+PASS: Availability of <sys/stat.h>
+PASS: Combined <sys/stat.h> test
+PASSCOMBINED: Availability of type dev_t
+PASSCOMBINED: Availability of type ino_t
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type nlink_t
+PASSCOMBINED: Availability of type uid_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type struct stat
+PASSCOMBINED: Availability of member st_dev
+PASSCOMBINED: Type of member st_dev
+PASSCOMBINED: Availability of member st_ino
+PASSCOMBINED: Type of member st_ino
+PASSCOMBINED: Availability of member st_mode
+PASSCOMBINED: Type of member st_mode
+PASSCOMBINED: Availability of member st_nlink
+PASSCOMBINED: Type of member st_nlink
+PASSCOMBINED: Availability of member st_uid
+PASSCOMBINED: Type of member st_uid
+PASSCOMBINED: Availability of member st_gid
+PASSCOMBINED: Type of member st_gid
+PASSCOMBINED: Availability of member st_rdev
+PASSCOMBINED: Type of member st_rdev
+PASSCOMBINED: Availability of member st_size
+PASSCOMBINED: Type of member st_size
+PASSCOMBINED: Availability of member st_atime
+PASSCOMBINED: Type of member st_atime
+PASSCOMBINED: Availability of member st_mtime
+PASSCOMBINED: Type of member st_mtime
+PASSCOMBINED: Availability of member st_ctime
+PASSCOMBINED: Type of member st_ctime
+PASSCOMBINED: Availability of constant S_IFMT
+PASSCOMBINED: Availability of constant S_IFBLK
+PASSCOMBINED: Availability of constant S_IFCHR
+PASSCOMBINED: Availability of constant S_IFIFO
+PASSCOMBINED: Availability of constant S_IFREG
+PASSCOMBINED: Availability of constant S_IFDIR
+PASSCOMBINED: Availability of constant S_IRWXU
+PASSCOMBINED: Availability of constant S_IRUSR
+PASSCOMBINED: Availability of constant S_IWUSR
+PASSCOMBINED: Availability of constant S_IXUSR
+PASSCOMBINED: Availability of constant S_IRWXG
+PASSCOMBINED: Availability of constant S_IRGRP
+PASSCOMBINED: Availability of constant S_IWGRP
+PASSCOMBINED: Availability of constant S_IXGRP
+PASSCOMBINED: Availability of constant S_IRWXO
+PASSCOMBINED: Availability of constant S_IROTH
+PASSCOMBINED: Availability of constant S_IWOTH
+PASSCOMBINED: Availability of constant S_IXOTH
+PASSCOMBINED: Availability of constant S_ISUID
+PASSCOMBINED: Availability of constant S_ISGID
+PASSCOMBINED: Availability of macro S_ISBLK
+PASSCOMBINED: Availability of macro S_ISCHR
+PASSCOMBINED: Availability of macro S_ISDIR
+PASSCOMBINED: Availability of macro S_ISFIFO
+PASSCOMBINED: Availability of macro S_ISREG
+/tmp/tmpyh0b6wly/test.c:3:3: error: #error "Macro S_TYPEISMQ not defined"
+ # error "Macro S_TYPEISMQ not defined"
+   ^~~~~
+MISSING: Availability of macro S_TYPEISMQ
+/tmp/tmpyh0b6wly/test.c:3:3: error: #error "Macro S_TYPEISSEM not defined"
+ # error "Macro S_TYPEISSEM not defined"
+   ^~~~~
+MISSING: Availability of macro S_TYPEISSEM
+/tmp/tmpyh0b6wly/test.c:3:3: error: #error "Macro S_TYPEISSHM not defined"
+ # error "Macro S_TYPEISSHM not defined"
+   ^~~~~
+MISSING: Availability of macro S_TYPEISSHM
+PASSCOMBINED: Availability of function chmod
+PASSCOMBINED: Type of function chmod
+PASSCOMBINED: Availability of function fstat
+PASSCOMBINED: Type of function fstat
+PASSCOMBINED: Availability of function mkdir
+PASSCOMBINED: Type of function mkdir
+PASSCOMBINED: Availability of function mkfifo
+PASSCOMBINED: Type of function mkfifo
+PASSCOMBINED: Availability of function stat
+PASSCOMBINED: Type of function stat
+PASSCOMBINED: Availability of function umask
+PASSCOMBINED: Type of function umask
+PASS: Namespace of <sys/stat.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   73
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

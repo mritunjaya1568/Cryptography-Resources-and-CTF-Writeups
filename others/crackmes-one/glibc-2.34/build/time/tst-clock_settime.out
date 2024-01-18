@@ -1,0 +1,2 @@
+error: xclock_settime.c:29: clock_settime is executed only when GLIBC_TEST_ALLOW_TIME_SETTING is set
+

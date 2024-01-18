@@ -1,0 +1,2 @@
+PASS: time/tst-clock_gettime-clobber
+original exit status 0

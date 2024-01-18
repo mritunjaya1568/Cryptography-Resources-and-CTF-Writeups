@@ -1,0 +1,4 @@
+once_handler1: locked
+once_handler1: going to wait on cond
+going to cancel
+Didn't expect signal from child: got `Aborted'

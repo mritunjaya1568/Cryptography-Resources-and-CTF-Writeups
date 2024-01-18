@@ -1,0 +1,2 @@
+PASS: stdlib/tst-strtod-overflow
+original exit status 0

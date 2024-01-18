@@ -1,0 +1,2 @@
+UNSUPPORTED: string/tst-strchr-rtm
+original exit status 77

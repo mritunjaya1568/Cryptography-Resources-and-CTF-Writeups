@@ -1,0 +1,8 @@
+P  3828 DIR D   .
+P  3831 REG F   ./link2-tgt
+P  3830 LNK SL  ./link2-ok
+P  3829 LNK SL  ./link1-bad
+L  3828 DIR D   .
+L  3831 REG F   ./link2-tgt
+L  3831 REG F   ./link2-ok
+L  3829 LNK SLN ./link1-bad

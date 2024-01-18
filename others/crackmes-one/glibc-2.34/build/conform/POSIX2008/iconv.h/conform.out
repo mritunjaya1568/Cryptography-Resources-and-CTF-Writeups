@@ -1,0 +1,16 @@
+PASS: Availability of <iconv.h>
+PASS: Combined <iconv.h> test
+PASSCOMBINED: Availability of type iconv_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of function iconv_open
+PASSCOMBINED: Type of function iconv_open
+PASSCOMBINED: Availability of function iconv
+PASSCOMBINED: Type of function iconv
+PASSCOMBINED: Availability of function iconv_close
+PASSCOMBINED: Type of function iconv_close
+PASS: Namespace of <iconv.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   10
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

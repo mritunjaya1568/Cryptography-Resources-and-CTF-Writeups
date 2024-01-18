@@ -1,0 +1,4 @@
+towctrans (L'A', t) = B
+towctrans (L'B', t) = C
+len = 10, wbuf = L"bcdefghija"
+len = 10, buf = "bcdefghija"

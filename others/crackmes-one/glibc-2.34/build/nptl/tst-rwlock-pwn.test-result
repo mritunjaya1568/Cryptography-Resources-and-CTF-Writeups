@@ -1,0 +1,2 @@
+PASS: nptl/tst-rwlock-pwn
+original exit status 0

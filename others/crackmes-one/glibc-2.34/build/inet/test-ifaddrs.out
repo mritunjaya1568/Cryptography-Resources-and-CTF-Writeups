@@ -1,0 +1,15 @@
+Name           Flags   Address         Netmask         Broadcast/Destination
+lo             0x10049  <packet>        <none>          <packet>       
+enp6s0f1       0x1003  <packet>        <none>          <packet>       
+wlp0s20f3      0x11043  <packet>        <none>          <packet>       
+virbr0         0x1003  <packet>        <none>          <packet>       
+virbr0-nic     0x1002  <packet>        <none>          <packet>       
+docker0        0x1003  <packet>        <none>          <packet>       
+lo             0x10049  127.0.0.1       255.0.0.0       127.0.0.1      
+lo             0x10049  172.24.198.122  255.255.255.255 172.24.198.122 
+wlp0s20f3      0x11043  10.2.156.133    255.255.248.0   10.2.159.255   
+virbr0         0x1003  192.168.122.1   255.255.255.0   192.168.122.255
+docker0        0x1003  172.17.0.1      255.255.0.0     172.17.255.255 
+lo             0x10049  fd00::8:c67a    ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff <none>         
+lo             0x10049  ::1             ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff <none>         
+wlp0s20f3      0x11043  fe80::8354:9c9f:78bd:e690 ffff:ffff:ffff:ffff:: <none>         

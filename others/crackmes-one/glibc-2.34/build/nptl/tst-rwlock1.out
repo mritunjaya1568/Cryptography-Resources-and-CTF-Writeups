@@ -1,0 +1,12 @@
+rwlock_init succeeded
+1st rwlock_rdlock succeeded
+2nd rwlock_rdlock succeeded
+1st rwlock_unlock succeeded
+2nd rwlock_unlock succeeded
+1st rwlock_wrlock succeeded
+3rd rwlock_unlock succeeded
+2nd rwlock_wrlock succeeded
+4th rwlock_unlock succeeded
+3rd rwlock_rdlock succeeded
+5th rwlock_unlock succeeded
+rwlock_destroy succeeded

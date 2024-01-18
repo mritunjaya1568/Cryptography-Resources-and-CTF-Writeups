@@ -1,0 +1,56 @@
+PASS: Availability of <string.h>
+PASS: Combined <string.h> test
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of function memchr
+PASSCOMBINED: Type of function memchr
+PASSCOMBINED: Availability of function memcmp
+PASSCOMBINED: Type of function memcmp
+PASSCOMBINED: Availability of function memcpy
+PASSCOMBINED: Type of function memcpy
+PASSCOMBINED: Availability of function memmove
+PASSCOMBINED: Type of function memmove
+PASSCOMBINED: Availability of function memset
+PASSCOMBINED: Type of function memset
+PASSCOMBINED: Availability of function strcat
+PASSCOMBINED: Type of function strcat
+PASSCOMBINED: Availability of function strchr
+PASSCOMBINED: Type of function strchr
+PASSCOMBINED: Availability of function strcmp
+PASSCOMBINED: Type of function strcmp
+PASSCOMBINED: Availability of function strcoll
+PASSCOMBINED: Type of function strcoll
+PASSCOMBINED: Availability of function strcpy
+PASSCOMBINED: Type of function strcpy
+PASSCOMBINED: Availability of function strcspn
+PASSCOMBINED: Type of function strcspn
+PASSCOMBINED: Availability of function strerror
+PASSCOMBINED: Type of function strerror
+PASSCOMBINED: Availability of function strlen
+PASSCOMBINED: Type of function strlen
+PASSCOMBINED: Availability of function strncat
+PASSCOMBINED: Type of function strncat
+PASSCOMBINED: Availability of function strncmp
+PASSCOMBINED: Type of function strncmp
+PASSCOMBINED: Availability of function strncpy
+PASSCOMBINED: Type of function strncpy
+PASSCOMBINED: Availability of function strpbrk
+PASSCOMBINED: Type of function strpbrk
+PASSCOMBINED: Availability of function strrchr
+PASSCOMBINED: Type of function strrchr
+PASSCOMBINED: Availability of function strspn
+PASSCOMBINED: Type of function strspn
+PASSCOMBINED: Availability of function strstr
+PASSCOMBINED: Type of function strstr
+PASSCOMBINED: Availability of function strtok
+PASSCOMBINED: Type of function strtok
+PASSCOMBINED: Availability of function strxfrm
+PASSCOMBINED: Type of function strxfrm
+PASS: Namespace of <string.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   50
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,2 @@
+PASS: signal/tst-sigwait-eintr
+original exit status 0

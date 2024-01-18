@@ -1,0 +1,220 @@
+PASS: Availability of <limits.h>
+PASS: Combined <limits.h> test
+PASSCOMBINED: Availability of macro CHAR_BIT
+PASSCOMBINED: Availability of constant CHAR_BIT
+PASSCOMBINED: #if usability of symbol CHAR_BIT
+PASSCOMBINED: Value of symbol CHAR_BIT
+PASSCOMBINED: Availability of macro SCHAR_MIN
+PASSCOMBINED: Availability of constant SCHAR_MIN
+PASSCOMBINED: #if usability of symbol SCHAR_MIN
+PASSCOMBINED: Type of symbol SCHAR_MIN
+PASSCOMBINED: Value of symbol SCHAR_MIN
+PASSCOMBINED: Availability of macro SCHAR_MAX
+PASSCOMBINED: Availability of constant SCHAR_MAX
+PASSCOMBINED: #if usability of symbol SCHAR_MAX
+PASSCOMBINED: Type of symbol SCHAR_MAX
+PASSCOMBINED: Value of symbol SCHAR_MAX
+PASSCOMBINED: Availability of macro UCHAR_MAX
+PASSCOMBINED: Availability of constant UCHAR_MAX
+PASSCOMBINED: #if usability of symbol UCHAR_MAX
+PASSCOMBINED: Type of symbol UCHAR_MAX
+PASSCOMBINED: Value of symbol UCHAR_MAX
+PASSCOMBINED: Availability of macro CHAR_MIN
+PASSCOMBINED: Availability of constant CHAR_MIN
+PASSCOMBINED: #if usability of symbol CHAR_MIN
+PASSCOMBINED: Type of symbol CHAR_MIN
+PASSCOMBINED: Value of symbol CHAR_MIN
+PASSCOMBINED: Availability of macro CHAR_MAX
+PASSCOMBINED: Availability of constant CHAR_MAX
+PASSCOMBINED: #if usability of symbol CHAR_MAX
+PASSCOMBINED: Type of symbol CHAR_MAX
+PASSCOMBINED: Value of symbol CHAR_MAX
+PASSCOMBINED: Availability of macro MB_LEN_MAX
+PASSCOMBINED: Availability of constant MB_LEN_MAX
+PASSCOMBINED: #if usability of symbol MB_LEN_MAX
+PASSCOMBINED: Value of symbol MB_LEN_MAX
+PASSCOMBINED: Availability of macro SHRT_MIN
+PASSCOMBINED: Availability of constant SHRT_MIN
+PASSCOMBINED: #if usability of symbol SHRT_MIN
+PASSCOMBINED: Type of symbol SHRT_MIN
+PASSCOMBINED: Value of symbol SHRT_MIN
+PASSCOMBINED: Availability of macro SHRT_MAX
+PASSCOMBINED: Availability of constant SHRT_MAX
+PASSCOMBINED: #if usability of symbol SHRT_MAX
+PASSCOMBINED: Type of symbol SHRT_MAX
+PASSCOMBINED: Value of symbol SHRT_MAX
+PASSCOMBINED: Availability of macro USHRT_MAX
+PASSCOMBINED: Availability of constant USHRT_MAX
+PASSCOMBINED: #if usability of symbol USHRT_MAX
+PASSCOMBINED: Type of symbol USHRT_MAX
+PASSCOMBINED: Value of symbol USHRT_MAX
+PASSCOMBINED: Availability of macro INT_MAX
+PASSCOMBINED: Availability of constant INT_MAX
+PASSCOMBINED: #if usability of symbol INT_MAX
+PASSCOMBINED: Type of symbol INT_MAX
+PASSCOMBINED: Value of symbol INT_MAX
+PASSCOMBINED: Availability of macro INT_MIN
+PASSCOMBINED: Availability of constant INT_MIN
+PASSCOMBINED: #if usability of symbol INT_MIN
+PASSCOMBINED: Type of symbol INT_MIN
+PASSCOMBINED: Value of symbol INT_MIN
+PASSCOMBINED: Availability of macro UINT_MAX
+PASSCOMBINED: Availability of constant UINT_MAX
+PASSCOMBINED: #if usability of symbol UINT_MAX
+PASSCOMBINED: Type of symbol UINT_MAX
+PASSCOMBINED: Value of symbol UINT_MAX
+PASSCOMBINED: Availability of macro LONG_MAX
+PASSCOMBINED: Availability of constant LONG_MAX
+PASSCOMBINED: #if usability of symbol LONG_MAX
+PASSCOMBINED: Type of symbol LONG_MAX
+PASSCOMBINED: Value of symbol LONG_MAX
+PASSCOMBINED: Availability of macro LONG_MIN
+PASSCOMBINED: Availability of constant LONG_MIN
+PASSCOMBINED: #if usability of symbol LONG_MIN
+PASSCOMBINED: Type of symbol LONG_MIN
+PASSCOMBINED: Value of symbol LONG_MIN
+PASSCOMBINED: Availability of macro ULONG_MAX
+PASSCOMBINED: Availability of constant ULONG_MAX
+PASSCOMBINED: #if usability of symbol ULONG_MAX
+PASSCOMBINED: Type of symbol ULONG_MAX
+PASSCOMBINED: Value of symbol ULONG_MAX
+PASSCOMBINED: Availability of macro BC_BASE_MAX
+PASSCOMBINED: Availability of constant BC_BASE_MAX
+PASSCOMBINED: Value of symbol BC_BASE_MAX
+PASSCOMBINED: Availability of macro BC_DIM_MAX
+PASSCOMBINED: Availability of constant BC_DIM_MAX
+PASSCOMBINED: Value of symbol BC_DIM_MAX
+PASSCOMBINED: Availability of macro BC_SCALE_MAX
+PASSCOMBINED: Availability of constant BC_SCALE_MAX
+PASSCOMBINED: Value of symbol BC_SCALE_MAX
+PASSCOMBINED: Availability of macro BC_STRING_MAX
+PASSCOMBINED: Availability of constant BC_STRING_MAX
+PASSCOMBINED: Value of symbol BC_STRING_MAX
+PASSCOMBINED: Availability of macro COLL_WEIGHTS_MAX
+PASSCOMBINED: Availability of constant COLL_WEIGHTS_MAX
+PASSCOMBINED: Value of symbol COLL_WEIGHTS_MAX
+PASSCOMBINED: Availability of macro EXPR_NEST_MAX
+PASSCOMBINED: Availability of constant EXPR_NEST_MAX
+PASSCOMBINED: Value of symbol EXPR_NEST_MAX
+PASSCOMBINED: Availability of macro LINE_MAX
+PASSCOMBINED: Availability of constant LINE_MAX
+PASSCOMBINED: Value of symbol LINE_MAX
+PASSCOMBINED: Availability of constant NGROUPS_MAX
+PASSCOMBINED: Value of symbol NGROUPS_MAX
+PASSCOMBINED: Availability of macro RE_DUP_MAX
+PASSCOMBINED: Availability of constant RE_DUP_MAX
+PASSCOMBINED: Value of symbol RE_DUP_MAX
+PASSCOMBINED: Availability of constant _POSIX_CLOCKRES_MIN
+PASSCOMBINED: Value of symbol _POSIX_CLOCKRES_MIN
+PASSCOMBINED: Availability of constant _POSIX_AIO_LISTIO_MAX
+PASSCOMBINED: Value of symbol _POSIX_AIO_LISTIO_MAX
+PASSCOMBINED: Availability of constant _POSIX_AIO_MAX
+PASSCOMBINED: Value of symbol _POSIX_AIO_MAX
+PASSCOMBINED: Availability of constant _POSIX_ARG_MAX
+PASSCOMBINED: Value of symbol _POSIX_ARG_MAX
+PASSCOMBINED: Availability of constant _POSIX_CHILD_MAX
+PASSCOMBINED: Value of symbol _POSIX_CHILD_MAX
+PASSCOMBINED: Availability of constant _POSIX_DELAYTIMER_MAX
+PASSCOMBINED: Value of symbol _POSIX_DELAYTIMER_MAX
+PASSCOMBINED: Availability of constant _POSIX_LINK_MAX
+PASSCOMBINED: Value of symbol _POSIX_LINK_MAX
+PASSCOMBINED: Availability of constant _POSIX_LOGIN_NAME_MAX
+PASSCOMBINED: Value of symbol _POSIX_LOGIN_NAME_MAX
+PASSCOMBINED: Availability of constant _POSIX_MAX_CANON
+PASSCOMBINED: Value of symbol _POSIX_MAX_CANON
+PASSCOMBINED: Availability of constant _POSIX_MAX_INPUT
+PASSCOMBINED: Value of symbol _POSIX_MAX_INPUT
+PASSCOMBINED: Availability of constant _POSIX_MQ_OPEN_MAX
+PASSCOMBINED: Value of symbol _POSIX_MQ_OPEN_MAX
+PASSCOMBINED: Availability of constant _POSIX_MQ_PRIO_MAX
+PASSCOMBINED: Value of symbol _POSIX_MQ_PRIO_MAX
+PASSCOMBINED: Availability of constant _POSIX_NAME_MAX
+PASSCOMBINED: Value of symbol _POSIX_NAME_MAX
+PASSCOMBINED: Availability of constant _POSIX_NGROUPS_MAX
+PASSCOMBINED: Value of symbol _POSIX_NGROUPS_MAX
+PASSCOMBINED: Availability of constant _POSIX_OPEN_MAX
+PASSCOMBINED: Value of symbol _POSIX_OPEN_MAX
+PASSCOMBINED: Availability of constant _POSIX_PATH_MAX
+PASSCOMBINED: Value of symbol _POSIX_PATH_MAX
+PASSCOMBINED: Availability of constant _POSIX_PIPE_BUF
+PASSCOMBINED: Value of symbol _POSIX_PIPE_BUF
+PASSCOMBINED: Availability of constant _POSIX_RTSIG_MAX
+PASSCOMBINED: Value of symbol _POSIX_RTSIG_MAX
+PASSCOMBINED: Availability of constant _POSIX_SEM_NSEMS_MAX
+PASSCOMBINED: Value of symbol _POSIX_SEM_NSEMS_MAX
+PASSCOMBINED: Availability of constant _POSIX_SEM_VALUE_MAX
+PASSCOMBINED: Value of symbol _POSIX_SEM_VALUE_MAX
+PASSCOMBINED: Availability of constant _POSIX_SIGQUEUE_MAX
+PASSCOMBINED: Value of symbol _POSIX_SIGQUEUE_MAX
+PASSCOMBINED: Availability of constant _POSIX_SSIZE_MAX
+PASSCOMBINED: Value of symbol _POSIX_SSIZE_MAX
+PASSCOMBINED: Availability of constant _POSIX_STREAM_MAX
+PASSCOMBINED: Value of symbol _POSIX_STREAM_MAX
+PASSCOMBINED: Availability of constant _POSIX_THREAD_DESTRUCTOR_ITERATIONS
+PASSCOMBINED: Value of symbol _POSIX_THREAD_DESTRUCTOR_ITERATIONS
+PASSCOMBINED: Availability of constant _POSIX_THREAD_KEYS_MAX
+PASSCOMBINED: Value of symbol _POSIX_THREAD_KEYS_MAX
+PASSCOMBINED: Availability of constant _POSIX_THREAD_THREADS_MAX
+PASSCOMBINED: Value of symbol _POSIX_THREAD_THREADS_MAX
+PASSCOMBINED: Availability of constant _POSIX_TIMER_MAX
+PASSCOMBINED: Value of symbol _POSIX_TIMER_MAX
+PASSCOMBINED: Availability of constant _POSIX_TTY_NAME_MAX
+PASSCOMBINED: Value of symbol _POSIX_TTY_NAME_MAX
+PASSCOMBINED: Availability of constant _POSIX_TZNAME_MAX
+PASSCOMBINED: Value of symbol _POSIX_TZNAME_MAX
+PASSCOMBINED: Availability of macro _POSIX2_BC_BASE_MAX
+PASSCOMBINED: Availability of constant _POSIX2_BC_BASE_MAX
+PASSCOMBINED: Value of symbol _POSIX2_BC_BASE_MAX
+PASSCOMBINED: Availability of macro _POSIX2_BC_DIM_MAX
+PASSCOMBINED: Availability of constant _POSIX2_BC_DIM_MAX
+PASSCOMBINED: Value of symbol _POSIX2_BC_DIM_MAX
+PASSCOMBINED: Availability of macro _POSIX2_BC_SCALE_MAX
+PASSCOMBINED: Availability of constant _POSIX2_BC_SCALE_MAX
+PASSCOMBINED: Value of symbol _POSIX2_BC_SCALE_MAX
+PASSCOMBINED: Availability of macro _POSIX2_BC_STRING_MAX
+PASSCOMBINED: Availability of constant _POSIX2_BC_STRING_MAX
+PASSCOMBINED: Value of symbol _POSIX2_BC_STRING_MAX
+PASSCOMBINED: Availability of macro _POSIX2_COLL_WEIGHTS_MAX
+PASSCOMBINED: Availability of constant _POSIX2_COLL_WEIGHTS_MAX
+PASSCOMBINED: Value of symbol _POSIX2_COLL_WEIGHTS_MAX
+PASSCOMBINED: Availability of macro _POSIX2_EXPR_NEST_MAX
+PASSCOMBINED: Availability of constant _POSIX2_EXPR_NEST_MAX
+PASSCOMBINED: Value of symbol _POSIX2_EXPR_NEST_MAX
+PASSCOMBINED: Availability of macro _POSIX2_LINE_MAX
+PASSCOMBINED: Availability of constant _POSIX2_LINE_MAX
+PASSCOMBINED: Value of symbol _POSIX2_LINE_MAX
+PASSCOMBINED: Availability of macro _POSIX2_RE_DUP_MAX
+PASSCOMBINED: Availability of constant _POSIX2_RE_DUP_MAX
+PASSCOMBINED: Value of symbol _POSIX2_RE_DUP_MAX
+PASS: Availability of constant _XOPEN_IOV_MAX
+PASS: Value of symbol _XOPEN_IOV_MAX
+PASSCOMBINED: Availability of constant WORD_BIT
+PASSCOMBINED: Value of symbol WORD_BIT
+PASSCOMBINED: Availability of constant LONG_BIT
+PASSCOMBINED: Value of symbol LONG_BIT
+PASSCOMBINED: Availability of constant SSIZE_MAX
+PASS: Availability of constant CHARCLASS_NAME_MAX
+PASS: Value of symbol CHARCLASS_NAME_MAX
+PASS: Availability of constant NL_ARGMAX
+PASS: Value of symbol NL_ARGMAX
+PASS: Availability of constant NL_LANGMAX
+PASS: Value of symbol NL_LANGMAX
+PASS: Availability of constant NL_MSGMAX
+PASS: Value of symbol NL_MSGMAX
+PASS: Availability of constant NL_NMAX
+PASS: Availability of constant NL_SETMAX
+PASS: Value of symbol NL_SETMAX
+PASS: Availability of constant NL_TEXTMAX
+PASS: Availability of constant NZERO
+PASS: Value of symbol NZERO
+/tmp/tmp7gw561ok/test.c:2:13: error: ‘TMP_MAX’ undeclared here (not in a function); did you mean ‘NAME_MAX’?
+ __typeof__ (TMP_MAX) a_74 = TMP_MAX;
+             ^~~~~~~
+             NAME_MAX
+MISSING: Availability of constant TMP_MAX
+PASS: Namespace of <limits.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  211
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

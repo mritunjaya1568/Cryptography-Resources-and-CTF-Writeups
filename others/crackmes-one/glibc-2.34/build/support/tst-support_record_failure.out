@@ -1,0 +1,10 @@
+info: This test tests the test framework.
+info: It reports some expected errors on stdout.
+error: 1 test failures
+error: 1 test failures
+error: 1 test failures
+error: 1 test failures
+error: 2 test failures
+error: 2 test failures
+error: 2 test failures
+error: 2 test failures

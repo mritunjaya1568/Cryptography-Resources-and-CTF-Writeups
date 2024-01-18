@@ -1,0 +1,3 @@
+iszero removes excess precision for float
+iszero removes excess precision for double
+iszero removes excess precision for long double

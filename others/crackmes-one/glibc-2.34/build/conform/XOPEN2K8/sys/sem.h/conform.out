@@ -1,0 +1,48 @@
+PASS: Availability of <sys/sem.h>
+PASS: Combined <sys/sem.h> test
+PASSCOMBINED: Availability of constant SEM_UNDO
+PASSCOMBINED: Availability of constant GETNCNT
+PASSCOMBINED: Availability of constant GETPID
+PASSCOMBINED: Availability of constant GETVAL
+PASSCOMBINED: Availability of constant GETALL
+PASSCOMBINED: Availability of constant GETZCNT
+PASSCOMBINED: Availability of constant SETVAL
+PASSCOMBINED: Availability of constant SETALL
+PASSCOMBINED: Availability of type struct semid_ds
+PASSCOMBINED: Availability of member sem_perm
+PASSCOMBINED: Type of member sem_perm
+PASS: Availability of member sem_nsems
+/tmp/tmp_ay9lqju/test.c:4:37: error: conflicting types for ‘b2_10’
+ extern __typeof__ (a2_10.sem_nsems) b2_10;
+                                     ^~~~~
+/tmp/tmp_ay9lqju/test.c:3:27: note: previous declaration of ‘b2_10’ was here
+ extern unsigned short int b2_10;
+                           ^~~~~
+XFAIL: Type of member sem_nsems
+PASSCOMBINED: Availability of member sem_otime
+PASSCOMBINED: Type of member sem_otime
+PASSCOMBINED: Availability of member sem_ctime
+PASSCOMBINED: Type of member sem_ctime
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type struct sembuf
+PASSCOMBINED: Availability of member sem_num
+PASSCOMBINED: Type of member sem_num
+PASSCOMBINED: Availability of member sem_op
+PASSCOMBINED: Type of member sem_op
+PASSCOMBINED: Availability of member sem_flg
+PASSCOMBINED: Type of member sem_flg
+PASSCOMBINED: Availability of function semctl
+PASSCOMBINED: Type of function semctl
+PASSCOMBINED: Availability of function semget
+PASSCOMBINED: Type of function semget
+PASSCOMBINED: Availability of function semop
+PASSCOMBINED: Type of function semop
+PASS: Namespace of <sys/sem.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   36
+  Number of failed tests  :    0
+  Number of xfailed tests :    1
+  Number of skipped tests :    0

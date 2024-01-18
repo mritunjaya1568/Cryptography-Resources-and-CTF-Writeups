@@ -1,0 +1,21 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a50a3] + 0x55555631f6b0 0x5d
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a6775] - 0x55555631f6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a4716] + 0x55555631f720 0x24
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431acf1e] + 0x55555631f750 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(_IO_file_doallocate+7d)[0x7f7a42ffa29d] + 0x55555631f790 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a50a3] + 0x55555631f6b0 0x5d
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a6b28] - 0x55555631f6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431a50a3] + 0x55555631f6b0 0x5d
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431aa397] + 0x5555563207a0 0x4b4
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431aa5a9] + 0x555556320c60 0x5d
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431acf1e] + 0x555556320cd0 0x38
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431afdcd] + 0x555556320d10 0x60
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431b3d45] - 0x555556320d10
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431b3d58] - 0x555556320c60
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431b3d7c] - 0x55555631f6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431b3db5] - 0x555556320cd0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f7a431b3e2c] - 0x5555563207a0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7f7a4311b71c] - 0x55555631f790
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7f7a4311be38] - 0x55555631f720
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7f7a4311becc] - 0x55555631f750

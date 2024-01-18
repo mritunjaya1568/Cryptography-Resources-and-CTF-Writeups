@@ -1,0 +1,6 @@
+live thread clock ffffffffffaf85ee resolution 0.000000001
+live thread before sleep => 0.000233312
+self thread before sleep => 0.000438708
+live thread after sleep => 0.499167683
+self thread after sleep => 0.000485799
+Didn't expect signal from child: got `Aborted'

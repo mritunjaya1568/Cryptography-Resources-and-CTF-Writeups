@@ -1,0 +1,4 @@
+in C locale
+ -> OK
+in de_DE.ISO-8859-1 locale
+ -> OK

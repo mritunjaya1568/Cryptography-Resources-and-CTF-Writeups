@@ -1,0 +1,88 @@
+version: 1
+objopen: 0, 
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2
+activity: add
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+symbind64: symname=calloc, st_value=0x7f22ca1d9830, ndx=61, flags=8
+symbind64: symname=free, st_value=0x7f22c9d62010, ndx=1468, flags=8
+symbind64: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=8
+symbind64: symname=realloc, st_value=0x7f22c9d62240, ndx=1934, flags=8
+symbind64: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=0
+pltenter: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=0
+symbind64: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+symbind64: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+pltenter: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f22ca1f8740, ndx=20, flags=0
+activity: consistent
+symbind64: symname=mmap, st_value=0x7f22c9dce7d0, ndx=2951, flags=0
+pltenter: symname=mmap, st_value=0x7f22c9dce7d0, ndx=2951, flags=0
+preinit
+pltenter: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+symbind64: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+symbind64: symname=getopt_long, st_value=0x7f22c9dbb9c0, ndx=1390, flags=0
+pltenter: symname=getopt_long, st_value=0x7f22c9dbb9c0, ndx=1390, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+symbind64: symname=setvbuf, st_value=0x7f22c9d41a50, ndx=1269, flags=0
+pltenter: symname=setvbuf, st_value=0x7f22c9d41a50, ndx=1269, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+symbind64: symname=fork, st_value=0x7f22c9da1bf0, ndx=2228, flags=0
+pltenter: symname=fork, st_value=0x7f22c9da1bf0, ndx=2228, flags=0
+symbind64: symname=signal, st_value=0x7f22c9d089f0, ndx=923, flags=0
+pltenter: symname=signal, st_value=0x7f22c9d089f0, ndx=923, flags=0
+symbind64: symname=alarm, st_value=0x7f22c9da1ab0, ndx=331, flags=0
+pltenter: symname=alarm, st_value=0x7f22c9da1ab0, ndx=331, flags=0
+pltenter: symname=signal, st_value=0x7f22c9d089f0, ndx=923, flags=0
+symbind64: symname=waitpid, st_value=0x7f22c9da1910, ndx=2771, flags=0
+pltenter: symname=waitpid, st_value=0x7f22c9da1910, ndx=2771, flags=0
+symbind64: symname=setrlimit, st_value=0x7f22c9dcaad0, ndx=2442, flags=0
+pltenter: symname=setrlimit, st_value=0x7f22c9dcaad0, ndx=2442, flags=0
+symbind64: symname=setpgid, st_value=0x7f22c9da3270, ndx=1743, flags=0
+pltenter: symname=setpgid, st_value=0x7f22c9da3270, ndx=1743, flags=0
+pltenter: symname=getenv, st_value=0x7f22c9d0a4d0, ndx=1803, flags=0
+symbind64: symname=dlopen, st_value=0x7f22c9d4ecb0, ndx=1885, flags=0
+pltenter: symname=dlopen, st_value=0x7f22c9d4ecb0, ndx=1885, flags=0
+objsearch: $ORIGIN/tst-auditmod9b.so, LA_SET_ORIG
+activity: add
+pltenter: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=0
+pltenter: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod9b.so
+pltenter: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=0
+pltenter: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+activity: consistent
+pltenter: symname=malloc, st_value=0x7f22c9d61ac0, ndx=375, flags=0
+pltenter: symname=memset, st_value=0x7f22c9e44ff0, ndx=1231, flags=0
+symbind64: symname=dlclose, st_value=0x7f22c9d4e4e0, ndx=1995, flags=0
+pltenter: symname=dlclose, st_value=0x7f22c9d4e4e0, ndx=1995, flags=0
+objclose
+activity: delete
+activity: consistent
+symbind64: symname=exit, st_value=0x7f22c9d0af00, ndx=2753, flags=0
+pltenter: symname=exit, st_value=0x7f22c9d0af00, ndx=2753, flags=0
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose

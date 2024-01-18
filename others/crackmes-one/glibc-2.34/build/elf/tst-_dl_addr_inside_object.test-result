@@ -1,0 +1,2 @@
+PASS: elf/tst-_dl_addr_inside_object
+original exit status 0

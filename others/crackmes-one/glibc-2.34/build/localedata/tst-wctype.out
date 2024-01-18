@@ -1,0 +1,197 @@
+locale = ja_JP.EUC-JP
+buf[] = "¤¡¤¢¤£¤¤¤¥¤¦¤§¤¨¤©¤ª¤«¤¬¤­¤®¤¯¤°¤±¤²¤³¤´¤µ¤¶¤·¤¸¤¹¤ºabcdefghjklmnoprrstuvwxyz
+"
+jhira(U3041 = ¤¡) = 1
+jhira(U3042 = ¤¢) = 1
+jhira(U3043 = ¤£) = 1
+jhira(U3044 = ¤¤) = 1
+jhira(U3045 = ¤¥) = 1
+jhira(U3046 = ¤¦) = 1
+jhira(U3047 = ¤§) = 1
+jhira(U3048 = ¤¨) = 1
+jhira(U3049 = ¤©) = 1
+jhira(U304a = ¤ª) = 1
+jhira(U304b = ¤«) = 1
+jhira(U304c = ¤¬) = 1
+jhira(U304d = ¤­) = 1
+jhira(U304e = ¤®) = 1
+jhira(U304f = ¤¯) = 1
+jhira(U3050 = ¤°) = 1
+jhira(U3051 = ¤±) = 1
+jhira(U3052 = ¤²) = 1
+jhira(U3053 = ¤³) = 1
+jhira(U3054 = ¤´) = 1
+jhira(U3055 = ¤µ) = 1
+jhira(U3056 = ¤¶) = 1
+jhira(U3057 = ¤·) = 1
+jhira(U3058 = ¤¸) = 1
+jhira(U3059 = ¤¹) = 1
+jhira(U305a = ¤º) = 1
+jhira(U0061 = a) = 0
+jhira(U0062 = b) = 0
+jhira(U0063 = c) = 0
+jhira(U0064 = d) = 0
+jhira(U0065 = e) = 0
+jhira(U0066 = f) = 0
+jhira(U0067 = g) = 0
+jhira(U0068 = h) = 0
+jhira(U006a = j) = 0
+jhira(U006b = k) = 0
+jhira(U006c = l) = 0
+jhira(U006d = m) = 0
+jhira(U006e = n) = 0
+jhira(U006f = o) = 0
+jhira(U0070 = p) = 0
+jhira(U0072 = r) = 0
+jhira(U0072 = r) = 0
+jhira(U0073 = s) = 0
+jhira(U0074 = t) = 0
+jhira(U0075 = u) = 0
+jhira(U0076 = v) = 0
+jhira(U0077 = w) = 0
+jhira(U0078 = x) = 0
+jhira(U0079 = y) = 0
+jhira(U007a = z) = 0
+jhira(U000a = 
+) = 0
+buf[] = "¥¡¥¢¥£¥¤¥¥¥¦¥§¥¨¥©¥ª¥«¥¬¥­¥®¥¯¥°¥±¥²¥³¥´¥µ¥¶¥·¥¸¥¹¥ºabcdefghjklmnoprrstuvwxyz
+"
+jkata(U30a1 = ¥¡) = 1
+jkata(U30a2 = ¥¢) = 1
+jkata(U30a3 = ¥£) = 1
+jkata(U30a4 = ¥¤) = 1
+jkata(U30a5 = ¥¥) = 1
+jkata(U30a6 = ¥¦) = 1
+jkata(U30a7 = ¥§) = 1
+jkata(U30a8 = ¥¨) = 1
+jkata(U30a9 = ¥©) = 1
+jkata(U30aa = ¥ª) = 1
+jkata(U30ab = ¥«) = 1
+jkata(U30ac = ¥¬) = 1
+jkata(U30ad = ¥­) = 1
+jkata(U30ae = ¥®) = 1
+jkata(U30af = ¥¯) = 1
+jkata(U30b0 = ¥°) = 1
+jkata(U30b1 = ¥±) = 1
+jkata(U30b2 = ¥²) = 1
+jkata(U30b3 = ¥³) = 1
+jkata(U30b4 = ¥´) = 1
+jkata(U30b5 = ¥µ) = 1
+jkata(U30b6 = ¥¶) = 1
+jkata(U30b7 = ¥·) = 1
+jkata(U30b8 = ¥¸) = 1
+jkata(U30b9 = ¥¹) = 1
+jkata(U30ba = ¥º) = 1
+jkata(U0061 = a) = 0
+jkata(U0062 = b) = 0
+jkata(U0063 = c) = 0
+jkata(U0064 = d) = 0
+jkata(U0065 = e) = 0
+jkata(U0066 = f) = 0
+jkata(U0067 = g) = 0
+jkata(U0068 = h) = 0
+jkata(U006a = j) = 0
+jkata(U006b = k) = 0
+jkata(U006c = l) = 0
+jkata(U006d = m) = 0
+jkata(U006e = n) = 0
+jkata(U006f = o) = 0
+jkata(U0070 = p) = 0
+jkata(U0072 = r) = 0
+jkata(U0072 = r) = 0
+jkata(U0073 = s) = 0
+jkata(U0074 = t) = 0
+jkata(U0075 = u) = 0
+jkata(U0076 = v) = 0
+jkata(U0077 = w) = 0
+jkata(U0078 = x) = 0
+jkata(U0079 = y) = 0
+jkata(U007a = z) = 0
+jkata(U000a = 
+) = 0
+buf[] = "£°£±£²£³£´£µ£¶£·£¸£¹0123456789
+"
+jdigit(Uff10 = £°) = 1
+jdigit(Uff11 = £±) = 1
+jdigit(Uff12 = £²) = 1
+jdigit(Uff13 = £³) = 1
+jdigit(Uff14 = £´) = 1
+jdigit(Uff15 = £µ) = 1
+jdigit(Uff16 = £¶) = 1
+jdigit(Uff17 = £·) = 1
+jdigit(Uff18 = £¸) = 1
+jdigit(Uff19 = £¹) = 1
+jdigit(U0030 = 0) = 0
+jdigit(U0031 = 1) = 0
+jdigit(U0032 = 2) = 0
+jdigit(U0033 = 3) = 0
+jdigit(U0034 = 4) = 0
+jdigit(U0035 = 5) = 0
+jdigit(U0036 = 6) = 0
+jdigit(U0037 = 7) = 0
+jdigit(U0038 = 8) = 0
+jdigit(U0039 = 9) = 0
+jdigit(U000a = 
+) = 0
+buf[] = "¡¡ a
+"
+jspace(U3000 = ¡¡) = 1
+jspace(U0020 =  ) = 0
+jspace(U0061 = a) = 0
+jspace(U000a = 
+) = 0
+buf[] = "°¡°¢°£°¤°¥°¦°§°¨°©°ª°«°¬°­°®°¯°°°±°²°³°´°µ°¶°·°¸°¹°ºabcdefghjklmnoprrstuvwxyz
+"
+jkanji(U4e9c = °¡) = 1
+jkanji(U5516 = °¢) = 1
+jkanji(U5a03 = °£) = 1
+jkanji(U963f = °¤) = 1
+jkanji(U54c0 = °¥) = 1
+jkanji(U611b = °¦) = 1
+jkanji(U6328 = °§) = 1
+jkanji(U59f6 = °¨) = 1
+jkanji(U9022 = °©) = 1
+jkanji(U8475 = °ª) = 1
+jkanji(U831c = °«) = 1
+jkanji(U7a50 = °¬) = 1
+jkanji(U60aa = °­) = 1
+jkanji(U63e1 = °®) = 1
+jkanji(U6e25 = °¯) = 1
+jkanji(U65ed = °°) = 1
+jkanji(U8466 = °±) = 1
+jkanji(U82a6 = °²) = 1
+jkanji(U9bf5 = °³) = 1
+jkanji(U6893 = °´) = 1
+jkanji(U5727 = °µ) = 1
+jkanji(U65a1 = °¶) = 1
+jkanji(U6271 = °·) = 1
+jkanji(U5b9b = °¸) = 1
+jkanji(U59d0 = °¹) = 1
+jkanji(U867b = °º) = 1
+jkanji(U0061 = a) = 0
+jkanji(U0062 = b) = 0
+jkanji(U0063 = c) = 0
+jkanji(U0064 = d) = 0
+jkanji(U0065 = e) = 0
+jkanji(U0066 = f) = 0
+jkanji(U0067 = g) = 0
+jkanji(U0068 = h) = 0
+jkanji(U006a = j) = 0
+jkanji(U006b = k) = 0
+jkanji(U006c = l) = 0
+jkanji(U006d = m) = 0
+jkanji(U006e = n) = 0
+jkanji(U006f = o) = 0
+jkanji(U0070 = p) = 0
+jkanji(U0072 = r) = 0
+jkanji(U0072 = r) = 0
+jkanji(U0073 = s) = 0
+jkanji(U0074 = t) = 0
+jkanji(U0075 = u) = 0
+jkanji(U0076 = v) = 0
+jkanji(U0077 = w) = 0
+jkanji(U0078 = x) = 0
+jkanji(U0079 = y) = 0
+jkanji(U007a = z) = 0
+jkanji(U000a = 
+) = 0

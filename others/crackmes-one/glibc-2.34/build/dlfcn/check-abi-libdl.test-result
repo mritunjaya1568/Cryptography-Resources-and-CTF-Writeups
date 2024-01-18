@@ -1,0 +1,2 @@
+PASS: dlfcn/check-abi-libdl
+original exit status 0

@@ -1,0 +1,4 @@
+ether_aton ("12:34:56:78:9a:bc") = 12:34:56:78:9a:bc
+ether_line ("0:c0:f0:46:5f:97 host.ether.com") = "0:c0:f0:46:5f:97 host.ether.com"
+ether_line ("0:c0:2:d0 foo.bar   ") = -1
+ether_line ("0:c0:2:d0:1a:2a  ") = -1

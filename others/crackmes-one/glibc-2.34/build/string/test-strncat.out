@@ -1,0 +1,2 @@
+                            	stupid_strncat	__strncat_avx2	__strncat_ssse3	__strncat_sse2_unaligned	__strncat_sse2
+Number of iterations in random test = 100000

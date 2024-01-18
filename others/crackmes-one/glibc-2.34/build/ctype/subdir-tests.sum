@@ -1,0 +1,5 @@
+PASS: ctype/check-installed-headers-c
+PASS: ctype/check-installed-headers-cxx
+PASS: ctype/check-obsolete-constructs
+PASS: ctype/check-wrapper-headers
+PASS: ctype/test_ctype

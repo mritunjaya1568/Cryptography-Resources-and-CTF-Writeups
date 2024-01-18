@@ -49,9 +49,9 @@ def bytes2matrix(text):
 
 def matrix2bytes(matrix):
     """ Converts a 4x4 matrix into a 16-byte array.  """
-    string = ""
+    string = b""
     for lest in matrix:
-        string+="".join(chr(i) for i in lest)
+        string+=bytes(lest)
     return string
 
 def print_matrix(s):
@@ -198,4 +198,4 @@ print(decrypt(key,ciphertext))
 
 
 
-# flag = crypto{MYAES128}
+# flag = "nite{a_t4st3_0f_g00dw4re_4n4lys1s_3112hd}"

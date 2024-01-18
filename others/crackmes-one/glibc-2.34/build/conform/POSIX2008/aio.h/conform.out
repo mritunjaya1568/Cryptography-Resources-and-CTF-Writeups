@@ -1,0 +1,47 @@
+PASS: Availability of <aio.h>
+PASS: Combined <aio.h> test
+PASSCOMBINED: Availability of type struct aiocb
+PASSCOMBINED: Availability of member aio_fildes
+PASSCOMBINED: Type of member aio_fildes
+PASSCOMBINED: Availability of member aio_offset
+PASSCOMBINED: Type of member aio_offset
+PASSCOMBINED: Availability of member aio_buf
+PASSCOMBINED: Type of member aio_buf
+PASSCOMBINED: Availability of member aio_nbytes
+PASSCOMBINED: Type of member aio_nbytes
+PASSCOMBINED: Availability of member aio_reqprio
+PASSCOMBINED: Type of member aio_reqprio
+PASSCOMBINED: Availability of member aio_sigevent
+PASSCOMBINED: Type of member aio_sigevent
+PASSCOMBINED: Availability of member aio_lio_opcode
+PASSCOMBINED: Type of member aio_lio_opcode
+PASSCOMBINED: Availability of constant AIO_CANCELED
+PASSCOMBINED: Availability of constant AIO_NOTCANCELED
+PASSCOMBINED: Availability of constant AIO_ALLDONE
+PASSCOMBINED: Availability of constant LIO_WAIT
+PASSCOMBINED: Availability of constant LIO_NOWAIT
+PASSCOMBINED: Availability of constant LIO_READ
+PASSCOMBINED: Availability of constant LIO_WRITE
+PASSCOMBINED: Availability of constant LIO_NOP
+PASSCOMBINED: Availability of function aio_cancel
+PASSCOMBINED: Type of function aio_cancel
+PASSCOMBINED: Availability of function aio_error
+PASSCOMBINED: Type of function aio_error
+PASSCOMBINED: Availability of function aio_fsync
+PASSCOMBINED: Type of function aio_fsync
+PASSCOMBINED: Availability of function aio_read
+PASSCOMBINED: Type of function aio_read
+PASSCOMBINED: Availability of function aio_return
+PASSCOMBINED: Type of function aio_return
+PASSCOMBINED: Availability of function aio_suspend
+PASSCOMBINED: Type of function aio_suspend
+PASSCOMBINED: Availability of function aio_write
+PASSCOMBINED: Type of function aio_write
+PASSCOMBINED: Availability of function lio_listio
+PASSCOMBINED: Type of function lio_listio
+PASS: Namespace of <aio.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   41
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

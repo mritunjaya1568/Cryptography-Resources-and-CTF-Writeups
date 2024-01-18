@@ -1,0 +1,12 @@
+TZ = "AEST-10AEDST-11,M10.5.0,M3.5.0", time = 909312849 => 1998/10/25 21:54:09 dst=1 zone=AEDST, OK
+TZ = "AEST-10AEDST-11,M10.5.0,M3.5.0", time = 924864849 => 1999/04/23 20:54:09 dst=0 zone=AEST, OK
+TZ = "AEST-10AEDST-11,M10.5.0,M3.5.0", time = 919973892 => 1999/02/26 07:18:12 dst=1 zone=AEDST, OK
+TZ = "EST+5EDT,M4.1.0/2,M10.5.0/2", time = 909312849 => 1998/10/25 05:54:09 dst=0 zone=EST, OK
+TZ = "EST5EDT,M4.1.0/2,M10.5.0/2", time = 909312849 => 1998/10/25 05:54:09 dst=0 zone=EST, OK
+TZ = "<EST5>5EDT,M4.1.0/2,M10.5.0/2", time = 909312849 => 1998/10/25 05:54:09 dst=0 zone=EST5, OK
+TZ = "EST+5EDT,M4.1.0/2,M10.5.0/2", time = 924864849 => 1999/04/23 06:54:09 dst=1 zone=EDT, OK
+TZ = "EST+5EDT,M4.1.0/2,M10.5.0/2", time = 919973892 => 1999/02/25 15:18:12 dst=0 zone=EST, OK
+TZ = "Universal" daylight 0 tzname = { "Universal", "" }, OK
+TZ = "AEST-10AEDST-11,M10.5.0,M3.5.0" daylight 1 tzname = { "AEST", "AEDST" }, OK
+TZ = "<AB1>-10<AB2>-11,M10.5.0,M3.5.0" daylight 1 tzname = { "AB1", "AB2" }, OK
+TZ = "<BB1>-10" daylight 0 tzname = { "BB1", "BB1" }, OK

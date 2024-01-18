@@ -1,0 +1,5 @@
+C                      	simple_strcasecmp	stupid_strcasecmp	__strcasecmp_avx	__strcasecmp_sse42	__strcasecmp_ssse3	__strcasecmp_sse2
+en_US.ISO-8859-1       	simple_strcasecmp	stupid_strcasecmp	__strcasecmp_avx	__strcasecmp_sse42	__strcasecmp_ssse3	__strcasecmp_sse2
+en_US.UTF-8            	simple_strcasecmp	stupid_strcasecmp	__strcasecmp_avx	__strcasecmp_sse42	__strcasecmp_ssse3	__strcasecmp_sse2
+tr_TR.ISO-8859-9       	simple_strcasecmp	stupid_strcasecmp	__strcasecmp_avx	__strcasecmp_sse42	__strcasecmp_ssse3	__strcasecmp_sse2
+tr_TR.UTF-8            	simple_strcasecmp	stupid_strcasecmp	__strcasecmp_avx	__strcasecmp_sse42	__strcasecmp_ssse3	__strcasecmp_sse2

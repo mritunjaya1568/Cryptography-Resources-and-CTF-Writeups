@@ -1,0 +1,8 @@
+/tmp/tmpa7lupu17/undef.c:25:1: warning: ‘gets’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_gets = (void *) &gets;
+ ^~~~
+In file included from ../include/stdio.h:14,
+                 from /tmp/tmpa7lupu17/undef.c:1:
+../libio/stdio.h:599:14: note: declared here
+ extern char *gets (char *__s) __wur __attribute_deprecated__;
+              ^~~~

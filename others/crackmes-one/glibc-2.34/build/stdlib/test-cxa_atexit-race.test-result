@@ -1,0 +1,2 @@
+PASS: stdlib/test-cxa_atexit-race
+original exit status 0

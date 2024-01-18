@@ -1,0 +1,16 @@
+/tmp/tmpcccf7dlx/undef.c:34:1: warning: ‘pthread_attr_getstackaddr’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_pthread_attr_getstackaddr = (void *) &pthread_attr_getstackaddr;
+ ^~~~
+In file included from ../include/pthread.h:1,
+                 from /tmp/tmpcccf7dlx/undef.c:1:
+../sysdeps/nptl/pthread.h:353:12: note: declared here
+ extern int pthread_attr_getstackaddr (const pthread_attr_t *__restrict
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/tmpcccf7dlx/undef.c:43:1: warning: ‘pthread_attr_setstackaddr’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_pthread_attr_setstackaddr = (void *) &pthread_attr_setstackaddr;
+ ^~~~
+In file included from ../include/pthread.h:1,
+                 from /tmp/tmpcccf7dlx/undef.c:1:
+../sysdeps/nptl/pthread.h:361:12: note: declared here
+ extern int pthread_attr_setstackaddr (pthread_attr_t *__attr,
+            ^~~~~~~~~~~~~~~~~~~~~~~~~

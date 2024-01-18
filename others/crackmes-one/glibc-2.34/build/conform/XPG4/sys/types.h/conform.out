@@ -1,0 +1,26 @@
+PASS: Availability of <sys/types.h>
+PASS: Combined <sys/types.h> test
+PASSCOMBINED: Availability of type clock_t
+PASSCOMBINED: Availability of type dev_t
+PASSCOMBINED: Availability of type fsblkcnt_t
+PASSCOMBINED: Availability of type fsfilcnt_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type id_t
+PASSCOMBINED: Availability of type ino_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type nlink_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type ssize_t
+PASSCOMBINED: Availability of type suseconds_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type timer_t
+PASSCOMBINED: Availability of type uid_t
+PASS: Namespace of <sys/types.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   20
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

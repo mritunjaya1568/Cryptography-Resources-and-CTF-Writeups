@@ -1,0 +1,44 @@
+PASS: Availability of <search.h>
+PASS: Combined <search.h> test
+PASSCOMBINED: Availability of type ENTRY
+PASSCOMBINED: Availability of type struct entry
+PASSCOMBINED: Availability of member key
+PASSCOMBINED: Type of member key
+PASSCOMBINED: Availability of member data
+PASSCOMBINED: Type of member data
+PASSCOMBINED: Availability of type ACTION
+PASSCOMBINED: Availability of constant FIND
+PASSCOMBINED: Availability of constant ENTER
+PASSCOMBINED: Availability of type VISIT
+PASSCOMBINED: Availability of constant preorder
+PASSCOMBINED: Availability of constant postorder
+PASSCOMBINED: Availability of constant endorder
+PASSCOMBINED: Availability of constant leaf
+PASSCOMBINED: Availability of function hcreate
+PASSCOMBINED: Type of function hcreate
+PASSCOMBINED: Availability of function hdestroy
+PASSCOMBINED: Type of function hdestroy
+PASSCOMBINED: Availability of function hsearch
+PASSCOMBINED: Type of function hsearch
+PASSCOMBINED: Availability of function insque
+PASSCOMBINED: Type of function insque
+PASSCOMBINED: Availability of function lfind
+PASSCOMBINED: Type of function lfind
+PASSCOMBINED: Availability of function lsearch
+PASSCOMBINED: Type of function lsearch
+PASSCOMBINED: Availability of function remque
+PASSCOMBINED: Type of function remque
+PASSCOMBINED: Availability of function tdelete
+PASSCOMBINED: Type of function tdelete
+PASSCOMBINED: Availability of function tfind
+PASSCOMBINED: Type of function tfind
+PASSCOMBINED: Availability of function tsearch
+PASSCOMBINED: Type of function tsearch
+PASSCOMBINED: Availability of function twalk
+PASSCOMBINED: Type of function twalk
+PASS: Namespace of <search.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   38
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,106 @@
+Checking CPU_FEATURE_ACTIVE (AES):
+  CPU_FEATURE_ACTIVE (AES): 1
+  __builtin_cpu_supports (aes): 262144
+Checking CPU_FEATURE_ACTIVE (AVX):
+  CPU_FEATURE_ACTIVE (AVX): 1
+  __builtin_cpu_supports (avx): 512
+Checking CPU_FEATURE_ACTIVE (AVX2):
+  CPU_FEATURE_ACTIVE (AVX2): 1
+  __builtin_cpu_supports (avx2): 1024
+Checking CPU_FEATURE_ACTIVE (AVX512_4FMAPS):
+  CPU_FEATURE_ACTIVE (AVX512_4FMAPS): 0
+  __builtin_cpu_supports (avx5124fmaps): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_4VNNIW):
+  CPU_FEATURE_ACTIVE (AVX512_4VNNIW): 0
+  __builtin_cpu_supports (avx5124vnniw): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_BITALG):
+  CPU_FEATURE_ACTIVE (AVX512_BITALG): 0
+  __builtin_cpu_supports (avx512bitalg): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_IFMA):
+  CPU_FEATURE_ACTIVE (AVX512_IFMA): 0
+  __builtin_cpu_supports (avx512ifma): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_VBMI):
+  CPU_FEATURE_ACTIVE (AVX512_VBMI): 0
+  __builtin_cpu_supports (avx512vbmi): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_VBMI2):
+  CPU_FEATURE_ACTIVE (AVX512_VBMI2): 0
+  __builtin_cpu_supports (avx512vbmi2): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_VNNI):
+  CPU_FEATURE_ACTIVE (AVX512_VNNI): 0
+  __builtin_cpu_supports (avx512vnni): 0
+Checking CPU_FEATURE_ACTIVE (AVX512_VPOPCNTDQ):
+  CPU_FEATURE_ACTIVE (AVX512_VPOPCNTDQ): 0
+  __builtin_cpu_supports (avx512vpopcntdq): 0
+Checking CPU_FEATURE_ACTIVE (AVX512BW):
+  CPU_FEATURE_ACTIVE (AVX512BW): 0
+  __builtin_cpu_supports (avx512bw): 0
+Checking CPU_FEATURE_ACTIVE (AVX512CD):
+  CPU_FEATURE_ACTIVE (AVX512CD): 0
+  __builtin_cpu_supports (avx512cd): 0
+Checking CPU_FEATURE_ACTIVE (AVX512ER):
+  CPU_FEATURE_ACTIVE (AVX512ER): 0
+  __builtin_cpu_supports (avx512er): 0
+Checking CPU_FEATURE_ACTIVE (AVX512DQ):
+  CPU_FEATURE_ACTIVE (AVX512DQ): 0
+  __builtin_cpu_supports (avx512dq): 0
+Checking CPU_FEATURE_ACTIVE (AVX512F):
+  CPU_FEATURE_ACTIVE (AVX512F): 0
+  __builtin_cpu_supports (avx512f): 0
+Checking CPU_FEATURE_ACTIVE (AVX512PF):
+  CPU_FEATURE_ACTIVE (AVX512PF): 0
+  __builtin_cpu_supports (avx512pf): 0
+Checking CPU_FEATURE_ACTIVE (AVX512VL):
+  CPU_FEATURE_ACTIVE (AVX512VL): 0
+  __builtin_cpu_supports (avx512vl): 0
+Checking CPU_FEATURE_ACTIVE (BMI1):
+  CPU_FEATURE_ACTIVE (BMI1): 1
+  __builtin_cpu_supports (bmi): 65536
+Checking CPU_FEATURE_ACTIVE (BMI2):
+  CPU_FEATURE_ACTIVE (BMI2): 1
+  __builtin_cpu_supports (bmi2): 131072
+Checking CPU_FEATURE_ACTIVE (CMOV):
+  CPU_FEATURE_ACTIVE (CMOV): 1
+  __builtin_cpu_supports (cmov): 1
+Checking CPU_FEATURE_ACTIVE (FMA):
+  CPU_FEATURE_ACTIVE (FMA): 1
+  __builtin_cpu_supports (fma): 16384
+Checking CPU_FEATURE_ACTIVE (FMA4):
+  CPU_FEATURE_ACTIVE (FMA4): 0
+  __builtin_cpu_supports (fma4): 0
+Checking CPU_FEATURE_ACTIVE (GFNI):
+  CPU_FEATURE_ACTIVE (GFNI): 0
+  __builtin_cpu_supports (gfni): 0
+Checking CPU_FEATURE_ACTIVE (MMX):
+  CPU_FEATURE_ACTIVE (MMX): 1
+  __builtin_cpu_supports (mmx): 2
+Checking CPU_FEATURE_ACTIVE (POPCNT):
+  CPU_FEATURE_ACTIVE (POPCNT): 1
+  __builtin_cpu_supports (popcnt): 4
+Checking CPU_FEATURE_ACTIVE (SSE):
+  CPU_FEATURE_ACTIVE (SSE): 1
+  __builtin_cpu_supports (sse): 8
+Checking CPU_FEATURE_ACTIVE (SSE2):
+  CPU_FEATURE_ACTIVE (SSE2): 1
+  __builtin_cpu_supports (sse2): 16
+Checking CPU_FEATURE_ACTIVE (SSE3):
+  CPU_FEATURE_ACTIVE (SSE3): 1
+  __builtin_cpu_supports (sse3): 32
+Checking CPU_FEATURE_ACTIVE (SSE4_1):
+  CPU_FEATURE_ACTIVE (SSE4_1): 1
+  __builtin_cpu_supports (sse4.1): 128
+Checking CPU_FEATURE_ACTIVE (SSE4_2):
+  CPU_FEATURE_ACTIVE (SSE4_2): 1
+  __builtin_cpu_supports (sse4.2): 256
+Checking CPU_FEATURE_ACTIVE (SSE4A):
+  CPU_FEATURE_ACTIVE (SSE4A): 0
+  __builtin_cpu_supports (sse4a): 0
+Checking CPU_FEATURE_ACTIVE (SSSE3):
+  CPU_FEATURE_ACTIVE (SSSE3): 1
+  __builtin_cpu_supports (ssse3): 64
+Checking CPU_FEATURE_ACTIVE (VPCLMULQDQ):
+  CPU_FEATURE_ACTIVE (VPCLMULQDQ): 0
+  __builtin_cpu_supports (vpclmulqdq): 0
+Checking CPU_FEATURE_ACTIVE (XOP):
+  CPU_FEATURE_ACTIVE (XOP): 0
+  __builtin_cpu_supports (xop): 0
+0 differences between __builtin_cpu_supports and glibc code.

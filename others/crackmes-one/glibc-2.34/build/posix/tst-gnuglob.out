@@ -1,0 +1,76 @@
+results for glob ("*/*/*", GLOB_ALTDIRFUNC)
+  dir1lev1/dir2lev2/dir1lev3
+  dir1lev1/dir2lev2/file1lev3
+  dir1lev1/dir2lev2/file2lev3
+  dir1lev1/dir3lev2/file3lev3
+  dir1lev1/dir3lev2/file4lev3
+
+results for glob ("*/*/*", GLOB_PERIOD|GLOB_ALTDIRFUNC)
+  dir1lev1/dir1lev2/.
+  dir1lev1/dir1lev2/..
+  dir1lev1/dir2lev2/.
+  dir1lev1/dir2lev2/..
+  dir1lev1/dir2lev2/.foo
+  dir1lev1/dir2lev2/dir1lev3
+  dir1lev1/dir2lev2/file1lev3
+  dir1lev1/dir2lev2/file2lev3
+  dir1lev1/dir3lev2/.
+  dir1lev1/dir3lev2/..
+  dir1lev1/dir3lev2/file3lev3
+  dir1lev1/dir3lev2/file4lev3
+  dir2lev1/dir1lev2/.
+  dir2lev1/dir1lev2/..
+  dir2lev1/dir1lev2/.dir
+  dir2lev1/dir1lev2/.foo
+
+results for glob ("*/*/.*", GLOB_ALTDIRFUNC)
+  dir1lev1/dir1lev2/.
+  dir1lev1/dir1lev2/..
+  dir1lev1/dir2lev2/.
+  dir1lev1/dir2lev2/..
+  dir1lev1/dir2lev2/.foo
+  dir1lev1/dir3lev2/.
+  dir1lev1/dir3lev2/..
+  dir2lev1/dir1lev2/.
+  dir2lev1/dir1lev2/..
+  dir2lev1/dir1lev2/.dir
+  dir2lev1/dir1lev2/.foo
+
+results for glob ("*1*/*2*/.*", GLOB_ALTDIRFUNC)
+  dir1lev1/dir1lev2/.
+  dir1lev1/dir1lev2/..
+  dir1lev1/dir2lev2/.
+  dir1lev1/dir2lev2/..
+  dir1lev1/dir2lev2/.foo
+  dir1lev1/dir3lev2/.
+  dir1lev1/dir3lev2/..
+  dir2lev1/dir1lev2/.
+  dir2lev1/dir1lev2/..
+  dir2lev1/dir1lev2/.dir
+  dir2lev1/dir1lev2/.foo
+
+results for glob ("*1*/*1*/.*", GLOB_ALTDIRFUNC)
+  dir1lev1/dir1lev2/.
+  dir1lev1/dir1lev2/..
+  dir2lev1/dir1lev2/.
+  dir2lev1/dir1lev2/..
+  dir2lev1/dir1lev2/.dir
+  dir2lev1/dir1lev2/.foo
+
+results for glob ("\/*", GLOB_ALTDIRFUNC)
+  /dir1lev1
+  /dir2lev1
+  /file1lev1
+  /file2lev1
+
+results for glob ("*/*/", GLOB_ALTDIRFUNC)
+  dir1lev1/dir1lev2/
+  dir1lev1/dir2lev2/
+  dir1lev1/dir3lev2/
+  dir2lev1/dir1lev2/
+
+result for glob ("", GLOB_ALTDIRFUNC) = GLOB_NOMATCH
+
+results for glob ("", GLOB_NOCHECK|GLOB_ALTDIRFUNC)
+  
+

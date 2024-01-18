@@ -1,0 +1,2 @@
+UNSUPPORTED: posix/tst-cet-vfork-1
+original exit status 77

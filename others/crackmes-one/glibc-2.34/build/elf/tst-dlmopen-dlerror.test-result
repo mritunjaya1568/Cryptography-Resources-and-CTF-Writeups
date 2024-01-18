@@ -1,0 +1,2 @@
+PASS: elf/tst-dlmopen-dlerror
+original exit status 0

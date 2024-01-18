@@ -1,0 +1,2 @@
+PASS: posix/tst-glob_lstat_compat
+original exit status 0

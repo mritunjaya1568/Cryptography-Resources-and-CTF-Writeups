@@ -1,0 +1,2 @@
+PASS: nptl/test-as-const-pthread-pi-defines
+original exit status 0

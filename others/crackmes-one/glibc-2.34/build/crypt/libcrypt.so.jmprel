@@ -1,0 +1,118 @@
+There are 41 section headers, starting at offset 0x28f90:
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .note.gnu.property NOTE            00000000000002a8 0002a8 000030 00   A  0   0  8
+  [ 2] .note.gnu.build-id NOTE            00000000000002d8 0002d8 000024 00   A  0   0  4
+  [ 3] .note.ABI-tag     NOTE            00000000000002fc 0002fc 000020 00   A  0   0  4
+  [ 4] .hash             HASH            0000000000000320 000320 0001ac 04   A  6   0  8
+  [ 5] .gnu.hash         GNU_HASH        00000000000004d0 0004d0 000074 00   A  6   0  8
+  [ 6] .dynsym           DYNSYM          0000000000000548 000548 000360 18   A  7   1  8
+  [ 7] .dynstr           STRTAB          00000000000008a8 0008a8 0001c9 00   A  0   0  1
+  [ 8] .gnu.version      VERSYM          0000000000000a72 000a72 000048 02   A  6   0  2
+  [ 9] .gnu.version_d    VERDEF          0000000000000ac0 000ac0 000038 00   A  7   2  8
+  [10] .gnu.version_r    VERNEED         0000000000000af8 000af8 000050 00   A  7   1  8
+  [11] .rela.dyn         RELA            0000000000000b48 000b48 0000c0 18   A  6   0  8
+  [12] .rela.plt         RELA            0000000000000c08 000c08 000210 18  AI  6  26  8
+  [13] .init             PROGBITS        0000000000001000 001000 00001b 00  AX  0   0  4
+  [14] .plt              PROGBITS        0000000000001020 001020 000170 10  AX  0   0 16
+  [15] .plt.got          PROGBITS        0000000000001190 001190 000010 10  AX  0   0 16
+  [16] .plt.sec          PROGBITS        00000000000011a0 0011a0 000160 10  AX  0   0 16
+  [17] .text             PROGBITS        0000000000001300 001300 005480 00  AX  0   0 16
+  [18] .fini             PROGBITS        0000000000006780 006780 00000d 00  AX  0   0  4
+  [19] .rodata           PROGBITS        0000000000007000 007000 001420 00   A  0   0 32
+  [20] .eh_frame_hdr     PROGBITS        0000000000008420 008420 000144 00   A  0   0  4
+  [21] .eh_frame         PROGBITS        0000000000008568 008568 000850 00   A  0   0  8
+  [22] .init_array       INIT_ARRAY      0000000000009db8 008db8 000008 08  WA  0   0  8
+  [23] .fini_array       FINI_ARRAY      0000000000009dc0 008dc0 000008 08  WA  0   0  8
+  [24] .dynamic          DYNAMIC         0000000000009dc8 008dc8 000210 10  WA  7   0  8
+  [25] .got              PROGBITS        0000000000009fd8 008fd8 000028 08  WA  0   0  8
+  [26] .got.plt          PROGBITS        000000000000a000 009000 0000c8 08  WA  0   0  8
+  [27] .data             PROGBITS        000000000000a0c8 0090c8 000008 00  WA  0   0  8
+  [28] .bss              NOBITS          000000000000a0e0 0090d0 02e0e0 00  WA  0   0 32
+  [29] __libc_freeres_ptrs NOBITS          00000000000381c0 0090d0 000018 00  WA  0   0  8
+  [30] .comment          PROGBITS        0000000000000000 0090d0 000023 01  MS  0   0  1
+  [31] .debug_aranges    PROGBITS        0000000000000000 009100 000250 00      0   0 16
+  [32] .debug_info       PROGBITS        0000000000000000 009350 00adff 00      0   0  1
+  [33] .debug_abbrev     PROGBITS        0000000000000000 01414f 001e25 00      0   0  1
+  [34] .debug_line       PROGBITS        0000000000000000 015f74 004c27 00      0   0  1
+  [35] .debug_str        PROGBITS        0000000000000000 01ab9b 0015f4 01  MS  0   0  1
+  [36] .debug_loc        PROGBITS        0000000000000000 01c18f 00a9c1 00      0   0  1
+  [37] .debug_ranges     PROGBITS        0000000000000000 026b50 000970 00      0   0 16
+  [38] .symtab           SYMTAB          0000000000000000 0274c0 001110 18     39 147  8
+  [39] .strtab           STRTAB          0000000000000000 0285d0 000824 00      0   0  1
+  [40] .shstrtab         STRTAB          0000000000000000 028df4 000197 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  l (large), p (processor specific)
+
+Dynamic section at offset 0x8dc8 contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000e (SONAME)             Library soname: [libcrypt.so.1]
+ 0x000000000000000c (INIT)               0x1000
+ 0x000000000000000d (FINI)               0x6780
+ 0x0000000000000019 (INIT_ARRAY)         0x9db8
+ 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x9dc0
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x0000000000000004 (HASH)               0x320
+ 0x000000006ffffef5 (GNU_HASH)           0x4d0
+ 0x0000000000000005 (STRTAB)             0x8a8
+ 0x0000000000000006 (SYMTAB)             0x548
+ 0x000000000000000a (STRSZ)              457 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0xa000
+ 0x0000000000000002 (PLTRELSZ)           528 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0xc08
+ 0x0000000000000007 (RELA)               0xb48
+ 0x0000000000000008 (RELASZ)             192 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffc (VERDEF)             0xac0
+ 0x000000006ffffffd (VERDEFNUM)          2
+ 0x000000000000001e (FLAGS)              STATIC_TLS
+ 0x000000006ffffffe (VERNEED)            0xaf8
+ 0x000000006fffffff (VERNEEDNUM)         1
+ 0x000000006ffffff0 (VERSYM)             0xa72
+ 0x000000006ffffff9 (RELACOUNT)          3
+ 0x0000000000000000 (NULL)               0x0
+
+Relocation section '.rela.dyn' at offset 0xb48 contains 8 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000009db8  0000000000000008 R_X86_64_RELATIVE                         13b0
+0000000000009dc0  0000000000000008 R_X86_64_RELATIVE                         1370
+000000000000a0c8  0000000000000008 R_X86_64_RELATIVE                         a0c8
+0000000000009fd8  0000000500000006 R_X86_64_GLOB_DAT      0000000000000000 _ITM_deregisterTMCloneTable + 0
+0000000000009fe0  0000000600000012 R_X86_64_TPOFF64       0000000000000000 errno@GLIBC_PRIVATE + 0
+0000000000009fe8  0000000e00000006 R_X86_64_GLOB_DAT      0000000000000000 __gmon_start__ + 0
+0000000000009ff0  0000001700000006 R_X86_64_GLOB_DAT      0000000000000000 _ITM_registerTMCloneTable + 0
+0000000000009ff8  0000001b00000006 R_X86_64_GLOB_DAT      0000000000000000 __cxa_finalize@GLIBC_2.2.5 + 0
+
+Relocation section '.rela.plt' at offset 0xc08 contains 22 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+000000000000a018  0000000100000007 R_X86_64_JUMP_SLOT     0000000000000000 __lll_lock_wake_private@GLIBC_PRIVATE + 0
+000000000000a020  0000000200000007 R_X86_64_JUMP_SLOT     0000000000000000 free@GLIBC_2.2.5 + 0
+000000000000a028  0000000300000007 R_X86_64_JUMP_SLOT     0000000000000000 strncpy@GLIBC_2.2.5 + 0
+000000000000a030  0000000400000007 R_X86_64_JUMP_SLOT     0000000000000000 strncmp@GLIBC_2.2.5 + 0
+000000000000a038  0000000700000007 R_X86_64_JUMP_SLOT     0000000000000000 ferror@GLIBC_2.2.5 + 0
+000000000000a040  0000000800000007 R_X86_64_JUMP_SLOT     0000000000000000 fread@GLIBC_2.2.5 + 0
+000000000000a048  0000000900000007 R_X86_64_JUMP_SLOT     0000000000000000 __stpncpy@GLIBC_2.2.5 + 0
+000000000000a050  0000000a00000007 R_X86_64_JUMP_SLOT     0000000000000000 strlen@GLIBC_2.2.5 + 0
+000000000000a058  0000000b00000007 R_X86_64_JUMP_SLOT     0000000000000000 memset@GLIBC_2.2.5 + 0
+000000000000a060  0000000c00000007 R_X86_64_JUMP_SLOT     0000000000000000 strcspn@GLIBC_2.2.5 + 0
+000000000000a068  0000000d00000007 R_X86_64_JUMP_SLOT     0000000000000000 __open_nocancel@GLIBC_PRIVATE + 0
+000000000000a070  0000000f00000007 R_X86_64_JUMP_SLOT     0000000000000000 strtol@GLIBC_2.2.5 + 0
+000000000000a078  0000001000000007 R_X86_64_JUMP_SLOT     0000000000000000 memcpy@GLIBC_2.14 + 0
+000000000000a080  0000001100000007 R_X86_64_JUMP_SLOT     0000000000000000 malloc@GLIBC_2.2.5 + 0
+000000000000a088  0000001200000007 R_X86_64_JUMP_SLOT     0000000000000000 __read_nocancel@GLIBC_PRIVATE + 0
+000000000000a090  0000001300000007 R_X86_64_JUMP_SLOT     0000000000000000 realloc@GLIBC_2.2.5 + 0
+000000000000a098  0000001400000007 R_X86_64_JUMP_SLOT     0000000000000000 __snprintf@GLIBC_PRIVATE + 0
+000000000000a0a0  0000001500000007 R_X86_64_JUMP_SLOT     0000000000000000 __explicit_bzero_chk@GLIBC_2.25 + 0
+000000000000a0a8  0000001600000007 R_X86_64_JUMP_SLOT     0000000000000000 strtoul@GLIBC_2.2.5 + 0
+000000000000a0b0  0000001800000007 R_X86_64_JUMP_SLOT     0000000000000000 __libc_alloca_cutoff@GLIBC_PRIVATE + 0
+000000000000a0b8  0000001900000007 R_X86_64_JUMP_SLOT     0000000000000000 __lll_lock_wait_private@GLIBC_PRIVATE + 0
+000000000000a0c0  0000001a00000007 R_X86_64_JUMP_SLOT     0000000000000000 __close_nocancel@GLIBC_PRIVATE + 0

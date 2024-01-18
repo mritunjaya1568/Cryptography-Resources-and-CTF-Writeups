@@ -1,0 +1,10 @@
+not on alternate stack
+ in signal handler
+ on alternate stack
+ out of signal handler
+ not on alternate stack
+  in signal handler
+  on alternate stack
+  out of signal handler
+  not on alternate stack
+disabling alternate stack succeeded 

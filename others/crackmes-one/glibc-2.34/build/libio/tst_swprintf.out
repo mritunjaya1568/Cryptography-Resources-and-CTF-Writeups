@@ -1,0 +1,6 @@
+test 1
+test 2
+swprintf (buf, 100, L"%s", "hello world") OK
+swprintf (buf, 0, L"%s", "hello world") OK
+swprintf (buf, 0, L"%s", "") OK
+swprintf (buf, 100, L"%s", "") OK

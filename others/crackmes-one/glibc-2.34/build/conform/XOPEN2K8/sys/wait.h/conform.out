@@ -1,0 +1,53 @@
+PASS: Availability of <sys/wait.h>
+PASS: Combined <sys/wait.h> test
+PASSCOMBINED: Availability of constant WNOHANG
+PASSCOMBINED: Availability of constant WUNTRACED
+PASSCOMBINED: Availability of macro WEXITSTATUS
+PASSCOMBINED: Availability of macro WIFCONTINUED
+PASSCOMBINED: Availability of macro WIFEXITED
+PASSCOMBINED: Availability of macro WIFSIGNALED
+PASSCOMBINED: Availability of macro WIFSTOPPED
+PASSCOMBINED: Availability of macro WSTOPSIG
+PASSCOMBINED: Availability of macro WTERMSIG
+PASSCOMBINED: Availability of constant WEXITED
+PASSCOMBINED: Availability of constant WSTOPPED
+PASSCOMBINED: Availability of constant WCONTINUED
+PASSCOMBINED: Availability of constant WNOHANG
+PASSCOMBINED: Availability of constant WNOWAIT
+PASSCOMBINED: Availability of type idtype_t
+PASSCOMBINED: Availability of constant P_ALL
+PASSCOMBINED: Availability of constant P_PID
+PASSCOMBINED: Availability of constant P_PGID
+PASSCOMBINED: Availability of type id_t
+PASSCOMBINED: Availability of type siginfo_t
+PASSCOMBINED: Availability of member si_signo
+PASSCOMBINED: Type of member si_signo
+PASSCOMBINED: Availability of member si_errno
+PASSCOMBINED: Type of member si_errno
+PASSCOMBINED: Availability of member si_code
+PASSCOMBINED: Type of member si_code
+PASSCOMBINED: Availability of member si_pid
+PASSCOMBINED: Type of member si_pid
+PASSCOMBINED: Availability of member si_uid
+PASSCOMBINED: Type of member si_uid
+PASSCOMBINED: Availability of member si_addr
+PASSCOMBINED: Type of member si_addr
+PASSCOMBINED: Availability of member si_status
+PASSCOMBINED: Type of member si_status
+PASSCOMBINED: Availability of member si_band
+PASSCOMBINED: Type of member si_band
+PASSCOMBINED: Availability of member si_value
+PASSCOMBINED: Type of member si_value
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of function wait
+PASSCOMBINED: Type of function wait
+PASSCOMBINED: Availability of function waitid
+PASSCOMBINED: Type of function waitid
+PASSCOMBINED: Availability of function waitpid
+PASSCOMBINED: Type of function waitpid
+PASS: Namespace of <sys/wait.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   47
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

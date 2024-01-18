@@ -1,0 +1,56 @@
+PASS: Availability of <fmtmsg.h>
+PASS: Combined <fmtmsg.h> test
+PASSCOMBINED: Availability of macro MM_HARD
+PASSCOMBINED: Availability of constant MM_HARD
+PASSCOMBINED: Availability of macro MM_SOFT
+PASSCOMBINED: Availability of constant MM_SOFT
+PASSCOMBINED: Availability of macro MM_FIRM
+PASSCOMBINED: Availability of constant MM_FIRM
+PASSCOMBINED: Availability of macro MM_APPL
+PASSCOMBINED: Availability of constant MM_APPL
+PASSCOMBINED: Availability of macro MM_UTIL
+PASSCOMBINED: Availability of constant MM_UTIL
+PASSCOMBINED: Availability of macro MM_OPSYS
+PASSCOMBINED: Availability of constant MM_OPSYS
+PASSCOMBINED: Availability of macro MM_RECOVER
+PASSCOMBINED: Availability of constant MM_RECOVER
+PASSCOMBINED: Availability of macro MM_NRECOV
+PASSCOMBINED: Availability of constant MM_NRECOV
+PASSCOMBINED: Availability of macro MM_HALT
+PASSCOMBINED: Availability of constant MM_HALT
+PASSCOMBINED: Availability of macro MM_ERROR
+PASSCOMBINED: Availability of constant MM_ERROR
+PASSCOMBINED: Availability of macro MM_WARNING
+PASSCOMBINED: Availability of constant MM_WARNING
+PASSCOMBINED: Availability of macro MM_INFO
+PASSCOMBINED: Availability of constant MM_INFO
+PASSCOMBINED: Availability of macro MM_NOSEV
+PASSCOMBINED: Availability of constant MM_NOSEV
+PASSCOMBINED: Availability of macro MM_PRINT
+PASSCOMBINED: Availability of constant MM_PRINT
+PASSCOMBINED: Availability of macro MM_CONSOLE
+PASSCOMBINED: Availability of constant MM_CONSOLE
+PASSCOMBINED: Availability of constant MM_NULLLBL
+PASSCOMBINED: Value of symbol MM_NULLLBL
+PASSCOMBINED: Availability of constant MM_NULLSEV
+PASSCOMBINED: Value of symbol MM_NULLSEV
+PASSCOMBINED: Availability of constant MM_NULLMC
+PASSCOMBINED: Value of symbol MM_NULLMC
+PASSCOMBINED: Availability of constant MM_NULLTXT
+PASSCOMBINED: Value of symbol MM_NULLTXT
+PASSCOMBINED: Availability of constant MM_NULLACT
+PASSCOMBINED: Value of symbol MM_NULLACT
+PASSCOMBINED: Availability of constant MM_NULLTAG
+PASSCOMBINED: Value of symbol MM_NULLTAG
+PASSCOMBINED: Availability of macro MM_OK
+PASSCOMBINED: Availability of macro MM_NOTOK
+PASSCOMBINED: Availability of macro MM_NOMSG
+PASSCOMBINED: Availability of macro MM_NOCON
+PASSCOMBINED: Availability of function fmtmsg
+PASSCOMBINED: Type of function fmtmsg
+PASS: Namespace of <fmtmsg.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   50
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

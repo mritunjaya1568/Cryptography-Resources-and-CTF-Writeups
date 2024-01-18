@@ -1,0 +1,2 @@
+PASS: nptl/tst-thread-setspecific
+original exit status 0

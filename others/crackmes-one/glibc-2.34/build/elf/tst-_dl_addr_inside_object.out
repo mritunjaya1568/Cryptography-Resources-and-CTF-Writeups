@@ -1,0 +1,10 @@
+PASS: Above: Address is detected as outside the segment.
+PASS: Inside: Address is detected as inside the segment.
+PASS: Below: Address is detected as outside the segment.
+PASS: At p_vaddr: Address is detected as inside the segment.
+PASS: At p_memsz-1: Address is detected as inside the segment.
+PASS: At p_memsz: Address is detected as outside the segment.
+PASS: At max: Address is detected as outside the segment.
+PASS: At min: Address is detected as outside the segment.
+PASS: At maxmem: Address is detected as inside the segment.
+PASS: Underflow: Address is detected as outside the segment.

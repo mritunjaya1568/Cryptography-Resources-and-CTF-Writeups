@@ -1,0 +1,2 @@
+UNSUPPORTED: misc/tst-clock_adjtime
+original exit status 77

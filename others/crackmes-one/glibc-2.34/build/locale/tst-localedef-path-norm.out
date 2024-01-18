@@ -1,0 +1,10 @@
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US1.utf8' exists.
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US2.utf8@tEsT' exists.
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US3@tEsT.UTF-8' exists.
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US4.iso88591' exists.
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US5.a88591' exists.
+info: Directory '/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/locale/en_US6.88591a' exists.
+info: Directory '/output/en_US7.UTF-8' exists.
+info: Directory '/output/en_US8.UTF-8@tEsT' exists.
+info: Directory '/output/en_US9@tEsT.UTF-8' exists.
+running post-clean rsync

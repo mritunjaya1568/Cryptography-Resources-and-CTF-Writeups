@@ -1,0 +1,28 @@
+PASS: Availability of <poll.h>
+PASS: Combined <poll.h> test
+PASSCOMBINED: Availability of type struct pollfd
+PASSCOMBINED: Availability of member fd
+PASSCOMBINED: Type of member fd
+PASSCOMBINED: Availability of member events
+PASSCOMBINED: Type of member events
+PASSCOMBINED: Availability of member revents
+PASSCOMBINED: Type of member revents
+PASSCOMBINED: Availability of type nfds_t
+PASSCOMBINED: Availability of constant POLLIN
+PASSCOMBINED: Availability of constant POLLRDNORM
+PASSCOMBINED: Availability of constant POLLRDBAND
+PASSCOMBINED: Availability of constant POLLPRI
+PASSCOMBINED: Availability of constant POLLOUT
+PASSCOMBINED: Availability of constant POLLWRNORM
+PASSCOMBINED: Availability of constant POLLWRBAND
+PASSCOMBINED: Availability of constant POLLERR
+PASSCOMBINED: Availability of constant POLLHUP
+PASSCOMBINED: Availability of constant POLLNVAL
+PASSCOMBINED: Availability of function poll
+PASSCOMBINED: Type of function poll
+PASS: Namespace of <poll.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   22
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

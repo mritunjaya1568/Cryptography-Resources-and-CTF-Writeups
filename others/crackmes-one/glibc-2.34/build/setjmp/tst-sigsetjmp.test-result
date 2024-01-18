@@ -1,0 +1,2 @@
+PASS: setjmp/tst-sigsetjmp
+original exit status 0

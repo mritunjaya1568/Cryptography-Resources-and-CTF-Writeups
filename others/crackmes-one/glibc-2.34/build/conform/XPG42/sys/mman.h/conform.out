@@ -1,0 +1,43 @@
+PASS: Availability of <sys/mman.h>
+PASS: Combined <sys/mman.h> test
+PASSCOMBINED: Availability of constant PROT_READ
+PASSCOMBINED: Availability of constant PROT_WRITE
+PASSCOMBINED: Availability of constant PROT_EXEC
+PASSCOMBINED: Availability of constant PROT_NONE
+PASSCOMBINED: Availability of constant MAP_SHARED
+PASSCOMBINED: Availability of constant MAP_PRIVATE
+PASSCOMBINED: Availability of constant MAP_FIXED
+PASSCOMBINED: Availability of constant MS_ASYNC
+PASSCOMBINED: Availability of constant MS_SYNC
+PASSCOMBINED: Availability of constant MS_INVALIDATE
+PASSCOMBINED: Availability of constant MCL_CURRENT
+PASSCOMBINED: Availability of constant MCL_FUTURE
+PASSCOMBINED: Availability of constant MAP_FAILED
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of function mlock
+PASSCOMBINED: Type of function mlock
+PASSCOMBINED: Availability of function mlockall
+PASSCOMBINED: Type of function mlockall
+PASSCOMBINED: Availability of function mmap
+PASSCOMBINED: Type of function mmap
+PASSCOMBINED: Availability of function mprotect
+PASSCOMBINED: Type of function mprotect
+PASSCOMBINED: Availability of function msync
+PASSCOMBINED: Type of function msync
+PASSCOMBINED: Availability of function munlock
+PASSCOMBINED: Type of function munlock
+PASSCOMBINED: Availability of function munlockall
+PASSCOMBINED: Type of function munlockall
+PASSCOMBINED: Availability of function munmap
+PASSCOMBINED: Type of function munmap
+PASSCOMBINED: Availability of function shm_open
+PASSCOMBINED: Type of function shm_open
+PASSCOMBINED: Availability of function shm_unlink
+PASSCOMBINED: Type of function shm_unlink
+PASS: Namespace of <sys/mman.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   37
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

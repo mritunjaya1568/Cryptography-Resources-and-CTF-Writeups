@@ -1,0 +1,2 @@
+RTLD_NEXT seems to work for existing functions
+dlsym returned NULL for non-existing function.  Good

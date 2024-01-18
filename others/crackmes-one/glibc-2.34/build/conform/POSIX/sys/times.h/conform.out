@@ -1,0 +1,20 @@
+PASS: Availability of <sys/times.h>
+PASS: Combined <sys/times.h> test
+PASSCOMBINED: Availability of type struct tms
+PASSCOMBINED: Availability of member tms_utime
+PASSCOMBINED: Type of member tms_utime
+PASSCOMBINED: Availability of member tms_stime
+PASSCOMBINED: Type of member tms_stime
+PASSCOMBINED: Availability of member tms_cutime
+PASSCOMBINED: Type of member tms_cutime
+PASSCOMBINED: Availability of member tms_cstime
+PASSCOMBINED: Type of member tms_cstime
+PASSCOMBINED: Availability of type clock_t
+PASSCOMBINED: Availability of function times
+PASSCOMBINED: Type of function times
+PASS: Namespace of <sys/times.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

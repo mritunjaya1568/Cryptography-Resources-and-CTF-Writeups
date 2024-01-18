@@ -1,0 +1,4 @@
+feof = 0, ferror = 0 immediately after fread
+fgetc -> EOF (feof = 1, ferror = 0)
+wrote more to file
+after truncate fgetc -> EOF (feof = 1, ferror = 0)

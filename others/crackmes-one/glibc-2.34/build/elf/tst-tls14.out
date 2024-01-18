@@ -1,0 +1,8 @@
+&f = 0x7f6097d0f000 OK
+&g = 0x7f6097f2b000 OK
+in_dso1
+&f = 0x7f6097d0e000 OK
+&g = 0x7f6097f1f000 OK
+in_dso2
+&f = 0x555556308000 OK
+&g = 0x7f6097d0b000 OK

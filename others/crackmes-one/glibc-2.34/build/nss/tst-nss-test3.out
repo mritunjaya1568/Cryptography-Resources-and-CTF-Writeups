@@ -1,0 +1,41 @@
+[1] group entry 6.name6 had gid 8
+    group 8.name6 (*) : larry, curly, moe
+    group 6.name6 (*) : larry, curly, moe
+[2] group name for 14.name14 was (null)
+    group 14.(null) (*) : huey, dewey, louis
+    group 14.name14 (*) : huey, dewey, louis
+[3] group name for 14.(null) was name14
+    group 14.name14 (*) : huey, dewey, louis
+    group 14.(null) (*) : huey, dewey, louis
+[4] group entry 7.name7 had name "name7_wrong"
+    group 7.name7_wrong (*) : larry, curly, darryl
+    group 7.name7 (*) : larry, curly, darryl
+[5] group password for 5.name5 was not NULL
+    group 5.name5 (wilma) :
+    group 5.name5 ((null)) :
+[6] group password for 5.name5 was NULL
+    group 5.name5 ((null)) :
+    group 5.name5 (fred) :
+[7] group entry 5.name5 had password "wilma" (not "fred")
+    group 5.name5 (wilma) :
+    group 5.name5 (fred) :
+[8] group entry 3.name3a missing member list
+    group 3.name3a (*) :
+    group 3.name3a (*) : tom, dick, harry
+[9] group entry 3.name3b has unexpected member list
+    group 3.name3b (*) : tom, dick, harry
+    group 3.name3b (*) :
+[10] group member list for 3.name3c differs: alpha vs tom.
+[10] group member list for 3.name3c differs: beta vs dick.
+[10] group member list for 3.name3c differs: gamma vs harry.
+[10] group member list for 3.name3c is too short.
+    group 3.name3c (*) : tom, dick, harry
+    group 3.name3c (*) : alpha, beta, gamma, fred
+[11] group member list for 3.name3d differs: tom vs alpha.
+[11] group member list for 3.name3d differs: dick vs beta.
+[11] group member list for 3.name3d differs: harry vs gamma.
+[11] group member list for 3.name3d is too long.
+    group 3.name3d (*) : alpha, beta, gamma, fred
+    group 3.name3d (*) : tom, dick, harry
+FAIL: [12] group entry 2.name2 missing
+PASS: Found 18 expected errors

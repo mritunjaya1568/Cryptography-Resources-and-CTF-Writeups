@@ -1,0 +1,16 @@
+PASS: iconv/check-installed-headers-c
+PASS: iconv/check-installed-headers-cxx
+PASS: iconv/check-obsolete-constructs
+PASS: iconv/check-wrapper-headers
+PASS: iconv/tst-gconv-init-failure
+FAIL: iconv/tst-iconv-mt
+PASS: iconv/tst-iconv-opt
+PASS: iconv/tst-iconv1
+PASS: iconv/tst-iconv2
+PASS: iconv/tst-iconv3
+PASS: iconv/tst-iconv4
+PASS: iconv/tst-iconv5
+PASS: iconv/tst-iconv6
+PASS: iconv/tst-iconv7
+PASS: iconv/tst-iconv8
+PASS: iconv/tst-iconv_prog

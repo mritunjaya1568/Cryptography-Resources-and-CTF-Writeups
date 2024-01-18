@@ -1,0 +1,37 @@
+info: *** subprocess output starts ***
+tst-test_compare_string.c:29: error: string comparison failed
+  left string: 0 bytes
+  right string: NULL
+tst-test_compare_string.c:30: error: string comparison failed
+  left string: 1 bytes
+  right string: 0 bytes
+  left (evaluated from "X"):
+      "X"
+      58
+tst-test_compare_string.c:31: error: string comparison failed
+  left string: NULL
+  right string: 1 bytes
+  right (evaluated from "X"):
+      "X"
+      58
+tst-test_compare_string.c:32: error: string comparison failed
+  string length: 4 bytes
+  left (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+  right (evaluated from "abcD"):
+      "abcD"
+      61 62 63 44
+tst-test_compare_string.c:33: error: string comparison failed
+  left string: 4 bytes
+  right string: NULL
+  left (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+tst-test_compare_string.c:34: error: string comparison failed
+  left string: NULL
+  right string: 4 bytes
+  right (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+info: *** subprocess output ends ***

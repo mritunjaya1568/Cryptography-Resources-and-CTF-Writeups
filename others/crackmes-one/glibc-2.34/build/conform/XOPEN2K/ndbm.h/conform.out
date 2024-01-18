@@ -1,0 +1,11 @@
+/tmp/tmpy7ksgkuw/test.c:1:10: fatal error: ndbm.h: No such file or directory
+ #include <ndbm.h>
+          ^~~~~~~~
+compilation terminated.
+FAIL: Availability of <ndbm.h>
+SKIP: Namespace of <ndbm.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    1
+  Number of failed tests  :    1
+  Number of xfailed tests :    0
+  Number of skipped tests :    1

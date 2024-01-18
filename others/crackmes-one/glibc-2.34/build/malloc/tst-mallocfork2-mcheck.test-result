@@ -1,0 +1,2 @@
+PASS: malloc/tst-mallocfork2-mcheck
+original exit status 0

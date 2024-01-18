@@ -1,0 +1,16 @@
+PASS: Availability of <utime.h>
+PASS: Combined <utime.h> test
+PASSCOMBINED: Availability of type struct utimbuf
+PASSCOMBINED: Availability of member actime
+PASSCOMBINED: Type of member actime
+PASSCOMBINED: Availability of member modtime
+PASSCOMBINED: Type of member modtime
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of function utime
+PASSCOMBINED: Type of function utime
+PASS: Namespace of <utime.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   10
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

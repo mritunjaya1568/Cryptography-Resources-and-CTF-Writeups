@@ -1,0 +1,3 @@
+sem_getvalue after init: 2147483647
+sem_post at SEM_VALUE_MAX: Value too large for defined data type (75)
+sem_getvalue after post: 2147483647

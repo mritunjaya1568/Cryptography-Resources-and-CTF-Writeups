@@ -1,0 +1,2 @@
+PASS: setjmp/test-as-const-jmp_buf-ssp
+original exit status 0

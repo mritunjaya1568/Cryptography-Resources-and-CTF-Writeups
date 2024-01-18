@@ -1,0 +1,12 @@
+&cond = 0x4f4420
+&mut = 0x4f2120
+parent: get mutex
+parent: create child
+parent: wait for child to lock mutex
+child: got mutex; waiting
+ch done
+parent: create 2nd child
+parent: wait for child to lock mutex
+child: got mutex; waiting
+ch done
+done

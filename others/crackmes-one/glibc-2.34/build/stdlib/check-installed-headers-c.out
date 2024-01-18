@@ -1,0 +1,231 @@
+:: stdlib.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: monetary.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: inttypes.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: stdint.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: errno.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: sys/errno.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: ucontext.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: sys/ucontext.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: alloca.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: fmtmsg.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700
+:: sys/random.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c89
+:::: -std=c89 -D_DEFAULT_SOURCE=1
+:::: -std=c89 -D_GNU_SOURCE=1
+:::: -std=c89 -D_XOPEN_SOURCE=700
+:::: -std=gnu89
+:::: -std=gnu89 -D_DEFAULT_SOURCE=1
+:::: -std=gnu89 -D_GNU_SOURCE=1
+:::: -std=gnu89 -D_XOPEN_SOURCE=700
+:::: -std=c11
+:::: -std=c11 -D_DEFAULT_SOURCE=1
+:::: -std=c11 -D_GNU_SOURCE=1
+:::: -std=c11 -D_XOPEN_SOURCE=700
+:::: -std=gnu11
+:::: -std=gnu11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu11 -D_GNU_SOURCE=1
+:::: -std=gnu11 -D_XOPEN_SOURCE=700

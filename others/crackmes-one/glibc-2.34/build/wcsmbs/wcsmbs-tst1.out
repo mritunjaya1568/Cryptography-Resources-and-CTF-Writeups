@@ -1,0 +1,15 @@
+locale : de_DE.UTF-8
+MB_CUR_MAX 6
+---- test 1 ------
+size of string by mbstowcs 5
+orig string Hello
+string by wctomb He
+string by %C He
+string by %S Hello
+---- test 2 ------
+wchar string World
+wchar W
+size of string by wcstombs 5
+size of string by wcslen 5
+char World
+------------------

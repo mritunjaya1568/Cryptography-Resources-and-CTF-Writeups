@@ -1,0 +1,7 @@
+info: testing lchmod
+info: testing fchmodat with AT_FDCWD
+info: testing fchmodat with relative path
+info: re-running tests (after trying to empty /proc)
+info: testing lchmod
+info: testing fchmodat with AT_FDCWD
+info: testing fchmodat with relative path

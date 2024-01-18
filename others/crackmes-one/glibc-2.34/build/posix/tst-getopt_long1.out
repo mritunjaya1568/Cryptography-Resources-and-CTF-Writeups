@@ -1,0 +1,3 @@
+return value: ?
+message = "program: option '--on' is ambiguous; possibilities: '--one' '--one-one' '--onto'
+"

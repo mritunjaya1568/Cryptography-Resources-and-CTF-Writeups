@@ -1,0 +1,8 @@
+/tmp/tmpktmsnp6l/undef.c:5:1: warning: ‘readdir_r’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_readdir_r = (void *) &readdir_r;
+ ^~~~
+In file included from ../include/dirent.h:5,
+                 from /tmp/tmpktmsnp6l/undef.c:1:
+../dirent/dirent.h:183:12: note: declared here
+ extern int readdir_r (DIR *__restrict __dirp,
+            ^~~~~~~~~

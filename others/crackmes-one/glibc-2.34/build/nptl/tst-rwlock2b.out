@@ -1,0 +1,15 @@
+rwlockattr_init succeeded
+rwlockattr_setkind succeeded
+rwlock_init succeeded
+rwlockattr_destroy succeeded
+1st rwlock_wrlock succeeded
+rwlock_tryrdlock on rwlock with writer failed with EBUSY
+rwlock_trywrlock on rwlock with writer failed with EBUSY
+1st rwlock_unlock succeeded
+rwlock_tryrdlock on unlocked rwlock succeeded
+rwlock_trywrlock on rwlock with reader failed with EBUSY
+2nd rwlock_unlock succeeded
+rwlock_trywrlock on unlocked rwlock succeeded
+rwlock_tryrdlock on rwlock with writer failed with EBUSY
+3rd rwlock_unlock succeeded
+rwlock_destroy succeeded

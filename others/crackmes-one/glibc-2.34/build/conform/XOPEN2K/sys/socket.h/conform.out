@@ -1,0 +1,143 @@
+PASS: Availability of <sys/socket.h>
+PASS: Combined <sys/socket.h> test
+PASSCOMBINED: Availability of type socklen_t
+PASSCOMBINED: Availability of type sa_family_t
+PASSCOMBINED: Availability of type struct sockaddr
+PASSCOMBINED: Availability of member sa_family
+PASSCOMBINED: Type of member sa_family
+PASSCOMBINED: Availability of member sa_data
+PASSCOMBINED: Type of member sa_data
+PASSCOMBINED: Availability of type struct sockaddr_storage
+PASSCOMBINED: Availability of member ss_family
+PASSCOMBINED: Type of member ss_family
+PASSCOMBINED: Availability of type struct msghdr
+PASSCOMBINED: Availability of member msg_name
+PASSCOMBINED: Type of member msg_name
+PASSCOMBINED: Availability of member msg_namelen
+PASSCOMBINED: Type of member msg_namelen
+PASSCOMBINED: Availability of member msg_iov
+PASSCOMBINED: Type of member msg_iov
+PASS: Availability of member msg_iovlen
+/tmp/tmpvsneb1i9/test.c:4:38: error: conflicting types for ‘b2_11’
+ extern __typeof__ (a2_11.msg_iovlen) b2_11;
+                                      ^~~~~
+/tmp/tmpvsneb1i9/test.c:3:12: note: previous declaration of ‘b2_11’ was here
+ extern int b2_11;
+            ^~~~~
+XFAIL: Type of member msg_iovlen
+PASSCOMBINED: Availability of member msg_control
+PASSCOMBINED: Type of member msg_control
+PASS: Availability of member msg_controllen
+/tmp/tmpvsneb1i9/test.c:4:42: error: conflicting types for ‘b2_13’
+ extern __typeof__ (a2_13.msg_controllen) b2_13;
+                                          ^~~~~
+/tmp/tmpvsneb1i9/test.c:3:18: note: previous declaration of ‘b2_13’ was here
+ extern socklen_t b2_13;
+                  ^~~~~
+XFAIL: Type of member msg_controllen
+PASSCOMBINED: Availability of member msg_flags
+PASSCOMBINED: Type of member msg_flags
+PASSCOMBINED: Availability of type struct iovec
+PASSCOMBINED: Availability of member iov_base
+PASSCOMBINED: Type of member iov_base
+PASSCOMBINED: Availability of member iov_len
+PASSCOMBINED: Type of member iov_len
+PASSCOMBINED: Availability of type struct cmsghdr
+PASS: Availability of member cmsg_len
+/tmp/tmpvsneb1i9/test.c:4:36: error: conflicting types for ‘b2_19’
+ extern __typeof__ (a2_19.cmsg_len) b2_19;
+                                    ^~~~~
+/tmp/tmpvsneb1i9/test.c:3:18: note: previous declaration of ‘b2_19’ was here
+ extern socklen_t b2_19;
+                  ^~~~~
+XFAIL: Type of member cmsg_len
+PASSCOMBINED: Availability of member cmsg_level
+PASSCOMBINED: Type of member cmsg_level
+PASSCOMBINED: Availability of member cmsg_type
+PASSCOMBINED: Type of member cmsg_type
+PASSCOMBINED: Availability of macro SCM_RIGHTS
+PASSCOMBINED: Availability of macro CMSG_DATA
+PASSCOMBINED: Availability of macro CMSG_NXTHDR
+PASSCOMBINED: Availability of macro CMSG_FIRSTHDR
+PASSCOMBINED: Availability of type struct linger
+PASSCOMBINED: Availability of member l_onoff
+PASSCOMBINED: Type of member l_onoff
+PASSCOMBINED: Availability of member l_linger
+PASSCOMBINED: Type of member l_linger
+PASSCOMBINED: Availability of macro SOCK_DGRAM
+PASSCOMBINED: Availability of macro SOCK_STREAM
+PASSCOMBINED: Availability of macro SOCK_SEQPACKET
+PASSCOMBINED: Availability of macro SOL_SOCKET
+PASSCOMBINED: Availability of macro SO_ACCEPTCONN
+PASSCOMBINED: Availability of macro SO_BROADCAST
+PASSCOMBINED: Availability of macro SO_DEBUG
+PASSCOMBINED: Availability of macro SO_DONTROUTE
+PASSCOMBINED: Availability of macro SO_ERROR
+PASSCOMBINED: Availability of macro SO_KEEPALIVE
+PASSCOMBINED: Availability of macro SO_LINGER
+PASSCOMBINED: Availability of macro SO_OOBINLINE
+PASSCOMBINED: Availability of macro SO_RCVBUF
+PASSCOMBINED: Availability of macro SO_RCVLOWAT
+PASSCOMBINED: Availability of macro SO_RCVTIMEO
+PASSCOMBINED: Availability of macro SO_REUSEADDR
+PASSCOMBINED: Availability of macro SO_SNDBUF
+PASSCOMBINED: Availability of macro SO_SNDLOWAT
+PASSCOMBINED: Availability of macro SO_SNDTIMEO
+PASSCOMBINED: Availability of macro SO_TYPE
+PASSCOMBINED: Availability of macro SOMAXCONN
+PASSCOMBINED: Availability of macro MSG_CTRUNC
+PASSCOMBINED: Availability of macro MSG_DONTROUTE
+PASSCOMBINED: Availability of macro MSG_EOR
+PASSCOMBINED: Availability of macro MSG_OOB
+PASSCOMBINED: Availability of macro MSG_PEEK
+PASSCOMBINED: Availability of macro MSG_TRUNC
+PASSCOMBINED: Availability of macro MSG_WAITALL
+PASSCOMBINED: Availability of macro AF_UNIX
+PASSCOMBINED: Availability of macro AF_UNSPEC
+PASSCOMBINED: Availability of macro AF_INET
+PASSCOMBINED: Availability of macro AF_INET6
+PASSCOMBINED: Availability of macro SHUT_RD
+PASSCOMBINED: Availability of macro SHUT_WR
+PASSCOMBINED: Availability of macro SHUT_RDWR
+PASSCOMBINED: Availability of function accept
+PASSCOMBINED: Type of function accept
+PASSCOMBINED: Availability of function bind
+PASSCOMBINED: Type of function bind
+PASSCOMBINED: Availability of function connect
+PASSCOMBINED: Type of function connect
+PASSCOMBINED: Availability of function getpeername
+PASSCOMBINED: Type of function getpeername
+PASSCOMBINED: Availability of function getsockname
+PASSCOMBINED: Type of function getsockname
+PASSCOMBINED: Availability of function getsockopt
+PASSCOMBINED: Type of function getsockopt
+PASSCOMBINED: Availability of function listen
+PASSCOMBINED: Type of function listen
+PASSCOMBINED: Availability of function recv
+PASSCOMBINED: Type of function recv
+PASSCOMBINED: Availability of function recvfrom
+PASSCOMBINED: Type of function recvfrom
+PASSCOMBINED: Availability of function recvmsg
+PASSCOMBINED: Type of function recvmsg
+PASSCOMBINED: Availability of function send
+PASSCOMBINED: Type of function send
+PASSCOMBINED: Availability of function sendmsg
+PASSCOMBINED: Type of function sendmsg
+PASSCOMBINED: Availability of function sendto
+PASSCOMBINED: Type of function sendto
+PASSCOMBINED: Availability of function setsockopt
+PASSCOMBINED: Type of function setsockopt
+PASSCOMBINED: Availability of function shutdown
+PASSCOMBINED: Type of function shutdown
+PASSCOMBINED: Availability of function socket
+PASSCOMBINED: Type of function socket
+PASSCOMBINED: Availability of function socketpair
+PASSCOMBINED: Type of function socketpair
+PASSCOMBINED: Availability of function sockatmark
+PASSCOMBINED: Type of function sockatmark
+PASS: Namespace of <sys/socket.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  119
+  Number of failed tests  :    0
+  Number of xfailed tests :    3
+  Number of skipped tests :    0

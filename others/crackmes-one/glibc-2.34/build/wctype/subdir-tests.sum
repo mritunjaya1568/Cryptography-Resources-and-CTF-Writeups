@@ -1,0 +1,7 @@
+PASS: wctype/bug-wctypeh
+PASS: wctype/check-installed-headers-c
+PASS: wctype/check-installed-headers-cxx
+PASS: wctype/check-obsolete-constructs
+PASS: wctype/check-wrapper-headers
+PASS: wctype/test_wcfuncs
+PASS: wctype/test_wctype

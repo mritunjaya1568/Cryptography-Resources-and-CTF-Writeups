@@ -1,0 +1,45 @@
+info: *** subprocess output starts ***
+tst-test_compare_blob.c:29: error: blob comparison failed
+  left length:  0 bytes (from 0)
+  right length: 1 bytes (from 1)
+  right (evaluated from ""):
+      "\000"
+      00
+tst-test_compare_blob.c:30: error: blob comparison failed
+  blob length: 1 bytes
+  left (evaluated from "X"):
+      "X"
+      58
+  right (evaluated from ""):
+      "\000"
+      00
+tst-test_compare_blob.c:31: error: blob comparison failed
+  left length:  3 bytes (from 3)
+  right length: 4 bytes (from 4)
+  left (evaluated from "abcd"):
+      "abc"
+      61 62 63
+  right (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+tst-test_compare_blob.c:32: error: blob comparison failed
+  blob length: 4 bytes
+  left (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+  right (evaluated from "abcD"):
+      "abcD"
+      61 62 63 44
+tst-test_compare_blob.c:33: error: blob comparison failed
+  left length:  4 bytes (from 4)
+  right length: 0 bytes (from 0)
+  left (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+tst-test_compare_blob.c:34: error: blob comparison failed
+  left length:  0 bytes (from 0)
+  right length: 4 bytes (from 4)
+  right (evaluated from "abcd"):
+      "abcd"
+      61 62 63 64
+info: *** subprocess output ends ***

@@ -1,0 +1,2 @@
+sa_flags = 0 test
+Didn't expect signal from child: got `Aborted'

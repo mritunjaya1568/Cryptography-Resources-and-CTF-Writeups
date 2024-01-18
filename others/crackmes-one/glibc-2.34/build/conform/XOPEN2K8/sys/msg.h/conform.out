@@ -1,0 +1,41 @@
+PASS: Availability of <sys/msg.h>
+PASS: Combined <sys/msg.h> test
+PASSCOMBINED: Availability of type struct msqid_ds
+PASSCOMBINED: Availability of type msgqnum_t
+PASSCOMBINED: Availability of type msglen_t
+PASSCOMBINED: Availability of constant MSG_NOERROR
+PASSCOMBINED: Availability of member msg_perm
+PASSCOMBINED: Type of member msg_perm
+PASSCOMBINED: Availability of member msg_qnum
+PASSCOMBINED: Type of member msg_qnum
+PASSCOMBINED: Availability of member msg_qbytes
+PASSCOMBINED: Type of member msg_qbytes
+PASSCOMBINED: Availability of member msg_lspid
+PASSCOMBINED: Type of member msg_lspid
+PASSCOMBINED: Availability of member msg_lrpid
+PASSCOMBINED: Type of member msg_lrpid
+PASSCOMBINED: Availability of member msg_stime
+PASSCOMBINED: Type of member msg_stime
+PASSCOMBINED: Availability of member msg_rtime
+PASSCOMBINED: Type of member msg_rtime
+PASSCOMBINED: Availability of member msg_ctime
+PASSCOMBINED: Type of member msg_ctime
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type ssize_t
+PASSCOMBINED: Availability of function msgctl
+PASSCOMBINED: Type of function msgctl
+PASSCOMBINED: Availability of function msgget
+PASSCOMBINED: Type of function msgget
+PASSCOMBINED: Availability of function msgrcv
+PASSCOMBINED: Type of function msgrcv
+PASSCOMBINED: Availability of function msgsnd
+PASSCOMBINED: Type of function msgsnd
+PASS: Namespace of <sys/msg.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   35
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

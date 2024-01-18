@@ -1,0 +1,80 @@
+
+This is what is in memory now:
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+Loading shared object circlemod1a.so: RTLD_LAZY
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod1a.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod2a.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod3a.so, count = 0
+UnLoading shared object circlemod1a.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+
+This is what is in memory now:
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+Loading shared object circlemod1a.so: RTLD_NOW
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod1a.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod2a.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod3a.so, count = 0
+UnLoading shared object circlemod1a.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+
+This is what is in memory now:
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+Loading shared object circlemod1.so: RTLD_LAZY
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod1.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod2.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod3.so, count = 0
+UnLoading shared object circlemod1.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+
+This is what is in memory now:
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+Loading shared object circlemod1.so: RTLD_NOW
+dlopen: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/circlemod2.so: undefined symbol: circlemod2_undefined
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0

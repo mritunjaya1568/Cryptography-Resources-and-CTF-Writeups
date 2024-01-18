@@ -1,0 +1,3 @@
+Test for wide character output with printf
+with %S: 81
+with %C: 8

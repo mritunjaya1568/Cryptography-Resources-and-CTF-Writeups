@@ -1,0 +1,17 @@
+origin: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dlfcn
+14 library directories
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/math
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dlfcn
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nss
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nis
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/rt
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/resolv
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/mathvec
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/crypt
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl
+	00	.
+	00	/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib
+dlinfo RTLD_DI_LMID worked? 0

@@ -1,0 +1,35 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl/tst-stack3:[0x7f3d151338bc] + 0x555556394000 0x10000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:[0x7f3d1514bb43] + 0x5555563936b0 0x120
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2:(_dl_deallocate_tls+57)[0x7f3d1514c5d7] - 0x5555563936b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl/tst-stack3:[0x7f3d151339b3] - 0x555556394000

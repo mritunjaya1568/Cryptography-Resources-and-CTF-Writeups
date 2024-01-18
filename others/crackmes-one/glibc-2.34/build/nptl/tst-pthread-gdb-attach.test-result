@@ -1,0 +1,2 @@
+FAIL: nptl/tst-pthread-gdb-attach
+original exit status 1

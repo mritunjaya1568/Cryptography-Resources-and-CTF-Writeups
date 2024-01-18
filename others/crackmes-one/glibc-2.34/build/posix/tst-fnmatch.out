@@ -1,0 +1,668 @@
+  1: fnmatch ("!#%+,-./01234567889", "!#%+,-./01234567889", 0) = 0
+  2: fnmatch (":;=@ABCDEFGHIJKLMNO", ":;=@ABCDEFGHIJKLMNO", 0) = 0
+  3: fnmatch ("PQRSTUVWXYZ]abcdefg", "PQRSTUVWXYZ]abcdefg", 0) = 0
+  4: fnmatch ("hijklmnopqrstuvwxyz", "hijklmnopqrstuvwxyz", 0) = 0
+  5: fnmatch ("^_{}~", "^_{}~", 0) = 0
+  6: fnmatch ("\\\"\\$\\&\\'\\(\\)", "\"$&'()", 0) = 0
+  7: fnmatch ("\\*\\?\\[\\\\\\`\\|", "*?[\\`|", 0) = 0
+  8: fnmatch ("\\<\\>", "<>", 0) = 0
+  9: fnmatch ("[?*[][?*[][?*[]", "?*[", 0) = 0
+ 10: fnmatch ("?/b", "a/b", 0) = 0
+ 11: fnmatch ("a?b", "a/b", 0) = 0
+ 12: fnmatch ("a/?", "a/b", 0) = 0
+ 13: fnmatch ("?/b", "aa/b", 0) = FNM_NOMATCH
+ 14: fnmatch ("a?b", "aa/b", 0) = FNM_NOMATCH
+ 15: fnmatch ("a/?", "a/bb", 0) = FNM_NOMATCH
+ 16: fnmatch ("[abc]", "abc", 0) = FNM_NOMATCH
+ 17: fnmatch ("[abc]", "x", 0) = FNM_NOMATCH
+ 18: fnmatch ("[abc]", "a", 0) = 0
+ 19: fnmatch ("[[abc]", "[", 0) = 0
+ 20: fnmatch ("[][abc]", "a", 0) = 0
+ 21: fnmatch ("[]a]]", "a]", 0) = 0
+ 22: fnmatch ("[!abc]", "xyz", 0) = FNM_NOMATCH
+ 23: fnmatch ("[!abc]", "x", 0) = 0
+ 24: fnmatch ("[!abc]", "a", 0) = FNM_NOMATCH
+ 25: fnmatch ("[][abc]", "]", 0) = 0
+ 26: fnmatch ("[][abc]", "abc]", 0) = FNM_NOMATCH
+ 27: fnmatch ("[][]abc", "[]abc", 0) = FNM_NOMATCH
+ 28: fnmatch ("[!]]", "]", 0) = FNM_NOMATCH
+ 29: fnmatch ("[!]a]", "aa]", 0) = FNM_NOMATCH
+ 30: fnmatch ("[!a]", "]", 0) = 0
+ 31: fnmatch ("[!a]]", "]]", 0) = 0
+ 32: fnmatch ("[[.a.]]", "a", 0) = 0
+ 33: fnmatch ("[[.-.]]", "-", 0) = 0
+ 34: fnmatch ("[[.-.][.].]]", "-", 0) = 0
+ 35: fnmatch ("[[.].][.-.]]", "-", 0) = 0
+ 36: fnmatch ("[[.-.][=u=]]", "-", 0) = 0
+ 37: fnmatch ("[[.-.][:alpha:]]", "-", 0) = 0
+ 38: fnmatch ("[![.a.]]", "a", 0) = FNM_NOMATCH
+ 39: fnmatch ("[[.b.]]", "a", 0) = FNM_NOMATCH
+ 40: fnmatch ("[[.b.][.c.]]", "a", 0) = FNM_NOMATCH
+ 41: fnmatch ("[[.b.][=b=]]", "a", 0) = FNM_NOMATCH
+ 42: fnmatch ("[[=a=]]", "a", 0) = 0
+ 43: fnmatch ("[[=a=]b]", "b", 0) = 0
+ 44: fnmatch ("[[=a=][=b=]]", "b", 0) = 0
+ 45: fnmatch ("[[=a=][=b=]]", "a", 0) = 0
+ 46: fnmatch ("[[=a=][.b.]]", "a", 0) = 0
+ 47: fnmatch ("[[=a=][:digit:]]", "a", 0) = 0
+ 48: fnmatch ("[[=a=]b]", "=", 0) = FNM_NOMATCH
+ 49: fnmatch ("[[=a=]b]", "]", 0) = FNM_NOMATCH
+ 50: fnmatch ("[[=b=][=c=]]", "a", 0) = FNM_NOMATCH
+ 51: fnmatch ("[[=b=][.].]]", "a", 0) = FNM_NOMATCH
+ 52: fnmatch ("[[=b=][:digit:]]", "a", 0) = FNM_NOMATCH
+ 53: fnmatch ("[[:alnum:]]", "a", 0) = 0
+ 54: fnmatch ("[![:alnum:]]", "a", 0) = FNM_NOMATCH
+ 55: fnmatch ("[[:alnum:]]", "-", 0) = FNM_NOMATCH
+ 56: fnmatch ("[[:alnum:]]a", "a]a", 0) = FNM_NOMATCH
+ 57: fnmatch ("[[:alnum:]-]", "-", 0) = 0
+ 58: fnmatch ("[[:alnum:]]a", "aa", 0) = 0
+ 59: fnmatch ("[![:alnum:]]", "-", 0) = 0
+ 60: fnmatch ("[!][:alnum:]]", "]", 0) = FNM_NOMATCH
+ 61: fnmatch ("[![:alnum:][]", "[", 0) = FNM_NOMATCH
+ 62: fnmatch ("[[:alnum:]]", "a", 0) = 0
+ 63: fnmatch ("[[:alnum:]]", "b", 0) = 0
+ 64: fnmatch ("[[:alnum:]]", "c", 0) = 0
+ 65: fnmatch ("[[:alnum:]]", "d", 0) = 0
+ 66: fnmatch ("[[:alnum:]]", "e", 0) = 0
+ 67: fnmatch ("[[:alnum:]]", "f", 0) = 0
+ 68: fnmatch ("[[:alnum:]]", "g", 0) = 0
+ 69: fnmatch ("[[:alnum:]]", "h", 0) = 0
+ 70: fnmatch ("[[:alnum:]]", "i", 0) = 0
+ 71: fnmatch ("[[:alnum:]]", "j", 0) = 0
+ 72: fnmatch ("[[:alnum:]]", "k", 0) = 0
+ 73: fnmatch ("[[:alnum:]]", "l", 0) = 0
+ 74: fnmatch ("[[:alnum:]]", "m", 0) = 0
+ 75: fnmatch ("[[:alnum:]]", "n", 0) = 0
+ 76: fnmatch ("[[:alnum:]]", "o", 0) = 0
+ 77: fnmatch ("[[:alnum:]]", "p", 0) = 0
+ 78: fnmatch ("[[:alnum:]]", "q", 0) = 0
+ 79: fnmatch ("[[:alnum:]]", "r", 0) = 0
+ 80: fnmatch ("[[:alnum:]]", "s", 0) = 0
+ 81: fnmatch ("[[:alnum:]]", "t", 0) = 0
+ 82: fnmatch ("[[:alnum:]]", "u", 0) = 0
+ 83: fnmatch ("[[:alnum:]]", "v", 0) = 0
+ 84: fnmatch ("[[:alnum:]]", "w", 0) = 0
+ 85: fnmatch ("[[:alnum:]]", "x", 0) = 0
+ 86: fnmatch ("[[:alnum:]]", "y", 0) = 0
+ 87: fnmatch ("[[:alnum:]]", "z", 0) = 0
+ 88: fnmatch ("[[:alnum:]]", "A", 0) = 0
+ 89: fnmatch ("[[:alnum:]]", "B", 0) = 0
+ 90: fnmatch ("[[:alnum:]]", "C", 0) = 0
+ 91: fnmatch ("[[:alnum:]]", "D", 0) = 0
+ 92: fnmatch ("[[:alnum:]]", "E", 0) = 0
+ 93: fnmatch ("[[:alnum:]]", "F", 0) = 0
+ 94: fnmatch ("[[:alnum:]]", "G", 0) = 0
+ 95: fnmatch ("[[:alnum:]]", "H", 0) = 0
+ 96: fnmatch ("[[:alnum:]]", "I", 0) = 0
+ 97: fnmatch ("[[:alnum:]]", "J", 0) = 0
+ 98: fnmatch ("[[:alnum:]]", "K", 0) = 0
+ 99: fnmatch ("[[:alnum:]]", "L", 0) = 0
+100: fnmatch ("[[:alnum:]]", "M", 0) = 0
+101: fnmatch ("[[:alnum:]]", "N", 0) = 0
+102: fnmatch ("[[:alnum:]]", "O", 0) = 0
+103: fnmatch ("[[:alnum:]]", "P", 0) = 0
+104: fnmatch ("[[:alnum:]]", "Q", 0) = 0
+105: fnmatch ("[[:alnum:]]", "R", 0) = 0
+106: fnmatch ("[[:alnum:]]", "S", 0) = 0
+107: fnmatch ("[[:alnum:]]", "T", 0) = 0
+108: fnmatch ("[[:alnum:]]", "U", 0) = 0
+109: fnmatch ("[[:alnum:]]", "V", 0) = 0
+110: fnmatch ("[[:alnum:]]", "W", 0) = 0
+111: fnmatch ("[[:alnum:]]", "X", 0) = 0
+112: fnmatch ("[[:alnum:]]", "Y", 0) = 0
+113: fnmatch ("[[:alnum:]]", "Z", 0) = 0
+114: fnmatch ("[[:alnum:]]", "0", 0) = 0
+115: fnmatch ("[[:alnum:]]", "1", 0) = 0
+116: fnmatch ("[[:alnum:]]", "2", 0) = 0
+117: fnmatch ("[[:alnum:]]", "3", 0) = 0
+118: fnmatch ("[[:alnum:]]", "4", 0) = 0
+119: fnmatch ("[[:alnum:]]", "5", 0) = 0
+120: fnmatch ("[[:alnum:]]", "6", 0) = 0
+121: fnmatch ("[[:alnum:]]", "7", 0) = 0
+122: fnmatch ("[[:alnum:]]", "8", 0) = 0
+123: fnmatch ("[[:alnum:]]", "9", 0) = 0
+124: fnmatch ("[[:alnum:]]", "!", 0) = FNM_NOMATCH
+125: fnmatch ("[[:alnum:]]", "#", 0) = FNM_NOMATCH
+126: fnmatch ("[[:alnum:]]", "%", 0) = FNM_NOMATCH
+127: fnmatch ("[[:alnum:]]", "+", 0) = FNM_NOMATCH
+128: fnmatch ("[[:alnum:]]", ",", 0) = FNM_NOMATCH
+129: fnmatch ("[[:alnum:]]", "-", 0) = FNM_NOMATCH
+130: fnmatch ("[[:alnum:]]", ".", 0) = FNM_NOMATCH
+131: fnmatch ("[[:alnum:]]", "/", 0) = FNM_NOMATCH
+132: fnmatch ("[[:alnum:]]", ":", 0) = FNM_NOMATCH
+133: fnmatch ("[[:alnum:]]", ";", 0) = FNM_NOMATCH
+134: fnmatch ("[[:alnum:]]", "=", 0) = FNM_NOMATCH
+135: fnmatch ("[[:alnum:]]", "@", 0) = FNM_NOMATCH
+136: fnmatch ("[[:alnum:]]", "[", 0) = FNM_NOMATCH
+137: fnmatch ("[[:alnum:]]", "\\", 0) = FNM_NOMATCH
+138: fnmatch ("[[:alnum:]]", "]", 0) = FNM_NOMATCH
+139: fnmatch ("[[:alnum:]]", "^", 0) = FNM_NOMATCH
+140: fnmatch ("[[:alnum:]]", "_", 0) = FNM_NOMATCH
+141: fnmatch ("[[:alnum:]]", "{", 0) = FNM_NOMATCH
+142: fnmatch ("[[:alnum:]]", "}", 0) = FNM_NOMATCH
+143: fnmatch ("[[:alnum:]]", "~", 0) = FNM_NOMATCH
+144: fnmatch ("[[:alnum:]]", "\"", 0) = FNM_NOMATCH
+145: fnmatch ("[[:alnum:]]", "$", 0) = FNM_NOMATCH
+146: fnmatch ("[[:alnum:]]", "&", 0) = FNM_NOMATCH
+147: fnmatch ("[[:alnum:]]", "'", 0) = FNM_NOMATCH
+148: fnmatch ("[[:alnum:]]", "(", 0) = FNM_NOMATCH
+149: fnmatch ("[[:alnum:]]", ")", 0) = FNM_NOMATCH
+150: fnmatch ("[[:alnum:]]", "*", 0) = FNM_NOMATCH
+151: fnmatch ("[[:alnum:]]", "?", 0) = FNM_NOMATCH
+152: fnmatch ("[[:alnum:]]", "`", 0) = FNM_NOMATCH
+153: fnmatch ("[[:alnum:]]", "|", 0) = FNM_NOMATCH
+154: fnmatch ("[[:alnum:]]", "<", 0) = FNM_NOMATCH
+155: fnmatch ("[[:alnum:]]", ">", 0) = FNM_NOMATCH
+156: fnmatch ("[[:cntrl:]]", "\t", 0) = 0
+157: fnmatch ("[[:cntrl:]]", "t", 0) = FNM_NOMATCH
+158: fnmatch ("[[:lower:]]", "t", 0) = 0
+159: fnmatch ("[[:lower:]]", "\t", 0) = FNM_NOMATCH
+160: fnmatch ("[[:lower:]]", "T", 0) = FNM_NOMATCH
+161: fnmatch ("[[:space:]]", "\t", 0) = 0
+162: fnmatch ("[[:space:]]", "t", 0) = FNM_NOMATCH
+163: fnmatch ("[[:alpha:]]", "t", 0) = 0
+164: fnmatch ("[[:alpha:]]", "\t", 0) = FNM_NOMATCH
+165: fnmatch ("[[:digit:]]", "0", 0) = 0
+166: fnmatch ("[[:digit:]]", "\t", 0) = FNM_NOMATCH
+167: fnmatch ("[[:digit:]]", "t", 0) = FNM_NOMATCH
+168: fnmatch ("[[:print:]]", "\t", 0) = FNM_NOMATCH
+169: fnmatch ("[[:print:]]", "t", 0) = 0
+170: fnmatch ("[[:upper:]]", "T", 0) = 0
+171: fnmatch ("[[:upper:]]", "\t", 0) = FNM_NOMATCH
+172: fnmatch ("[[:upper:]]", "t", 0) = FNM_NOMATCH
+173: fnmatch ("[[:blank:]]", "\t", 0) = 0
+174: fnmatch ("[[:blank:]]", "t", 0) = FNM_NOMATCH
+175: fnmatch ("[[:graph:]]", "\t", 0) = FNM_NOMATCH
+176: fnmatch ("[[:graph:]]", "t", 0) = 0
+177: fnmatch ("[[:punct:]]", ".", 0) = 0
+178: fnmatch ("[[:punct:]]", "t", 0) = FNM_NOMATCH
+179: fnmatch ("[[:punct:]]", "\t", 0) = FNM_NOMATCH
+180: fnmatch ("[[:xdigit:]]", "0", 0) = 0
+181: fnmatch ("[[:xdigit:]]", "\t", 0) = FNM_NOMATCH
+182: fnmatch ("[[:xdigit:]]", "a", 0) = 0
+183: fnmatch ("[[:xdigit:]]", "A", 0) = 0
+184: fnmatch ("[[:xdigit:]]", "t", 0) = FNM_NOMATCH
+185: fnmatch ("[[alpha]]", "a", 0) = FNM_NOMATCH
+186: fnmatch ("[[alpha:]]", "a", 0) = FNM_NOMATCH
+187: fnmatch ("[[alpha]]", "a]", 0) = 0
+188: fnmatch ("[[alpha:]]", "a]", 0) = 0
+189: fnmatch ("[[:alpha:][.b.]]", "a", 0) = 0
+190: fnmatch ("[[:alpha:][=b=]]", "a", 0) = 0
+191: fnmatch ("[[:alpha:][:digit:]]", "a", 0) = 0
+192: fnmatch ("[[:digit:][:alpha:]]", "a", 0) = 0
+193: fnmatch ("[a-c]", "a", 0) = 0
+194: fnmatch ("[a-c]", "b", 0) = 0
+195: fnmatch ("[a-c]", "c", 0) = 0
+196: fnmatch ("[b-c]", "a", 0) = FNM_NOMATCH
+197: fnmatch ("[b-c]", "d", 0) = FNM_NOMATCH
+198: fnmatch ("[a-c]", "B", 0) = FNM_NOMATCH
+199: fnmatch ("[A-C]", "b", 0) = FNM_NOMATCH
+200: fnmatch ("[a-c]", "", 0) = FNM_NOMATCH
+201: fnmatch ("[a-ca-z]", "as", 0) = FNM_NOMATCH
+202: fnmatch ("[[.a.]-c]", "a", 0) = 0
+203: fnmatch ("[a-[.c.]]", "a", 0) = 0
+204: fnmatch ("[[.a.]-[.c.]]", "a", 0) = 0
+205: fnmatch ("[[.a.]-c]", "b", 0) = 0
+206: fnmatch ("[a-[.c.]]", "b", 0) = 0
+207: fnmatch ("[[.a.]-[.c.]]", "b", 0) = 0
+208: fnmatch ("[[.a.]-c]", "c", 0) = 0
+209: fnmatch ("[a-[.c.]]", "c", 0) = 0
+210: fnmatch ("[[.a.]-[.c.]]", "c", 0) = 0
+211: fnmatch ("[[.a.]-c]", "d", 0) = FNM_NOMATCH
+212: fnmatch ("[a-[.c.]]", "d", 0) = FNM_NOMATCH
+213: fnmatch ("[[.a.]-[.c.]]", "d", 0) = FNM_NOMATCH
+214: fnmatch ("[c-a]", "a", 0) = FNM_NOMATCH
+215: fnmatch ("[[.c.]-a]", "a", 0) = FNM_NOMATCH
+216: fnmatch ("[c-[.a.]]", "a", 0) = FNM_NOMATCH
+217: fnmatch ("[[.c.]-[.a.]]", "a", 0) = FNM_NOMATCH
+218: fnmatch ("[c-a]", "c", 0) = FNM_NOMATCH
+219: fnmatch ("[[.c.]-a]", "c", 0) = FNM_NOMATCH
+220: fnmatch ("[c-[.a.]]", "c", 0) = FNM_NOMATCH
+221: fnmatch ("[[.c.]-[.a.]]", "c", 0) = FNM_NOMATCH
+222: fnmatch ("[a-c0-9]", "a", 0) = 0
+223: fnmatch ("[a-c0-9]", "d", 0) = FNM_NOMATCH
+224: fnmatch ("[a-c0-9]", "B", 0) = FNM_NOMATCH
+225: fnmatch ("[-a]", "-", 0) = 0
+226: fnmatch ("[-b]", "a", 0) = FNM_NOMATCH
+227: fnmatch ("[!-a]", "-", 0) = FNM_NOMATCH
+228: fnmatch ("[!-b]", "a", 0) = 0
+229: fnmatch ("[a-c-0-9]", "-", 0) = 0
+230: fnmatch ("[a-c-0-9]", "b", 0) = 0
+231: fnmatch ("a[0-9-a]", "a:", 0) = FNM_NOMATCH
+232: fnmatch ("a[09-a]", "a:", 0) = 0
+233: fnmatch ("*", "", 0) = 0
+234: fnmatch ("*", "asd/sdf", 0) = 0
+235: fnmatch ("[a-c][a-z]", "as", 0) = 0
+236: fnmatch ("??", "as", 0) = 0
+237: fnmatch ("as*df", "asd/sdf", 0) = 0
+238: fnmatch ("as*", "asd/sdf", 0) = 0
+239: fnmatch ("*df", "asd/sdf", 0) = 0
+240: fnmatch ("as*dg", "asd/sdf", 0) = FNM_NOMATCH
+241: fnmatch ("as*df", "asdf", 0) = 0
+242: fnmatch ("as*df?", "asdf", 0) = FNM_NOMATCH
+243: fnmatch ("as*??", "asdf", 0) = 0
+244: fnmatch ("a*???", "asdf", 0) = 0
+245: fnmatch ("*????", "asdf", 0) = 0
+246: fnmatch ("????*", "asdf", 0) = 0
+247: fnmatch ("??*?", "asdf", 0) = 0
+248: fnmatch ("/", "/", 0) = 0
+249: fnmatch ("/*", "/", 0) = 0
+250: fnmatch ("*/", "/", 0) = 0
+251: fnmatch ("/?", "/", 0) = FNM_NOMATCH
+252: fnmatch ("?/", "/", 0) = FNM_NOMATCH
+253: fnmatch ("?", "/", 0) = 0
+254: fnmatch ("?", ".", 0) = 0
+255: fnmatch ("??", "/.", 0) = 0
+256: fnmatch ("[!a-c]", "/", 0) = 0
+257: fnmatch ("[!a-c]", ".", 0) = 0
+258: fnmatch ("/", "/", FNM_PATHNAME) = 0
+259: fnmatch ("//", "//", FNM_PATHNAME) = 0
+260: fnmatch ("/*", "/.a", FNM_PATHNAME) = 0
+261: fnmatch ("/?a", "/.a", FNM_PATHNAME) = 0
+262: fnmatch ("/[!a-z]a", "/.a", FNM_PATHNAME) = 0
+263: fnmatch ("/*/?b", "/.a/.b", FNM_PATHNAME) = 0
+264: fnmatch ("?", "/", FNM_PATHNAME) = FNM_NOMATCH
+265: fnmatch ("*", "/", FNM_PATHNAME) = FNM_NOMATCH
+266: fnmatch ("a?b", "a/b", FNM_PATHNAME) = FNM_NOMATCH
+267: fnmatch ("/*b", "/.a/.b", FNM_PATHNAME) = FNM_NOMATCH
+268: fnmatch ("\\/\\$", "/$", 0) = 0
+269: fnmatch ("\\/\\[", "/[", 0) = 0
+270: fnmatch ("\\/[", "/[", 0) = 0
+271: fnmatch ("\\/\\[]", "/[]", 0) = 0
+272: fnmatch ("\\/\\$", "/$", FNM_NOESCAPE) = FNM_NOMATCH
+273: fnmatch ("\\/\\$", "/\\$", FNM_NOESCAPE) = FNM_NOMATCH
+274: fnmatch ("\\/\\$", "\\/\\$", FNM_NOESCAPE) = 0
+275: fnmatch (".*", ".asd", FNM_PERIOD) = 0
+276: fnmatch ("*", "/.asd", FNM_PERIOD) = 0
+277: fnmatch ("*/?*f", "/as/.df", FNM_PERIOD) = 0
+278: fnmatch (".[!a-z]*", "..asd", FNM_PERIOD) = 0
+279: fnmatch ("*", ".asd", FNM_PERIOD) = FNM_NOMATCH
+280: fnmatch ("?asd", ".asd", FNM_PERIOD) = FNM_NOMATCH
+281: fnmatch ("[!a-z]*", ".asd", FNM_PERIOD) = FNM_NOMATCH
+282: fnmatch ("/.", "/.", FNM_PATHNAME|FNM_PERIOD) = 0
+283: fnmatch ("/.*/.*", "/.a./.b.", FNM_PATHNAME|FNM_PERIOD) = 0
+284: fnmatch ("/.??/.??", "/.a./.b.", FNM_PATHNAME|FNM_PERIOD) = 0
+285: fnmatch ("*", "/.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+286: fnmatch ("/*", "/.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+287: fnmatch ("/?", "/.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+288: fnmatch ("/[!a-z]", "/.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+289: fnmatch ("/*/*", "/a./.b.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+290: fnmatch ("/??/???", "/a./.b.", FNM_PATHNAME|FNM_PERIOD) = FNM_NOMATCH
+291: fnmatch ("foo*[abc]z", "foobar", 0) = FNM_NOMATCH
+292: fnmatch ("foo*[abc][xyz]", "foobaz", 0) = 0
+293: fnmatch ("foo?*[abc][xyz]", "foobaz", 0) = 0
+294: fnmatch ("foo?*[abc][x/yz]", "foobaz", 0) = 0
+295: fnmatch ("foo?*[abc]/[xyz]", "foobaz", FNM_PATHNAME) = FNM_NOMATCH
+296: fnmatch ("a/", "a", FNM_PATHNAME) = FNM_NOMATCH
+297: fnmatch ("a", "a/", FNM_PATHNAME) = FNM_NOMATCH
+298: fnmatch ("/a", "//a", FNM_PATHNAME) = FNM_NOMATCH
+299: fnmatch ("//a", "/a", FNM_PATHNAME) = FNM_NOMATCH
+300: fnmatch ("[a-]z", "az", 0) = 0
+301: fnmatch ("[ab-]z", "bz", 0) = 0
+302: fnmatch ("[ab-]z", "cz", 0) = FNM_NOMATCH
+303: fnmatch ("[ab-]z", "-z", 0) = 0
+304: fnmatch ("[-a]z", "az", 0) = 0
+305: fnmatch ("[-ab]z", "bz", 0) = 0
+306: fnmatch ("[-ab]z", "cz", 0) = FNM_NOMATCH
+307: fnmatch ("[-ab]z", "-z", 0) = 0
+308: fnmatch ("[\\\\-a]", "\\", 0) = 0
+309: fnmatch ("[\\\\-a]", "_", 0) = 0
+310: fnmatch ("[\\\\-a]", "a", 0) = 0
+311: fnmatch ("[\\\\-a]", "-", 0) = FNM_NOMATCH
+312: fnmatch ("[\\]-a]", "\\", 0) = FNM_NOMATCH
+313: fnmatch ("[\\]-a]", "_", 0) = 0
+314: fnmatch ("[\\]-a]", "a", 0) = 0
+315: fnmatch ("[\\]-a]", "]", 0) = 0
+316: fnmatch ("[\\]-a]", "-", 0) = FNM_NOMATCH
+317: fnmatch ("[!\\\\-a]", "\\", 0) = FNM_NOMATCH
+318: fnmatch ("[!\\\\-a]", "_", 0) = FNM_NOMATCH
+319: fnmatch ("[!\\\\-a]", "a", 0) = FNM_NOMATCH
+320: fnmatch ("[!\\\\-a]", "-", 0) = 0
+321: fnmatch ("[\\!-]", "!", 0) = 0
+322: fnmatch ("[\\!-]", "-", 0) = 0
+323: fnmatch ("[\\!-]", "\\", 0) = FNM_NOMATCH
+324: fnmatch ("[Z-\\\\]", "Z", 0) = 0
+325: fnmatch ("[Z-\\\\]", "[", 0) = 0
+326: fnmatch ("[Z-\\\\]", "\\", 0) = 0
+327: fnmatch ("[Z-\\\\]", "-", 0) = FNM_NOMATCH
+328: fnmatch ("[Z-\\]]", "Z", 0) = 0
+329: fnmatch ("[Z-\\]]", "[", 0) = 0
+330: fnmatch ("[Z-\\]]", "\\", 0) = 0
+331: fnmatch ("[Z-\\]]", "]", 0) = 0
+332: fnmatch ("[Z-\\]]", "-", 0) = FNM_NOMATCH
+333: fnmatch ("[a-z]", "a", 0) = 0
+334: fnmatch ("[a-z]", "z", 0) = 0
+335: fnmatch ("[a-z]", "ä", 0) = 0
+336: fnmatch ("[a-z]", "ö", 0) = 0
+337: fnmatch ("[a-z]", "ü", 0) = 0
+338: fnmatch ("[a-z]", "A", 0) = FNM_NOMATCH
+339: fnmatch ("[a-z]", "Z", 0) = FNM_NOMATCH
+340: fnmatch ("[a-z]", "Ä", 0) = FNM_NOMATCH
+341: fnmatch ("[a-z]", "Ö", 0) = FNM_NOMATCH
+342: fnmatch ("[a-z]", "Ü", 0) = FNM_NOMATCH
+343: fnmatch ("[A-Z]", "a", 0) = FNM_NOMATCH
+344: fnmatch ("[A-Z]", "z", 0) = FNM_NOMATCH
+345: fnmatch ("[A-Z]", "ä", 0) = FNM_NOMATCH
+346: fnmatch ("[A-Z]", "ö", 0) = FNM_NOMATCH
+347: fnmatch ("[A-Z]", "ü", 0) = FNM_NOMATCH
+348: fnmatch ("[A-Z]", "A", 0) = 0
+349: fnmatch ("[A-Z]", "Z", 0) = 0
+350: fnmatch ("[A-Z]", "Ä", 0) = 0
+351: fnmatch ("[A-Z]", "Ö", 0) = 0
+352: fnmatch ("[A-Z]", "Ü", 0) = 0
+353: fnmatch ("[[:lower:]]", "a", 0) = 0
+354: fnmatch ("[[:lower:]]", "z", 0) = 0
+355: fnmatch ("[[:lower:]]", "ä", 0) = 0
+356: fnmatch ("[[:lower:]]", "ö", 0) = 0
+357: fnmatch ("[[:lower:]]", "ü", 0) = 0
+358: fnmatch ("[[:lower:]]", "A", 0) = FNM_NOMATCH
+359: fnmatch ("[[:lower:]]", "Z", 0) = FNM_NOMATCH
+360: fnmatch ("[[:lower:]]", "Ä", 0) = FNM_NOMATCH
+361: fnmatch ("[[:lower:]]", "Ö", 0) = FNM_NOMATCH
+362: fnmatch ("[[:lower:]]", "Ü", 0) = FNM_NOMATCH
+363: fnmatch ("[[:upper:]]", "a", 0) = FNM_NOMATCH
+364: fnmatch ("[[:upper:]]", "z", 0) = FNM_NOMATCH
+365: fnmatch ("[[:upper:]]", "ä", 0) = FNM_NOMATCH
+366: fnmatch ("[[:upper:]]", "ö", 0) = FNM_NOMATCH
+367: fnmatch ("[[:upper:]]", "ü", 0) = FNM_NOMATCH
+368: fnmatch ("[[:upper:]]", "A", 0) = 0
+369: fnmatch ("[[:upper:]]", "Z", 0) = 0
+370: fnmatch ("[[:upper:]]", "Ä", 0) = 0
+371: fnmatch ("[[:upper:]]", "Ö", 0) = 0
+372: fnmatch ("[[:upper:]]", "Ü", 0) = 0
+373: fnmatch ("[[:alpha:]]", "a", 0) = 0
+374: fnmatch ("[[:alpha:]]", "z", 0) = 0
+375: fnmatch ("[[:alpha:]]", "ä", 0) = 0
+376: fnmatch ("[[:alpha:]]", "ö", 0) = 0
+377: fnmatch ("[[:alpha:]]", "ü", 0) = 0
+378: fnmatch ("[[:alpha:]]", "A", 0) = 0
+379: fnmatch ("[[:alpha:]]", "Z", 0) = 0
+380: fnmatch ("[[:alpha:]]", "Ä", 0) = 0
+381: fnmatch ("[[:alpha:]]", "Ö", 0) = 0
+382: fnmatch ("[[:alpha:]]", "Ü", 0) = 0
+383: fnmatch ("[[=a=]b]", "a", 0) = 0
+384: fnmatch ("[[=a=]b]", "â", 0) = 0
+385: fnmatch ("[[=a=]b]", "à", 0) = 0
+386: fnmatch ("[[=a=]b]", "á", 0) = 0
+387: fnmatch ("[[=a=]b]", "ä", 0) = 0
+388: fnmatch ("[[=a=]b]", "b", 0) = 0
+389: fnmatch ("[[=a=]b]", "c", 0) = FNM_NOMATCH
+390: fnmatch ("[[=â=]b]", "a", 0) = 0
+391: fnmatch ("[[=â=]b]", "â", 0) = 0
+392: fnmatch ("[[=â=]b]", "à", 0) = 0
+393: fnmatch ("[[=â=]b]", "á", 0) = 0
+394: fnmatch ("[[=â=]b]", "ä", 0) = 0
+395: fnmatch ("[[=â=]b]", "b", 0) = 0
+396: fnmatch ("[[=â=]b]", "c", 0) = FNM_NOMATCH
+397: fnmatch ("[[=à=]b]", "a", 0) = 0
+398: fnmatch ("[[=à=]b]", "â", 0) = 0
+399: fnmatch ("[[=à=]b]", "à", 0) = 0
+400: fnmatch ("[[=à=]b]", "á", 0) = 0
+401: fnmatch ("[[=à=]b]", "ä", 0) = 0
+402: fnmatch ("[[=à=]b]", "b", 0) = 0
+403: fnmatch ("[[=à=]b]", "c", 0) = FNM_NOMATCH
+404: fnmatch ("[[=á=]b]", "a", 0) = 0
+405: fnmatch ("[[=á=]b]", "â", 0) = 0
+406: fnmatch ("[[=á=]b]", "à", 0) = 0
+407: fnmatch ("[[=á=]b]", "á", 0) = 0
+408: fnmatch ("[[=á=]b]", "ä", 0) = 0
+409: fnmatch ("[[=á=]b]", "b", 0) = 0
+410: fnmatch ("[[=á=]b]", "c", 0) = FNM_NOMATCH
+411: fnmatch ("[[=ä=]b]", "a", 0) = 0
+412: fnmatch ("[[=ä=]b]", "â", 0) = 0
+413: fnmatch ("[[=ä=]b]", "à", 0) = 0
+414: fnmatch ("[[=ä=]b]", "á", 0) = 0
+415: fnmatch ("[[=ä=]b]", "ä", 0) = 0
+416: fnmatch ("[[=ä=]b]", "b", 0) = 0
+417: fnmatch ("[[=ä=]b]", "c", 0) = FNM_NOMATCH
+418: fnmatch ("[[.a.]]a", "aa", 0) = 0
+419: fnmatch ("[[.a.]]a", "ba", 0) = FNM_NOMATCH
+420: fnmatch ("[a-z]", "a", 0) = 0
+421: fnmatch ("[a-z]", "z", 0) = 0
+422: fnmatch ("[a-z]", "A", 0) = FNM_NOMATCH
+423: fnmatch ("[a-z]", "Z", 0) = FNM_NOMATCH
+424: fnmatch ("[A-Z]", "a", 0) = FNM_NOMATCH
+425: fnmatch ("[A-Z]", "z", 0) = FNM_NOMATCH
+426: fnmatch ("[A-Z]", "A", 0) = 0
+427: fnmatch ("[A-Z]", "Z", 0) = 0
+428: fnmatch ("[0-9]", "0", 0) = 0
+429: fnmatch ("[0-9]", "9", 0) = 0
+430: fnmatch ("[a-z]", "a", 0) = 0
+431: fnmatch ("[a-z]", "z", 0) = 0
+432: fnmatch ("[a-z]", "Ã¤", 0) = 0
+433: fnmatch ("[a-z]", "Ã¶", 0) = 0
+434: fnmatch ("[a-z]", "Ã¼", 0) = 0
+435: fnmatch ("[a-z]", "A", 0) = FNM_NOMATCH
+436: fnmatch ("[a-z]", "Z", 0) = FNM_NOMATCH
+437: fnmatch ("[a-z]", "Ã„", 0) = FNM_NOMATCH
+438: fnmatch ("[a-z]", "Ã–", 0) = FNM_NOMATCH
+439: fnmatch ("[a-z]", "Ãœ", 0) = FNM_NOMATCH
+440: fnmatch ("[A-Z]", "a", 0) = FNM_NOMATCH
+441: fnmatch ("[A-Z]", "z", 0) = FNM_NOMATCH
+442: fnmatch ("[A-Z]", "Ã¤", 0) = FNM_NOMATCH
+443: fnmatch ("[A-Z]", "Ã¶", 0) = FNM_NOMATCH
+444: fnmatch ("[A-Z]", "Ã¼", 0) = FNM_NOMATCH
+445: fnmatch ("[A-Z]", "A", 0) = 0
+446: fnmatch ("[A-Z]", "Z", 0) = 0
+447: fnmatch ("[A-Z]", "Ã„", 0) = 0
+448: fnmatch ("[A-Z]", "Ã–", 0) = 0
+449: fnmatch ("[A-Z]", "Ãœ", 0) = 0
+450: fnmatch ("[[:lower:]]", "a", 0) = 0
+451: fnmatch ("[[:lower:]]", "z", 0) = 0
+452: fnmatch ("[[:lower:]]", "Ã¤", 0) = 0
+453: fnmatch ("[[:lower:]]", "Ã¶", 0) = 0
+454: fnmatch ("[[:lower:]]", "Ã¼", 0) = 0
+455: fnmatch ("[[:lower:]]", "A", 0) = FNM_NOMATCH
+456: fnmatch ("[[:lower:]]", "Z", 0) = FNM_NOMATCH
+457: fnmatch ("[[:lower:]]", "Ã„", 0) = FNM_NOMATCH
+458: fnmatch ("[[:lower:]]", "Ã–", 0) = FNM_NOMATCH
+459: fnmatch ("[[:lower:]]", "Ãœ", 0) = FNM_NOMATCH
+460: fnmatch ("[[:upper:]]", "a", 0) = FNM_NOMATCH
+461: fnmatch ("[[:upper:]]", "z", 0) = FNM_NOMATCH
+462: fnmatch ("[[:upper:]]", "Ã¤", 0) = FNM_NOMATCH
+463: fnmatch ("[[:upper:]]", "Ã¶", 0) = FNM_NOMATCH
+464: fnmatch ("[[:upper:]]", "Ã¼", 0) = FNM_NOMATCH
+465: fnmatch ("[[:upper:]]", "A", 0) = 0
+466: fnmatch ("[[:upper:]]", "Z", 0) = 0
+467: fnmatch ("[[:upper:]]", "Ã„", 0) = 0
+468: fnmatch ("[[:upper:]]", "Ã–", 0) = 0
+469: fnmatch ("[[:upper:]]", "Ãœ", 0) = 0
+470: fnmatch ("[[:alpha:]]", "a", 0) = 0
+471: fnmatch ("[[:alpha:]]", "z", 0) = 0
+472: fnmatch ("[[:alpha:]]", "Ã¤", 0) = 0
+473: fnmatch ("[[:alpha:]]", "Ã¶", 0) = 0
+474: fnmatch ("[[:alpha:]]", "Ã¼", 0) = 0
+475: fnmatch ("[[:alpha:]]", "A", 0) = 0
+476: fnmatch ("[[:alpha:]]", "Z", 0) = 0
+477: fnmatch ("[[:alpha:]]", "Ã„", 0) = 0
+478: fnmatch ("[[:alpha:]]", "Ã–", 0) = 0
+479: fnmatch ("[[:alpha:]]", "Ãœ", 0) = 0
+480: fnmatch ("[[=a=]b]", "a", 0) = 0
+481: fnmatch ("[[=a=]b]", "Ã¢", 0) = 0
+482: fnmatch ("[[=a=]b]", "Ã ", 0) = 0
+483: fnmatch ("[[=a=]b]", "Ã¡", 0) = 0
+484: fnmatch ("[[=a=]b]", "Ã¤", 0) = 0
+485: fnmatch ("[[=a=]b]", "b", 0) = 0
+486: fnmatch ("[[=a=]b]", "c", 0) = FNM_NOMATCH
+487: fnmatch ("[[=Ã¢=]b]", "a", 0) = 0
+488: fnmatch ("[[=Ã¢=]b]", "Ã¢", 0) = 0
+489: fnmatch ("[[=Ã¢=]b]", "Ã ", 0) = 0
+490: fnmatch ("[[=Ã¢=]b]", "Ã¡", 0) = 0
+491: fnmatch ("[[=Ã¢=]b]", "Ã¤", 0) = 0
+492: fnmatch ("[[=Ã¢=]b]", "b", 0) = 0
+493: fnmatch ("[[=Ã¢=]b]", "c", 0) = FNM_NOMATCH
+494: fnmatch ("[[=Ã =]b]", "a", 0) = 0
+495: fnmatch ("[[=Ã =]b]", "Ã¢", 0) = 0
+496: fnmatch ("[[=Ã =]b]", "Ã ", 0) = 0
+497: fnmatch ("[[=Ã =]b]", "Ã¡", 0) = 0
+498: fnmatch ("[[=Ã =]b]", "Ã¤", 0) = 0
+499: fnmatch ("[[=Ã =]b]", "b", 0) = 0
+500: fnmatch ("[[=Ã =]b]", "c", 0) = FNM_NOMATCH
+501: fnmatch ("[[=Ã¡=]b]", "a", 0) = 0
+502: fnmatch ("[[=Ã¡=]b]", "Ã¢", 0) = 0
+503: fnmatch ("[[=Ã¡=]b]", "Ã ", 0) = 0
+504: fnmatch ("[[=Ã¡=]b]", "Ã¡", 0) = 0
+505: fnmatch ("[[=Ã¡=]b]", "Ã¤", 0) = 0
+506: fnmatch ("[[=Ã¡=]b]", "b", 0) = 0
+507: fnmatch ("[[=Ã¡=]b]", "c", 0) = FNM_NOMATCH
+508: fnmatch ("[[=Ã¤=]b]", "a", 0) = 0
+509: fnmatch ("[[=Ã¤=]b]", "Ã¢", 0) = 0
+510: fnmatch ("[[=Ã¤=]b]", "Ã ", 0) = 0
+511: fnmatch ("[[=Ã¤=]b]", "Ã¡", 0) = 0
+512: fnmatch ("[[=Ã¤=]b]", "Ã¤", 0) = 0
+513: fnmatch ("[[=Ã¤=]b]", "b", 0) = 0
+514: fnmatch ("[[=Ã¤=]b]", "c", 0) = FNM_NOMATCH
+515: fnmatch ("[[.a.]]a", "aa", 0) = 0
+516: fnmatch ("[[.a.]]a", "ba", 0) = FNM_NOMATCH
+517: fnmatch ("x", "x", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+518: fnmatch ("x", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+519: fnmatch ("x", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+520: fnmatch ("*", "x", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+521: fnmatch ("*", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+522: fnmatch ("*", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+523: fnmatch ("*x", "x", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+524: fnmatch ("*.csv", "366.csv", 0) = 0
+525: fnmatch ("*x", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+526: fnmatch ("*x", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+527: fnmatch ("x*", "x", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+528: fnmatch ("x*", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+529: fnmatch ("x*", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+530: fnmatch ("a", "x", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+531: fnmatch ("a", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+532: fnmatch ("a", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+533: fnmatch ("x/y", "x", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+534: fnmatch ("x/y", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+535: fnmatch ("x/y", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = 0
+536: fnmatch ("x?y", "x", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+537: fnmatch ("x?y", "x/y", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+538: fnmatch ("x?y", "x/y/z", FNM_PATHNAME|FNM_LEADING_DIR) = FNM_NOMATCH
+539: fnmatch ("?@(a|b)*@(c)d", "abcd", FNM_EXTMATCH) = 0
+540: fnmatch ("/dev/@(tcp|udp)/*/*", "/dev/udp/129.22.8.102/45", FNM_PATHNAME|FNM_EXTMATCH) = 0
+541: fnmatch ("[1-9]*([0-9])", "12", FNM_EXTMATCH) = 0
+542: fnmatch ("[1-9]*([0-9])", "12abc", FNM_EXTMATCH) = FNM_NOMATCH
+543: fnmatch ("[1-9]*([0-9])", "1", FNM_EXTMATCH) = 0
+544: fnmatch ("+([0-7])", "07", FNM_EXTMATCH) = 0
+545: fnmatch ("+([0-7])", "0377", FNM_EXTMATCH) = 0
+546: fnmatch ("+([0-7])", "09", FNM_EXTMATCH) = FNM_NOMATCH
+547: fnmatch ("para@(chute|graph)", "paragraph", FNM_EXTMATCH) = 0
+548: fnmatch ("para@(chute|graph)", "paramour", FNM_EXTMATCH) = FNM_NOMATCH
+549: fnmatch ("para?([345]|99)1", "para991", FNM_EXTMATCH) = 0
+550: fnmatch ("para?([345]|99)1", "para381", FNM_EXTMATCH) = FNM_NOMATCH
+551: fnmatch ("para*([0-9])", "paragraph", FNM_EXTMATCH) = FNM_NOMATCH
+552: fnmatch ("para*([0-9])", "para", FNM_EXTMATCH) = 0
+553: fnmatch ("para*([0-9])", "para13829383746592", FNM_EXTMATCH) = 0
+554: fnmatch ("para+([0-9])", "paragraph", FNM_EXTMATCH) = FNM_NOMATCH
+555: fnmatch ("para+([0-9])", "para", FNM_EXTMATCH) = FNM_NOMATCH
+556: fnmatch ("para+([0-9])", "para987346523", FNM_EXTMATCH) = 0
+557: fnmatch ("para!(*.[0-9])", "paragraph", FNM_EXTMATCH) = 0
+558: fnmatch ("para!(*.[0-9])", "para.38", FNM_EXTMATCH) = 0
+559: fnmatch ("para!(*.[0-9])", "para.graph", FNM_EXTMATCH) = 0
+560: fnmatch ("para!(*.[0-9])", "para39", FNM_EXTMATCH) = 0
+561: fnmatch ("*(0|1|3|5|7|9)", "", FNM_EXTMATCH) = 0
+562: fnmatch ("*(0|1|3|5|7|9)", "137577991", FNM_EXTMATCH) = 0
+563: fnmatch ("*(0|1|3|5|7|9)", "2468", FNM_EXTMATCH) = FNM_NOMATCH
+564: fnmatch ("*(0|1|3|5|7|9)", "1358", FNM_EXTMATCH) = FNM_NOMATCH
+565: fnmatch ("*.c?(c)", "file.c", FNM_EXTMATCH) = 0
+566: fnmatch ("*.c?(c)", "file.C", FNM_EXTMATCH) = FNM_NOMATCH
+567: fnmatch ("*.c?(c)", "file.cc", FNM_EXTMATCH) = 0
+568: fnmatch ("*.c?(c)", "file.ccc", FNM_EXTMATCH) = FNM_NOMATCH
+569: fnmatch ("!(*.c|*.h|Makefile.in|config*|README)", "parse.y", FNM_EXTMATCH) = 0
+570: fnmatch ("!(*.c|*.h|Makefile.in|config*|README)", "shell.c", FNM_EXTMATCH) = FNM_NOMATCH
+571: fnmatch ("!(*.c|*.h|Makefile.in|config*|README)", "Makefile", FNM_EXTMATCH) = 0
+572: fnmatch ("*;[1-9]*([0-9])", "VMS.FILE;1", FNM_EXTMATCH) = 0
+573: fnmatch ("*;[1-9]*([0-9])", "VMS.FILE;0", FNM_EXTMATCH) = FNM_NOMATCH
+574: fnmatch ("*;[1-9]*([0-9])", "VMS.FILE;", FNM_EXTMATCH) = FNM_NOMATCH
+575: fnmatch ("*;[1-9]*([0-9])", "VMS.FILE;139", FNM_EXTMATCH) = 0
+576: fnmatch ("*;[1-9]*([0-9])", "VMS.FILE;1N", FNM_EXTMATCH) = FNM_NOMATCH
+577: fnmatch ("ab**(e|f)", "abcfefg", FNM_EXTMATCH) = 0
+578: fnmatch ("ab**(e|f)g", "abcfefg", FNM_EXTMATCH) = 0
+579: fnmatch ("ab*+(e|f)", "ab", FNM_EXTMATCH) = FNM_NOMATCH
+580: fnmatch ("ab***ef", "abef", FNM_EXTMATCH) = 0
+581: fnmatch ("ab**", "abef", FNM_EXTMATCH) = 0
+582: fnmatch ("*(f*(o))", "fofo", FNM_EXTMATCH) = 0
+583: fnmatch ("*(f*(o))", "ffo", FNM_EXTMATCH) = 0
+584: fnmatch ("*(f*(o))", "foooofo", FNM_EXTMATCH) = 0
+585: fnmatch ("*(f*(o))", "foooofof", FNM_EXTMATCH) = 0
+586: fnmatch ("*(f*(o))", "fooofoofofooo", FNM_EXTMATCH) = 0
+587: fnmatch ("*(f+(o))", "foooofof", FNM_EXTMATCH) = FNM_NOMATCH
+588: fnmatch ("*(f*(o))", "xfoooofof", FNM_EXTMATCH) = FNM_NOMATCH
+589: fnmatch ("*(f*(o))", "foooofofx", FNM_EXTMATCH) = FNM_NOMATCH
+590: fnmatch ("*(*(of*(o)x)o)", "ofxoofxo", FNM_EXTMATCH) = 0
+591: fnmatch ("*(f*(o))", "ofooofoofofooo", FNM_EXTMATCH) = FNM_NOMATCH
+592: fnmatch ("*(f*(o)x)", "foooxfooxfoxfooox", FNM_EXTMATCH) = 0
+593: fnmatch ("*(f*(o)x)", "foooxfooxofoxfooox", FNM_EXTMATCH) = FNM_NOMATCH
+594: fnmatch ("*(f*(o)x)", "foooxfooxfxfooox", FNM_EXTMATCH) = 0
+595: fnmatch ("*(*(of*(o)x)o)", "ofxoofxo", FNM_EXTMATCH) = 0
+596: fnmatch ("*(*(of*(o)x)o)", "ofoooxoofxo", FNM_EXTMATCH) = 0
+597: fnmatch ("*(*(of*(o)x)o)", "ofoooxoofxoofoooxoofxo", FNM_EXTMATCH) = 0
+598: fnmatch ("*(*(of*(o)x)o)", "ofoooxoofxoofoooxoofxoo", FNM_EXTMATCH) = 0
+599: fnmatch ("*(*(of*(o)x)o)", "ofoooxoofxoofoooxoofxofo", FNM_EXTMATCH) = FNM_NOMATCH
+600: fnmatch ("*(*(of*(o)x)o)", "ofoooxoofxoofoooxoofxooofxofxo", FNM_EXTMATCH) = 0
+601: fnmatch ("*(@(a))a@(c)", "aac", FNM_EXTMATCH) = 0
+602: fnmatch ("*(@(a))a@(c)", "ac", FNM_EXTMATCH) = 0
+603: fnmatch ("*(@(a))a@(c)", "c", FNM_EXTMATCH) = FNM_NOMATCH
+604: fnmatch ("*(@(a))a@(c)", "aaac", FNM_EXTMATCH) = 0
+605: fnmatch ("*(@(a))a@(c)", "baaac", FNM_EXTMATCH) = FNM_NOMATCH
+606: fnmatch ("?@(a|b)*@(c)d", "abcd", FNM_EXTMATCH) = 0
+607: fnmatch ("@(ab|a*@(b))*(c)d", "abcd", FNM_EXTMATCH) = 0
+608: fnmatch ("@(ab|a*(b))*(c)d", "acd", FNM_EXTMATCH) = 0
+609: fnmatch ("@(ab|a*(b))*(c)d", "abbcd", FNM_EXTMATCH) = 0
+610: fnmatch ("@(b+(c)d|e*(f)g?|?(h)i@(j|k))", "effgz", FNM_EXTMATCH) = 0
+611: fnmatch ("@(b+(c)d|e*(f)g?|?(h)i@(j|k))", "efgz", FNM_EXTMATCH) = 0
+612: fnmatch ("@(b+(c)d|e*(f)g?|?(h)i@(j|k))", "egz", FNM_EXTMATCH) = 0
+613: fnmatch ("*(b+(c)d|e*(f)g?|?(h)i@(j|k))", "egzefffgzbcdij", FNM_EXTMATCH) = 0
+614: fnmatch ("@(b+(c)d|e+(f)g?|?(h)i@(j|k))", "egz", FNM_EXTMATCH) = FNM_NOMATCH
+615: fnmatch ("*(of+(o))", "ofoofo", FNM_EXTMATCH) = 0
+616: fnmatch ("*(oxf+(ox))", "oxfoxoxfox", FNM_EXTMATCH) = 0
+617: fnmatch ("*(oxf+(ox))", "oxfoxfox", FNM_EXTMATCH) = FNM_NOMATCH
+618: fnmatch ("*(of+(o)|f)", "ofoofo", FNM_EXTMATCH) = 0
+619: fnmatch ("@(foo|f|fo)*(f|of+(o))", "foofoofo", FNM_EXTMATCH) = 0
+620: fnmatch ("*(of|oof+(o))", "oofooofo", FNM_EXTMATCH) = 0
+621: fnmatch ("*(*(f)*(o))", "fffooofoooooffoofffooofff", FNM_EXTMATCH) = 0
+622: fnmatch ("*(fo|foo)", "fofoofoofofoo", FNM_EXTMATCH) = 0
+623: fnmatch ("!(x)", "foo", FNM_EXTMATCH) = 0
+624: fnmatch ("!(x)*", "foo", FNM_EXTMATCH) = 0
+625: fnmatch ("!(foo)", "foo", FNM_EXTMATCH) = FNM_NOMATCH
+626: fnmatch ("!(foo)*", "foo", FNM_EXTMATCH) = 0
+627: fnmatch ("!(foo)", "foobar", FNM_EXTMATCH) = 0
+628: fnmatch ("!(foo)*", "foobar", FNM_EXTMATCH) = 0
+629: fnmatch ("!(*.*).!(*.*)", "moo.cow", FNM_EXTMATCH) = 0
+630: fnmatch ("!(*.*).!(*.*)", "mad.moo.cow", FNM_EXTMATCH) = FNM_NOMATCH
+631: fnmatch ("mu!(*(c))?.pa!(*(z))?", "mucca.pazza", FNM_EXTMATCH) = FNM_NOMATCH
+632: fnmatch ("!(f)", "fff", FNM_EXTMATCH) = 0
+633: fnmatch ("*(!(f))", "fff", FNM_EXTMATCH) = 0
+634: fnmatch ("+(!(f))", "fff", FNM_EXTMATCH) = 0
+635: fnmatch ("!(f)", "ooo", FNM_EXTMATCH) = 0
+636: fnmatch ("*(!(f))", "ooo", FNM_EXTMATCH) = 0
+637: fnmatch ("+(!(f))", "ooo", FNM_EXTMATCH) = 0
+638: fnmatch ("!(f)", "foo", FNM_EXTMATCH) = 0
+639: fnmatch ("*(!(f))", "foo", FNM_EXTMATCH) = 0
+640: fnmatch ("+(!(f))", "foo", FNM_EXTMATCH) = 0
+641: fnmatch ("!(f)", "f", FNM_EXTMATCH) = FNM_NOMATCH
+642: fnmatch ("*(!(f))", "f", FNM_EXTMATCH) = FNM_NOMATCH
+643: fnmatch ("+(!(f))", "f", FNM_EXTMATCH) = FNM_NOMATCH
+644: fnmatch ("@(!(z*)|*x)", "foot", FNM_EXTMATCH) = 0
+645: fnmatch ("@(!(z*)|*x)", "zoot", FNM_EXTMATCH) = FNM_NOMATCH
+646: fnmatch ("@(!(z*)|*x)", "foox", FNM_EXTMATCH) = 0
+647: fnmatch ("@(!(z*)|*x)", "zoox", FNM_EXTMATCH) = 0
+648: fnmatch ("*(!(foo))", "foo", FNM_EXTMATCH) = 0
+649: fnmatch ("!(foo)b*", "foob", FNM_EXTMATCH) = FNM_NOMATCH
+650: fnmatch ("!(foo)b*", "foobb", FNM_EXTMATCH) = 0
+651: fnmatch ("*([a[])", "[", FNM_EXTMATCH) = 0
+652: fnmatch ("*([]a[])", "]", FNM_EXTMATCH) = 0
+653: fnmatch ("*([]a[])", "a", FNM_EXTMATCH) = 0
+654: fnmatch ("*([!]a[])", "b", FNM_EXTMATCH) = 0
+655: fnmatch ("*([!]a[]|[[])", "[", FNM_EXTMATCH) = 0
+656: fnmatch ("*([!]a[]|[]])", "]", FNM_EXTMATCH) = 0
+657: fnmatch ("!([!]a[])", "[", FNM_EXTMATCH) = 0
+658: fnmatch ("!([!]a[])", "]", FNM_EXTMATCH) = 0
+659: fnmatch ("*([)])", ")", FNM_EXTMATCH) = 0
+660: fnmatch ("*([*(])", "*", FNM_EXTMATCH) = 0
+661: fnmatch ("*!(|a)cd", "abcd", FNM_EXTMATCH) = 0
+662: fnmatch ("+([abc])/*", "ab/.a", FNM_PATHNAME|FNM_PERIOD|FNM_EXTMATCH) = FNM_NOMATCH
+663: fnmatch ("", "", 0) = 0
+664: fnmatch ("", "", FNM_EXTMATCH) = 0
+665: fnmatch ("*([abc])", "", FNM_EXTMATCH) = 0
+666: fnmatch ("?([abc])", "", FNM_EXTMATCH) = 0
+=====================
+666 tests,   0 failed

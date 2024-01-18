@@ -1,0 +1,2 @@
+PASS: malloc/tst-obstack-malloc-check
+original exit status 0

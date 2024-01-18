@@ -1,0 +1,592 @@
+   test data: ISO-8859-1 -> UTF8 OK/OK -> ISO-8859-1 OK/OK
+      suntzu: ISO-8859-1 -> UTF8 -> ISO-8859-1 OK/OK
+test charmap: ISO-8859-1 -> UTF8 OK/OK -> ISO-8859-1 OK/OK
+   test data: ISO-8859-2 -> UCS4 OK/OK -> ISO-8859-2 OK/OK
+      suntzu: ISO-8859-2 -> UCS4 -> ISO-8859-2 OK/OK
+   test data: ISO-8859-2 -> UTF8 OK/OK -> ISO-8859-2 OK/OK
+      suntzu: ISO-8859-2 -> UTF8 -> ISO-8859-2 OK/OK
+test charmap: ISO-8859-2 -> UTF8 OK/OK -> ISO-8859-2 OK/OK
+   test data: ISO-8859-3 -> UTF8 OK -> ISO-8859-3 OK/OK
+      suntzu: ISO-8859-3 -> UTF8 -> ISO-8859-3 OK/OK
+test charmap: ISO-8859-3 -> UTF8 OK -> ISO-8859-3 OK/OK
+   test data: ISO-8859-4 -> UTF8 OK -> ISO-8859-4 OK/OK
+      suntzu: ISO-8859-4 -> UTF8 -> ISO-8859-4 OK/OK
+test charmap: ISO-8859-4 -> UTF8 OK -> ISO-8859-4 OK/OK
+   test data: ISO-8859-5 -> UTF8 OK -> ISO-8859-5 OK/OK
+      suntzu: ISO-8859-5 -> UTF8 -> ISO-8859-5 OK/OK
+test charmap: ISO-8859-5 -> UTF8 OK -> ISO-8859-5 OK/OK
+   test data: ISO-8859-6 -> UTF8 OK -> ISO-8859-6 OK/OK
+      suntzu: ISO-8859-6 -> UTF8 -> ISO-8859-6 OK/OK
+test charmap: ISO-8859-6 -> UTF8 OK -> ISO-8859-6 OK/OK
+   test data: ISO-8859-7 -> UTF8 OK -> ISO-8859-7 OK/OK
+      suntzu: ISO-8859-7 -> UTF8 -> ISO-8859-7 OK/OK
+test charmap: ISO-8859-7 -> UTF8 OK -> ISO-8859-7 OK/OK
+   test data: ISO-8859-8 -> UTF8 OK -> ISO-8859-8 OK/OK
+      suntzu: ISO-8859-8 -> UTF8 -> ISO-8859-8 OK/OK
+test charmap: ISO-8859-8 -> UTF8 OK -> ISO-8859-8 OK/OK
+   test data: ISO-8859-9 -> UTF8 OK -> ISO-8859-9 OK/OK
+      suntzu: ISO-8859-9 -> UTF8 -> ISO-8859-9 OK/OK
+test charmap: ISO-8859-9 -> UTF8 OK -> ISO-8859-9 OK/OK
+      suntzu: ISO-8859-9E -> UTF8 -> ISO-8859-9E OK/OK
+   test data: ISO-8859-10 -> UCS-2BE OK/OK -> ISO-8859-10 OK/OK
+      suntzu: ISO-8859-10 -> UCS-2BE -> ISO-8859-10 OK/OK
+   test data: ISO-8859-10 -> UTF8 OK -> ISO-8859-10 OK/OK
+      suntzu: ISO-8859-10 -> UTF8 -> ISO-8859-10 OK/OK
+test charmap: ISO-8859-10 -> UTF8 OK -> ISO-8859-10 OK/OK
+   test data: ISO-8859-14 -> UTF8 OK/OK -> ISO-8859-14 OK/OK
+      suntzu: ISO-8859-14 -> UTF8 -> ISO-8859-14 OK/OK
+test charmap: ISO-8859-14 -> UTF8 OK/OK -> ISO-8859-14 OK/OK
+   test data: ISO-8859-15 -> UTF8 OK/OK -> ISO-8859-15 OK/OK
+      suntzu: ISO-8859-15 -> UTF8 -> ISO-8859-15 OK/OK
+test charmap: ISO-8859-15 -> UTF8 OK/OK -> ISO-8859-15 OK/OK
+   test data: ANSI_X3.4-1968 -> UTF8 OK -> ANSI_X3.4-1968 OK/OK
+      suntzu: ANSI_X3.4-1968 -> UTF8 -> ANSI_X3.4-1968 OK/OK
+test charmap: ANSI_X3.4-1968 -> UTF8 OK -> ANSI_X3.4-1968 OK/OK
+   test data: BS_4730 -> UTF8 OK/OK -> BS_4730 OK/OK
+      suntzu: BS_4730 -> UTF8 -> BS_4730 OK/OK
+test charmap: BS_4730 -> UTF8 OK/OK -> BS_4730 OK/OK
+   test data: CSA_Z243.4-1985-1 -> UCS-2BE OK/OK -> CSA_Z243.4-1985-1 OK/OK
+      suntzu: CSA_Z243.4-1985-1 -> UCS-2BE -> CSA_Z243.4-1985-1 OK/OK
+   test data: CSA_Z243.4-1985-2 -> UCS4 OK/OK -> CSA_Z243.4-1985-2 OK/OK
+      suntzu: CSA_Z243.4-1985-2 -> UCS4 -> CSA_Z243.4-1985-2 OK/OK
+   test data: DIN_66003 -> UTF8 OK/OK -> DIN_66003 OK/OK
+      suntzu: DIN_66003 -> UTF8 -> DIN_66003 OK/OK
+test charmap: DIN_66003 -> UTF8 OK/OK -> DIN_66003 OK/OK
+   test data: DS_2089 -> UTF8 OK/OK -> DS_2089 OK/OK
+      suntzu: DS_2089 -> UTF8 -> DS_2089 OK/OK
+test charmap: DS_2089 -> UTF8 OK/OK -> DS_2089 OK/OK
+   test data: ES -> UTF8 OK/OK -> ES OK/OK
+      suntzu: ES -> UTF8 -> ES OK/OK
+test charmap: ES -> UTF8 OK/OK -> ES OK/OK
+   test data: ES2 -> UTF8 OK/OK -> ES2 OK/OK
+      suntzu: ES2 -> UTF8 -> ES2 OK/OK
+test charmap: ES2 -> UTF8 OK/OK -> ES2 OK/OK
+   test data: GB_1988-80 -> UTF8 OK/OK -> GB_1988-80 OK/OK
+      suntzu: GB_1988-80 -> UTF8 -> GB_1988-80 OK/OK
+test charmap: GB_1988-80 -> UTF8 OK/OK -> GB_1988-80 OK/OK
+   test data: IT -> UTF8 OK/OK -> IT OK/OK
+      suntzu: IT -> UTF8 -> IT OK/OK
+test charmap: IT -> UTF8 OK/OK -> IT OK/OK
+   test data: JIS_C6220-1969-RO -> UTF8 OK/OK -> JIS_C6220-1969-RO OK/OK
+      suntzu: JIS_C6220-1969-RO -> UTF8 -> JIS_C6220-1969-RO OK/OK
+test charmap: JIS_C6220-1969-RO -> UTF8 OK/OK -> JIS_C6220-1969-RO OK/OK
+   test data: JIS_C6229-1984-B -> UTF8 OK/OK -> JIS_C6229-1984-B OK/OK
+      suntzu: JIS_C6229-1984-B -> UTF8 -> JIS_C6229-1984-B OK/OK
+test charmap: JIS_C6229-1984-B -> UTF8 OK/OK -> JIS_C6229-1984-B OK/OK
+   test data: JUS_I.B1.002 -> UTF8 OK/OK -> JUS_I.B1.002 OK/OK
+      suntzu: JUS_I.B1.002 -> UTF8 -> JUS_I.B1.002 OK/OK
+test charmap: JUS_I.B1.002 -> UTF8 OK/OK -> JUS_I.B1.002 OK/OK
+   test data: KSC5636 -> UTF8 OK/OK -> KSC5636 OK/OK
+      suntzu: KSC5636 -> UTF8 -> KSC5636 OK/OK
+test charmap: KSC5636 -> UTF8 OK/OK -> KSC5636 OK/OK
+   test data: MSZ_7795.3 -> UTF8 OK/OK -> MSZ_7795.3 OK/OK
+      suntzu: MSZ_7795.3 -> UTF8 -> MSZ_7795.3 OK/OK
+test charmap: MSZ_7795.3 -> UTF8 OK/OK -> MSZ_7795.3 OK/OK
+   test data: NC_NC00-10 -> UTF8 OK/OK -> NC_NC00-10 OK/OK
+      suntzu: NC_NC00-10 -> UTF8 -> NC_NC00-10 OK/OK
+test charmap: NC_NC00-10 -> UTF8 OK/OK -> NC_NC00-10 OK/OK
+   test data: NF_Z_62-010 -> UTF8 OK/OK -> NF_Z_62-010 OK/OK
+      suntzu: NF_Z_62-010 -> UTF8 -> NF_Z_62-010 OK/OK
+test charmap: NF_Z_62-010 -> UTF8 OK/OK -> NF_Z_62-010 OK/OK
+   test data: NF_Z_62-010_1973 -> UTF8 OK/OK -> NF_Z_62-010_1973 OK/OK
+      suntzu: NF_Z_62-010_1973 -> UTF8 -> NF_Z_62-010_1973 OK/OK
+test charmap: NF_Z_62-010_1973 -> UTF8 OK/OK -> NF_Z_62-010_1973 OK/OK
+   test data: NS_4551-1 -> UTF8 OK/OK -> NS_4551-1 OK/OK
+      suntzu: NS_4551-1 -> UTF8 -> NS_4551-1 OK/OK
+test charmap: NS_4551-1 -> UTF8 OK/OK -> NS_4551-1 OK/OK
+   test data: NS_4551-2 -> UTF8 OK/OK -> NS_4551-2 OK/OK
+      suntzu: NS_4551-2 -> UTF8 -> NS_4551-2 OK/OK
+test charmap: NS_4551-2 -> UTF8 OK/OK -> NS_4551-2 OK/OK
+   test data: PT -> UTF8 OK/OK -> PT OK/OK
+      suntzu: PT -> UTF8 -> PT OK/OK
+test charmap: PT -> UTF8 OK/OK -> PT OK/OK
+   test data: PT2 -> UTF8 OK/OK -> PT2 OK/OK
+      suntzu: PT2 -> UTF8 -> PT2 OK/OK
+test charmap: PT2 -> UTF8 OK/OK -> PT2 OK/OK
+   test data: SEN_850200_B -> UTF8 OK/OK -> SEN_850200_B OK/OK
+      suntzu: SEN_850200_B -> UTF8 -> SEN_850200_B OK/OK
+test charmap: SEN_850200_B -> UTF8 OK/OK -> SEN_850200_B OK/OK
+   test data: SEN_850200_C -> UTF8 OK/OK -> SEN_850200_C OK/OK
+      suntzu: SEN_850200_C -> UTF8 -> SEN_850200_C OK/OK
+test charmap: SEN_850200_C -> UTF8 OK/OK -> SEN_850200_C OK/OK
+   test data: KOI-8 -> UTF8 OK/OK -> KOI-8 OK/OK
+      suntzu: KOI-8 -> UTF8 -> KOI-8 OK/OK
+test charmap: KOI-8 -> UTF8 OK/OK -> KOI-8 OK/OK
+   test data: KOI8-R -> UTF8 OK/OK -> KOI8-R OK/OK
+      suntzu: KOI8-R -> UTF8 -> KOI8-R OK/OK
+test charmap: KOI8-R -> UTF8 OK/OK -> KOI8-R OK/OK
+   test data: CP1250 -> UTF8 OK/OK -> CP1250 OK/OK
+      suntzu: CP1250 -> UTF8 -> CP1250 OK/OK
+test charmap: CP1250 -> UTF8 OK/OK -> CP1250 OK/OK
+   test data: CP1251 -> UTF8 OK/OK -> CP1251 OK/OK
+      suntzu: CP1251 -> UTF8 -> CP1251 OK/OK
+test charmap: CP1251 -> UTF8 OK/OK -> CP1251 OK/OK
+   test data: CP1252 -> UTF8 OK/OK -> CP1252 OK/OK
+      suntzu: CP1252 -> UTF8 -> CP1252 OK/OK
+test charmap: CP1252 -> UTF8 OK/OK -> CP1252 OK/OK
+   test data: CP1253 -> UTF8 OK/OK -> CP1253 OK/OK
+      suntzu: CP1253 -> UTF8 -> CP1253 OK/OK
+test charmap: CP1253 -> UTF8 OK/OK -> CP1253 OK/OK
+   test data: CP1254 -> UTF8 OK/OK -> CP1254 OK/OK
+      suntzu: CP1254 -> UTF8 -> CP1254 OK/OK
+test charmap: CP1254 -> UTF8 OK/OK -> CP1254 OK/OK
+   test data: CP1255 -> UTF8 OK/OK -> CP1255 OK/OK
+      suntzu: CP1255 -> UTF8 -> CP1255 OK/OK
+test charmap: CP1255 -> UTF8 OK/OK -> CP1255 OK/OK
+   test data: WINDOWS-1255 -> UTF8 OK/OK -> WINDOWS-1255 OK/OK
+      suntzu: ASCII -> WINDOWS-1255 -> ASCII OK/OK
+   test data: CP1256 -> UTF8 OK/OK -> CP1256 OK/OK
+      suntzu: CP1256 -> UTF8 -> CP1256 OK/OK
+test charmap: CP1256 -> UTF8 OK/OK -> CP1256 OK/OK
+   test data: CP1257 -> UTF8 OK/OK -> CP1257 OK/OK
+      suntzu: CP1257 -> UTF8 -> CP1257 OK/OK
+test charmap: CP1257 -> UTF8 OK/OK -> CP1257 OK/OK
+   test data: CP1258 -> UTF8 OK/OK -> CP1258 OK/OK
+      suntzu: CP1258 -> UTF8 -> CP1258 OK/OK
+test charmap: CP1258 -> UTF8 OK/OK -> CP1258 OK/OK
+   test data: WINDOWS-1258 -> UTF8 OK/OK -> WINDOWS-1258 OK/OK
+      suntzu: ASCII -> WINDOWS-1258 -> ASCII OK/OK
+   test data: ISO-2022-JP -> UTF8 OK/OK -> ISO-2022-JP OK/OK
+      suntzu: ASCII -> ISO-2022-JP -> ASCII OK/OK
+   test data: ISO-2022-JP-2 -> UTF8 OK/OK -> ISO-2022-JP-2 OK/OK
+      suntzu: ASCII -> ISO-2022-JP-2 -> ASCII OK/OK
+   test data: ISO-2022-KR -> UTF8 OK/OK -> ISO-2022-KR OK/OK
+      suntzu: ASCII -> ISO-2022-KR -> ASCII OK/OK
+   test data: ISO-2022-CN -> UTF8 OK/OK -> ISO-2022-CN OK/OK
+      suntzu: ASCII -> ISO-2022-CN -> ASCII OK/OK
+   test data: ISO-2022-CN-EXT -> UTF8 OK/OK -> ISO-2022-CN-EXT OK/OK
+      suntzu: ASCII -> ISO-2022-CN-EXT -> ASCII OK/OK
+   test data: EUC-KR -> UTF8 OK/OK -> EUC-KR OK/OK
+      suntzu: EUC-KR -> UTF8 -> EUC-KR OK/OK
+test charmap: EUC-KR -> UTF8 OK/OK -> EUC-KR OK/OK
+   test data: EUC-JP -> UTF8 OK/OK -> EUC-JP OK/OK
+      suntzu: EUC-JP -> UTF8 -> EUC-JP OK/OK
+test charmap: EUC-JP -> UTF8 OK/OK -> EUC-JP OK/OK
+   test data: EUC-CN -> UTF8 OK/OK -> EUC-CN OK/OK
+      suntzu: EUC-CN -> UTF8 -> EUC-CN OK/OK
+   test data: EUC-TW -> UTF8 OK/OK -> EUC-TW OK/OK
+      suntzu: EUC-TW -> UTF8 -> EUC-TW OK/OK
+test charmap: EUC-TW -> UTF8 OK/OK -> EUC-TW OK/OK
+   test data: GBK -> UTF8 OK/OK -> GBK OK/OK
+      suntzu: GBK -> UTF8 -> GBK OK/OK
+test charmap: GBK -> UTF8 OK/OK -> GBK OK/OK
+   test data: BIG5HKSCS -> UTF8 OK/OK -> BIG5HKSCS OK/OK
+      suntzu: BIG5HKSCS -> UTF8 -> BIG5HKSCS OK/OK
+   test data: UTF-7 -> UTF8 OK/OK -> UTF-7 OK/OK
+      suntzu: ASCII -> UTF-7 -> ASCII OK/OK
+   test data: IBM856 -> UTF8 OK/OK -> IBM856 OK/OK
+test charmap: IBM856 -> UTF8 OK/OK -> IBM856 OK/OK
+      suntzu: ASCII -> IBM856 -> ASCII OK/OK
+   test data: IBM922 -> UTF8 OK/OK -> IBM922 OK/OK
+      suntzu: IBM922 -> UTF8 -> IBM922 OK/OK
+test charmap: IBM922 -> UTF8 OK/OK -> IBM922 OK/OK
+   test data: IBM930 -> UTF8 OK/OK -> IBM930 OK/OK
+      suntzu: ASCII -> IBM930 -> ASCII OK/OK
+   test data: IBM933 -> UTF8 OK/OK -> IBM933 OK/OK
+      suntzu: ASCII -> IBM933 -> ASCII OK/OK
+   test data: IBM935 -> UTF8 OK/OK -> IBM935 OK/OK
+      suntzu: ASCII -> IBM935 -> ASCII OK/OK
+   test data: IBM937 -> UTF8 OK/OK -> IBM937 OK/OK
+      suntzu: ASCII -> IBM937 -> ASCII OK/OK
+   test data: IBM939 -> UTF8 OK/OK -> IBM939 OK/OK
+      suntzu: ASCII -> IBM939 -> ASCII OK/OK
+   test data: IBM932 -> UTF8 OK/OK -> IBM932 OK/OK
+      suntzu: IBM932 -> UTF8 -> IBM932 OK/OK
+   test data: IBM943 -> UTF8 OK/OK -> IBM943 OK/OK
+      suntzu: IBM943 -> UTF8 -> IBM943 OK/OK
+   test data: IBM1046 -> UTF8 OK/OK -> IBM1046 OK/OK
+      suntzu: IBM1046 -> UTF8 -> IBM1046 OK/OK
+   test data: IBM1124 -> UTF8 OK/OK -> IBM1124 OK/OK
+      suntzu: IBM1124 -> UTF8 -> IBM1124 OK/OK
+test charmap: IBM1124 -> UTF8 OK/OK -> IBM1124 OK/OK
+   test data: IBM1129 -> UTF8 OK/OK -> IBM1129 OK/OK
+      suntzu: IBM1129 -> UTF8 -> IBM1129 OK/OK
+test charmap: IBM1129 -> UTF8 OK/OK -> IBM1129 OK/OK
+   test data: IBM1160 -> UTF8 OK/OK -> IBM1160 OK/OK
+test charmap: IBM1160 -> UTF8 OK/OK -> IBM1160 OK/OK
+      suntzu: ASCII -> IBM1160 -> ASCII OK/OK
+   test data: IBM1161 -> UTF8 OK/OK -> IBM1161 OK/OK
+      suntzu: IBM1161 -> UTF8 -> IBM1161 OK/OK
+test charmap: IBM1161 -> UTF8 OK/OK -> IBM1161 OK/OK
+   test data: IBM1132 -> UTF8 OK/OK -> IBM1132 OK/OK
+test charmap: IBM1132 -> UTF8 OK/OK -> IBM1132 OK/OK
+      suntzu: ASCII -> IBM1132 -> ASCII OK/OK
+   test data: IBM1133 -> UTF8 OK/OK -> IBM1133 OK/OK
+      suntzu: IBM1133 -> UTF8 -> IBM1133 OK/OK
+test charmap: IBM1133 -> UTF8 OK/OK -> IBM1133 OK/OK
+   test data: IBM1162 -> UTF8 OK/OK -> IBM1162 OK/OK
+      suntzu: IBM1162 -> UTF8 -> IBM1162 OK/OK
+test charmap: IBM1162 -> UTF8 OK/OK -> IBM1162 OK/OK
+   test data: IBM1163 -> UTF8 OK/OK -> IBM1163 OK/OK
+      suntzu: IBM1163 -> UTF8 -> IBM1163 OK/OK
+test charmap: IBM1163 -> UTF8 OK/OK -> IBM1163 OK/OK
+   test data: IBM1164 -> UTF8 OK/OK -> IBM1164 OK/OK
+test charmap: IBM1164 -> UTF8 OK/OK -> IBM1164 OK/OK
+      suntzu: ASCII -> IBM1164 -> ASCII OK/OK
+   test data: TCVN-5712 -> UTF8 OK/OK -> TCVN-5712 OK/OK
+      suntzu: TCVN-5712 -> UTF8 -> TCVN-5712 OK/OK
+   test data: EUC-JISX0213 -> UTF8 OK/OK -> EUC-JISX0213 OK/OK
+      suntzu: EUC-JISX0213 -> UTF8 -> EUC-JISX0213 OK/OK
+   test data: SHIFT_JISX0213 -> UTF8 OK/OK -> SHIFT_JISX0213 OK/OK
+      suntzu: SHIFT_JISX0213 -> UTF8 -> SHIFT_JISX0213 OK/OK
+   test data: ISO-2022-JP-3 -> UTF8 OK/OK -> ISO-2022-JP-3 OK/OK
+      suntzu: ASCII -> ISO-2022-JP-3 -> ASCII OK/OK
+   test data: TSCII -> UTF8 OK/OK -> TSCII OK/OK
+      suntzu: TSCII -> UTF8 -> TSCII OK/OK
+   test data: IBM1025 -> UTF8 OK/OK -> IBM1025 OK/OK
+      suntzu: ASCII -> IBM1025 -> ASCII OK/OK
+   test data: IBM1122 -> UTF8 OK/OK -> IBM1122 OK/OK
+      suntzu: ASCII -> IBM1122 -> ASCII OK/OK
+   test data: IBM1137 -> UTF8 OK/OK -> IBM1137 OK/OK
+      suntzu: ASCII -> IBM1137 -> ASCII OK/OK
+   test data: IBM1153 -> UTF8 OK/OK -> IBM1153 OK/OK
+      suntzu: ASCII -> IBM1153 -> ASCII OK/OK
+   test data: IBM1154 -> UTF8 OK/OK -> IBM1154 OK/OK
+      suntzu: ASCII -> IBM1154 -> ASCII OK/OK
+   test data: IBM1155 -> UTF8 OK/OK -> IBM1155 OK/OK
+      suntzu: ASCII -> IBM1155 -> ASCII OK/OK
+   test data: IBM1156 -> UTF8 OK/OK -> IBM1156 OK/OK
+      suntzu: ASCII -> IBM1156 -> ASCII OK/OK
+   test data: IBM1157 -> UTF8 OK/OK -> IBM1157 OK/OK
+      suntzu: ASCII -> IBM1157 -> ASCII OK/OK
+   test data: IBM1158 -> UTF8 OK/OK -> IBM1158 OK/OK
+      suntzu: ASCII -> IBM1158 -> ASCII OK/OK
+   test data: IBM803 -> UTF8 OK/OK -> IBM803 OK/OK
+   test data: IBM901 -> UTF8 OK/OK -> IBM901 OK/OK
+      suntzu: ASCII -> IBM901 -> ASCII OK/OK
+   test data: IBM902 -> UTF8 OK/OK -> IBM902 OK/OK
+      suntzu: ASCII -> IBM902 -> ASCII OK/OK
+   test data: IBM921 -> UTF8 OK/OK -> IBM921 OK/OK
+      suntzu: ASCII -> IBM921 -> ASCII OK/OK
+   test data: IBM1008 -> UTF8 OK/OK -> IBM1008 OK/OK
+      suntzu: ASCII -> IBM1008 -> ASCII OK/OK
+   test data: IBM1097 -> UTF8 OK/OK -> IBM1097 OK/OK
+      suntzu: IBM1097 -> UTF8 -> IBM1097 OK/OK
+   test data: IBM1112 -> UTF8 OK/OK -> IBM1112 OK/OK
+      suntzu: ASCII -> IBM1112 -> ASCII OK/OK
+   test data: IBM1123 -> UTF8 OK/OK -> IBM1123 OK/OK
+      suntzu: ASCII -> IBM1123 -> ASCII OK/OK
+   test data: IBM1130 -> UTF8 OK/OK -> IBM1130 OK/OK
+      suntzu: ASCII -> IBM1130 -> ASCII OK/OK
+   test data: IBM1140 -> UTF8 OK/OK -> IBM1140 OK/OK
+      suntzu: ASCII -> IBM1140 -> ASCII OK/OK
+   test data: IBM1141 -> UTF8 OK/OK -> IBM1141 OK/OK
+      suntzu: ASCII -> IBM1141 -> ASCII OK/OK
+   test data: IBM1142 -> UTF8 OK/OK -> IBM1142 OK/OK
+      suntzu: ASCII -> IBM1142 -> ASCII OK/OK
+   test data: IBM1143 -> UTF8 OK/OK -> IBM1143 OK/OK
+      suntzu: ASCII -> IBM1143 -> ASCII OK/OK
+   test data: IBM1144 -> UTF8 OK/OK -> IBM1144 OK/OK
+      suntzu: ASCII -> IBM1144 -> ASCII OK/OK
+   test data: IBM1145 -> UTF8 OK/OK -> IBM1145 OK/OK
+      suntzu: ASCII -> IBM1145 -> ASCII OK/OK
+   test data: IBM1146 -> UTF8 OK/OK -> IBM1146 OK/OK
+      suntzu: ASCII -> IBM1146 -> ASCII OK/OK
+   test data: IBM1147 -> UTF8 OK/OK -> IBM1147 OK/OK
+      suntzu: ASCII -> IBM1147 -> ASCII OK/OK
+   test data: IBM1148 -> UTF8 OK/OK -> IBM1148 OK/OK
+      suntzu: ASCII -> IBM1148 -> ASCII OK/OK
+   test data: IBM1149 -> UTF8 OK/OK -> IBM1149 OK/OK
+      suntzu: ASCII -> IBM1149 -> ASCII OK/OK
+   test data: IBM1166 -> UTF8 OK/OK -> IBM1166 OK/OK
+      suntzu: ASCII -> IBM1166 -> ASCII OK/OK
+   test data: IBM1167 -> UTF8 OK/OK -> IBM1167 OK/OK
+      suntzu: ASCII -> IBM1167 -> ASCII OK/OK
+   test data: IBM4517 -> UTF8 OK/OK -> IBM4517 OK/OK
+   test data: IBM4899 -> UTF8 OK/OK -> IBM4899 OK/OK
+   test data: IBM4909 -> UTF8 OK/OK -> IBM4909 OK/OK
+      suntzu: ASCII -> IBM4909 -> ASCII OK/OK
+   test data: IBM4971 -> UTF8 OK/OK -> IBM4971 OK/OK
+      suntzu: ASCII -> IBM4971 -> ASCII OK/OK
+   test data: IBM5347 -> UTF8 OK/OK -> IBM5347 OK/OK
+      suntzu: ASCII -> IBM5347 -> ASCII OK/OK
+   test data: IBM9030 -> UTF8 OK/OK -> IBM9030 OK/OK
+      suntzu: ASCII -> IBM9030 -> ASCII OK/OK
+   test data: IBM9066 -> UTF8 OK/OK -> IBM9066 OK/OK
+      suntzu: ASCII -> IBM9066 -> ASCII OK/OK
+   test data: IBM9448 -> UTF8 OK/OK -> IBM9448 OK/OK
+      suntzu: ASCII -> IBM9448 -> ASCII OK/OK
+   test data: IBM12712 -> UTF8 OK/OK -> IBM12712 OK/OK
+      suntzu: ASCII -> IBM12712 -> ASCII OK/OK
+   test data: IBM16804 -> UTF8 OK/OK -> IBM16804 OK/OK
+   test data: IBM1364 -> UTF8 OK/OK -> IBM1364 OK/OK
+      suntzu: ASCII -> IBM1364 -> ASCII OK/OK
+   test data: IBM1371 -> UTF8 OK/OK -> IBM1371 OK/OK
+      suntzu: ASCII -> IBM1371 -> ASCII OK/OK
+   test data: IBM1388 -> UTF8 OK/OK -> IBM1388 OK/OK
+      suntzu: ASCII -> IBM1388 -> ASCII OK/OK
+   test data: IBM1390 -> UTF8 OK/OK -> IBM1390 OK/OK
+      suntzu: ASCII -> IBM1390 -> ASCII OK/OK
+   test data: IBM1399 -> UTF8 OK/OK -> IBM1399 OK/OK
+      suntzu: ASCII -> IBM1399 -> ASCII OK/OK
+   test data: ISO_11548-1 -> UTF8 OK/OK -> ISO_11548-1 OK/OK
+test charmap: ISO_11548-1 -> UTF8 OK/OK -> ISO_11548-1 OK/OK
+   test data: MIK -> UTF8 OK/OK -> MIK OK/OK
+      suntzu: MIK -> UTF8 -> MIK OK/OK
+test charmap: MIK -> UTF8 OK/OK -> MIK OK/OK
+   test data: BRF -> UTF8 OK/OK -> BRF OK/OK
+test charmap: BRF -> UTF8 OK/OK -> BRF OK/OK
+      suntzu: MAC-SAMI -> UTF8 -> MAC-SAMI OK/OK
+      suntzu: MAC-CENTRALEUROPE -> UTF8 -> MAC-CENTRALEUROPE OK/OK
+      suntzu: KOI8-RU -> UTF8 -> KOI8-RU OK/OK
+test encoder: UTF-8 -> UTF-16 OK
+test decoder: UTF-16 -> UTF-8 OK
+test non-BOM: UTF-16BE -> UTF-16LE OK
+test non-BOM: UTF-16LE -> UTF-16BE OK
+test encoder: UTF-8 -> UTF-32 OK
+test decoder: UTF-32 -> UTF-8 OK
+test non-BOM: UTF-32BE -> UTF-32LE OK
+test non-BOM: UTF-32LE -> UTF-32BE OK
+test decoder ISO8859-1 OK
+test decoder ISO8859-2 OK
+test decoder ISO8859-3 OK
+test decoder ISO8859-4 OK
+test decoder ISO8859-5 OK
+test decoder ISO8859-6 OK
+test decoder ISO8859-7 OK
+test decoder ISO8859-8 OK
+test decoder ISO8859-9 OK
+test decoder ISO8859-10 OK
+test decoder ISO8859-11 OK
+test decoder ISO8859-13 OK
+test decoder ISO8859-14 OK
+test decoder ISO8859-15 OK
+test decoder ISO8859-16 OK
+test decoder T.61 OK
+test decoder ISO_6937 OK
+test decoder SJIS OK
+test decoder KOI-8 OK
+test decoder HP-ROMAN8 OK
+test decoder HP-ROMAN9 OK
+test decoder EBCDIC-AT-DE OK
+test decoder EBCDIC-AT-DE-A OK
+test decoder EBCDIC-CA-FR OK
+test decoder EUC-KR OK
+test decoder UHC OK
+test decoder JOHAB OK
+test decoder libJIS OK
+test decoder libKSC OK
+test decoder BIG5 OK
+test decoder EUC-JP OK
+test decoder libGB OK
+test decoder EUC-CN OK
+test decoder libCNS OK
+test decoder EUC-TW OK
+test decoder ISO646 OK
+test decoder EBCDIC-DK-NO OK
+test decoder EBCDIC-DK-NO-A OK
+test decoder EBCDIC-ES OK
+test decoder EBCDIC-ES-A OK
+test decoder EBCDIC-ES-S OK
+test decoder EBCDIC-FI-SE OK
+test decoder EBCDIC-FI-SE-A OK
+test decoder EBCDIC-FR OK
+test decoder EBCDIC-IS-FRISS OK
+test decoder EBCDIC-IT OK
+test decoder EBCDIC-PT OK
+test decoder EBCDIC-UK OK
+test decoder EBCDIC-US OK
+test decoder IBM037 OK
+test decoder IBM038 OK
+test decoder IBM274 OK
+test decoder IBM275 OK
+test decoder IBM423 OK
+test decoder IBM500 OK
+test decoder IBM870 OK
+test decoder IBM871 OK
+test decoder IBM891 OK
+test decoder IBM903 OK
+test decoder IBM904 OK
+test decoder IBM905 OK
+test decoder IBM1047 OK
+test decoder IBM874 OK
+test decoder CP737 OK
+test decoder CP775 OK
+test decoder ISO-2022-KR OK
+test decoder HP-TURKISH8 OK
+test decoder HP-THAI8 OK
+test decoder HP-GREEK8 OK
+test decoder KOI8-R OK
+test decoder LATIN-GREEK OK
+test decoder LATIN-GREEK-1 OK
+test decoder IBM256 OK
+test decoder IBM273 OK
+test decoder IBM277 OK
+test decoder IBM278 OK
+test decoder IBM280 OK
+test decoder IBM281 OK
+test decoder IBM284 OK
+test decoder IBM285 OK
+test decoder IBM290 OK
+test decoder IBM297 OK
+test decoder IBM420 OK
+test decoder IBM424 OK
+test decoder IBM437 OK
+test decoder IBM850 OK
+test decoder IBM851 OK
+test decoder IBM852 OK
+test decoder IBM855 OK
+test decoder IBM857 OK
+test decoder IBM858 OK
+test decoder IBM860 OK
+test decoder IBM861 OK
+test decoder IBM862 OK
+test decoder IBM863 OK
+test decoder IBM864 OK
+test decoder IBM865 OK
+test decoder IBM868 OK
+test decoder IBM869 OK
+test decoder IBM875 OK
+test decoder IBM880 OK
+test decoder IBM866 OK
+test decoder CP1258 OK
+test decoder IBM922 OK
+test decoder IBM1124 OK
+test decoder IBM1129 OK
+test decoder IBM932 OK
+test decoder IBM943 OK
+test decoder IBM856 OK
+test decoder IBM930 OK
+test decoder IBM933 OK
+test decoder IBM935 OK
+test decoder IBM937 OK
+test decoder IBM939 OK
+test decoder IBM1046 OK
+test decoder IBM1132 OK
+test decoder IBM1133 OK
+test decoder IBM1160 OK
+test decoder IBM1161 OK
+test decoder IBM1162 OK
+test decoder IBM1163 OK
+test decoder IBM1164 OK
+test decoder IBM918 OK
+test decoder IBM1004 OK
+test decoder IBM1026 OK
+test decoder CP1125 OK
+test decoder CP1250 OK
+test decoder CP1251 OK
+test decoder CP1252 OK
+test decoder CP1253 OK
+test decoder CP1254 OK
+test decoder CP1255 OK
+test decoder CP1256 OK
+test decoder CP1257 OK
+test decoder ISO-2022-JP OK
+test decoder MACINTOSH OK
+test decoder IEC_P27-1 OK
+test decoder ASMO_449 OK
+test decoder ANSI_X3.110 OK
+test decoder CSN_369103 OK
+test decoder CWI OK
+test decoder DEC-MCS OK
+test decoder ECMA-CYRILLIC OK
+test decoder GOST_19768-74 OK
+test decoder GREEK-CCITT OK
+test decoder GREEK7 OK
+test decoder GREEK7-OLD OK
+test decoder INIS OK
+test decoder INIS-8 OK
+test decoder INIS-CYRILLIC OK
+test decoder ISO_6937-2 OK
+test decoder ISO_2033 OK
+test decoder ISO_5427 OK
+test decoder ISO_5427-EXT OK
+test decoder ISO_5428 OK
+test decoder ISO_10367-BOX OK
+test decoder MAC-IS OK
+test decoder MAC-UK OK
+test decoder NATS-DANO OK
+test decoder NATS-SEFI OK
+test decoder SAMI-WS2 OK
+test decoder ISO-IR-197 OK
+test decoder TIS-620 OK
+test decoder KOI8-U OK
+test decoder GBK OK
+test decoder ISIRI-3342 OK
+test decoder GBGBK OK
+test decoder ISO-2022-CN OK
+test decoder libISOIR165 OK
+test decoder UTF-16 OK
+test decoder UNICODE OK
+test decoder UTF-32 OK
+test decoder UTF-7 OK
+test decoder BIG5HKSCS OK
+test decoder GB18030 OK
+test decoder ISO-2022-CN-EXT OK
+test decoder VISCII OK
+test decoder GBBIG5 OK
+test decoder CP10007 OK
+test decoder KOI8-T OK
+test decoder GEORGIAN-PS OK
+test decoder GEORGIAN-ACADEMY OK
+test decoder ISO-IR-209 OK
+test decoder MAC-SAMI OK
+test decoder ARMSCII-8 OK
+test decoder TCVN5712-1 OK
+test decoder libJISX0213 OK
+test decoder EUC-JISX0213 OK
+test decoder SHIFT_JISX0213 OK
+test decoder ISO-2022-JP-3 OK
+test decoder TSCII OK
+test decoder IBM866NAV OK
+test decoder CP932 OK
+test decoder EUC-JP-MS OK
+test decoder PT154 OK
+test decoder RK1048 OK
+test decoder IBM1025 OK
+test decoder IBM1122 OK
+test decoder IBM1137 OK
+test decoder IBM1153 OK
+test decoder IBM1154 OK
+test decoder IBM1155 OK
+test decoder IBM1156 OK
+test decoder IBM1157 OK
+test decoder IBM1158 OK
+test decoder IBM803 OK
+test decoder IBM901 OK
+test decoder IBM902 OK
+test decoder IBM921 OK
+test decoder IBM1008 OK
+test decoder IBM1008_420 OK
+test decoder IBM1097 OK
+test decoder IBM1112 OK
+test decoder IBM1123 OK
+test decoder IBM1130 OK
+test decoder IBM1140 OK
+test decoder IBM1141 OK
+test decoder IBM1142 OK
+test decoder IBM1143 OK
+test decoder IBM1144 OK
+test decoder IBM1145 OK
+test decoder IBM1146 OK
+test decoder IBM1147 OK
+test decoder IBM1148 OK
+test decoder IBM1149 OK
+test decoder IBM1166 OK
+test decoder IBM1167 OK
+test decoder IBM4517 OK
+test decoder IBM4899 OK
+test decoder IBM4909 OK
+test decoder IBM4971 OK
+test decoder IBM5347 OK
+test decoder IBM9030 OK
+test decoder IBM9066 OK
+test decoder IBM9448 OK
+test decoder IBM12712 OK
+test decoder IBM16804 OK
+test decoder IBM1364 OK
+test decoder IBM1371 OK
+test decoder IBM1388 OK
+test decoder IBM1390 OK
+test decoder IBM1399 OK
+test decoder ISO_11548-1 OK
+test decoder MIK OK
+test decoder BRF OK
+test decoder MAC-CENTRALEUROPE OK
+test decoder KOI8-RU OK
+test decoder ISO8859-9E OK
+test decoder CP770 OK
+test decoder CP771 OK
+test decoder CP772 OK
+test decoder CP773 OK
+test decoder CP774 OK

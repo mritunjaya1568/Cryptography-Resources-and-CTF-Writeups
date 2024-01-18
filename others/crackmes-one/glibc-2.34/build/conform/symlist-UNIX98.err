@@ -1,0 +1,11 @@
+/tmp/tmptdqw2gn5/test.c:1:10: fatal error: ndbm.h: No such file or directory
+ #include <ndbm.h>
+          ^~~~~~~~
+compilation terminated.
+In file included from /tmp/tmptc_dt4__/test.c:1:
+/usr/lib/gcc/x86_64-linux-gnu/8/include/varargs.h:4:2: error: #error "GCC no longer implements <varargs.h>."
+ #error "GCC no longer implements <varargs.h>."
+  ^~~~~
+/usr/lib/gcc/x86_64-linux-gnu/8/include/varargs.h:5:2: error: #error "Revise your code to use <stdarg.h>."
+ #error "Revise your code to use <stdarg.h>."
+  ^~~~~

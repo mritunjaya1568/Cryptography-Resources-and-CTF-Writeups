@@ -1,0 +1,2 @@
+FAIL: misc/tst-sigcontext-get_pc
+original exit status 1

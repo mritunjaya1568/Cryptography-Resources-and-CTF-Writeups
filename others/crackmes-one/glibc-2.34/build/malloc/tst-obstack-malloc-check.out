@@ -1,0 +1,154 @@
+
+ Alignment mask: 1
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6020 	
+obstack_alloc (1000) => 0x5555555c6408 	
+obstack_alloc (1000) => 0x5555555c67f0 	
+obstack_alloc (1000) => 0x5555555c6bd8 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7010 	
+obstack_alloc (1000) => 0x5555555c73f8 	
+obstack_alloc (1000) => 0x5555555c77e0 	
+obstack_alloc (1000) => 0x5555555c7bc8 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c83e8 	
+obstack_alloc (1000) => 0x5555555c87d0 	
+obstack_alloc (1000) => 0x5555555c8bb8 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c8ff0 	
+obstack_alloc (1000) => 0x5555555c93d8 	
+obstack_alloc (1000) => 0x5555555c97c0 	
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)
+
+ Alignment mask: 3
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6020 	
+obstack_alloc (1000) => 0x5555555c6408 	
+obstack_alloc (1000) => 0x5555555c67f0 	
+obstack_alloc (1000) => 0x5555555c6bd8 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7010 	
+obstack_alloc (1000) => 0x5555555c73f8 	
+obstack_alloc (1000) => 0x5555555c77e0 	
+obstack_alloc (1000) => 0x5555555c7bc8 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c83e8 	
+obstack_alloc (1000) => 0x5555555c87d0 	
+obstack_alloc (1000) => 0x5555555c8bb8 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c8ff0 	
+obstack_alloc (1000) => 0x5555555c93d8 	
+obstack_alloc (1000) => 0x5555555c97c0 	
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)
+
+ Alignment mask: 7
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6020 	
+obstack_alloc (1000) => 0x5555555c6408 	
+obstack_alloc (1000) => 0x5555555c67f0 	
+obstack_alloc (1000) => 0x5555555c6bd8 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7010 	
+obstack_alloc (1000) => 0x5555555c73f8 	
+obstack_alloc (1000) => 0x5555555c77e0 	
+obstack_alloc (1000) => 0x5555555c7bc8 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c83e8 	
+obstack_alloc (1000) => 0x5555555c87d0 	
+obstack_alloc (1000) => 0x5555555c8bb8 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c8ff0 	
+obstack_alloc (1000) => 0x5555555c93d8 	
+obstack_alloc (1000) => 0x5555555c97c0 	
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)
+
+ Alignment mask: 15
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6020 	
+obstack_alloc (1000) => 0x5555555c6410 	
+obstack_alloc (1000) => 0x5555555c6800 	
+obstack_alloc (1000) => 0x5555555c6bf0 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7010 	
+obstack_alloc (1000) => 0x5555555c7400 	
+obstack_alloc (1000) => 0x5555555c77f0 	
+obstack_alloc (1000) => 0x5555555c7be0 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c83f0 	
+obstack_alloc (1000) => 0x5555555c87e0 	
+obstack_alloc (1000) => 0x5555555c8bd0 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c8ff0 	
+obstack_alloc (1000) => 0x5555555c93e0 	
+obstack_alloc (1000) => 0x5555555c97d0 	
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)
+
+ Alignment mask: 31
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6020 	
+obstack_alloc (1000) => 0x5555555c6420 	
+obstack_alloc (1000) => 0x5555555c6820 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7020 	
+obstack_alloc (1000) => 0x5555555c7420 	
+obstack_alloc (1000) => 0x5555555c7820 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c8400 	
+obstack_alloc (1000) => 0x5555555c8800 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c9000 	
+obstack_alloc (1000) => 0x5555555c9400 	
+obstack_alloc (1000) => 0x5555555c9800 	
+malloc (4064) => 0x5555555c9fd0
+obstack_alloc (1000) => 0x5555555c9fe0 	
+obstack_alloc (1000) => 0x5555555ca3e0 	
+obstack_alloc (1000) => 0x5555555ca7e0 	
+free (0x5555555c9fd0)
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)
+
+ Alignment mask: 63
+malloc (4064) => 0x5555555c6010
+obstack_alloc (1000) => 0x5555555c6040 	
+obstack_alloc (1000) => 0x5555555c6440 	
+obstack_alloc (1000) => 0x5555555c6840 	
+malloc (4064) => 0x5555555c7000
+obstack_alloc (1000) => 0x5555555c7040 	
+obstack_alloc (1000) => 0x5555555c7440 	
+obstack_alloc (1000) => 0x5555555c7840 	
+malloc (4064) => 0x5555555c7ff0
+obstack_alloc (1000) => 0x5555555c8000 	
+obstack_alloc (1000) => 0x5555555c8400 	
+obstack_alloc (1000) => 0x5555555c8800 	
+malloc (4064) => 0x5555555c8fe0
+obstack_alloc (1000) => 0x5555555c9000 	
+obstack_alloc (1000) => 0x5555555c9400 	
+obstack_alloc (1000) => 0x5555555c9800 	
+malloc (4064) => 0x5555555c9fd0
+obstack_alloc (1000) => 0x5555555ca000 	
+obstack_alloc (1000) => 0x5555555ca400 	
+obstack_alloc (1000) => 0x5555555ca800 	
+free (0x5555555c9fd0)
+free (0x5555555c8fe0)
+free (0x5555555c7ff0)
+free (0x5555555c7000)
+free (0x5555555c6010)

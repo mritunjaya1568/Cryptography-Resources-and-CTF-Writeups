@@ -1,0 +1,10 @@
+default.c: dladdr returned correct dli_fname
+default.c: main correctly found
+default.c: found_in_mod1 correctly found
+default.c: found_in_mod2 correctly found
+defaultmod1.c: main correctly found
+defaultmod1.c: found_in_mod1 correctly found
+defaultmod1.c: found_in_mod2 correctly found
+defaultmod2.c: main correctly found
+defaultmod2.c: found_in_mod1 correctly found
+defaultmod2.c: found_in_mod2 correctly found

@@ -1,0 +1,52 @@
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/misc/tst-sysconf-iov_max-uapi.o: \
+ ../sysdeps/unix/sysv/linux/tst-sysconf-iov_max-uapi.c \
+ ../include/stdc-predef.h \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h \
+ ../include/libc-symbols.h \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/config.h \
+ ../sysdeps/generic/libc-symver.h ../sysdeps/generic/symbol-hacks.h \
+ /usr/include/linux/uio.h /usr/include/linux/types.h \
+ /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h
+
+../include/stdc-predef.h:
+
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h:
+
+../include/libc-symbols.h:
+
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/config.h:
+
+../sysdeps/generic/libc-symver.h:
+
+../sysdeps/generic/symbol-hacks.h:
+
+/usr/include/linux/uio.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/asm-generic/posix_types.h:

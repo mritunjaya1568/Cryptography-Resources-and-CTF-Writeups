@@ -1,0 +1,8 @@
+
+Note: This program runs on de_DE.UTF-8 locale.
+
+/tmp/bug-ungetwc2.utSBlG is opened.
+> `A' is gotten.
+> `Ä' is gotten.
+< `C' is ungotten.
+> `C' is regotten.

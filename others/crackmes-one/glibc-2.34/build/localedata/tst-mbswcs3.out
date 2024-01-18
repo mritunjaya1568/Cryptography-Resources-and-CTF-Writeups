@@ -1,0 +1,5 @@
+used locale: "de_DE.UTF-8"
+wcsrtombs (dst, &src, 1, &state) -> 1, src = srcbuf+1, dst = buf+1
+wcsrtombs (dst, &src, 1, &state) -> 0, src = srcbuf+1, dst = buf+1
+wcsrtombs (dst, &src, 4, &state) -> 3, src = srcbuf+2, dst = buf+4
+wcsrtombs (dst, &src, 2, &state) -> 2, src = srcbuf+3, dst = buf+6

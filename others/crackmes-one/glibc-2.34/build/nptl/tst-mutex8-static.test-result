@@ -1,0 +1,2 @@
+PASS: nptl/tst-mutex8-static
+original exit status 0

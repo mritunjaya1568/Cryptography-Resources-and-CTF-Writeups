@@ -1,0 +1,111 @@
+PASS: Availability of <sched.h>
+PASS: Combined <sched.h> test
+PASSCOMBINED: Availability of type struct sched_param
+PASSCOMBINED: Availability of member sched_priority
+PASSCOMBINED: Type of member sched_priority
+/tmp/tmpo19j64oq/test.c:4:41: error: ‘struct sched_param’ has no member named ‘sched_ss_low_priority’; did you mean ‘sched_priority’?
+ extern void xyzzy_60 (__typeof__ (&b_60.sched_ss_low_priority), __typeof__ (&a_60.sched_ss_low_priority), unsigned);
+                                         ^~~~~~~~~~~~~~~~~~~~~
+                                         sched_priority
+/tmp/tmpo19j64oq/test.c:4:83: error: ‘struct sched_param’ has no member named ‘sched_ss_low_priority’; did you mean ‘sched_priority’?
+ extern void xyzzy_60 (__typeof__ (&b_60.sched_ss_low_priority), __typeof__ (&a_60.sched_ss_low_priority), unsigned);
+                                                                                   ^~~~~~~~~~~~~~~~~~~~~
+                                                                                   sched_priority
+/tmp/tmpo19j64oq/test.c: In function ‘foobarbaz_60’:
+/tmp/tmpo19j64oq/test.c:6:17: error: ‘struct sched_param’ has no member named ‘sched_ss_low_priority’; did you mean ‘sched_priority’?
+ xyzzy_60 (&a_60.sched_ss_low_priority, &b_60.sched_ss_low_priority, sizeof (a_60.sched_ss_low_priority));
+                 ^~~~~~~~~~~~~~~~~~~~~
+                 sched_priority
+/tmp/tmpo19j64oq/test.c:6:46: error: ‘struct sched_param’ has no member named ‘sched_ss_low_priority’; did you mean ‘sched_priority’?
+ xyzzy_60 (&a_60.sched_ss_low_priority, &b_60.sched_ss_low_priority, sizeof (a_60.sched_ss_low_priority));
+                                              ^~~~~~~~~~~~~~~~~~~~~
+                                              sched_priority
+/tmp/tmpo19j64oq/test.c:6:82: error: ‘struct sched_param’ has no member named ‘sched_ss_low_priority’; did you mean ‘sched_priority’?
+ xyzzy_60 (&a_60.sched_ss_low_priority, &b_60.sched_ss_low_priority, sizeof (a_60.sched_ss_low_priority));
+                                                                                  ^~~~~~~~~~~~~~~~~~~~~
+                                                                                  sched_priority
+MISSING: Availability of member sched_ss_low_priority
+/tmp/tmpo19j64oq/test.c:4:40: error: ‘struct sched_param’ has no member named ‘sched_ss_repl_period’
+ extern void xyzzy_61 (__typeof__ (&b_61.sched_ss_repl_period), __typeof__ (&a_61.sched_ss_repl_period), unsigned);
+                                        ^
+/tmp/tmpo19j64oq/test.c:4:81: error: ‘struct sched_param’ has no member named ‘sched_ss_repl_period’
+ extern void xyzzy_61 (__typeof__ (&b_61.sched_ss_repl_period), __typeof__ (&a_61.sched_ss_repl_period), unsigned);
+                                                                                 ^
+/tmp/tmpo19j64oq/test.c: In function ‘foobarbaz_61’:
+/tmp/tmpo19j64oq/test.c:6:16: error: ‘struct sched_param’ has no member named ‘sched_ss_repl_period’
+ xyzzy_61 (&a_61.sched_ss_repl_period, &b_61.sched_ss_repl_period, sizeof (a_61.sched_ss_repl_period));
+                ^
+/tmp/tmpo19j64oq/test.c:6:44: error: ‘struct sched_param’ has no member named ‘sched_ss_repl_period’
+ xyzzy_61 (&a_61.sched_ss_repl_period, &b_61.sched_ss_repl_period, sizeof (a_61.sched_ss_repl_period));
+                                            ^
+/tmp/tmpo19j64oq/test.c:6:79: error: ‘struct sched_param’ has no member named ‘sched_ss_repl_period’
+ xyzzy_61 (&a_61.sched_ss_repl_period, &b_61.sched_ss_repl_period, sizeof (a_61.sched_ss_repl_period));
+                                                                               ^
+MISSING: Availability of member sched_ss_repl_period
+/tmp/tmpo19j64oq/test.c:4:40: error: ‘struct sched_param’ has no member named ‘sched_ss_init_budget’
+ extern void xyzzy_62 (__typeof__ (&b_62.sched_ss_init_budget), __typeof__ (&a_62.sched_ss_init_budget), unsigned);
+                                        ^
+/tmp/tmpo19j64oq/test.c:4:81: error: ‘struct sched_param’ has no member named ‘sched_ss_init_budget’
+ extern void xyzzy_62 (__typeof__ (&b_62.sched_ss_init_budget), __typeof__ (&a_62.sched_ss_init_budget), unsigned);
+                                                                                 ^
+/tmp/tmpo19j64oq/test.c: In function ‘foobarbaz_62’:
+/tmp/tmpo19j64oq/test.c:6:16: error: ‘struct sched_param’ has no member named ‘sched_ss_init_budget’
+ xyzzy_62 (&a_62.sched_ss_init_budget, &b_62.sched_ss_init_budget, sizeof (a_62.sched_ss_init_budget));
+                ^
+/tmp/tmpo19j64oq/test.c:6:44: error: ‘struct sched_param’ has no member named ‘sched_ss_init_budget’
+ xyzzy_62 (&a_62.sched_ss_init_budget, &b_62.sched_ss_init_budget, sizeof (a_62.sched_ss_init_budget));
+                                            ^
+/tmp/tmpo19j64oq/test.c:6:79: error: ‘struct sched_param’ has no member named ‘sched_ss_init_budget’
+ xyzzy_62 (&a_62.sched_ss_init_budget, &b_62.sched_ss_init_budget, sizeof (a_62.sched_ss_init_budget));
+                                                                               ^
+MISSING: Availability of member sched_ss_init_budget
+/tmp/tmpo19j64oq/test.c:4:40: error: ‘struct sched_param’ has no member named ‘sched_ss_max_repl’
+ extern void xyzzy_63 (__typeof__ (&b_63.sched_ss_max_repl), __typeof__ (&a_63.sched_ss_max_repl), unsigned);
+                                        ^
+/tmp/tmpo19j64oq/test.c:4:78: error: ‘struct sched_param’ has no member named ‘sched_ss_max_repl’
+ extern void xyzzy_63 (__typeof__ (&b_63.sched_ss_max_repl), __typeof__ (&a_63.sched_ss_max_repl), unsigned);
+                                                                              ^
+/tmp/tmpo19j64oq/test.c: In function ‘foobarbaz_63’:
+/tmp/tmpo19j64oq/test.c:6:16: error: ‘struct sched_param’ has no member named ‘sched_ss_max_repl’
+ xyzzy_63 (&a_63.sched_ss_max_repl, &b_63.sched_ss_max_repl, sizeof (a_63.sched_ss_max_repl));
+                ^
+/tmp/tmpo19j64oq/test.c:6:41: error: ‘struct sched_param’ has no member named ‘sched_ss_max_repl’
+ xyzzy_63 (&a_63.sched_ss_max_repl, &b_63.sched_ss_max_repl, sizeof (a_63.sched_ss_max_repl));
+                                         ^
+/tmp/tmpo19j64oq/test.c:6:73: error: ‘struct sched_param’ has no member named ‘sched_ss_max_repl’
+ xyzzy_63 (&a_63.sched_ss_max_repl, &b_63.sched_ss_max_repl, sizeof (a_63.sched_ss_max_repl));
+                                                                         ^
+MISSING: Availability of member sched_ss_max_repl
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type struct timespec
+PASSCOMBINED: Availability of constant SCHED_FIFO
+PASSCOMBINED: Availability of constant SCHED_RR
+/tmp/tmpo19j64oq/test.c:2:13: error: ‘SCHED_SPORADIC’ undeclared here (not in a function); did you mean ‘SCHED_RR’?
+ __typeof__ (SCHED_SPORADIC) a_69 = SCHED_SPORADIC;
+             ^~~~~~~~~~~~~~
+             SCHED_RR
+MISSING: Availability of constant SCHED_SPORADIC
+PASSCOMBINED: Availability of constant SCHED_OTHER
+PASSCOMBINED: Availability of function sched_get_priority_max
+PASSCOMBINED: Type of function sched_get_priority_max
+PASSCOMBINED: Availability of function sched_get_priority_min
+PASSCOMBINED: Type of function sched_get_priority_min
+PASSCOMBINED: Availability of function sched_getparam
+PASSCOMBINED: Type of function sched_getparam
+PASSCOMBINED: Availability of function sched_getscheduler
+PASSCOMBINED: Type of function sched_getscheduler
+PASSCOMBINED: Availability of function sched_rr_get_interval
+PASSCOMBINED: Type of function sched_rr_get_interval
+PASSCOMBINED: Availability of function sched_setparam
+PASSCOMBINED: Type of function sched_setparam
+PASSCOMBINED: Availability of function sched_setscheduler
+PASSCOMBINED: Type of function sched_setscheduler
+PASSCOMBINED: Availability of function sched_yield
+PASSCOMBINED: Type of function sched_yield
+PASS: Namespace of <sched.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   36
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

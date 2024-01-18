@@ -1,0 +1,2 @@
+clock_gettime returned timespec = { 0, 0 }
+clock_getres returned timespec = { 0, 1 }

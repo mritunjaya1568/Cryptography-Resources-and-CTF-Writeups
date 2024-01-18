@@ -1,0 +1,2 @@
+PASS: stdio-common/tst-bz11319-fortify2
+original exit status 0

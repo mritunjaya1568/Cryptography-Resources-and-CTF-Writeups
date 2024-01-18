@@ -1,0 +1,2 @@
+PASS: nptl/tst-eintr4
+original exit status 0

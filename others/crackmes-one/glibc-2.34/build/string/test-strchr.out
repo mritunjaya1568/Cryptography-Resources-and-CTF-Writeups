@@ -1,0 +1,1 @@
+                    	simple_STRCHR	stupid_STRCHR	__strchr_avx2	__strchr_sse2_no_bsf	__strchr_sse2

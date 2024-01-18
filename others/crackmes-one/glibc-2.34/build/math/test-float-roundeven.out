@@ -1,0 +1,6 @@
+testing float (without inline functions)
+
+Test suite completed:
+  628 test cases plus 624 tests for exception flags and
+    624 tests for errno executed.
+  All tests passed successfully.

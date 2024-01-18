@@ -1,0 +1,28 @@
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --status=0
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --status=1
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --status=2
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --status=77
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --test-verify
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --test-verify --verbose
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --status=0
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --status=1
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --status=2
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --status=77
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --test-verify
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --test-verify --verbose
+  exit status: 2
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --test-verify-exit
+  exit status: 1
+running: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_record_failure --direct --test-verify-exit
+  exit status: 1

@@ -1,0 +1,2 @@
+PASS: stdio-common/tst-printf-bz25691-mem
+original exit status 0

@@ -1,0 +1,13 @@
+PASS: setjmp/bug269-setjmp
+PASS: setjmp/check-installed-headers-c
+PASS: setjmp/check-installed-headers-cxx
+PASS: setjmp/check-obsolete-constructs
+PASS: setjmp/check-wrapper-headers
+PASS: setjmp/jmpbug
+PASS: setjmp/test-as-const-jmp_buf-ssp
+PASS: setjmp/tst-saved_mask-1
+PASS: setjmp/tst-setjmp
+PASS: setjmp/tst-setjmp-cet
+PASS: setjmp/tst-setjmp-fp
+PASS: setjmp/tst-setjmp-static
+PASS: setjmp/tst-sigsetjmp

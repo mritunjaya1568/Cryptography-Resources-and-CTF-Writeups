@@ -1,0 +1,3 @@
+info: signals received during fork: 314
+info: signals received during free: 1036
+info: signals received during malloc: 751

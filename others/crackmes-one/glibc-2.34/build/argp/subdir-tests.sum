@@ -1,0 +1,10 @@
+PASS: argp/argp-test
+PASS: argp/bug-argp1
+PASS: argp/bug-argp2
+PASS: argp/check-installed-headers-c
+PASS: argp/check-installed-headers-cxx
+PASS: argp/check-obsolete-constructs
+PASS: argp/check-wrapper-headers
+PASS: argp/tst-argp1
+PASS: argp/tst-argp2
+PASS: argp/tst-ldbl-argp

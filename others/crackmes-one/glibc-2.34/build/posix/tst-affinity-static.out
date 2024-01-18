@@ -1,0 +1,5 @@
+info: Detected CPU set size (in bits): 64
+info: Maximum test CPU: 7
+info: Test not run for CPU set size 2
+info: Test not run for CPU set size 32
+info: Test not run for CPU set size 40

@@ -1,0 +1,5 @@
+loading "testobj1.so" succeeded, OK
+"testobj5.so" wasn't loaded and RTLD_NOLOAD prevented it, OK
+loading "testobj5.so" succeeded, OK
+loading "testobj5.so" with RTLD_NOLOAD succeeded, OK
+closing "testobj5.so" succeeded, OK

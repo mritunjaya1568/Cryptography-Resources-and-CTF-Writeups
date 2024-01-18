@@ -1,0 +1,11 @@
+Locale: "C" Format: "%g" Value: "1.23" Expect: "1.23"  passed
+Locale: "C" Format: "%g" Value: "-1.23" Expect: "-1.23"  passed
+Locale: "C" Format: "%g" Value: "0" Expect: "0"  passed
+Locale: "C" Format: "%%" Value: "0" Expect: "%"  passed
+Locale: "C" Format: "%'g" Value: "123.45" Expect: "123.45"  passed
+Locale: "C" Format: "%'g" Value: "-123.45" Expect: "-123.45"  passed
+Locale: "C" Format: "*%g*" Value: "1.23" Expect: "*1.23*"  passed
+Locale: "C" Format: "%9g" Value: "1.23" Expect: "     1.23"  passed
+Locale: "C" Format: "%9g" Value: "-1.23" Expect: "    -1.23"  passed
+Locale: "nn_NO.ISO-8859-1" Format: "%'g" Value: "123.45" Expect: "123,45"  passed
+Locale: "nn_NO.ISO-8859-1" Format: "%'g" Value: "-123.45" Expect: "-123,45"  passed

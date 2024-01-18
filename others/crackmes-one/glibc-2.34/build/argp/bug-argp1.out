@@ -1,0 +1,4 @@
+Usage: bug-argp1 [OPTION...]
+
+  -?, --help                 Give this help list
+      --usage                Give a short usage message

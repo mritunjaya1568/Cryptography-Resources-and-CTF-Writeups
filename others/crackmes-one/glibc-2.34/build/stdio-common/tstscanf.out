@@ -1,0 +1,35 @@
+sscanf ("thompson", "%s", name) == 1, name == "thompson"
+Testing scanf (vfscanf)
+Test 1:
+n = 3, i = 25, x = 5.432000, name = "thompson"
+Residual: "
+"
+Test 2:
+i = 56, x = 789.000000, name = "56"
+Residual: "a72
+"
+Test 3:
+count = 3, quant = 2.000000, item = oil, units = quarts
+count = 2, quant = -12.800000, item = , units = degrees
+count = 0, quant = 0.000000, item = , units = 
+count = 3, quant = 10.000000, item = fertilizer, units = LBS
+count = 3, quant = 100.000000, item = energy, units = rgs
+count = -1, quant = 0.000000, item = , units = 
+Residual: "(null)"
+Test 4:
+res = 1, val = -20, n = 3
+Test 5:
+res = 2, a = 123, b = 456, n = 6
+res = 1, a = 0
+res = 1, a = 1000, n = 3
+Test 6:
+sscanf ("(nil)", "%p", &p) = 1, p == (nil)
+Test 7:
+res = 2, a[0] = 32767, a[1] = 1234
+Test 8:
+res = 1, d = 4660.000000
+Test 9:
+Test 10:
+Test 11:
+Test 12:
+Test 13:

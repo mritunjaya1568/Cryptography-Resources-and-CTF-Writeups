@@ -1,0 +1,2 @@
+PASS: stdlib/bug-getcontext
+original exit status 0

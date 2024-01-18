@@ -1,0 +1,10 @@
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-x86_64mod-1.os: \
+ ../sysdeps/x86_64/tst-x86_64mod-1.c ../include/stdc-predef.h \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h \
+ ../include/libc-symbols.h
+
+../include/stdc-predef.h:
+
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h:
+
+../include/libc-symbols.h:

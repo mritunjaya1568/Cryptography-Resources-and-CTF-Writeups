@@ -1,0 +1,6 @@
+PASS: csu/test-as-const-cpu-features-offsets
+PASS: csu/test-as-const-link-defines
+PASS: csu/test-as-const-rtld-offsets
+PASS: csu/test-as-const-tcb-offsets
+PASS: csu/test-as-const-tlsdesc
+PASS: csu/test-as-const-ucontext_i

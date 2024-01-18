@@ -1,0 +1,2 @@
+Result of ulimit (UL_SETFSIZE, 10000): 10000
+Result of ulimit(UL_GETFSIZE): 10000

@@ -1,0 +1,4 @@
+ai_family=2, ai_addrlen=16, ai_socktype=1, port=583
+ai_family=2, ai_addrlen=16, ai_socktype=2, port=583
+ai_family=2, ai_addrlen=16, ai_socktype=3, port=583
+SUCCESS getaddrinfo IPv4 socktype 0,513

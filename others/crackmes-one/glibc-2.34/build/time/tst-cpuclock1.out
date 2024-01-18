@@ -1,0 +1,6 @@
+live PID 975084 clock ffffffffff88f89a resolution 0.000000001
+live PID 975084 before sleep => 0.000000000
+live PID 975084 after sleep => 0.103867872
+dead PID 975084 => 0.103936012
+clock_gettime on reaped PID 975084 clock ffffffffff88f89a => Invalid argument
+clock_getres on reaped PID 975084 clock ffffffffff88f89a => Invalid argument

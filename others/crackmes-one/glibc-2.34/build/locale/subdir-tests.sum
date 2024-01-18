@@ -1,0 +1,10 @@
+PASS: locale/check-abi-libBrokenLocale
+PASS: locale/check-installed-headers-c
+PASS: locale/check-installed-headers-cxx
+PASS: locale/check-obsolete-constructs
+PASS: locale/check-wrapper-headers
+PASS: locale/tst-C-locale
+PASS: locale/tst-duplocale
+PASS: locale/tst-locale-locpath
+PASS: locale/tst-localedef-path-norm
+PASS: locale/tst-locname

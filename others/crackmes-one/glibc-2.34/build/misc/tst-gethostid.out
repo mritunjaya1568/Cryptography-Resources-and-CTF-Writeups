@@ -1,0 +1,4 @@
+info: host ID outside chroot: 0x7c787dcd
+error: xdlfcn.c:29: error: dlopen: libnss_files.so.2: cannot open shared object file: No such file or directory
+
+error: 1 test failures

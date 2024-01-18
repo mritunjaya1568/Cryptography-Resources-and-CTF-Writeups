@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Convert Currency</title>
+        <link rel="stylesheet" href="/static/css/exchange.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    </head>
+    <body>
+        <div class="navbar-top">
+            <div class="title">
+                <h1></h1>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#notification">
+                        <span class="icon-count">1</span>
+                        <i class="fa fa-bell fa-2x" onclick="alert('Your signup bonus $10 has been credited.')"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/logout">
+                        <i class="fa fa-sign-out-alt fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sidenav -->
+        <div class="sidenav">
+            <div class="profile">
+                <img src="/static/img/logo.png" alt="" width="100" height="100" />
+
+                <div class="name"><%= first_name %></div>
+            </div>
+
+            <div class="sidenav-url">
+                <div class="url">
+                    <a href="/profile/">Profile</a>
+                    <hr align="center" />
+                </div>
+                <div class="url">
+                    <a href="/currency-exchange" class="active">Currency Exchange</a>
+                    <hr align="center" />
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-modal">
+                        <div class="form-toggle">
+                            <button id="usd-inr-toggle" onclick="toggleUSD()">USD to INR</button>
+                            <button id="inr-usd-toggle" onclick="toggleINR()">INR to USD</button>
+                        </div>
+
+                        <div id="usd-inr-form">
+                            <form method="post" action="">
+                                <h4>Available Amount: $<%= USD %></h4>
+                                <p>1 USD = INR 80</p>
+                                <input type="text" placeholder="Enter Amount" name="amount" required />
+                                <button type="submit" class="btn usd-inr">Convert</button>
+                                <hr />
+                            </form>
+                        </div>
+
+                        <div id="inr-usd-form">
+                            <form method="post" action="">
+                                <h4>Available Amount: Rs. <%= INR %></h4>
+                                <input type="text" placeholder="Enter Amount" name="amount" required />
+                                <button type="submit" class="btn inr-usd">Convert</button>
+                                <hr />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <center><h2>Buy Flag for Rs. 1,60,000</h2></center>
+            <div class="card">
+                <div class="card-body">
+                    <form method="post" action="/buy-flag">
+                        <center><button class="btn" type="submit">Buy Now</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+    </body>
+    <script src="/static/js/exchange.js"></script>
+</html>

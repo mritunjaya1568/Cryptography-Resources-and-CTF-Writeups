@@ -1,0 +1,4 @@
+set bar to 1 (LE)
+get sum of foo and bar (IE) = 1
+get sum of foo and bar (LD) = 1
+get sum of foo and bar (GD) = 1

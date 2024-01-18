@@ -1,0 +1,1 @@
+                       	simple_memcmp	__memcmp_avx2_movbe	__memcmp_sse4_1	__memcmp_ssse3	__memcmp_sse2

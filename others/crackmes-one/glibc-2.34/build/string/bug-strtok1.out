@@ -1,0 +1,10 @@
+test strtok
+cp = 0x7ffdadf13440, len = 6
+token: x (0)
+token: NULL (0)
+token: NULL (0)
+test strtok_r
+cp = 0x7ffdadf13430, len = 6
+token: x, next = 0x7ffdadf13433 (0)
+token: NULL, next = 0x7ffdadf13436 (0)
+token: NULL,  next = 0x7ffdadf13436 (0)

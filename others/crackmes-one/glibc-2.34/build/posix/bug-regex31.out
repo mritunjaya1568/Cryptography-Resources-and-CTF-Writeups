@@ -1,0 +1,4 @@
+[[][: Error 2 (expected)
+([0]: Error 8 (expected)
+([0]a: Error 8 (expected)
+([0]([0]): Error 8 (expected)

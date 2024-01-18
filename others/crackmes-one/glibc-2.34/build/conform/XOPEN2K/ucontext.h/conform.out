@@ -1,0 +1,28 @@
+PASS: Availability of <ucontext.h>
+PASS: Combined <ucontext.h> test
+PASSCOMBINED: Availability of type mcontext_t
+PASSCOMBINED: Availability of type ucontext_t
+PASSCOMBINED: Availability of member uc_link
+PASSCOMBINED: Type of member uc_link
+PASSCOMBINED: Availability of member uc_sigmask
+PASSCOMBINED: Type of member uc_sigmask
+PASSCOMBINED: Availability of member uc_stack
+PASSCOMBINED: Type of member uc_stack
+PASSCOMBINED: Availability of member uc_mcontext
+PASSCOMBINED: Type of member uc_mcontext
+PASSCOMBINED: Availability of type sigset_t
+PASSCOMBINED: Availability of type stack_t
+PASSCOMBINED: Availability of function getcontext
+PASSCOMBINED: Type of function getcontext
+PASSCOMBINED: Availability of function setcontext
+PASSCOMBINED: Type of function setcontext
+PASSCOMBINED: Availability of function makecontext
+PASSCOMBINED: Type of function makecontext
+PASSCOMBINED: Availability of function swapcontext
+PASSCOMBINED: Type of function swapcontext
+PASS: Namespace of <ucontext.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   22
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

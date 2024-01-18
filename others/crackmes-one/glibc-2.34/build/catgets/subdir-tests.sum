@@ -1,0 +1,11 @@
+PASS: catgets/check-installed-headers-c
+PASS: catgets/check-installed-headers-cxx
+PASS: catgets/check-obsolete-constructs
+PASS: catgets/check-wrapper-headers
+PASS: catgets/de/libc.cat
+PASS: catgets/sample.SJIS.cat
+PASS: catgets/test-gencat
+PASS: catgets/test1.cat
+PASS: catgets/test2.cat
+PASS: catgets/tst-catgets
+PASS: catgets/tst-catgets-mem

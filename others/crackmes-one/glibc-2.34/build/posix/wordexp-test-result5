@@ -1,0 +1,3 @@
+info: wordexp returned 0
+info: we_wordv[0] = ""$@ quoted""
+info: we_wordv[1] = "param quoted"

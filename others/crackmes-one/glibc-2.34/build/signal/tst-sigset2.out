@@ -1,0 +1,15 @@
+===== TEST 1 =====
+Blocking signal with sighold()
+Signal mask after sighold()
+		2 (Interrupt)
+About to use sigset() to establish handler
+Previous disposition: SIG_HOLD (should be SIG_HOLD)
+
+===== TEST 2 =====
+About to use sigset() to set SIG_HOLD
+Previous disposition: SIG_DFL (should be SIG_DFL)
+
+===== TEST 3 =====
+About to use sigset() to set SIG_HOLD
+About to use sigset() to set SIG_HOLD (again)
+Previous disposition: SIG_HOLD (should be SIG_HOLD)

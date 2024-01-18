@@ -1,0 +1,14 @@
+Testing 0
+fesetexcept (0) succeeded
+Testing FE_ALL_EXCEPT
+fesetexcept (FE_ALL_EXCEPT) succeeded
+Testing FE_DIVBYZERO
+fesetexcept (FE_DIVBYZERO) succeeded
+Testing FE_INEXACT
+fesetexcept (FE_INEXACT) succeeded
+Testing FE_INVALID
+fesetexcept (FE_INVALID) succeeded
+Testing FE_OVERFLOW
+fesetexcept (FE_OVERFLOW) succeeded
+Testing FE_UNDERFLOW
+fesetexcept (FE_UNDERFLOW) succeeded

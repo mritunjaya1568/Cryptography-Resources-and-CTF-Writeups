@@ -1,0 +1,4 @@
+`cookieread' called with cookie 0xdeadbeef
+`cookieseek' called with cookie 0xdeadbeef
+`cookiewrite' called with cookie 0xdeadbeef
+`cookieclose' called with cookie 0xdeadbeef

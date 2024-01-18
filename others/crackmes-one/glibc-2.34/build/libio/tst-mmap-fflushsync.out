@@ -1,0 +1,2 @@
+feof = 0, ferror = 0 immediately after fgets
+wrote more to file

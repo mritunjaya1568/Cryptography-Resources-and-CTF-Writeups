@@ -1,0 +1,8 @@
+/tmp/tmpa9j77594/undef.c:46:1: warning: ‘getwd’ is deprecated [-Wdeprecated-declarations]
+ void *__glibc_test_getwd = (void *) &getwd;
+ ^~~~
+In file included from ../include/unistd.h:2,
+                 from /tmp/tmpa9j77594/undef.c:1:
+../posix/unistd.h:546:14: note: declared here
+ extern char *getwd (char *__buf)
+              ^~~~~

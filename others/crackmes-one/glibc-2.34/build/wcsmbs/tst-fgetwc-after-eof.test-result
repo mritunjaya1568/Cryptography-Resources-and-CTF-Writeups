@@ -1,0 +1,2 @@
+PASS: wcsmbs/tst-fgetwc-after-eof
+original exit status 0

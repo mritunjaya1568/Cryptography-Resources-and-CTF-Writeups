@@ -1,0 +1,2 @@
+PASS: posix/tst-posix_spawn-fd
+original exit status 0

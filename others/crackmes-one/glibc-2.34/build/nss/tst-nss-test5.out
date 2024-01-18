@@ -1,0 +1,30 @@
+[1] passwd entry 30.name30 had uid 300
+[1] passwd entry 30.name30 had pw_name "name300" (expected "name30") 
+    passwd 300.name300 (*) : 100, *, *, *
+
+    passwd 30.name30 (*) : 100, *, *, *
+
+[2] passwd pw_name for 200.name200 was (null)
+    passwd 200.(null) (*) : 100, *, *, *
+
+    passwd 200.name200 (*) : 100, *, *, *
+
+[3] passwd pw_name for 60.(null) was name60
+    passwd 60.name60 (*) : 100, *, *, *
+
+    passwd 60.(null) (*) : 100, *, *, *
+
+[4] passwd entry 20000.name20000 had gid 200 (expected 100)
+    passwd 20000.name20000 (*) : 200, *, *, *
+
+    passwd 20000.name20000 (*) : 100, *, *, *
+
+[5] passwd entry 2.name2 had gid 2 (expected 100)
+[5] passwd entry 2.name2 had pw_passwd "x" (expected "*") 
+[5] passwd entry 2.name2 had pw_gecos "y" (expected "*") 
+[5] passwd entry 2.name2 had pw_dir "z" (expected "*") 
+    passwd 2.name2 (x) : 2, y, z, *
+
+    passwd 2.name2 (*) : 100, *, *, *
+
+PASS: Found 9 expected errors

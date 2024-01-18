@@ -1,0 +1,15 @@
+641888 for 7
+641890 for 6
+641891 for 5
+641894 for 3
+641895 for 4
+641894 with 3, expected 3
+641895 with 4, expected 4
+641891 with 5, expected 5
+641890 with 6, expected 6
+641888 with 7, expected 7
+join 0 successful
+join 1 successful
+join 2 successful
+join 3 successful
+join 4 successful

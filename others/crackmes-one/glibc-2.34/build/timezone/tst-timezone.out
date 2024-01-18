@@ -1,0 +1,97 @@
+We use this date: Fri May 15 01:02:16 1998
+
+Checking timezone Europe/Amsterdam
+tzname[0]: CET
+tzname[1]: CEST
+daylight: 1
+timezone: -3600
+tzname[0]: CET
+tzname[1]: CEST
+daylight: 1
+timezone: -3600
+Checking timezone Europe/Berlin
+tzname[0]: CET
+tzname[1]: CEST
+daylight: 1
+timezone: -3600
+tzname[0]: CET
+tzname[1]: CEST
+daylight: 1
+timezone: -3600
+Checking timezone Europe/London
+tzname[0]: GMT
+tzname[1]: BST
+daylight: 1
+timezone: 0
+tzname[0]: GMT
+tzname[1]: BST
+daylight: 1
+timezone: 0
+Checking timezone Universal
+tzname[0]: UTC
+tzname[1]: UTC
+daylight: 0
+timezone: 0
+tzname[0]: UTC
+tzname[1]: UTC
+daylight: 0
+timezone: 0
+Checking timezone Australia/Melbourne
+tzname[0]: EST
+tzname[1]: EST
+daylight: 1
+timezone: -36000
+tzname[0]: EST
+tzname[1]: EST
+daylight: 1
+timezone: -36000
+Checking timezone America/Sao_Paulo
+tzname[0]: BRT
+tzname[1]: BRST
+daylight: 1
+timezone: 10800
+tzname[0]: BRT
+tzname[1]: BRST
+daylight: 1
+timezone: 10800
+Checking timezone America/Chicago
+tzname[0]: CST
+tzname[1]: CDT
+daylight: 1
+timezone: 21600
+tzname[0]: CST
+tzname[1]: CDT
+daylight: 1
+timezone: 21600
+Checking timezone America/Indiana/Indianapolis
+tzname[0]: EST
+tzname[1]: EDT
+daylight: 1
+timezone: 18000
+tzname[0]: EST
+tzname[1]: EDT
+daylight: 1
+timezone: 18000
+Checking timezone America/Los_Angeles
+tzname[0]: PST
+tzname[1]: PDT
+daylight: 1
+timezone: 28800
+tzname[0]: PST
+tzname[1]: PDT
+daylight: 1
+timezone: 28800
+Checking timezone Pacific/Auckland
+tzname[0]: NZST
+tzname[1]: NZDT
+daylight: 1
+timezone: -43200
+tzname[0]: NZST
+tzname[1]: NZDT
+daylight: 1
+timezone: -43200
+TZ=Europe/London 892162800 0 0 0 10 3 98 5 99 1 should be
+TZ=Europe/London 892162800 0 0 0 10 3 98 5 99 1
+
+TZ=GMT 892166400 0 0 0 10 3 98 5 99 0 should be
+TZ=GMT 892166400 0 0 0 10 3 98 5 99 0

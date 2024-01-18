@@ -1,0 +1,49 @@
+[ 0]  *LIB* does not match lib  -> OK
+[ 1]  *LIB* matches lib  -> OK
+[ 2]  a[/]b matches a/b  -> OK
+[ 3]  a[/]b does not match a/b  -> OK
+[ 4]  [a-z]/[a-z] matches a/b  -> OK
+[ 5]  * does not match a/b  -> OK
+[ 6]  *[/]b does not match a/b  -> OK
+[ 7]  *[b] does not match a/b  -> OK
+[ 8]  [*]/b does not match a/b  -> OK
+[ 9]  [*]/b matches */b  -> OK
+[10]  [?]/b does not match a/b  -> OK
+[11]  [?]/b matches ?/b  -> OK
+[12]  [[a]/b matches a/b  -> OK
+[13]  [[a]/b matches [/b  -> OK
+[14]  \*/b does not match a/b  -> OK
+[15]  \*/b matches */b  -> OK
+[16]  \?/b does not match a/b  -> OK
+[17]  \?/b matches ?/b  -> OK
+[18]  [/b matches [/b  -> OK
+[19]  \[/b matches [/b  -> OK
+[20]  ??/b matches aa/b  -> OK
+[21]  ???b matches aa/b  -> OK
+[22]  ???b does not match aa/b  -> OK
+[23]  ?a/b does not match .a/b  -> OK
+[24]  a/?b does not match a/.b  -> OK
+[25]  *a/b does not match .a/b  -> OK
+[26]  a/*b does not match a/.b  -> OK
+[27]  [.]a/b does not match .a/b  -> OK
+[28]  a/[.]b does not match a/.b  -> OK
+[29]  */? matches a/b  -> OK
+[30]  ?/* matches a/b  -> OK
+[31]  .*/? matches .a/b  -> OK
+[32]  */.? matches a/.b  -> OK
+[33]  */* does not match a/.b  -> OK
+[34]  *?*/* matches a/.b  -> OK
+[35]  *[.]/b matches a./b  -> OK
+[36]  *[[:alpha:]]/*[[:alnum:]] matches a/b  -> OK
+[37]  *[![:digit:]]*/[![:d-d] matches a/b  -> OK
+[38]  *[![:digit:]]*/[[:d-d] matches a/[  -> OK
+[39]  *[![:digit:]]*/[![:d-d] does not match a/[  -> OK
+[40]  a?b matches a.b  -> OK
+[41]  a*b matches a.b  -> OK
+[42]  a[.]b matches a.b  -> OK
+[43]  *a* matches a/b  -> OK
+[44]  *a? matches ab/c  -> OK
+[45]  a? matches ab/c  -> OK
+[46]  ?*/? matches a/b  -> OK
+[47]  */? matches /b  -> OK
+[48]  **/? matches /b  -> OK

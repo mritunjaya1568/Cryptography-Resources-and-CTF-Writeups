@@ -1,0 +1,1 @@
+                       	simple_stpcpy	__stpcpy_ssse3	__stpcpy_avx2	__stpcpy_sse2_unaligned	__stpcpy_sse2

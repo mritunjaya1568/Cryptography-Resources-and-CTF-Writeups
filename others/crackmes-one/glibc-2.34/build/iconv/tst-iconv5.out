@@ -1,0 +1,7 @@
+iconv: ASCII <-> ASCII: ok
+iconv: ASCII <-> UTF-8: ok
+iconv: ASCII <-> UCS-2BE: ok
+iconv: ASCII <-> UCS-2LE: ok
+iconv: ASCII <-> UCS-4BE: ok
+iconv: ASCII <-> UCS-4LE: ok
+Succeeded.

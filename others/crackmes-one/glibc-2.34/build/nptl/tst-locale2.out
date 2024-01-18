@@ -1,0 +1,48 @@
+Usage: tst-argp1 [OPTION...]
+
+ This is a test for threads so we allow ther user to selection the number of
+ threads which are used at any one time.  Independently the total number of
+ rounds can be selected.  This is the total number of threads which will have
+ run when the process terminates:
+  -s, --starts=NUMBER        Total number of working threads
+      --toplevel=NUMBER      Number of toplevel threads which start the other
+                             threads; this implies --sync-join
+  -t, --threads=NUMBER       Number of threads used at once
+
+ Each thread can do one of two things: sleep or do work.  The latter is 100%
+ CPU bound.  The work load is the probability a thread does work.  All values
+ from zero to 100 (inclusive) are valid.  How often each thread repeats this
+ can be determined by the number of rounds.  The work cost determines how long
+ each work session (not sleeping) takes.  If it is zero a thread would
+ effectively nothing.  By setting the number of rounds to zero the thread does
+ no work at all and pure thread creation times can be measured.
+  -c, --workcost=NUMBER      Factor in the cost of each round of working
+  -r, --rounds=NUMBER        Number of rounds each thread runs
+  -w, --workload=PERCENT     Percentage of time spent working
+
+ There are a number of different methods how thread creation can be
+ synchronized.  Synchronization is necessary since the number of concurrently
+ running threads is limited.
+      --sync-join            Synchronize using pthread_join
+      --sync-signal          Synchronize using a signal (default)
+
+ One parameter for each threads execution is the size of the stack.  If this
+ parameter is not used the system's default stack size is used.  If many
+ threads are used the stack size should be chosen quite small.
+  -g, --guardsize=BYTES      Size of stack guard area; must fit into the stack
+  -S, --stacksize=BYTES      Size of threads stack
+
+ Signal options:
+      --to-process           Send signal to process (default)
+      --to-thread            Send signal to main thread
+
+ Administrative options:
+  -p, --progress             Show signs of progress
+  -T, --timing               Measure time from startup to the last thread
+                             finishing
+
+  -?, --help                 Give this help list
+      --usage                Give a short usage message
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.

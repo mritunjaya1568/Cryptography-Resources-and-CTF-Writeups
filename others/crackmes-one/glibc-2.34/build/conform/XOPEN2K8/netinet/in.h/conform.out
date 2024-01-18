@@ -1,0 +1,85 @@
+PASS: Availability of <netinet/in.h>
+PASS: Combined <netinet/in.h> test
+PASSCOMBINED: Availability of type in_port_t
+PASSCOMBINED: Availability of type in_addr_t
+PASSCOMBINED: Availability of type sa_family_t
+PASSCOMBINED: Availability of type struct in_addr
+PASSCOMBINED: Availability of member s_addr
+PASSCOMBINED: Type of member s_addr
+PASSCOMBINED: Availability of type struct sockaddr_in
+PASSCOMBINED: Availability of member sin_family
+PASSCOMBINED: Type of member sin_family
+PASSCOMBINED: Availability of member sin_port
+PASSCOMBINED: Type of member sin_port
+PASSCOMBINED: Availability of member sin_addr
+PASSCOMBINED: Type of member sin_addr
+PASSCOMBINED: Availability of member sin_zero
+PASSCOMBINED: Type of member sin_zero
+PASSCOMBINED: Availability of type struct in6_addr
+PASSCOMBINED: Availability of member s6_addr
+PASSCOMBINED: Type of member s6_addr
+PASSCOMBINED: Availability of type struct sockaddr_in6
+PASSCOMBINED: Availability of member sin6_family
+PASSCOMBINED: Type of member sin6_family
+PASSCOMBINED: Availability of member sin6_port
+PASSCOMBINED: Type of member sin6_port
+PASSCOMBINED: Availability of member sin6_flowinfo
+PASSCOMBINED: Type of member sin6_flowinfo
+PASSCOMBINED: Availability of member sin6_addr
+PASSCOMBINED: Type of member sin6_addr
+PASSCOMBINED: Availability of member sin6_scope_id
+PASSCOMBINED: Type of member sin6_scope_id
+PASSCOMBINED: Availability of variable in6addr_any
+PASSCOMBINED: Type of variable in6addr_any
+PASSCOMBINED: Availability of macro IN6ADDR_ANY_INIT
+PASSCOMBINED: Availability of variable in6addr_loopback
+PASSCOMBINED: Type of variable in6addr_loopback
+PASSCOMBINED: Availability of macro IN6ADDR_LOOPBACK_INIT
+PASSCOMBINED: Availability of type struct ipv6_mreq
+PASSCOMBINED: Availability of member ipv6mr_multiaddr
+PASSCOMBINED: Type of member ipv6mr_multiaddr
+PASSCOMBINED: Availability of member ipv6mr_interface
+PASSCOMBINED: Type of member ipv6mr_interface
+PASSCOMBINED: Availability of macro IPPROTO_IP
+PASSCOMBINED: Availability of macro IPPROTO_IPV6
+PASSCOMBINED: Availability of macro IPPROTO_ICMP
+PASSCOMBINED: Availability of macro IPPROTO_TCP
+PASSCOMBINED: Availability of macro IPPROTO_UDP
+PASSCOMBINED: Availability of macro INADDR_ANY
+PASSCOMBINED: Availability of macro INADDR_BROADCAST
+PASSCOMBINED: Availability of constant INET_ADDRSTRLEN
+PASSCOMBINED: Value of symbol INET_ADDRSTRLEN
+PASSCOMBINED: Availability of function htonl
+PASSCOMBINED: Type of function htonl
+PASSCOMBINED: Availability of function htons
+PASSCOMBINED: Type of function htons
+PASSCOMBINED: Availability of function ntohl
+PASSCOMBINED: Type of function ntohl
+PASSCOMBINED: Availability of function ntohs
+PASSCOMBINED: Type of function ntohs
+PASSCOMBINED: Availability of constant INET6_ADDRSTRLEN
+PASSCOMBINED: Value of symbol INET6_ADDRSTRLEN
+PASSCOMBINED: Availability of macro IPV6_JOIN_GROUP
+PASSCOMBINED: Availability of macro IPV6_LEAVE_GROUP
+PASSCOMBINED: Availability of macro IPV6_MULTICAST_HOPS
+PASSCOMBINED: Availability of macro IPV6_MULTICAST_IF
+PASSCOMBINED: Availability of macro IPV6_MULTICAST_LOOP
+PASSCOMBINED: Availability of macro IPV6_UNICAST_HOPS
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_UNSPECIFIED
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_LOOPBACK
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MULTICAST
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_LINKLOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_SITELOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_V4MAPPED
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_V4COMPAT
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MC_NODELOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MC_LINKLOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MC_SITELOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MC_ORGLOCAL
+PASSCOMBINED: Availability of macro IN6_IS_ADDR_MC_GLOBAL
+PASS: Namespace of <netinet/in.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   79
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,4 @@
+int_al16:  0x7ffcb7d093d0 16
+double:  12 0x7ffcb7d093b8 8
+ldouble: 15 0x7ffcb7d093c0 16
+all OK

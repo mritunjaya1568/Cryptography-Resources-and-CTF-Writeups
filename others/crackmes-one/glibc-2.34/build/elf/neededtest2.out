@@ -1,0 +1,63 @@
+
+This is what is in memory now:
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+
+Loading shared object neededobj2.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj2.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj1.so, count = 0
+
+Loading shared object neededobj3.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj2.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj1.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj3.so, count = 1
+
+Now loading shared object neededobj3.so again
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj2.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj1.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj3.so, count = 2
+
+Closing neededobj3.so once
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj2.so, count = 1
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj1.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj3.so, count = 1
+
+Closing neededobj2.so
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj2.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj1.so, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/neededobj3.so, count = 1
+
+Closing neededobj3.so for the second time
+   Name
+ --------------------------------------------------------
+ linux-vdso.so.1, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, count = 0
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, count = 0

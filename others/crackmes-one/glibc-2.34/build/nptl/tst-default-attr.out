@@ -1,0 +1,7 @@
+stacksize test
+guardsize test
+sched test
+tst-default-attr.c:101: pthread_create returned 1 (errno = 0)
+Skipping Scheduler Attributes test: Operation not permitted
+affinity test
+detach test

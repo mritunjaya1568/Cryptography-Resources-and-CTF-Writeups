@@ -1,0 +1,10 @@
+&cond = 0x7f0d6251f080
+&mut = 0x7f0d6251f040
+parent: get mutex
+parent: create child
+parent: wait for condition
+child: got mutex; signalling
+child: unlock
+child: done
+parent: got signal
+done

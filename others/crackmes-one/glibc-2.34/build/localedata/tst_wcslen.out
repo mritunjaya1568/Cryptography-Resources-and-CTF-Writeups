@@ -1,0 +1,6 @@
+wcslen:de_DE.ISO-8859-1:1:1:2:S:PASSED
+wcslen:de_DE.ISO-8859-1:2:1:2:S:PASSED
+wcslen:en_US.ANSI_X3.4-1968:1:1:2:S:PASSED
+wcslen:en_US.ANSI_X3.4-1968:2:1:2:S:PASSED
+wcslen:ja_JP.EUC-JP:1:1:2:S:PASSED
+wcslen:ja_JP.EUC-JP:2:1:2:S:PASSED

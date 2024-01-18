@@ -1,0 +1,2 @@
+PASS: misc/tst-sysconf-iov_max
+original exit status 0

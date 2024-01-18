@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Login</title>
+        <link rel="stylesheet" href="/static/css/login.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div class="form-modal">
+            <div class="form-toggle">
+                <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            </div>
+
+            <div id="login-form">
+                <form method="post" action="signin">
+                    <input type="text" placeholder="Enter username" name="username" required />
+                    <input type="password" placeholder="Enter password" name="password" required />
+                    <button type="submit" class="btn login">login</button>
+                    <hr />
+                </form>
+                <center>
+                    <p>Username is <b>accountant</b> and password is <b>accountant.</b></p>
+                </center>
+            </div>
+        </div>
+        <!-- partial -->
+        <script src="/static/js/login.js"></script>
+    </body>
+</html>

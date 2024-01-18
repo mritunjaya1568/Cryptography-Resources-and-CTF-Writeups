@@ -1,0 +1,458 @@
+Checking HAS_CPU_FEATURE (ACPI):
+  HAS_CPU_FEATURE (ACPI): 1
+  cpuinfo (acpi): 1
+Checking HAS_CPU_FEATURE (ADX):
+  HAS_CPU_FEATURE (ADX): 1
+  cpuinfo (adx): 1
+Checking HAS_CPU_FEATURE (APIC):
+  HAS_CPU_FEATURE (APIC): 1
+  cpuinfo (apic): 1
+Checking HAS_CPU_FEATURE (AES):
+  HAS_CPU_FEATURE (AES): 1
+  cpuinfo (aes): 1
+Checking HAS_CPU_FEATURE (AMX_BF16):
+  HAS_CPU_FEATURE (AMX_BF16): 0
+  cpuinfo (amx_bf16): 0
+Checking HAS_CPU_FEATURE (AMX_INT8):
+  HAS_CPU_FEATURE (AMX_INT8): 0
+  cpuinfo (amx_int8): 0
+Checking HAS_CPU_FEATURE (AMX_TILE):
+  HAS_CPU_FEATURE (AMX_TILE): 0
+  cpuinfo (amx_tile): 0
+Checking HAS_CPU_FEATURE (ARCH_CAPABILITIES):
+  HAS_CPU_FEATURE (ARCH_CAPABILITIES): 1
+  cpuinfo (arch_capabilities): 1
+Checking HAS_CPU_FEATURE (AVX):
+  HAS_CPU_FEATURE (AVX): 1
+  cpuinfo (avx): 1
+Checking HAS_CPU_FEATURE (AVX2):
+  HAS_CPU_FEATURE (AVX2): 1
+  cpuinfo (avx2): 1
+Checking HAS_CPU_FEATURE (AVX512_4FMAPS):
+  HAS_CPU_FEATURE (AVX512_4FMAPS): 0
+  cpuinfo (avx512_4fmaps): 0
+Checking HAS_CPU_FEATURE (AVX512_4VNNIW):
+  HAS_CPU_FEATURE (AVX512_4VNNIW): 0
+  cpuinfo (avx512_4vnniw): 0
+Checking HAS_CPU_FEATURE (AVX512_BF16):
+  HAS_CPU_FEATURE (AVX512_BF16): 0
+  cpuinfo (avx512_bf16): 0
+Checking HAS_CPU_FEATURE (AVX512_BITALG):
+  HAS_CPU_FEATURE (AVX512_BITALG): 0
+  cpuinfo (avx512_bitalg): 0
+Checking HAS_CPU_FEATURE (AVX512_IFMA):
+  HAS_CPU_FEATURE (AVX512_IFMA): 0
+  cpuinfo (avx512ifma): 0
+Checking HAS_CPU_FEATURE (AVX512_VBMI):
+  HAS_CPU_FEATURE (AVX512_VBMI): 0
+  cpuinfo (avx512vbmi): 0
+Checking HAS_CPU_FEATURE (AVX512_VBMI2):
+  HAS_CPU_FEATURE (AVX512_VBMI2): 0
+  cpuinfo (avx512_vbmi2): 0
+Checking HAS_CPU_FEATURE (AVX512_VNNI):
+  HAS_CPU_FEATURE (AVX512_VNNI): 0
+  cpuinfo (avx512_vnni): 0
+Checking HAS_CPU_FEATURE (AVX512_VP2INTERSECT):
+  HAS_CPU_FEATURE (AVX512_VP2INTERSECT): 0
+  cpuinfo (avx512_vp2intersect): 0
+Checking HAS_CPU_FEATURE (AVX512_VPOPCNTDQ):
+  HAS_CPU_FEATURE (AVX512_VPOPCNTDQ): 0
+  cpuinfo (avx512_vpopcntdq): 0
+Checking HAS_CPU_FEATURE (AVX512BW):
+  HAS_CPU_FEATURE (AVX512BW): 0
+  cpuinfo (avx512bw): 0
+Checking HAS_CPU_FEATURE (AVX512CD):
+  HAS_CPU_FEATURE (AVX512CD): 0
+  cpuinfo (avx512cd): 0
+Checking HAS_CPU_FEATURE (AVX512ER):
+  HAS_CPU_FEATURE (AVX512ER): 0
+  cpuinfo (avx512er): 0
+Checking HAS_CPU_FEATURE (AVX512DQ):
+  HAS_CPU_FEATURE (AVX512DQ): 0
+  cpuinfo (avx512dq): 0
+Checking HAS_CPU_FEATURE (AVX512F):
+  HAS_CPU_FEATURE (AVX512F): 0
+  cpuinfo (avx512f): 0
+Checking HAS_CPU_FEATURE (AVX512PF):
+  HAS_CPU_FEATURE (AVX512PF): 0
+  cpuinfo (avx512pf): 0
+Checking HAS_CPU_FEATURE (AVX512VL):
+  HAS_CPU_FEATURE (AVX512VL): 0
+  cpuinfo (avx512vl): 0
+Checking HAS_CPU_FEATURE (BMI1):
+  HAS_CPU_FEATURE (BMI1): 1
+  cpuinfo (bmi1): 1
+Checking HAS_CPU_FEATURE (BMI2):
+  HAS_CPU_FEATURE (BMI2): 1
+  cpuinfo (bmi2): 1
+Checking HAS_CPU_FEATURE (CLDEMOTE):
+  HAS_CPU_FEATURE (CLDEMOTE): 0
+  cpuinfo (cldemote): 0
+Checking HAS_CPU_FEATURE (CLFLUSHOPT):
+  HAS_CPU_FEATURE (CLFLUSHOPT): 1
+  cpuinfo (clflushopt): 1
+Checking HAS_CPU_FEATURE (CLFSH):
+  HAS_CPU_FEATURE (CLFSH): 1
+  cpuinfo (clflush): 1
+Checking HAS_CPU_FEATURE (CLWB):
+  HAS_CPU_FEATURE (CLWB): 0
+  cpuinfo (clwb): 0
+Checking HAS_CPU_FEATURE (CMOV):
+  HAS_CPU_FEATURE (CMOV): 1
+  cpuinfo (cmov): 1
+Checking HAS_CPU_FEATURE (CMPXCHG16B):
+  HAS_CPU_FEATURE (CMPXCHG16B): 1
+  cpuinfo (cx16): 1
+Checking HAS_CPU_FEATURE (CNXT_ID):
+  HAS_CPU_FEATURE (CNXT_ID): 0
+  cpuinfo (cnxt_id): 0
+Checking HAS_CPU_FEATURE (CORE_CAPABILITIES):
+  HAS_CPU_FEATURE (CORE_CAPABILITIES): 0
+  cpuinfo (core_capabilities): 0
+Checking HAS_CPU_FEATURE (CX8):
+  HAS_CPU_FEATURE (CX8): 1
+  cpuinfo (cx8): 1
+Checking HAS_CPU_FEATURE (DCA):
+  HAS_CPU_FEATURE (DCA): 0
+  cpuinfo (dca): 0
+Checking HAS_CPU_FEATURE (DE):
+  HAS_CPU_FEATURE (DE): 1
+  cpuinfo (de): 1
+Checking HAS_CPU_FEATURE (DEPR_FPU_CS_DS):
+  HAS_CPU_FEATURE (DEPR_FPU_CS_DS): 1
+  cpuinfo (zero_fcs_fds): 0
+ *** missing in /proc/cpuinfo ***
+Checking HAS_CPU_FEATURE (DS):
+  HAS_CPU_FEATURE (DS): 1
+  cpuinfo (dts): 1
+Checking HAS_CPU_FEATURE (DS_CPL):
+  HAS_CPU_FEATURE (DS_CPL): 1
+  cpuinfo (ds_cpl): 1
+Checking HAS_CPU_FEATURE (DTES64):
+  HAS_CPU_FEATURE (DTES64): 1
+  cpuinfo (dtes64): 1
+Checking HAS_CPU_FEATURE (EIST):
+  HAS_CPU_FEATURE (EIST): 1
+  cpuinfo (est): 1
+Checking HAS_CPU_FEATURE (ENQCMD):
+  HAS_CPU_FEATURE (ENQCMD): 0
+  cpuinfo (enqcmd): 0
+Checking HAS_CPU_FEATURE (ERMS):
+  HAS_CPU_FEATURE (ERMS): 1
+  cpuinfo (erms): 1
+Checking HAS_CPU_FEATURE (F16C):
+  HAS_CPU_FEATURE (F16C): 1
+  cpuinfo (f16c): 1
+Checking HAS_CPU_FEATURE (FMA):
+  HAS_CPU_FEATURE (FMA): 1
+  cpuinfo (fma): 1
+Checking HAS_CPU_FEATURE (FMA4):
+  HAS_CPU_FEATURE (FMA4): 0
+  cpuinfo (fma4): 0
+Checking HAS_CPU_FEATURE (FPU):
+  HAS_CPU_FEATURE (FPU): 1
+  cpuinfo (fpu): 1
+Checking HAS_CPU_FEATURE (FSGSBASE):
+  HAS_CPU_FEATURE (FSGSBASE): 1
+  cpuinfo (fsgsbase): 1
+Checking HAS_CPU_FEATURE (FSRM):
+  HAS_CPU_FEATURE (FSRM): 0
+  cpuinfo (fsrm): 0
+Checking HAS_CPU_FEATURE (FXSR):
+  HAS_CPU_FEATURE (FXSR): 1
+  cpuinfo (fxsr): 1
+Checking HAS_CPU_FEATURE (GFNI):
+  HAS_CPU_FEATURE (GFNI): 0
+  cpuinfo (gfni): 0
+Checking HAS_CPU_FEATURE (HLE):
+  HAS_CPU_FEATURE (HLE): 0
+  cpuinfo (hle): 0
+Checking HAS_CPU_FEATURE (HTT):
+  HAS_CPU_FEATURE (HTT): 1
+  cpuinfo (ht): 1
+Checking HAS_CPU_FEATURE (HYBRID):
+  HAS_CPU_FEATURE (HYBRID): 0
+  cpuinfo (hybrid): 0
+Checking HAS_CPU_FEATURE (IBRS_IBPB):
+  HAS_CPU_FEATURE (IBRS_IBPB): 1
+  cpuinfo (ibrs): 1
+Checking HAS_CPU_FEATURE (STIBP):
+  HAS_CPU_FEATURE (STIBP): 1
+  cpuinfo (stibp): 1
+Checking HAS_CPU_FEATURE (IBT):
+  HAS_CPU_FEATURE (IBT): 0
+  cpuinfo (ibt): 0
+Checking HAS_CPU_FEATURE (INVARIANT_TSC):
+  HAS_CPU_FEATURE (INVARIANT_TSC): 1
+  cpuinfo (invariant_tsc): 0
+ *** missing in /proc/cpuinfo ***
+Checking HAS_CPU_FEATURE (INVPCID):
+  HAS_CPU_FEATURE (INVPCID): 1
+  cpuinfo (invpcid): 1
+Checking HAS_CPU_FEATURE (L1D_FLUSH):
+  HAS_CPU_FEATURE (L1D_FLUSH): 1
+  cpuinfo (flush_l1d): 1
+Checking HAS_CPU_FEATURE (LAHF64_SAHF64):
+  HAS_CPU_FEATURE (LAHF64_SAHF64): 1
+  cpuinfo (lahf_lm): 1
+Checking HAS_CPU_FEATURE (LM):
+  HAS_CPU_FEATURE (LM): 1
+  cpuinfo (lm): 1
+Checking HAS_CPU_FEATURE (LWP):
+  HAS_CPU_FEATURE (LWP): 0
+  cpuinfo (lwp): 0
+Checking HAS_CPU_FEATURE (LZCNT):
+  HAS_CPU_FEATURE (LZCNT): 1
+  cpuinfo (abm): 1
+Checking HAS_CPU_FEATURE (MCA):
+  HAS_CPU_FEATURE (MCA): 1
+  cpuinfo (mca): 1
+Checking HAS_CPU_FEATURE (MCE):
+  HAS_CPU_FEATURE (MCE): 1
+  cpuinfo (mce): 1
+Checking HAS_CPU_FEATURE (MD_CLEAR):
+  HAS_CPU_FEATURE (MD_CLEAR): 1
+  cpuinfo (md_clear): 1
+Checking HAS_CPU_FEATURE (MMX):
+  HAS_CPU_FEATURE (MMX): 1
+  cpuinfo (mmx): 1
+Checking HAS_CPU_FEATURE (MONITOR):
+  HAS_CPU_FEATURE (MONITOR): 1
+  cpuinfo (monitor): 1
+Checking HAS_CPU_FEATURE (MOVBE):
+  HAS_CPU_FEATURE (MOVBE): 1
+  cpuinfo (movbe): 1
+Checking HAS_CPU_FEATURE (MOVDIRI):
+  HAS_CPU_FEATURE (MOVDIRI): 0
+  cpuinfo (movdiri): 0
+Checking HAS_CPU_FEATURE (MOVDIR64B):
+  HAS_CPU_FEATURE (MOVDIR64B): 0
+  cpuinfo (movdir64b): 0
+Checking HAS_CPU_FEATURE (MPX):
+  HAS_CPU_FEATURE (MPX): 1
+  cpuinfo (mpx): 1
+Checking HAS_CPU_FEATURE (MSR):
+  HAS_CPU_FEATURE (MSR): 1
+  cpuinfo (msr): 1
+Checking HAS_CPU_FEATURE (MTRR):
+  HAS_CPU_FEATURE (MTRR): 1
+  cpuinfo (mtrr): 1
+Checking HAS_CPU_FEATURE (NX):
+  HAS_CPU_FEATURE (NX): 1
+  cpuinfo (nx): 1
+Checking HAS_CPU_FEATURE (OSPKE):
+  HAS_CPU_FEATURE (OSPKE): 0
+  cpuinfo (ospke): 0
+Checking HAS_CPU_FEATURE (PAE):
+  HAS_CPU_FEATURE (PAE): 1
+  cpuinfo (pae): 1
+Checking HAS_CPU_FEATURE (PAGE1GB):
+  HAS_CPU_FEATURE (PAGE1GB): 1
+  cpuinfo (pdpe1gb): 1
+Checking HAS_CPU_FEATURE (PAT):
+  HAS_CPU_FEATURE (PAT): 1
+  cpuinfo (pat): 1
+Checking HAS_CPU_FEATURE (PBE):
+  HAS_CPU_FEATURE (PBE): 1
+  cpuinfo (pbe): 1
+Checking HAS_CPU_FEATURE (PCID):
+  HAS_CPU_FEATURE (PCID): 1
+  cpuinfo (pcid): 1
+Checking HAS_CPU_FEATURE (PCLMULQDQ):
+  HAS_CPU_FEATURE (PCLMULQDQ): 1
+  cpuinfo (pclmulqdq): 1
+Checking HAS_CPU_FEATURE (PCONFIG):
+  HAS_CPU_FEATURE (PCONFIG): 0
+  cpuinfo (pconfig): 0
+Checking HAS_CPU_FEATURE (PDCM):
+  HAS_CPU_FEATURE (PDCM): 1
+  cpuinfo (pdcm): 1
+Checking HAS_CPU_FEATURE (PGE):
+  HAS_CPU_FEATURE (PGE): 1
+  cpuinfo (pge): 1
+Checking HAS_CPU_FEATURE (PKS):
+  HAS_CPU_FEATURE (PKS): 0
+  cpuinfo (pks): 0
+Checking HAS_CPU_FEATURE (PKU):
+  HAS_CPU_FEATURE (PKU): 0
+  cpuinfo (pku): 0
+Checking HAS_CPU_FEATURE (POPCNT):
+  HAS_CPU_FEATURE (POPCNT): 1
+  cpuinfo (popcnt): 1
+Checking HAS_CPU_FEATURE (PREFETCHW):
+  HAS_CPU_FEATURE (PREFETCHW): 1
+  cpuinfo (3dnowprefetch): 1
+Checking HAS_CPU_FEATURE (PREFETCHWT1):
+  HAS_CPU_FEATURE (PREFETCHWT1): 0
+  cpuinfo (prefetchwt1): 0
+Checking HAS_CPU_FEATURE (PTWRITE):
+  HAS_CPU_FEATURE (PTWRITE): 0
+  cpuinfo (ptwrite): 0
+Checking HAS_CPU_FEATURE (PSE):
+  HAS_CPU_FEATURE (PSE): 1
+  cpuinfo (pse): 1
+Checking HAS_CPU_FEATURE (PSE_36):
+  HAS_CPU_FEATURE (PSE_36): 1
+  cpuinfo (pse36): 1
+Checking HAS_CPU_FEATURE (PSN):
+  HAS_CPU_FEATURE (PSN): 0
+  cpuinfo (psn): 0
+Checking HAS_CPU_FEATURE (RDPID):
+  HAS_CPU_FEATURE (RDPID): 0
+  cpuinfo (rdpid): 0
+Checking HAS_CPU_FEATURE (RDRAND):
+  HAS_CPU_FEATURE (RDRAND): 1
+  cpuinfo (rdrand): 1
+Checking HAS_CPU_FEATURE (RDSEED):
+  HAS_CPU_FEATURE (RDSEED): 1
+  cpuinfo (rdseed): 1
+Checking HAS_CPU_FEATURE (RDT_A):
+  HAS_CPU_FEATURE (RDT_A): 0
+  cpuinfo (rdt_a): 0
+Checking HAS_CPU_FEATURE (RDT_M):
+  HAS_CPU_FEATURE (RDT_M): 0
+  cpuinfo (cqm): 0
+Checking HAS_CPU_FEATURE (RDTSCP):
+  HAS_CPU_FEATURE (RDTSCP): 1
+  cpuinfo (rdtscp): 1
+Checking HAS_CPU_FEATURE (RTM):
+  HAS_CPU_FEATURE (RTM): 0
+  cpuinfo (rtm): 0
+Checking HAS_CPU_FEATURE (SDBG):
+  HAS_CPU_FEATURE (SDBG): 1
+  cpuinfo (sdbg): 1
+Checking HAS_CPU_FEATURE (SEP):
+  HAS_CPU_FEATURE (SEP): 1
+  cpuinfo (sep): 1
+Checking HAS_CPU_FEATURE (SERIALIZE):
+  HAS_CPU_FEATURE (SERIALIZE): 0
+  cpuinfo (serialize): 0
+Checking HAS_CPU_FEATURE (SGX):
+  HAS_CPU_FEATURE (SGX): 1
+  cpuinfo (sgx): 0
+ *** missing in /proc/cpuinfo ***
+Checking HAS_CPU_FEATURE (SGX_LC):
+  HAS_CPU_FEATURE (SGX_LC): 1
+  cpuinfo (sgx_lc): 0
+ *** missing in /proc/cpuinfo ***
+Checking HAS_CPU_FEATURE (SHA):
+  HAS_CPU_FEATURE (SHA): 0
+  cpuinfo (sha_ni): 0
+Checking HAS_CPU_FEATURE (SHSTK):
+  HAS_CPU_FEATURE (SHSTK): 0
+  cpuinfo (shstk): 0
+Checking HAS_CPU_FEATURE (SMAP):
+  HAS_CPU_FEATURE (SMAP): 1
+  cpuinfo (smap): 1
+Checking HAS_CPU_FEATURE (SMEP):
+  HAS_CPU_FEATURE (SMEP): 1
+  cpuinfo (smep): 1
+Checking HAS_CPU_FEATURE (SMX):
+  HAS_CPU_FEATURE (SMX): 0
+  cpuinfo (smx): 0
+Checking HAS_CPU_FEATURE (SS):
+  HAS_CPU_FEATURE (SS): 1
+  cpuinfo (ss): 1
+Checking HAS_CPU_FEATURE (SSBD):
+  HAS_CPU_FEATURE (SSBD): 1
+  cpuinfo (ssbd): 1
+Checking HAS_CPU_FEATURE (SSE):
+  HAS_CPU_FEATURE (SSE): 1
+  cpuinfo (sse): 1
+Checking HAS_CPU_FEATURE (SSE2):
+  HAS_CPU_FEATURE (SSE2): 1
+  cpuinfo (sse2): 1
+Checking HAS_CPU_FEATURE (SSE3):
+  HAS_CPU_FEATURE (SSE3): 1
+  cpuinfo (pni): 1
+Checking HAS_CPU_FEATURE (SSE4_1):
+  HAS_CPU_FEATURE (SSE4_1): 1
+  cpuinfo (sse4_1): 1
+Checking HAS_CPU_FEATURE (SSE4_2):
+  HAS_CPU_FEATURE (SSE4_2): 1
+  cpuinfo (sse4_2): 1
+Checking HAS_CPU_FEATURE (SSE4A):
+  HAS_CPU_FEATURE (SSE4A): 0
+  cpuinfo (sse4a): 0
+Checking HAS_CPU_FEATURE (SSSE3):
+  HAS_CPU_FEATURE (SSSE3): 1
+  cpuinfo (ssse3): 1
+Checking HAS_CPU_FEATURE (SVM):
+  HAS_CPU_FEATURE (SVM): 0
+  cpuinfo (svm): 0
+Checking HAS_CPU_FEATURE (SYSCALL_SYSRET):
+  HAS_CPU_FEATURE (SYSCALL_SYSRET): 1
+  cpuinfo (syscall): 1
+Checking HAS_CPU_FEATURE (TBM):
+  HAS_CPU_FEATURE (TBM): 0
+  cpuinfo (tbm): 0
+Checking HAS_CPU_FEATURE (TM):
+  HAS_CPU_FEATURE (TM): 1
+  cpuinfo (tm): 1
+Checking HAS_CPU_FEATURE (TM2):
+  HAS_CPU_FEATURE (TM2): 1
+  cpuinfo (tm2): 1
+Checking HAS_CPU_FEATURE (TRACE):
+  HAS_CPU_FEATURE (TRACE): 1
+  cpuinfo (intel_pt): 1
+Checking HAS_CPU_FEATURE (TSC):
+  HAS_CPU_FEATURE (TSC): 1
+  cpuinfo (tsc): 1
+Checking HAS_CPU_FEATURE (TSC_ADJUST):
+  HAS_CPU_FEATURE (TSC_ADJUST): 1
+  cpuinfo (tsc_adjust): 1
+Checking HAS_CPU_FEATURE (TSC_DEADLINE):
+  HAS_CPU_FEATURE (TSC_DEADLINE): 1
+  cpuinfo (tsc_deadline_timer): 1
+Checking HAS_CPU_FEATURE (TSXLDTRK):
+  HAS_CPU_FEATURE (TSXLDTRK): 0
+  cpuinfo (tsxldtrk): 0
+Checking HAS_CPU_FEATURE (UMIP):
+  HAS_CPU_FEATURE (UMIP): 0
+  cpuinfo (umip): 0
+Checking HAS_CPU_FEATURE (VAES):
+  HAS_CPU_FEATURE (VAES): 0
+  cpuinfo (vaes): 0
+Checking HAS_CPU_FEATURE (VME):
+  HAS_CPU_FEATURE (VME): 1
+  cpuinfo (vme): 1
+Checking HAS_CPU_FEATURE (VMX):
+  HAS_CPU_FEATURE (VMX): 1
+  cpuinfo (vmx): 1
+Checking HAS_CPU_FEATURE (VPCLMULQDQ):
+  HAS_CPU_FEATURE (VPCLMULQDQ): 0
+  cpuinfo (vpclmulqdq): 0
+Checking HAS_CPU_FEATURE (WAITPKG):
+  HAS_CPU_FEATURE (WAITPKG): 0
+  cpuinfo (waitpkg): 0
+Checking HAS_CPU_FEATURE (WBNOINVD):
+  HAS_CPU_FEATURE (WBNOINVD): 0
+  cpuinfo (wbnoinvd): 0
+Checking HAS_CPU_FEATURE (X2APIC):
+  HAS_CPU_FEATURE (X2APIC): 1
+  cpuinfo (x2apic): 1
+Checking HAS_CPU_FEATURE (XFD):
+  HAS_CPU_FEATURE (XFD): 0
+  cpuinfo (xfd): 0
+Checking HAS_CPU_FEATURE (XGETBV_ECX_1):
+  HAS_CPU_FEATURE (XGETBV_ECX_1): 1
+  cpuinfo (xgetbv1): 1
+Checking HAS_CPU_FEATURE (XOP):
+  HAS_CPU_FEATURE (XOP): 0
+  cpuinfo (xop): 0
+Checking HAS_CPU_FEATURE (XSAVE):
+  HAS_CPU_FEATURE (XSAVE): 1
+  cpuinfo (xsave): 1
+Checking HAS_CPU_FEATURE (XSAVEC):
+  HAS_CPU_FEATURE (XSAVEC): 1
+  cpuinfo (xsavec): 1
+Checking HAS_CPU_FEATURE (XSAVEOPT):
+  HAS_CPU_FEATURE (XSAVEOPT): 1
+  cpuinfo (xsaveopt): 1
+Checking HAS_CPU_FEATURE (XSAVES):
+  HAS_CPU_FEATURE (XSAVES): 1
+  cpuinfo (xsaves): 1
+Checking HAS_CPU_FEATURE (XTPRUPDCTRL):
+  HAS_CPU_FEATURE (XTPRUPDCTRL): 1
+  cpuinfo (xtpr): 1
+0 differences between /proc/cpuinfo and glibc code.

@@ -1,0 +1,18 @@
+making contexts
+global OK
+0: tf: before makecontext
+0: tf: before swapcontext
+1: tf: before makecontext
+1: tf: before swapcontext
+0: in fct now, on_stack = 0x5555573dd26f
+2: tf: before makecontext
+3: tf: before makecontext
+3: tf: before swapcontext
+0: back in tf
+2: tf: before swapcontext
+2: in fct now, on_stack = 0x5555573ed28f
+3: in fct now, on_stack = 0x5555573f529f
+3: back in tf
+1: in fct now, on_stack = 0x5555573e527f
+1: back in tf
+2: back in tf

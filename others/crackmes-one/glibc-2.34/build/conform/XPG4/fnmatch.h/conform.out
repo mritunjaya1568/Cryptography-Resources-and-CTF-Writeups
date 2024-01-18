@@ -1,0 +1,15 @@
+PASS: Availability of <fnmatch.h>
+PASS: Combined <fnmatch.h> test
+PASSCOMBINED: Availability of constant FNM_NOMATCH
+PASSCOMBINED: Availability of constant FNM_PATHNAME
+PASSCOMBINED: Availability of constant FNM_PERIOD
+PASSCOMBINED: Availability of constant FNM_NOESCAPE
+PASSCOMBINED: Availability of constant FNM_NOSYS
+PASSCOMBINED: Availability of function fnmatch
+PASSCOMBINED: Type of function fnmatch
+PASS: Namespace of <fnmatch.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    9
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

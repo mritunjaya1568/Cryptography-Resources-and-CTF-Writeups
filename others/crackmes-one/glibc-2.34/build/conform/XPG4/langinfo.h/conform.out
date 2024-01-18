@@ -1,0 +1,68 @@
+PASS: Availability of <langinfo.h>
+PASS: Combined <langinfo.h> test
+PASSCOMBINED: Availability of constant CODESET
+PASSCOMBINED: Availability of constant D_T_FMT
+PASSCOMBINED: Availability of constant D_FMT
+PASSCOMBINED: Availability of constant T_FMT
+PASSCOMBINED: Availability of constant T_FMT_AMPM
+PASSCOMBINED: Availability of constant AM_STR
+PASSCOMBINED: Availability of constant PM_STR
+PASSCOMBINED: Availability of constant DAY_1
+PASSCOMBINED: Availability of constant DAY_2
+PASSCOMBINED: Availability of constant DAY_3
+PASSCOMBINED: Availability of constant DAY_4
+PASSCOMBINED: Availability of constant DAY_5
+PASSCOMBINED: Availability of constant DAY_6
+PASSCOMBINED: Availability of constant DAY_7
+PASSCOMBINED: Availability of constant ABDAY_1
+PASSCOMBINED: Availability of constant ABDAY_2
+PASSCOMBINED: Availability of constant ABDAY_3
+PASSCOMBINED: Availability of constant ABDAY_4
+PASSCOMBINED: Availability of constant ABDAY_5
+PASSCOMBINED: Availability of constant ABDAY_6
+PASSCOMBINED: Availability of constant ABDAY_7
+PASSCOMBINED: Availability of constant MON_1
+PASSCOMBINED: Availability of constant MON_2
+PASSCOMBINED: Availability of constant MON_3
+PASSCOMBINED: Availability of constant MON_4
+PASSCOMBINED: Availability of constant MON_5
+PASSCOMBINED: Availability of constant MON_6
+PASSCOMBINED: Availability of constant MON_7
+PASSCOMBINED: Availability of constant MON_8
+PASSCOMBINED: Availability of constant MON_9
+PASSCOMBINED: Availability of constant MON_10
+PASSCOMBINED: Availability of constant MON_11
+PASSCOMBINED: Availability of constant MON_12
+PASSCOMBINED: Availability of constant ABMON_1
+PASSCOMBINED: Availability of constant ABMON_2
+PASSCOMBINED: Availability of constant ABMON_3
+PASSCOMBINED: Availability of constant ABMON_4
+PASSCOMBINED: Availability of constant ABMON_5
+PASSCOMBINED: Availability of constant ABMON_6
+PASSCOMBINED: Availability of constant ABMON_7
+PASSCOMBINED: Availability of constant ABMON_8
+PASSCOMBINED: Availability of constant ABMON_9
+PASSCOMBINED: Availability of constant ABMON_10
+PASSCOMBINED: Availability of constant ABMON_11
+PASSCOMBINED: Availability of constant ABMON_12
+PASSCOMBINED: Availability of constant ERA
+PASSCOMBINED: Availability of constant ERA_D_FMT
+PASSCOMBINED: Availability of constant ERA_D_T_FMT
+PASSCOMBINED: Availability of constant ERA_T_FMT
+PASSCOMBINED: Availability of constant ALT_DIGITS
+PASSCOMBINED: Availability of constant RADIXCHAR
+PASSCOMBINED: Availability of constant THOUSEP
+PASSCOMBINED: Availability of constant YESEXPR
+PASSCOMBINED: Availability of constant NOEXPR
+PASSCOMBINED: Availability of constant CRNCYSTR
+PASSCOMBINED: Availability of constant YESSTR
+PASSCOMBINED: Availability of constant NOSTR
+PASSCOMBINED: Availability of type nl_item
+PASSCOMBINED: Availability of function nl_langinfo
+PASSCOMBINED: Type of function nl_langinfo
+PASS: Namespace of <langinfo.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   62
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

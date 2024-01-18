@@ -1,0 +1,11 @@
+PASS: timezone/test-tz
+PASS: timezone/testdata/America/New_York
+PASS: timezone/testdata/America/Sao_Paulo
+PASS: timezone/testdata/Asia/Tokyo
+PASS: timezone/testdata/Australia/Melbourne
+PASS: timezone/testdata/Etc/UTC
+PASS: timezone/testdata/Europe/Berlin
+PASS: timezone/testdata/UTC
+PASS: timezone/testdata/posixrules
+PASS: timezone/tst-timezone
+PASS: timezone/tst-tzset

@@ -1,0 +1,1125 @@
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 1 tries again
+writer thread 2 tries again
+writer thread 3 tries again
+writer thread 4 tries again
+writer thread 5 tries again
+writer thread 8 tries again
+writer thread 7 tries again
+writer thread 6 tries again
+writer thread 9 tries again
+writer thread 11 tries again
+writer thread 12 tries again
+writer thread 10 tries again
+writer thread 13 tries again
+writer thread 14 tries again
+reader thread 0 tries again
+reader thread 2 tries again
+reader thread 1 tries again
+reader thread 3 tries again
+reader thread 4 tries again
+reader thread 5 tries again
+reader thread 6 tries again
+reader thread 7 tries again
+reader thread 8 tries again
+reader thread 9 tries again
+reader thread 10 tries again
+reader thread 11 tries again
+reader thread 12 tries again
+reader thread 13 tries again
+reader thread 14 tries again
+reader thread 1 succeeded
+reader thread 5 succeeded
+reader thread 7 succeeded
+reader thread 12 succeeded
+reader thread 0 succeeded
+reader thread 2 succeeded
+writer thread 0 released
+reader thread 10 succeeded
+reader thread 3 succeeded
+reader thread 11 succeeded
+reader thread 6 succeeded
+reader thread 13 succeeded
+reader thread 9 succeeded
+reader thread 14 succeeded
+reader thread 8 succeeded
+writer thread 0 tries again
+reader thread 4 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 8 released
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 3 succeeded
+reader thread 9 succeeded
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 10 released
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 4 released
+reader thread 4 tries again
+reader thread 6 succeeded
+reader thread 4 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 4 released
+reader thread 11 released
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 4 tries again
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 4 succeeded
+reader thread 7 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 14 released
+reader thread 3 released
+reader thread 3 tries again
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 7 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 11 released
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 9 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 14 succeeded
+reader thread 3 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 3 released
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 3 tries again
+reader thread 11 released
+reader thread 7 released
+reader thread 3 succeeded
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 1 released
+reader thread 1 tries again
+reader thread 5 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 1 succeeded
+reader thread 13 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 6 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 8 released
+reader thread 1 released
+reader thread 2 released
+reader thread 2 tries again
+reader thread 8 tries again
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 13 succeeded
+reader thread 8 succeeded
+reader thread 2 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 0 released
+reader thread 0 tries again
+reader thread 0 succeeded
+reader thread 12 released
+reader thread 12 tries again
+reader thread 12 succeeded
+reader thread 1 released
+reader thread 1 tries again
+reader thread 1 succeeded
+reader thread 2 released
+reader thread 2 tries again
+reader thread 2 succeeded
+reader thread 5 released
+reader thread 5 tries again
+reader thread 5 succeeded
+reader thread 8 released
+reader thread 8 tries again
+reader thread 8 succeeded
+reader thread 13 released
+reader thread 13 tries again
+reader thread 13 succeeded
+reader thread 10 released
+reader thread 10 tries again
+reader thread 10 succeeded
+reader thread 9 released
+reader thread 9 tries again
+reader thread 9 succeeded
+reader thread 14 released
+reader thread 14 tries again
+reader thread 14 succeeded
+reader thread 4 released
+reader thread 4 tries again
+reader thread 4 succeeded
+reader thread 6 released
+reader thread 6 tries again
+reader thread 6 succeeded
+reader thread 3 released
+reader thread 3 tries again
+reader thread 3 succeeded
+reader thread 7 released
+reader thread 7 tries again
+reader thread 7 succeeded
+reader thread 11 released
+reader thread 11 tries again
+reader thread 11 succeeded
+reader thread 0 released
+reader thread 12 released
+reader thread 1 released
+reader thread 2 released
+reader thread 8 released
+reader thread 13 released
+reader thread 10 released
+reader thread 5 released
+reader thread 9 released
+reader thread 4 released
+reader thread 6 released
+reader thread 3 released
+reader thread 7 released
+reader thread 11 released
+reader thread 14 released
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 8 tries again
+writer thread 8 succeeded
+writer thread 8 released
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 4 succeeded
+writer thread 2 tries again
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 4 tries again
+writer thread 4 succeeded
+writer thread 4 released
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 0 succeeded
+writer thread 12 tries again
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 9 succeeded
+writer thread 6 tries again
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 3 tries again
+writer thread 3 succeeded
+writer thread 3 released
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 0 tries again
+writer thread 0 succeeded
+writer thread 0 released
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 6 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 10 tries again
+writer thread 10 succeeded
+writer thread 10 released
+writer thread 1 succeeded
+writer thread 10 tries again
+writer thread 1 released
+writer thread 1 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 14 tries again
+writer thread 14 succeeded
+writer thread 14 released
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 6 succeeded
+writer thread 6 released
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 1 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 7 tries again
+writer thread 7 succeeded
+writer thread 7 released
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 10 succeeded
+writer thread 11 tries again
+writer thread 10 released
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 2 tries again
+writer thread 1 succeeded
+writer thread 1 released
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 2 succeeded
+writer thread 13 tries again
+writer thread 2 released
+writer thread 2 tries again
+writer thread 2 succeeded
+writer thread 2 released
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 13 tries again
+writer thread 13 succeeded
+writer thread 13 released
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 12 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 5 tries again
+writer thread 5 succeeded
+writer thread 5 released
+writer thread 12 succeeded
+writer thread 12 released
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 9 tries again
+writer thread 9 succeeded
+writer thread 9 released
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released
+writer thread 11 tries again
+writer thread 11 succeeded
+writer thread 11 released

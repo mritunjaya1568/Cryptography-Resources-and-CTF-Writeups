@@ -1,0 +1,39 @@
+
+Symbol table '.dynsym' contains 36 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_alloc_buffer_alloc_array@GLIBC_PRIVATE (2)
+     2: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _nss_test2_init_hook
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND putchar@GLIBC_2.2.5 (3)
+     4: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.2.5 (3)
+     6: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@GLIBC_2.2.5 (3)
+     7: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     8: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@GLIBC_2.2.5 (3)
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_alloc_buffer_copy_string@GLIBC_PRIVATE (2)
+    10: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_alloc_buffer_create_failure@GLIBC_PRIVATE (2)
+    11: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    12: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (3)
+    13: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@GLIBC_2.2.5 (3)
+    14: 0000000000002580   140 FUNC    GLOBAL DEFAULT   16 _nss_test2_getspent_r
+    15: 00000000000022d0    65 FUNC    GLOBAL DEFAULT   16 _nss_test2_setgrent
+    16: 0000000000002980    28 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostbyaddr_r
+    17: 0000000000002460   177 FUNC    GLOBAL DEFAULT   16 _nss_test2_getgrnam_r
+    18: 0000000000002080    65 FUNC    GLOBAL DEFAULT   16 _nss_test2_setpwent
+    19: 0000000000002220   169 FUNC    GLOBAL DEFAULT   16 _nss_test2_getpwnam_r
+    20: 0000000000002320     9 FUNC    GLOBAL DEFAULT   16 _nss_test2_endgrent
+    21: 0000000000002710     9 FUNC    GLOBAL DEFAULT   16 _nss_test2_endhostent
+    22: 0000000000002330   145 FUNC    GLOBAL DEFAULT   16 _nss_test2_getgrent_r
+    23: 0000000000002100   140 FUNC    GLOBAL DEFAULT   16 _nss_test2_getpwent_r
+    24: 0000000000002570     9 FUNC    GLOBAL DEFAULT   16 _nss_test2_endspwent
+    25: 00000000000020d0    46 FUNC    GLOBAL DEFAULT   16 _nss_test2_endpwent
+    26: 0000000000002190   137 FUNC    GLOBAL DEFAULT   16 _nss_test2_getpwuid_r
+    27: 0000000000002520    65 FUNC    GLOBAL DEFAULT   16 _nss_test2_setspent
+    28: 00000000000023d0   137 FUNC    GLOBAL DEFAULT   16 _nss_test2_getgrgid_r
+    29: 00000000000028d0   169 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostbyaddr2_r
+    30: 0000000000002610   169 FUNC    GLOBAL DEFAULT   16 _nss_test2_getspnam_r
+    31: 00000000000028b0    26 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostbyname2_r
+    32: 0000000000002880    41 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostbyname_r
+    33: 00000000000026c0    65 FUNC    GLOBAL DEFAULT   16 _nss_test2_sethostent
+    34: 00000000000027c0   177 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostbyname3_r
+    35: 0000000000002720   160 FUNC    GLOBAL DEFAULT   16 _nss_test2_gethostent_r

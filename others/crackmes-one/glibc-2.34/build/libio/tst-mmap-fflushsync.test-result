@@ -1,0 +1,2 @@
+PASS: libio/tst-mmap-fflushsync
+original exit status 0

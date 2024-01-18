@@ -1,0 +1,18 @@
+new locale: C
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+
+new locale: de_DE.ISO-8859-1
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+
+new locale: de_DE.UTF-8
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+
+new locale: en_US.ANSI_X3.4-1968
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+
+new locale: ja_JP.EUC-JP
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+
+new locale: hr_HR.ISO-8859-2
+n = -1, errno = 84 (Invalid or incomplete multibyte or wide character)
+

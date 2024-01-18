@@ -1,0 +1,9 @@
+PASS: Availability of <assert.h>
+PASS: Combined <assert.h> test
+PASSCOMBINED: Availability of macro assert
+PASS: Namespace of <assert.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    3
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

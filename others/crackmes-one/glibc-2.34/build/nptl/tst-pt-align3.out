@@ -1,0 +1,8 @@
+in main
+int_al16:  0x7fff4b5cb630 16
+double:  12 0x7fff4b5cb618 8
+ldouble: 15 0x7fff4b5cb620 16
+in once_test
+int_al16:  0x7fff4b5cb550 16
+double:  12 0x7fff4b5cb538 8
+ldouble: 15 0x7fff4b5cb540 16

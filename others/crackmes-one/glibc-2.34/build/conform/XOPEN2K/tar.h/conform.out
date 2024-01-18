@@ -1,0 +1,127 @@
+PASS: Availability of <tar.h>
+PASS: Combined <tar.h> test
+PASSCOMBINED: Availability of macro TMAGIC
+PASS: Value of macro TMAGIC
+PASSCOMBINED: Availability of macro TMAGLEN
+PASSCOMBINED: Availability of constant TMAGLEN
+PASSCOMBINED: #if usability of symbol TMAGLEN
+PASSCOMBINED: Type of symbol TMAGLEN
+PASSCOMBINED: Value of symbol TMAGLEN
+PASSCOMBINED: Availability of macro TVERSION
+PASS: Value of macro TVERSION
+PASSCOMBINED: Availability of macro TVERSLEN
+PASSCOMBINED: Availability of constant TVERSLEN
+PASSCOMBINED: #if usability of symbol TVERSLEN
+PASSCOMBINED: Type of symbol TVERSLEN
+PASSCOMBINED: Value of symbol TVERSLEN
+PASSCOMBINED: Availability of macro REGTYPE
+PASSCOMBINED: Availability of constant REGTYPE
+PASSCOMBINED: #if usability of symbol REGTYPE
+PASSCOMBINED: Type of symbol REGTYPE
+PASSCOMBINED: Value of symbol REGTYPE
+PASSCOMBINED: Availability of macro AREGTYPE
+PASSCOMBINED: Availability of constant AREGTYPE
+PASSCOMBINED: #if usability of symbol AREGTYPE
+PASSCOMBINED: Type of symbol AREGTYPE
+PASSCOMBINED: Value of symbol AREGTYPE
+PASSCOMBINED: Availability of macro LNKTYPE
+PASSCOMBINED: Availability of constant LNKTYPE
+PASSCOMBINED: #if usability of symbol LNKTYPE
+PASSCOMBINED: Type of symbol LNKTYPE
+PASSCOMBINED: Value of symbol LNKTYPE
+PASSCOMBINED: Availability of macro SYMTYPE
+PASSCOMBINED: Availability of constant SYMTYPE
+PASSCOMBINED: #if usability of symbol SYMTYPE
+PASSCOMBINED: Type of symbol SYMTYPE
+PASSCOMBINED: Value of symbol SYMTYPE
+PASSCOMBINED: Availability of macro CHRTYPE
+PASSCOMBINED: Availability of constant CHRTYPE
+PASSCOMBINED: #if usability of symbol CHRTYPE
+PASSCOMBINED: Type of symbol CHRTYPE
+PASSCOMBINED: Value of symbol CHRTYPE
+PASSCOMBINED: Availability of macro BLKTYPE
+PASSCOMBINED: Availability of constant BLKTYPE
+PASSCOMBINED: #if usability of symbol BLKTYPE
+PASSCOMBINED: Type of symbol BLKTYPE
+PASSCOMBINED: Value of symbol BLKTYPE
+PASSCOMBINED: Availability of macro DIRTYPE
+PASSCOMBINED: Availability of constant DIRTYPE
+PASSCOMBINED: #if usability of symbol DIRTYPE
+PASSCOMBINED: Type of symbol DIRTYPE
+PASSCOMBINED: Value of symbol DIRTYPE
+PASSCOMBINED: Availability of macro FIFOTYPE
+PASSCOMBINED: Availability of constant FIFOTYPE
+PASSCOMBINED: #if usability of symbol FIFOTYPE
+PASSCOMBINED: Type of symbol FIFOTYPE
+PASSCOMBINED: Value of symbol FIFOTYPE
+PASSCOMBINED: Availability of macro CONTTYPE
+PASSCOMBINED: Availability of constant CONTTYPE
+PASSCOMBINED: #if usability of symbol CONTTYPE
+PASSCOMBINED: Type of symbol CONTTYPE
+PASSCOMBINED: Value of symbol CONTTYPE
+PASSCOMBINED: Availability of macro TSUID
+PASSCOMBINED: Availability of constant TSUID
+PASSCOMBINED: #if usability of symbol TSUID
+PASSCOMBINED: Type of symbol TSUID
+PASSCOMBINED: Value of symbol TSUID
+PASSCOMBINED: Availability of macro TSGID
+PASSCOMBINED: Availability of constant TSGID
+PASSCOMBINED: #if usability of symbol TSGID
+PASSCOMBINED: Type of symbol TSGID
+PASSCOMBINED: Value of symbol TSGID
+PASSCOMBINED: Availability of macro TSVTX
+PASSCOMBINED: Availability of constant TSVTX
+PASSCOMBINED: #if usability of symbol TSVTX
+PASSCOMBINED: Type of symbol TSVTX
+PASSCOMBINED: Value of symbol TSVTX
+PASSCOMBINED: Availability of macro TUREAD
+PASSCOMBINED: Availability of constant TUREAD
+PASSCOMBINED: #if usability of symbol TUREAD
+PASSCOMBINED: Type of symbol TUREAD
+PASSCOMBINED: Value of symbol TUREAD
+PASSCOMBINED: Availability of macro TUWRITE
+PASSCOMBINED: Availability of constant TUWRITE
+PASSCOMBINED: #if usability of symbol TUWRITE
+PASSCOMBINED: Type of symbol TUWRITE
+PASSCOMBINED: Value of symbol TUWRITE
+PASSCOMBINED: Availability of macro TUEXEC
+PASSCOMBINED: Availability of constant TUEXEC
+PASSCOMBINED: #if usability of symbol TUEXEC
+PASSCOMBINED: Type of symbol TUEXEC
+PASSCOMBINED: Value of symbol TUEXEC
+PASSCOMBINED: Availability of macro TGREAD
+PASSCOMBINED: Availability of constant TGREAD
+PASSCOMBINED: #if usability of symbol TGREAD
+PASSCOMBINED: Type of symbol TGREAD
+PASSCOMBINED: Value of symbol TGREAD
+PASSCOMBINED: Availability of macro TGWRITE
+PASSCOMBINED: Availability of constant TGWRITE
+PASSCOMBINED: #if usability of symbol TGWRITE
+PASSCOMBINED: Type of symbol TGWRITE
+PASSCOMBINED: Value of symbol TGWRITE
+PASSCOMBINED: Availability of macro TGEXEC
+PASSCOMBINED: Availability of constant TGEXEC
+PASSCOMBINED: #if usability of symbol TGEXEC
+PASSCOMBINED: Type of symbol TGEXEC
+PASSCOMBINED: Value of symbol TGEXEC
+PASSCOMBINED: Availability of macro TOREAD
+PASSCOMBINED: Availability of constant TOREAD
+PASSCOMBINED: #if usability of symbol TOREAD
+PASSCOMBINED: Type of symbol TOREAD
+PASSCOMBINED: Value of symbol TOREAD
+PASSCOMBINED: Availability of macro TOWRITE
+PASSCOMBINED: Availability of constant TOWRITE
+PASSCOMBINED: #if usability of symbol TOWRITE
+PASSCOMBINED: Type of symbol TOWRITE
+PASSCOMBINED: Value of symbol TOWRITE
+PASSCOMBINED: Availability of macro TOEXEC
+PASSCOMBINED: Availability of constant TOEXEC
+PASSCOMBINED: #if usability of symbol TOEXEC
+PASSCOMBINED: Type of symbol TOEXEC
+PASSCOMBINED: Value of symbol TOEXEC
+PASS: Namespace of <tar.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  121
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

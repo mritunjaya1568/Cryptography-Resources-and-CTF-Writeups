@@ -1,0 +1,35 @@
++set debug libthread-db 1
++add-symbol-file /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl/tst-pthread-gdb-attach
+add symbol table from file "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl/tst-pthread-gdb-attach"
++set auto-load safe-path /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl_db
++set libthread-db-search-path /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl_db
++attach 528713
+[New LWP 528714]
+Trying host libthread_db library: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl_db/libthread_db.so.1.
+open failed: No such file or directory.
+thread_db_load_search returning 0
+Trying host libthread_db library: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl_db/libthread_db.so.1.
+open failed: No such file or directory.
+thread_db_load_search returning 0
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=528714, futex_word=0x7fad8af28910) at futex-internal.c:57
+57	    return INTERNAL_SYSCALL_CANCEL (futex_time64, futex_word, op, expected,
++break debugger_inspection_point
+Breakpoint 1 at 0x402b82: file tst-pthread-gdb-attach.c, line 126.
++continue
+[Switching to LWP 528714]
+
+Thread 2 "ld-linux-x86-64" hit Breakpoint 1, debugger_inspection_point () at tst-pthread-gdb-attach.c:126
+126	{
++thread 1
+[Switching to thread 1 (LWP 528713)]
+#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=528714, futex_word=0x7fad8af28910) at futex-internal.c:57
+57	    return INTERNAL_SYSCALL_CANCEL (futex_time64, futex_word, op, expected,
++print altered_by_debugger
+/tmp/tst-pthread-gdb-attach-2EPKuL:10: Error in sourced command file:
+Cannot find thread-local storage for LWP 528713, shared library /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/nptl/tst-pthread-gdb-attach:
+Cannot find thread-local variables on this target
+[Inferior 1 (process 528713) detached]
+tst-pthread-gdb-attach.c:229: numeric comparison failure
+   left: 256 (0x100); from: status
+  right: 0 (0x0); from: 0
+error: 1 test failures

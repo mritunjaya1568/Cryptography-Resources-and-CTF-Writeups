@@ -1,0 +1,2 @@
+PASS: nptl/tst-atfork1
+original exit status 0

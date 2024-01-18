@@ -1,0 +1,1 @@
+                       	simple_wmemcmp	__wmemcmp_avx2_movbe	__wmemcmp_sse4_1	__wmemcmp_ssse3	__wmemcmp_sse2

@@ -1,0 +1,2 @@
+FAIL: nptl/tst-mtx-trylock
+original exit status 1

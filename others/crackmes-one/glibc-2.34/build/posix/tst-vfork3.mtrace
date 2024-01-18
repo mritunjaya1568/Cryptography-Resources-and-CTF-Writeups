@@ -1,0 +1,16 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7fa56ffdb944] + 0x555aecaedc90 0x104
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(__tsearch+e1)[0x7fa5700a0d41] + 0x555aecaedda0 0x18
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(clearenv+55)[0x7fa56ffdbc25] - 0x555aecaed2c0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7fa5700a0ac4] - 0x555aecaedc90
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7fa5700a0add] - 0x555aecaedda0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7fa5700a0ac4] - 0x555aecaed550
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7fa570131620] - 0x555aecaed2a0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a7120] - 0x555aecaed820
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a712c] - 0x555aecaed800
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a7120] - 0x555aecaed780
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a712c] - 0x555aecaed760
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a7120] - 0x555aecaed6e0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a712c] - 0x555aecaed6c0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a7120] - 0x555aecaed650
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/posix/tst-vfork3:[0x555aeb9a712c] - 0x555aecaed630

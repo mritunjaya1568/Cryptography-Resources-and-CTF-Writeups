@@ -1,0 +1,6 @@
+PASS: pwd/check-installed-headers-c
+PASS: pwd/check-installed-headers-cxx
+PASS: pwd/check-obsolete-constructs
+PASS: pwd/check-wrapper-headers
+PASS: pwd/tst-getpw
+PASS: pwd/tst-putpwent

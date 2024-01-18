@@ -1,0 +1,12 @@
+info: glibc syscall 'faccessat2' not known to kernel
+info: glibc syscall 'pidfd_getfd' not known to kernel
+info: glibc syscall 'openat2' not known to kernel
+info: glibc syscall 'landlock_add_rule' not known to kernel
+info: glibc syscall 'close_range' not known to kernel
+info: glibc syscall 'landlock_restrict_self' not known to kernel
+info: glibc syscall 'epoll_pwait2' not known to kernel
+info: glibc syscall 'process_madvise' not known to kernel
+info: glibc syscall 'landlock_create_ruleset' not known to kernel
+info: glibc syscall 'mount_setattr' not known to kernel
+info: glibc tables are based on kernel version 5.13
+info: installed kernel headers are version 5.4

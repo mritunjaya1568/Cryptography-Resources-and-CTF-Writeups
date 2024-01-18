@@ -1,0 +1,2 @@
+PASS: nptl/tst-rwlock-tryrdlock-stall
+original exit status 0

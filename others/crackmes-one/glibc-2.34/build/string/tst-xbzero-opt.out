@@ -1,0 +1,6 @@
+PASS: no clear/prepare: expected 32 got 32
+PASS: no clear/test: expected some got 32
+PASS: ordinary clear/prepare: expected 32 got 32
+INFO: ordinary clear/test: found 32 patterns
+PASS: explicit clear/prepare: expected 32 got 32
+PASS: explicit clear/test: expected 0 got 0

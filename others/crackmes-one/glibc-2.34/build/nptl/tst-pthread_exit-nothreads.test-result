@@ -1,0 +1,2 @@
+FAIL: nptl/tst-pthread_exit-nothreads
+original exit status 1

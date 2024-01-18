@@ -1,0 +1,24 @@
+
+before...
+arena: 0
+ordblks: 1
+smblks: 0
+hblks: 0
+hblkhd: 0
+usmblks: 0
+fsmblks: 0
+uordblks: 0
+fordblks: 0
+keepcost: 0
+
+after...
+arena: 135168
+ordblks: 1
+smblks: 0
+hblks: 0
+hblkhd: 0
+usmblks: 0
+fsmblks: 0
+uordblks: 32304
+fordblks: 102864
+keepcost: 102864

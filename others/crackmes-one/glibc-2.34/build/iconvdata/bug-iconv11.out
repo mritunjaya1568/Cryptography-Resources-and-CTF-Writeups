@@ -1,0 +1,120 @@
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680c0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680d0, 1, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+1, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680e0, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb76680f0, 3, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+3, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128
+iconv(cd, 0x7f7eb7668100, 2, 0x7ffe2361a550, 128)
+  ==> 0: Success
+  inbuf+2, inbytesleft=0, outbuf+0, outbytesleft=128

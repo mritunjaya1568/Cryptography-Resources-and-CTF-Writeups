@@ -1,0 +1,2 @@
+PASS: malloc/tst-malloc-too-large-mcheck
+original exit status 0

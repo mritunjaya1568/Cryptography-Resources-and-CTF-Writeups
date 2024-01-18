@@ -1,0 +1,2 @@
+PASS: stdlib/tst-tls-atexit-nodelete
+original exit status 0

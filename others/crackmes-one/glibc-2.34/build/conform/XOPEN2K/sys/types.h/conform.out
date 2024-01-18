@@ -1,0 +1,42 @@
+PASS: Availability of <sys/types.h>
+PASS: Combined <sys/types.h> test
+PASSCOMBINED: Availability of type blkcnt_t
+PASSCOMBINED: Availability of type blksize_t
+PASSCOMBINED: Availability of type clock_t
+PASSCOMBINED: Availability of type clockid_t
+PASSCOMBINED: Availability of type dev_t
+PASSCOMBINED: Availability of type fsblkcnt_t
+PASSCOMBINED: Availability of type fsfilcnt_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type id_t
+PASSCOMBINED: Availability of type ino_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type nlink_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type pthread_attr_t
+PASSCOMBINED: Availability of type pthread_barrier_t
+PASSCOMBINED: Availability of type pthread_barrierattr_t
+PASSCOMBINED: Availability of type pthread_cond_t
+PASSCOMBINED: Availability of type pthread_condattr_t
+PASSCOMBINED: Availability of type pthread_key_t
+PASSCOMBINED: Availability of type pthread_mutex_t
+PASSCOMBINED: Availability of type pthread_mutexattr_t
+PASSCOMBINED: Availability of type pthread_once_t
+PASSCOMBINED: Availability of type pthread_rwlock_t
+PASSCOMBINED: Availability of type pthread_rwlockattr_t
+PASSCOMBINED: Availability of type pthread_spinlock_t
+PASSCOMBINED: Availability of type pthread_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type ssize_t
+PASSCOMBINED: Availability of type suseconds_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type timer_t
+PASSCOMBINED: Availability of type uid_t
+PASS: Namespace of <sys/types.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   36
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

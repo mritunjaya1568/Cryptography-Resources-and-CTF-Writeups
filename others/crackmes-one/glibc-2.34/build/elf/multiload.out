@@ -1,0 +1,4 @@
+loading `./testobj1.so'
+loading `../elf/testobj1.so'
+loading `/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/testobj1.so'
+loading `/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/../elf/testobj1.so'

@@ -1,0 +1,614 @@
+Call: gethostbyname("localhost") returned: name: localhost, addr_type: 2
+  alias: mritunjya-Predator-PH315-51
+  ip: 127.0.0.1
+Call: gethostbyname ("127.0.0.1") returned: name: 127.0.0.1, addr_type: 2
+  ip: 127.0.0.1
+Call: gethostbyname ("10.1234") returned: name: 10.1234, addr_type: 2
+  ip: 10.0.4.210
+Call: gethostbyname2 ("localhost", AF_INET) returned: name: localhost, addr_type: 2
+  alias: mritunjya-Predator-PH315-51
+  ip: 127.0.0.1
+Hostname: mritunjya-Predator-PH315-51
+Call: gethostbyname (gethostname(...)) returned: name: localhost, addr_type: 2
+  alias: mritunjya-Predator-PH315-51
+  ip: 127.0.0.1
+official name of 127.0.0.1: localhost
+Call: gethostent () returned: name: localhost, addr_type: 2
+  alias: mritunjya-Predator-PH315-51
+  ip: 127.0.0.1
+Call: gethostent () returned: name: ip6-localhost, addr_type: 2
+  alias: ip6-loopback
+  ip: 127.0.0.1
+Call: gethostent () returned NULL
+Call: getnetbyname ("loopback") returned NULL
+Call: getnetbyname ("LoopBACK") returned NULL
+Call: getnetbyaddr (inet_network ("127.0.0.0"), AF_INET) returned NULL
+Call: getnetent (), returned: n_name: link-local, network_number: 169.254.0.0
+Call: getnetent () returned NULL
+Call: getprotobyname ("IP"), returned: p_name: ip, p_proto: 0
+  alias: IP
+Call: getprotobynumber (1), returned: p_name: icmp, p_proto: 1
+  alias: ICMP
+Call: getprotoent (), returned: p_name: ip, p_proto: 0
+  alias: IP
+Call: getprotoent (), returned: p_name: hopopt, p_proto: 0
+  alias: HOPOPT
+Call: getprotoent (), returned: p_name: icmp, p_proto: 1
+  alias: ICMP
+Call: getprotoent (), returned: p_name: igmp, p_proto: 2
+  alias: IGMP
+Call: getprotoent (), returned: p_name: ggp, p_proto: 3
+  alias: GGP
+Call: getprotoent (), returned: p_name: ipencap, p_proto: 4
+  alias: IP-ENCAP
+Call: getprotoent (), returned: p_name: st, p_proto: 5
+  alias: ST
+Call: getprotoent (), returned: p_name: tcp, p_proto: 6
+  alias: TCP
+Call: getprotoent (), returned: p_name: egp, p_proto: 8
+  alias: EGP
+Call: getprotoent (), returned: p_name: igp, p_proto: 9
+  alias: IGP
+Call: getprotoent (), returned: p_name: pup, p_proto: 12
+  alias: PUP
+Call: getprotoent (), returned: p_name: udp, p_proto: 17
+  alias: UDP
+Call: getprotoent (), returned: p_name: hmp, p_proto: 20
+  alias: HMP
+Call: getprotoent (), returned: p_name: xns-idp, p_proto: 22
+  alias: XNS-IDP
+Call: getprotoent (), returned: p_name: rdp, p_proto: 27
+  alias: RDP
+Call: getprotoent (), returned: p_name: iso-tp4, p_proto: 29
+  alias: ISO-TP4
+Call: getprotoent (), returned: p_name: dccp, p_proto: 33
+  alias: DCCP
+Call: getprotoent (), returned: p_name: xtp, p_proto: 36
+  alias: XTP
+Call: getprotoent (), returned: p_name: ddp, p_proto: 37
+  alias: DDP
+Call: getprotoent (), returned: p_name: idpr-cmtp, p_proto: 38
+  alias: IDPR-CMTP
+Call: getprotoent (), returned: p_name: ipv6, p_proto: 41
+  alias: IPv6
+Call: getprotoent (), returned: p_name: ipv6-route, p_proto: 43
+  alias: IPv6-Route
+Call: getprotoent (), returned: p_name: ipv6-frag, p_proto: 44
+  alias: IPv6-Frag
+Call: getprotoent (), returned: p_name: idrp, p_proto: 45
+  alias: IDRP
+Call: getprotoent (), returned: p_name: rsvp, p_proto: 46
+  alias: RSVP
+Call: getprotoent (), returned: p_name: gre, p_proto: 47
+  alias: GRE
+Call: getprotoent (), returned: p_name: esp, p_proto: 50
+  alias: IPSEC-ESP
+Call: getprotoent (), returned: p_name: ah, p_proto: 51
+  alias: IPSEC-AH
+Call: getprotoent (), returned: p_name: skip, p_proto: 57
+  alias: SKIP
+Call: getprotoent (), returned: p_name: ipv6-icmp, p_proto: 58
+  alias: IPv6-ICMP
+Call: getprotoent (), returned: p_name: ipv6-nonxt, p_proto: 59
+  alias: IPv6-NoNxt
+Call: getprotoent (), returned: p_name: ipv6-opts, p_proto: 60
+  alias: IPv6-Opts
+Call: getprotoent (), returned: p_name: rspf, p_proto: 73
+  alias: RSPF
+  alias: CPHB
+Call: getprotoent (), returned: p_name: vmtp, p_proto: 81
+  alias: VMTP
+Call: getprotoent (), returned: p_name: eigrp, p_proto: 88
+  alias: EIGRP
+Call: getprotoent (), returned: p_name: ospf, p_proto: 89
+  alias: OSPFIGP
+Call: getprotoent (), returned: p_name: ax.25, p_proto: 93
+  alias: AX.25
+Call: getprotoent (), returned: p_name: ipip, p_proto: 94
+  alias: IPIP
+Call: getprotoent (), returned: p_name: etherip, p_proto: 97
+  alias: ETHERIP
+Call: getprotoent (), returned: p_name: encap, p_proto: 98
+  alias: ENCAP
+Call: getprotoent (), returned: p_name: pim, p_proto: 103
+  alias: PIM
+Call: getprotoent (), returned: p_name: ipcomp, p_proto: 108
+  alias: IPCOMP
+Call: getprotoent (), returned: p_name: vrrp, p_proto: 112
+  alias: VRRP
+Call: getprotoent (), returned: p_name: l2tp, p_proto: 115
+  alias: L2TP
+Call: getprotoent (), returned: p_name: isis, p_proto: 124
+  alias: ISIS
+Call: getprotoent (), returned: p_name: sctp, p_proto: 132
+  alias: SCTP
+Call: getprotoent (), returned: p_name: fc, p_proto: 133
+  alias: FC
+Call: getprotoent (), returned: p_name: mobility-header, p_proto: 135
+  alias: Mobility-Header
+Call: getprotoent (), returned: p_name: udplite, p_proto: 136
+  alias: UDPLite
+Call: getprotoent (), returned: p_name: mpls-in-ip, p_proto: 137
+  alias: MPLS-in-IP
+Call: getprotoent (), returned: p_name: manet, p_proto: 138
+Call: getprotoent (), returned: p_name: hip, p_proto: 139
+  alias: HIP
+Call: getprotoent (), returned: p_name: shim6, p_proto: 140
+  alias: Shim6
+Call: getprotoent (), returned: p_name: wesp, p_proto: 141
+  alias: WESP
+Call: getprotoent (), returned: p_name: rohc, p_proto: 142
+  alias: ROHC
+Call: getprotoent () returned NULL
+Call: getservbyname ("domain", "tcp"), returned: s_name: domain, s_port: 53, s_proto: tcp
+Call: getservbyname ("domain", "udp"), returned: s_name: domain, s_port: 53, s_proto: udp
+Call: getservbyname ("domain", NULL), returned: s_name: domain, s_port: 53, s_proto: tcp
+Call: getservbyname ("not-existant", NULL) returned NULL
+Call: getservbyname ("", "") returned NULL
+Call: getservbyname ("", "tcp") returned NULL
+Call: getservbyport (htons(53), "tcp"), returned: s_name: domain, s_port: 53, s_proto: tcp
+Call: getservbyport (htons(53), NULL), returned: s_name: domain, s_port: 53, s_proto: tcp
+Call: getservbyport (htons(1), "udp") returned NULL
+Call: getservent (), returned: s_name: tcpmux, s_port: 1, s_proto: tcp
+Call: getservent (), returned: s_name: echo, s_port: 7, s_proto: tcp
+Call: getservent (), returned: s_name: echo, s_port: 7, s_proto: udp
+Call: getservent (), returned: s_name: discard, s_port: 9, s_proto: tcp
+  alias: sink
+  alias: null
+Call: getservent (), returned: s_name: discard, s_port: 9, s_proto: udp
+  alias: sink
+  alias: null
+Call: getservent (), returned: s_name: systat, s_port: 11, s_proto: tcp
+  alias: users
+Call: getservent (), returned: s_name: daytime, s_port: 13, s_proto: tcp
+Call: getservent (), returned: s_name: daytime, s_port: 13, s_proto: udp
+Call: getservent (), returned: s_name: netstat, s_port: 15, s_proto: tcp
+Call: getservent (), returned: s_name: qotd, s_port: 17, s_proto: tcp
+  alias: quote
+Call: getservent (), returned: s_name: chargen, s_port: 19, s_proto: tcp
+  alias: ttytst
+  alias: source
+Call: getservent (), returned: s_name: chargen, s_port: 19, s_proto: udp
+  alias: ttytst
+  alias: source
+Call: getservent (), returned: s_name: ftp-data, s_port: 20, s_proto: tcp
+Call: getservent (), returned: s_name: ftp, s_port: 21, s_proto: tcp
+Call: getservent (), returned: s_name: fsp, s_port: 21, s_proto: udp
+  alias: fspd
+Call: getservent (), returned: s_name: ssh, s_port: 22, s_proto: tcp
+Call: getservent (), returned: s_name: telnet, s_port: 23, s_proto: tcp
+Call: getservent (), returned: s_name: smtp, s_port: 25, s_proto: tcp
+  alias: mail
+Call: getservent (), returned: s_name: time, s_port: 37, s_proto: tcp
+  alias: timserver
+Call: getservent (), returned: s_name: time, s_port: 37, s_proto: udp
+  alias: timserver
+Call: getservent (), returned: s_name: whois, s_port: 43, s_proto: tcp
+  alias: nicname
+Call: getservent (), returned: s_name: tacacs, s_port: 49, s_proto: tcp
+Call: getservent (), returned: s_name: tacacs, s_port: 49, s_proto: udp
+Call: getservent (), returned: s_name: domain, s_port: 53, s_proto: tcp
+Call: getservent (), returned: s_name: domain, s_port: 53, s_proto: udp
+Call: getservent (), returned: s_name: bootps, s_port: 67, s_proto: udp
+Call: getservent (), returned: s_name: bootpc, s_port: 68, s_proto: udp
+Call: getservent (), returned: s_name: tftp, s_port: 69, s_proto: udp
+Call: getservent (), returned: s_name: gopher, s_port: 70, s_proto: tcp
+Call: getservent (), returned: s_name: finger, s_port: 79, s_proto: tcp
+Call: getservent (), returned: s_name: http, s_port: 80, s_proto: tcp
+  alias: www
+Call: getservent (), returned: s_name: kerberos, s_port: 88, s_proto: tcp
+  alias: kerberos5
+  alias: krb5
+  alias: kerberos-sec
+Call: getservent (), returned: s_name: kerberos, s_port: 88, s_proto: udp
+  alias: kerberos5
+  alias: krb5
+  alias: kerberos-sec
+Call: getservent (), returned: s_name: iso-tsap, s_port: 102, s_proto: tcp
+  alias: tsap
+Call: getservent (), returned: s_name: acr-nema, s_port: 104, s_proto: tcp
+  alias: dicom
+Call: getservent (), returned: s_name: pop3, s_port: 110, s_proto: tcp
+  alias: pop-3
+Call: getservent (), returned: s_name: sunrpc, s_port: 111, s_proto: tcp
+  alias: portmapper
+Call: getservent (), returned: s_name: sunrpc, s_port: 111, s_proto: udp
+  alias: portmapper
+Call: getservent (), returned: s_name: auth, s_port: 113, s_proto: tcp
+  alias: authentication
+  alias: tap
+  alias: ident
+Call: getservent (), returned: s_name: nntp, s_port: 119, s_proto: tcp
+  alias: readnews
+  alias: untp
+Call: getservent (), returned: s_name: ntp, s_port: 123, s_proto: udp
+Call: getservent (), returned: s_name: epmap, s_port: 135, s_proto: tcp
+  alias: loc-srv
+Call: getservent (), returned: s_name: netbios-ns, s_port: 137, s_proto: tcp
+Call: getservent (), returned: s_name: netbios-ns, s_port: 137, s_proto: udp
+Call: getservent (), returned: s_name: netbios-dgm, s_port: 138, s_proto: tcp
+Call: getservent (), returned: s_name: netbios-dgm, s_port: 138, s_proto: udp
+Call: getservent (), returned: s_name: netbios-ssn, s_port: 139, s_proto: tcp
+Call: getservent (), returned: s_name: netbios-ssn, s_port: 139, s_proto: udp
+Call: getservent (), returned: s_name: imap2, s_port: 143, s_proto: tcp
+  alias: imap
+Call: getservent (), returned: s_name: snmp, s_port: 161, s_proto: tcp
+Call: getservent (), returned: s_name: snmp, s_port: 161, s_proto: udp
+Call: getservent (), returned: s_name: snmp-trap, s_port: 162, s_proto: tcp
+  alias: snmptrap
+Call: getservent (), returned: s_name: snmp-trap, s_port: 162, s_proto: udp
+  alias: snmptrap
+Call: getservent (), returned: s_name: cmip-man, s_port: 163, s_proto: tcp
+Call: getservent (), returned: s_name: cmip-man, s_port: 163, s_proto: udp
+Call: getservent (), returned: s_name: cmip-agent, s_port: 164, s_proto: tcp
+Call: getservent (), returned: s_name: cmip-agent, s_port: 164, s_proto: udp
+Call: getservent (), returned: s_name: mailq, s_port: 174, s_proto: tcp
+Call: getservent (), returned: s_name: xdmcp, s_port: 177, s_proto: udp
+Call: getservent (), returned: s_name: bgp, s_port: 179, s_proto: tcp
+Call: getservent (), returned: s_name: smux, s_port: 199, s_proto: tcp
+Call: getservent (), returned: s_name: qmtp, s_port: 209, s_proto: tcp
+Call: getservent (), returned: s_name: z3950, s_port: 210, s_proto: tcp
+  alias: wais
+Call: getservent (), returned: s_name: ipx, s_port: 213, s_proto: udp
+Call: getservent (), returned: s_name: ptp-event, s_port: 319, s_proto: udp
+Call: getservent (), returned: s_name: ptp-general, s_port: 320, s_proto: udp
+Call: getservent (), returned: s_name: pawserv, s_port: 345, s_proto: tcp
+Call: getservent (), returned: s_name: zserv, s_port: 346, s_proto: tcp
+Call: getservent (), returned: s_name: rpc2portmap, s_port: 369, s_proto: tcp
+Call: getservent (), returned: s_name: rpc2portmap, s_port: 369, s_proto: udp
+Call: getservent (), returned: s_name: codaauth2, s_port: 370, s_proto: tcp
+Call: getservent (), returned: s_name: codaauth2, s_port: 370, s_proto: udp
+Call: getservent (), returned: s_name: clearcase, s_port: 371, s_proto: udp
+  alias: Clearcase
+Call: getservent (), returned: s_name: ldap, s_port: 389, s_proto: tcp
+Call: getservent (), returned: s_name: ldap, s_port: 389, s_proto: udp
+Call: getservent (), returned: s_name: svrloc, s_port: 427, s_proto: tcp
+Call: getservent (), returned: s_name: svrloc, s_port: 427, s_proto: udp
+Call: getservent (), returned: s_name: https, s_port: 443, s_proto: tcp
+Call: getservent (), returned: s_name: snpp, s_port: 444, s_proto: tcp
+Call: getservent (), returned: s_name: microsoft-ds, s_port: 445, s_proto: tcp
+Call: getservent (), returned: s_name: microsoft-ds, s_port: 445, s_proto: udp
+Call: getservent (), returned: s_name: kpasswd, s_port: 464, s_proto: tcp
+Call: getservent (), returned: s_name: kpasswd, s_port: 464, s_proto: udp
+Call: getservent (), returned: s_name: submissions, s_port: 465, s_proto: tcp
+  alias: ssmtp
+  alias: smtps
+  alias: urd
+Call: getservent (), returned: s_name: saft, s_port: 487, s_proto: tcp
+Call: getservent (), returned: s_name: isakmp, s_port: 500, s_proto: udp
+Call: getservent (), returned: s_name: rtsp, s_port: 554, s_proto: tcp
+Call: getservent (), returned: s_name: rtsp, s_port: 554, s_proto: udp
+Call: getservent (), returned: s_name: nqs, s_port: 607, s_proto: tcp
+Call: getservent (), returned: s_name: asf-rmcp, s_port: 623, s_proto: udp
+Call: getservent (), returned: s_name: qmqp, s_port: 628, s_proto: tcp
+Call: getservent (), returned: s_name: ipp, s_port: 631, s_proto: tcp
+Call: getservent (), returned: s_name: exec, s_port: 512, s_proto: tcp
+Call: getservent (), returned: s_name: biff, s_port: 512, s_proto: udp
+  alias: comsat
+Call: getservent (), returned: s_name: login, s_port: 513, s_proto: tcp
+Call: getservent (), returned: s_name: who, s_port: 513, s_proto: udp
+  alias: whod
+Call: getservent (), returned: s_name: shell, s_port: 514, s_proto: tcp
+  alias: cmd
+  alias: syslog
+Call: getservent (), returned: s_name: syslog, s_port: 514, s_proto: udp
+Call: getservent (), returned: s_name: printer, s_port: 515, s_proto: tcp
+  alias: spooler
+Call: getservent (), returned: s_name: talk, s_port: 517, s_proto: udp
+Call: getservent (), returned: s_name: ntalk, s_port: 518, s_proto: udp
+Call: getservent (), returned: s_name: route, s_port: 520, s_proto: udp
+  alias: router
+  alias: routed
+Call: getservent (), returned: s_name: gdomap, s_port: 538, s_proto: tcp
+Call: getservent (), returned: s_name: gdomap, s_port: 538, s_proto: udp
+Call: getservent (), returned: s_name: uucp, s_port: 540, s_proto: tcp
+  alias: uucpd
+Call: getservent (), returned: s_name: klogin, s_port: 543, s_proto: tcp
+Call: getservent (), returned: s_name: kshell, s_port: 544, s_proto: tcp
+  alias: krcmd
+Call: getservent (), returned: s_name: dhcpv6-client, s_port: 546, s_proto: udp
+Call: getservent (), returned: s_name: dhcpv6-server, s_port: 547, s_proto: udp
+Call: getservent (), returned: s_name: afpovertcp, s_port: 548, s_proto: tcp
+Call: getservent (), returned: s_name: nntps, s_port: 563, s_proto: tcp
+  alias: snntp
+Call: getservent (), returned: s_name: submission, s_port: 587, s_proto: tcp
+Call: getservent (), returned: s_name: ldaps, s_port: 636, s_proto: tcp
+Call: getservent (), returned: s_name: ldaps, s_port: 636, s_proto: udp
+Call: getservent (), returned: s_name: tinc, s_port: 655, s_proto: tcp
+Call: getservent (), returned: s_name: tinc, s_port: 655, s_proto: udp
+Call: getservent (), returned: s_name: silc, s_port: 706, s_proto: tcp
+Call: getservent (), returned: s_name: kerberos-adm, s_port: 749, s_proto: tcp
+Call: getservent (), returned: s_name: domain-s, s_port: 853, s_proto: tcp
+Call: getservent (), returned: s_name: domain-s, s_port: 853, s_proto: udp
+Call: getservent (), returned: s_name: rsync, s_port: 873, s_proto: tcp
+Call: getservent (), returned: s_name: ftps-data, s_port: 989, s_proto: tcp
+Call: getservent (), returned: s_name: ftps, s_port: 990, s_proto: tcp
+Call: getservent (), returned: s_name: telnets, s_port: 992, s_proto: tcp
+Call: getservent (), returned: s_name: imaps, s_port: 993, s_proto: tcp
+Call: getservent (), returned: s_name: pop3s, s_port: 995, s_proto: tcp
+Call: getservent (), returned: s_name: socks, s_port: 1080, s_proto: tcp
+Call: getservent (), returned: s_name: proofd, s_port: 1093, s_proto: tcp
+Call: getservent (), returned: s_name: rootd, s_port: 1094, s_proto: tcp
+Call: getservent (), returned: s_name: openvpn, s_port: 1194, s_proto: tcp
+Call: getservent (), returned: s_name: openvpn, s_port: 1194, s_proto: udp
+Call: getservent (), returned: s_name: rmiregistry, s_port: 1099, s_proto: tcp
+Call: getservent (), returned: s_name: lotusnote, s_port: 1352, s_proto: tcp
+  alias: lotusnotes
+Call: getservent (), returned: s_name: ms-sql-s, s_port: 1433, s_proto: tcp
+Call: getservent (), returned: s_name: ms-sql-s, s_port: 1433, s_proto: udp
+Call: getservent (), returned: s_name: ms-sql-m, s_port: 1434, s_proto: tcp
+Call: getservent (), returned: s_name: ms-sql-m, s_port: 1434, s_proto: udp
+Call: getservent (), returned: s_name: ingreslock, s_port: 1524, s_proto: tcp
+Call: getservent (), returned: s_name: datametrics, s_port: 1645, s_proto: tcp
+  alias: old-radius
+Call: getservent (), returned: s_name: datametrics, s_port: 1645, s_proto: udp
+  alias: old-radius
+Call: getservent (), returned: s_name: sa-msg-port, s_port: 1646, s_proto: tcp
+  alias: old-radacct
+Call: getservent (), returned: s_name: sa-msg-port, s_port: 1646, s_proto: udp
+  alias: old-radacct
+Call: getservent (), returned: s_name: kermit, s_port: 1649, s_proto: tcp
+Call: getservent (), returned: s_name: groupwise, s_port: 1677, s_proto: tcp
+Call: getservent (), returned: s_name: l2f, s_port: 1701, s_proto: udp
+  alias: l2tp
+Call: getservent (), returned: s_name: radius, s_port: 1812, s_proto: tcp
+Call: getservent (), returned: s_name: radius, s_port: 1812, s_proto: udp
+Call: getservent (), returned: s_name: radius-acct, s_port: 1813, s_proto: tcp
+  alias: radacct
+Call: getservent (), returned: s_name: radius-acct, s_port: 1813, s_proto: udp
+  alias: radacct
+Call: getservent (), returned: s_name: cisco-sccp, s_port: 2000, s_proto: tcp
+Call: getservent (), returned: s_name: nfs, s_port: 2049, s_proto: tcp
+Call: getservent (), returned: s_name: nfs, s_port: 2049, s_proto: udp
+Call: getservent (), returned: s_name: gnunet, s_port: 2086, s_proto: tcp
+Call: getservent (), returned: s_name: gnunet, s_port: 2086, s_proto: udp
+Call: getservent (), returned: s_name: rtcm-sc104, s_port: 2101, s_proto: tcp
+Call: getservent (), returned: s_name: rtcm-sc104, s_port: 2101, s_proto: udp
+Call: getservent (), returned: s_name: gsigatekeeper, s_port: 2119, s_proto: tcp
+Call: getservent (), returned: s_name: gris, s_port: 2135, s_proto: tcp
+Call: getservent (), returned: s_name: cvspserver, s_port: 2401, s_proto: tcp
+Call: getservent (), returned: s_name: venus, s_port: 2430, s_proto: tcp
+Call: getservent (), returned: s_name: venus, s_port: 2430, s_proto: udp
+Call: getservent (), returned: s_name: venus-se, s_port: 2431, s_proto: tcp
+Call: getservent (), returned: s_name: venus-se, s_port: 2431, s_proto: udp
+Call: getservent (), returned: s_name: codasrv, s_port: 2432, s_proto: tcp
+Call: getservent (), returned: s_name: codasrv, s_port: 2432, s_proto: udp
+Call: getservent (), returned: s_name: codasrv-se, s_port: 2433, s_proto: tcp
+Call: getservent (), returned: s_name: codasrv-se, s_port: 2433, s_proto: udp
+Call: getservent (), returned: s_name: mon, s_port: 2583, s_proto: tcp
+Call: getservent (), returned: s_name: mon, s_port: 2583, s_proto: udp
+Call: getservent (), returned: s_name: dict, s_port: 2628, s_proto: tcp
+Call: getservent (), returned: s_name: f5-globalsite, s_port: 2792, s_proto: tcp
+Call: getservent (), returned: s_name: gsiftp, s_port: 2811, s_proto: tcp
+Call: getservent (), returned: s_name: gpsd, s_port: 2947, s_proto: tcp
+Call: getservent (), returned: s_name: gds-db, s_port: 3050, s_proto: tcp
+  alias: gds_db
+Call: getservent (), returned: s_name: icpv2, s_port: 3130, s_proto: tcp
+  alias: icp
+Call: getservent (), returned: s_name: icpv2, s_port: 3130, s_proto: udp
+  alias: icp
+Call: getservent (), returned: s_name: isns, s_port: 3205, s_proto: tcp
+Call: getservent (), returned: s_name: isns, s_port: 3205, s_proto: udp
+Call: getservent (), returned: s_name: iscsi-target, s_port: 3260, s_proto: tcp
+Call: getservent (), returned: s_name: mysql, s_port: 3306, s_proto: tcp
+Call: getservent (), returned: s_name: ms-wbt-server, s_port: 3389, s_proto: tcp
+Call: getservent (), returned: s_name: nut, s_port: 3493, s_proto: tcp
+Call: getservent (), returned: s_name: nut, s_port: 3493, s_proto: udp
+Call: getservent (), returned: s_name: distcc, s_port: 3632, s_proto: tcp
+Call: getservent (), returned: s_name: distcc, s_port: 3632, s_proto: udp
+Call: getservent (), returned: s_name: daap, s_port: 3689, s_proto: tcp
+Call: getservent (), returned: s_name: daap, s_port: 3689, s_proto: udp
+Call: getservent (), returned: s_name: svn, s_port: 3690, s_proto: tcp
+  alias: subversion
+Call: getservent (), returned: s_name: svn, s_port: 3690, s_proto: udp
+  alias: subversion
+Call: getservent (), returned: s_name: suucp, s_port: 4031, s_proto: tcp
+Call: getservent (), returned: s_name: suucp, s_port: 4031, s_proto: udp
+Call: getservent (), returned: s_name: sysrqd, s_port: 4094, s_proto: tcp
+Call: getservent (), returned: s_name: sysrqd, s_port: 4094, s_proto: udp
+Call: getservent (), returned: s_name: sieve, s_port: 4190, s_proto: tcp
+Call: getservent (), returned: s_name: epmd, s_port: 4369, s_proto: tcp
+Call: getservent (), returned: s_name: epmd, s_port: 4369, s_proto: udp
+Call: getservent (), returned: s_name: remctl, s_port: 4373, s_proto: tcp
+Call: getservent (), returned: s_name: remctl, s_port: 4373, s_proto: udp
+Call: getservent (), returned: s_name: f5-iquery, s_port: 4353, s_proto: tcp
+Call: getservent (), returned: s_name: f5-iquery, s_port: 4353, s_proto: udp
+Call: getservent (), returned: s_name: ipsec-nat-t, s_port: 4500, s_proto: udp
+Call: getservent (), returned: s_name: iax, s_port: 4569, s_proto: tcp
+Call: getservent (), returned: s_name: iax, s_port: 4569, s_proto: udp
+Call: getservent (), returned: s_name: mtn, s_port: 4691, s_proto: tcp
+Call: getservent (), returned: s_name: mtn, s_port: 4691, s_proto: udp
+Call: getservent (), returned: s_name: radmin-port, s_port: 4899, s_proto: tcp
+Call: getservent (), returned: s_name: radmin-port, s_port: 4899, s_proto: udp
+Call: getservent (), returned: s_name: sip, s_port: 5060, s_proto: tcp
+Call: getservent (), returned: s_name: sip, s_port: 5060, s_proto: udp
+Call: getservent (), returned: s_name: sip-tls, s_port: 5061, s_proto: tcp
+Call: getservent (), returned: s_name: sip-tls, s_port: 5061, s_proto: udp
+Call: getservent (), returned: s_name: xmpp-client, s_port: 5222, s_proto: tcp
+  alias: jabber-client
+Call: getservent (), returned: s_name: xmpp-server, s_port: 5269, s_proto: tcp
+  alias: jabber-server
+Call: getservent (), returned: s_name: cfengine, s_port: 5308, s_proto: tcp
+Call: getservent (), returned: s_name: mdns, s_port: 5353, s_proto: udp
+Call: getservent (), returned: s_name: postgresql, s_port: 5432, s_proto: tcp
+  alias: postgres
+Call: getservent (), returned: s_name: freeciv, s_port: 5556, s_proto: tcp
+  alias: rptp
+Call: getservent (), returned: s_name: amqps, s_port: 5671, s_proto: tcp
+Call: getservent (), returned: s_name: amqp, s_port: 5672, s_proto: tcp
+Call: getservent (), returned: s_name: amqp, s_port: 5672, s_proto: udp
+Call: getservent (), returned: s_name: amqp, s_port: 5672, s_proto: sctp
+Call: getservent (), returned: s_name: x11, s_port: 6000, s_proto: tcp
+  alias: x11-0
+Call: getservent (), returned: s_name: x11-1, s_port: 6001, s_proto: tcp
+Call: getservent (), returned: s_name: x11-2, s_port: 6002, s_proto: tcp
+Call: getservent (), returned: s_name: x11-3, s_port: 6003, s_proto: tcp
+Call: getservent (), returned: s_name: x11-4, s_port: 6004, s_proto: tcp
+Call: getservent (), returned: s_name: x11-5, s_port: 6005, s_proto: tcp
+Call: getservent (), returned: s_name: x11-6, s_port: 6006, s_proto: tcp
+Call: getservent (), returned: s_name: x11-7, s_port: 6007, s_proto: tcp
+Call: getservent (), returned: s_name: gnutella-svc, s_port: 6346, s_proto: tcp
+Call: getservent (), returned: s_name: gnutella-svc, s_port: 6346, s_proto: udp
+Call: getservent (), returned: s_name: gnutella-rtr, s_port: 6347, s_proto: tcp
+Call: getservent (), returned: s_name: gnutella-rtr, s_port: 6347, s_proto: udp
+Call: getservent (), returned: s_name: sge-qmaster, s_port: 6444, s_proto: tcp
+  alias: sge_qmaster
+Call: getservent (), returned: s_name: sge-execd, s_port: 6445, s_proto: tcp
+  alias: sge_execd
+Call: getservent (), returned: s_name: mysql-proxy, s_port: 6446, s_proto: tcp
+Call: getservent (), returned: s_name: babel, s_port: 6696, s_proto: udp
+Call: getservent (), returned: s_name: ircs-u, s_port: 6697, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-fileserver, s_port: 7000, s_proto: tcp
+  alias: bbs
+Call: getservent (), returned: s_name: afs3-fileserver, s_port: 7000, s_proto: udp
+  alias: bbs
+Call: getservent (), returned: s_name: afs3-callback, s_port: 7001, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-callback, s_port: 7001, s_proto: udp
+Call: getservent (), returned: s_name: afs3-prserver, s_port: 7002, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-prserver, s_port: 7002, s_proto: udp
+Call: getservent (), returned: s_name: afs3-vlserver, s_port: 7003, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-vlserver, s_port: 7003, s_proto: udp
+Call: getservent (), returned: s_name: afs3-kaserver, s_port: 7004, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-kaserver, s_port: 7004, s_proto: udp
+Call: getservent (), returned: s_name: afs3-volser, s_port: 7005, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-volser, s_port: 7005, s_proto: udp
+Call: getservent (), returned: s_name: afs3-errors, s_port: 7006, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-errors, s_port: 7006, s_proto: udp
+Call: getservent (), returned: s_name: afs3-bos, s_port: 7007, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-bos, s_port: 7007, s_proto: udp
+Call: getservent (), returned: s_name: afs3-update, s_port: 7008, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-update, s_port: 7008, s_proto: udp
+Call: getservent (), returned: s_name: afs3-rmtsys, s_port: 7009, s_proto: tcp
+Call: getservent (), returned: s_name: afs3-rmtsys, s_port: 7009, s_proto: udp
+Call: getservent (), returned: s_name: font-service, s_port: 7100, s_proto: tcp
+  alias: xfs
+Call: getservent (), returned: s_name: http-alt, s_port: 8080, s_proto: tcp
+  alias: webcache
+Call: getservent (), returned: s_name: puppet, s_port: 8140, s_proto: tcp
+Call: getservent (), returned: s_name: bacula-dir, s_port: 9101, s_proto: tcp
+Call: getservent (), returned: s_name: bacula-fd, s_port: 9102, s_proto: tcp
+Call: getservent (), returned: s_name: bacula-sd, s_port: 9103, s_proto: tcp
+Call: getservent (), returned: s_name: xmms2, s_port: 9667, s_proto: tcp
+Call: getservent (), returned: s_name: nbd, s_port: 10809, s_proto: tcp
+Call: getservent (), returned: s_name: zabbix-agent, s_port: 10050, s_proto: tcp
+Call: getservent (), returned: s_name: zabbix-trapper, s_port: 10051, s_proto: tcp
+Call: getservent (), returned: s_name: amanda, s_port: 10080, s_proto: tcp
+Call: getservent (), returned: s_name: dicom, s_port: 11112, s_proto: tcp
+Call: getservent (), returned: s_name: hkp, s_port: 11371, s_proto: tcp
+Call: getservent (), returned: s_name: db-lsp, s_port: 17500, s_proto: tcp
+Call: getservent (), returned: s_name: dcap, s_port: 22125, s_proto: tcp
+Call: getservent (), returned: s_name: gsidcap, s_port: 22128, s_proto: tcp
+Call: getservent (), returned: s_name: wnn6, s_port: 22273, s_proto: tcp
+Call: getservent (), returned: s_name: rtmp, s_port: 1, s_proto: ddp
+Call: getservent (), returned: s_name: nbp, s_port: 2, s_proto: ddp
+Call: getservent (), returned: s_name: echo, s_port: 4, s_proto: ddp
+Call: getservent (), returned: s_name: zip, s_port: 6, s_proto: ddp
+Call: getservent (), returned: s_name: kerberos4, s_port: 750, s_proto: udp
+  alias: kerberos-iv
+  alias: kdc
+Call: getservent (), returned: s_name: kerberos4, s_port: 750, s_proto: tcp
+  alias: kerberos-iv
+  alias: kdc
+Call: getservent (), returned: s_name: kerberos-master, s_port: 751, s_proto: udp
+  alias: kerberos_master
+Call: getservent (), returned: s_name: kerberos-master, s_port: 751, s_proto: tcp
+Call: getservent (), returned: s_name: passwd-server, s_port: 752, s_proto: udp
+  alias: passwd_server
+Call: getservent (), returned: s_name: krb-prop, s_port: 754, s_proto: tcp
+  alias: krb_prop
+  alias: krb5_prop
+  alias: hprop
+Call: getservent (), returned: s_name: zephyr-srv, s_port: 2102, s_proto: udp
+Call: getservent (), returned: s_name: zephyr-clt, s_port: 2103, s_proto: udp
+Call: getservent (), returned: s_name: zephyr-hm, s_port: 2104, s_proto: udp
+Call: getservent (), returned: s_name: iprop, s_port: 2121, s_proto: tcp
+Call: getservent (), returned: s_name: supfilesrv, s_port: 871, s_proto: tcp
+Call: getservent (), returned: s_name: supfiledbg, s_port: 1127, s_proto: tcp
+Call: getservent (), returned: s_name: poppassd, s_port: 106, s_proto: tcp
+Call: getservent (), returned: s_name: poppassd, s_port: 106, s_proto: udp
+Call: getservent (), returned: s_name: moira-db, s_port: 775, s_proto: tcp
+  alias: moira_db
+Call: getservent (), returned: s_name: moira-update, s_port: 777, s_proto: tcp
+  alias: moira_update
+Call: getservent (), returned: s_name: moira-ureg, s_port: 779, s_proto: udp
+  alias: moira_ureg
+Call: getservent (), returned: s_name: spamd, s_port: 783, s_proto: tcp
+Call: getservent (), returned: s_name: skkserv, s_port: 1178, s_proto: tcp
+Call: getservent (), returned: s_name: predict, s_port: 1210, s_proto: udp
+Call: getservent (), returned: s_name: rmtcfg, s_port: 1236, s_proto: tcp
+Call: getservent (), returned: s_name: xtel, s_port: 1313, s_proto: tcp
+Call: getservent (), returned: s_name: xtelw, s_port: 1314, s_proto: tcp
+Call: getservent (), returned: s_name: support, s_port: 1529, s_proto: tcp
+Call: getservent (), returned: s_name: cfinger, s_port: 2003, s_proto: tcp
+Call: getservent (), returned: s_name: frox, s_port: 2121, s_proto: tcp
+Call: getservent (), returned: s_name: zebrasrv, s_port: 2600, s_proto: tcp
+Call: getservent (), returned: s_name: zebra, s_port: 2601, s_proto: tcp
+Call: getservent (), returned: s_name: ripd, s_port: 2602, s_proto: tcp
+Call: getservent (), returned: s_name: ripngd, s_port: 2603, s_proto: tcp
+Call: getservent (), returned: s_name: ospfd, s_port: 2604, s_proto: tcp
+Call: getservent (), returned: s_name: bgpd, s_port: 2605, s_proto: tcp
+Call: getservent (), returned: s_name: ospf6d, s_port: 2606, s_proto: tcp
+Call: getservent (), returned: s_name: ospfapi, s_port: 2607, s_proto: tcp
+Call: getservent (), returned: s_name: isisd, s_port: 2608, s_proto: tcp
+Call: getservent (), returned: s_name: afbackup, s_port: 2988, s_proto: tcp
+Call: getservent (), returned: s_name: afbackup, s_port: 2988, s_proto: udp
+Call: getservent (), returned: s_name: afmbackup, s_port: 2989, s_proto: tcp
+Call: getservent (), returned: s_name: afmbackup, s_port: 2989, s_proto: udp
+Call: getservent (), returned: s_name: fax, s_port: 4557, s_proto: tcp
+Call: getservent (), returned: s_name: hylafax, s_port: 4559, s_proto: tcp
+Call: getservent (), returned: s_name: distmp3, s_port: 4600, s_proto: tcp
+Call: getservent (), returned: s_name: munin, s_port: 4949, s_proto: tcp
+  alias: lrrd
+Call: getservent (), returned: s_name: enbd-cstatd, s_port: 5051, s_proto: tcp
+Call: getservent (), returned: s_name: enbd-sstatd, s_port: 5052, s_proto: tcp
+Call: getservent (), returned: s_name: pcrd, s_port: 5151, s_proto: tcp
+Call: getservent (), returned: s_name: noclog, s_port: 5354, s_proto: tcp
+Call: getservent (), returned: s_name: noclog, s_port: 5354, s_proto: udp
+Call: getservent (), returned: s_name: hostmon, s_port: 5355, s_proto: tcp
+Call: getservent (), returned: s_name: hostmon, s_port: 5355, s_proto: udp
+Call: getservent (), returned: s_name: rplay, s_port: 5555, s_proto: udp
+Call: getservent (), returned: s_name: nrpe, s_port: 5666, s_proto: tcp
+Call: getservent (), returned: s_name: nsca, s_port: 5667, s_proto: tcp
+Call: getservent (), returned: s_name: mrtd, s_port: 5674, s_proto: tcp
+Call: getservent (), returned: s_name: bgpsim, s_port: 5675, s_proto: tcp
+Call: getservent (), returned: s_name: canna, s_port: 5680, s_proto: tcp
+Call: getservent (), returned: s_name: syslog-tls, s_port: 6514, s_proto: tcp
+Call: getservent (), returned: s_name: sane-port, s_port: 6566, s_proto: tcp
+  alias: sane
+  alias: saned
+Call: getservent (), returned: s_name: ircd, s_port: 6667, s_proto: tcp
+Call: getservent (), returned: s_name: zope-ftp, s_port: 8021, s_proto: tcp
+Call: getservent (), returned: s_name: tproxy, s_port: 8081, s_proto: tcp
+Call: getservent (), returned: s_name: omniorb, s_port: 8088, s_proto: tcp
+Call: getservent (), returned: s_name: omniorb, s_port: 8088, s_proto: udp
+Call: getservent (), returned: s_name: clc-build-daemon, s_port: 8990, s_proto: tcp
+Call: getservent (), returned: s_name: xinetd, s_port: 9098, s_proto: tcp
+Call: getservent (), returned: s_name: mandelspawn, s_port: 9359, s_proto: udp
+  alias: mandelbrot
+Call: getservent (), returned: s_name: git, s_port: 9418, s_proto: tcp
+Call: getservent (), returned: s_name: zope, s_port: 9673, s_proto: tcp
+Call: getservent (), returned: s_name: webmin, s_port: 10000, s_proto: tcp
+Call: getservent (), returned: s_name: kamanda, s_port: 10081, s_proto: tcp
+Call: getservent (), returned: s_name: amandaidx, s_port: 10082, s_proto: tcp
+Call: getservent (), returned: s_name: amidxtape, s_port: 10083, s_proto: tcp
+Call: getservent (), returned: s_name: smsqp, s_port: 11201, s_proto: tcp
+Call: getservent (), returned: s_name: smsqp, s_port: 11201, s_proto: udp
+Call: getservent (), returned: s_name: xpilot, s_port: 15345, s_proto: tcp
+Call: getservent (), returned: s_name: xpilot, s_port: 15345, s_proto: udp
+Call: getservent (), returned: s_name: sgi-cmsd, s_port: 17001, s_proto: udp
+Call: getservent (), returned: s_name: sgi-crsd, s_port: 17002, s_proto: udp
+Call: getservent (), returned: s_name: sgi-gcd, s_port: 17003, s_proto: udp
+Call: getservent (), returned: s_name: sgi-cad, s_port: 17004, s_proto: tcp
+Call: getservent (), returned: s_name: isdnlog, s_port: 20011, s_proto: tcp
+Call: getservent (), returned: s_name: isdnlog, s_port: 20011, s_proto: udp
+Call: getservent (), returned: s_name: vboxd, s_port: 20012, s_proto: tcp
+Call: getservent (), returned: s_name: vboxd, s_port: 20012, s_proto: udp
+Call: getservent (), returned: s_name: binkp, s_port: 24554, s_proto: tcp
+Call: getservent (), returned: s_name: asp, s_port: 27374, s_proto: tcp
+Call: getservent (), returned: s_name: asp, s_port: 27374, s_proto: udp
+Call: getservent (), returned: s_name: csync2, s_port: 30865, s_proto: tcp
+Call: getservent (), returned: s_name: dircproxy, s_port: 57000, s_proto: tcp
+Call: getservent (), returned: s_name: tfido, s_port: 60177, s_proto: tcp
+Call: getservent (), returned: s_name: fido, s_port: 60179, s_proto: tcp
+Call: getservent () returned NULL
+No visible errors occurred!

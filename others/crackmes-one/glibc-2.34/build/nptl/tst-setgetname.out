@@ -1,0 +1,7 @@
+PASS: Test 1 - pthread_getname_np and /proc agree.
+PASS: Test 2 - Value used in pthread_setname_np and /proc agree.
+PASS: Test 3 - pthread_setname_np returned ERANGE for a process name that was too long.
+PASS: Test 3 - Original name unchanged after pthread_setname_np returned ERANGE.
+PASS: Test 4 - Longest name set via pthread_setname_np agrees with /proc.
+PASS: Test 5 - ERANGE and buffer unmodified.
+PASS: Test 6 - Read back longest name correctly.

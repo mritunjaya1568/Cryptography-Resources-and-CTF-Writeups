@@ -1,0 +1,4 @@
+Set handler.
+Sending myself signal 15.
+Received signal 15 (Terminated).
+Got a signal.  Test succeeded.

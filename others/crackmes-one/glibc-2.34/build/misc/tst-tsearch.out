@@ -1,0 +1,118 @@
+Series I
+Pass 1... int_al16:  0x7ffc54fddf30 16
+double:  12 0x7ffc54fddf18 8
+ldouble: 15 0x7ffc54fddf20 16
+int_al16:  0x7ffc54fddf20 16
+double:  12 0x7ffc54fddf08 8
+ldouble: 15 0x7ffc54fddf10 16
+ ok.
+Pass 2...  ok.
+Pass 3...  ok.
+Pass 4...  ok.
+Pass 5...  ok.
+Pass 6...  ok.
+Pass 7...  ok.
+Pass 8...  ok.
+Pass 9...  ok.
+Pass 10...  ok.
+Pass 11...  ok.
+Pass 12...  ok.
+Pass 13...  ok.
+Pass 14...  ok.
+Pass 15...  ok.
+Pass 16...  ok.
+Pass 17...  ok.
+Pass 18...  ok.
+Pass 19...  ok.
+Pass 20...  ok.
+Pass 21...  ok.
+Pass 22...  ok.
+Pass 23...  ok.
+Pass 24...  ok.
+Pass 25...  ok.
+Pass 26...  ok.
+Pass 27...  ok.
+Pass 28...  ok.
+Pass 29...  ok.
+Pass 30...  ok.
+Pass 31...  ok.
+Pass 32...  ok.
+Pass 33...  ok.
+Pass 34...  ok.
+Pass 35...  ok.
+Pass 36...  ok.
+Pass 37...  ok.
+Pass 38...  ok.
+Pass 39...  ok.
+Pass 40...  ok.
+Pass 41...  ok.
+Pass 42...  ok.
+Pass 43...  ok.
+Pass 44...  ok.
+Pass 45...  ok.
+Pass 46...  ok.
+Pass 47...  ok.
+Pass 48...  ok.
+Pass 49...  ok.
+Pass 50...  ok.
+Pass 51...  ok.
+Pass 52...  ok.
+Pass 53...  ok.
+Pass 54...  ok.
+Pass 55...  ok.
+Pass 56...  ok.
+Pass 57...  ok.
+Pass 58...  ok.
+Pass 59...  ok.
+Pass 60...  ok.
+Pass 61...  ok.
+Pass 62...  ok.
+Pass 63...  ok.
+Pass 64...  ok.
+Pass 65...  ok.
+Pass 66...  ok.
+Pass 67...  ok.
+Pass 68...  ok.
+Pass 69...  ok.
+Pass 70...  ok.
+Pass 71...  ok.
+Pass 72...  ok.
+Pass 73...  ok.
+Pass 74...  ok.
+Pass 75...  ok.
+Pass 76...  ok.
+Pass 77...  ok.
+Pass 78...  ok.
+Pass 79...  ok.
+Pass 80...  ok.
+Pass 81...  ok.
+Pass 82...  ok.
+Pass 83...  ok.
+Pass 84...  ok.
+Pass 85...  ok.
+Pass 86...  ok.
+Pass 87...  ok.
+Pass 88...  ok.
+Pass 89...  ok.
+Pass 90...  ok.
+Pass 91...  ok.
+Pass 92...  ok.
+Pass 93...  ok.
+Pass 94...  ok.
+Pass 95...  ok.
+Pass 96...  ok.
+Pass 97...  ok.
+Pass 98...  ok.
+Pass 99...  ok.
+Pass 100...  ok.
+Series II
+For size 1...  ok.
+For size 2...  ok.
+For size 4...  ok.
+For size 8...  ok.
+For size 16...  ok.
+For size 32...  ok.
+For size 64...  ok.
+For size 128...  ok.
+For size 256...  ok.
+For size 512...  ok.

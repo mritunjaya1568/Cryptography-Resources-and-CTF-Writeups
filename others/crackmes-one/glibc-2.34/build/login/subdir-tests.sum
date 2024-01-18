@@ -1,0 +1,13 @@
+PASS: login/check-abi-libutil
+PASS: login/check-installed-headers-c
+PASS: login/check-installed-headers-cxx
+PASS: login/check-obsolete-constructs
+PASS: login/check-wrapper-headers
+PASS: login/tst-getlogin
+PASS: login/tst-grantpt
+PASS: login/tst-ptsname
+PASS: login/tst-pututxline-cache
+PASS: login/tst-pututxline-lockfail
+PASS: login/tst-updwtmpx
+PASS: login/tst-utmp
+PASS: login/tst-utmpx

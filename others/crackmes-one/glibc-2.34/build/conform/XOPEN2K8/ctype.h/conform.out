@@ -1,0 +1,71 @@
+PASS: Availability of <ctype.h>
+PASS: Combined <ctype.h> test
+PASSCOMBINED: Availability of function isalnum
+PASSCOMBINED: Type of function isalnum
+PASSCOMBINED: Availability of function isalpha
+PASSCOMBINED: Type of function isalpha
+PASSCOMBINED: Availability of function iscntrl
+PASSCOMBINED: Type of function iscntrl
+PASSCOMBINED: Availability of function isdigit
+PASSCOMBINED: Type of function isdigit
+PASSCOMBINED: Availability of function isgraph
+PASSCOMBINED: Type of function isgraph
+PASSCOMBINED: Availability of function islower
+PASSCOMBINED: Type of function islower
+PASSCOMBINED: Availability of function isprint
+PASSCOMBINED: Type of function isprint
+PASSCOMBINED: Availability of function ispunct
+PASSCOMBINED: Type of function ispunct
+PASSCOMBINED: Availability of function isspace
+PASSCOMBINED: Type of function isspace
+PASSCOMBINED: Availability of function isupper
+PASSCOMBINED: Type of function isupper
+PASSCOMBINED: Availability of function isxdigit
+PASSCOMBINED: Type of function isxdigit
+PASSCOMBINED: Availability of function tolower
+PASSCOMBINED: Type of function tolower
+PASSCOMBINED: Availability of function toupper
+PASSCOMBINED: Type of function toupper
+PASSCOMBINED: Availability of function isblank
+PASSCOMBINED: Type of function isblank
+PASSCOMBINED: Availability of function isascii
+PASSCOMBINED: Type of function isascii
+PASSCOMBINED: Availability of function toascii
+PASSCOMBINED: Type of function toascii
+PASSCOMBINED: Availability of function _toupper
+PASSCOMBINED: Type of function _toupper
+PASSCOMBINED: Availability of function _tolower
+PASSCOMBINED: Type of function _tolower
+PASSCOMBINED: Availability of type locale_t
+PASSCOMBINED: Availability of function isalnum_l
+PASSCOMBINED: Type of function isalnum_l
+PASSCOMBINED: Availability of function isalpha_l
+PASSCOMBINED: Type of function isalpha_l
+PASSCOMBINED: Availability of function iscntrl_l
+PASSCOMBINED: Type of function iscntrl_l
+PASSCOMBINED: Availability of function isdigit_l
+PASSCOMBINED: Type of function isdigit_l
+PASSCOMBINED: Availability of function isgraph_l
+PASSCOMBINED: Type of function isgraph_l
+PASSCOMBINED: Availability of function islower_l
+PASSCOMBINED: Type of function islower_l
+PASSCOMBINED: Availability of function isprint_l
+PASSCOMBINED: Type of function isprint_l
+PASSCOMBINED: Availability of function ispunct_l
+PASSCOMBINED: Type of function ispunct_l
+PASSCOMBINED: Availability of function isspace_l
+PASSCOMBINED: Type of function isspace_l
+PASSCOMBINED: Availability of function isupper_l
+PASSCOMBINED: Type of function isupper_l
+PASSCOMBINED: Availability of function isxdigit_l
+PASSCOMBINED: Type of function isxdigit_l
+PASSCOMBINED: Availability of function tolower_l
+PASSCOMBINED: Type of function tolower_l
+PASSCOMBINED: Availability of function toupper_l
+PASSCOMBINED: Type of function toupper_l
+PASS: Namespace of <ctype.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   65
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

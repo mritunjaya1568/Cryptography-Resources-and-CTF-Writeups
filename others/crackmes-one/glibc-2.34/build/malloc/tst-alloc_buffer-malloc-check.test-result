@@ -1,0 +1,2 @@
+PASS: malloc/tst-alloc_buffer-malloc-check
+original exit status 0

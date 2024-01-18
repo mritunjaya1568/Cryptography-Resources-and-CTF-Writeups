@@ -1,0 +1,1 @@
+PASS: C11 math functions present in C++11 without _GNU_SOURCE.

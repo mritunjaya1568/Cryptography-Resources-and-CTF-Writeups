@@ -1,0 +1,5 @@
+                      C	simple_strncasecmp	stupid_strncasecmp	__strncasecmp_avx	__strncasecmp_sse42	__strncasecmp_ssse3	__strncasecmp_sse2
+       en_US.ISO-8859-1	simple_strncasecmp	stupid_strncasecmp	__strncasecmp_avx	__strncasecmp_sse42	__strncasecmp_ssse3	__strncasecmp_sse2
+            en_US.UTF-8	simple_strncasecmp	stupid_strncasecmp	__strncasecmp_avx	__strncasecmp_sse42	__strncasecmp_ssse3	__strncasecmp_sse2
+       tr_TR.ISO-8859-9	simple_strncasecmp	stupid_strncasecmp	__strncasecmp_avx	__strncasecmp_sse42	__strncasecmp_ssse3	__strncasecmp_sse2
+            tr_TR.UTF-8	simple_strncasecmp	stupid_strncasecmp	__strncasecmp_avx	__strncasecmp_sse42	__strncasecmp_ssse3	__strncasecmp_sse2

@@ -1,0 +1,7 @@
+&cond = 0x7f209a5dc0a0
+&mut = 0x7f209a5dc020
+parent: get mutex
+parent: create child
+parent: wait for child to lock mutex
+child: got mutex; waiting
+Didn't expect signal from child: got `Aborted'

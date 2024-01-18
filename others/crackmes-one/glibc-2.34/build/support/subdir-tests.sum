@@ -1,0 +1,17 @@
+PASS: support/README-testing
+PASS: support/tst-support-namespace
+PASS: support/tst-support-process_state
+PASS: support/tst-support_blob_repeat
+PASS: support/tst-support_capture_subprocess
+PASS: support/tst-support_descriptors
+PASS: support/tst-support_format_dns_packet
+PASS: support/tst-support_quote_blob
+PASS: support/tst-support_quote_string
+PASS: support/tst-support_record_failure
+PASS: support/tst-support_record_failure-2
+PASS: support/tst-test_compare
+PASS: support/tst-test_compare_blob
+PASS: support/tst-test_compare_string
+PASS: support/tst-timespec
+PASS: support/tst-xreadlink
+PASS: support/tst-xsigstack

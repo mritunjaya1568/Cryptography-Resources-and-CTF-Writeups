@@ -1,0 +1,44 @@
+PASS: Availability of <regex.h>
+PASS: Combined <regex.h> test
+PASSCOMBINED: Availability of type regex_t
+PASSCOMBINED: Availability of member re_nsub
+PASSCOMBINED: Type of member re_nsub
+PASSCOMBINED: Availability of type regoff_t
+PASSCOMBINED: Availability of type regmatch_t
+PASSCOMBINED: Availability of member rm_so
+PASSCOMBINED: Type of member rm_so
+PASSCOMBINED: Availability of member rm_eo
+PASSCOMBINED: Type of member rm_eo
+PASSCOMBINED: Availability of constant REG_EXTENDED
+PASSCOMBINED: Availability of constant REG_ICASE
+PASSCOMBINED: Availability of constant REG_NOSUB
+PASSCOMBINED: Availability of constant REG_NEWLINE
+PASSCOMBINED: Availability of constant REG_NOTBOL
+PASSCOMBINED: Availability of constant REG_NOTEOL
+PASSCOMBINED: Availability of constant REG_NOMATCH
+PASSCOMBINED: Availability of constant REG_BADPAT
+PASSCOMBINED: Availability of constant REG_ECOLLATE
+PASSCOMBINED: Availability of constant REG_ECTYPE
+PASSCOMBINED: Availability of constant REG_EESCAPE
+PASSCOMBINED: Availability of constant REG_ESUBREG
+PASSCOMBINED: Availability of constant REG_EBRACK
+PASSCOMBINED: Availability of constant REG_EPAREN
+PASSCOMBINED: Availability of constant REG_EBRACE
+PASSCOMBINED: Availability of constant REG_BADBR
+PASSCOMBINED: Availability of constant REG_ERANGE
+PASSCOMBINED: Availability of constant REG_ESPACE
+PASSCOMBINED: Availability of constant REG_BADRPT
+PASSCOMBINED: Availability of function regcomp
+PASSCOMBINED: Type of function regcomp
+PASSCOMBINED: Availability of function regexec
+PASSCOMBINED: Type of function regexec
+PASSCOMBINED: Availability of function regerror
+PASSCOMBINED: Type of function regerror
+PASSCOMBINED: Availability of function regfree
+PASSCOMBINED: Type of function regfree
+PASS: Namespace of <regex.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   38
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

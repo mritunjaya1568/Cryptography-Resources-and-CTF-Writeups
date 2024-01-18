@@ -1,0 +1,26 @@
+making contexts
+start f1(a00=00000001,a01=00000004,a02=00000012,a03=00000048,
+         a04=00000123,a05=0000048d,a06=00001234,a07=000048d1,
+         a08=00012345,a09=00048d15,a10=00123456,a11=0048d159,
+         a12=01234567,a13=048d159e,a14=12345678,a15=48d159e2,
+         a16=23456789,a17=8d159e26,a18=3456789a,a19=d159e26a,
+         a20=456789ab,a21=159e26af,a22=56789abc,a23=59e26af3,
+         a24=6789abcd,a25=9e26af37,a26=789abcde,a27=e26af37b,
+         a28=89abcdef,a29=26af37bc,a30=9abcdef0,a31=6af37bc3,
+         a32=abcdef0f) [0]
+finish f1 [0]
+swapping contexts
+start f2
+start f1(a00=00000002,a01=00000008,a02=00000024,a03=00000090,
+         a04=00000246,a05=0000091a,a06=00002468,a07=000091a2,
+         a08=0002468a,a09=00091a2a,a10=002468ac,a11=0091a2b2,
+         a12=02468ace,a13=091a2b3c,a14=2468acf0,a15=91a2b3c4,
+         a16=468acf12,a17=1a2b3c4c,a18=68acf134,a19=a2b3c4d4,
+         a20=8acf1356,a21=2b3c4d5e,a22=acf13578,a23=b3c4d5e6,
+         a24=cf13579a,a25=3c4d5e6e,a26=f13579bc,a27=c4d5e6f6,
+         a28=13579bde,a29=4d5e6f78,a30=3579bde0,a31=d5e6f786,
+         a32=579bde1e) [1]
+finish f2
+finish f1 [1]
+back at main program
+test succeeded

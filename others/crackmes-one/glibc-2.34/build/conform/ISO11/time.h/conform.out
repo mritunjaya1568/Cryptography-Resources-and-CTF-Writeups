@@ -1,0 +1,64 @@
+PASS: Availability of <time.h>
+PASS: Combined <time.h> test
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of macro CLOCKS_PER_SEC
+PASSCOMBINED: Type of symbol CLOCKS_PER_SEC
+PASSCOMBINED: Availability of macro TIME_UTC
+PASSCOMBINED: Availability of constant TIME_UTC
+PASSCOMBINED: #if usability of symbol TIME_UTC
+PASSCOMBINED: Value of symbol TIME_UTC
+PASSCOMBINED: Availability of type struct timespec
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_nsec
+PASSCOMBINED: Type of member tv_nsec
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type clock_t
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type struct tm
+PASSCOMBINED: Availability of member tm_sec
+PASSCOMBINED: Type of member tm_sec
+PASSCOMBINED: Availability of member tm_min
+PASSCOMBINED: Type of member tm_min
+PASSCOMBINED: Availability of member tm_hour
+PASSCOMBINED: Type of member tm_hour
+PASSCOMBINED: Availability of member tm_mday
+PASSCOMBINED: Type of member tm_mday
+PASSCOMBINED: Availability of member tm_mon
+PASSCOMBINED: Type of member tm_mon
+PASSCOMBINED: Availability of member tm_year
+PASSCOMBINED: Type of member tm_year
+PASSCOMBINED: Availability of member tm_wday
+PASSCOMBINED: Type of member tm_wday
+PASSCOMBINED: Availability of member tm_yday
+PASSCOMBINED: Type of member tm_yday
+PASSCOMBINED: Availability of member tm_isdst
+PASSCOMBINED: Type of member tm_isdst
+PASSCOMBINED: Availability of function clock
+PASSCOMBINED: Type of function clock
+PASSCOMBINED: Availability of function difftime
+PASSCOMBINED: Type of function difftime
+PASSCOMBINED: Availability of function mktime
+PASSCOMBINED: Type of function mktime
+PASSCOMBINED: Availability of function time
+PASSCOMBINED: Type of function time
+PASSCOMBINED: Availability of function asctime
+PASSCOMBINED: Type of function asctime
+PASSCOMBINED: Availability of function ctime
+PASSCOMBINED: Type of function ctime
+PASSCOMBINED: Availability of function gmtime
+PASSCOMBINED: Type of function gmtime
+PASSCOMBINED: Availability of function localtime
+PASSCOMBINED: Type of function localtime
+PASSCOMBINED: Availability of function strftime
+PASSCOMBINED: Type of function strftime
+PASSCOMBINED: Availability of function timespec_get
+PASSCOMBINED: Type of function timespec_get
+PASS: Namespace of <time.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   58
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

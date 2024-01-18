@@ -1,0 +1,398 @@
+PASS: Availability of <errno.h>
+PASS: Combined <errno.h> test
+PASSCOMBINED: Availability of macro EDOM
+PASSCOMBINED: Availability of constant EDOM
+PASSCOMBINED: #if usability of symbol EDOM
+PASSCOMBINED: Type of symbol EDOM
+PASSCOMBINED: Value of symbol EDOM
+PASSCOMBINED: Availability of macro EILSEQ
+PASSCOMBINED: Availability of constant EILSEQ
+PASSCOMBINED: #if usability of symbol EILSEQ
+PASSCOMBINED: Type of symbol EILSEQ
+PASSCOMBINED: Value of symbol EILSEQ
+PASSCOMBINED: Availability of macro ERANGE
+PASSCOMBINED: Availability of constant ERANGE
+PASSCOMBINED: #if usability of symbol ERANGE
+PASSCOMBINED: Type of symbol ERANGE
+PASSCOMBINED: Value of symbol ERANGE
+PASSCOMBINED: Availability of macro E2BIG
+PASSCOMBINED: Availability of constant E2BIG
+PASSCOMBINED: #if usability of symbol E2BIG
+PASSCOMBINED: Type of symbol E2BIG
+PASSCOMBINED: Value of symbol E2BIG
+PASSCOMBINED: Availability of macro EACCES
+PASSCOMBINED: Availability of constant EACCES
+PASSCOMBINED: #if usability of symbol EACCES
+PASSCOMBINED: Type of symbol EACCES
+PASSCOMBINED: Value of symbol EACCES
+PASSCOMBINED: Availability of macro EADDRINUSE
+PASSCOMBINED: Availability of constant EADDRINUSE
+PASSCOMBINED: #if usability of symbol EADDRINUSE
+PASSCOMBINED: Type of symbol EADDRINUSE
+PASSCOMBINED: Value of symbol EADDRINUSE
+PASSCOMBINED: Availability of macro EADDRNOTAVAIL
+PASSCOMBINED: Availability of constant EADDRNOTAVAIL
+PASSCOMBINED: #if usability of symbol EADDRNOTAVAIL
+PASSCOMBINED: Type of symbol EADDRNOTAVAIL
+PASSCOMBINED: Value of symbol EADDRNOTAVAIL
+PASSCOMBINED: Availability of macro EAFNOSUPPORT
+PASSCOMBINED: Availability of constant EAFNOSUPPORT
+PASSCOMBINED: #if usability of symbol EAFNOSUPPORT
+PASSCOMBINED: Type of symbol EAFNOSUPPORT
+PASSCOMBINED: Value of symbol EAFNOSUPPORT
+PASSCOMBINED: Availability of macro EAGAIN
+PASSCOMBINED: Availability of constant EAGAIN
+PASSCOMBINED: #if usability of symbol EAGAIN
+PASSCOMBINED: Type of symbol EAGAIN
+PASSCOMBINED: Value of symbol EAGAIN
+PASSCOMBINED: Availability of macro EALREADY
+PASSCOMBINED: Availability of constant EALREADY
+PASSCOMBINED: #if usability of symbol EALREADY
+PASSCOMBINED: Type of symbol EALREADY
+PASSCOMBINED: Value of symbol EALREADY
+PASSCOMBINED: Availability of macro EBADF
+PASSCOMBINED: Availability of constant EBADF
+PASSCOMBINED: #if usability of symbol EBADF
+PASSCOMBINED: Type of symbol EBADF
+PASSCOMBINED: Value of symbol EBADF
+PASSCOMBINED: Availability of macro EBADMSG
+PASSCOMBINED: Availability of constant EBADMSG
+PASSCOMBINED: #if usability of symbol EBADMSG
+PASSCOMBINED: Type of symbol EBADMSG
+PASSCOMBINED: Value of symbol EBADMSG
+PASSCOMBINED: Availability of macro EBUSY
+PASSCOMBINED: Availability of constant EBUSY
+PASSCOMBINED: #if usability of symbol EBUSY
+PASSCOMBINED: Type of symbol EBUSY
+PASSCOMBINED: Value of symbol EBUSY
+PASSCOMBINED: Availability of macro ECANCELED
+PASSCOMBINED: Availability of constant ECANCELED
+PASSCOMBINED: #if usability of symbol ECANCELED
+PASSCOMBINED: Type of symbol ECANCELED
+PASSCOMBINED: Value of symbol ECANCELED
+PASSCOMBINED: Availability of macro ECHILD
+PASSCOMBINED: Availability of constant ECHILD
+PASSCOMBINED: #if usability of symbol ECHILD
+PASSCOMBINED: Type of symbol ECHILD
+PASSCOMBINED: Value of symbol ECHILD
+PASSCOMBINED: Availability of macro ECONNABORTED
+PASSCOMBINED: Availability of constant ECONNABORTED
+PASSCOMBINED: #if usability of symbol ECONNABORTED
+PASSCOMBINED: Type of symbol ECONNABORTED
+PASSCOMBINED: Value of symbol ECONNABORTED
+PASSCOMBINED: Availability of macro ECONNREFUSED
+PASSCOMBINED: Availability of constant ECONNREFUSED
+PASSCOMBINED: #if usability of symbol ECONNREFUSED
+PASSCOMBINED: Type of symbol ECONNREFUSED
+PASSCOMBINED: Value of symbol ECONNREFUSED
+PASSCOMBINED: Availability of macro ECONNRESET
+PASSCOMBINED: Availability of constant ECONNRESET
+PASSCOMBINED: #if usability of symbol ECONNRESET
+PASSCOMBINED: Type of symbol ECONNRESET
+PASSCOMBINED: Value of symbol ECONNRESET
+PASSCOMBINED: Availability of macro EDEADLK
+PASSCOMBINED: Availability of constant EDEADLK
+PASSCOMBINED: #if usability of symbol EDEADLK
+PASSCOMBINED: Type of symbol EDEADLK
+PASSCOMBINED: Value of symbol EDEADLK
+PASSCOMBINED: Availability of macro EDESTADDRREQ
+PASSCOMBINED: Availability of constant EDESTADDRREQ
+PASSCOMBINED: #if usability of symbol EDESTADDRREQ
+PASSCOMBINED: Type of symbol EDESTADDRREQ
+PASSCOMBINED: Value of symbol EDESTADDRREQ
+PASSCOMBINED: Availability of macro EDQUOT
+PASSCOMBINED: Availability of constant EDQUOT
+PASSCOMBINED: #if usability of symbol EDQUOT
+PASSCOMBINED: Type of symbol EDQUOT
+PASSCOMBINED: Value of symbol EDQUOT
+PASSCOMBINED: Availability of macro EEXIST
+PASSCOMBINED: Availability of constant EEXIST
+PASSCOMBINED: #if usability of symbol EEXIST
+PASSCOMBINED: Type of symbol EEXIST
+PASSCOMBINED: Value of symbol EEXIST
+PASSCOMBINED: Availability of macro EFAULT
+PASSCOMBINED: Availability of constant EFAULT
+PASSCOMBINED: #if usability of symbol EFAULT
+PASSCOMBINED: Type of symbol EFAULT
+PASSCOMBINED: Value of symbol EFAULT
+PASSCOMBINED: Availability of macro EFBIG
+PASSCOMBINED: Availability of constant EFBIG
+PASSCOMBINED: #if usability of symbol EFBIG
+PASSCOMBINED: Type of symbol EFBIG
+PASSCOMBINED: Value of symbol EFBIG
+PASSCOMBINED: Availability of macro EHOSTUNREACH
+PASSCOMBINED: Availability of constant EHOSTUNREACH
+PASSCOMBINED: #if usability of symbol EHOSTUNREACH
+PASSCOMBINED: Type of symbol EHOSTUNREACH
+PASSCOMBINED: Value of symbol EHOSTUNREACH
+PASSCOMBINED: Availability of macro EIDRM
+PASSCOMBINED: Availability of constant EIDRM
+PASSCOMBINED: #if usability of symbol EIDRM
+PASSCOMBINED: Type of symbol EIDRM
+PASSCOMBINED: Value of symbol EIDRM
+PASSCOMBINED: Availability of macro EINPROGRESS
+PASSCOMBINED: Availability of constant EINPROGRESS
+PASSCOMBINED: #if usability of symbol EINPROGRESS
+PASSCOMBINED: Type of symbol EINPROGRESS
+PASSCOMBINED: Value of symbol EINPROGRESS
+PASSCOMBINED: Availability of macro EINTR
+PASSCOMBINED: Availability of constant EINTR
+PASSCOMBINED: #if usability of symbol EINTR
+PASSCOMBINED: Type of symbol EINTR
+PASSCOMBINED: Value of symbol EINTR
+PASSCOMBINED: Availability of macro EINVAL
+PASSCOMBINED: Availability of constant EINVAL
+PASSCOMBINED: #if usability of symbol EINVAL
+PASSCOMBINED: Type of symbol EINVAL
+PASSCOMBINED: Value of symbol EINVAL
+PASSCOMBINED: Availability of macro EIO
+PASSCOMBINED: Availability of constant EIO
+PASSCOMBINED: #if usability of symbol EIO
+PASSCOMBINED: Type of symbol EIO
+PASSCOMBINED: Value of symbol EIO
+PASSCOMBINED: Availability of macro EISCONN
+PASSCOMBINED: Availability of constant EISCONN
+PASSCOMBINED: #if usability of symbol EISCONN
+PASSCOMBINED: Type of symbol EISCONN
+PASSCOMBINED: Value of symbol EISCONN
+PASSCOMBINED: Availability of macro EISDIR
+PASSCOMBINED: Availability of constant EISDIR
+PASSCOMBINED: #if usability of symbol EISDIR
+PASSCOMBINED: Type of symbol EISDIR
+PASSCOMBINED: Value of symbol EISDIR
+PASSCOMBINED: Availability of macro ELOOP
+PASSCOMBINED: Availability of constant ELOOP
+PASSCOMBINED: #if usability of symbol ELOOP
+PASSCOMBINED: Type of symbol ELOOP
+PASSCOMBINED: Value of symbol ELOOP
+PASSCOMBINED: Availability of macro EMFILE
+PASSCOMBINED: Availability of constant EMFILE
+PASSCOMBINED: #if usability of symbol EMFILE
+PASSCOMBINED: Type of symbol EMFILE
+PASSCOMBINED: Value of symbol EMFILE
+PASSCOMBINED: Availability of macro EMLINK
+PASSCOMBINED: Availability of constant EMLINK
+PASSCOMBINED: #if usability of symbol EMLINK
+PASSCOMBINED: Type of symbol EMLINK
+PASSCOMBINED: Value of symbol EMLINK
+PASSCOMBINED: Availability of macro EMSGSIZE
+PASSCOMBINED: Availability of constant EMSGSIZE
+PASSCOMBINED: #if usability of symbol EMSGSIZE
+PASSCOMBINED: Type of symbol EMSGSIZE
+PASSCOMBINED: Value of symbol EMSGSIZE
+PASSCOMBINED: Availability of macro EMULTIHOP
+PASSCOMBINED: Availability of constant EMULTIHOP
+PASSCOMBINED: #if usability of symbol EMULTIHOP
+PASSCOMBINED: Type of symbol EMULTIHOP
+PASSCOMBINED: Value of symbol EMULTIHOP
+PASSCOMBINED: Availability of macro ENAMETOOLONG
+PASSCOMBINED: Availability of constant ENAMETOOLONG
+PASSCOMBINED: #if usability of symbol ENAMETOOLONG
+PASSCOMBINED: Type of symbol ENAMETOOLONG
+PASSCOMBINED: Value of symbol ENAMETOOLONG
+PASSCOMBINED: Availability of macro ENETDOWN
+PASSCOMBINED: Availability of constant ENETDOWN
+PASSCOMBINED: #if usability of symbol ENETDOWN
+PASSCOMBINED: Type of symbol ENETDOWN
+PASSCOMBINED: Value of symbol ENETDOWN
+PASSCOMBINED: Availability of macro ENETUNREACH
+PASSCOMBINED: Availability of constant ENETUNREACH
+PASSCOMBINED: #if usability of symbol ENETUNREACH
+PASSCOMBINED: Type of symbol ENETUNREACH
+PASSCOMBINED: Value of symbol ENETUNREACH
+PASSCOMBINED: Availability of macro ENFILE
+PASSCOMBINED: Availability of constant ENFILE
+PASSCOMBINED: #if usability of symbol ENFILE
+PASSCOMBINED: Type of symbol ENFILE
+PASSCOMBINED: Value of symbol ENFILE
+PASSCOMBINED: Availability of macro ENOBUFS
+PASSCOMBINED: Availability of constant ENOBUFS
+PASSCOMBINED: #if usability of symbol ENOBUFS
+PASSCOMBINED: Type of symbol ENOBUFS
+PASSCOMBINED: Value of symbol ENOBUFS
+PASSCOMBINED: Availability of macro ENODATA
+PASSCOMBINED: Availability of constant ENODATA
+PASSCOMBINED: #if usability of symbol ENODATA
+PASSCOMBINED: Type of symbol ENODATA
+PASSCOMBINED: Value of symbol ENODATA
+PASSCOMBINED: Availability of macro ENODEV
+PASSCOMBINED: Availability of constant ENODEV
+PASSCOMBINED: #if usability of symbol ENODEV
+PASSCOMBINED: Type of symbol ENODEV
+PASSCOMBINED: Value of symbol ENODEV
+PASSCOMBINED: Availability of macro ENOENT
+PASSCOMBINED: Availability of constant ENOENT
+PASSCOMBINED: #if usability of symbol ENOENT
+PASSCOMBINED: Type of symbol ENOENT
+PASSCOMBINED: Value of symbol ENOENT
+PASSCOMBINED: Availability of macro ENOEXEC
+PASSCOMBINED: Availability of constant ENOEXEC
+PASSCOMBINED: #if usability of symbol ENOEXEC
+PASSCOMBINED: Type of symbol ENOEXEC
+PASSCOMBINED: Value of symbol ENOEXEC
+PASSCOMBINED: Availability of macro ENOLCK
+PASSCOMBINED: Availability of constant ENOLCK
+PASSCOMBINED: #if usability of symbol ENOLCK
+PASSCOMBINED: Type of symbol ENOLCK
+PASSCOMBINED: Value of symbol ENOLCK
+PASSCOMBINED: Availability of macro ENOLINK
+PASSCOMBINED: Availability of constant ENOLINK
+PASSCOMBINED: #if usability of symbol ENOLINK
+PASSCOMBINED: Type of symbol ENOLINK
+PASSCOMBINED: Value of symbol ENOLINK
+PASSCOMBINED: Availability of macro ENOMEM
+PASSCOMBINED: Availability of constant ENOMEM
+PASSCOMBINED: #if usability of symbol ENOMEM
+PASSCOMBINED: Type of symbol ENOMEM
+PASSCOMBINED: Value of symbol ENOMEM
+PASSCOMBINED: Availability of macro ENOMSG
+PASSCOMBINED: Availability of constant ENOMSG
+PASSCOMBINED: #if usability of symbol ENOMSG
+PASSCOMBINED: Type of symbol ENOMSG
+PASSCOMBINED: Value of symbol ENOMSG
+PASSCOMBINED: Availability of macro ENOPROTOOPT
+PASSCOMBINED: Availability of constant ENOPROTOOPT
+PASSCOMBINED: #if usability of symbol ENOPROTOOPT
+PASSCOMBINED: Type of symbol ENOPROTOOPT
+PASSCOMBINED: Value of symbol ENOPROTOOPT
+PASSCOMBINED: Availability of macro ENOSPC
+PASSCOMBINED: Availability of constant ENOSPC
+PASSCOMBINED: #if usability of symbol ENOSPC
+PASSCOMBINED: Type of symbol ENOSPC
+PASSCOMBINED: Value of symbol ENOSPC
+PASSCOMBINED: Availability of macro ENOSR
+PASSCOMBINED: Availability of constant ENOSR
+PASSCOMBINED: #if usability of symbol ENOSR
+PASSCOMBINED: Type of symbol ENOSR
+PASSCOMBINED: Value of symbol ENOSR
+PASSCOMBINED: Availability of macro ENOSTR
+PASSCOMBINED: Availability of constant ENOSTR
+PASSCOMBINED: #if usability of symbol ENOSTR
+PASSCOMBINED: Type of symbol ENOSTR
+PASSCOMBINED: Value of symbol ENOSTR
+PASSCOMBINED: Availability of macro ENOSYS
+PASSCOMBINED: Availability of constant ENOSYS
+PASSCOMBINED: #if usability of symbol ENOSYS
+PASSCOMBINED: Type of symbol ENOSYS
+PASSCOMBINED: Value of symbol ENOSYS
+PASSCOMBINED: Availability of macro ENOTCONN
+PASSCOMBINED: Availability of constant ENOTCONN
+PASSCOMBINED: #if usability of symbol ENOTCONN
+PASSCOMBINED: Type of symbol ENOTCONN
+PASSCOMBINED: Value of symbol ENOTCONN
+PASSCOMBINED: Availability of macro ENOTDIR
+PASSCOMBINED: Availability of constant ENOTDIR
+PASSCOMBINED: #if usability of symbol ENOTDIR
+PASSCOMBINED: Type of symbol ENOTDIR
+PASSCOMBINED: Value of symbol ENOTDIR
+PASSCOMBINED: Availability of macro ENOTEMPTY
+PASSCOMBINED: Availability of constant ENOTEMPTY
+PASSCOMBINED: #if usability of symbol ENOTEMPTY
+PASSCOMBINED: Type of symbol ENOTEMPTY
+PASSCOMBINED: Value of symbol ENOTEMPTY
+PASSCOMBINED: Availability of macro ENOTSOCK
+PASSCOMBINED: Availability of constant ENOTSOCK
+PASSCOMBINED: #if usability of symbol ENOTSOCK
+PASSCOMBINED: Type of symbol ENOTSOCK
+PASSCOMBINED: Value of symbol ENOTSOCK
+PASSCOMBINED: Availability of macro ENOTSUP
+PASSCOMBINED: Availability of constant ENOTSUP
+PASSCOMBINED: #if usability of symbol ENOTSUP
+PASSCOMBINED: Type of symbol ENOTSUP
+PASSCOMBINED: Value of symbol ENOTSUP
+PASSCOMBINED: Availability of macro ENOTTY
+PASSCOMBINED: Availability of constant ENOTTY
+PASSCOMBINED: #if usability of symbol ENOTTY
+PASSCOMBINED: Type of symbol ENOTTY
+PASSCOMBINED: Value of symbol ENOTTY
+PASSCOMBINED: Availability of macro ENXIO
+PASSCOMBINED: Availability of constant ENXIO
+PASSCOMBINED: #if usability of symbol ENXIO
+PASSCOMBINED: Type of symbol ENXIO
+PASSCOMBINED: Value of symbol ENXIO
+PASSCOMBINED: Availability of macro EOPNOTSUPP
+PASSCOMBINED: Availability of constant EOPNOTSUPP
+PASSCOMBINED: #if usability of symbol EOPNOTSUPP
+PASSCOMBINED: Type of symbol EOPNOTSUPP
+PASSCOMBINED: Value of symbol EOPNOTSUPP
+PASSCOMBINED: Availability of macro EOVERFLOW
+PASSCOMBINED: Availability of constant EOVERFLOW
+PASSCOMBINED: #if usability of symbol EOVERFLOW
+PASSCOMBINED: Type of symbol EOVERFLOW
+PASSCOMBINED: Value of symbol EOVERFLOW
+PASSCOMBINED: Availability of macro EPERM
+PASSCOMBINED: Availability of constant EPERM
+PASSCOMBINED: #if usability of symbol EPERM
+PASSCOMBINED: Type of symbol EPERM
+PASSCOMBINED: Value of symbol EPERM
+PASSCOMBINED: Availability of macro EPIPE
+PASSCOMBINED: Availability of constant EPIPE
+PASSCOMBINED: #if usability of symbol EPIPE
+PASSCOMBINED: Type of symbol EPIPE
+PASSCOMBINED: Value of symbol EPIPE
+PASSCOMBINED: Availability of macro EPROTO
+PASSCOMBINED: Availability of constant EPROTO
+PASSCOMBINED: #if usability of symbol EPROTO
+PASSCOMBINED: Type of symbol EPROTO
+PASSCOMBINED: Value of symbol EPROTO
+PASSCOMBINED: Availability of macro EPROTONOSUPPORT
+PASSCOMBINED: Availability of constant EPROTONOSUPPORT
+PASSCOMBINED: #if usability of symbol EPROTONOSUPPORT
+PASSCOMBINED: Type of symbol EPROTONOSUPPORT
+PASSCOMBINED: Value of symbol EPROTONOSUPPORT
+PASSCOMBINED: Availability of macro EPROTOTYPE
+PASSCOMBINED: Availability of constant EPROTOTYPE
+PASSCOMBINED: #if usability of symbol EPROTOTYPE
+PASSCOMBINED: Type of symbol EPROTOTYPE
+PASSCOMBINED: Value of symbol EPROTOTYPE
+PASSCOMBINED: Availability of macro EROFS
+PASSCOMBINED: Availability of constant EROFS
+PASSCOMBINED: #if usability of symbol EROFS
+PASSCOMBINED: Type of symbol EROFS
+PASSCOMBINED: Value of symbol EROFS
+PASSCOMBINED: Availability of macro ESPIPE
+PASSCOMBINED: Availability of constant ESPIPE
+PASSCOMBINED: #if usability of symbol ESPIPE
+PASSCOMBINED: Type of symbol ESPIPE
+PASSCOMBINED: Value of symbol ESPIPE
+PASSCOMBINED: Availability of macro ESRCH
+PASSCOMBINED: Availability of constant ESRCH
+PASSCOMBINED: #if usability of symbol ESRCH
+PASSCOMBINED: Type of symbol ESRCH
+PASSCOMBINED: Value of symbol ESRCH
+PASSCOMBINED: Availability of macro ESTALE
+PASSCOMBINED: Availability of constant ESTALE
+PASSCOMBINED: #if usability of symbol ESTALE
+PASSCOMBINED: Type of symbol ESTALE
+PASSCOMBINED: Value of symbol ESTALE
+PASSCOMBINED: Availability of macro ETIME
+PASSCOMBINED: Availability of constant ETIME
+PASSCOMBINED: #if usability of symbol ETIME
+PASSCOMBINED: Type of symbol ETIME
+PASSCOMBINED: Value of symbol ETIME
+PASSCOMBINED: Availability of macro ETIMEDOUT
+PASSCOMBINED: Availability of constant ETIMEDOUT
+PASSCOMBINED: #if usability of symbol ETIMEDOUT
+PASSCOMBINED: Type of symbol ETIMEDOUT
+PASSCOMBINED: Value of symbol ETIMEDOUT
+PASSCOMBINED: Availability of macro ETXTBSY
+PASSCOMBINED: Availability of constant ETXTBSY
+PASSCOMBINED: #if usability of symbol ETXTBSY
+PASSCOMBINED: Type of symbol ETXTBSY
+PASSCOMBINED: Value of symbol ETXTBSY
+PASSCOMBINED: Availability of macro EWOULDBLOCK
+PASSCOMBINED: Availability of constant EWOULDBLOCK
+PASSCOMBINED: #if usability of symbol EWOULDBLOCK
+PASSCOMBINED: Type of symbol EWOULDBLOCK
+PASSCOMBINED: Value of symbol EWOULDBLOCK
+PASSCOMBINED: Availability of macro EXDEV
+PASSCOMBINED: Availability of constant EXDEV
+PASSCOMBINED: #if usability of symbol EXDEV
+PASSCOMBINED: Type of symbol EXDEV
+PASSCOMBINED: Value of symbol EXDEV
+PASS: Namespace of <errno.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  392
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

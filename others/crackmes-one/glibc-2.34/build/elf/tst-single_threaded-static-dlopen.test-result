@@ -1,0 +1,2 @@
+PASS: elf/tst-single_threaded-static-dlopen
+original exit status 0

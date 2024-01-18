@@ -1,0 +1,24 @@
+PASS: Availability of <stdbool.h>
+PASS: Combined <stdbool.h> test
+PASSCOMBINED: Availability of macro bool
+PASSCOMBINED: Availability of macro true
+PASSCOMBINED: Availability of constant true
+PASSCOMBINED: #if usability of symbol true
+PASSCOMBINED: Type of symbol true
+PASSCOMBINED: Value of symbol true
+PASSCOMBINED: Availability of macro false
+PASSCOMBINED: Availability of constant false
+PASSCOMBINED: #if usability of symbol false
+PASSCOMBINED: Type of symbol false
+PASSCOMBINED: Value of symbol false
+PASSCOMBINED: Availability of macro __bool_true_false_are_defined
+PASSCOMBINED: Availability of constant __bool_true_false_are_defined
+PASSCOMBINED: #if usability of symbol __bool_true_false_are_defined
+PASSCOMBINED: Type of symbol __bool_true_false_are_defined
+PASSCOMBINED: Value of symbol __bool_true_false_are_defined
+PASS: Namespace of <stdbool.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   18
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

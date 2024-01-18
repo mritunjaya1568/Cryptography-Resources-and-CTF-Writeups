@@ -1,0 +1,3 @@
+after setlocale (LC_ALL, ""): ja_JP.EUC-JP
+after setlocale (LC_NUMERIC, "de_DE.UTF-8"): de_DE.UTF-8
+after overwriting string: de_DE.UTF-8

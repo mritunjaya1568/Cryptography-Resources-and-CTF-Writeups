@@ -1,0 +1,7 @@
+used locale: "de_DE.UTF-8"
+mbrtowc (&wc, (const char *) buf + 0, 1, &state) -> 1, wc = 37
+mbrtowc (&wc, (const char *) buf + 1, 1, &state) -> 18446744073709551614, wc = 37
+mbrtowc (&wc, (const char *) buf + 2, 3, &state) -> 2, wc = 8364
+mbrtowc (&wc, (const char *) buf + 4, 1, &state) -> 18446744073709551614, wc = 8364
+mbrtowc (&wc, (const char *) buf + 5, 1, &state) -> 1, wc = 955
+mbrtowc (&wc, (const char *) buf + 5, 1, &state) -> 18446744073709551615, wc = 955

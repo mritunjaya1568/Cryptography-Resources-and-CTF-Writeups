@@ -1,0 +1,32 @@
+PASS: Availability of <sys/ipc.h>
+PASS: Combined <sys/ipc.h> test
+PASSCOMBINED: Availability of type struct ipc_perm
+PASSCOMBINED: Availability of member uid
+PASSCOMBINED: Type of member uid
+PASSCOMBINED: Availability of member gid
+PASSCOMBINED: Type of member gid
+PASSCOMBINED: Availability of member cuid
+PASSCOMBINED: Type of member cuid
+PASSCOMBINED: Availability of member cgid
+PASSCOMBINED: Type of member cgid
+PASSCOMBINED: Availability of member mode
+PASSCOMBINED: Type of member mode
+PASSCOMBINED: Availability of type uid_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type mode_t
+PASSCOMBINED: Availability of type key_t
+PASSCOMBINED: Availability of constant IPC_CREAT
+PASSCOMBINED: Availability of constant IPC_EXCL
+PASSCOMBINED: Availability of constant IPC_NOWAIT
+PASSCOMBINED: Availability of constant IPC_PRIVATE
+PASSCOMBINED: Availability of constant IPC_RMID
+PASSCOMBINED: Availability of constant IPC_SET
+PASSCOMBINED: Availability of constant IPC_STAT
+PASSCOMBINED: Availability of function ftok
+PASSCOMBINED: Type of function ftok
+PASS: Namespace of <sys/ipc.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   26
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

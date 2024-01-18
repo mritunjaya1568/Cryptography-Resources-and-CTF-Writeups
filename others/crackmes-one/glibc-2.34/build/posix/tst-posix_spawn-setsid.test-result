@@ -1,0 +1,2 @@
+PASS: posix/tst-posix_spawn-setsid
+original exit status 0

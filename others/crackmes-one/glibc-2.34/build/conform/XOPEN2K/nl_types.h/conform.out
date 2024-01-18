@@ -1,0 +1,18 @@
+PASS: Availability of <nl_types.h>
+PASS: Combined <nl_types.h> test
+PASSCOMBINED: Availability of type nl_catd
+PASSCOMBINED: Availability of type nl_item
+PASSCOMBINED: Availability of constant NL_SETD
+PASSCOMBINED: Availability of constant NL_CAT_LOCALE
+PASSCOMBINED: Availability of function catclose
+PASSCOMBINED: Type of function catclose
+PASSCOMBINED: Availability of function catgets
+PASSCOMBINED: Type of function catgets
+PASSCOMBINED: Availability of function catopen
+PASSCOMBINED: Type of function catopen
+PASS: Namespace of <nl_types.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   12
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

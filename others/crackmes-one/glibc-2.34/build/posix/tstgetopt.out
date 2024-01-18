@@ -1,0 +1,5 @@
+--required foobar
+--optional bazbug
+--none
+aflag = 1, bflag = 1, cvalue = foobar, Cflags = 3, nflag = 1
+Non-option argument random

@@ -1,0 +1,37 @@
+PASS: Availability of <dirent.h>
+PASS: Combined <dirent.h> test
+PASSCOMBINED: Availability of type DIR
+PASSCOMBINED: Availability of type struct dirent
+PASSCOMBINED: Availability of member d_ino
+PASSCOMBINED: Type of member d_ino
+PASSCOMBINED: Availability of member d_name
+PASSCOMBINED: Type of member d_name
+PASSCOMBINED: Availability of type ino_t
+PASSCOMBINED: Availability of function closedir
+PASSCOMBINED: Type of function closedir
+PASSCOMBINED: Availability of function opendir
+PASSCOMBINED: Type of function opendir
+PASSCOMBINED: Availability of function readdir
+PASSCOMBINED: Type of function readdir
+PASSCOMBINED: Availability of function readdir_r
+PASSCOMBINED: Type of function readdir_r
+PASSCOMBINED: Availability of function rewinddir
+PASSCOMBINED: Type of function rewinddir
+PASSCOMBINED: Availability of function seekdir
+PASSCOMBINED: Type of function seekdir
+PASSCOMBINED: Availability of function telldir
+PASSCOMBINED: Type of function telldir
+PASSCOMBINED: Availability of function alphasort
+PASSCOMBINED: Type of function alphasort
+PASSCOMBINED: Availability of function dirfd
+PASSCOMBINED: Type of function dirfd
+PASSCOMBINED: Availability of function scandir
+PASSCOMBINED: Type of function scandir
+PASSCOMBINED: Availability of function fdopendir
+PASSCOMBINED: Type of function fdopendir
+PASS: Namespace of <dirent.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   31
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

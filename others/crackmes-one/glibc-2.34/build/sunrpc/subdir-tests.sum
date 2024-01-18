@@ -1,0 +1,12 @@
+PASS: sunrpc/check-installed-headers-c
+PASS: sunrpc/check-installed-headers-cxx
+PASS: sunrpc/check-obsolete-constructs
+PASS: sunrpc/check-wrapper-headers
+PASS: sunrpc/test-rpcent
+PASS: sunrpc/tst-svc_register
+PASS: sunrpc/tst-udp-error
+PASS: sunrpc/tst-udp-garbage
+PASS: sunrpc/tst-udp-nonblocking
+PASS: sunrpc/tst-udp-timeout
+PASS: sunrpc/tst-xdrmem
+PASS: sunrpc/tst-xdrmem2

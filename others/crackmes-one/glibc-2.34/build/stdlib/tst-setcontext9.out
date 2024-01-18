@@ -1,0 +1,7 @@
+making contexts
+swap contexts
+start f1a
+swap contexts in f2
+set context in f1b
+set context
+end f2

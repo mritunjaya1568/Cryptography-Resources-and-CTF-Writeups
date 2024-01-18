@@ -1,0 +1,8 @@
+/tmp/tmp98i6zxj3/undef.c:2:1: warning: ‘ftime’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+ void *__glibc_test_ftime = (void *) &ftime;
+ ^~~~
+In file included from ../include/sys/timeb.h:1,
+                 from /tmp/tmp98i6zxj3/undef.c:1:
+../time/sys/timeb.h:29:12: note: declared here
+ extern int ftime (struct timeb *__timebuf)
+            ^~~~~

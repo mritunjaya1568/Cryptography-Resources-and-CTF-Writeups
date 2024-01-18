@@ -1,0 +1,2 @@
+UNSUPPORTED: math/test-float-libmvec-sincosf-avx512
+original exit status 77

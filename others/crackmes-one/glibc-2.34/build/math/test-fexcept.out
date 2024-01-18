@@ -1,0 +1,294 @@
+Testing 0
+fegetexceptflag (0) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (0) succeeded
+fegetexceptflag (0) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 0, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 0, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 0, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 0, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 0, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_ALL_EXCEPT
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_ALL_EXCEPT) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_DIVBYZERO
+fegetexceptflag (FE_DIVBYZERO) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_DIVBYZERO) succeeded
+fegetexceptflag (FE_DIVBYZERO) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 4, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 4, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 4, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 4, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 4, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 4, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 3d, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 4, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 4, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 4, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 4, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 4, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 4
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 4, expected 39
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 4, expected 39
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_INEXACT
+fegetexceptflag (FE_INEXACT) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_INEXACT) succeeded
+fegetexceptflag (FE_INEXACT) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 20, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 20, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 20, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 20, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 20, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 20, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 3d, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 20, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 20, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 20, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 20, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 20, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 20
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 20, expected 1d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 20, expected 1d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_INVALID
+fegetexceptflag (FE_INVALID) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_INVALID) succeeded
+fegetexceptflag (FE_INVALID) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 1, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 1, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 1, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 1, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 1, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 1, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 3d, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 1, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 1, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 1, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 1, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 1, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 1
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 1, expected 3c
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 1, expected 3c
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_OVERFLOW
+fegetexceptflag (FE_OVERFLOW) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_OVERFLOW) succeeded
+fegetexceptflag (FE_OVERFLOW) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 8, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 8, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 8, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 8, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 8, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 8, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 3d, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 8, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 8, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 8, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 8, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 8, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 8
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 8, expected 35
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 8, expected 35
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing FE_UNDERFLOW
+fegetexceptflag (FE_UNDERFLOW) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+feraiseexcept (FE_UNDERFLOW) succeeded
+fegetexceptflag (FE_UNDERFLOW) succeeded
+fegetexceptflag (FE_ALL_EXCEPT) succeeded
+Testing set: initial exceptions 0, mask 10, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 10, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 10, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 10, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 0, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 10, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 10, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 3d, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 10, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 10, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 10, mask 3d, expected 0
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 10, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 10, expected 3d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 10
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 10, expected 2d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 10, expected 2d
+fesetexceptflag succeeded
+Testing set: initial exceptions 3d, mask 3d, expected 0
+fesetexceptflag succeeded

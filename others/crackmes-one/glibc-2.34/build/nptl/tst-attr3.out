@@ -1,0 +1,7 @@
+initial thread stack 0x7fff97706000-0x7fff97f04000 (0x7fe000)
+thread stack 0x7fea42c81000-0x7fea43481000 (0x800000)
+thread guardsize 4096
+thread stack 0x7fea42c81000-0x7fea43481000 (0x800000)
+thread guardsize 4096
+thread stack 0x7fea42480000-0x7fea42c80000 (0x800000)
+thread guardsize 65536

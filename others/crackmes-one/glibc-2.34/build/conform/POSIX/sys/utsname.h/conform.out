@@ -1,0 +1,21 @@
+PASS: Availability of <sys/utsname.h>
+PASS: Combined <sys/utsname.h> test
+PASSCOMBINED: Availability of type struct utsname
+PASSCOMBINED: Availability of member sysname
+PASSCOMBINED: Type of member sysname
+PASSCOMBINED: Availability of member nodename
+PASSCOMBINED: Type of member nodename
+PASSCOMBINED: Availability of member release
+PASSCOMBINED: Type of member release
+PASSCOMBINED: Availability of member version
+PASSCOMBINED: Type of member version
+PASSCOMBINED: Availability of member machine
+PASSCOMBINED: Type of member machine
+PASSCOMBINED: Availability of function uname
+PASSCOMBINED: Type of function uname
+PASS: Namespace of <sys/utsname.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   15
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

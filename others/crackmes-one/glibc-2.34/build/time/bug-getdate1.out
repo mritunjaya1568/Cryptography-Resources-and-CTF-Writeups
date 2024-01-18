@@ -1,0 +1,182 @@
+Success on getdate("1"), template is: %M
+
+Result is
+Seconds: 0
+Minutes: 1
+Hour: 0
+Day of month: 4
+Month of year: 11
+Years since 1900: 122
+Day of week: 0
+Day of year: 337
+Daylight Savings flag: 0
+
+Success on getdate("1 2"), template is: %M %H
+
+Result is
+Seconds: 0
+Minutes: 1
+Hour: 2
+Day of month: 4
+Month of year: 11
+Years since 1900: 122
+Day of week: 0
+Day of year: 337
+Daylight Savings flag: 0
+
+Success on getdate("1"), template is: %S
+
+Result is
+Seconds: 1
+Minutes: 0
+Hour: 0
+Day of month: 4
+Month of year: 11
+Years since 1900: 122
+Day of week: 0
+Day of year: 337
+Daylight Savings flag: 0
+
+Success on getdate("1 2"), template is: %S %H
+
+Result is
+Seconds: 1
+Minutes: 0
+Hour: 2
+Day of month: 4
+Month of year: 11
+Years since 1900: 122
+Day of week: 0
+Day of year: 337
+Daylight Savings flag: 0
+
+Success on getdate("2001"), template is: %Y
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 3
+Month of year: 11
+Years since 1900: 101
+Day of week: 1
+Day of year: 336
+Daylight Savings flag: 0
+
+Success on getdate("2001 3"), template is: %Y %m
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 5
+Month of year: 2
+Years since 1900: 101
+Day of week: 1
+Day of year: 63
+Daylight Savings flag: 0
+
+Success on getdate("70"), template is: %y
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 3
+Month of year: 11
+Years since 1900: 70
+Day of week: 4
+Day of year: 336
+Daylight Savings flag: 0
+
+Success on getdate("70 3"), template is: %y %m
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 5
+Month of year: 2
+Years since 1900: 70
+Day of week: 4
+Day of year: 63
+Daylight Savings flag: 0
+
+Success on getdate("06"), template is: %d
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 6
+Month of year: 11
+Years since 1900: 122
+Day of week: 2
+Day of year: 339
+Daylight Savings flag: 0
+
+Success on getdate("25 3"), template is: %d %m
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 25
+Month of year: 2
+Years since 1900: 122
+Day of week: 5
+Day of year: 83
+Daylight Savings flag: 0
+
+Success on getdate("20"), template is: %C
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 3
+Month of year: 11
+Years since 1900: 100
+Day of week: 0
+Day of year: 337
+Daylight Savings flag: 0
+
+Success on getdate("20 3 2"), template is: %C %y %m
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 5
+Month of year: 1
+Years since 1900: 103
+Day of week: 3
+Day of year: 35
+Daylight Savings flag: 0
+
+Success on getdate("20 5"), template is: %C %y
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 3
+Month of year: 11
+Years since 1900: 105
+Day of week: 6
+Day of year: 336
+Daylight Savings flag: 0
+
+Success on getdate("2008 3"), template is: %Y %m
+
+Result is
+Seconds: 49
+Minutes: 58
+Hour: 17
+Day of month: 5
+Month of year: 2
+Years since 1900: 108
+Day of week: 3
+Day of year: 64
+Daylight Savings flag: 0
+

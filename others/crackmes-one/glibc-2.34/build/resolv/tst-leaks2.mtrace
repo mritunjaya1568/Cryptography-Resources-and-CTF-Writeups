@@ -1,0 +1,159 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f9561769cef] + 0x55ffef8826b0 0x58
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aecd2] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aecd2] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f9561766491] + 0x55ffef8822a0 0x10
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(__libc_alloc_buffer_allocate+15)[0x7f95616d2ed5] + 0x55ffef8828f0 0x60
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f9561765dcd] - 0x55ffef8822a0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(__libc_dynarray_emplace_enlarge+a9)[0x7f95616d2c09] + 0x55ffef882960 0x20
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(gethostbyname+1a5)[0x7f9561753fc5] + 0x55ffef8829c0 0x400
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ec42] + 0x55ffef882dd0 0xd8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(getdelim+73)[0x7f95616af6e3] + 0x55ffef882eb0 0x78
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176df98] + 0x55ffef883f40 0x21e
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176e525] + 0x55ffef884170 0x30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176f2ff] - 0x55ffef882eb0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176df98] + 0x55ffef8841b0 0x21c
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176e525] + 0x55ffef8843e0 0x30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176df98] + 0x55ffef884420 0x21c
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176e525] + 0x55ffef884650 0x40
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176df98] + 0x55ffef8846a0 0x220
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176e525] + 0x55ffef8848d0 0x40
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176ac33] + 0x55ffef882990 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95616aebff] + 0x55ffef882710 0x1d8
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_file_doallocate+7d)[0x7f95616ae29d] + 0x55ffef882f30 0x1000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_setb+53)[0x7f95616bb7f3] - 0x55ffef882f30
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(_IO_fclose+ab)[0x7f95616ae3fb] - 0x55ffef882710
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f956176acb3] - 0x55ffef882990
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb2f] - 0x55ffef8846a0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb2f] - 0x55ffef884420
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb2f] - 0x55ffef8841b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb2f] - 0x55ffef883f40
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb90] - 0x55ffef8848d0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb90] - 0x55ffef884650
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb90] - 0x55ffef8843e0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfb90] - 0x55ffef884170
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfbd4] - 0x55ffef882dd0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfa5f] - 0x55ffef8828f0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfa77] - 0x55ffef882960
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:[0x7f95617cfa9a] - 0x55ffef8826b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libc.so.6:(__libc_freeres+ac)[0x7f95617cf83c] - 0x55ffef8829c0

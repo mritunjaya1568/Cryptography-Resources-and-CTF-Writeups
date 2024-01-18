@@ -1,0 +1,24 @@
+++ tcache ++
+a=0x555556bd16c0, b=0x555556bd16f0, c=0x555556bd1720
+Before: c=0x555556bd1720, c[0]=0x555003e87d21
+After: c=0x555556bd1720, c[0]=0xa0a0a0a0a0a0a0a
+Allocated: c=0x555556bd1720
+
+++ fastbin ++
+p=0x555556bcd570
+p=0x555556bcd5a0
+p=0x555556bcd5d0
+p=0x555556bcd600
+p=0x555556bcd630
+p=0x555556bcd660
+p=0x555556bcd690
+a=0x555556bcd6c0, b=0x555556bcd6f0, c=0x555556bcd720
+Before: c=0x555556bcd720, c[0]=0x555003e9bd2d
+After: c=0x555556bcd720, c[0]=0x8484848484848484
+Allocated: c=0x555556bcd720
+
+++ fastbin consolidate ++
+a=0x555556bcf980, b=0x555556bcf9b0, c=0x555556bcf9e0
+Before: c=0x555556bcf9e0, c[0]=0x555003e9926f
+After: c=0x555556bcf9e0, c[0]=0x9b9b9b9b9b9b9b9b
+

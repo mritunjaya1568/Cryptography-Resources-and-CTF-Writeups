@@ -1,0 +1,3 @@
+info: address in signal handler: 0x7f4ddc17b4a3
+error: ../sysdeps/unix/sysv/linux/tst-sigcontext-get_pc.c:44: not true: callstack_count > 0
+error: 1 test failures

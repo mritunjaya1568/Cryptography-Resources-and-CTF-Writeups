@@ -1,0 +1,8 @@
+maintls[1000]:	 0x7fe07f89b710 .. 0x7fe07f89baf8
+var0[480]:	 0x555556914a30 .. 0x555556914c10 global-dynamic
+var1[120]:	 0x5555569161b0 .. 0x555556916228 global-dynamic
+var2[24]:	 0x5555569177c0 .. 0x5555569177d8 global-dynamic
+var3[16]:	 0x555556918d70 .. 0x555556918d80 global-dynamic
+var6[576]:	 0x7fe07f89b290 .. 0x7fe07f89b4d0 initial-exec
+The next dlmopen should fail...
+...OK failed with: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-tls-ie-mod4.so: cannot allocate memory in static TLS block.

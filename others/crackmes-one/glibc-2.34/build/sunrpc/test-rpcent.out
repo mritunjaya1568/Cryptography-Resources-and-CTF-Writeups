@@ -1,0 +1,69 @@
+Call: getrpcyname ("portmap"), returned: r_name: portmapper, r_number: 100000
+  alias: portmap
+  alias: sunrpc
+Call: getrpcbynumber (100000), returned: r_name: portmapper, r_number: 100000
+  alias: portmap
+  alias: sunrpc
+Call: getrpcent (), returned: r_name: portmapper, r_number: 100000
+  alias: portmap
+  alias: sunrpc
+Call: getrpcent (), returned: r_name: rstatd, r_number: 100001
+  alias: rstat
+  alias: rstat_svc
+  alias: rup
+  alias: perfmeter
+Call: getrpcent (), returned: r_name: rusersd, r_number: 100002
+  alias: rusers
+Call: getrpcent (), returned: r_name: nfs, r_number: 100003
+  alias: nfsprog
+Call: getrpcent (), returned: r_name: ypserv, r_number: 100004
+  alias: ypprog
+Call: getrpcent (), returned: r_name: mountd, r_number: 100005
+  alias: mount
+  alias: showmount
+Call: getrpcent (), returned: r_name: ypbind, r_number: 100007
+Call: getrpcent (), returned: r_name: walld, r_number: 100008
+  alias: rwall
+  alias: shutdown
+Call: getrpcent (), returned: r_name: yppasswdd, r_number: 100009
+  alias: yppasswd
+Call: getrpcent (), returned: r_name: etherstatd, r_number: 100010
+  alias: etherstat
+Call: getrpcent (), returned: r_name: rquotad, r_number: 100011
+  alias: rquotaprog
+  alias: quota
+  alias: rquota
+Call: getrpcent (), returned: r_name: sprayd, r_number: 100012
+  alias: spray
+Call: getrpcent (), returned: r_name: 3270_mapper, r_number: 100013
+Call: getrpcent (), returned: r_name: rje_mapper, r_number: 100014
+Call: getrpcent (), returned: r_name: selection_svc, r_number: 100015
+  alias: selnsvc
+Call: getrpcent (), returned: r_name: database_svc, r_number: 100016
+Call: getrpcent (), returned: r_name: rexd, r_number: 100017
+  alias: rex
+Call: getrpcent (), returned: r_name: alis, r_number: 100018
+Call: getrpcent (), returned: r_name: sched, r_number: 100019
+Call: getrpcent (), returned: r_name: llockmgr, r_number: 100020
+Call: getrpcent (), returned: r_name: nlockmgr, r_number: 100021
+Call: getrpcent (), returned: r_name: x25.inr, r_number: 100022
+Call: getrpcent (), returned: r_name: statmon, r_number: 100023
+Call: getrpcent (), returned: r_name: status, r_number: 100024
+Call: getrpcent (), returned: r_name: bootparam, r_number: 100026
+Call: getrpcent (), returned: r_name: ypupdated, r_number: 100028
+  alias: ypupdate
+Call: getrpcent (), returned: r_name: keyserv, r_number: 100029
+  alias: keyserver
+Call: getrpcent (), returned: r_name: tfsd, r_number: 100037
+Call: getrpcent (), returned: r_name: nsed, r_number: 100038
+Call: getrpcent (), returned: r_name: nsemntd, r_number: 100039
+Call: getrpcent (), returned: r_name: ypxfrd, r_number: 100069
+Call: getrpcent (), returned: r_name: pcnfsd, r_number: 150001
+Call: getrpcent (), returned: r_name: amd, r_number: 300019
+  alias: amq
+Call: getrpcent (), returned: r_name: sgi_fam, r_number: 391002
+Call: getrpcent (), returned: r_name: ugidd, r_number: 545580417
+Call: getrpcent (), returned: r_name: fypxfrd, r_number: 600100069
+  alias: freebsd-ypxfrd
+Call: getrpcent (), returned: r_name: bwnfsd, r_number: 788585389
+Call: getrpcent () returned NULL

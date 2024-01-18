@@ -1,0 +1,1 @@
+                            	simple_strncpy	stupid_strncpy	__strncpy_avx2	__strncpy_ssse3	__strncpy_sse2_unaligned	__strncpy_sse2

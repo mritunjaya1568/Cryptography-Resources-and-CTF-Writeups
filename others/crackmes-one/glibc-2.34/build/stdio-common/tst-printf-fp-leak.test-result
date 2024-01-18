@@ -1,0 +1,2 @@
+PASS: stdio-common/tst-printf-fp-leak
+original exit status 0

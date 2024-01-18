@@ -1,0 +1,4 @@
+Result of sscanf = 1
+Scanned format %u = 111
+Possibly scanned format %n = 3
+All tests passed

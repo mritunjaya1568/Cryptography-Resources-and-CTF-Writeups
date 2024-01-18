@@ -1,0 +1,6 @@
+testing _Float64 (argument _Float128)
+
+Test suite completed:
+  2168 test cases plus 2164 tests for exception flags and
+    2164 tests for errno executed.
+  All tests passed successfully.

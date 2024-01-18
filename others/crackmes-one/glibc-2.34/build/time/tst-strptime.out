@@ -1,0 +1,81 @@
+strptime ("2000-01-01", "%Y-%m-%d", ...)
+	should be: wday = 6, yday =   0, mon =  0, mday =  1
+	       is: wday = 6, yday =   0, mon =  0, mday =  1
+strptime ("03/03/00", "%D", ...)
+	should be: wday = 5, yday =  62, mon =  2, mday =  3
+	       is: wday = 5, yday =  62, mon =  2, mday =  3
+strptime ("9/9/99", "%x", ...)
+	should be: wday = 4, yday = 251, mon =  8, mday =  9
+	       is: wday = 4, yday = 251, mon =  8, mday =  9
+strptime ("19990502123412", "%Y%m%d%H%M%S", ...)
+	should be: wday = 0, yday = 121, mon =  4, mday =  2
+	       is: wday = 0, yday = 121, mon =  4, mday =  2
+strptime ("2001 20 Mon", "%Y %U %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2001 21 Mon", "%Y %W %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2001 21 Mon", "%2000Y %W %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2001 21 Mon", "%^Y %W %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2001 EST 21 Mon", "%Y %Z %W %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2012 00 Sun", "%Y %W %a", ...)
+	should be: wday = 0, yday =   0, mon =  0, mday =  1
+	       is: wday = 0, yday =   0, mon =  0, mday =  1
+strptime ("2000-01-01 08:12:21 AM", "%Y-%m-%d %I:%M:%S %p", ...)
+	should be: wday = 6, yday =   0, mon =  0, mday =  1
+	       is: wday = 6, yday =   0, mon =  0, mday =  1
+strptime ("2000-01-01 08:12:21 PM", "%Y-%m-%d %I:%M:%S %p", ...)
+	should be: wday = 6, yday =   0, mon =  0, mday =  1
+	       is: wday = 6, yday =   0, mon =  0, mday =  1
+strptime ("2001 20 ��", "%Y %U %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("2001 21 ��", "%Y %W %a", ...)
+	should be: wday = 1, yday = 140, mon =  4, mday = 21
+	       is: wday = 1, yday = 140, mon =  4, mday = 21
+strptime ("November 17, 2017", "%B %e, %Y", ...)
+	should be: wday = 5, yday = 320, mon = 10, mday = 17
+	       is: wday = 5, yday = 320, mon = 10, mday = 17
+strptime ("18. Nov 2017", "%d. %b %Y", ...)
+	should be: wday = 6, yday = 321, mon = 10, mday = 18
+	       is: wday = 6, yday = 321, mon = 10, mday = 18
+strptime ("19 novembre 2017", "%d %OB %Y", ...)
+	should be: wday = 0, yday = 322, mon = 10, mday = 19
+	       is: wday = 0, yday = 322, mon = 10, mday = 19
+strptime ("20 de nov de 2017", "%d de %Ob de %Y", ...)
+	should be: wday = 1, yday = 323, mon = 10, mday = 20
+	       is: wday = 1, yday = 323, mon = 10, mday = 20
+strptime ("21 lis 2017", "%d %b %Y", ...)
+	should be: wday = 2, yday = 324, mon = 10, mday = 21
+	       is: wday = 2, yday = 324, mon = 10, mday = 21
+strptime ("22 LIS 2017", "%d %B %Y", ...)
+	should be: wday = 3, yday = 325, mon = 10, mday = 22
+	       is: wday = 3, yday = 325, mon = 10, mday = 22
+strptime ("23 listopada 2017", "%d %B %Y", ...)
+	should be: wday = 4, yday = 326, mon = 10, mday = 23
+	       is: wday = 4, yday = 326, mon = 10, mday = 23
+strptime ("24 listopad 2017", "%d %OB %Y", ...)
+	should be: wday = 5, yday = 327, mon = 10, mday = 24
+	       is: wday = 5, yday = 327, mon = 10, mday = 24
+strptime ("25 lis 2017", "%d %Ob %Y", ...)
+	should be: wday = 6, yday = 328, mon = 10, mday = 25
+	       is: wday = 6, yday = 328, mon = 10, mday = 25
+strptime ("26 ноя 2017", "%d %b %Y", ...)
+	should be: wday = 0, yday = 329, mon = 10, mday = 26
+	       is: wday = 0, yday = 329, mon = 10, mday = 26
+strptime ("19 мая 2018", "%d %b %Y", ...)
+	should be: wday = 6, yday = 138, mon =  4, mday = 19
+	       is: wday = 6, yday = 138, mon =  4, mday = 19
+strptime ("20 май 2018", "%d %Ob %Y", ...)
+	should be: wday = 0, yday = 139, mon =  4, mday = 20
+	       is: wday = 0, yday = 139, mon =  4, mday = 20
+strptime ("17410105012000", "%H%M%S%d%m%Y", ...)
+	should be: 2000-01-05 17:41:01, wday = 3, yday =   4
+	       is: 2000-01-05 17:41:01, wday = 3, yday =   4

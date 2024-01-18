@@ -1,0 +1,20 @@
+PASS: Availability of <strings.h>
+PASS: Combined <strings.h> test
+PASSCOMBINED: Availability of function ffs
+PASSCOMBINED: Type of function ffs
+PASSCOMBINED: Availability of function strcasecmp
+PASSCOMBINED: Type of function strcasecmp
+PASSCOMBINED: Availability of function strncasecmp
+PASSCOMBINED: Type of function strncasecmp
+PASSCOMBINED: Availability of function strcasecmp_l
+PASSCOMBINED: Type of function strcasecmp_l
+PASSCOMBINED: Availability of function strncasecmp_l
+PASSCOMBINED: Type of function strncasecmp_l
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type locale_t
+PASS: Namespace of <strings.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

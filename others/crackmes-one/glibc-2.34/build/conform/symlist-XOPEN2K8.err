@@ -1,0 +1,4 @@
+/tmp/tmpwc9iudf6/test.c:1:10: fatal error: ndbm.h: No such file or directory
+ #include <ndbm.h>
+          ^~~~~~~~
+compilation terminated.

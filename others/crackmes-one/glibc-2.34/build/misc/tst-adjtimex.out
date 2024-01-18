@@ -1,0 +1,2 @@
+error: ../sysdeps/unix/sysv/linux/tst-clock_adjtime.c:38: clock_adjtime is executed only when GLIBC_TEST_ALLOW_TIME_SETTING is set
+

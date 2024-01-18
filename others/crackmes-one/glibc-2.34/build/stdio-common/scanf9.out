@@ -1,0 +1,4 @@
+Matches = 1, string str = "x".
+str should be "x".
+Matches = 1, string str = " ] ".
+str should be " ] ".

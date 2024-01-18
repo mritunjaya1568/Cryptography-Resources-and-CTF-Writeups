@@ -1,0 +1,13 @@
+executable stacks allowed
+threads waiting
+DSO called ok (local 0x7ffff95564f0, trampoline 0x7ffff95564f1)
+Stack address remains the same: 0x7ffff9557000
+DSO called ok (local 0x7ffff94434d0, trampoline 0x7ffff94434d1)
+threads go
+DSO called ok (local 0x7fb2843f6e00, trampoline 0x7fb2843f6e01)
+DSO called ok (local 0x7fb284bfce00, trampoline 0x7fb284bfce01)
+DSO called ok (local 0x7fb285bfee00, trampoline 0x7fb285bfee01)
+DSO called ok (local 0x7fb286c00e00, trampoline 0x7fb286c00e01)
+DSO called ok (local 0x7fb2863ffe00, trampoline 0x7fb2863ffe01)
+DSO called ok (local 0x7fb2853fde00, trampoline 0x7fb2853fde01)
+Didn't expect signal from child: got `Aborted'

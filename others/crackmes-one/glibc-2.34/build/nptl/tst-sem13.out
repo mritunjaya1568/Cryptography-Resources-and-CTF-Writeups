@@ -1,0 +1,3 @@
+do_test_wait: sem_timedwait
+do_test_wait: sem_clockwait(monotonic)
+do_test_wait: sem_clockwait(realtime)

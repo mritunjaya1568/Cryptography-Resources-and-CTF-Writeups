@@ -1,0 +1,7 @@
+Idx            Name | Idx           Name
+  1              lo |   1             lo      okay
+  2        enp6s0f1 |   2       enp6s0f1      okay
+  3       wlp0s20f3 |   3      wlp0s20f3      okay
+  4          virbr0 |   4         virbr0      okay
+  5      virbr0-nic |   5     virbr0-nic      okay
+  6         docker0 |   6        docker0      okay

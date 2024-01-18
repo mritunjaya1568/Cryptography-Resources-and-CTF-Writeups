@@ -1,0 +1,2 @@
+PASS: math/test-fenv-clear-sse
+original exit status 0

@@ -1,0 +1,41 @@
+PASS: Availability of <sys/time.h>
+PASS: Combined <sys/time.h> test
+PASSCOMBINED: Availability of type struct timeval
+PASSCOMBINED: Availability of member tv_sec
+PASSCOMBINED: Type of member tv_sec
+PASSCOMBINED: Availability of member tv_usec
+PASSCOMBINED: Type of member tv_usec
+PASSCOMBINED: Availability of type struct itimerval
+PASSCOMBINED: Availability of member it_interval
+PASSCOMBINED: Type of member it_interval
+PASSCOMBINED: Availability of member it_value
+PASSCOMBINED: Type of member it_value
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of type suseconds_t
+PASSCOMBINED: Availability of type fd_set
+PASSCOMBINED: Availability of member fds_bits
+PASSCOMBINED: Type of member fds_bits
+PASSCOMBINED: Availability of constant ITIMER_REAL
+PASSCOMBINED: Availability of constant ITIMER_VIRTUAL
+PASSCOMBINED: Availability of constant ITIMER_PROF
+PASSCOMBINED: Availability of macro FD_CLR
+PASSCOMBINED: Availability of macro FD_ISSET
+PASSCOMBINED: Availability of macro FD_SET
+PASSCOMBINED: Availability of macro FD_ZERO
+PASSCOMBINED: Availability of constant FD_SETSIZE
+PASSCOMBINED: Availability of function getitimer
+PASSCOMBINED: Type of function getitimer
+PASSCOMBINED: Availability of function setitimer
+PASSCOMBINED: Type of function setitimer
+PASSCOMBINED: Availability of function gettimeofday
+PASSCOMBINED: Type of function gettimeofday
+PASSCOMBINED: Availability of function select
+PASSCOMBINED: Type of function select
+PASSCOMBINED: Availability of function utimes
+PASSCOMBINED: Type of function utimes
+PASS: Namespace of <sys/time.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   35
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

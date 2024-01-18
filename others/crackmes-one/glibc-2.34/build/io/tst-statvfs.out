@@ -1,0 +1,3 @@
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/io/tst-statvfs: free: 61826298, mandatory: no
+tst-statvfs.c: free: 61826297, mandatory: no
+/tmp: free: 61826297, mandatory: no

@@ -1,0 +1,2 @@
+PASS: io/tst-posix_fallocate
+original exit status 0

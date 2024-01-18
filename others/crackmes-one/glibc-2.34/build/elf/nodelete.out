@@ -1,0 +1,6 @@
+succeeded loading "nodelmod1.so"
+-z nodelete test succeeded
+succeeded loading "nodelmod2.so"
+RTLD_NODELETE test succeeded
+succeeded loading "nodelmod3.so"
+-z nodelete in dependency succeeded

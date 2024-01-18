@@ -1,0 +1,2 @@
+PASS: libio/tst-fgetc-after-eof
+original exit status 0

@@ -1,0 +1,1055 @@
+error: output mismatch for empty file (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file, no-dot hostname (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,2 +1 @@
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file, no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for empty file with RES_OPTIONS and LOCALDOMAIN (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options attempts:5 edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: empty file with RES_OPTIONS and LOCALDOMAIN
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic with no-dot hostname (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic with no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic with no-dot hostname (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic with no-dot hostname
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic no-reload (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-options no-reload
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic no-reload
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic no-reload (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-options no-reload
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic no-reload
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic no-reload via RES_OPTIONS (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-options no-reload
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic no-reload via RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for basic no-reload via RES_OPTIONS (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-options no-reload
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: basic no-reload via RES_OPTIONS
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for whitespace (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,7 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-nameserver 192.0.2.2
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.2]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: whitespace
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for whitespace (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,7 +1 @@
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-nameserver 192.0.2.2
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.2]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: whitespace
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain space (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain space
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain space (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain space
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain tab (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain tab
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain tab (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain tab
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain override (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain override
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for domain override (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,4 +1 @@
+-search example.net
+-; search[0]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: domain override
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for option values, multiple servers (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,10 +1 @@
+-options ndots:3 timeout:19 attempts:5 edns0
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-nameserver ::1
+-nameserver 192.0.2.2
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [::1]:53
+-; nameserver[2]: [192.0.2.2]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: option values, multiple servers
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for option values, multiple servers (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,10 +1 @@
+-options ndots:3 timeout:19 attempts:5 edns0
+-search corp.example.com example.com
+-; search[0]: corp.example.com
+-; search[1]: example.com
+-nameserver 192.0.2.1
+-nameserver ::1
+-nameserver 192.0.2.2
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [::1]:53
+-; nameserver[2]: [192.0.2.2]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: option values, multiple servers
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for out-of-range option vales (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:15 timeout:30 attempts:5 use-vc
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: out-of-range option vales
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for out-of-range option vales (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:15 timeout:30 attempts:5 use-vc
+-search example.com
+-; search[0]: example.com
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: out-of-range option vales
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for repeated directives (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:2 use-vc edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: repeated directives
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for repeated directives (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:2 use-vc edns0
+-search example.org
+-; search[0]: example.org
+-nameserver 127.0.0.1
+-; nameserver[0]: [127.0.0.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: repeated directives
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for many name servers, sortlist (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,18 +1 @@
+-options single-request
+-search example.org example.com example.net corp.example.com
+-; search[0]: example.org
+-; search[1]: example.com
+-; search[2]: example.net
+-; search[3]: corp.example.com
+-sortlist 192.0.2.0/255.255.255.0
+-nameserver 192.0.2.1
+-nameserver 192.0.2.2
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.2]:53
+-; nameserver[2]: [192.0.2.3]:53
+-; nameserver[3]: [192.0.2.4]:53
+-; nameserver[4]: [192.0.2.5]:53
+-; nameserver[5]: [192.0.2.6]:53
+-; nameserver[6]: [192.0.2.7]:53
+-; nameserver[7]: [192.0.2.8]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: many name servers, sortlist
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for many name servers, sortlist (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,18 +1 @@
+-options single-request
+-search example.org example.com example.net corp.example.com
+-; search[0]: example.org
+-; search[1]: example.com
+-; search[2]: example.net
+-; search[3]: corp.example.com
+-sortlist 192.0.2.0/255.255.255.0
+-nameserver 192.0.2.1
+-nameserver 192.0.2.2
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.2]:53
+-; nameserver[2]: [192.0.2.3]:53
+-; nameserver[3]: [192.0.2.4]:53
+-; nameserver[4]: [192.0.2.5]:53
+-; nameserver[5]: [192.0.2.6]:53
+-; nameserver[6]: [192.0.2.7]:53
+-; nameserver[7]: [192.0.2.8]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: many name servers, sortlist
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for IPv4 and IPv6 nameservers (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,19 +1 @@
+-options single-request
+-search example.org example.com example.net corp.example.com legacy.example.com
+-; search[0]: example.org
+-; search[1]: example.com
+-; search[2]: example.net
+-; search[3]: corp.example.com
+-; search[4]: legacy.example.com
+-sortlist 192.0.2.0/255.255.255.0
+-nameserver 192.0.2.1
+-nameserver 2001:db8::2
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [2001:db8::2]:53
+-; nameserver[2]: [192.0.2.3]:53
+-; nameserver[3]: [2001:db8::4]:53
+-; nameserver[4]: [192.0.2.5]:53
+-; nameserver[5]: [2001:db8::6]:53
+-; nameserver[6]: [192.0.2.7]:53
+-; nameserver[7]: [2001:db8::8]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: IPv4 and IPv6 nameservers
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for IPv4 and IPv6 nameservers (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,19 +1 @@
+-options single-request
+-search example.org example.com example.net corp.example.com legacy.example.com
+-; search[0]: example.org
+-; search[1]: example.com
+-; search[2]: example.net
+-; search[3]: corp.example.com
+-; search[4]: legacy.example.com
+-sortlist 192.0.2.0/255.255.255.0
+-nameserver 192.0.2.1
+-nameserver 2001:db8::2
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [2001:db8::2]:53
+-; nameserver[2]: [192.0.2.3]:53
+-; nameserver[3]: [2001:db8::4]:53
+-; nameserver[4]: [192.0.2.5]:53
+-; nameserver[5]: [2001:db8::6]:53
+-; nameserver[6]: [192.0.2.7]:53
+-; nameserver[7]: [2001:db8::8]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: IPv4 and IPv6 nameservers
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for garbage after nameserver (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.3]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: garbage after nameserver
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for garbage after nameserver (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-nameserver 192.0.2.3
+-; nameserver[0]: [192.0.2.1]:53
+-; nameserver[1]: [192.0.2.3]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: garbage after nameserver
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for RES_OPTIONS is cummulative (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:3 timeout:7 attempts:5 use-vc edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: RES_OPTIONS is cummulative
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for RES_OPTIONS is cummulative (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options ndots:3 timeout:7 attempts:5 use-vc edns0
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: RES_OPTIONS is cummulative
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for many search list entries (bug 19569) (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,11 +1 @@
+-search corp.example.com support.example.com community.example.org wan.example.net vpn.example.net example.com
+-; search[0]: corp.example.com
+-; search[1]: support.example.com
+-; search[2]: community.example.org
+-; search[3]: wan.example.net
+-; search[4]: vpn.example.net
+-; search[5]: example.com
+-; search[6]: example.org
+-; search[7]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: many search list entries (bug 19569)
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for many search list entries (bug 19569) (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,11 +1 @@
+-search corp.example.com support.example.com community.example.org wan.example.net vpn.example.net example.com
+-; search[0]: corp.example.com
+-; search[1]: support.example.com
+-; search[2]: community.example.org
+-; search[3]: wan.example.net
+-; search[4]: vpn.example.net
+-; search[5]: example.com
+-; search[6]: example.org
+-; search[7]: example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: many search list entries (bug 19569)
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for very long search list entries (bug 21475) (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-search example.com this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.org
+-; search[0]: example.com
+-; search[1]: this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.org
+-; search[2]: this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: very long search list entries (bug 21475)
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for very long search list entries (bug 21475) (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,6 +1 @@
+-search example.com this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.org
+-; search[0]: example.com
+-; search[1]: this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.org
+-; search[2]: this-host-name-is-longer-than-yours-yes-I-really-really-mean-it.this-domain-name-is-as-long-as-the-previous-name--63-characters.example.net
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: very long search list entries (bug 21475)
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for trust-ad flag (init method gethostbyname)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options trust-ad
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: trust-ad flag
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: output mismatch for trust-ad flag (init method getaddrinfo)
+--- expected
++++ actual
+@@ -1,5 +1 @@
+-options trust-ad
+-search example.com
+-; search[0]: example.com
+-nameserver 192.0.2.1
+-; nameserver[0]: [192.0.2.1]:53
++error: tst-resolv-res_init-skeleton.c:323: could not load libnss_dns.so.2: libnss_dns.so.2: cannot open shared object file: No such file or directory
+error: subprocess failed: trust-ad flag
+error:   expected exit status: 0
+error:   actual exit status: 1 [0x100]
+error: 234 test failures

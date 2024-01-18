@@ -1,0 +1,87 @@
+PASS: Availability of <wctype.h>
+PASS: Combined <wctype.h> test
+PASSCOMBINED: Availability of type wint_t
+PASSCOMBINED: Availability of type wctrans_t
+PASSCOMBINED: Availability of type wctype_t
+PASSCOMBINED: Availability of type locale_t
+PASSCOMBINED: Availability of function iswalnum
+PASSCOMBINED: Type of function iswalnum
+PASSCOMBINED: Availability of function iswalpha
+PASSCOMBINED: Type of function iswalpha
+PASSCOMBINED: Availability of function iswblank
+PASSCOMBINED: Type of function iswblank
+PASSCOMBINED: Availability of function iswcntrl
+PASSCOMBINED: Type of function iswcntrl
+PASSCOMBINED: Availability of function iswdigit
+PASSCOMBINED: Type of function iswdigit
+PASSCOMBINED: Availability of function iswgraph
+PASSCOMBINED: Type of function iswgraph
+PASSCOMBINED: Availability of function iswlower
+PASSCOMBINED: Type of function iswlower
+PASSCOMBINED: Availability of function iswprint
+PASSCOMBINED: Type of function iswprint
+PASSCOMBINED: Availability of function iswpunct
+PASSCOMBINED: Type of function iswpunct
+PASSCOMBINED: Availability of function iswspace
+PASSCOMBINED: Type of function iswspace
+PASSCOMBINED: Availability of function iswupper
+PASSCOMBINED: Type of function iswupper
+PASSCOMBINED: Availability of function iswxdigit
+PASSCOMBINED: Type of function iswxdigit
+PASSCOMBINED: Availability of function iswctype
+PASSCOMBINED: Type of function iswctype
+PASSCOMBINED: Availability of function towctrans
+PASSCOMBINED: Type of function towctrans
+PASSCOMBINED: Availability of function towlower
+PASSCOMBINED: Type of function towlower
+PASSCOMBINED: Availability of function towupper
+PASSCOMBINED: Type of function towupper
+PASSCOMBINED: Availability of function wctrans
+PASSCOMBINED: Type of function wctrans
+PASSCOMBINED: Availability of function wctype
+PASSCOMBINED: Type of function wctype
+PASSCOMBINED: Availability of function iswalnum_l
+PASSCOMBINED: Type of function iswalnum_l
+PASSCOMBINED: Availability of function iswalpha_l
+PASSCOMBINED: Type of function iswalpha_l
+PASSCOMBINED: Availability of function iswblank_l
+PASSCOMBINED: Type of function iswblank_l
+PASSCOMBINED: Availability of function iswcntrl_l
+PASSCOMBINED: Type of function iswcntrl_l
+PASSCOMBINED: Availability of function iswdigit_l
+PASSCOMBINED: Type of function iswdigit_l
+PASSCOMBINED: Availability of function iswgraph_l
+PASSCOMBINED: Type of function iswgraph_l
+PASSCOMBINED: Availability of function iswlower_l
+PASSCOMBINED: Type of function iswlower_l
+PASSCOMBINED: Availability of function iswprint_l
+PASSCOMBINED: Type of function iswprint_l
+PASSCOMBINED: Availability of function iswpunct_l
+PASSCOMBINED: Type of function iswpunct_l
+PASSCOMBINED: Availability of function iswspace_l
+PASSCOMBINED: Type of function iswspace_l
+PASSCOMBINED: Availability of function iswupper_l
+PASSCOMBINED: Type of function iswupper_l
+PASSCOMBINED: Availability of function iswxdigit_l
+PASSCOMBINED: Type of function iswxdigit_l
+PASSCOMBINED: Availability of function iswctype_l
+PASSCOMBINED: Type of function iswctype_l
+PASSCOMBINED: Availability of function towctrans_l
+PASSCOMBINED: Type of function towctrans_l
+PASSCOMBINED: Availability of function towlower_l
+PASSCOMBINED: Type of function towlower_l
+PASSCOMBINED: Availability of function towupper_l
+PASSCOMBINED: Type of function towupper_l
+PASSCOMBINED: Availability of function wctrans_l
+PASSCOMBINED: Type of function wctrans_l
+PASSCOMBINED: Availability of function wctype_l
+PASSCOMBINED: Type of function wctype_l
+PASSCOMBINED: Availability of macro WEOF
+PASSCOMBINED: Availability of constant WEOF
+PASSCOMBINED: Type of symbol WEOF
+PASS: Namespace of <wctype.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   81
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

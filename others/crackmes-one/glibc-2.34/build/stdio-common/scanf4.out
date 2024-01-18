@@ -1,0 +1,4 @@
+Result of fscanf %n = 0
+Scanned format = 0
+Result of fscanf "" = 0
+Result of fscanf "BLURB" = -1

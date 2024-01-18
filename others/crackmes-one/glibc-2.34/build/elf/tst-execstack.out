@@ -1,0 +1,3 @@
+executable stacks allowed
+DSO called ok (local 0x7ffe454b45c0, trampoline 0x7ffe454b45c1)
+DSO called ok (local 0x7ffe453a15a0, trampoline 0x7ffe453a15a1)

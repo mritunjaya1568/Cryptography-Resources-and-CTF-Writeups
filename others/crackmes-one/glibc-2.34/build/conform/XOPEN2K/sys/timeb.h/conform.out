@@ -1,0 +1,20 @@
+PASS: Availability of <sys/timeb.h>
+PASS: Combined <sys/timeb.h> test
+PASSCOMBINED: Availability of type struct timeb
+PASSCOMBINED: Availability of member time
+PASSCOMBINED: Type of member time
+PASSCOMBINED: Availability of member millitm
+PASSCOMBINED: Type of member millitm
+PASSCOMBINED: Availability of member timezone
+PASSCOMBINED: Type of member timezone
+PASSCOMBINED: Availability of member dstflag
+PASSCOMBINED: Type of member dstflag
+PASSCOMBINED: Availability of type time_t
+PASSCOMBINED: Availability of function ftime
+PASSCOMBINED: Type of function ftime
+PASS: Namespace of <sys/timeb.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

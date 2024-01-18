@@ -1,0 +1,2 @@
+FAIL: nptl/tst-minstack-exit
+original exit status 1

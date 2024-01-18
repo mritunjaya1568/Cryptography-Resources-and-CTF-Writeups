@@ -1,0 +1,12 @@
+PASS: Availability of <ulimit.h>
+PASS: Combined <ulimit.h> test
+PASSCOMBINED: Availability of constant UL_GETFSIZE
+PASSCOMBINED: Availability of constant UL_SETFSIZE
+PASSCOMBINED: Availability of function ulimit
+PASSCOMBINED: Type of function ulimit
+PASS: Namespace of <ulimit.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    6
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

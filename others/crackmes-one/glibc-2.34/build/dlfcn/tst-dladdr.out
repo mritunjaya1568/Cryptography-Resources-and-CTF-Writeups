@@ -1,0 +1,5 @@
+ret = 1
+info.dli_fname = 0x5555570bf2a0 ("/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dlfcn/glreflib1.so")
+info.dli_fbase = 0x7f2cc9123000
+info.dli_sname = 0x7f2cc912345d ("ref1")
+info.dli_saddr = 0x7f2cc9124100

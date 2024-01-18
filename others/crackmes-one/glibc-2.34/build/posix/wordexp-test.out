@@ -1,0 +1,145 @@
+info: test 1 (one): OK
+info: test 2 (one two): OK
+info: test 3 (one two three): OK
+info: test 4 ( 	foo		bar ): OK
+info: test 5 (red , white blue): OK
+info: test 6 (one two three): OK
+info: test 7 (one "two three"): OK
+info: test 8 (one "two three"): OK
+info: test 9 (one "$var"): OK
+info: test 10 (one $var): OK
+info: test 11 (one "$var"): OK
+info: test 12 (one $var): OK
+info: test 13 ($var): OK
+info: test 14 ($(echo :abc:)): OK
+info: test 15 ($(echo :abc:\ )): OK
+info: test 16 ($(echo :abc\ )): OK
+info: test 17 ($(echo $var)): OK
+info: test 18 (:abc:): OK
+info: test 19 ($(echo :abc:)def): OK
+info: test 20 ($(echo abc:de)f): OK
+info: test 21 ($(echo abc:de)f:ghi): OK
+info: test 22 (abc:d$(echo ef:ghi)): OK
+info: test 23 ($var$(echo def:ghi)): OK
+info: test 24 ($var$(echo ef:ghi)): OK
+info: test 25 ($(echo abc:)$var): OK
+info: test 26 ($(echo abc:d)$var): OK
+info: test 27 (${var}): OK
+info: test 28 ($var): OK
+info: test 29 (\"$var\"): OK
+info: test 30 (%$var%): OK
+info: test 31 (-$var-): OK
+info: test 32 ("quoted"): OK
+info: test 33 ("$var""$var"): OK
+info: test 34 ('singly-quoted'): OK
+info: test 35 (contin\
+uation): OK
+info: test 36 (explicit ''): OK
+info: test 37 (explicit ""): OK
+info: test 38 (explicit ``): OK
+info: test 39 ($(echo hello)): OK
+info: test 40 ($( (echo hello) )): OK
+info: test 41 ($((echo hello);(echo there))): OK
+info: test 42 (`echo one two`): OK
+info: test 43 ($(echo ')')): OK
+info: test 44 ($(echo hello; echo)): OK
+info: test 45 (a$(echo b)c): OK
+info: test 46 ($((1 + 1))): OK
+info: test 47 ($((2-3))): OK
+info: test 48 ($((-1))): OK
+info: test 49 ($[50+20]): OK
+info: test 50 ($(((2+3)*(4+5)))): OK
+info: test 51 ($((010))): OK
+info: test 52 ($((0x10))): OK
+info: test 53 ($((010+0x10))): OK
+info: test 54 ($((-010+0x10))): OK
+info: test 55 ($((-0x10+010))): OK
+info: test 56 (${var:-bar}): OK
+info: test 57 (${var-bar}): OK
+info: test 58 (${var:-bar}): OK
+info: test 59 (${var:-bar}): OK
+info: test 60 (${var-bar}): OK
+info: test 61 (${var:=bar}): OK
+info: test 62 (${var=bar}): OK
+info: test 63 (${var:=bar}): OK
+info: test 64 (${var:=bar}): OK
+info: test 65 (${var=bar}): OK
+info: test 66 (${var:?bar}): OK
+info: test 67 (${var:+bar}): OK
+info: test 68 (${var+bar}): OK
+info: test 69 (${var:+bar}): OK
+info: test 70 (${var:+bar}): OK
+info: test 71 (${var+bar}): OK
+info: test 72 (${#var}): OK
+info: test 73 (${var:-'}'}): OK
+info: test 74 (${var-}): OK
+info: test 75 (${var#${var}}): OK
+info: test 76 (${var%$(echo oni)}): OK
+info: test 77 (${var#$((6))}): OK
+info: test 78 (${var##b*}): OK
+info: test 79 (${var##"b*"}): OK
+info: test 80 (${var%na*}): OK
+info: test 81 (${var%%na*}): OK
+info: test 82 (${var#*bora}): OK
+info: test 83 (${var##*bora}): OK
+info: test 84 (${var##\*co}): OK
+info: test 85 (${var%0%}): OK
+info: test 86 (???): OK
+info: test 87 ([ot]??): OK
+info: test 88 (t*): OK
+info: test 89 ("t"*): OK
+info: test 90 ($var): OK
+info: test 91 ($var): OK
+info: test 92 ($var): OK
+info: test 93 ($var): OK
+info: test 94 ("$var"): OK
+info: test 95 ("$(echo hello there)"): OK
+info: test 96 ("$(echo "hello there")"): OK
+info: test 97 (${var=one two} "$var"): OK
+info: test 98 ($(( $(echo 3)+$var ))): OK
+info: test 99 ("$(echo "*")"): OK
+info: test 100 ("a
+
+$(echo)b"): OK
+info: test 101 (*$var*): OK
+info: test 102 (*$var*): OK
+info: test 103 ($var): OK
+info: test 104 ($var): OK
+info: test 105 ($var): OK
+info: test 106 (\*"|&;<>"\(\)\{\}): OK
+info: test 107 ($var): OK
+info: test 108 ($var): OK
+info: test 109 ("\n"): OK
+info: test 110 (): OK
+info: test 111 (${1234567890123456789012}): OK
+info: test 112 (one two): OK
+info: test 113 (appended): OK
+info: test 114 (appended): OK
+info: test 115 (new
+line): OK
+info: test 116 (pipe|symbol): OK
+info: test 117 (&ampersand): OK
+info: test 118 (semi;colon): OK
+info: test 119 (<greater): OK
+info: test 120 (less>): OK
+info: test 121 ((open-paren): OK
+info: test 122 (close-paren)): OK
+info: test 123 ({open-brace): OK
+info: test 124 (close-brace}): OK
+info: test 125 ($var): OK
+info: test 126 ($9): OK
+info: test 127 ($[50+20))): OK
+info: test 128 (${%%noparam}): OK
+info: test 129 (${missing-brace): OK
+info: test 130 ($(for i in)): OK
+info: test 131 ($((2+))): OK
+info: test 132 (`): OK
+info: test 133 ($((010+4+))): OK
+info: test 134 (`\): OK
+info: test 135 (${): OK
+info: test 136 (L${a:): OK
+info: test 137 (~root ): OK
+info: test 138 (${var#~root}x): OK
+info: test 139 (~ ~/foo): OK
+info: test 140 (~): OK
+tests completed, now cleaning up

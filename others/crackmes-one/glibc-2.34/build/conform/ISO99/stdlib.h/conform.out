@@ -1,0 +1,112 @@
+PASS: Availability of <stdlib.h>
+PASS: Combined <stdlib.h> test
+PASSCOMBINED: Availability of type div_t
+PASSCOMBINED: Availability of member quot
+PASSCOMBINED: Type of member quot
+PASSCOMBINED: Availability of member rem
+PASSCOMBINED: Type of member rem
+PASSCOMBINED: Availability of type ldiv_t
+PASSCOMBINED: Availability of member quot
+PASSCOMBINED: Type of member quot
+PASSCOMBINED: Availability of member rem
+PASSCOMBINED: Type of member rem
+PASSCOMBINED: Availability of macro EXIT_FAILURE
+PASSCOMBINED: Availability of constant EXIT_FAILURE
+PASSCOMBINED: #if usability of symbol EXIT_FAILURE
+PASSCOMBINED: Availability of macro EXIT_SUCCESS
+PASSCOMBINED: Availability of constant EXIT_SUCCESS
+PASSCOMBINED: #if usability of symbol EXIT_SUCCESS
+PASSCOMBINED: Value of symbol EXIT_SUCCESS
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of macro RAND_MAX
+PASSCOMBINED: Availability of constant RAND_MAX
+PASSCOMBINED: #if usability of symbol RAND_MAX
+PASSCOMBINED: Value of symbol RAND_MAX
+PASSCOMBINED: Availability of macro MB_CUR_MAX
+PASSCOMBINED: Availability of type lldiv_t
+PASSCOMBINED: Availability of member quot
+PASSCOMBINED: Type of member quot
+PASSCOMBINED: Availability of member rem
+PASSCOMBINED: Type of member rem
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type wchar_t
+PASSCOMBINED: Availability of function _Exit
+PASSCOMBINED: Type of function _Exit
+PASSCOMBINED: Availability of function abort
+PASSCOMBINED: Type of function abort
+PASSCOMBINED: Availability of function abs
+PASSCOMBINED: Type of function abs
+PASSCOMBINED: Availability of function atexit
+PASSCOMBINED: Type of function atexit
+PASSCOMBINED: Availability of function atof
+PASSCOMBINED: Type of function atof
+PASSCOMBINED: Availability of function atoi
+PASSCOMBINED: Type of function atoi
+PASSCOMBINED: Availability of function atol
+PASSCOMBINED: Type of function atol
+PASSCOMBINED: Availability of function atoll
+PASSCOMBINED: Type of function atoll
+PASSCOMBINED: Availability of function bsearch
+PASSCOMBINED: Type of function bsearch
+PASSCOMBINED: Availability of function calloc
+PASSCOMBINED: Type of function calloc
+PASSCOMBINED: Availability of function div
+PASSCOMBINED: Type of function div
+PASSCOMBINED: Availability of function exit
+PASSCOMBINED: Type of function exit
+PASSCOMBINED: Availability of function free
+PASSCOMBINED: Type of function free
+PASSCOMBINED: Availability of function getenv
+PASSCOMBINED: Type of function getenv
+PASSCOMBINED: Availability of function labs
+PASSCOMBINED: Type of function labs
+PASSCOMBINED: Availability of function ldiv
+PASSCOMBINED: Type of function ldiv
+PASSCOMBINED: Availability of function llabs
+PASSCOMBINED: Type of function llabs
+PASSCOMBINED: Availability of function lldiv
+PASSCOMBINED: Type of function lldiv
+PASSCOMBINED: Availability of function malloc
+PASSCOMBINED: Type of function malloc
+PASSCOMBINED: Availability of function mblen
+PASSCOMBINED: Type of function mblen
+PASSCOMBINED: Availability of function mbstowcs
+PASSCOMBINED: Type of function mbstowcs
+PASSCOMBINED: Availability of function mbtowc
+PASSCOMBINED: Type of function mbtowc
+PASSCOMBINED: Availability of function qsort
+PASSCOMBINED: Type of function qsort
+PASSCOMBINED: Availability of function rand
+PASSCOMBINED: Type of function rand
+PASSCOMBINED: Availability of function realloc
+PASSCOMBINED: Type of function realloc
+PASSCOMBINED: Availability of function srand
+PASSCOMBINED: Type of function srand
+PASSCOMBINED: Availability of function strtod
+PASSCOMBINED: Type of function strtod
+PASSCOMBINED: Availability of function strtof
+PASSCOMBINED: Type of function strtof
+PASSCOMBINED: Availability of function strtold
+PASSCOMBINED: Type of function strtold
+PASSCOMBINED: Availability of function strtol
+PASSCOMBINED: Type of function strtol
+PASSCOMBINED: Availability of function strtoul
+PASSCOMBINED: Type of function strtoul
+PASSCOMBINED: Availability of function strtoll
+PASSCOMBINED: Type of function strtoll
+PASSCOMBINED: Availability of function strtoull
+PASSCOMBINED: Type of function strtoull
+PASSCOMBINED: Availability of function system
+PASSCOMBINED: Type of function system
+PASSCOMBINED: Availability of function wcstombs
+PASSCOMBINED: Type of function wcstombs
+PASSCOMBINED: Availability of function wctomb
+PASSCOMBINED: Type of function wctomb
+PASS: Namespace of <stdlib.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  106
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

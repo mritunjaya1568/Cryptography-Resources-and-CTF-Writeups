@@ -1,0 +1,2 @@
+XFAIL: conform/UNIX98/ndbm.h/conform
+original exit status 1

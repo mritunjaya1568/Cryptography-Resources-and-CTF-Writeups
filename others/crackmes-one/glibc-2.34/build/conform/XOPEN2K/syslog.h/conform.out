@@ -1,0 +1,47 @@
+PASS: Availability of <syslog.h>
+PASS: Combined <syslog.h> test
+PASSCOMBINED: Availability of constant LOG_PID
+PASSCOMBINED: Availability of constant LOG_CONS
+PASSCOMBINED: Availability of constant LOG_NDELAY
+PASSCOMBINED: Availability of constant LOG_ODELAY
+PASSCOMBINED: Availability of constant LOG_NOWAIT
+PASSCOMBINED: Availability of constant LOG_KERN
+PASSCOMBINED: Availability of constant LOG_USER
+PASSCOMBINED: Availability of constant LOG_MAIL
+PASSCOMBINED: Availability of constant LOG_NEWS
+PASSCOMBINED: Availability of constant LOG_UUCP
+PASSCOMBINED: Availability of constant LOG_DAEMON
+PASSCOMBINED: Availability of constant LOG_AUTH
+PASSCOMBINED: Availability of constant LOG_CRON
+PASSCOMBINED: Availability of constant LOG_LPR
+PASSCOMBINED: Availability of constant LOG_LOCAL0
+PASSCOMBINED: Availability of constant LOG_LOCAL1
+PASSCOMBINED: Availability of constant LOG_LOCAL2
+PASSCOMBINED: Availability of constant LOG_LOCAL3
+PASSCOMBINED: Availability of constant LOG_LOCAL4
+PASSCOMBINED: Availability of constant LOG_LOCAL5
+PASSCOMBINED: Availability of constant LOG_LOCAL6
+PASSCOMBINED: Availability of constant LOG_LOCAL7
+PASSCOMBINED: Availability of macro LOG_MASK
+PASSCOMBINED: Availability of constant LOG_EMERG
+PASSCOMBINED: Availability of constant LOG_ALERT
+PASSCOMBINED: Availability of constant LOG_CRIT
+PASSCOMBINED: Availability of constant LOG_ERR
+PASSCOMBINED: Availability of constant LOG_WARNING
+PASSCOMBINED: Availability of constant LOG_NOTICE
+PASSCOMBINED: Availability of constant LOG_INFO
+PASSCOMBINED: Availability of constant LOG_DEBUG
+PASSCOMBINED: Availability of function closelog
+PASSCOMBINED: Type of function closelog
+PASSCOMBINED: Availability of function openlog
+PASSCOMBINED: Type of function openlog
+PASSCOMBINED: Availability of function setlogmask
+PASSCOMBINED: Type of function setlogmask
+PASSCOMBINED: Availability of function syslog
+PASSCOMBINED: Type of function syslog
+PASS: Namespace of <syslog.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   41
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

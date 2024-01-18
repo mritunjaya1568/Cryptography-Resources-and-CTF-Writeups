@@ -1,0 +1,3 @@
+PASS: float
+PASS: double
+PASS: long double

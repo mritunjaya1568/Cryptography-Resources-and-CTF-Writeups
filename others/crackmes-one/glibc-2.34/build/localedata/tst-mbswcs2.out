@@ -1,0 +1,5 @@
+used locale: "de_DE.UTF-8"
+mbsnrtowcs (&wc, &src, 1, 1, &state) -> 1, wc = 37, src = buf+1
+mbsnrtowcs (&wc, &src, 3, 1, &state) -> 1, wc = 8364, src = buf+4
+mbsnrtowcs (&wc, &src, 1, 1, &state) -> 0, wc = 8364, src = buf+5
+mbsnrtowcs (&wc, &src, 1, 1, &state) -> 1, wc = 955, src = buf+6

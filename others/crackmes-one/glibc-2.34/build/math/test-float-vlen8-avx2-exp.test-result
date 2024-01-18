@@ -1,0 +1,2 @@
+PASS: math/test-float-vlen8-avx2-exp
+original exit status 0

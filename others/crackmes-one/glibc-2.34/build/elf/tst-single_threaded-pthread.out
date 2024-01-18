@@ -1,0 +1,2 @@
+info: main __libc_single_threaded address: 0x7f80a3ebe020
+info: __libc_single_threaded after joining all threads: 0

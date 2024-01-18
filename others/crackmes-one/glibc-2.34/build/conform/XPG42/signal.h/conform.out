@@ -1,0 +1,303 @@
+PASS: Availability of <signal.h>
+PASS: Combined <signal.h> test
+PASSCOMBINED: Availability of macro SIG_DFL
+PASSCOMBINED: Availability of constant SIG_DFL
+PASSCOMBINED: Type of symbol SIG_DFL
+PASSCOMBINED: Availability of macro SIG_ERR
+PASSCOMBINED: Availability of constant SIG_ERR
+PASSCOMBINED: Type of symbol SIG_ERR
+PASSCOMBINED: Availability of macro SIG_HOLD
+PASSCOMBINED: Availability of constant SIG_HOLD
+PASSCOMBINED: Type of symbol SIG_HOLD
+PASSCOMBINED: Availability of macro SIG_IGN
+PASSCOMBINED: Availability of constant SIG_IGN
+PASSCOMBINED: Type of symbol SIG_IGN
+PASSCOMBINED: Availability of type sig_atomic_t
+PASSCOMBINED: Availability of type sigset_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of macro SIGABRT
+PASSCOMBINED: Availability of constant SIGABRT
+PASSCOMBINED: #if usability of symbol SIGABRT
+PASSCOMBINED: Type of symbol SIGABRT
+PASSCOMBINED: Value of symbol SIGABRT
+PASSCOMBINED: Availability of macro SIGFPE
+PASSCOMBINED: Availability of constant SIGFPE
+PASSCOMBINED: #if usability of symbol SIGFPE
+PASSCOMBINED: Type of symbol SIGFPE
+PASSCOMBINED: Value of symbol SIGFPE
+PASSCOMBINED: Availability of macro SIGILL
+PASSCOMBINED: Availability of constant SIGILL
+PASSCOMBINED: #if usability of symbol SIGILL
+PASSCOMBINED: Type of symbol SIGILL
+PASSCOMBINED: Value of symbol SIGILL
+PASSCOMBINED: Availability of macro SIGINT
+PASSCOMBINED: Availability of constant SIGINT
+PASSCOMBINED: #if usability of symbol SIGINT
+PASSCOMBINED: Type of symbol SIGINT
+PASSCOMBINED: Value of symbol SIGINT
+PASSCOMBINED: Availability of macro SIGSEGV
+PASSCOMBINED: Availability of constant SIGSEGV
+PASSCOMBINED: #if usability of symbol SIGSEGV
+PASSCOMBINED: Type of symbol SIGSEGV
+PASSCOMBINED: Value of symbol SIGSEGV
+PASSCOMBINED: Availability of macro SIGTERM
+PASSCOMBINED: Availability of constant SIGTERM
+PASSCOMBINED: #if usability of symbol SIGTERM
+PASSCOMBINED: Type of symbol SIGTERM
+PASSCOMBINED: Value of symbol SIGTERM
+PASSCOMBINED: Availability of function signal
+PASSCOMBINED: Type of function signal
+PASSCOMBINED: Availability of function raise
+PASSCOMBINED: Type of function raise
+PASSCOMBINED: Availability of macro SIGALRM
+PASSCOMBINED: Availability of constant SIGALRM
+PASSCOMBINED: #if usability of symbol SIGALRM
+PASSCOMBINED: Type of symbol SIGALRM
+PASSCOMBINED: Value of symbol SIGALRM
+PASSCOMBINED: Availability of macro SIGHUP
+PASSCOMBINED: Availability of constant SIGHUP
+PASSCOMBINED: #if usability of symbol SIGHUP
+PASSCOMBINED: Type of symbol SIGHUP
+PASSCOMBINED: Value of symbol SIGHUP
+PASSCOMBINED: Availability of macro SIGKILL
+PASSCOMBINED: Availability of constant SIGKILL
+PASSCOMBINED: #if usability of symbol SIGKILL
+PASSCOMBINED: Type of symbol SIGKILL
+PASSCOMBINED: Value of symbol SIGKILL
+PASSCOMBINED: Availability of macro SIGPIPE
+PASSCOMBINED: Availability of constant SIGPIPE
+PASSCOMBINED: #if usability of symbol SIGPIPE
+PASSCOMBINED: Type of symbol SIGPIPE
+PASSCOMBINED: Value of symbol SIGPIPE
+PASSCOMBINED: Availability of macro SIGQUIT
+PASSCOMBINED: Availability of constant SIGQUIT
+PASSCOMBINED: #if usability of symbol SIGQUIT
+PASSCOMBINED: Type of symbol SIGQUIT
+PASSCOMBINED: Value of symbol SIGQUIT
+PASSCOMBINED: Availability of macro SIGUSR1
+PASSCOMBINED: Availability of constant SIGUSR1
+PASSCOMBINED: #if usability of symbol SIGUSR1
+PASSCOMBINED: Type of symbol SIGUSR1
+PASSCOMBINED: Value of symbol SIGUSR1
+PASSCOMBINED: Availability of macro SIGUSR2
+PASSCOMBINED: Availability of constant SIGUSR2
+PASSCOMBINED: #if usability of symbol SIGUSR2
+PASSCOMBINED: Type of symbol SIGUSR2
+PASSCOMBINED: Value of symbol SIGUSR2
+PASSCOMBINED: Availability of macro SIGCHLD
+PASSCOMBINED: Availability of constant SIGCHLD
+PASSCOMBINED: #if usability of symbol SIGCHLD
+PASSCOMBINED: Type of symbol SIGCHLD
+PASSCOMBINED: Value of symbol SIGCHLD
+PASSCOMBINED: Availability of macro SIGCONT
+PASSCOMBINED: Availability of constant SIGCONT
+PASSCOMBINED: #if usability of symbol SIGCONT
+PASSCOMBINED: Type of symbol SIGCONT
+PASSCOMBINED: Value of symbol SIGCONT
+PASSCOMBINED: Availability of macro SIGSTOP
+PASSCOMBINED: Availability of constant SIGSTOP
+PASSCOMBINED: #if usability of symbol SIGSTOP
+PASSCOMBINED: Type of symbol SIGSTOP
+PASSCOMBINED: Value of symbol SIGSTOP
+PASSCOMBINED: Availability of macro SIGTSTP
+PASSCOMBINED: Availability of constant SIGTSTP
+PASSCOMBINED: #if usability of symbol SIGTSTP
+PASSCOMBINED: Type of symbol SIGTSTP
+PASSCOMBINED: Value of symbol SIGTSTP
+PASSCOMBINED: Availability of macro SIGTTIN
+PASSCOMBINED: Availability of constant SIGTTIN
+PASSCOMBINED: #if usability of symbol SIGTTIN
+PASSCOMBINED: Type of symbol SIGTTIN
+PASSCOMBINED: Value of symbol SIGTTIN
+PASSCOMBINED: Availability of macro SIGTTOU
+PASSCOMBINED: Availability of constant SIGTTOU
+PASSCOMBINED: #if usability of symbol SIGTTOU
+PASSCOMBINED: Type of symbol SIGTTOU
+PASSCOMBINED: Value of symbol SIGTTOU
+PASSCOMBINED: Availability of macro SIGBUS
+PASSCOMBINED: Availability of constant SIGBUS
+PASSCOMBINED: #if usability of symbol SIGBUS
+PASSCOMBINED: Type of symbol SIGBUS
+PASSCOMBINED: Value of symbol SIGBUS
+PASSCOMBINED: Availability of macro SIGPOLL
+PASSCOMBINED: Availability of constant SIGPOLL
+PASSCOMBINED: #if usability of symbol SIGPOLL
+PASSCOMBINED: Type of symbol SIGPOLL
+PASSCOMBINED: Value of symbol SIGPOLL
+PASSCOMBINED: Availability of macro SIGPROF
+PASSCOMBINED: Availability of constant SIGPROF
+PASSCOMBINED: #if usability of symbol SIGPROF
+PASSCOMBINED: Type of symbol SIGPROF
+PASSCOMBINED: Value of symbol SIGPROF
+PASSCOMBINED: Availability of macro SIGSYS
+PASSCOMBINED: Availability of constant SIGSYS
+PASSCOMBINED: #if usability of symbol SIGSYS
+PASSCOMBINED: Type of symbol SIGSYS
+PASSCOMBINED: Value of symbol SIGSYS
+PASSCOMBINED: Availability of macro SIGTRAP
+PASSCOMBINED: Availability of constant SIGTRAP
+PASSCOMBINED: #if usability of symbol SIGTRAP
+PASSCOMBINED: Type of symbol SIGTRAP
+PASSCOMBINED: Value of symbol SIGTRAP
+PASSCOMBINED: Availability of macro SIGURG
+PASSCOMBINED: Availability of constant SIGURG
+PASSCOMBINED: #if usability of symbol SIGURG
+PASSCOMBINED: Type of symbol SIGURG
+PASSCOMBINED: Value of symbol SIGURG
+PASSCOMBINED: Availability of macro SIGVTALRM
+PASSCOMBINED: Availability of constant SIGVTALRM
+PASSCOMBINED: #if usability of symbol SIGVTALRM
+PASSCOMBINED: Type of symbol SIGVTALRM
+PASSCOMBINED: Value of symbol SIGVTALRM
+PASSCOMBINED: Availability of macro SIGXCPU
+PASSCOMBINED: Availability of constant SIGXCPU
+PASSCOMBINED: #if usability of symbol SIGXCPU
+PASSCOMBINED: Type of symbol SIGXCPU
+PASSCOMBINED: Value of symbol SIGXCPU
+PASSCOMBINED: Availability of macro SIGXFSZ
+PASSCOMBINED: Availability of constant SIGXFSZ
+PASSCOMBINED: #if usability of symbol SIGXFSZ
+PASSCOMBINED: Type of symbol SIGXFSZ
+PASSCOMBINED: Value of symbol SIGXFSZ
+PASSCOMBINED: Availability of type struct sigaction
+PASSCOMBINED: Availability of member sa_handler
+PASSCOMBINED: Type of member sa_handler
+PASSCOMBINED: Availability of member sa_mask
+PASSCOMBINED: Type of member sa_mask
+PASSCOMBINED: Availability of member sa_flags
+PASSCOMBINED: Type of member sa_flags
+PASSCOMBINED: Availability of member sa_sigaction
+PASSCOMBINED: Type of member sa_sigaction
+PASSCOMBINED: Availability of constant SA_NOCLDSTOP
+PASSCOMBINED: Availability of constant SA_SIGINFO
+PASSCOMBINED: Availability of constant SIG_BLOCK
+PASSCOMBINED: Availability of constant SIG_UNBLOCK
+PASSCOMBINED: Availability of constant SIG_SETMASK
+PASSCOMBINED: Availability of constant SA_ONSTACK
+PASSCOMBINED: Availability of constant SA_RESETHAND
+PASSCOMBINED: Availability of constant SA_RESTART
+PASSCOMBINED: Availability of constant SA_NOCLDWAIT
+PASSCOMBINED: Availability of constant SA_NODEFER
+PASSCOMBINED: Availability of constant SS_ONSTACK
+PASSCOMBINED: Availability of constant SS_DISABLE
+PASSCOMBINED: Availability of constant MINSIGSTKSZ
+PASSCOMBINED: Availability of constant SIGSTKSZ
+PASSCOMBINED: Availability of type ucontext_t
+PASSCOMBINED: Availability of member uc_link
+PASSCOMBINED: Type of member uc_link
+PASSCOMBINED: Availability of member uc_sigmask
+PASSCOMBINED: Type of member uc_sigmask
+PASSCOMBINED: Availability of member uc_stack
+PASSCOMBINED: Type of member uc_stack
+PASSCOMBINED: Availability of member uc_mcontext
+PASSCOMBINED: Type of member uc_mcontext
+PASSCOMBINED: Availability of type stack_t
+PASSCOMBINED: Availability of member ss_sp
+PASSCOMBINED: Type of member ss_sp
+PASSCOMBINED: Availability of member ss_size
+PASSCOMBINED: Type of member ss_size
+PASSCOMBINED: Availability of member ss_flags
+PASSCOMBINED: Type of member ss_flags
+PASSCOMBINED: Availability of type struct sigstack
+PASSCOMBINED: Availability of member ss_onstack
+PASSCOMBINED: Type of member ss_onstack
+PASSCOMBINED: Availability of member ss_sp
+PASSCOMBINED: Type of member ss_sp
+PASSCOMBINED: Availability of type siginfo_t
+PASSCOMBINED: Availability of member si_signo
+PASSCOMBINED: Type of member si_signo
+PASSCOMBINED: Availability of member si_errno
+PASSCOMBINED: Type of member si_errno
+PASSCOMBINED: Availability of member si_code
+PASSCOMBINED: Type of member si_code
+PASSCOMBINED: Availability of member si_pid
+PASSCOMBINED: Type of member si_pid
+PASSCOMBINED: Availability of member si_uid
+PASSCOMBINED: Type of member si_uid
+PASSCOMBINED: Availability of member si_addr
+PASSCOMBINED: Type of member si_addr
+PASSCOMBINED: Availability of member si_status
+PASSCOMBINED: Type of member si_status
+PASSCOMBINED: Availability of member si_band
+PASSCOMBINED: Type of member si_band
+PASSCOMBINED: Availability of constant ILL_ILLOPC
+PASSCOMBINED: Availability of constant ILL_ILLOPN
+PASSCOMBINED: Availability of constant ILL_ILLADR
+PASSCOMBINED: Availability of constant ILL_ILLTRP
+PASSCOMBINED: Availability of constant ILL_PRVOPC
+PASSCOMBINED: Availability of constant ILL_PRVREG
+PASSCOMBINED: Availability of constant ILL_COPROC
+PASSCOMBINED: Availability of constant ILL_BADSTK
+PASSCOMBINED: Availability of constant FPE_INTDIV
+PASSCOMBINED: Availability of constant FPE_INTOVF
+PASSCOMBINED: Availability of constant FPE_FLTDIV
+PASSCOMBINED: Availability of constant FPE_FLTOVF
+PASSCOMBINED: Availability of constant FPE_FLTUND
+PASSCOMBINED: Availability of constant FPE_FLTRES
+PASSCOMBINED: Availability of constant FPE_FLTINV
+PASSCOMBINED: Availability of constant FPE_FLTSUB
+PASSCOMBINED: Availability of constant SEGV_MAPERR
+PASSCOMBINED: Availability of constant SEGV_ACCERR
+PASSCOMBINED: Availability of constant BUS_ADRALN
+PASSCOMBINED: Availability of constant BUS_ADRERR
+PASSCOMBINED: Availability of constant BUS_OBJERR
+PASSCOMBINED: Availability of constant CLD_EXITED
+PASSCOMBINED: Availability of constant CLD_KILLED
+PASSCOMBINED: Availability of constant CLD_DUMPED
+PASSCOMBINED: Availability of constant CLD_TRAPPED
+PASSCOMBINED: Availability of constant CLD_STOPPED
+PASSCOMBINED: Availability of constant CLD_CONTINUED
+PASSCOMBINED: Availability of constant POLL_IN
+PASSCOMBINED: Availability of constant POLL_OUT
+PASSCOMBINED: Availability of constant POLL_MSG
+PASSCOMBINED: Availability of constant POLL_ERR
+PASSCOMBINED: Availability of constant POLL_PRI
+PASSCOMBINED: Availability of constant POLL_HUP
+PASSCOMBINED: Availability of constant TRAP_BRKPT
+PASSCOMBINED: Availability of constant TRAP_TRACE
+PASSCOMBINED: Availability of function bsd_signal
+PASSCOMBINED: Type of function bsd_signal
+PASSCOMBINED: Availability of function kill
+PASSCOMBINED: Type of function kill
+PASSCOMBINED: Availability of function killpg
+PASSCOMBINED: Type of function killpg
+PASSCOMBINED: Availability of function sigaction
+PASSCOMBINED: Type of function sigaction
+PASSCOMBINED: Availability of function sigaddset
+PASSCOMBINED: Type of function sigaddset
+PASSCOMBINED: Availability of function sigaltstack
+PASSCOMBINED: Type of function sigaltstack
+PASSCOMBINED: Availability of function sigdelset
+PASSCOMBINED: Type of function sigdelset
+PASSCOMBINED: Availability of function sigemptyset
+PASSCOMBINED: Type of function sigemptyset
+PASSCOMBINED: Availability of function sigfillset
+PASSCOMBINED: Type of function sigfillset
+PASSCOMBINED: Availability of function sighold
+PASSCOMBINED: Type of function sighold
+PASSCOMBINED: Availability of function sigignore
+PASSCOMBINED: Type of function sigignore
+PASSCOMBINED: Availability of function siginterrupt
+PASSCOMBINED: Type of function siginterrupt
+PASSCOMBINED: Availability of function sigismember
+PASSCOMBINED: Type of function sigismember
+PASSCOMBINED: Availability of function sigpause
+PASSCOMBINED: Type of function sigpause
+PASSCOMBINED: Availability of function sigpending
+PASSCOMBINED: Type of function sigpending
+PASSCOMBINED: Availability of function sigprocmask
+PASSCOMBINED: Type of function sigprocmask
+PASSCOMBINED: Availability of function sigrelse
+PASSCOMBINED: Type of function sigrelse
+PASSCOMBINED: Availability of function sigset
+PASSCOMBINED: Type of function sigset
+PASSCOMBINED: Availability of function sigstack
+PASSCOMBINED: Type of function sigstack
+PASSCOMBINED: Availability of function sigsuspend
+PASSCOMBINED: Type of function sigsuspend
+PASS: Namespace of <signal.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  297
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

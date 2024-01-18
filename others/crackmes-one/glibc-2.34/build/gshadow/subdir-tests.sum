@@ -1,0 +1,7 @@
+PASS: gshadow/check-installed-headers-c
+PASS: gshadow/check-installed-headers-cxx
+PASS: gshadow/check-obsolete-constructs
+PASS: gshadow/check-wrapper-headers
+PASS: gshadow/tst-fgetsgent_r
+PASS: gshadow/tst-gshadow
+PASS: gshadow/tst-putsgent

@@ -1,0 +1,5 @@
+--- ../sysdeps/unix/sysv/linux/x86_64/64/libc.abilist	2021-08-02 07:03:43.000000000 +0530
++++ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.symlist	2022-12-03 23:33:52.625803840 +0530
+@@ -543 +543 @@ GLIBC_2.2.5 _mcount F
+-GLIBC_2.2.5 _nl_default_dirname D 0x12
++GLIBC_2.2.5 _nl_default_dirname D 0x49

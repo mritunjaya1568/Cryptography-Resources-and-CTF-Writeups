@@ -1,0 +1,2 @@
+PASS: conform/POSIX/sys/wait.h/linknamespace
+original exit status 0

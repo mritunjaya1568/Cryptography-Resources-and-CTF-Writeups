@@ -1,0 +1,298 @@
+PASS: Availability of <stdint.h>
+PASS: Combined <stdint.h> test
+PASSCOMBINED: Availability of type int8_t
+PASSCOMBINED: Availability of type int16_t
+PASSCOMBINED: Availability of type int32_t
+PASSCOMBINED: Availability of type int64_t
+PASSCOMBINED: Availability of type uint8_t
+PASSCOMBINED: Availability of type uint16_t
+PASSCOMBINED: Availability of type uint32_t
+PASSCOMBINED: Availability of type uint64_t
+PASSCOMBINED: Availability of type int_least8_t
+PASSCOMBINED: Availability of type int_least16_t
+PASSCOMBINED: Availability of type int_least32_t
+PASSCOMBINED: Availability of type int_least64_t
+PASSCOMBINED: Availability of type uint_least8_t
+PASSCOMBINED: Availability of type uint_least16_t
+PASSCOMBINED: Availability of type uint_least32_t
+PASSCOMBINED: Availability of type uint_least64_t
+PASSCOMBINED: Availability of type int_fast8_t
+PASSCOMBINED: Availability of type int_fast16_t
+PASSCOMBINED: Availability of type int_fast32_t
+PASSCOMBINED: Availability of type int_fast64_t
+PASSCOMBINED: Availability of type uint_fast8_t
+PASSCOMBINED: Availability of type uint_fast16_t
+PASSCOMBINED: Availability of type uint_fast32_t
+PASSCOMBINED: Availability of type uint_fast64_t
+PASSCOMBINED: Availability of type intptr_t
+PASSCOMBINED: Availability of type uintptr_t
+PASSCOMBINED: Availability of type intmax_t
+PASSCOMBINED: Availability of type uintmax_t
+PASSCOMBINED: Availability of macro INT8_MIN
+PASSCOMBINED: Availability of constant INT8_MIN
+PASSCOMBINED: #if usability of symbol INT8_MIN
+PASSCOMBINED: Type of symbol INT8_MIN
+PASSCOMBINED: Value of symbol INT8_MIN
+PASSCOMBINED: Availability of macro INT8_MAX
+PASSCOMBINED: Availability of constant INT8_MAX
+PASSCOMBINED: #if usability of symbol INT8_MAX
+PASSCOMBINED: Type of symbol INT8_MAX
+PASSCOMBINED: Value of symbol INT8_MAX
+PASSCOMBINED: Availability of macro INT16_MIN
+PASSCOMBINED: Availability of constant INT16_MIN
+PASSCOMBINED: #if usability of symbol INT16_MIN
+PASSCOMBINED: Type of symbol INT16_MIN
+PASSCOMBINED: Value of symbol INT16_MIN
+PASSCOMBINED: Availability of macro INT16_MAX
+PASSCOMBINED: Availability of constant INT16_MAX
+PASSCOMBINED: #if usability of symbol INT16_MAX
+PASSCOMBINED: Type of symbol INT16_MAX
+PASSCOMBINED: Value of symbol INT16_MAX
+PASSCOMBINED: Availability of macro INT32_MIN
+PASSCOMBINED: Availability of constant INT32_MIN
+PASSCOMBINED: #if usability of symbol INT32_MIN
+PASSCOMBINED: Type of symbol INT32_MIN
+PASSCOMBINED: Value of symbol INT32_MIN
+PASSCOMBINED: Availability of macro INT32_MAX
+PASSCOMBINED: Availability of constant INT32_MAX
+PASSCOMBINED: #if usability of symbol INT32_MAX
+PASSCOMBINED: Type of symbol INT32_MAX
+PASSCOMBINED: Value of symbol INT32_MAX
+PASSCOMBINED: Availability of macro INT64_MIN
+PASSCOMBINED: Availability of constant INT64_MIN
+PASSCOMBINED: #if usability of symbol INT64_MIN
+PASSCOMBINED: Type of symbol INT64_MIN
+PASSCOMBINED: Value of symbol INT64_MIN
+PASSCOMBINED: Availability of macro INT64_MAX
+PASSCOMBINED: Availability of constant INT64_MAX
+PASSCOMBINED: #if usability of symbol INT64_MAX
+PASSCOMBINED: Type of symbol INT64_MAX
+PASSCOMBINED: Value of symbol INT64_MAX
+PASSCOMBINED: Availability of macro UINT8_MAX
+PASSCOMBINED: Availability of constant UINT8_MAX
+PASSCOMBINED: #if usability of symbol UINT8_MAX
+PASSCOMBINED: Type of symbol UINT8_MAX
+PASSCOMBINED: Value of symbol UINT8_MAX
+PASSCOMBINED: Availability of macro UINT16_MAX
+PASSCOMBINED: Availability of constant UINT16_MAX
+PASSCOMBINED: #if usability of symbol UINT16_MAX
+PASSCOMBINED: Type of symbol UINT16_MAX
+PASSCOMBINED: Value of symbol UINT16_MAX
+PASSCOMBINED: Availability of macro UINT32_MAX
+PASSCOMBINED: Availability of constant UINT32_MAX
+PASSCOMBINED: #if usability of symbol UINT32_MAX
+PASSCOMBINED: Type of symbol UINT32_MAX
+PASSCOMBINED: Value of symbol UINT32_MAX
+PASSCOMBINED: Availability of macro UINT64_MAX
+PASSCOMBINED: Availability of constant UINT64_MAX
+PASSCOMBINED: #if usability of symbol UINT64_MAX
+PASSCOMBINED: Type of symbol UINT64_MAX
+PASSCOMBINED: Value of symbol UINT64_MAX
+PASSCOMBINED: Availability of macro INT_LEAST8_MIN
+PASSCOMBINED: Availability of constant INT_LEAST8_MIN
+PASSCOMBINED: #if usability of symbol INT_LEAST8_MIN
+PASSCOMBINED: Type of symbol INT_LEAST8_MIN
+PASSCOMBINED: Value of symbol INT_LEAST8_MIN
+PASSCOMBINED: Availability of macro INT_LEAST8_MAX
+PASSCOMBINED: Availability of constant INT_LEAST8_MAX
+PASSCOMBINED: #if usability of symbol INT_LEAST8_MAX
+PASSCOMBINED: Type of symbol INT_LEAST8_MAX
+PASSCOMBINED: Value of symbol INT_LEAST8_MAX
+PASSCOMBINED: Availability of macro INT_LEAST16_MIN
+PASSCOMBINED: Availability of constant INT_LEAST16_MIN
+PASSCOMBINED: #if usability of symbol INT_LEAST16_MIN
+PASSCOMBINED: Type of symbol INT_LEAST16_MIN
+PASSCOMBINED: Value of symbol INT_LEAST16_MIN
+PASSCOMBINED: Availability of macro INT_LEAST16_MAX
+PASSCOMBINED: Availability of constant INT_LEAST16_MAX
+PASSCOMBINED: #if usability of symbol INT_LEAST16_MAX
+PASSCOMBINED: Type of symbol INT_LEAST16_MAX
+PASSCOMBINED: Value of symbol INT_LEAST16_MAX
+PASSCOMBINED: Availability of macro INT_LEAST32_MIN
+PASSCOMBINED: Availability of constant INT_LEAST32_MIN
+PASSCOMBINED: #if usability of symbol INT_LEAST32_MIN
+PASSCOMBINED: Type of symbol INT_LEAST32_MIN
+PASSCOMBINED: Value of symbol INT_LEAST32_MIN
+PASSCOMBINED: Availability of macro INT_LEAST32_MAX
+PASSCOMBINED: Availability of constant INT_LEAST32_MAX
+PASSCOMBINED: #if usability of symbol INT_LEAST32_MAX
+PASSCOMBINED: Type of symbol INT_LEAST32_MAX
+PASSCOMBINED: Value of symbol INT_LEAST32_MAX
+PASSCOMBINED: Availability of macro INT_LEAST64_MIN
+PASSCOMBINED: Availability of constant INT_LEAST64_MIN
+PASSCOMBINED: #if usability of symbol INT_LEAST64_MIN
+PASSCOMBINED: Type of symbol INT_LEAST64_MIN
+PASSCOMBINED: Value of symbol INT_LEAST64_MIN
+PASSCOMBINED: Availability of macro INT_LEAST64_MAX
+PASSCOMBINED: Availability of constant INT_LEAST64_MAX
+PASSCOMBINED: #if usability of symbol INT_LEAST64_MAX
+PASSCOMBINED: Type of symbol INT_LEAST64_MAX
+PASSCOMBINED: Value of symbol INT_LEAST64_MAX
+PASSCOMBINED: Availability of macro UINT_LEAST8_MAX
+PASSCOMBINED: Availability of constant UINT_LEAST8_MAX
+PASSCOMBINED: #if usability of symbol UINT_LEAST8_MAX
+PASSCOMBINED: Type of symbol UINT_LEAST8_MAX
+PASSCOMBINED: Value of symbol UINT_LEAST8_MAX
+PASSCOMBINED: Availability of macro UINT_LEAST16_MAX
+PASSCOMBINED: Availability of constant UINT_LEAST16_MAX
+PASSCOMBINED: #if usability of symbol UINT_LEAST16_MAX
+PASSCOMBINED: Type of symbol UINT_LEAST16_MAX
+PASSCOMBINED: Value of symbol UINT_LEAST16_MAX
+PASSCOMBINED: Availability of macro UINT_LEAST32_MAX
+PASSCOMBINED: Availability of constant UINT_LEAST32_MAX
+PASSCOMBINED: #if usability of symbol UINT_LEAST32_MAX
+PASSCOMBINED: Type of symbol UINT_LEAST32_MAX
+PASSCOMBINED: Value of symbol UINT_LEAST32_MAX
+PASSCOMBINED: Availability of macro UINT_LEAST64_MAX
+PASSCOMBINED: Availability of constant UINT_LEAST64_MAX
+PASSCOMBINED: #if usability of symbol UINT_LEAST64_MAX
+PASSCOMBINED: Type of symbol UINT_LEAST64_MAX
+PASSCOMBINED: Value of symbol UINT_LEAST64_MAX
+PASSCOMBINED: Availability of macro INT_FAST8_MIN
+PASSCOMBINED: Availability of constant INT_FAST8_MIN
+PASSCOMBINED: #if usability of symbol INT_FAST8_MIN
+PASSCOMBINED: Type of symbol INT_FAST8_MIN
+PASSCOMBINED: Value of symbol INT_FAST8_MIN
+PASSCOMBINED: Availability of macro INT_FAST8_MAX
+PASSCOMBINED: Availability of constant INT_FAST8_MAX
+PASSCOMBINED: #if usability of symbol INT_FAST8_MAX
+PASSCOMBINED: Type of symbol INT_FAST8_MAX
+PASSCOMBINED: Value of symbol INT_FAST8_MAX
+PASSCOMBINED: Availability of macro INT_FAST16_MIN
+PASSCOMBINED: Availability of constant INT_FAST16_MIN
+PASSCOMBINED: #if usability of symbol INT_FAST16_MIN
+PASSCOMBINED: Type of symbol INT_FAST16_MIN
+PASSCOMBINED: Value of symbol INT_FAST16_MIN
+PASSCOMBINED: Availability of macro INT_FAST16_MAX
+PASSCOMBINED: Availability of constant INT_FAST16_MAX
+PASSCOMBINED: #if usability of symbol INT_FAST16_MAX
+PASSCOMBINED: Type of symbol INT_FAST16_MAX
+PASSCOMBINED: Value of symbol INT_FAST16_MAX
+PASSCOMBINED: Availability of macro INT_FAST32_MIN
+PASSCOMBINED: Availability of constant INT_FAST32_MIN
+PASSCOMBINED: #if usability of symbol INT_FAST32_MIN
+PASSCOMBINED: Type of symbol INT_FAST32_MIN
+PASSCOMBINED: Value of symbol INT_FAST32_MIN
+PASSCOMBINED: Availability of macro INT_FAST32_MAX
+PASSCOMBINED: Availability of constant INT_FAST32_MAX
+PASSCOMBINED: #if usability of symbol INT_FAST32_MAX
+PASSCOMBINED: Type of symbol INT_FAST32_MAX
+PASSCOMBINED: Value of symbol INT_FAST32_MAX
+PASSCOMBINED: Availability of macro INT_FAST64_MIN
+PASSCOMBINED: Availability of constant INT_FAST64_MIN
+PASSCOMBINED: #if usability of symbol INT_FAST64_MIN
+PASSCOMBINED: Type of symbol INT_FAST64_MIN
+PASSCOMBINED: Value of symbol INT_FAST64_MIN
+PASSCOMBINED: Availability of macro INT_FAST64_MAX
+PASSCOMBINED: Availability of constant INT_FAST64_MAX
+PASSCOMBINED: #if usability of symbol INT_FAST64_MAX
+PASSCOMBINED: Type of symbol INT_FAST64_MAX
+PASSCOMBINED: Value of symbol INT_FAST64_MAX
+PASSCOMBINED: Availability of macro UINT_FAST8_MAX
+PASSCOMBINED: Availability of constant UINT_FAST8_MAX
+PASSCOMBINED: #if usability of symbol UINT_FAST8_MAX
+PASSCOMBINED: Type of symbol UINT_FAST8_MAX
+PASSCOMBINED: Value of symbol UINT_FAST8_MAX
+PASSCOMBINED: Availability of macro UINT_FAST16_MAX
+PASSCOMBINED: Availability of constant UINT_FAST16_MAX
+PASSCOMBINED: #if usability of symbol UINT_FAST16_MAX
+PASSCOMBINED: Type of symbol UINT_FAST16_MAX
+PASSCOMBINED: Value of symbol UINT_FAST16_MAX
+PASSCOMBINED: Availability of macro UINT_FAST32_MAX
+PASSCOMBINED: Availability of constant UINT_FAST32_MAX
+PASSCOMBINED: #if usability of symbol UINT_FAST32_MAX
+PASSCOMBINED: Type of symbol UINT_FAST32_MAX
+PASSCOMBINED: Value of symbol UINT_FAST32_MAX
+PASSCOMBINED: Availability of macro UINT_FAST64_MAX
+PASSCOMBINED: Availability of constant UINT_FAST64_MAX
+PASSCOMBINED: #if usability of symbol UINT_FAST64_MAX
+PASSCOMBINED: Type of symbol UINT_FAST64_MAX
+PASSCOMBINED: Value of symbol UINT_FAST64_MAX
+PASSCOMBINED: Availability of macro INTPTR_MIN
+PASSCOMBINED: Availability of constant INTPTR_MIN
+PASSCOMBINED: #if usability of symbol INTPTR_MIN
+PASSCOMBINED: Type of symbol INTPTR_MIN
+PASSCOMBINED: Value of symbol INTPTR_MIN
+PASSCOMBINED: Availability of macro INTPTR_MAX
+PASSCOMBINED: Availability of constant INTPTR_MAX
+PASSCOMBINED: #if usability of symbol INTPTR_MAX
+PASSCOMBINED: Type of symbol INTPTR_MAX
+PASSCOMBINED: Value of symbol INTPTR_MAX
+PASSCOMBINED: Availability of macro UINTPTR_MAX
+PASSCOMBINED: Availability of constant UINTPTR_MAX
+PASSCOMBINED: #if usability of symbol UINTPTR_MAX
+PASSCOMBINED: Type of symbol UINTPTR_MAX
+PASSCOMBINED: Value of symbol UINTPTR_MAX
+PASSCOMBINED: Availability of macro INTMAX_MIN
+PASSCOMBINED: Availability of constant INTMAX_MIN
+PASSCOMBINED: #if usability of symbol INTMAX_MIN
+PASSCOMBINED: Type of symbol INTMAX_MIN
+PASSCOMBINED: Value of symbol INTMAX_MIN
+PASSCOMBINED: Availability of macro INTMAX_MAX
+PASSCOMBINED: Availability of constant INTMAX_MAX
+PASSCOMBINED: #if usability of symbol INTMAX_MAX
+PASSCOMBINED: Type of symbol INTMAX_MAX
+PASSCOMBINED: Value of symbol INTMAX_MAX
+PASSCOMBINED: Availability of macro UINTMAX_MAX
+PASSCOMBINED: Availability of constant UINTMAX_MAX
+PASSCOMBINED: #if usability of symbol UINTMAX_MAX
+PASSCOMBINED: Type of symbol UINTMAX_MAX
+PASSCOMBINED: Value of symbol UINTMAX_MAX
+PASSCOMBINED: Availability of macro PTRDIFF_MIN
+PASSCOMBINED: Availability of constant PTRDIFF_MIN
+PASSCOMBINED: #if usability of symbol PTRDIFF_MIN
+PASSCOMBINED: Type of symbol PTRDIFF_MIN
+PASSCOMBINED: Value of symbol PTRDIFF_MIN
+PASSCOMBINED: Availability of macro PTRDIFF_MAX
+PASSCOMBINED: Availability of constant PTRDIFF_MAX
+PASSCOMBINED: #if usability of symbol PTRDIFF_MAX
+PASSCOMBINED: Type of symbol PTRDIFF_MAX
+PASSCOMBINED: Value of symbol PTRDIFF_MAX
+PASSCOMBINED: Availability of macro SIG_ATOMIC_MIN
+PASSCOMBINED: Availability of constant SIG_ATOMIC_MIN
+PASSCOMBINED: #if usability of symbol SIG_ATOMIC_MIN
+PASSCOMBINED: Type of symbol SIG_ATOMIC_MIN
+PASSCOMBINED: Availability of macro SIG_ATOMIC_MAX
+PASSCOMBINED: Availability of constant SIG_ATOMIC_MAX
+PASSCOMBINED: #if usability of symbol SIG_ATOMIC_MAX
+PASSCOMBINED: Type of symbol SIG_ATOMIC_MAX
+PASSCOMBINED: Value of symbol SIG_ATOMIC_MAX
+PASSCOMBINED: Availability of macro SIZE_MAX
+PASSCOMBINED: Availability of constant SIZE_MAX
+PASSCOMBINED: #if usability of symbol SIZE_MAX
+PASSCOMBINED: Type of symbol SIZE_MAX
+PASSCOMBINED: Value of symbol SIZE_MAX
+PASSCOMBINED: Availability of macro WCHAR_MIN
+PASSCOMBINED: Availability of constant WCHAR_MIN
+PASSCOMBINED: #if usability of symbol WCHAR_MIN
+PASSCOMBINED: Type of symbol WCHAR_MIN
+PASSCOMBINED: Availability of macro WCHAR_MAX
+PASSCOMBINED: Availability of constant WCHAR_MAX
+PASSCOMBINED: #if usability of symbol WCHAR_MAX
+PASSCOMBINED: Type of symbol WCHAR_MAX
+PASSCOMBINED: Value of symbol WCHAR_MAX
+PASSCOMBINED: Availability of macro WINT_MIN
+PASSCOMBINED: Availability of constant WINT_MIN
+PASSCOMBINED: #if usability of symbol WINT_MIN
+PASSCOMBINED: Type of symbol WINT_MIN
+PASSCOMBINED: Availability of macro WINT_MAX
+PASSCOMBINED: Availability of constant WINT_MAX
+PASSCOMBINED: #if usability of symbol WINT_MAX
+PASSCOMBINED: Type of symbol WINT_MAX
+PASSCOMBINED: Value of symbol WINT_MAX
+PASSCOMBINED: Availability of macro INT8_C
+PASSCOMBINED: Availability of macro INT16_C
+PASSCOMBINED: Availability of macro INT32_C
+PASSCOMBINED: Availability of macro INT64_C
+PASSCOMBINED: Availability of macro UINT8_C
+PASSCOMBINED: Availability of macro UINT16_C
+PASSCOMBINED: Availability of macro UINT32_C
+PASSCOMBINED: Availability of macro UINT64_C
+PASSCOMBINED: Availability of macro INTMAX_C
+PASSCOMBINED: Availability of macro UINTMAX_C
+PASS: Namespace of <stdint.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  292
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

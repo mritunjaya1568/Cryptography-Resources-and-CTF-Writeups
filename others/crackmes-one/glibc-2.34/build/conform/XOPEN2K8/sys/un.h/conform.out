@@ -1,0 +1,14 @@
+PASS: Availability of <sys/un.h>
+PASS: Combined <sys/un.h> test
+PASSCOMBINED: Availability of type struct sockaddr_un
+PASSCOMBINED: Availability of member sun_family
+PASSCOMBINED: Type of member sun_family
+PASSCOMBINED: Availability of member sun_path
+PASSCOMBINED: Type of member sun_path
+PASSCOMBINED: Availability of type sa_family_t
+PASS: Namespace of <sys/un.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    8
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

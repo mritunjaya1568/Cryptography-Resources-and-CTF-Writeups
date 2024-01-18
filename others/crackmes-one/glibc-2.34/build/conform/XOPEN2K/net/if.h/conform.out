@@ -1,0 +1,22 @@
+PASS: Availability of <net/if.h>
+PASS: Combined <net/if.h> test
+PASSCOMBINED: Availability of type struct if_nameindex
+PASSCOMBINED: Availability of member if_index
+PASSCOMBINED: Type of member if_index
+PASSCOMBINED: Availability of member if_name
+PASSCOMBINED: Type of member if_name
+PASSCOMBINED: Availability of macro IF_NAMESIZE
+PASSCOMBINED: Availability of function if_nametoindex
+PASSCOMBINED: Type of function if_nametoindex
+PASSCOMBINED: Availability of function if_indextoname
+PASSCOMBINED: Type of function if_indextoname
+PASSCOMBINED: Availability of function if_nameindex
+PASSCOMBINED: Type of function if_nameindex
+PASSCOMBINED: Availability of function if_freenameindex
+PASSCOMBINED: Type of function if_freenameindex
+PASS: Namespace of <net/if.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   16
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

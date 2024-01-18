@@ -1,0 +1,38 @@
+PASS: Availability of <arpa/inet.h>
+PASS: Combined <arpa/inet.h> test
+PASSCOMBINED: Availability of type in_port_t
+PASSCOMBINED: Availability of type in_addr_t
+PASSCOMBINED: Availability of type uint32_t
+PASSCOMBINED: Availability of type uint16_t
+PASSCOMBINED: Availability of macro INET_ADDRSTRLEN
+PASSCOMBINED: Availability of macro INET6_ADDRSTRLEN
+PASSCOMBINED: Availability of function htonl
+PASSCOMBINED: Type of function htonl
+PASSCOMBINED: Availability of function htons
+PASSCOMBINED: Type of function htons
+PASSCOMBINED: Availability of function ntohl
+PASSCOMBINED: Type of function ntohl
+PASSCOMBINED: Availability of function htons
+PASSCOMBINED: Type of function htons
+PASSCOMBINED: Availability of function inet_addr
+PASSCOMBINED: Type of function inet_addr
+PASSCOMBINED: Availability of function inet_lnaof
+PASSCOMBINED: Type of function inet_lnaof
+PASSCOMBINED: Availability of function inet_makeaddr
+PASSCOMBINED: Type of function inet_makeaddr
+PASSCOMBINED: Availability of function inet_netof
+PASSCOMBINED: Type of function inet_netof
+PASSCOMBINED: Availability of function inet_network
+PASSCOMBINED: Type of function inet_network
+PASSCOMBINED: Availability of function inet_ntoa
+PASSCOMBINED: Type of function inet_ntoa
+PASSCOMBINED: Availability of function inet_ntop
+PASSCOMBINED: Type of function inet_ntop
+PASSCOMBINED: Availability of function inet_pton
+PASSCOMBINED: Type of function inet_pton
+PASS: Namespace of <arpa/inet.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   32
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

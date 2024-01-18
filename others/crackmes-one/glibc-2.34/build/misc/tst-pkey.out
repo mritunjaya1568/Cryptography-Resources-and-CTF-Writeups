@@ -1,0 +1,1 @@
+error: ../sysdeps/unix/sysv/linux/tst-pkey.c:201: CPU does not support memory protection keys: Invalid argument

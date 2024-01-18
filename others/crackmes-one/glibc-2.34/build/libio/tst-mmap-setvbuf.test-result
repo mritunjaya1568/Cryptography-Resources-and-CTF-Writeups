@@ -1,0 +1,2 @@
+PASS: libio/tst-mmap-setvbuf
+original exit status 0

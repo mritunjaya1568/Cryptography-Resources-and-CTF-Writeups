@@ -1,0 +1,2 @@
+PASS: conform/POSIX/unistd.h/linknamespace
+original exit status 0

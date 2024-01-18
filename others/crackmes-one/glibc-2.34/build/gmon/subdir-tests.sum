@@ -1,0 +1,11 @@
+PASS: gmon/check-installed-headers-c
+PASS: gmon/check-installed-headers-cxx
+PASS: gmon/check-obsolete-constructs
+PASS: gmon/check-wrapper-headers
+PASS: gmon/tst-gmon
+PASS: gmon/tst-gmon-gprof
+PASS: gmon/tst-gmon-pie
+PASS: gmon/tst-gmon-pie-gprof
+PASS: gmon/tst-gmon-static
+PASS: gmon/tst-gmon-static-gprof
+PASS: gmon/tst-sprofil

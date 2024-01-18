@@ -1,0 +1,511 @@
+PASS: Availability of <unistd.h>
+PASS: Combined <unistd.h> test
+PASSCOMBINED: Availability of constant _POSIX_VERSION
+PASS: Availability of constant _XOPEN_VERSION
+PASS: Availability of constant _XOPEN_XCU_VERSION
+PASS: Availability of constant _POSIX2_C_BIND
+PASS: Availability of constant _POSIX2_CHAR_TERM
+PASS: Availability of constant _POSIX2_LOCALEDEF
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_UPE’ undeclared here (not in a function); did you mean ‘_SC_2_UPE’?
+ __typeof__ (_POSIX2_UPE) a_6 = _POSIX2_UPE;
+             ^~~~~~~~~~~
+             _SC_2_UPE
+MISSING: Availability of constant _POSIX2_UPE
+PASS: Availability of constant _POSIX2_VERSION
+PASS: Availability of constant _XOPEN_XPG2
+PASS: Availability of constant _XOPEN_XPG3
+PASS: Availability of constant _XOPEN_XPG4
+PASS: Availability of constant _XOPEN_UNIX
+PASS: Availability of constant _POSIX_ADVISORY_INFO
+PASS: Availability of constant _POSIX_ASYNCHRONOUS_IO
+PASS: Availability of constant _POSIX_BARRIERS
+PASS: Availability of constant _POSIX_CHOWN_RESTRICTED
+PASS: Availability of constant _POSIX_CLOCK_SELECTION
+PASS: Availability of constant _POSIX_CPUTIME
+PASS: Availability of constant _POSIX_NO_TRUNC
+PASS: Availability of constant _POSIX_VDISABLE
+PASS: Availability of constant _POSIX_SAVED_IDS
+PASS: Availability of constant _POSIX_JOB_CONTROL
+PASS: Availability of constant _POSIX_MONOTONIC_CLOCK
+PASS: Availability of constant _POSIX_READER_WRITER_LOCKS
+PASS: Availability of constant _POSIX_SHELL
+PASS: Availability of constant _POSIX_SPAWN
+PASS: Availability of constant _POSIX_SPIN_LOCKS
+PASS: Availability of constant _POSIX_SPORADIC_SERVER
+PASS: Availability of constant _POSIX_THREAD_CPUTIME
+PASS: Availability of constant _POSIX_TYPED_MEMORY_OBJECTS
+PASS: Availability of constant _POSIX_THREADS
+PASS: Availability of constant _POSIX_THREAD_ATTR_STACKADDR
+PASS: Availability of constant _POSIX_THREAD_ATTR_STACKSIZE
+PASS: Availability of constant _POSIX_THREAD_PROCESS_SHARED
+PASS: Availability of constant _POSIX_THREAD_SAFE_FUNCTIONS
+PASS: Availability of constant _POSIX_THREAD_SPORADIC_SERVER
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX_V7_ILP32_OFF32’ undeclared here (not in a function); did you mean ‘_SC_V7_ILP32_OFF32’?
+ __typeof__ (_POSIX_V7_ILP32_OFF32) a_36 = _POSIX_V7_ILP32_OFF32;
+             ^~~~~~~~~~~~~~~~~~~~~
+             _SC_V7_ILP32_OFF32
+MISSING: Availability of constant _POSIX_V7_ILP32_OFF32
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX_V7_ILP32_OFFBIG’ undeclared here (not in a function); did you mean ‘_SC_V7_ILP32_OFFBIG’?
+ __typeof__ (_POSIX_V7_ILP32_OFFBIG) a_37 = _POSIX_V7_ILP32_OFFBIG;
+             ^~~~~~~~~~~~~~~~~~~~~~
+             _SC_V7_ILP32_OFFBIG
+MISSING: Availability of constant _POSIX_V7_ILP32_OFFBIG
+PASS: Availability of constant _POSIX_V7_LP64_OFF64
+PASS: Availability of constant _POSIX_V7_LPBIG_OFFBIG
+PASS: Availability of constant _POSIX2_C_DEV
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_FORT_DEV’ undeclared here (not in a function); did you mean ‘_SC_2_FORT_DEV’?
+ __typeof__ (_POSIX2_FORT_DEV) a_41 = _POSIX2_FORT_DEV;
+             ^~~~~~~~~~~~~~~~
+             _SC_2_FORT_DEV
+MISSING: Availability of constant _POSIX2_FORT_DEV
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_FORT_RUN’ undeclared here (not in a function); did you mean ‘_SC_2_FORT_RUN’?
+ __typeof__ (_POSIX2_FORT_RUN) a_42 = _POSIX2_FORT_RUN;
+             ^~~~~~~~~~~~~~~~
+             _SC_2_FORT_RUN
+MISSING: Availability of constant _POSIX2_FORT_RUN
+PASS: Availability of constant _POSIX2_SW_DEV
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_XOPEN_CRYPT’ undeclared here (not in a function); did you mean ‘_SC_XOPEN_CRYPT’?
+ __typeof__ (_XOPEN_CRYPT) a_44 = _XOPEN_CRYPT;
+             ^~~~~~~~~~~~
+             _SC_XOPEN_CRYPT
+MISSING: Availability of constant _XOPEN_CRYPT
+PASS: Availability of constant _XOPEN_ENH_I18N
+PASS: Availability of constant _XOPEN_LEGACY
+PASS: Availability of constant _XOPEN_REALTIME
+PASS: Availability of constant _XOPEN_REALTIME_THREADS
+PASS: Availability of constant _XOPEN_SHM
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_XOPEN_STREAMS’ undeclared here (not in a function); did you mean ‘_SC_XOPEN_STREAMS’?
+ __typeof__ (_XOPEN_STREAMS) a_50 = _XOPEN_STREAMS;
+             ^~~~~~~~~~~~~~
+             _SC_XOPEN_STREAMS
+MISSING: Availability of constant _XOPEN_STREAMS
+PASS: Availability of constant _POSIX_MEMLOCK
+PASS: Availability of constant _POSIX_MEMLOCK_RANGE
+PASS: Availability of constant _POSIX_MESSAGE_PASSING
+PASS: Availability of constant _POSIX_PRIORITY_SCHEDULING
+PASS: Availability of constant _POSIX_REALTIME_SIGNALS
+PASS: Availability of constant _POSIX_SEMAPHORES
+PASS: Availability of constant _POSIX_SHARED_MEMORY_OBJECTS
+PASS: Availability of constant _POSIX_SYNCHRONIZED_IO
+PASS: Availability of constant _POSIX_TIMERS
+PASS: Availability of constant _POSIX_TIMEOUTS
+PASS: Availability of constant _POSIX_FSYNC
+PASS: Availability of constant _POSIX_MAPPED_FILES
+PASS: Availability of constant _POSIX_MEMORY_PROTECTION
+PASS: Availability of constant _POSIX_PRIORITIZED_IO
+PASS: Availability of constant _POSIX_THREAD_PRIORITY_SCHEDULING
+PASS: Availability of constant _POSIX_THREAD_PRIO_INHERIT
+PASS: Availability of constant _POSIX_THREAD_PRIO_PROTECT
+PASS: Availability of constant _POSIX_ASYNC_IO
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX_PRIO_IO’ undeclared here (not in a function); did you mean ‘_PC_PRIO_IO’?
+ __typeof__ (_POSIX_PRIO_IO) a_69 = _POSIX_PRIO_IO;
+             ^~~~~~~~~~~~~~
+             _PC_PRIO_IO
+MISSING: Availability of constant _POSIX_PRIO_IO
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX_SYNC_IO’ undeclared here (not in a function); did you mean ‘_PC_SYNC_IO’?
+ __typeof__ (_POSIX_SYNC_IO) a_70 = _POSIX_SYNC_IO;
+             ^~~~~~~~~~~~~~
+             _PC_SYNC_IO
+MISSING: Availability of constant _POSIX_SYNC_IO
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS’ undeclared here (not in a function); did you mean ‘_SC_2_PBS’?
+ __typeof__ (_POSIX2_PBS) a_71 = _POSIX2_PBS;
+             ^~~~~~~~~~~
+             _SC_2_PBS
+MISSING: Availability of constant _POSIX2_PBS
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS_ACCOUNTING’ undeclared here (not in a function); did you mean ‘_SC_2_PBS_ACCOUNTING’?
+ __typeof__ (_POSIX2_PBS_ACCOUNTING) a_72 = _POSIX2_PBS_ACCOUNTING;
+             ^~~~~~~~~~~~~~~~~~~~~~
+             _SC_2_PBS_ACCOUNTING
+MISSING: Availability of constant _POSIX2_PBS_ACCOUNTING
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS_CHECKPOINT’ undeclared here (not in a function); did you mean ‘_SC_2_PBS_CHECKPOINT’?
+ __typeof__ (_POSIX2_PBS_CHECKPOINT) a_73 = _POSIX2_PBS_CHECKPOINT;
+             ^~~~~~~~~~~~~~~~~~~~~~
+             _SC_2_PBS_CHECKPOINT
+MISSING: Availability of constant _POSIX2_PBS_CHECKPOINT
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS_LOCATE’ undeclared here (not in a function); did you mean ‘_SC_2_PBS_LOCATE’?
+ __typeof__ (_POSIX2_PBS_LOCATE) a_74 = _POSIX2_PBS_LOCATE;
+             ^~~~~~~~~~~~~~~~~~
+             _SC_2_PBS_LOCATE
+MISSING: Availability of constant _POSIX2_PBS_LOCATE
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS_MESSAGE’ undeclared here (not in a function); did you mean ‘_SC_2_PBS_MESSAGE’?
+ __typeof__ (_POSIX2_PBS_MESSAGE) a_75 = _POSIX2_PBS_MESSAGE;
+             ^~~~~~~~~~~~~~~~~~~
+             _SC_2_PBS_MESSAGE
+MISSING: Availability of constant _POSIX2_PBS_MESSAGE
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX2_PBS_TRACK’ undeclared here (not in a function); did you mean ‘_SC_2_PBS_TRACK’?
+ __typeof__ (_POSIX2_PBS_TRACK) a_76 = _POSIX2_PBS_TRACK;
+             ^~~~~~~~~~~~~~~~~
+             _SC_2_PBS_TRACK
+MISSING: Availability of constant _POSIX2_PBS_TRACK
+/tmp/tmpz8vorbd5/test.c:2:13: error: ‘_POSIX_TIMESTAMP_RESOLUTION’ undeclared here (not in a function)
+ __typeof__ (_POSIX_TIMESTAMP_RESOLUTION) a_77 = _POSIX_TIMESTAMP_RESOLUTION;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+MISSING: Availability of constant _POSIX_TIMESTAMP_RESOLUTION
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Availability of constant R_OK
+PASSCOMBINED: Availability of constant W_OK
+PASSCOMBINED: Availability of constant X_OK
+PASSCOMBINED: Availability of constant F_OK
+PASSCOMBINED: Availability of constant _CS_PATH
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFF32_CFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFF32_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFF32_LIBS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFF32_LINTFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFFBIG_CFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFFBIG_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFFBIG_LIBS
+PASSCOMBINED: Availability of constant _CS_XBS5_ILP32_OFFBIG_LINTFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LP64_OFF64_CFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LP64_OFF64_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LP64_OFF64_LIBS
+PASSCOMBINED: Availability of constant _CS_XBS5_LP64_OFF64_LINTFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LPBIG_OFFBIG_CFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LPBIG_OFFBIG_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_XBS5_LPBIG_OFFBIG_LIBS
+PASSCOMBINED: Availability of constant _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS
+PASSCOMBINED: Availability of constant SEEK_SET
+PASSCOMBINED: Availability of constant SEEK_CUR
+PASSCOMBINED: Availability of constant SEEK_END
+PASSCOMBINED: Availability of constant _SC_2_C_BIND
+PASSCOMBINED: Availability of constant _SC_2_C_DEV
+PASSCOMBINED: Availability of constant _SC_2_C_VERSION
+PASSCOMBINED: Availability of constant _SC_2_CHAR_TERM
+PASSCOMBINED: Availability of constant _SC_2_FORT_DEV
+PASSCOMBINED: Availability of constant _SC_2_FORT_RUN
+PASSCOMBINED: Availability of constant _SC_2_LOCALEDEF
+PASSCOMBINED: Availability of constant _SC_2_PBS
+PASSCOMBINED: Availability of constant _SC_2_PBS_ACCOUNTING
+PASSCOMBINED: Availability of constant _SC_2_PBS_CHECKPOINT
+PASSCOMBINED: Availability of constant _SC_2_PBS_LOCATE
+PASSCOMBINED: Availability of constant _SC_2_PBS_MESSAGE
+PASSCOMBINED: Availability of constant _SC_2_PBS_TRACK
+PASSCOMBINED: Availability of constant _SC_2_SW_DEV
+PASSCOMBINED: Availability of constant _SC_2_UPE
+PASSCOMBINED: Availability of constant _SC_2_VERSION
+PASSCOMBINED: Availability of constant _SC_ARG_MAX
+PASSCOMBINED: Availability of constant _SC_AIO_LISTIO_MAX
+PASSCOMBINED: Availability of constant _SC_AIO_MAX
+PASSCOMBINED: Availability of constant _SC_AIO_PRIO_DELTA_MAX
+PASSCOMBINED: Availability of constant _SC_ASYNCHRONOUS_IO
+PASSCOMBINED: Availability of constant _SC_ATEXIT_MAX
+PASSCOMBINED: Availability of constant _SC_BARRIERS
+PASSCOMBINED: Availability of constant _SC_BASE
+PASSCOMBINED: Availability of constant _SC_BC_BASE_MAX
+PASSCOMBINED: Availability of constant _SC_BC_DIM_MAX
+PASSCOMBINED: Availability of constant _SC_BC_SCALE_MAX
+PASSCOMBINED: Availability of constant _SC_BC_STRING_MAX
+PASSCOMBINED: Availability of constant _SC_CHILD_MAX
+PASSCOMBINED: Availability of constant _SC_CLK_TCK
+PASSCOMBINED: Availability of constant _SC_CLOCK_SELECTION
+PASSCOMBINED: Availability of constant _SC_COLL_WEIGHTS_MAX
+PASSCOMBINED: Availability of constant _SC_DELAYTIMER_MAX
+PASSCOMBINED: Availability of constant _SC_DEVICE_IO
+PASSCOMBINED: Availability of constant _SC_DEVICE_SPECIFIC
+PASSCOMBINED: Availability of constant _SC_DEVICE_SPECIFIC_R
+PASSCOMBINED: Availability of constant _SC_EXPR_NEST_MAX
+PASSCOMBINED: Availability of constant _SC_FD_MGMT
+PASSCOMBINED: Availability of constant _SC_FIFO
+PASSCOMBINED: Availability of constant _SC_FILE_ATTRIBUTES
+PASSCOMBINED: Availability of constant _SC_FILE_LOCKING
+PASSCOMBINED: Availability of constant _SC_FILE_SYSTEM
+PASSCOMBINED: Availability of constant _SC_FSYNC
+PASSCOMBINED: Availability of constant _SC_GETGR_R_SIZE_MAX
+PASSCOMBINED: Availability of constant _SC_GETPW_R_SIZE_MAX
+PASSCOMBINED: Availability of constant _SC_IOV_MAX
+PASSCOMBINED: Availability of constant _SC_JOB_CONTROL
+PASSCOMBINED: Availability of constant _SC_LINE_MAX
+PASSCOMBINED: Availability of constant _SC_LOGIN_NAME_MAX
+PASSCOMBINED: Availability of constant _SC_MAPPED_FILES
+PASSCOMBINED: Availability of constant _SC_MEMLOCK
+PASSCOMBINED: Availability of constant _SC_MEMLOCK_RANGE
+PASSCOMBINED: Availability of constant _SC_MEMORY_PROTECTION
+PASSCOMBINED: Availability of constant _SC_MESSAGE_PASSING
+PASSCOMBINED: Availability of constant _SC_MONOTONIC_CLOCK
+PASSCOMBINED: Availability of constant _SC_MQ_OPEN_MAX
+PASSCOMBINED: Availability of constant _SC_MQ_PRIO_MAX
+PASSCOMBINED: Availability of constant _SC_NETWORKING
+PASSCOMBINED: Availability of constant _SC_NGROUPS_MAX
+PASSCOMBINED: Availability of constant _SC_OPEN_MAX
+PASSCOMBINED: Availability of constant _SC_PAGESIZE
+PASSCOMBINED: Availability of constant _SC_PAGE_SIZE
+PASSCOMBINED: Availability of constant _SC_PASS_MAX
+PASSCOMBINED: Availability of constant _SC_PIPE
+PASSCOMBINED: Availability of constant _SC_PRIORITIZED_IO
+PASSCOMBINED: Availability of constant _SC_PRIORITY_SCHEDULING
+PASSCOMBINED: Availability of constant _SC_RE_DUP_MAX
+PASSCOMBINED: Availability of constant _SC_READER_WRITER_LOCKS
+PASSCOMBINED: Availability of constant _SC_REALTIME_SIGNALS
+PASSCOMBINED: Availability of constant _SC_REGEXP
+PASSCOMBINED: Availability of constant _SC_RTSIG_MAX
+PASSCOMBINED: Availability of constant _SC_SAVED_IDS
+PASSCOMBINED: Availability of constant _SC_SEMAPHORES
+PASSCOMBINED: Availability of constant _SC_SEM_NSEMS_MAX
+PASSCOMBINED: Availability of constant _SC_SEM_VALUE_MAX
+PASSCOMBINED: Availability of constant _SC_SHARED_MEMORY_OBJECTS
+PASSCOMBINED: Availability of constant _SC_SHELL
+PASSCOMBINED: Availability of constant _SC_SIGNALS
+PASSCOMBINED: Availability of constant _SC_SIGQUEUE_MAX
+PASSCOMBINED: Availability of constant _SC_SINGLE_PROCESS
+PASSCOMBINED: Availability of constant _SC_SPIN_LOCKS
+PASSCOMBINED: Availability of constant _SC_STREAM_MAX
+PASSCOMBINED: Availability of constant _SC_SYNCHRONIZED_IO
+PASSCOMBINED: Availability of constant _SC_THREADS
+PASSCOMBINED: Availability of constant _SC_THREAD_ATTR_STACKADDR
+PASSCOMBINED: Availability of constant _SC_THREAD_ATTR_STACKSIZE
+PASSCOMBINED: Availability of constant _SC_THREAD_DESTRUCTOR_ITERATIONS
+PASSCOMBINED: Availability of constant _SC_THREAD_KEYS_MAX
+PASSCOMBINED: Availability of constant _SC_THREAD_PRIORITY_SCHEDULING
+PASSCOMBINED: Availability of constant _SC_THREAD_PRIO_INHERIT
+PASSCOMBINED: Availability of constant _SC_THREAD_PRIO_PROTECT
+PASSCOMBINED: Availability of constant _SC_THREAD_PROCESS_SHARED
+PASSCOMBINED: Availability of constant _SC_THREAD_SAFE_FUNCTIONS
+PASSCOMBINED: Availability of constant _SC_THREAD_STACK_MIN
+PASSCOMBINED: Availability of constant _SC_THREAD_THREADS_MAX
+PASSCOMBINED: Availability of constant _SC_TIMERS
+PASSCOMBINED: Availability of constant _SC_TIMER_MAX
+PASSCOMBINED: Availability of constant _SC_TTY_NAME_MAX
+PASSCOMBINED: Availability of constant _SC_TYPED_MEMORY_OBJECTS
+PASSCOMBINED: Availability of constant _SC_TZNAME_MAX
+PASSCOMBINED: Availability of constant _SC_USER_GROUPS
+PASSCOMBINED: Availability of constant _SC_USER_GROUPS_R
+PASSCOMBINED: Availability of constant _SC_V7_ILP32_OFF32
+PASSCOMBINED: Availability of constant _SC_V7_ILP32_OFFBIG
+PASSCOMBINED: Availability of constant _SC_V7_LP64_OFF64
+PASSCOMBINED: Availability of constant _SC_V7_LPBIG_OFFBIG
+PASSCOMBINED: Availability of constant _SC_VERSION
+PASSCOMBINED: Availability of constant _SC_XOPEN_VERSION
+PASSCOMBINED: Availability of constant _SC_XOPEN_CRYPT
+PASSCOMBINED: Availability of constant _SC_XOPEN_ENH_I18N
+PASSCOMBINED: Availability of constant _SC_XOPEN_SHM
+PASSCOMBINED: Availability of constant _SC_XOPEN_UNIX
+PASSCOMBINED: Availability of constant _SC_XOPEN_XCU_VERSION
+PASSCOMBINED: Availability of constant _SC_XOPEN_LEGACY
+PASSCOMBINED: Availability of constant _SC_XOPEN_REALTIME
+PASSCOMBINED: Availability of constant _SC_XOPEN_REALTIME_THREADS
+PASSCOMBINED: Availability of constant _SC_STREAMS
+PASSCOMBINED: Availability of constant _SC_XBS5_ILP32_OFF32
+PASSCOMBINED: Availability of constant _SC_XBS5_ILP32_OFFBIG
+PASSCOMBINED: Availability of constant _SC_XBS5_LP64_OFF64
+PASSCOMBINED: Availability of constant _SC_XBS5_LPBIG_OFFBIG
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFF32_CFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFF32_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFF32_LIBS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_ILP32_OFFBIG_LIBS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LP64_OFF64_CFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LP64_OFF64_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LP64_OFF64_LIBS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_LPBIG_OFFBIG_LIBS
+PASSCOMBINED: Availability of constant _CS_POSIX_V7_WIDTH_RESTRICTED_ENVS
+PASSCOMBINED: Availability of constant _CS_V7_ENV
+PASSCOMBINED: Availability of constant _SC_THREAD_ROBUST_PRIO_INHERIT
+PASSCOMBINED: Availability of constant _SC_THREAD_ROBUST_PRIO_PROTECT
+PASSCOMBINED: Availability of constant F_LOCK
+PASSCOMBINED: Availability of constant F_ULOCK
+PASSCOMBINED: Availability of constant F_TEST
+PASSCOMBINED: Availability of constant F_TLOCK
+PASSCOMBINED: Availability of constant _PC_ASYNC_IO
+PASSCOMBINED: Availability of constant _PC_CHOWN_RESTRICTED
+PASSCOMBINED: Availability of constant _PC_FILESIZEBITS
+PASSCOMBINED: Availability of constant _PC_LINK_MAX
+PASSCOMBINED: Availability of constant _PC_MAX_CANON
+PASSCOMBINED: Availability of constant _PC_MAX_INPUT
+PASSCOMBINED: Availability of constant _PC_NAME_MAX
+PASSCOMBINED: Availability of constant _PC_NO_TRUNC
+PASSCOMBINED: Availability of constant _PC_PATH_MAX
+PASSCOMBINED: Availability of constant _PC_PIPE_BUF
+PASSCOMBINED: Availability of constant _PC_PRIO_IO
+PASSCOMBINED: Availability of constant _PC_REC_INCR_XFER_SIZE
+PASSCOMBINED: Availability of constant _PC_REC_MAX_XFER_SIZE
+PASSCOMBINED: Availability of constant _PC_REC_MIN_XFER_SIZE
+PASSCOMBINED: Availability of constant _PC_REC_XFER_ALIGN
+PASSCOMBINED: Availability of constant _PC_SYNC_IO
+PASSCOMBINED: Availability of constant _PC_VDISABLE
+PASSCOMBINED: Availability of constant STDIN_FILENO
+PASSCOMBINED: Availability of constant STDOUT_FILENO
+PASSCOMBINED: Availability of constant STDERR_FILENO
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of type ssize_t
+PASSCOMBINED: Availability of type uid_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of type off_t
+PASSCOMBINED: Availability of type pid_t
+PASSCOMBINED: Availability of type useconds_t
+PASSCOMBINED: Availability of type intptr_t
+PASSCOMBINED: Availability of function access
+PASSCOMBINED: Type of function access
+PASSCOMBINED: Availability of function alarm
+PASSCOMBINED: Type of function alarm
+PASSCOMBINED: Availability of function chdir
+PASSCOMBINED: Type of function chdir
+PASSCOMBINED: Availability of function chown
+PASSCOMBINED: Type of function chown
+PASSCOMBINED: Availability of function close
+PASSCOMBINED: Type of function close
+PASSCOMBINED: Availability of function confstr
+PASSCOMBINED: Type of function confstr
+PASSCOMBINED: Availability of function dup
+PASSCOMBINED: Type of function dup
+PASSCOMBINED: Availability of function dup2
+PASSCOMBINED: Type of function dup2
+PASSCOMBINED: Availability of function execl
+PASSCOMBINED: Type of function execl
+PASSCOMBINED: Availability of function execle
+PASSCOMBINED: Type of function execle
+PASSCOMBINED: Availability of function execlp
+PASSCOMBINED: Type of function execlp
+PASSCOMBINED: Availability of function execv
+PASSCOMBINED: Type of function execv
+PASSCOMBINED: Availability of function execve
+PASSCOMBINED: Type of function execve
+PASSCOMBINED: Availability of function execvp
+PASSCOMBINED: Type of function execvp
+PASSCOMBINED: Availability of function _exit
+PASSCOMBINED: Type of function _exit
+PASSCOMBINED: Availability of function faccessat
+PASSCOMBINED: Type of function faccessat
+PASSCOMBINED: Availability of function fchown
+PASSCOMBINED: Type of function fchown
+PASSCOMBINED: Availability of function fchownat
+PASSCOMBINED: Type of function fchownat
+PASSCOMBINED: Availability of function fchdir
+PASSCOMBINED: Type of function fchdir
+PASSCOMBINED: Availability of function fdatasync
+PASSCOMBINED: Type of function fdatasync
+PASSCOMBINED: Availability of function fexecve
+PASSCOMBINED: Type of function fexecve
+PASSCOMBINED: Availability of function fork
+PASSCOMBINED: Type of function fork
+PASSCOMBINED: Availability of function fpathconf
+PASSCOMBINED: Type of function fpathconf
+PASSCOMBINED: Availability of function fsync
+PASSCOMBINED: Type of function fsync
+PASSCOMBINED: Availability of function ftruncate
+PASSCOMBINED: Type of function ftruncate
+PASSCOMBINED: Availability of function getcwd
+PASSCOMBINED: Type of function getcwd
+PASSCOMBINED: Availability of function getegid
+PASSCOMBINED: Type of function getegid
+PASSCOMBINED: Availability of function geteuid
+PASSCOMBINED: Type of function geteuid
+PASSCOMBINED: Availability of function getgid
+PASSCOMBINED: Type of function getgid
+PASSCOMBINED: Availability of function getgroups
+PASSCOMBINED: Type of function getgroups
+PASSCOMBINED: Availability of function gethostid
+PASSCOMBINED: Type of function gethostid
+PASSCOMBINED: Availability of function gethostname
+PASSCOMBINED: Type of function gethostname
+PASSCOMBINED: Availability of function getlogin
+PASSCOMBINED: Type of function getlogin
+PASSCOMBINED: Availability of function getlogin_r
+PASSCOMBINED: Type of function getlogin_r
+PASSCOMBINED: Availability of function getopt
+PASSCOMBINED: Type of function getopt
+PASSCOMBINED: Availability of function getpgid
+PASSCOMBINED: Type of function getpgid
+PASSCOMBINED: Availability of function getpgrp
+PASSCOMBINED: Type of function getpgrp
+PASSCOMBINED: Availability of function getpid
+PASSCOMBINED: Type of function getpid
+PASSCOMBINED: Availability of function getppid
+PASSCOMBINED: Type of function getppid
+PASSCOMBINED: Availability of function getsid
+PASSCOMBINED: Type of function getsid
+PASSCOMBINED: Availability of function getuid
+PASSCOMBINED: Type of function getuid
+PASSCOMBINED: Availability of function isatty
+PASSCOMBINED: Type of function isatty
+PASSCOMBINED: Availability of function lchown
+PASSCOMBINED: Type of function lchown
+PASSCOMBINED: Availability of function link
+PASSCOMBINED: Type of function link
+PASSCOMBINED: Availability of function linkat
+PASSCOMBINED: Type of function linkat
+PASSCOMBINED: Availability of function lockf
+PASSCOMBINED: Type of function lockf
+PASSCOMBINED: Availability of function lseek
+PASSCOMBINED: Type of function lseek
+PASSCOMBINED: Availability of function nice
+PASSCOMBINED: Type of function nice
+PASSCOMBINED: Availability of function pathconf
+PASSCOMBINED: Type of function pathconf
+PASSCOMBINED: Availability of function pause
+PASSCOMBINED: Type of function pause
+PASSCOMBINED: Availability of function pipe
+PASSCOMBINED: Type of function pipe
+PASSCOMBINED: Availability of function pread
+PASSCOMBINED: Type of function pread
+PASSCOMBINED: Availability of function pwrite
+PASSCOMBINED: Type of function pwrite
+PASSCOMBINED: Availability of function read
+PASSCOMBINED: Type of function read
+PASSCOMBINED: Availability of function readlink
+PASSCOMBINED: Type of function readlink
+PASSCOMBINED: Availability of function readlinkat
+PASSCOMBINED: Type of function readlinkat
+PASSCOMBINED: Availability of function rmdir
+PASSCOMBINED: Type of function rmdir
+PASSCOMBINED: Availability of function setegid
+PASSCOMBINED: Type of function setegid
+PASSCOMBINED: Availability of function seteuid
+PASSCOMBINED: Type of function seteuid
+PASSCOMBINED: Availability of function setgid
+PASSCOMBINED: Type of function setgid
+PASSCOMBINED: Availability of function setpgid
+PASSCOMBINED: Type of function setpgid
+PASSCOMBINED: Availability of function setpgrp
+PASSCOMBINED: Type of function setpgrp
+PASSCOMBINED: Availability of function setregid
+PASSCOMBINED: Type of function setregid
+PASSCOMBINED: Availability of function setreuid
+PASSCOMBINED: Type of function setreuid
+PASSCOMBINED: Availability of function setsid
+PASSCOMBINED: Type of function setsid
+PASSCOMBINED: Availability of function setuid
+PASSCOMBINED: Type of function setuid
+PASSCOMBINED: Availability of function sleep
+PASSCOMBINED: Type of function sleep
+PASSCOMBINED: Availability of function swab
+PASSCOMBINED: Type of function swab
+PASSCOMBINED: Availability of function symlink
+PASSCOMBINED: Type of function symlink
+PASSCOMBINED: Availability of function symlinkat
+PASSCOMBINED: Type of function symlinkat
+PASSCOMBINED: Availability of function sync
+PASSCOMBINED: Type of function sync
+PASSCOMBINED: Availability of function sysconf
+PASSCOMBINED: Type of function sysconf
+PASSCOMBINED: Availability of function tcgetpgrp
+PASSCOMBINED: Type of function tcgetpgrp
+PASSCOMBINED: Availability of function tcsetpgrp
+PASSCOMBINED: Type of function tcsetpgrp
+PASSCOMBINED: Availability of function truncate
+PASSCOMBINED: Type of function truncate
+PASSCOMBINED: Availability of function ttyname
+PASSCOMBINED: Type of function ttyname
+PASSCOMBINED: Availability of function ttyname_r
+PASSCOMBINED: Type of function ttyname_r
+PASSCOMBINED: Availability of function unlink
+PASSCOMBINED: Type of function unlink
+PASSCOMBINED: Availability of function unlinkat
+PASSCOMBINED: Type of function unlinkat
+PASSCOMBINED: Availability of function write
+PASSCOMBINED: Type of function write
+PASSCOMBINED: Availability of variable optarg
+PASSCOMBINED: Type of variable optarg
+PASSCOMBINED: Availability of variable optind
+PASSCOMBINED: Type of variable optind
+PASSCOMBINED: Availability of variable opterr
+PASSCOMBINED: Type of variable opterr
+PASSCOMBINED: Availability of variable optopt
+PASSCOMBINED: Type of variable optopt
+PASS: Namespace of <unistd.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  442
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

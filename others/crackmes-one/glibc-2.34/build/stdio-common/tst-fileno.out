@@ -1,0 +1,3 @@
+(fileno (stdin) = 0) == 0
+(fileno (stdout) = 1) == 1
+(fileno (stderr) = 2) == 2

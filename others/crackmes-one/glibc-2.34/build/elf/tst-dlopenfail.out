@@ -1,0 +1,3 @@
+info: attempting to load tst-dlopenfailmod1.so
+info: loading tst-dlopenfailmod2.so
+info: tst-dlopenfailmod2.so constructor invoked

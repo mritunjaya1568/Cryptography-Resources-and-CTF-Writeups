@@ -1,0 +1,113 @@
+PASS: Availability of <float.h>
+PASS: Combined <float.h> test
+PASSCOMBINED: Availability of macro FLT_RADIX
+PASSCOMBINED: Availability of constant FLT_RADIX
+PASSCOMBINED: #if usability of symbol FLT_RADIX
+PASSCOMBINED: Value of symbol FLT_RADIX
+PASSCOMBINED: Availability of macro FLT_ROUNDS
+PASSCOMBINED: Availability of macro FLT_MANT_DIG
+PASSCOMBINED: Availability of constant FLT_MANT_DIG
+PASSCOMBINED: #if usability of symbol FLT_MANT_DIG
+PASSCOMBINED: Availability of macro DBL_MANT_DIG
+PASSCOMBINED: Availability of constant DBL_MANT_DIG
+PASSCOMBINED: #if usability of symbol DBL_MANT_DIG
+PASSCOMBINED: Availability of macro LDBL_MANT_DIG
+PASSCOMBINED: Availability of constant LDBL_MANT_DIG
+PASSCOMBINED: #if usability of symbol LDBL_MANT_DIG
+PASSCOMBINED: Availability of macro FLT_DIG
+PASSCOMBINED: Availability of constant FLT_DIG
+PASSCOMBINED: #if usability of symbol FLT_DIG
+PASSCOMBINED: Value of symbol FLT_DIG
+PASSCOMBINED: Availability of macro DBL_DIG
+PASSCOMBINED: Availability of constant DBL_DIG
+PASSCOMBINED: #if usability of symbol DBL_DIG
+PASSCOMBINED: Value of symbol DBL_DIG
+PASSCOMBINED: Availability of macro LDBL_DIG
+PASSCOMBINED: Availability of constant LDBL_DIG
+PASSCOMBINED: #if usability of symbol LDBL_DIG
+PASSCOMBINED: Value of symbol LDBL_DIG
+PASSCOMBINED: Availability of macro FLT_MIN_EXP
+PASSCOMBINED: Availability of constant FLT_MIN_EXP
+PASSCOMBINED: #if usability of symbol FLT_MIN_EXP
+PASSCOMBINED: Value of symbol FLT_MIN_EXP
+PASSCOMBINED: Availability of macro DBL_MIN_EXP
+PASSCOMBINED: Availability of constant DBL_MIN_EXP
+PASSCOMBINED: #if usability of symbol DBL_MIN_EXP
+PASSCOMBINED: Value of symbol DBL_MIN_EXP
+PASSCOMBINED: Availability of macro LDBL_MIN_EXP
+PASSCOMBINED: Availability of constant LDBL_MIN_EXP
+PASSCOMBINED: #if usability of symbol LDBL_MIN_EXP
+PASSCOMBINED: Value of symbol LDBL_MIN_EXP
+PASSCOMBINED: Availability of macro FLT_MIN_10_EXP
+PASSCOMBINED: Availability of constant FLT_MIN_10_EXP
+PASSCOMBINED: #if usability of symbol FLT_MIN_10_EXP
+PASSCOMBINED: Value of symbol FLT_MIN_10_EXP
+PASSCOMBINED: Availability of macro DBL_MIN_10_EXP
+PASSCOMBINED: Availability of constant DBL_MIN_10_EXP
+PASSCOMBINED: #if usability of symbol DBL_MIN_10_EXP
+PASSCOMBINED: Value of symbol DBL_MIN_10_EXP
+PASSCOMBINED: Availability of macro LDBL_MIN_10_EXP
+PASSCOMBINED: Availability of constant LDBL_MIN_10_EXP
+PASSCOMBINED: #if usability of symbol LDBL_MIN_10_EXP
+PASSCOMBINED: Value of symbol LDBL_MIN_10_EXP
+PASSCOMBINED: Availability of macro FLT_MAX_EXP
+PASSCOMBINED: Availability of constant FLT_MAX_EXP
+PASSCOMBINED: #if usability of symbol FLT_MAX_EXP
+PASSCOMBINED: Availability of macro DBL_MAX_EXP
+PASSCOMBINED: Availability of constant DBL_MAX_EXP
+PASSCOMBINED: #if usability of symbol DBL_MAX_EXP
+PASSCOMBINED: Availability of macro LDBL_MAX_EXP
+PASSCOMBINED: Availability of constant LDBL_MAX_EXP
+PASSCOMBINED: #if usability of symbol LDBL_MAX_EXP
+PASSCOMBINED: Availability of macro FLT_MAX_10_EXP
+PASSCOMBINED: Availability of constant FLT_MAX_10_EXP
+PASSCOMBINED: #if usability of symbol FLT_MAX_10_EXP
+PASSCOMBINED: Value of symbol FLT_MAX_10_EXP
+PASSCOMBINED: Availability of macro DBL_MAX_10_EXP
+PASSCOMBINED: Availability of constant DBL_MAX_10_EXP
+PASSCOMBINED: #if usability of symbol DBL_MAX_10_EXP
+PASSCOMBINED: Value of symbol DBL_MAX_10_EXP
+PASSCOMBINED: Availability of macro LDBL_MAX_10_EXP
+PASSCOMBINED: Availability of constant LDBL_MAX_10_EXP
+PASSCOMBINED: #if usability of symbol LDBL_MAX_10_EXP
+PASSCOMBINED: Value of symbol LDBL_MAX_10_EXP
+PASSCOMBINED: Availability of macro FLT_MAX
+PASSCOMBINED: Availability of constant FLT_MAX
+PASSCOMBINED: Value of symbol FLT_MAX
+PASSCOMBINED: Availability of macro DBL_MAX
+PASSCOMBINED: Availability of constant DBL_MAX
+PASSCOMBINED: Value of symbol DBL_MAX
+PASSCOMBINED: Availability of macro LDBL_MAX
+PASSCOMBINED: Availability of constant LDBL_MAX
+PASSCOMBINED: Value of symbol LDBL_MAX
+PASSCOMBINED: Availability of macro FLT_EPSILON
+PASSCOMBINED: Availability of constant FLT_EPSILON
+PASSCOMBINED: Value of symbol FLT_EPSILON
+PASSCOMBINED: Availability of macro DBL_EPSILON
+PASSCOMBINED: Availability of constant DBL_EPSILON
+PASSCOMBINED: Value of symbol DBL_EPSILON
+PASSCOMBINED: Availability of macro LDBL_EPSILON
+PASSCOMBINED: Availability of constant LDBL_EPSILON
+PASSCOMBINED: Value of symbol LDBL_EPSILON
+PASSCOMBINED: Availability of macro FLT_MIN
+PASSCOMBINED: Availability of constant FLT_MIN
+PASSCOMBINED: Value of symbol FLT_MIN
+PASSCOMBINED: Availability of macro DBL_MIN
+PASSCOMBINED: Availability of constant DBL_MIN
+PASSCOMBINED: Value of symbol DBL_MIN
+PASSCOMBINED: Availability of macro LDBL_MIN
+PASSCOMBINED: Availability of constant LDBL_MIN
+PASSCOMBINED: Value of symbol LDBL_MIN
+PASSCOMBINED: Availability of macro DECIMAL_DIG
+PASSCOMBINED: Availability of constant DECIMAL_DIG
+PASSCOMBINED: #if usability of symbol DECIMAL_DIG
+PASSCOMBINED: Value of symbol DECIMAL_DIG
+PASSCOMBINED: Availability of macro FLT_EVAL_METHOD
+PASSCOMBINED: Availability of constant FLT_EVAL_METHOD
+PASSCOMBINED: #if usability of symbol FLT_EVAL_METHOD
+PASS: Namespace of <float.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  107
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

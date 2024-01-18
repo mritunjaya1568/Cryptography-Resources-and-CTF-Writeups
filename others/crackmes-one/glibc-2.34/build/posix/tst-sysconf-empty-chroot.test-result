@@ -1,0 +1,2 @@
+PASS: posix/tst-sysconf-empty-chroot
+original exit status 0

@@ -1,0 +1,1248 @@
+C: strtol ("A") == 10
+PASS: C: strtol ("A")
+C: strtoul ("A") == 10
+PASS: C: strtoul ("A")
+C: strtoll ("A") == 10
+PASS: C: strtoll ("A")
+C: strtoull ("A") == 10
+PASS: C: strtoull ("A")
+C: strtol ("a") == 10
+PASS: C: strtol ("a")
+C: strtoul ("a") == 10
+PASS: C: strtoul ("a")
+C: strtoll ("a") == 10
+PASS: C: strtoll ("a")
+C: strtoull ("a") == 10
+PASS: C: strtoull ("a")
+C: strtol ("B") == 11
+PASS: C: strtol ("B")
+C: strtoul ("B") == 11
+PASS: C: strtoul ("B")
+C: strtoll ("B") == 11
+PASS: C: strtoll ("B")
+C: strtoull ("B") == 11
+PASS: C: strtoull ("B")
+C: strtol ("b") == 11
+PASS: C: strtol ("b")
+C: strtoul ("b") == 11
+PASS: C: strtoul ("b")
+C: strtoll ("b") == 11
+PASS: C: strtoll ("b")
+C: strtoull ("b") == 11
+PASS: C: strtoull ("b")
+C: strtol ("C") == 12
+PASS: C: strtol ("C")
+C: strtoul ("C") == 12
+PASS: C: strtoul ("C")
+C: strtoll ("C") == 12
+PASS: C: strtoll ("C")
+C: strtoull ("C") == 12
+PASS: C: strtoull ("C")
+C: strtol ("c") == 12
+PASS: C: strtol ("c")
+C: strtoul ("c") == 12
+PASS: C: strtoul ("c")
+C: strtoll ("c") == 12
+PASS: C: strtoll ("c")
+C: strtoull ("c") == 12
+PASS: C: strtoull ("c")
+C: strtol ("D") == 13
+PASS: C: strtol ("D")
+C: strtoul ("D") == 13
+PASS: C: strtoul ("D")
+C: strtoll ("D") == 13
+PASS: C: strtoll ("D")
+C: strtoull ("D") == 13
+PASS: C: strtoull ("D")
+C: strtol ("d") == 13
+PASS: C: strtol ("d")
+C: strtoul ("d") == 13
+PASS: C: strtoul ("d")
+C: strtoll ("d") == 13
+PASS: C: strtoll ("d")
+C: strtoull ("d") == 13
+PASS: C: strtoull ("d")
+C: strtol ("E") == 14
+PASS: C: strtol ("E")
+C: strtoul ("E") == 14
+PASS: C: strtoul ("E")
+C: strtoll ("E") == 14
+PASS: C: strtoll ("E")
+C: strtoull ("E") == 14
+PASS: C: strtoull ("E")
+C: strtol ("e") == 14
+PASS: C: strtol ("e")
+C: strtoul ("e") == 14
+PASS: C: strtoul ("e")
+C: strtoll ("e") == 14
+PASS: C: strtoll ("e")
+C: strtoull ("e") == 14
+PASS: C: strtoull ("e")
+C: strtol ("F") == 15
+PASS: C: strtol ("F")
+C: strtoul ("F") == 15
+PASS: C: strtoul ("F")
+C: strtoll ("F") == 15
+PASS: C: strtoll ("F")
+C: strtoull ("F") == 15
+PASS: C: strtoull ("F")
+C: strtol ("f") == 15
+PASS: C: strtol ("f")
+C: strtoul ("f") == 15
+PASS: C: strtoul ("f")
+C: strtoll ("f") == 15
+PASS: C: strtoll ("f")
+C: strtoull ("f") == 15
+PASS: C: strtoull ("f")
+C: strtol ("G") == 16
+PASS: C: strtol ("G")
+C: strtoul ("G") == 16
+PASS: C: strtoul ("G")
+C: strtoll ("G") == 16
+PASS: C: strtoll ("G")
+C: strtoull ("G") == 16
+PASS: C: strtoull ("G")
+C: strtol ("g") == 16
+PASS: C: strtol ("g")
+C: strtoul ("g") == 16
+PASS: C: strtoul ("g")
+C: strtoll ("g") == 16
+PASS: C: strtoll ("g")
+C: strtoull ("g") == 16
+PASS: C: strtoull ("g")
+C: strtol ("H") == 17
+PASS: C: strtol ("H")
+C: strtoul ("H") == 17
+PASS: C: strtoul ("H")
+C: strtoll ("H") == 17
+PASS: C: strtoll ("H")
+C: strtoull ("H") == 17
+PASS: C: strtoull ("H")
+C: strtol ("h") == 17
+PASS: C: strtol ("h")
+C: strtoul ("h") == 17
+PASS: C: strtoul ("h")
+C: strtoll ("h") == 17
+PASS: C: strtoll ("h")
+C: strtoull ("h") == 17
+PASS: C: strtoull ("h")
+C: strtol ("I") == 18
+PASS: C: strtol ("I")
+C: strtoul ("I") == 18
+PASS: C: strtoul ("I")
+C: strtoll ("I") == 18
+PASS: C: strtoll ("I")
+C: strtoull ("I") == 18
+PASS: C: strtoull ("I")
+C: strtol ("i") == 18
+PASS: C: strtol ("i")
+C: strtoul ("i") == 18
+PASS: C: strtoul ("i")
+C: strtoll ("i") == 18
+PASS: C: strtoll ("i")
+C: strtoull ("i") == 18
+PASS: C: strtoull ("i")
+C: strtol ("J") == 19
+PASS: C: strtol ("J")
+C: strtoul ("J") == 19
+PASS: C: strtoul ("J")
+C: strtoll ("J") == 19
+PASS: C: strtoll ("J")
+C: strtoull ("J") == 19
+PASS: C: strtoull ("J")
+C: strtol ("j") == 19
+PASS: C: strtol ("j")
+C: strtoul ("j") == 19
+PASS: C: strtoul ("j")
+C: strtoll ("j") == 19
+PASS: C: strtoll ("j")
+C: strtoull ("j") == 19
+PASS: C: strtoull ("j")
+C: strtol ("K") == 20
+PASS: C: strtol ("K")
+C: strtoul ("K") == 20
+PASS: C: strtoul ("K")
+C: strtoll ("K") == 20
+PASS: C: strtoll ("K")
+C: strtoull ("K") == 20
+PASS: C: strtoull ("K")
+C: strtol ("k") == 20
+PASS: C: strtol ("k")
+C: strtoul ("k") == 20
+PASS: C: strtoul ("k")
+C: strtoll ("k") == 20
+PASS: C: strtoll ("k")
+C: strtoull ("k") == 20
+PASS: C: strtoull ("k")
+C: strtol ("L") == 21
+PASS: C: strtol ("L")
+C: strtoul ("L") == 21
+PASS: C: strtoul ("L")
+C: strtoll ("L") == 21
+PASS: C: strtoll ("L")
+C: strtoull ("L") == 21
+PASS: C: strtoull ("L")
+C: strtol ("l") == 21
+PASS: C: strtol ("l")
+C: strtoul ("l") == 21
+PASS: C: strtoul ("l")
+C: strtoll ("l") == 21
+PASS: C: strtoll ("l")
+C: strtoull ("l") == 21
+PASS: C: strtoull ("l")
+C: strtol ("M") == 22
+PASS: C: strtol ("M")
+C: strtoul ("M") == 22
+PASS: C: strtoul ("M")
+C: strtoll ("M") == 22
+PASS: C: strtoll ("M")
+C: strtoull ("M") == 22
+PASS: C: strtoull ("M")
+C: strtol ("m") == 22
+PASS: C: strtol ("m")
+C: strtoul ("m") == 22
+PASS: C: strtoul ("m")
+C: strtoll ("m") == 22
+PASS: C: strtoll ("m")
+C: strtoull ("m") == 22
+PASS: C: strtoull ("m")
+C: strtol ("N") == 23
+PASS: C: strtol ("N")
+C: strtoul ("N") == 23
+PASS: C: strtoul ("N")
+C: strtoll ("N") == 23
+PASS: C: strtoll ("N")
+C: strtoull ("N") == 23
+PASS: C: strtoull ("N")
+C: strtol ("n") == 23
+PASS: C: strtol ("n")
+C: strtoul ("n") == 23
+PASS: C: strtoul ("n")
+C: strtoll ("n") == 23
+PASS: C: strtoll ("n")
+C: strtoull ("n") == 23
+PASS: C: strtoull ("n")
+C: strtol ("O") == 24
+PASS: C: strtol ("O")
+C: strtoul ("O") == 24
+PASS: C: strtoul ("O")
+C: strtoll ("O") == 24
+PASS: C: strtoll ("O")
+C: strtoull ("O") == 24
+PASS: C: strtoull ("O")
+C: strtol ("o") == 24
+PASS: C: strtol ("o")
+C: strtoul ("o") == 24
+PASS: C: strtoul ("o")
+C: strtoll ("o") == 24
+PASS: C: strtoll ("o")
+C: strtoull ("o") == 24
+PASS: C: strtoull ("o")
+C: strtol ("P") == 25
+PASS: C: strtol ("P")
+C: strtoul ("P") == 25
+PASS: C: strtoul ("P")
+C: strtoll ("P") == 25
+PASS: C: strtoll ("P")
+C: strtoull ("P") == 25
+PASS: C: strtoull ("P")
+C: strtol ("p") == 25
+PASS: C: strtol ("p")
+C: strtoul ("p") == 25
+PASS: C: strtoul ("p")
+C: strtoll ("p") == 25
+PASS: C: strtoll ("p")
+C: strtoull ("p") == 25
+PASS: C: strtoull ("p")
+C: strtol ("Q") == 26
+PASS: C: strtol ("Q")
+C: strtoul ("Q") == 26
+PASS: C: strtoul ("Q")
+C: strtoll ("Q") == 26
+PASS: C: strtoll ("Q")
+C: strtoull ("Q") == 26
+PASS: C: strtoull ("Q")
+C: strtol ("q") == 26
+PASS: C: strtol ("q")
+C: strtoul ("q") == 26
+PASS: C: strtoul ("q")
+C: strtoll ("q") == 26
+PASS: C: strtoll ("q")
+C: strtoull ("q") == 26
+PASS: C: strtoull ("q")
+C: strtol ("R") == 27
+PASS: C: strtol ("R")
+C: strtoul ("R") == 27
+PASS: C: strtoul ("R")
+C: strtoll ("R") == 27
+PASS: C: strtoll ("R")
+C: strtoull ("R") == 27
+PASS: C: strtoull ("R")
+C: strtol ("r") == 27
+PASS: C: strtol ("r")
+C: strtoul ("r") == 27
+PASS: C: strtoul ("r")
+C: strtoll ("r") == 27
+PASS: C: strtoll ("r")
+C: strtoull ("r") == 27
+PASS: C: strtoull ("r")
+C: strtol ("S") == 28
+PASS: C: strtol ("S")
+C: strtoul ("S") == 28
+PASS: C: strtoul ("S")
+C: strtoll ("S") == 28
+PASS: C: strtoll ("S")
+C: strtoull ("S") == 28
+PASS: C: strtoull ("S")
+C: strtol ("s") == 28
+PASS: C: strtol ("s")
+C: strtoul ("s") == 28
+PASS: C: strtoul ("s")
+C: strtoll ("s") == 28
+PASS: C: strtoll ("s")
+C: strtoull ("s") == 28
+PASS: C: strtoull ("s")
+C: strtol ("T") == 29
+PASS: C: strtol ("T")
+C: strtoul ("T") == 29
+PASS: C: strtoul ("T")
+C: strtoll ("T") == 29
+PASS: C: strtoll ("T")
+C: strtoull ("T") == 29
+PASS: C: strtoull ("T")
+C: strtol ("t") == 29
+PASS: C: strtol ("t")
+C: strtoul ("t") == 29
+PASS: C: strtoul ("t")
+C: strtoll ("t") == 29
+PASS: C: strtoll ("t")
+C: strtoull ("t") == 29
+PASS: C: strtoull ("t")
+C: strtol ("U") == 30
+PASS: C: strtol ("U")
+C: strtoul ("U") == 30
+PASS: C: strtoul ("U")
+C: strtoll ("U") == 30
+PASS: C: strtoll ("U")
+C: strtoull ("U") == 30
+PASS: C: strtoull ("U")
+C: strtol ("u") == 30
+PASS: C: strtol ("u")
+C: strtoul ("u") == 30
+PASS: C: strtoul ("u")
+C: strtoll ("u") == 30
+PASS: C: strtoll ("u")
+C: strtoull ("u") == 30
+PASS: C: strtoull ("u")
+C: strtol ("V") == 31
+PASS: C: strtol ("V")
+C: strtoul ("V") == 31
+PASS: C: strtoul ("V")
+C: strtoll ("V") == 31
+PASS: C: strtoll ("V")
+C: strtoull ("V") == 31
+PASS: C: strtoull ("V")
+C: strtol ("v") == 31
+PASS: C: strtol ("v")
+C: strtoul ("v") == 31
+PASS: C: strtoul ("v")
+C: strtoll ("v") == 31
+PASS: C: strtoll ("v")
+C: strtoull ("v") == 31
+PASS: C: strtoull ("v")
+C: strtol ("W") == 32
+PASS: C: strtol ("W")
+C: strtoul ("W") == 32
+PASS: C: strtoul ("W")
+C: strtoll ("W") == 32
+PASS: C: strtoll ("W")
+C: strtoull ("W") == 32
+PASS: C: strtoull ("W")
+C: strtol ("w") == 32
+PASS: C: strtol ("w")
+C: strtoul ("w") == 32
+PASS: C: strtoul ("w")
+C: strtoll ("w") == 32
+PASS: C: strtoll ("w")
+C: strtoull ("w") == 32
+PASS: C: strtoull ("w")
+C: strtol ("X") == 33
+PASS: C: strtol ("X")
+C: strtoul ("X") == 33
+PASS: C: strtoul ("X")
+C: strtoll ("X") == 33
+PASS: C: strtoll ("X")
+C: strtoull ("X") == 33
+PASS: C: strtoull ("X")
+C: strtol ("x") == 33
+PASS: C: strtol ("x")
+C: strtoul ("x") == 33
+PASS: C: strtoul ("x")
+C: strtoll ("x") == 33
+PASS: C: strtoll ("x")
+C: strtoull ("x") == 33
+PASS: C: strtoull ("x")
+C: strtol ("Y") == 34
+PASS: C: strtol ("Y")
+C: strtoul ("Y") == 34
+PASS: C: strtoul ("Y")
+C: strtoll ("Y") == 34
+PASS: C: strtoll ("Y")
+C: strtoull ("Y") == 34
+PASS: C: strtoull ("Y")
+C: strtol ("y") == 34
+PASS: C: strtol ("y")
+C: strtoul ("y") == 34
+PASS: C: strtoul ("y")
+C: strtoll ("y") == 34
+PASS: C: strtoll ("y")
+C: strtoull ("y") == 34
+PASS: C: strtoull ("y")
+C: strtol ("Z") == 35
+PASS: C: strtol ("Z")
+C: strtoul ("Z") == 35
+PASS: C: strtoul ("Z")
+C: strtoll ("Z") == 35
+PASS: C: strtoll ("Z")
+C: strtoull ("Z") == 35
+PASS: C: strtoull ("Z")
+C: strtol ("z") == 35
+PASS: C: strtol ("z")
+C: strtoul ("z") == 35
+PASS: C: strtoul ("z")
+C: strtoll ("z") == 35
+PASS: C: strtoll ("z")
+C: strtoull ("z") == 35
+PASS: C: strtoull ("z")
+tr_TR.UTF-8: strtol ("A") == 10
+PASS: tr_TR.UTF-8: strtol ("A")
+tr_TR.UTF-8: strtoul ("A") == 10
+PASS: tr_TR.UTF-8: strtoul ("A")
+tr_TR.UTF-8: strtoll ("A") == 10
+PASS: tr_TR.UTF-8: strtoll ("A")
+tr_TR.UTF-8: strtoull ("A") == 10
+PASS: tr_TR.UTF-8: strtoull ("A")
+tr_TR.UTF-8: strtol ("a") == 10
+PASS: tr_TR.UTF-8: strtol ("a")
+tr_TR.UTF-8: strtoul ("a") == 10
+PASS: tr_TR.UTF-8: strtoul ("a")
+tr_TR.UTF-8: strtoll ("a") == 10
+PASS: tr_TR.UTF-8: strtoll ("a")
+tr_TR.UTF-8: strtoull ("a") == 10
+PASS: tr_TR.UTF-8: strtoull ("a")
+tr_TR.UTF-8: strtol ("B") == 11
+PASS: tr_TR.UTF-8: strtol ("B")
+tr_TR.UTF-8: strtoul ("B") == 11
+PASS: tr_TR.UTF-8: strtoul ("B")
+tr_TR.UTF-8: strtoll ("B") == 11
+PASS: tr_TR.UTF-8: strtoll ("B")
+tr_TR.UTF-8: strtoull ("B") == 11
+PASS: tr_TR.UTF-8: strtoull ("B")
+tr_TR.UTF-8: strtol ("b") == 11
+PASS: tr_TR.UTF-8: strtol ("b")
+tr_TR.UTF-8: strtoul ("b") == 11
+PASS: tr_TR.UTF-8: strtoul ("b")
+tr_TR.UTF-8: strtoll ("b") == 11
+PASS: tr_TR.UTF-8: strtoll ("b")
+tr_TR.UTF-8: strtoull ("b") == 11
+PASS: tr_TR.UTF-8: strtoull ("b")
+tr_TR.UTF-8: strtol ("C") == 12
+PASS: tr_TR.UTF-8: strtol ("C")
+tr_TR.UTF-8: strtoul ("C") == 12
+PASS: tr_TR.UTF-8: strtoul ("C")
+tr_TR.UTF-8: strtoll ("C") == 12
+PASS: tr_TR.UTF-8: strtoll ("C")
+tr_TR.UTF-8: strtoull ("C") == 12
+PASS: tr_TR.UTF-8: strtoull ("C")
+tr_TR.UTF-8: strtol ("c") == 12
+PASS: tr_TR.UTF-8: strtol ("c")
+tr_TR.UTF-8: strtoul ("c") == 12
+PASS: tr_TR.UTF-8: strtoul ("c")
+tr_TR.UTF-8: strtoll ("c") == 12
+PASS: tr_TR.UTF-8: strtoll ("c")
+tr_TR.UTF-8: strtoull ("c") == 12
+PASS: tr_TR.UTF-8: strtoull ("c")
+tr_TR.UTF-8: strtol ("D") == 13
+PASS: tr_TR.UTF-8: strtol ("D")
+tr_TR.UTF-8: strtoul ("D") == 13
+PASS: tr_TR.UTF-8: strtoul ("D")
+tr_TR.UTF-8: strtoll ("D") == 13
+PASS: tr_TR.UTF-8: strtoll ("D")
+tr_TR.UTF-8: strtoull ("D") == 13
+PASS: tr_TR.UTF-8: strtoull ("D")
+tr_TR.UTF-8: strtol ("d") == 13
+PASS: tr_TR.UTF-8: strtol ("d")
+tr_TR.UTF-8: strtoul ("d") == 13
+PASS: tr_TR.UTF-8: strtoul ("d")
+tr_TR.UTF-8: strtoll ("d") == 13
+PASS: tr_TR.UTF-8: strtoll ("d")
+tr_TR.UTF-8: strtoull ("d") == 13
+PASS: tr_TR.UTF-8: strtoull ("d")
+tr_TR.UTF-8: strtol ("E") == 14
+PASS: tr_TR.UTF-8: strtol ("E")
+tr_TR.UTF-8: strtoul ("E") == 14
+PASS: tr_TR.UTF-8: strtoul ("E")
+tr_TR.UTF-8: strtoll ("E") == 14
+PASS: tr_TR.UTF-8: strtoll ("E")
+tr_TR.UTF-8: strtoull ("E") == 14
+PASS: tr_TR.UTF-8: strtoull ("E")
+tr_TR.UTF-8: strtol ("e") == 14
+PASS: tr_TR.UTF-8: strtol ("e")
+tr_TR.UTF-8: strtoul ("e") == 14
+PASS: tr_TR.UTF-8: strtoul ("e")
+tr_TR.UTF-8: strtoll ("e") == 14
+PASS: tr_TR.UTF-8: strtoll ("e")
+tr_TR.UTF-8: strtoull ("e") == 14
+PASS: tr_TR.UTF-8: strtoull ("e")
+tr_TR.UTF-8: strtol ("F") == 15
+PASS: tr_TR.UTF-8: strtol ("F")
+tr_TR.UTF-8: strtoul ("F") == 15
+PASS: tr_TR.UTF-8: strtoul ("F")
+tr_TR.UTF-8: strtoll ("F") == 15
+PASS: tr_TR.UTF-8: strtoll ("F")
+tr_TR.UTF-8: strtoull ("F") == 15
+PASS: tr_TR.UTF-8: strtoull ("F")
+tr_TR.UTF-8: strtol ("f") == 15
+PASS: tr_TR.UTF-8: strtol ("f")
+tr_TR.UTF-8: strtoul ("f") == 15
+PASS: tr_TR.UTF-8: strtoul ("f")
+tr_TR.UTF-8: strtoll ("f") == 15
+PASS: tr_TR.UTF-8: strtoll ("f")
+tr_TR.UTF-8: strtoull ("f") == 15
+PASS: tr_TR.UTF-8: strtoull ("f")
+tr_TR.UTF-8: strtol ("G") == 16
+PASS: tr_TR.UTF-8: strtol ("G")
+tr_TR.UTF-8: strtoul ("G") == 16
+PASS: tr_TR.UTF-8: strtoul ("G")
+tr_TR.UTF-8: strtoll ("G") == 16
+PASS: tr_TR.UTF-8: strtoll ("G")
+tr_TR.UTF-8: strtoull ("G") == 16
+PASS: tr_TR.UTF-8: strtoull ("G")
+tr_TR.UTF-8: strtol ("g") == 16
+PASS: tr_TR.UTF-8: strtol ("g")
+tr_TR.UTF-8: strtoul ("g") == 16
+PASS: tr_TR.UTF-8: strtoul ("g")
+tr_TR.UTF-8: strtoll ("g") == 16
+PASS: tr_TR.UTF-8: strtoll ("g")
+tr_TR.UTF-8: strtoull ("g") == 16
+PASS: tr_TR.UTF-8: strtoull ("g")
+tr_TR.UTF-8: strtol ("H") == 17
+PASS: tr_TR.UTF-8: strtol ("H")
+tr_TR.UTF-8: strtoul ("H") == 17
+PASS: tr_TR.UTF-8: strtoul ("H")
+tr_TR.UTF-8: strtoll ("H") == 17
+PASS: tr_TR.UTF-8: strtoll ("H")
+tr_TR.UTF-8: strtoull ("H") == 17
+PASS: tr_TR.UTF-8: strtoull ("H")
+tr_TR.UTF-8: strtol ("h") == 17
+PASS: tr_TR.UTF-8: strtol ("h")
+tr_TR.UTF-8: strtoul ("h") == 17
+PASS: tr_TR.UTF-8: strtoul ("h")
+tr_TR.UTF-8: strtoll ("h") == 17
+PASS: tr_TR.UTF-8: strtoll ("h")
+tr_TR.UTF-8: strtoull ("h") == 17
+PASS: tr_TR.UTF-8: strtoull ("h")
+tr_TR.UTF-8: strtol ("I") == 18
+PASS: tr_TR.UTF-8: strtol ("I")
+tr_TR.UTF-8: strtoul ("I") == 18
+PASS: tr_TR.UTF-8: strtoul ("I")
+tr_TR.UTF-8: strtoll ("I") == 18
+PASS: tr_TR.UTF-8: strtoll ("I")
+tr_TR.UTF-8: strtoull ("I") == 18
+PASS: tr_TR.UTF-8: strtoull ("I")
+tr_TR.UTF-8: strtol ("i") == 18
+PASS: tr_TR.UTF-8: strtol ("i")
+tr_TR.UTF-8: strtoul ("i") == 18
+PASS: tr_TR.UTF-8: strtoul ("i")
+tr_TR.UTF-8: strtoll ("i") == 18
+PASS: tr_TR.UTF-8: strtoll ("i")
+tr_TR.UTF-8: strtoull ("i") == 18
+PASS: tr_TR.UTF-8: strtoull ("i")
+tr_TR.UTF-8: strtol ("J") == 19
+PASS: tr_TR.UTF-8: strtol ("J")
+tr_TR.UTF-8: strtoul ("J") == 19
+PASS: tr_TR.UTF-8: strtoul ("J")
+tr_TR.UTF-8: strtoll ("J") == 19
+PASS: tr_TR.UTF-8: strtoll ("J")
+tr_TR.UTF-8: strtoull ("J") == 19
+PASS: tr_TR.UTF-8: strtoull ("J")
+tr_TR.UTF-8: strtol ("j") == 19
+PASS: tr_TR.UTF-8: strtol ("j")
+tr_TR.UTF-8: strtoul ("j") == 19
+PASS: tr_TR.UTF-8: strtoul ("j")
+tr_TR.UTF-8: strtoll ("j") == 19
+PASS: tr_TR.UTF-8: strtoll ("j")
+tr_TR.UTF-8: strtoull ("j") == 19
+PASS: tr_TR.UTF-8: strtoull ("j")
+tr_TR.UTF-8: strtol ("K") == 20
+PASS: tr_TR.UTF-8: strtol ("K")
+tr_TR.UTF-8: strtoul ("K") == 20
+PASS: tr_TR.UTF-8: strtoul ("K")
+tr_TR.UTF-8: strtoll ("K") == 20
+PASS: tr_TR.UTF-8: strtoll ("K")
+tr_TR.UTF-8: strtoull ("K") == 20
+PASS: tr_TR.UTF-8: strtoull ("K")
+tr_TR.UTF-8: strtol ("k") == 20
+PASS: tr_TR.UTF-8: strtol ("k")
+tr_TR.UTF-8: strtoul ("k") == 20
+PASS: tr_TR.UTF-8: strtoul ("k")
+tr_TR.UTF-8: strtoll ("k") == 20
+PASS: tr_TR.UTF-8: strtoll ("k")
+tr_TR.UTF-8: strtoull ("k") == 20
+PASS: tr_TR.UTF-8: strtoull ("k")
+tr_TR.UTF-8: strtol ("L") == 21
+PASS: tr_TR.UTF-8: strtol ("L")
+tr_TR.UTF-8: strtoul ("L") == 21
+PASS: tr_TR.UTF-8: strtoul ("L")
+tr_TR.UTF-8: strtoll ("L") == 21
+PASS: tr_TR.UTF-8: strtoll ("L")
+tr_TR.UTF-8: strtoull ("L") == 21
+PASS: tr_TR.UTF-8: strtoull ("L")
+tr_TR.UTF-8: strtol ("l") == 21
+PASS: tr_TR.UTF-8: strtol ("l")
+tr_TR.UTF-8: strtoul ("l") == 21
+PASS: tr_TR.UTF-8: strtoul ("l")
+tr_TR.UTF-8: strtoll ("l") == 21
+PASS: tr_TR.UTF-8: strtoll ("l")
+tr_TR.UTF-8: strtoull ("l") == 21
+PASS: tr_TR.UTF-8: strtoull ("l")
+tr_TR.UTF-8: strtol ("M") == 22
+PASS: tr_TR.UTF-8: strtol ("M")
+tr_TR.UTF-8: strtoul ("M") == 22
+PASS: tr_TR.UTF-8: strtoul ("M")
+tr_TR.UTF-8: strtoll ("M") == 22
+PASS: tr_TR.UTF-8: strtoll ("M")
+tr_TR.UTF-8: strtoull ("M") == 22
+PASS: tr_TR.UTF-8: strtoull ("M")
+tr_TR.UTF-8: strtol ("m") == 22
+PASS: tr_TR.UTF-8: strtol ("m")
+tr_TR.UTF-8: strtoul ("m") == 22
+PASS: tr_TR.UTF-8: strtoul ("m")
+tr_TR.UTF-8: strtoll ("m") == 22
+PASS: tr_TR.UTF-8: strtoll ("m")
+tr_TR.UTF-8: strtoull ("m") == 22
+PASS: tr_TR.UTF-8: strtoull ("m")
+tr_TR.UTF-8: strtol ("N") == 23
+PASS: tr_TR.UTF-8: strtol ("N")
+tr_TR.UTF-8: strtoul ("N") == 23
+PASS: tr_TR.UTF-8: strtoul ("N")
+tr_TR.UTF-8: strtoll ("N") == 23
+PASS: tr_TR.UTF-8: strtoll ("N")
+tr_TR.UTF-8: strtoull ("N") == 23
+PASS: tr_TR.UTF-8: strtoull ("N")
+tr_TR.UTF-8: strtol ("n") == 23
+PASS: tr_TR.UTF-8: strtol ("n")
+tr_TR.UTF-8: strtoul ("n") == 23
+PASS: tr_TR.UTF-8: strtoul ("n")
+tr_TR.UTF-8: strtoll ("n") == 23
+PASS: tr_TR.UTF-8: strtoll ("n")
+tr_TR.UTF-8: strtoull ("n") == 23
+PASS: tr_TR.UTF-8: strtoull ("n")
+tr_TR.UTF-8: strtol ("O") == 24
+PASS: tr_TR.UTF-8: strtol ("O")
+tr_TR.UTF-8: strtoul ("O") == 24
+PASS: tr_TR.UTF-8: strtoul ("O")
+tr_TR.UTF-8: strtoll ("O") == 24
+PASS: tr_TR.UTF-8: strtoll ("O")
+tr_TR.UTF-8: strtoull ("O") == 24
+PASS: tr_TR.UTF-8: strtoull ("O")
+tr_TR.UTF-8: strtol ("o") == 24
+PASS: tr_TR.UTF-8: strtol ("o")
+tr_TR.UTF-8: strtoul ("o") == 24
+PASS: tr_TR.UTF-8: strtoul ("o")
+tr_TR.UTF-8: strtoll ("o") == 24
+PASS: tr_TR.UTF-8: strtoll ("o")
+tr_TR.UTF-8: strtoull ("o") == 24
+PASS: tr_TR.UTF-8: strtoull ("o")
+tr_TR.UTF-8: strtol ("P") == 25
+PASS: tr_TR.UTF-8: strtol ("P")
+tr_TR.UTF-8: strtoul ("P") == 25
+PASS: tr_TR.UTF-8: strtoul ("P")
+tr_TR.UTF-8: strtoll ("P") == 25
+PASS: tr_TR.UTF-8: strtoll ("P")
+tr_TR.UTF-8: strtoull ("P") == 25
+PASS: tr_TR.UTF-8: strtoull ("P")
+tr_TR.UTF-8: strtol ("p") == 25
+PASS: tr_TR.UTF-8: strtol ("p")
+tr_TR.UTF-8: strtoul ("p") == 25
+PASS: tr_TR.UTF-8: strtoul ("p")
+tr_TR.UTF-8: strtoll ("p") == 25
+PASS: tr_TR.UTF-8: strtoll ("p")
+tr_TR.UTF-8: strtoull ("p") == 25
+PASS: tr_TR.UTF-8: strtoull ("p")
+tr_TR.UTF-8: strtol ("Q") == 26
+PASS: tr_TR.UTF-8: strtol ("Q")
+tr_TR.UTF-8: strtoul ("Q") == 26
+PASS: tr_TR.UTF-8: strtoul ("Q")
+tr_TR.UTF-8: strtoll ("Q") == 26
+PASS: tr_TR.UTF-8: strtoll ("Q")
+tr_TR.UTF-8: strtoull ("Q") == 26
+PASS: tr_TR.UTF-8: strtoull ("Q")
+tr_TR.UTF-8: strtol ("q") == 26
+PASS: tr_TR.UTF-8: strtol ("q")
+tr_TR.UTF-8: strtoul ("q") == 26
+PASS: tr_TR.UTF-8: strtoul ("q")
+tr_TR.UTF-8: strtoll ("q") == 26
+PASS: tr_TR.UTF-8: strtoll ("q")
+tr_TR.UTF-8: strtoull ("q") == 26
+PASS: tr_TR.UTF-8: strtoull ("q")
+tr_TR.UTF-8: strtol ("R") == 27
+PASS: tr_TR.UTF-8: strtol ("R")
+tr_TR.UTF-8: strtoul ("R") == 27
+PASS: tr_TR.UTF-8: strtoul ("R")
+tr_TR.UTF-8: strtoll ("R") == 27
+PASS: tr_TR.UTF-8: strtoll ("R")
+tr_TR.UTF-8: strtoull ("R") == 27
+PASS: tr_TR.UTF-8: strtoull ("R")
+tr_TR.UTF-8: strtol ("r") == 27
+PASS: tr_TR.UTF-8: strtol ("r")
+tr_TR.UTF-8: strtoul ("r") == 27
+PASS: tr_TR.UTF-8: strtoul ("r")
+tr_TR.UTF-8: strtoll ("r") == 27
+PASS: tr_TR.UTF-8: strtoll ("r")
+tr_TR.UTF-8: strtoull ("r") == 27
+PASS: tr_TR.UTF-8: strtoull ("r")
+tr_TR.UTF-8: strtol ("S") == 28
+PASS: tr_TR.UTF-8: strtol ("S")
+tr_TR.UTF-8: strtoul ("S") == 28
+PASS: tr_TR.UTF-8: strtoul ("S")
+tr_TR.UTF-8: strtoll ("S") == 28
+PASS: tr_TR.UTF-8: strtoll ("S")
+tr_TR.UTF-8: strtoull ("S") == 28
+PASS: tr_TR.UTF-8: strtoull ("S")
+tr_TR.UTF-8: strtol ("s") == 28
+PASS: tr_TR.UTF-8: strtol ("s")
+tr_TR.UTF-8: strtoul ("s") == 28
+PASS: tr_TR.UTF-8: strtoul ("s")
+tr_TR.UTF-8: strtoll ("s") == 28
+PASS: tr_TR.UTF-8: strtoll ("s")
+tr_TR.UTF-8: strtoull ("s") == 28
+PASS: tr_TR.UTF-8: strtoull ("s")
+tr_TR.UTF-8: strtol ("T") == 29
+PASS: tr_TR.UTF-8: strtol ("T")
+tr_TR.UTF-8: strtoul ("T") == 29
+PASS: tr_TR.UTF-8: strtoul ("T")
+tr_TR.UTF-8: strtoll ("T") == 29
+PASS: tr_TR.UTF-8: strtoll ("T")
+tr_TR.UTF-8: strtoull ("T") == 29
+PASS: tr_TR.UTF-8: strtoull ("T")
+tr_TR.UTF-8: strtol ("t") == 29
+PASS: tr_TR.UTF-8: strtol ("t")
+tr_TR.UTF-8: strtoul ("t") == 29
+PASS: tr_TR.UTF-8: strtoul ("t")
+tr_TR.UTF-8: strtoll ("t") == 29
+PASS: tr_TR.UTF-8: strtoll ("t")
+tr_TR.UTF-8: strtoull ("t") == 29
+PASS: tr_TR.UTF-8: strtoull ("t")
+tr_TR.UTF-8: strtol ("U") == 30
+PASS: tr_TR.UTF-8: strtol ("U")
+tr_TR.UTF-8: strtoul ("U") == 30
+PASS: tr_TR.UTF-8: strtoul ("U")
+tr_TR.UTF-8: strtoll ("U") == 30
+PASS: tr_TR.UTF-8: strtoll ("U")
+tr_TR.UTF-8: strtoull ("U") == 30
+PASS: tr_TR.UTF-8: strtoull ("U")
+tr_TR.UTF-8: strtol ("u") == 30
+PASS: tr_TR.UTF-8: strtol ("u")
+tr_TR.UTF-8: strtoul ("u") == 30
+PASS: tr_TR.UTF-8: strtoul ("u")
+tr_TR.UTF-8: strtoll ("u") == 30
+PASS: tr_TR.UTF-8: strtoll ("u")
+tr_TR.UTF-8: strtoull ("u") == 30
+PASS: tr_TR.UTF-8: strtoull ("u")
+tr_TR.UTF-8: strtol ("V") == 31
+PASS: tr_TR.UTF-8: strtol ("V")
+tr_TR.UTF-8: strtoul ("V") == 31
+PASS: tr_TR.UTF-8: strtoul ("V")
+tr_TR.UTF-8: strtoll ("V") == 31
+PASS: tr_TR.UTF-8: strtoll ("V")
+tr_TR.UTF-8: strtoull ("V") == 31
+PASS: tr_TR.UTF-8: strtoull ("V")
+tr_TR.UTF-8: strtol ("v") == 31
+PASS: tr_TR.UTF-8: strtol ("v")
+tr_TR.UTF-8: strtoul ("v") == 31
+PASS: tr_TR.UTF-8: strtoul ("v")
+tr_TR.UTF-8: strtoll ("v") == 31
+PASS: tr_TR.UTF-8: strtoll ("v")
+tr_TR.UTF-8: strtoull ("v") == 31
+PASS: tr_TR.UTF-8: strtoull ("v")
+tr_TR.UTF-8: strtol ("W") == 32
+PASS: tr_TR.UTF-8: strtol ("W")
+tr_TR.UTF-8: strtoul ("W") == 32
+PASS: tr_TR.UTF-8: strtoul ("W")
+tr_TR.UTF-8: strtoll ("W") == 32
+PASS: tr_TR.UTF-8: strtoll ("W")
+tr_TR.UTF-8: strtoull ("W") == 32
+PASS: tr_TR.UTF-8: strtoull ("W")
+tr_TR.UTF-8: strtol ("w") == 32
+PASS: tr_TR.UTF-8: strtol ("w")
+tr_TR.UTF-8: strtoul ("w") == 32
+PASS: tr_TR.UTF-8: strtoul ("w")
+tr_TR.UTF-8: strtoll ("w") == 32
+PASS: tr_TR.UTF-8: strtoll ("w")
+tr_TR.UTF-8: strtoull ("w") == 32
+PASS: tr_TR.UTF-8: strtoull ("w")
+tr_TR.UTF-8: strtol ("X") == 33
+PASS: tr_TR.UTF-8: strtol ("X")
+tr_TR.UTF-8: strtoul ("X") == 33
+PASS: tr_TR.UTF-8: strtoul ("X")
+tr_TR.UTF-8: strtoll ("X") == 33
+PASS: tr_TR.UTF-8: strtoll ("X")
+tr_TR.UTF-8: strtoull ("X") == 33
+PASS: tr_TR.UTF-8: strtoull ("X")
+tr_TR.UTF-8: strtol ("x") == 33
+PASS: tr_TR.UTF-8: strtol ("x")
+tr_TR.UTF-8: strtoul ("x") == 33
+PASS: tr_TR.UTF-8: strtoul ("x")
+tr_TR.UTF-8: strtoll ("x") == 33
+PASS: tr_TR.UTF-8: strtoll ("x")
+tr_TR.UTF-8: strtoull ("x") == 33
+PASS: tr_TR.UTF-8: strtoull ("x")
+tr_TR.UTF-8: strtol ("Y") == 34
+PASS: tr_TR.UTF-8: strtol ("Y")
+tr_TR.UTF-8: strtoul ("Y") == 34
+PASS: tr_TR.UTF-8: strtoul ("Y")
+tr_TR.UTF-8: strtoll ("Y") == 34
+PASS: tr_TR.UTF-8: strtoll ("Y")
+tr_TR.UTF-8: strtoull ("Y") == 34
+PASS: tr_TR.UTF-8: strtoull ("Y")
+tr_TR.UTF-8: strtol ("y") == 34
+PASS: tr_TR.UTF-8: strtol ("y")
+tr_TR.UTF-8: strtoul ("y") == 34
+PASS: tr_TR.UTF-8: strtoul ("y")
+tr_TR.UTF-8: strtoll ("y") == 34
+PASS: tr_TR.UTF-8: strtoll ("y")
+tr_TR.UTF-8: strtoull ("y") == 34
+PASS: tr_TR.UTF-8: strtoull ("y")
+tr_TR.UTF-8: strtol ("Z") == 35
+PASS: tr_TR.UTF-8: strtol ("Z")
+tr_TR.UTF-8: strtoul ("Z") == 35
+PASS: tr_TR.UTF-8: strtoul ("Z")
+tr_TR.UTF-8: strtoll ("Z") == 35
+PASS: tr_TR.UTF-8: strtoll ("Z")
+tr_TR.UTF-8: strtoull ("Z") == 35
+PASS: tr_TR.UTF-8: strtoull ("Z")
+tr_TR.UTF-8: strtol ("z") == 35
+PASS: tr_TR.UTF-8: strtol ("z")
+tr_TR.UTF-8: strtoul ("z") == 35
+PASS: tr_TR.UTF-8: strtoul ("z")
+tr_TR.UTF-8: strtoll ("z") == 35
+PASS: tr_TR.UTF-8: strtoll ("z")
+tr_TR.UTF-8: strtoull ("z") == 35
+PASS: tr_TR.UTF-8: strtoull ("z")
+tr_TR.ISO-8859-9: strtol ("A") == 10
+PASS: tr_TR.ISO-8859-9: strtol ("A")
+tr_TR.ISO-8859-9: strtoul ("A") == 10
+PASS: tr_TR.ISO-8859-9: strtoul ("A")
+tr_TR.ISO-8859-9: strtoll ("A") == 10
+PASS: tr_TR.ISO-8859-9: strtoll ("A")
+tr_TR.ISO-8859-9: strtoull ("A") == 10
+PASS: tr_TR.ISO-8859-9: strtoull ("A")
+tr_TR.ISO-8859-9: strtol ("a") == 10
+PASS: tr_TR.ISO-8859-9: strtol ("a")
+tr_TR.ISO-8859-9: strtoul ("a") == 10
+PASS: tr_TR.ISO-8859-9: strtoul ("a")
+tr_TR.ISO-8859-9: strtoll ("a") == 10
+PASS: tr_TR.ISO-8859-9: strtoll ("a")
+tr_TR.ISO-8859-9: strtoull ("a") == 10
+PASS: tr_TR.ISO-8859-9: strtoull ("a")
+tr_TR.ISO-8859-9: strtol ("B") == 11
+PASS: tr_TR.ISO-8859-9: strtol ("B")
+tr_TR.ISO-8859-9: strtoul ("B") == 11
+PASS: tr_TR.ISO-8859-9: strtoul ("B")
+tr_TR.ISO-8859-9: strtoll ("B") == 11
+PASS: tr_TR.ISO-8859-9: strtoll ("B")
+tr_TR.ISO-8859-9: strtoull ("B") == 11
+PASS: tr_TR.ISO-8859-9: strtoull ("B")
+tr_TR.ISO-8859-9: strtol ("b") == 11
+PASS: tr_TR.ISO-8859-9: strtol ("b")
+tr_TR.ISO-8859-9: strtoul ("b") == 11
+PASS: tr_TR.ISO-8859-9: strtoul ("b")
+tr_TR.ISO-8859-9: strtoll ("b") == 11
+PASS: tr_TR.ISO-8859-9: strtoll ("b")
+tr_TR.ISO-8859-9: strtoull ("b") == 11
+PASS: tr_TR.ISO-8859-9: strtoull ("b")
+tr_TR.ISO-8859-9: strtol ("C") == 12
+PASS: tr_TR.ISO-8859-9: strtol ("C")
+tr_TR.ISO-8859-9: strtoul ("C") == 12
+PASS: tr_TR.ISO-8859-9: strtoul ("C")
+tr_TR.ISO-8859-9: strtoll ("C") == 12
+PASS: tr_TR.ISO-8859-9: strtoll ("C")
+tr_TR.ISO-8859-9: strtoull ("C") == 12
+PASS: tr_TR.ISO-8859-9: strtoull ("C")
+tr_TR.ISO-8859-9: strtol ("c") == 12
+PASS: tr_TR.ISO-8859-9: strtol ("c")
+tr_TR.ISO-8859-9: strtoul ("c") == 12
+PASS: tr_TR.ISO-8859-9: strtoul ("c")
+tr_TR.ISO-8859-9: strtoll ("c") == 12
+PASS: tr_TR.ISO-8859-9: strtoll ("c")
+tr_TR.ISO-8859-9: strtoull ("c") == 12
+PASS: tr_TR.ISO-8859-9: strtoull ("c")
+tr_TR.ISO-8859-9: strtol ("D") == 13
+PASS: tr_TR.ISO-8859-9: strtol ("D")
+tr_TR.ISO-8859-9: strtoul ("D") == 13
+PASS: tr_TR.ISO-8859-9: strtoul ("D")
+tr_TR.ISO-8859-9: strtoll ("D") == 13
+PASS: tr_TR.ISO-8859-9: strtoll ("D")
+tr_TR.ISO-8859-9: strtoull ("D") == 13
+PASS: tr_TR.ISO-8859-9: strtoull ("D")
+tr_TR.ISO-8859-9: strtol ("d") == 13
+PASS: tr_TR.ISO-8859-9: strtol ("d")
+tr_TR.ISO-8859-9: strtoul ("d") == 13
+PASS: tr_TR.ISO-8859-9: strtoul ("d")
+tr_TR.ISO-8859-9: strtoll ("d") == 13
+PASS: tr_TR.ISO-8859-9: strtoll ("d")
+tr_TR.ISO-8859-9: strtoull ("d") == 13
+PASS: tr_TR.ISO-8859-9: strtoull ("d")
+tr_TR.ISO-8859-9: strtol ("E") == 14
+PASS: tr_TR.ISO-8859-9: strtol ("E")
+tr_TR.ISO-8859-9: strtoul ("E") == 14
+PASS: tr_TR.ISO-8859-9: strtoul ("E")
+tr_TR.ISO-8859-9: strtoll ("E") == 14
+PASS: tr_TR.ISO-8859-9: strtoll ("E")
+tr_TR.ISO-8859-9: strtoull ("E") == 14
+PASS: tr_TR.ISO-8859-9: strtoull ("E")
+tr_TR.ISO-8859-9: strtol ("e") == 14
+PASS: tr_TR.ISO-8859-9: strtol ("e")
+tr_TR.ISO-8859-9: strtoul ("e") == 14
+PASS: tr_TR.ISO-8859-9: strtoul ("e")
+tr_TR.ISO-8859-9: strtoll ("e") == 14
+PASS: tr_TR.ISO-8859-9: strtoll ("e")
+tr_TR.ISO-8859-9: strtoull ("e") == 14
+PASS: tr_TR.ISO-8859-9: strtoull ("e")
+tr_TR.ISO-8859-9: strtol ("F") == 15
+PASS: tr_TR.ISO-8859-9: strtol ("F")
+tr_TR.ISO-8859-9: strtoul ("F") == 15
+PASS: tr_TR.ISO-8859-9: strtoul ("F")
+tr_TR.ISO-8859-9: strtoll ("F") == 15
+PASS: tr_TR.ISO-8859-9: strtoll ("F")
+tr_TR.ISO-8859-9: strtoull ("F") == 15
+PASS: tr_TR.ISO-8859-9: strtoull ("F")
+tr_TR.ISO-8859-9: strtol ("f") == 15
+PASS: tr_TR.ISO-8859-9: strtol ("f")
+tr_TR.ISO-8859-9: strtoul ("f") == 15
+PASS: tr_TR.ISO-8859-9: strtoul ("f")
+tr_TR.ISO-8859-9: strtoll ("f") == 15
+PASS: tr_TR.ISO-8859-9: strtoll ("f")
+tr_TR.ISO-8859-9: strtoull ("f") == 15
+PASS: tr_TR.ISO-8859-9: strtoull ("f")
+tr_TR.ISO-8859-9: strtol ("G") == 16
+PASS: tr_TR.ISO-8859-9: strtol ("G")
+tr_TR.ISO-8859-9: strtoul ("G") == 16
+PASS: tr_TR.ISO-8859-9: strtoul ("G")
+tr_TR.ISO-8859-9: strtoll ("G") == 16
+PASS: tr_TR.ISO-8859-9: strtoll ("G")
+tr_TR.ISO-8859-9: strtoull ("G") == 16
+PASS: tr_TR.ISO-8859-9: strtoull ("G")
+tr_TR.ISO-8859-9: strtol ("g") == 16
+PASS: tr_TR.ISO-8859-9: strtol ("g")
+tr_TR.ISO-8859-9: strtoul ("g") == 16
+PASS: tr_TR.ISO-8859-9: strtoul ("g")
+tr_TR.ISO-8859-9: strtoll ("g") == 16
+PASS: tr_TR.ISO-8859-9: strtoll ("g")
+tr_TR.ISO-8859-9: strtoull ("g") == 16
+PASS: tr_TR.ISO-8859-9: strtoull ("g")
+tr_TR.ISO-8859-9: strtol ("H") == 17
+PASS: tr_TR.ISO-8859-9: strtol ("H")
+tr_TR.ISO-8859-9: strtoul ("H") == 17
+PASS: tr_TR.ISO-8859-9: strtoul ("H")
+tr_TR.ISO-8859-9: strtoll ("H") == 17
+PASS: tr_TR.ISO-8859-9: strtoll ("H")
+tr_TR.ISO-8859-9: strtoull ("H") == 17
+PASS: tr_TR.ISO-8859-9: strtoull ("H")
+tr_TR.ISO-8859-9: strtol ("h") == 17
+PASS: tr_TR.ISO-8859-9: strtol ("h")
+tr_TR.ISO-8859-9: strtoul ("h") == 17
+PASS: tr_TR.ISO-8859-9: strtoul ("h")
+tr_TR.ISO-8859-9: strtoll ("h") == 17
+PASS: tr_TR.ISO-8859-9: strtoll ("h")
+tr_TR.ISO-8859-9: strtoull ("h") == 17
+PASS: tr_TR.ISO-8859-9: strtoull ("h")
+tr_TR.ISO-8859-9: strtol ("I") == 18
+PASS: tr_TR.ISO-8859-9: strtol ("I")
+tr_TR.ISO-8859-9: strtoul ("I") == 18
+PASS: tr_TR.ISO-8859-9: strtoul ("I")
+tr_TR.ISO-8859-9: strtoll ("I") == 18
+PASS: tr_TR.ISO-8859-9: strtoll ("I")
+tr_TR.ISO-8859-9: strtoull ("I") == 18
+PASS: tr_TR.ISO-8859-9: strtoull ("I")
+tr_TR.ISO-8859-9: strtol ("i") == 18
+PASS: tr_TR.ISO-8859-9: strtol ("i")
+tr_TR.ISO-8859-9: strtoul ("i") == 18
+PASS: tr_TR.ISO-8859-9: strtoul ("i")
+tr_TR.ISO-8859-9: strtoll ("i") == 18
+PASS: tr_TR.ISO-8859-9: strtoll ("i")
+tr_TR.ISO-8859-9: strtoull ("i") == 18
+PASS: tr_TR.ISO-8859-9: strtoull ("i")
+tr_TR.ISO-8859-9: strtol ("J") == 19
+PASS: tr_TR.ISO-8859-9: strtol ("J")
+tr_TR.ISO-8859-9: strtoul ("J") == 19
+PASS: tr_TR.ISO-8859-9: strtoul ("J")
+tr_TR.ISO-8859-9: strtoll ("J") == 19
+PASS: tr_TR.ISO-8859-9: strtoll ("J")
+tr_TR.ISO-8859-9: strtoull ("J") == 19
+PASS: tr_TR.ISO-8859-9: strtoull ("J")
+tr_TR.ISO-8859-9: strtol ("j") == 19
+PASS: tr_TR.ISO-8859-9: strtol ("j")
+tr_TR.ISO-8859-9: strtoul ("j") == 19
+PASS: tr_TR.ISO-8859-9: strtoul ("j")
+tr_TR.ISO-8859-9: strtoll ("j") == 19
+PASS: tr_TR.ISO-8859-9: strtoll ("j")
+tr_TR.ISO-8859-9: strtoull ("j") == 19
+PASS: tr_TR.ISO-8859-9: strtoull ("j")
+tr_TR.ISO-8859-9: strtol ("K") == 20
+PASS: tr_TR.ISO-8859-9: strtol ("K")
+tr_TR.ISO-8859-9: strtoul ("K") == 20
+PASS: tr_TR.ISO-8859-9: strtoul ("K")
+tr_TR.ISO-8859-9: strtoll ("K") == 20
+PASS: tr_TR.ISO-8859-9: strtoll ("K")
+tr_TR.ISO-8859-9: strtoull ("K") == 20
+PASS: tr_TR.ISO-8859-9: strtoull ("K")
+tr_TR.ISO-8859-9: strtol ("k") == 20
+PASS: tr_TR.ISO-8859-9: strtol ("k")
+tr_TR.ISO-8859-9: strtoul ("k") == 20
+PASS: tr_TR.ISO-8859-9: strtoul ("k")
+tr_TR.ISO-8859-9: strtoll ("k") == 20
+PASS: tr_TR.ISO-8859-9: strtoll ("k")
+tr_TR.ISO-8859-9: strtoull ("k") == 20
+PASS: tr_TR.ISO-8859-9: strtoull ("k")
+tr_TR.ISO-8859-9: strtol ("L") == 21
+PASS: tr_TR.ISO-8859-9: strtol ("L")
+tr_TR.ISO-8859-9: strtoul ("L") == 21
+PASS: tr_TR.ISO-8859-9: strtoul ("L")
+tr_TR.ISO-8859-9: strtoll ("L") == 21
+PASS: tr_TR.ISO-8859-9: strtoll ("L")
+tr_TR.ISO-8859-9: strtoull ("L") == 21
+PASS: tr_TR.ISO-8859-9: strtoull ("L")
+tr_TR.ISO-8859-9: strtol ("l") == 21
+PASS: tr_TR.ISO-8859-9: strtol ("l")
+tr_TR.ISO-8859-9: strtoul ("l") == 21
+PASS: tr_TR.ISO-8859-9: strtoul ("l")
+tr_TR.ISO-8859-9: strtoll ("l") == 21
+PASS: tr_TR.ISO-8859-9: strtoll ("l")
+tr_TR.ISO-8859-9: strtoull ("l") == 21
+PASS: tr_TR.ISO-8859-9: strtoull ("l")
+tr_TR.ISO-8859-9: strtol ("M") == 22
+PASS: tr_TR.ISO-8859-9: strtol ("M")
+tr_TR.ISO-8859-9: strtoul ("M") == 22
+PASS: tr_TR.ISO-8859-9: strtoul ("M")
+tr_TR.ISO-8859-9: strtoll ("M") == 22
+PASS: tr_TR.ISO-8859-9: strtoll ("M")
+tr_TR.ISO-8859-9: strtoull ("M") == 22
+PASS: tr_TR.ISO-8859-9: strtoull ("M")
+tr_TR.ISO-8859-9: strtol ("m") == 22
+PASS: tr_TR.ISO-8859-9: strtol ("m")
+tr_TR.ISO-8859-9: strtoul ("m") == 22
+PASS: tr_TR.ISO-8859-9: strtoul ("m")
+tr_TR.ISO-8859-9: strtoll ("m") == 22
+PASS: tr_TR.ISO-8859-9: strtoll ("m")
+tr_TR.ISO-8859-9: strtoull ("m") == 22
+PASS: tr_TR.ISO-8859-9: strtoull ("m")
+tr_TR.ISO-8859-9: strtol ("N") == 23
+PASS: tr_TR.ISO-8859-9: strtol ("N")
+tr_TR.ISO-8859-9: strtoul ("N") == 23
+PASS: tr_TR.ISO-8859-9: strtoul ("N")
+tr_TR.ISO-8859-9: strtoll ("N") == 23
+PASS: tr_TR.ISO-8859-9: strtoll ("N")
+tr_TR.ISO-8859-9: strtoull ("N") == 23
+PASS: tr_TR.ISO-8859-9: strtoull ("N")
+tr_TR.ISO-8859-9: strtol ("n") == 23
+PASS: tr_TR.ISO-8859-9: strtol ("n")
+tr_TR.ISO-8859-9: strtoul ("n") == 23
+PASS: tr_TR.ISO-8859-9: strtoul ("n")
+tr_TR.ISO-8859-9: strtoll ("n") == 23
+PASS: tr_TR.ISO-8859-9: strtoll ("n")
+tr_TR.ISO-8859-9: strtoull ("n") == 23
+PASS: tr_TR.ISO-8859-9: strtoull ("n")
+tr_TR.ISO-8859-9: strtol ("O") == 24
+PASS: tr_TR.ISO-8859-9: strtol ("O")
+tr_TR.ISO-8859-9: strtoul ("O") == 24
+PASS: tr_TR.ISO-8859-9: strtoul ("O")
+tr_TR.ISO-8859-9: strtoll ("O") == 24
+PASS: tr_TR.ISO-8859-9: strtoll ("O")
+tr_TR.ISO-8859-9: strtoull ("O") == 24
+PASS: tr_TR.ISO-8859-9: strtoull ("O")
+tr_TR.ISO-8859-9: strtol ("o") == 24
+PASS: tr_TR.ISO-8859-9: strtol ("o")
+tr_TR.ISO-8859-9: strtoul ("o") == 24
+PASS: tr_TR.ISO-8859-9: strtoul ("o")
+tr_TR.ISO-8859-9: strtoll ("o") == 24
+PASS: tr_TR.ISO-8859-9: strtoll ("o")
+tr_TR.ISO-8859-9: strtoull ("o") == 24
+PASS: tr_TR.ISO-8859-9: strtoull ("o")
+tr_TR.ISO-8859-9: strtol ("P") == 25
+PASS: tr_TR.ISO-8859-9: strtol ("P")
+tr_TR.ISO-8859-9: strtoul ("P") == 25
+PASS: tr_TR.ISO-8859-9: strtoul ("P")
+tr_TR.ISO-8859-9: strtoll ("P") == 25
+PASS: tr_TR.ISO-8859-9: strtoll ("P")
+tr_TR.ISO-8859-9: strtoull ("P") == 25
+PASS: tr_TR.ISO-8859-9: strtoull ("P")
+tr_TR.ISO-8859-9: strtol ("p") == 25
+PASS: tr_TR.ISO-8859-9: strtol ("p")
+tr_TR.ISO-8859-9: strtoul ("p") == 25
+PASS: tr_TR.ISO-8859-9: strtoul ("p")
+tr_TR.ISO-8859-9: strtoll ("p") == 25
+PASS: tr_TR.ISO-8859-9: strtoll ("p")
+tr_TR.ISO-8859-9: strtoull ("p") == 25
+PASS: tr_TR.ISO-8859-9: strtoull ("p")
+tr_TR.ISO-8859-9: strtol ("Q") == 26
+PASS: tr_TR.ISO-8859-9: strtol ("Q")
+tr_TR.ISO-8859-9: strtoul ("Q") == 26
+PASS: tr_TR.ISO-8859-9: strtoul ("Q")
+tr_TR.ISO-8859-9: strtoll ("Q") == 26
+PASS: tr_TR.ISO-8859-9: strtoll ("Q")
+tr_TR.ISO-8859-9: strtoull ("Q") == 26
+PASS: tr_TR.ISO-8859-9: strtoull ("Q")
+tr_TR.ISO-8859-9: strtol ("q") == 26
+PASS: tr_TR.ISO-8859-9: strtol ("q")
+tr_TR.ISO-8859-9: strtoul ("q") == 26
+PASS: tr_TR.ISO-8859-9: strtoul ("q")
+tr_TR.ISO-8859-9: strtoll ("q") == 26
+PASS: tr_TR.ISO-8859-9: strtoll ("q")
+tr_TR.ISO-8859-9: strtoull ("q") == 26
+PASS: tr_TR.ISO-8859-9: strtoull ("q")
+tr_TR.ISO-8859-9: strtol ("R") == 27
+PASS: tr_TR.ISO-8859-9: strtol ("R")
+tr_TR.ISO-8859-9: strtoul ("R") == 27
+PASS: tr_TR.ISO-8859-9: strtoul ("R")
+tr_TR.ISO-8859-9: strtoll ("R") == 27
+PASS: tr_TR.ISO-8859-9: strtoll ("R")
+tr_TR.ISO-8859-9: strtoull ("R") == 27
+PASS: tr_TR.ISO-8859-9: strtoull ("R")
+tr_TR.ISO-8859-9: strtol ("r") == 27
+PASS: tr_TR.ISO-8859-9: strtol ("r")
+tr_TR.ISO-8859-9: strtoul ("r") == 27
+PASS: tr_TR.ISO-8859-9: strtoul ("r")
+tr_TR.ISO-8859-9: strtoll ("r") == 27
+PASS: tr_TR.ISO-8859-9: strtoll ("r")
+tr_TR.ISO-8859-9: strtoull ("r") == 27
+PASS: tr_TR.ISO-8859-9: strtoull ("r")
+tr_TR.ISO-8859-9: strtol ("S") == 28
+PASS: tr_TR.ISO-8859-9: strtol ("S")
+tr_TR.ISO-8859-9: strtoul ("S") == 28
+PASS: tr_TR.ISO-8859-9: strtoul ("S")
+tr_TR.ISO-8859-9: strtoll ("S") == 28
+PASS: tr_TR.ISO-8859-9: strtoll ("S")
+tr_TR.ISO-8859-9: strtoull ("S") == 28
+PASS: tr_TR.ISO-8859-9: strtoull ("S")
+tr_TR.ISO-8859-9: strtol ("s") == 28
+PASS: tr_TR.ISO-8859-9: strtol ("s")
+tr_TR.ISO-8859-9: strtoul ("s") == 28
+PASS: tr_TR.ISO-8859-9: strtoul ("s")
+tr_TR.ISO-8859-9: strtoll ("s") == 28
+PASS: tr_TR.ISO-8859-9: strtoll ("s")
+tr_TR.ISO-8859-9: strtoull ("s") == 28
+PASS: tr_TR.ISO-8859-9: strtoull ("s")
+tr_TR.ISO-8859-9: strtol ("T") == 29
+PASS: tr_TR.ISO-8859-9: strtol ("T")
+tr_TR.ISO-8859-9: strtoul ("T") == 29
+PASS: tr_TR.ISO-8859-9: strtoul ("T")
+tr_TR.ISO-8859-9: strtoll ("T") == 29
+PASS: tr_TR.ISO-8859-9: strtoll ("T")
+tr_TR.ISO-8859-9: strtoull ("T") == 29
+PASS: tr_TR.ISO-8859-9: strtoull ("T")
+tr_TR.ISO-8859-9: strtol ("t") == 29
+PASS: tr_TR.ISO-8859-9: strtol ("t")
+tr_TR.ISO-8859-9: strtoul ("t") == 29
+PASS: tr_TR.ISO-8859-9: strtoul ("t")
+tr_TR.ISO-8859-9: strtoll ("t") == 29
+PASS: tr_TR.ISO-8859-9: strtoll ("t")
+tr_TR.ISO-8859-9: strtoull ("t") == 29
+PASS: tr_TR.ISO-8859-9: strtoull ("t")
+tr_TR.ISO-8859-9: strtol ("U") == 30
+PASS: tr_TR.ISO-8859-9: strtol ("U")
+tr_TR.ISO-8859-9: strtoul ("U") == 30
+PASS: tr_TR.ISO-8859-9: strtoul ("U")
+tr_TR.ISO-8859-9: strtoll ("U") == 30
+PASS: tr_TR.ISO-8859-9: strtoll ("U")
+tr_TR.ISO-8859-9: strtoull ("U") == 30
+PASS: tr_TR.ISO-8859-9: strtoull ("U")
+tr_TR.ISO-8859-9: strtol ("u") == 30
+PASS: tr_TR.ISO-8859-9: strtol ("u")
+tr_TR.ISO-8859-9: strtoul ("u") == 30
+PASS: tr_TR.ISO-8859-9: strtoul ("u")
+tr_TR.ISO-8859-9: strtoll ("u") == 30
+PASS: tr_TR.ISO-8859-9: strtoll ("u")
+tr_TR.ISO-8859-9: strtoull ("u") == 30
+PASS: tr_TR.ISO-8859-9: strtoull ("u")
+tr_TR.ISO-8859-9: strtol ("V") == 31
+PASS: tr_TR.ISO-8859-9: strtol ("V")
+tr_TR.ISO-8859-9: strtoul ("V") == 31
+PASS: tr_TR.ISO-8859-9: strtoul ("V")
+tr_TR.ISO-8859-9: strtoll ("V") == 31
+PASS: tr_TR.ISO-8859-9: strtoll ("V")
+tr_TR.ISO-8859-9: strtoull ("V") == 31
+PASS: tr_TR.ISO-8859-9: strtoull ("V")
+tr_TR.ISO-8859-9: strtol ("v") == 31
+PASS: tr_TR.ISO-8859-9: strtol ("v")
+tr_TR.ISO-8859-9: strtoul ("v") == 31
+PASS: tr_TR.ISO-8859-9: strtoul ("v")
+tr_TR.ISO-8859-9: strtoll ("v") == 31
+PASS: tr_TR.ISO-8859-9: strtoll ("v")
+tr_TR.ISO-8859-9: strtoull ("v") == 31
+PASS: tr_TR.ISO-8859-9: strtoull ("v")
+tr_TR.ISO-8859-9: strtol ("W") == 32
+PASS: tr_TR.ISO-8859-9: strtol ("W")
+tr_TR.ISO-8859-9: strtoul ("W") == 32
+PASS: tr_TR.ISO-8859-9: strtoul ("W")
+tr_TR.ISO-8859-9: strtoll ("W") == 32
+PASS: tr_TR.ISO-8859-9: strtoll ("W")
+tr_TR.ISO-8859-9: strtoull ("W") == 32
+PASS: tr_TR.ISO-8859-9: strtoull ("W")
+tr_TR.ISO-8859-9: strtol ("w") == 32
+PASS: tr_TR.ISO-8859-9: strtol ("w")
+tr_TR.ISO-8859-9: strtoul ("w") == 32
+PASS: tr_TR.ISO-8859-9: strtoul ("w")
+tr_TR.ISO-8859-9: strtoll ("w") == 32
+PASS: tr_TR.ISO-8859-9: strtoll ("w")
+tr_TR.ISO-8859-9: strtoull ("w") == 32
+PASS: tr_TR.ISO-8859-9: strtoull ("w")
+tr_TR.ISO-8859-9: strtol ("X") == 33
+PASS: tr_TR.ISO-8859-9: strtol ("X")
+tr_TR.ISO-8859-9: strtoul ("X") == 33
+PASS: tr_TR.ISO-8859-9: strtoul ("X")
+tr_TR.ISO-8859-9: strtoll ("X") == 33
+PASS: tr_TR.ISO-8859-9: strtoll ("X")
+tr_TR.ISO-8859-9: strtoull ("X") == 33
+PASS: tr_TR.ISO-8859-9: strtoull ("X")
+tr_TR.ISO-8859-9: strtol ("x") == 33
+PASS: tr_TR.ISO-8859-9: strtol ("x")
+tr_TR.ISO-8859-9: strtoul ("x") == 33
+PASS: tr_TR.ISO-8859-9: strtoul ("x")
+tr_TR.ISO-8859-9: strtoll ("x") == 33
+PASS: tr_TR.ISO-8859-9: strtoll ("x")
+tr_TR.ISO-8859-9: strtoull ("x") == 33
+PASS: tr_TR.ISO-8859-9: strtoull ("x")
+tr_TR.ISO-8859-9: strtol ("Y") == 34
+PASS: tr_TR.ISO-8859-9: strtol ("Y")
+tr_TR.ISO-8859-9: strtoul ("Y") == 34
+PASS: tr_TR.ISO-8859-9: strtoul ("Y")
+tr_TR.ISO-8859-9: strtoll ("Y") == 34
+PASS: tr_TR.ISO-8859-9: strtoll ("Y")
+tr_TR.ISO-8859-9: strtoull ("Y") == 34
+PASS: tr_TR.ISO-8859-9: strtoull ("Y")
+tr_TR.ISO-8859-9: strtol ("y") == 34
+PASS: tr_TR.ISO-8859-9: strtol ("y")
+tr_TR.ISO-8859-9: strtoul ("y") == 34
+PASS: tr_TR.ISO-8859-9: strtoul ("y")
+tr_TR.ISO-8859-9: strtoll ("y") == 34
+PASS: tr_TR.ISO-8859-9: strtoll ("y")
+tr_TR.ISO-8859-9: strtoull ("y") == 34
+PASS: tr_TR.ISO-8859-9: strtoull ("y")
+tr_TR.ISO-8859-9: strtol ("Z") == 35
+PASS: tr_TR.ISO-8859-9: strtol ("Z")
+tr_TR.ISO-8859-9: strtoul ("Z") == 35
+PASS: tr_TR.ISO-8859-9: strtoul ("Z")
+tr_TR.ISO-8859-9: strtoll ("Z") == 35
+PASS: tr_TR.ISO-8859-9: strtoll ("Z")
+tr_TR.ISO-8859-9: strtoull ("Z") == 35
+PASS: tr_TR.ISO-8859-9: strtoull ("Z")
+tr_TR.ISO-8859-9: strtol ("z") == 35
+PASS: tr_TR.ISO-8859-9: strtol ("z")
+tr_TR.ISO-8859-9: strtoul ("z") == 35
+PASS: tr_TR.ISO-8859-9: strtoul ("z")
+tr_TR.ISO-8859-9: strtoll ("z") == 35
+PASS: tr_TR.ISO-8859-9: strtoll ("z")
+tr_TR.ISO-8859-9: strtoull ("z") == 35
+PASS: tr_TR.ISO-8859-9: strtoull ("z")

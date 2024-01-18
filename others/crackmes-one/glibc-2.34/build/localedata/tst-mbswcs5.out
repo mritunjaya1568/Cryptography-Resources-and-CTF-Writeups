@@ -1,0 +1,5 @@
+used locale: "de_DE.UTF-8"
+wcrtomb (dst, *src++, &state) -> 1, dst = buf+1
+wcrtomb (dst, *src++, &state) -> 3, dst = buf+4
+wcrtomb (dst, *src++, &state) -> 2, dst = buf+6
+wcrtomb (dst, *src, &state) -> 1, dst = buf+7

@@ -1,0 +1,19 @@
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dummy.o: \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/dummy.c \
+ ../include/stdc-predef.h \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h \
+ ../include/libc-symbols.h \
+ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/config.h \
+ ../sysdeps/generic/libc-symver.h ../sysdeps/generic/symbol-hacks.h
+
+../include/stdc-predef.h:
+
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc-modules.h:
+
+../include/libc-symbols.h:
+
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/config.h:
+
+../sysdeps/generic/libc-symver.h:
+
+../sysdeps/generic/symbol-hacks.h:

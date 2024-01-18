@@ -1,0 +1,2 @@
+UNSUPPORTED: string/tst-memmove-rtm
+original exit status 77

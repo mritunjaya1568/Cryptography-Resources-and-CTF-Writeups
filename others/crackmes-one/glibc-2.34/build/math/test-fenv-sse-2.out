@@ -1,0 +1,32 @@
+Testing fesetenv FZ restoration: mxcsr = 1f80
+PASS: fesetenv FZ restoration
+Testing fesetenv FZ restoration 2: mxcsr = 9f80
+PASS: fesetenv FZ restoration 2
+Testing fesetenv (FE_NOMASK_ENV) FZ restoration: mxcsr = 100
+PASS: fesetenv (FE_NOMASK_ENV) FZ restoration
+Testing fesetenv (FE_DFL_ENV) FZ restoration: mxcsr = 1f80
+PASS: fesetenv (FE_DFL_ENV) FZ restoration
+Testing fesetenv DAZ restoration: mxcsr = 1f80
+PASS: fesetenv DAZ restoration
+Testing fesetenv DAZ restoration 2: mxcsr = 1fc0
+PASS: fesetenv DAZ restoration 2
+Testing fesetenv (FE_NOMASK_ENV) DAZ restoration: mxcsr = 100
+PASS: fesetenv (FE_NOMASK_ENV) DAZ restoration
+Testing fesetenv (FE_DFL_ENV) DAZ restoration: mxcsr = 1f80
+PASS: fesetenv (FE_DFL_ENV) DAZ restoration
+Testing fesetenv DM restoration: mxcsr = 1f80
+PASS: fesetenv DM restoration
+Testing fesetenv DM restoration 2: mxcsr = 1e80
+PASS: fesetenv DM restoration 2
+Testing fesetenv (FE_NOMASK_ENV) DM restoration: mxcsr = 100
+PASS: fesetenv (FE_NOMASK_ENV) DM restoration
+Testing fesetenv (FE_DFL_ENV) DM restoration: mxcsr = 1f80
+PASS: fesetenv (FE_DFL_ENV) DM restoration
+Testing fesetenv DE restoration: mxcsr = 1f80
+PASS: fesetenv DE restoration
+Testing fesetenv DE restoration 2: mxcsr = 1f82
+PASS: fesetenv DE restoration 2
+Testing fesetenv (FE_NOMASK_ENV) DE restoration: mxcsr = 100
+PASS: fesetenv (FE_NOMASK_ENV) DE restoration
+Testing fesetenv (FE_DFL_ENV) DE restoration: mxcsr = 1f80
+PASS: fesetenv (FE_DFL_ENV) DE restoration

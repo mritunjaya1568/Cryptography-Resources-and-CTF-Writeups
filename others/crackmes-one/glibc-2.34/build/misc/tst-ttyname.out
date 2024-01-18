@@ -1,0 +1,56 @@
+info:  entering chroot 1
+info:    testcase: basic smoketest
+info:      ttyname: PASS {name="/dev/pts/5", errno=0}
+info:      ttyname_r: PASS {name="/dev/pts/5", ret=0, errno=0}
+info:    testcase: no conflict, no match
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: no conflict, console
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: conflict, no match
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: conflict, console
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: with readlink target
+info:      ttyname: PASS {name="/dev/pts/5", errno=0}
+info:      ttyname_r: PASS {name="/dev/pts/5", ret=0, errno=0}
+info:    testcase: with readlink trap; fallback
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: with readlink trap; no fallback
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: with search-path trap
+info:      ttyname: PASS {name="/dev/console2", errno=0}
+info:      ttyname_r: PASS {name="/dev/console2", ret=0, errno=0}
+info:  entering chroot 2
+info:    testcase: basic smoketest
+info:      ttyname: PASS {name="/dev/pts/5", errno=0}
+info:      ttyname_r: PASS {name="/dev/pts/5", ret=0, errno=0}
+info:    testcase: no conflict, no match
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: no conflict, console
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: conflict, no match
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: conflict, console
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: with readlink target
+info:      ttyname: PASS {name="/5", errno=0}
+info:      ttyname_r: PASS {name="/5", ret=0, errno=0}
+info:    testcase: with readlink trap; fallback
+info:      ttyname: PASS {name="/dev/console", errno=0}
+info:      ttyname_r: PASS {name="/dev/console", ret=0, errno=0}
+info:    testcase: with readlink trap; no fallback
+info:      ttyname: PASS {name=NULL, errno=19}
+info:      ttyname_r: PASS {name=NULL, ret=19, errno=19}
+info:    testcase: with search-path trap
+info:      ttyname: PASS {name="/dev/console2", errno=0}
+info:      ttyname_r: PASS {name="/dev/console2", ret=0, errno=0}

@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  node:
+    build: 
+      context: .
+    image: buy_the_flag
+    ports:
+      - "3000:3000"
+    container_name: buy_the_flag_node

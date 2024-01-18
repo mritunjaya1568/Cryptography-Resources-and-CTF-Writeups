@@ -1,0 +1,2 @@
+PASS: elf/tst-dlopen-tlsmodid-container
+original exit status 0

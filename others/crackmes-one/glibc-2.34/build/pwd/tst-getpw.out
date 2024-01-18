@@ -1,0 +1,3 @@
+PASS: NULL buffer returns -1 and sets errno to EINVAL.
+PASS: Read a password line given a uid.
+PASS: Found an invalid uid.

@@ -1,0 +1,20 @@
+PASS: Availability of <sys/wait.h>
+PASS: Combined <sys/wait.h> test
+PASSCOMBINED: Availability of constant WNOHANG
+PASSCOMBINED: Availability of constant WUNTRACED
+PASSCOMBINED: Availability of macro WEXITSTATUS
+PASSCOMBINED: Availability of macro WIFEXITED
+PASSCOMBINED: Availability of macro WIFSIGNALED
+PASSCOMBINED: Availability of macro WIFSTOPPED
+PASSCOMBINED: Availability of macro WSTOPSIG
+PASSCOMBINED: Availability of macro WTERMSIG
+PASSCOMBINED: Availability of function wait
+PASSCOMBINED: Type of function wait
+PASSCOMBINED: Availability of function waitpid
+PASSCOMBINED: Type of function waitpid
+PASS: Namespace of <sys/wait.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

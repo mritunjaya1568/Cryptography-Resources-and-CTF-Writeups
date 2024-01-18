@@ -1,0 +1,7 @@
+Using gethostbyaddr(..):
+h_name: localhost
+h_aliases[0]: mritunjya-Predator-PH315-51
+
+Now using gethostbyname(..):
+h_name: 127.0.0.1
+h_aliases[0]: (null)

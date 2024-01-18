@@ -1,0 +1,3 @@
+in='123,abc,321' format='%d,%[^,],%d'
+in='123,abc,321' format='%d,%[^,],%d'
+out_d1=123 out_s='abc' out_d2=321

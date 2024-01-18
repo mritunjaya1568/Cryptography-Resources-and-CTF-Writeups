@@ -1,0 +1,2 @@
+PASS: nptl/tst-thread-affinity-sched
+original exit status 0

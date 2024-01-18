@@ -1,0 +1,5 @@
+Verifying that stack top is accessible
+current rlimit_stack is 8388608
+Adjusting RLIMIT_STACK to 8376321
+Adjusted rlimit: stacksize=8368128, stackaddr=0x7ffd6fea1000
+Stack top tests done

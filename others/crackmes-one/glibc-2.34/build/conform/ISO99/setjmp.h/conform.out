@@ -1,0 +1,13 @@
+PASS: Availability of <setjmp.h>
+PASS: Combined <setjmp.h> test
+PASSCOMBINED: Availability of type jmp_buf
+PASSCOMBINED: Availability of function longjmp
+PASSCOMBINED: Type of function longjmp
+PASSCOMBINED: Availability of macro setjmp
+PASSCOMBINED: Type of macro setjmp
+PASS: Namespace of <setjmp.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    7
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

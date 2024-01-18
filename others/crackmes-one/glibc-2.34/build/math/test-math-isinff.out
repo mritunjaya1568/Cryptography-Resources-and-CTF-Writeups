@@ -1,0 +1,1 @@
+PASS: Able to call isinff, isinfl, isnanf, and isnanl.

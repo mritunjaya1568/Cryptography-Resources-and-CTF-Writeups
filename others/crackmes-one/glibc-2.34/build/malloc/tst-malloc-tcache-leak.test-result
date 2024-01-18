@@ -1,0 +1,2 @@
+PASS: malloc/tst-malloc-tcache-leak
+original exit status 0

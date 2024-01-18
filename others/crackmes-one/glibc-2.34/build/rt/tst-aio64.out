@@ -1,0 +1,7 @@
+aio_write test ok
+aio_read test ok
+lio_listio (write) test ok
+aio_fsync (aio_write) test ok
+finished3
+finished2
+finished

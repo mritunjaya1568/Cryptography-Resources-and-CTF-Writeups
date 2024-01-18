@@ -1,0 +1,12 @@
+test 0 pattern 0: 0.085954871s
+test 0 pattern 1: 0.108376373s
+test 0 pattern 2: 0.189807759s
+test 1 pattern 0: 0.085732967s
+test 1 pattern 1: 0.082006846s
+test 1 pattern 2: 0.094993734s
+test 2 pattern 0: 0.092788546s
+test 2 pattern 1: 0.110415977s
+test 2 pattern 2: 0.201582114s
+test 3 pattern 0: 0.087503693s
+test 3 pattern 1: 0.085817198s
+test 3 pattern 2: 0.085992457s

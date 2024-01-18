@@ -1,0 +1,2 @@
+error: tst-settimeofday.c:37: settimeofday is executed only when GLIBC_TEST_ALLOW_TIME_SETTING is set
+

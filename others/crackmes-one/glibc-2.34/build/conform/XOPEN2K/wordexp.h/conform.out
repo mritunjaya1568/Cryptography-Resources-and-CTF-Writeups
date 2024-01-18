@@ -1,0 +1,31 @@
+PASS: Availability of <wordexp.h>
+PASS: Combined <wordexp.h> test
+PASSCOMBINED: Availability of type wordexp_t
+PASSCOMBINED: Availability of member we_wordc
+PASSCOMBINED: Type of member we_wordc
+PASSCOMBINED: Availability of member we_wordv
+PASSCOMBINED: Type of member we_wordv
+PASSCOMBINED: Availability of member we_offs
+PASSCOMBINED: Type of member we_offs
+PASSCOMBINED: Availability of constant WRDE_APPEND
+PASSCOMBINED: Availability of constant WRDE_DOOFFS
+PASSCOMBINED: Availability of constant WRDE_NOCMD
+PASSCOMBINED: Availability of constant WRDE_REUSE
+PASSCOMBINED: Availability of constant WRDE_SHOWERR
+PASSCOMBINED: Availability of constant WRDE_UNDEF
+PASSCOMBINED: Availability of constant WRDE_BADCHAR
+PASSCOMBINED: Availability of constant WRDE_BADVAL
+PASSCOMBINED: Availability of constant WRDE_CMDSUB
+PASSCOMBINED: Availability of constant WRDE_NOSPACE
+PASSCOMBINED: Availability of constant WRDE_NOSYS
+PASSCOMBINED: Availability of constant WRDE_SYNTAX
+PASSCOMBINED: Availability of function wordexp
+PASSCOMBINED: Type of function wordexp
+PASSCOMBINED: Availability of function wordfree
+PASSCOMBINED: Type of function wordfree
+PASS: Namespace of <wordexp.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   25
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

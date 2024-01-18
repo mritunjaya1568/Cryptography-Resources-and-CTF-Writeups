@@ -1,0 +1,3 @@
+buf = hello, size = 5
+buf = hello, world, size = 12
+Test succeeded.

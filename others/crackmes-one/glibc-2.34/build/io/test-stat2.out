@@ -1,0 +1,42 @@
+
+Name: Makefile
+st_dev: 2067 vs 2067  OK
+st_ino: 9051858 vs 9051858  OK
+st_mode: 33204 vs 33204  OK
+st_nlink: 1 vs 1  OK
+st_uid: 1000 vs 1000  OK
+st_gid: 1000 vs 1000  OK
+st_rdev: 0 vs 0  OK
+st_blksize: 4096 vs 4096  OK
+st_blocks: 16 vs 16  OK
+st_atime: 1670088237 vs 1670088237  OK
+st_mtime: 1627868023 vs 1627868023  OK
+st_ctime: 1670087903 vs 1670087903  OK
+
+Name: .
+st_dev: 2067 vs 2067  OK
+st_ino: 9051857 vs 9051857  OK
+st_mode: 16893 vs 16893  OK
+st_nlink: 4 vs 4  OK
+st_uid: 1000 vs 1000  OK
+st_gid: 1000 vs 1000  OK
+st_rdev: 0 vs 0  OK
+st_blksize: 4096 vs 4096  OK
+st_blocks: 8 vs 8  OK
+st_atime: 1670088237 vs 1670088237  OK
+st_mtime: 1627868023 vs 1627868023  OK
+st_ctime: 1670087903 vs 1670087903  OK
+
+Name: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/io/test-stat2
+st_dev: 2067 vs 2067  OK
+st_ino: 13803704 vs 13803704  OK
+st_mode: 33277 vs 33277  OK
+st_nlink: 1 vs 1  OK
+st_uid: 1000 vs 1000  OK
+st_gid: 1000 vs 1000  OK
+st_rdev: 0 vs 0  OK
+st_blksize: 4096 vs 4096  OK
+st_blocks: 64 vs 64  OK
+st_atime: 1670090377 vs 1670090377  OK
+st_mtime: 1670090376 vs 1670090376  OK
+st_ctime: 1670090376 vs 1670090376  OK

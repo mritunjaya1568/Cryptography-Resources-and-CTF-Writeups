@@ -1,0 +1,136 @@
+PASS: Availability of <netdb.h>
+PASS: Combined <netdb.h> test
+PASS: Availability of type in_port_t
+PASS: Availability of type in_addr_t
+PASSCOMBINED: Availability of type struct hostent
+PASSCOMBINED: Availability of member h_name
+PASSCOMBINED: Type of member h_name
+PASSCOMBINED: Availability of member h_aliases
+PASSCOMBINED: Type of member h_aliases
+PASSCOMBINED: Availability of member h_addrtype
+PASSCOMBINED: Type of member h_addrtype
+PASSCOMBINED: Availability of member h_length
+PASSCOMBINED: Type of member h_length
+PASSCOMBINED: Availability of member h_addr_list
+PASSCOMBINED: Type of member h_addr_list
+PASSCOMBINED: Availability of type struct netent
+PASSCOMBINED: Availability of member n_name
+PASSCOMBINED: Type of member n_name
+PASSCOMBINED: Availability of member n_aliases
+PASSCOMBINED: Type of member n_aliases
+PASSCOMBINED: Availability of member n_addrtype
+PASSCOMBINED: Type of member n_addrtype
+PASSCOMBINED: Availability of member n_net
+PASSCOMBINED: Type of member n_net
+PASSCOMBINED: Availability of type uint32_t
+PASSCOMBINED: Availability of type struct protoent
+PASSCOMBINED: Availability of member p_name
+PASSCOMBINED: Type of member p_name
+PASSCOMBINED: Availability of member p_aliases
+PASSCOMBINED: Type of member p_aliases
+PASSCOMBINED: Availability of member p_proto
+PASSCOMBINED: Type of member p_proto
+PASSCOMBINED: Availability of type struct servent
+PASSCOMBINED: Availability of member s_name
+PASSCOMBINED: Type of member s_name
+PASSCOMBINED: Availability of member s_aliases
+PASSCOMBINED: Type of member s_aliases
+PASSCOMBINED: Availability of member s_port
+PASSCOMBINED: Type of member s_port
+PASSCOMBINED: Availability of member s_proto
+PASSCOMBINED: Type of member s_proto
+PASSCOMBINED: Availability of macro IPPORT_RESERVED
+PASSCOMBINED: Availability of type struct addrinfo
+PASSCOMBINED: Availability of member ai_flags
+PASSCOMBINED: Type of member ai_flags
+PASSCOMBINED: Availability of member ai_family
+PASSCOMBINED: Type of member ai_family
+PASSCOMBINED: Availability of member ai_socktype
+PASSCOMBINED: Type of member ai_socktype
+PASSCOMBINED: Availability of member ai_protocol
+PASSCOMBINED: Type of member ai_protocol
+PASSCOMBINED: Availability of member ai_addrlen
+PASSCOMBINED: Type of member ai_addrlen
+PASSCOMBINED: Availability of member ai_addr
+PASSCOMBINED: Type of member ai_addr
+PASSCOMBINED: Availability of member ai_canonname
+PASSCOMBINED: Type of member ai_canonname
+PASSCOMBINED: Availability of member ai_next
+PASSCOMBINED: Type of member ai_next
+PASSCOMBINED: Availability of macro AI_PASSIVE
+PASSCOMBINED: Availability of macro AI_CANONNAME
+PASSCOMBINED: Availability of macro AI_NUMERICHOST
+PASSCOMBINED: Availability of macro AI_V4MAPPED
+PASSCOMBINED: Availability of macro AI_ALL
+PASSCOMBINED: Availability of macro AI_ADDRCONFIG
+PASSCOMBINED: Availability of macro AI_NUMERICSERV
+PASSCOMBINED: Availability of macro NI_NOFQDN
+PASSCOMBINED: Availability of macro NI_NUMERICHOST
+PASSCOMBINED: Availability of macro NI_NAMEREQD
+PASSCOMBINED: Availability of macro NI_NUMERICSERV
+PASSCOMBINED: Availability of macro NI_DGRAM
+PASSCOMBINED: Availability of macro EAI_AGAIN
+PASSCOMBINED: Availability of macro EAI_BADFLAGS
+PASSCOMBINED: Availability of macro EAI_FAIL
+PASSCOMBINED: Availability of macro EAI_FAMILY
+PASSCOMBINED: Availability of macro EAI_MEMORY
+PASSCOMBINED: Availability of macro EAI_NONAME
+PASSCOMBINED: Availability of macro EAI_SERVICE
+PASSCOMBINED: Availability of macro EAI_SOCKTYPE
+PASSCOMBINED: Availability of macro EAI_SYSTEM
+PASSCOMBINED: Availability of macro EAI_OVERFLOW
+PASSCOMBINED: Availability of function endhostent
+PASSCOMBINED: Type of function endhostent
+PASSCOMBINED: Availability of function endnetent
+PASSCOMBINED: Type of function endnetent
+PASSCOMBINED: Availability of function endprotoent
+PASSCOMBINED: Type of function endprotoent
+PASSCOMBINED: Availability of function endservent
+PASSCOMBINED: Type of function endservent
+PASSCOMBINED: Availability of function freeaddrinfo
+PASSCOMBINED: Type of function freeaddrinfo
+PASSCOMBINED: Availability of function gai_strerror
+PASSCOMBINED: Type of function gai_strerror
+PASSCOMBINED: Availability of function getaddrinfo
+PASSCOMBINED: Type of function getaddrinfo
+PASSCOMBINED: Availability of function gethostbyaddr
+PASSCOMBINED: Type of function gethostbyaddr
+PASSCOMBINED: Availability of function gethostbyname
+PASSCOMBINED: Type of function gethostbyname
+PASSCOMBINED: Availability of function gethostent
+PASSCOMBINED: Type of function gethostent
+PASSCOMBINED: Availability of function getnameinfo
+PASSCOMBINED: Type of function getnameinfo
+PASSCOMBINED: Availability of function getnetbyaddr
+PASSCOMBINED: Type of function getnetbyaddr
+PASSCOMBINED: Availability of function getnetbyname
+PASSCOMBINED: Type of function getnetbyname
+PASSCOMBINED: Availability of function getnetent
+PASSCOMBINED: Type of function getnetent
+PASSCOMBINED: Availability of function getprotobyname
+PASSCOMBINED: Type of function getprotobyname
+PASSCOMBINED: Availability of function getprotobynumber
+PASSCOMBINED: Type of function getprotobynumber
+PASSCOMBINED: Availability of function getprotoent
+PASSCOMBINED: Type of function getprotoent
+PASSCOMBINED: Availability of function getservbyname
+PASSCOMBINED: Type of function getservbyname
+PASSCOMBINED: Availability of function getservbyport
+PASSCOMBINED: Type of function getservbyport
+PASSCOMBINED: Availability of function getservent
+PASSCOMBINED: Type of function getservent
+PASSCOMBINED: Availability of function sethostent
+PASSCOMBINED: Type of function sethostent
+PASSCOMBINED: Availability of function setnetent
+PASSCOMBINED: Type of function setnetent
+PASSCOMBINED: Availability of function setprotoent
+PASSCOMBINED: Type of function setprotoent
+PASSCOMBINED: Availability of function setservent
+PASSCOMBINED: Type of function setservent
+PASSCOMBINED: Availability of type socklen_t
+PASS: Namespace of <netdb.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  130
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

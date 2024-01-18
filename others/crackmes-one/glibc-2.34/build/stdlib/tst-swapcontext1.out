@@ -1,0 +1,45 @@
+  [31mfunc1: func3(&uctx_func1, &uctx_main, str1)[0m
+    [31mfunc3: func4(uocp, ucp, str)[0m
+      [31mfunc4: [31mswapcontext(&uctx_func1, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func2)
+[0m  [34mfunc2: func3(&uctx_func2, &uctx_main, str2)[0m
+    [34mfunc3: func4(uocp, ucp, str)[0m
+      [34mfunc4: [34mswapcontext(&uctx_func2, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func1)
+[0m      [31mfunc4: returning[0m
+    [31mfunc3: returning[0m
+  [31mfunc1: func3(&uctx_func1, &uctx_main, str1)[0m
+    [31mfunc3: func4(uocp, ucp, str)[0m
+      [31mfunc4: [31mswapcontext(&uctx_func1, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func2)
+[0m      [34mfunc4: returning[0m
+    [34mfunc3: returning[0m
+  [34mfunc2: func3(&uctx_func2, &uctx_main, str2)[0m
+    [34mfunc3: func4(uocp, ucp, str)[0m
+      [34mfunc4: [34mswapcontext(&uctx_func2, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func1)
+[0m      [31mfunc4: returning[0m
+    [31mfunc3: returning[0m
+  [31mfunc1: func3(&uctx_func1, &uctx_main, str1)[0m
+    [31mfunc3: func4(uocp, ucp, str)[0m
+      [31mfunc4: [31mswapcontext(&uctx_func1, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func2)
+[0m      [34mfunc4: returning[0m
+    [34mfunc3: returning[0m
+  [34mfunc2: func3(&uctx_func2, &uctx_main, str2)[0m
+    [34mfunc3: func4(uocp, ucp, str)[0m
+      [34mfunc4: [34mswapcontext(&uctx_func2, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func1)
+[0m      [31mfunc4: returning[0m
+    [31mfunc3: returning[0m
+  [31mfunc1: func3(&uctx_func1, &uctx_main, str1)[0m
+    [31mfunc3: func4(uocp, ucp, str)[0m
+      [31mfunc4: [31mswapcontext(&uctx_func1, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func2)
+[0m      [34mfunc4: returning[0m
+    [34mfunc3: returning[0m
+  [34mfunc2: func3(&uctx_func2, &uctx_main, str2)[0m
+    [34mfunc3: func4(uocp, ucp, str)[0m
+      [34mfunc4: [34mswapcontext(&uctx_func2, &uctx_main)[0m[0m
+        [35mmain: swapcontext(&uctx_main, &uctx_func1)
+[0mmain: exiting

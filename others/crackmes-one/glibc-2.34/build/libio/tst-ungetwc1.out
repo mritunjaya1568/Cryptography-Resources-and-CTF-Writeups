@@ -1,0 +1,4 @@
+This program runs on de_DE.UTF-8 locale.
+Unget a character (0x00e4)
+Reget a character (0x00e4)
+The ungotten character is equal to the regotten character.

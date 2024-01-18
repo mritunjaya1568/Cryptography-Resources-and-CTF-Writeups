@@ -1,0 +1,2 @@
+PASS: malloc/tst-posix_memalign
+original exit status 0

@@ -1,0 +1,114 @@
+Baseline test:
+	en_US.ISO-8859-1 %Y-%m-%d %T 2019-03-27 14:03:22
+Japanese era change, BCE/CE, before transition:
+	ja_JP.UTF-8 %EY ç´€å…ƒå‰01å¹´
+Japanese era change, BCE/CE, after transition:
+	ja_JP.UTF-8 %EY è¥¿æš¦01å¹´
+Japanese era change, BCE/CE, before transition:
+	ja_JP.EUC-JP %EY µª¸µÁ°01Ç¯
+Japanese era change, BCE/CE, after transition:
+	ja_JP.EUC-JP %EY À¾Îñ01Ç¯
+Japanese era change, 1873, before transition:
+	ja_JP.UTF-8 %EY è¥¿æš¦1872å¹´
+Japanese era change, 1873, after transition:
+	ja_JP.UTF-8 %EY æ˜æ²»06å¹´
+Japanese era change, 1873, before transition:
+	ja_JP.EUC-JP %EY À¾Îñ1872Ç¯
+Japanese era change, 1873, after transition:
+	ja_JP.EUC-JP %EY ÌÀ¼£06Ç¯
+Japanese era change, 1912, before transition year:
+	ja_JP.UTF-8 %EY æ˜æ²»44å¹´
+Japanese era change, 1912, start of transition year:
+	ja_JP.UTF-8 %EY æ˜æ²»45å¹´
+Japanese era change, 1912, before transition:
+	ja_JP.UTF-8 %EY æ˜æ²»45å¹´
+Japanese era change, 1912, after transition:
+	ja_JP.UTF-8 %EY å¤§æ­£å…ƒå¹´
+Japanese era change, 1912, before end of transition year:
+	ja_JP.UTF-8 %EY å¤§æ­£å…ƒå¹´
+Japanese era change, 1912, after transition year:
+	ja_JP.UTF-8 %EY å¤§æ­£02å¹´
+Japanese era change, 1912, before transition year:
+	ja_JP.EUC-JP %EY ÌÀ¼£44Ç¯
+Japanese era change, 1912, start of transition year:
+	ja_JP.EUC-JP %EY ÌÀ¼£45Ç¯
+Japanese era change, 1912, before transition:
+	ja_JP.EUC-JP %EY ÌÀ¼£45Ç¯
+Japanese era change, 1912, after transition:
+	ja_JP.EUC-JP %EY ÂçÀµ¸µÇ¯
+Japanese era change, 1912, before end of transition year:
+	ja_JP.EUC-JP %EY ÂçÀµ¸µÇ¯
+Japanese era change, 1912, after transition year:
+	ja_JP.EUC-JP %EY ÂçÀµ02Ç¯
+Japanese era change, 1926, before transition year:
+	ja_JP.UTF-8 %EY å¤§æ­£14å¹´
+Japanese era change, 1926, start of transition year:
+	ja_JP.UTF-8 %EY å¤§æ­£15å¹´
+Japanese era change, 1926, before transition:
+	ja_JP.UTF-8 %EY å¤§æ­£15å¹´
+Japanese era change, 1926, after transition:
+	ja_JP.UTF-8 %EY æ˜­å’Œå…ƒå¹´
+Japanese era change, 1926, before end of transition year:
+	ja_JP.UTF-8 %EY æ˜­å’Œå…ƒå¹´
+Japanese era change, 1926, after transition year:
+	ja_JP.UTF-8 %EY æ˜­å’Œ02å¹´
+Japanese era change, 1926, before transition year:
+	ja_JP.EUC-JP %EY ÂçÀµ14Ç¯
+Japanese era change, 1926, start of transition year:
+	ja_JP.EUC-JP %EY ÂçÀµ15Ç¯
+Japanese era change, 1926, before transition:
+	ja_JP.EUC-JP %EY ÂçÀµ15Ç¯
+Japanese era change, 1926, after transition:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ¸µÇ¯
+Japanese era change, 1926, before end of transition year:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ¸µÇ¯
+Japanese era change, 1926, after transition year:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ02Ç¯
+Japanese era change, 1989, before transition year:
+	ja_JP.UTF-8 %EY æ˜­å’Œ63å¹´
+Japanese era change, 1989, start of transition year:
+	ja_JP.UTF-8 %EY æ˜­å’Œ64å¹´
+Japanese era change, 1989, before transition:
+	ja_JP.UTF-8 %EY æ˜­å’Œ64å¹´
+Japanese era change, 1989, after transition:
+	ja_JP.UTF-8 %EY å¹³æˆå…ƒå¹´
+Japanese era change, 1989, end of transition year:
+	ja_JP.UTF-8 %EY å¹³æˆå…ƒå¹´
+Japanese era change, 1989, after transition year:
+	ja_JP.UTF-8 %EY å¹³æˆ02å¹´
+Japanese era change, 1989, before transition year:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ63Ç¯
+Japanese era change, 1989, start of transition year:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ64Ç¯
+Japanese era change, 1989, before transition:
+	ja_JP.EUC-JP %EY ¾¼ÏÂ64Ç¯
+Japanese era change, 1989, after transition:
+	ja_JP.EUC-JP %EY Ê¿À®¸µÇ¯
+Japanese era change, 1989, end of transition year:
+	ja_JP.EUC-JP %EY Ê¿À®¸µÇ¯
+Japanese era change, 1989, after transition year:
+	ja_JP.EUC-JP %EY Ê¿À®02Ç¯
+Japanese era change, 2019, before transition year:
+	ja_JP.UTF-8 %EY å¹³æˆ30å¹´
+Japanese era change, 2019, start of transition year:
+	ja_JP.UTF-8 %EY å¹³æˆ31å¹´
+Japanese era change, 2019, before transition:
+	ja_JP.UTF-8 %EY å¹³æˆ31å¹´
+Japanese era change, 2019, after transition:
+	ja_JP.UTF-8 %EY ä»¤å’Œå…ƒå¹´
+Japanese era change, 2019, end of transition year:
+	ja_JP.UTF-8 %EY ä»¤å’Œå…ƒå¹´
+Japanese era change, 2019, after transition year:
+	ja_JP.UTF-8 %EY ä»¤å’Œ02å¹´
+Japanese era change, 2019, before transition year:
+	ja_JP.EUC-JP %EY Ê¿À®30Ç¯
+Japanese era change, 2019, start of transition year:
+	ja_JP.EUC-JP %EY Ê¿À®31Ç¯
+Japanese era change, 2019, before transition:
+	ja_JP.EUC-JP %EY Ê¿À®31Ç¯
+Japanese era change, 2019, after transition:
+	ja_JP.EUC-JP %EY ÎáÏÂ¸µÇ¯
+Japanese era change, 2019, end of transition year:
+	ja_JP.EUC-JP %EY ÎáÏÂ¸µÇ¯
+Japanese era change, 2019, after transition year:
+	ja_JP.EUC-JP %EY ÎáÏÂ02Ç¯

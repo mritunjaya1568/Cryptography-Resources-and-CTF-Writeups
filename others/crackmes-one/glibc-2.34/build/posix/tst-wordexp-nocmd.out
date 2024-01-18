@@ -1,0 +1,13 @@
+info: self-test resulted in PID 4 (processes created: 1)
+info: testing without IFS
+info: testing pattern: $(ls)
+info: testing pattern: $((`echo 1`))
+info: testing pattern: $((1+`echo 1`))
+info: testing pattern: $((1+$((`echo 1`))))
+info: testing pattern: $[1/0]
+info: testing with IFS
+info: testing pattern: $(ls)
+info: testing pattern: $((`echo 1`))
+info: testing pattern: $((1+`echo 1`))
+info: testing pattern: $((1+$((`echo 1`))))
+info: testing pattern: $[1/0]

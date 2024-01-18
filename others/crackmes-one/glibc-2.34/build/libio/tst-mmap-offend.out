@@ -1,0 +1,5 @@
+fread 6: "hello
+"
+ftell 2048
+fread after rewind 6: "hello
+"

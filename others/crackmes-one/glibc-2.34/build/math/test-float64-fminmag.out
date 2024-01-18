@@ -1,0 +1,6 @@
+testing _Float64 (without inline functions)
+
+Test suite completed:
+  404 test cases plus 400 tests for exception flags and
+    400 tests for errno executed.
+  All tests passed successfully.

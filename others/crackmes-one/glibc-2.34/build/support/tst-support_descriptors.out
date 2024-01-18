@@ -1,0 +1,114 @@
+info: initial descriptor set
+info:  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+info:  1: target="/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_descriptors.out" major=8 minor=19 ino=13804742
+info:  2: target="/dev/pts/0" major=0 minor=24 ino=3
+info: descriptor set with additional free descriptor
+info:  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+info:  1: target="/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_descriptors.out" major=8 minor=19 ino=13804742
+info:  2: target="/dev/pts/0" major=0 minor=24 ino=3
+info:  3: target="/dev/null" major=0 minor=5 ino=5
+info: BEGIN subprocess_closed_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[257236]" major=0 minor=13 ino=257236
+  2: target="pipe:[257237]" major=0 minor=13 ino=257237
+  3: target="/dev/null" major=0 minor=5 ino=5
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[257236]" major=0 minor=13 ino=257236
+  2: target="pipe:[257237]" major=0 minor=13 ino=257237
+Differences:
+error: descriptor 3 was closed
+EOT
+info: END subprocess_closed_descriptor output
+info: BEGIN subprocess_opened_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[252549]" major=0 minor=13 ino=252549
+  2: target="pipe:[252550]" major=0 minor=13 ino=252550
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[252549]" major=0 minor=13 ino=252549
+  2: target="pipe:[252550]" major=0 minor=13 ino=252550
+  3: target="/dev/null" major=0 minor=5 ino=5
+Differences:
+error: descriptor 3 was opened ("/dev/null")
+EOT
+info: END subprocess_opened_descriptor output
+info: BEGIN subprocess_changed_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[252558]" major=0 minor=13 ino=252558
+  2: target="pipe:[252559]" major=0 minor=13 ino=252559
+  3: target="/dev/null" major=0 minor=5 ino=5
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[252558]" major=0 minor=13 ino=252558
+  2: target="pipe:[252559]" major=0 minor=13 ino=252559
+  3: target="/dev" major=0 minor=5 ino=1
+Differences:
+error: descriptor 3 changed from "/dev/null" to "/dev"
+error: descriptor 3 changed ino from 5 to 1
+EOT
+info: END subprocess_changed_descriptor output
+info: descriptor set with sentinel descriptor
+info:  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+info:  1: target="/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/support/tst-support_descriptors.out" major=8 minor=19 ino=13804742
+info:  2: target="/dev/pts/0" major=0 minor=24 ino=3
+info:  4: target="/dev/full" major=0 minor=5 ino=8
+info: BEGIN subprocess_closed_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[257240]" major=0 minor=13 ino=257240
+  2: target="pipe:[257241]" major=0 minor=13 ino=257241
+  3: target="/dev/null" major=0 minor=5 ino=5
+  4: target="/dev/full" major=0 minor=5 ino=8
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[257240]" major=0 minor=13 ino=257240
+  2: target="pipe:[257241]" major=0 minor=13 ino=257241
+  4: target="/dev/full" major=0 minor=5 ino=8
+Differences:
+error: descriptor 3 was closed
+EOT
+info: END subprocess_closed_descriptor output
+info: BEGIN subprocess_opened_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[254474]" major=0 minor=13 ino=254474
+  2: target="pipe:[254475]" major=0 minor=13 ino=254475
+  4: target="/dev/full" major=0 minor=5 ino=8
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[254474]" major=0 minor=13 ino=254474
+  2: target="pipe:[254475]" major=0 minor=13 ino=254475
+  3: target="/dev/null" major=0 minor=5 ino=5
+  4: target="/dev/full" major=0 minor=5 ino=8
+Differences:
+error: descriptor 3 was opened ("/dev/null")
+EOT
+info: END subprocess_opened_descriptor output
+info: BEGIN subprocess_changed_descriptor output
+error: Differences found in descriptor set
+Reference descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[254484]" major=0 minor=13 ino=254484
+  2: target="pipe:[254485]" major=0 minor=13 ino=254485
+  3: target="/dev/null" major=0 minor=5 ino=5
+  4: target="/dev/full" major=0 minor=5 ino=8
+Current descriptor set:
+  0: target="pipe:[257206]" major=0 minor=13 ino=257206
+  1: target="pipe:[254484]" major=0 minor=13 ino=254484
+  2: target="pipe:[254485]" major=0 minor=13 ino=254485
+  3: target="/dev" major=0 minor=5 ino=1
+  4: target="/dev/full" major=0 minor=5 ino=8
+Differences:
+error: descriptor 3 changed from "/dev/null" to "/dev"
+error: descriptor 3 changed ino from 5 to 1
+EOT
+info: END subprocess_changed_descriptor output

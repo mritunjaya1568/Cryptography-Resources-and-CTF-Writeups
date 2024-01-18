@@ -1,0 +1,2 @@
+XFAIL: conform/XPG42/ndbm.h/conform
+original exit status 1

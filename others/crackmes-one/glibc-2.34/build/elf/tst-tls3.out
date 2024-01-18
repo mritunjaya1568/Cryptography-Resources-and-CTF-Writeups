@@ -1,0 +1,5 @@
+set baz to 3 (LE)
+set variables foo and bar (IE)
+get sum of foo, bar (GD) and baz (LD) = 6
+get sum of foo and bar (IE) = 3
+get sum of foo and bar and baz (GD) = 6

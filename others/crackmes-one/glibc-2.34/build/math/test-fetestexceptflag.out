@@ -1,0 +1,207 @@
+Testing 0
+Individual test: 0 0 0
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 0 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 0 0 0
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 0 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 0 3d 0
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 0 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 0 3d 0
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 0 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_ALL_EXCEPT
+Individual test: 3d 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 3d 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_DIVBYZERO
+Individual test: 4 0 4
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 4 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 4 4 4
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 4 4 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 4 39 4
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 4 39 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 4 3d 4
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 4 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_INEXACT
+Individual test: 20 0 20
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 20 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 20 20 20
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 20 20 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 20 1d 20
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 20 1d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 20 3d 20
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 20 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_INVALID
+Individual test: 1 0 1
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 1 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 1 1 1
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 1 1 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 1 3c 1
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 1 3c 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 1 3d 1
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 1 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_OVERFLOW
+Individual test: 8 0 8
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 8 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 8 8 8
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 8 8 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 8 35 8
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 8 35 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 8 3d 8
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 8 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Testing FE_UNDERFLOW
+Individual test: 10 0 10
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 10 0 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 10 10 10
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 10 10 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 10 2d 10
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 10 2d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct
+Individual test: 10 3d 10
+fegetexceptflag succeeded
+fetestexceptflag result correct
+Individual test: 10 3d 3d
+fegetexceptflag succeeded
+fetestexceptflag result correct
+fetestexceptflag (FE_ALL_EXCEPT) result correct

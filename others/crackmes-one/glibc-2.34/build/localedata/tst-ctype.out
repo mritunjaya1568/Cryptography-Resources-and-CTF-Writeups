@@ -1,0 +1,124 @@
+Testing the ctype data of the `C' locale
+  Test of ASCII character range
+    special NUL byte handling
+    islower()
+    isupper()
+    isalpha()
+    isdigit()
+    isxdigit()
+    isspace()
+    isprint()
+    isgraph()
+    isblank()
+    iscntrl()
+    ispunct()
+    isalnum()
+    tolower()
+    toupper()
+  No errors for `C' locale
+
+
+Testing the ctype data of the `de_DE.ISO-8859-1' locale
+  Test of ASCII character range
+    special NUL byte handling
+    islower()
+    isupper()
+    isalpha()
+    isdigit()
+    isxdigit()
+    isspace()
+    isprint()
+    isgraph()
+    isblank()
+    iscntrl()
+    ispunct()
+    isalnum()
+    tolower()
+    toupper()
+  Locale-specific tests for `lower'
+  Locale-specific tests for `lower'
+  Locale-specific tests for `upper'
+  Locale-specific tests for `upper'
+  Locale-specific tests for `alpha'
+  Locale-specific tests for `alpha'
+  Locale-specific tests for `digit'
+  Locale-specific tests for `digit'
+  Locale-specific tests for `xdigit'
+  Locale-specific tests for `xdigit'
+  Locale-specific tests for `space'
+  Locale-specific tests for `space'
+  Locale-specific tests for `print'
+  Locale-specific tests for `print'
+  Locale-specific tests for `graph'
+  Locale-specific tests for `graph'
+  Locale-specific tests for `blank'
+  Locale-specific tests for `blank'
+  Locale-specific tests for `cntrl'
+  Locale-specific tests for `cntrl'
+  Locale-specific tests for `punct'
+  Locale-specific tests for `punct'
+  Locale-specific tests for `alnum'
+  Locale-specific tests for `alnum'
+  No errors for `de_DE.ISO-8859-1' locale
+
+
+Testing the ctype data of the `de_DE.UTF-8' locale
+  Test of ASCII character range
+    special NUL byte handling
+    islower()
+    isupper()
+    isalpha()
+    isdigit()
+    isxdigit()
+    isspace()
+    isprint()
+    isgraph()
+    isblank()
+    iscntrl()
+    ispunct()
+    isalnum()
+    tolower()
+    toupper()
+  No errors for `de_DE.UTF-8' locale
+
+
+Testing the ctype data of the `en_US.ANSI_X3.4-1968' locale
+  Test of ASCII character range
+    special NUL byte handling
+    islower()
+    isupper()
+    isalpha()
+    isdigit()
+    isxdigit()
+    isspace()
+    isprint()
+    isgraph()
+    isblank()
+    iscntrl()
+    ispunct()
+    isalnum()
+    tolower()
+    toupper()
+  No errors for `en_US.ANSI_X3.4-1968' locale
+
+
+Testing the ctype data of the `ja_JP.EUC-JP' locale
+  Test of ASCII character range
+    special NUL byte handling
+    islower()
+    isupper()
+    isalpha()
+    isdigit()
+    isxdigit()
+    isspace()
+    isprint()
+    isgraph()
+    isblank()
+    iscntrl()
+    ispunct()
+    isalnum()
+    tolower()
+    toupper()
+  No errors for `ja_JP.EUC-JP' locale
+
+

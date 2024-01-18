@@ -1,0 +1,20 @@
+PASS: Availability of <dlfcn.h>
+PASS: Combined <dlfcn.h> test
+PASSCOMBINED: Availability of macro RTLD_LAZY
+PASSCOMBINED: Availability of macro RTLD_NOW
+PASSCOMBINED: Availability of macro RTLD_GLOBAL
+PASSCOMBINED: Availability of macro RTLD_LOCAL
+PASSCOMBINED: Availability of function dlopen
+PASSCOMBINED: Type of function dlopen
+PASSCOMBINED: Availability of function dlsym
+PASSCOMBINED: Type of function dlsym
+PASSCOMBINED: Availability of function dlclose
+PASSCOMBINED: Type of function dlclose
+PASSCOMBINED: Availability of function dlerror
+PASSCOMBINED: Type of function dlerror
+PASS: Namespace of <dlfcn.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   14
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

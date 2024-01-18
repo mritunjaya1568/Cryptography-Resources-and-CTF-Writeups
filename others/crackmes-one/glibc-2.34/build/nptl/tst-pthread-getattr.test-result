@@ -1,0 +1,2 @@
+PASS: nptl/tst-pthread-getattr
+original exit status 0

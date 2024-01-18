@@ -1,0 +1,2 @@
+PASS: conform/UNIX98/sys/sem.h/linknamespace
+original exit status 0

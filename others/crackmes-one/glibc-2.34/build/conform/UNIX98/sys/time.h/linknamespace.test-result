@@ -1,0 +1,2 @@
+PASS: conform/UNIX98/sys/time.h/linknamespace
+original exit status 0

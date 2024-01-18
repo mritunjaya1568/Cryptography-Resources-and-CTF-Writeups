@@ -1,0 +1,16 @@
+  -1, --opt1=NUMBER          Option 1
+
+ child1
+  -2, --opt2=NUMBER          Option 2
+
+ child3
+  -4, --opt4=NUMBER          Option 4
+
+ child4
+  -5, --opt5=NUMBER          Option 5
+
+ child2
+  -3, --opt3=NUMBER          Option 3
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.

@@ -1,0 +1,46 @@
+PASS: Availability of <sys/resource.h>
+PASS: Combined <sys/resource.h> test
+PASSCOMBINED: Availability of constant PRIO_PROCESS
+PASSCOMBINED: Availability of constant PRIO_PGRP
+PASSCOMBINED: Availability of constant PRIO_USER
+PASSCOMBINED: Availability of type rlim_t
+PASSCOMBINED: Availability of constant RLIM_INFINITY
+PASSCOMBINED: Availability of constant RLIM_SAVED_MAX
+PASSCOMBINED: Availability of constant RLIM_SAVED_CUR
+PASSCOMBINED: Availability of constant RUSAGE_SELF
+PASSCOMBINED: Availability of constant RUSAGE_CHILDREN
+PASSCOMBINED: Availability of type struct rlimit
+PASSCOMBINED: Availability of member rlim_cur
+PASSCOMBINED: Type of member rlim_cur
+PASSCOMBINED: Availability of member rlim_max
+PASSCOMBINED: Type of member rlim_max
+PASSCOMBINED: Availability of type struct rusage
+PASSCOMBINED: Availability of member ru_utime
+PASSCOMBINED: Type of member ru_utime
+PASSCOMBINED: Availability of member ru_stime
+PASSCOMBINED: Type of member ru_stime
+PASSCOMBINED: Availability of type struct timeval
+PASSCOMBINED: Availability of constant RLIMIT_CORE
+PASSCOMBINED: Availability of constant RLIMIT_CPU
+PASSCOMBINED: Availability of constant RLIMIT_DATA
+PASSCOMBINED: Availability of constant RLIMIT_FSIZE
+PASSCOMBINED: Availability of constant RLIMIT_NOFILE
+PASSCOMBINED: Availability of constant RLIMIT_STACK
+PASSCOMBINED: Availability of constant RLIMIT_AS
+PASSCOMBINED: Availability of function getpriority
+PASSCOMBINED: Type of function getpriority
+PASSCOMBINED: Availability of function getrlimit
+PASSCOMBINED: Type of function getrlimit
+PASSCOMBINED: Availability of function getrusage
+PASSCOMBINED: Type of function getrusage
+PASSCOMBINED: Availability of function setpriority
+PASSCOMBINED: Type of function setpriority
+PASSCOMBINED: Availability of function setrlimit
+PASSCOMBINED: Type of function setrlimit
+PASSCOMBINED: Availability of type id_t
+PASS: Namespace of <sys/resource.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   40
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,4 @@
+info: constructor failure output: [[/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-initfinilazyfail: symbol lookup error: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-initlazyfailmod.so: undefined symbol: undefined_function
+]]
+info: destructor failure output: [[/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-initfinilazyfail: symbol lookup error: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-finilazyfailmod.so: undefined symbol: undefined_function
+]]

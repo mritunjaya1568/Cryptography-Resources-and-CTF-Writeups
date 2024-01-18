@@ -1,0 +1,150 @@
+PASS: Availability of <stdio.h>
+PASS: Combined <stdio.h> test
+PASSCOMBINED: Availability of macro BUFSIZ
+PASSCOMBINED: Availability of constant BUFSIZ
+PASSCOMBINED: #if usability of symbol BUFSIZ
+PASSCOMBINED: Value of symbol BUFSIZ
+PASSCOMBINED: Availability of macro FILENAME_MAX
+PASSCOMBINED: Availability of constant FILENAME_MAX
+PASSCOMBINED: #if usability of symbol FILENAME_MAX
+PASSCOMBINED: Availability of macro FOPEN_MAX
+PASSCOMBINED: Availability of constant FOPEN_MAX
+PASSCOMBINED: #if usability of symbol FOPEN_MAX
+PASSCOMBINED: Value of symbol FOPEN_MAX
+PASSCOMBINED: Availability of macro _IOFBF
+PASSCOMBINED: Availability of constant _IOFBF
+PASSCOMBINED: #if usability of symbol _IOFBF
+PASSCOMBINED: Availability of macro _IOLBF
+PASSCOMBINED: Availability of constant _IOLBF
+PASSCOMBINED: #if usability of symbol _IOLBF
+PASSCOMBINED: Availability of macro _IONBF
+PASSCOMBINED: Availability of constant _IONBF
+PASSCOMBINED: #if usability of symbol _IONBF
+PASSCOMBINED: Availability of macro L_tmpnam
+PASSCOMBINED: Availability of constant L_tmpnam
+PASSCOMBINED: #if usability of symbol L_tmpnam
+PASSCOMBINED: Availability of macro SEEK_CUR
+PASSCOMBINED: Availability of constant SEEK_CUR
+PASSCOMBINED: #if usability of symbol SEEK_CUR
+PASSCOMBINED: Availability of macro SEEK_END
+PASSCOMBINED: Availability of constant SEEK_END
+PASSCOMBINED: #if usability of symbol SEEK_END
+PASSCOMBINED: Availability of macro SEEK_SET
+PASSCOMBINED: Availability of constant SEEK_SET
+PASSCOMBINED: #if usability of symbol SEEK_SET
+PASSCOMBINED: Availability of macro TMP_MAX
+PASSCOMBINED: Availability of constant TMP_MAX
+PASSCOMBINED: #if usability of symbol TMP_MAX
+PASSCOMBINED: Value of symbol TMP_MAX
+PASSCOMBINED: Availability of macro EOF
+PASSCOMBINED: Availability of constant EOF
+PASSCOMBINED: #if usability of symbol EOF
+PASSCOMBINED: Value of symbol EOF
+PASSCOMBINED: Availability of macro NULL
+PASSCOMBINED: Availability of constant NULL
+PASSCOMBINED: Value of symbol NULL
+PASSCOMBINED: Availability of macro stdin
+PASSCOMBINED: Type of symbol stdin
+PASSCOMBINED: Availability of macro stdout
+PASSCOMBINED: Type of symbol stdout
+PASSCOMBINED: Availability of macro stderr
+PASSCOMBINED: Type of symbol stderr
+PASSCOMBINED: Availability of type FILE
+PASSCOMBINED: Availability of type fpos_t
+PASSCOMBINED: Availability of type size_t
+PASSCOMBINED: Availability of function clearerr
+PASSCOMBINED: Type of function clearerr
+PASSCOMBINED: Availability of function fclose
+PASSCOMBINED: Type of function fclose
+PASSCOMBINED: Availability of function feof
+PASSCOMBINED: Type of function feof
+PASSCOMBINED: Availability of function ferror
+PASSCOMBINED: Type of function ferror
+PASSCOMBINED: Availability of function fflush
+PASSCOMBINED: Type of function fflush
+PASSCOMBINED: Availability of function fgetc
+PASSCOMBINED: Type of function fgetc
+PASSCOMBINED: Availability of function fgetpos
+PASSCOMBINED: Type of function fgetpos
+PASSCOMBINED: Availability of function fgets
+PASSCOMBINED: Type of function fgets
+PASSCOMBINED: Availability of function fopen
+PASSCOMBINED: Type of function fopen
+PASSCOMBINED: Availability of function fprintf
+PASSCOMBINED: Type of function fprintf
+PASSCOMBINED: Availability of function fputc
+PASSCOMBINED: Type of function fputc
+PASSCOMBINED: Availability of function fputs
+PASSCOMBINED: Type of function fputs
+PASSCOMBINED: Availability of function fread
+PASSCOMBINED: Type of function fread
+PASSCOMBINED: Availability of function freopen
+PASSCOMBINED: Type of function freopen
+PASSCOMBINED: Availability of function fscanf
+PASSCOMBINED: Type of function fscanf
+PASSCOMBINED: Availability of function fseek
+PASSCOMBINED: Type of function fseek
+PASSCOMBINED: Availability of function fsetpos
+PASSCOMBINED: Type of function fsetpos
+PASSCOMBINED: Availability of function ftell
+PASSCOMBINED: Type of function ftell
+PASSCOMBINED: Availability of function fwrite
+PASSCOMBINED: Type of function fwrite
+PASSCOMBINED: Availability of function getc
+PASSCOMBINED: Type of function getc
+PASSCOMBINED: Availability of function getchar
+PASSCOMBINED: Type of function getchar
+PASSCOMBINED: Availability of function perror
+PASSCOMBINED: Type of function perror
+PASSCOMBINED: Availability of function printf
+PASSCOMBINED: Type of function printf
+PASSCOMBINED: Availability of function putc
+PASSCOMBINED: Type of function putc
+PASSCOMBINED: Availability of function putchar
+PASSCOMBINED: Type of function putchar
+PASSCOMBINED: Availability of function puts
+PASSCOMBINED: Type of function puts
+PASSCOMBINED: Availability of function remove
+PASSCOMBINED: Type of function remove
+PASSCOMBINED: Availability of function rename
+PASSCOMBINED: Type of function rename
+PASSCOMBINED: Availability of function rewind
+PASSCOMBINED: Type of function rewind
+PASSCOMBINED: Availability of function scanf
+PASSCOMBINED: Type of function scanf
+PASSCOMBINED: Availability of function setbuf
+PASSCOMBINED: Type of function setbuf
+PASSCOMBINED: Availability of function setvbuf
+PASSCOMBINED: Type of function setvbuf
+PASSCOMBINED: Availability of function snprintf
+PASSCOMBINED: Type of function snprintf
+PASSCOMBINED: Availability of function sprintf
+PASSCOMBINED: Type of function sprintf
+PASSCOMBINED: Availability of function sscanf
+PASSCOMBINED: Type of function sscanf
+PASSCOMBINED: Availability of function tmpfile
+PASSCOMBINED: Type of function tmpfile
+PASSCOMBINED: Availability of function tmpnam
+PASSCOMBINED: Type of function tmpnam
+PASSCOMBINED: Availability of function ungetc
+PASSCOMBINED: Type of function ungetc
+PASSCOMBINED: Availability of function vfprintf
+PASSCOMBINED: Type of function vfprintf
+PASSCOMBINED: Availability of function vfscanf
+PASSCOMBINED: Type of function vfscanf
+PASSCOMBINED: Availability of function vprintf
+PASSCOMBINED: Type of function vprintf
+PASSCOMBINED: Availability of function vscanf
+PASSCOMBINED: Type of function vscanf
+PASSCOMBINED: Availability of function vsnprintf
+PASSCOMBINED: Type of function vsnprintf
+PASSCOMBINED: Availability of function vsprintf
+PASSCOMBINED: Type of function vsprintf
+PASSCOMBINED: Availability of function vsscanf
+PASSCOMBINED: Type of function vsscanf
+PASS: Namespace of <stdio.h>
+----------------------------------------------------------------------------
+  Total number of tests   :  144
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,2 @@
+PASS: stdio-common/bug-vfprintf-nargs
+original exit status 0

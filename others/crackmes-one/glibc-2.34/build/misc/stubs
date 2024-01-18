@@ -1,0 +1,6 @@
+#define __stub_chflags
+#define __stub_stty
+#define __stub_gtty
+#define __stub_fchflags
+#define __stub___compat_bdflush
+#define __stub_revoke

@@ -1,0 +1,64 @@
+PASS: Availability of <fenv.h>
+PASS: Combined <fenv.h> test
+PASSCOMBINED: Availability of type fenv_t
+PASSCOMBINED: Availability of type fexcept_t
+PASS: Availability of macro FE_DIVBYZERO
+PASS: Availability of constant FE_DIVBYZERO
+PASS: #if usability of symbol FE_DIVBYZERO
+PASS: Availability of macro FE_INEXACT
+PASS: Availability of constant FE_INEXACT
+PASS: #if usability of symbol FE_INEXACT
+PASS: Availability of macro FE_INVALID
+PASS: Availability of constant FE_INVALID
+PASS: #if usability of symbol FE_INVALID
+PASS: Availability of macro FE_OVERFLOW
+PASS: Availability of constant FE_OVERFLOW
+PASS: #if usability of symbol FE_OVERFLOW
+PASS: Availability of macro FE_UNDERFLOW
+PASS: Availability of constant FE_UNDERFLOW
+PASS: #if usability of symbol FE_UNDERFLOW
+PASSCOMBINED: Availability of macro FE_ALL_EXCEPT
+PASSCOMBINED: Availability of constant FE_ALL_EXCEPT
+PASSCOMBINED: #if usability of symbol FE_ALL_EXCEPT
+PASS: Availability of macro FE_DOWNWARD
+PASS: Availability of constant FE_DOWNWARD
+PASS: #if usability of symbol FE_DOWNWARD
+PASS: Availability of macro FE_TONEAREST
+PASS: Availability of constant FE_TONEAREST
+PASS: #if usability of symbol FE_TONEAREST
+PASS: Availability of macro FE_TOWARDZERO
+PASS: Availability of constant FE_TOWARDZERO
+PASS: #if usability of symbol FE_TOWARDZERO
+PASS: Availability of macro FE_UPWARD
+PASS: Availability of constant FE_UPWARD
+PASS: #if usability of symbol FE_UPWARD
+PASSCOMBINED: Availability of macro FE_DFL_ENV
+PASSCOMBINED: Type of symbol FE_DFL_ENV
+PASSCOMBINED: Availability of function feclearexcept
+PASSCOMBINED: Type of function feclearexcept
+PASSCOMBINED: Availability of function fegetexceptflag
+PASSCOMBINED: Type of function fegetexceptflag
+PASSCOMBINED: Availability of function feraiseexcept
+PASSCOMBINED: Type of function feraiseexcept
+PASSCOMBINED: Availability of function fesetexceptflag
+PASSCOMBINED: Type of function fesetexceptflag
+PASSCOMBINED: Availability of function fetestexcept
+PASSCOMBINED: Type of function fetestexcept
+PASSCOMBINED: Availability of function fegetround
+PASSCOMBINED: Type of function fegetround
+PASSCOMBINED: Availability of function fesetround
+PASSCOMBINED: Type of function fesetround
+PASSCOMBINED: Availability of function fegetenv
+PASSCOMBINED: Type of function fegetenv
+PASSCOMBINED: Availability of function feholdexcept
+PASSCOMBINED: Type of function feholdexcept
+PASSCOMBINED: Availability of function fesetenv
+PASSCOMBINED: Type of function fesetenv
+PASSCOMBINED: Availability of function feupdateenv
+PASSCOMBINED: Type of function feupdateenv
+PASS: Namespace of <fenv.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   58
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

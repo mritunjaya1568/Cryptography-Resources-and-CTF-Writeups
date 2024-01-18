@@ -1,0 +1,70 @@
+version: 1
+objopen: 0, 
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2
+activity: add
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod10a.so, LA_SET_ORIG
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod10a.so
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+symbind64: symname=calloc, st_value=0x7f2aa54797e0, ndx=2921, flags=8
+symbind64: symname=free, st_value=0x7f2aa5479010, ndx=1468, flags=8
+symbind64: symname=malloc, st_value=0x7f2aa5478ac0, ndx=375, flags=8
+symbind64: symname=realloc, st_value=0x7f2aa5479240, ndx=1934, flags=8
+symbind64: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7f2aa5916740, ndx=20, flags=0
+activity: consistent
+symbind64: symname=mmap, st_value=0x7f2aa54e57d0, ndx=2951, flags=0
+pltenter: symname=mmap, st_value=0x7f2aa54e57d0, ndx=2951, flags=0
+preinit
+symbind64: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+symbind64: symname=getopt_long, st_value=0x7f2aa54d29c0, ndx=1390, flags=0
+pltenter: symname=getopt_long, st_value=0x7f2aa54d29c0, ndx=1390, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+symbind64: symname=setvbuf, st_value=0x7f2aa5458a50, ndx=1269, flags=0
+pltenter: symname=setvbuf, st_value=0x7f2aa5458a50, ndx=1269, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+symbind64: symname=fork, st_value=0x7f2aa54b8bf0, ndx=2228, flags=0
+pltenter: symname=fork, st_value=0x7f2aa54b8bf0, ndx=2228, flags=0
+symbind64: symname=signal, st_value=0x7f2aa541f9f0, ndx=923, flags=0
+pltenter: symname=signal, st_value=0x7f2aa541f9f0, ndx=923, flags=0
+symbind64: symname=alarm, st_value=0x7f2aa54b8ab0, ndx=331, flags=0
+pltenter: symname=alarm, st_value=0x7f2aa54b8ab0, ndx=331, flags=0
+pltenter: symname=signal, st_value=0x7f2aa541f9f0, ndx=923, flags=0
+symbind64: symname=waitpid, st_value=0x7f2aa54b8910, ndx=2771, flags=0
+pltenter: symname=waitpid, st_value=0x7f2aa54b8910, ndx=2771, flags=0
+symbind64: symname=setrlimit, st_value=0x7f2aa54e1ad0, ndx=2442, flags=0
+pltenter: symname=setrlimit, st_value=0x7f2aa54e1ad0, ndx=2442, flags=0
+symbind64: symname=setpgid, st_value=0x7f2aa54ba270, ndx=1743, flags=0
+pltenter: symname=setpgid, st_value=0x7f2aa54ba270, ndx=1743, flags=0
+pltenter: symname=getenv, st_value=0x7f2aa54214d0, ndx=1803, flags=0
+symbind64: symname=exit, st_value=0x7f2aa5421f00, ndx=2753, flags=0
+pltenter: symname=exit, st_value=0x7f2aa5421f00, ndx=2753, flags=0
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose

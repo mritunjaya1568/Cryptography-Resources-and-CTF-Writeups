@@ -1,0 +1,3 @@
+starting 20 + 1 threads
+20 left
+Incorrect signal from child: got `Aborted', need `User defined signal 1'

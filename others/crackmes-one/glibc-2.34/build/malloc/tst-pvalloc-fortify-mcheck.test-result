@@ -1,0 +1,2 @@
+PASS: malloc/tst-pvalloc-fortify-mcheck
+original exit status 0

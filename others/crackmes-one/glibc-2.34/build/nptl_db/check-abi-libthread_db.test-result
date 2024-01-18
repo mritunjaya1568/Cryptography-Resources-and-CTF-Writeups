@@ -1,0 +1,2 @@
+PASS: nptl_db/check-abi-libthread_db
+original exit status 0

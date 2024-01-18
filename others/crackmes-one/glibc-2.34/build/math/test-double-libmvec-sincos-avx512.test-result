@@ -1,0 +1,2 @@
+UNSUPPORTED: math/test-double-libmvec-sincos-avx512
+original exit status 77

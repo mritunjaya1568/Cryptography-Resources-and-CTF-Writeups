@@ -1,0 +1,788 @@
+Test: Initially all exceptions should be cleared
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Rounding direction should be initalized to nearest
+  Pass: Rounding mode is TONEAREST.
+Test: feclearexcept (FE_ALL_EXCEPT) clears all exceptions
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feraiseexcept (FE_ALL_EXCEPT) raises all exceptions
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_DIVBYZERO: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_DIVBYZERO: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_DIVBYZERO: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_DIVBYZERO: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_INVALID: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_INVALID: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_INVALID: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_INVALID: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_INEXACT: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_INEXACT: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_INEXACT: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_INEXACT: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INEXACT
+Test: after feenableexcept (FE_INEXACT) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INEXACT) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INEXACT
+Test: after feenableexcept (FE_INEXACT) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INEXACT) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INEXACT
+Test: after feenableexcept (FE_INEXACT) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INEXACT) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_UNDERFLOW
+Test: after feenableexcept (FE_UNDERFLOW) processes will abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_UNDERFLOW) processes will not abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_UNDERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_UNDERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest not set
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, rest also unset
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: Set/Clear FE_OVERFLOW: set flag, with rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is set
+Test: Set/Clear FE_OVERFLOW: clear flag, leave rest set
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is set
+  Pass: Exception "OVERFLOW" is not set
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_DIVBYZERO
+Test: after feenableexcept (FE_DIVBYZERO) processes will abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_DIVBYZERO) processes will not abort
+      when feraiseexcept (FE_DIVBYZERO) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INVALID
+Test: after feenableexcept (FE_INVALID) processes will abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INVALID) processes will not abort
+      when feraiseexcept (FE_INVALID) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_INEXACT
+Test: after feenableexcept (FE_INEXACT) processes will abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_INEXACT) processes will not abort
+      when feraiseexcept (FE_INEXACT) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_UNDERFLOW
+Test: after feenableexcept (FE_UNDERFLOW) processes will abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_UNDERFLOW) processes will not abort
+      when feraiseexcept (FE_UNDERFLOW) is called.
+  Pass: Process exited normally.
+Test: after fesetenv (FE_NOMASK_ENV) processes will abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+raiseexcept (FE_OVERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_OVERFLOW
+Test: after feenableexcept (FE_OVERFLOW) processes will abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_OVERFLOW) processes will not abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+raiseexcept (FE_OVERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fesetenv (FE_DFL_ENV) processes will not abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process exited normally.
+Tests for feenableexcepts etc. with flag FE_OVERFLOW
+Test: after feenableexcept (FE_OVERFLOW) processes will abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process received SIGFPE.
+Test: after fedisableexcept (FE_OVERFLOW) processes will not abort
+      when feraiseexcept (FE_OVERFLOW) is called.
+  Pass: Process exited normally.
+Test: feholdexcept_tests FE_DIVBYZERO test
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests 0 test
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests FE_INVALID test
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests FE_DIVBYZERO|FE_INVALID test
+  Pass: Exception "DIVBYZERO" is set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests 0 2nd test
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is not set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests FE_INEXACT test
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is not set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+Test: feholdexcept_tests FE_INEXACT|FE_INVALID test
+  Pass: Exception "DIVBYZERO" is not set
+  Pass: Exception "INVALID" is set
+  Pass: Exception "INEXACT" is set
+  Pass: Exception "UNDERFLOW" is not set
+  Pass: Exception "OVERFLOW" is not set
+
+ All tests passed successfully.

@@ -1,0 +1,8 @@
+in do_test
+int_al16:  0x7ffced15bcf0 16
+double:  12 0x7ffced15bcd8 8
+ldouble: 15 0x7ffced15bce0 16
+in f
+int_al16:  0x7ffced17bc90 16
+double:  12 0x7ffced17bc78 8
+ldouble: 15 0x7ffced17bc80 16

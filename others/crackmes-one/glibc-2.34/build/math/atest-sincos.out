@@ -1,0 +1,9 @@
+sin:
+0 failures; 2209 errors; error rate 0.21%
+maximum error:   00000000000000408d3b0b090f1d352c3
+error in sin(1): 000000000000000000000012713da512a
+
+cos:
+0 failures; 710 errors; error rate 0.07%
+maximum error:   0000000000000040a0ba29ff244fe7e11
+error in cos(1): 00000000000000000000001cb8e2f6306

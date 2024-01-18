@@ -1,0 +1,4 @@
+/* GNU ld script
+*/
+OUTPUT_FORMAT(elf64-x86-64)
+GROUP ( /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libm-2.34.a /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/lib/libmvec.a )

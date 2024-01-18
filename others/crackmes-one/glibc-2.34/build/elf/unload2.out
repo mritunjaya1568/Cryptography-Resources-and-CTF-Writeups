@@ -1,0 +1,16 @@
+
+After loading everything:
+name = "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/unload2mod.so", direct_opencount = 2
+name = "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/unload2dep.so", direct_opencount = 1
+
+After unloading "unload2mod.so" once:
+name = "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/unload2mod.so", direct_opencount = 1
+name = "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/unload2dep.so", direct_opencount = 1
+
+After unloading "unload2mod.so" twice:
+name = "/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/unload2dep.so", direct_opencount = 1
+
+now calling `foo'
+managed to call `foo'
+
+After unloading "unload2dep.so":

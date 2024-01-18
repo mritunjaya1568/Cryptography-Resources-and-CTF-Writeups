@@ -1,0 +1,2 @@
+UNSUPPORTED: string/tst-strlen-rtm
+original exit status 77

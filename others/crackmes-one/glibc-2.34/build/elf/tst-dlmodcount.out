@@ -1,0 +1,14 @@
+  size = 64
+  dlpi_adds = 4 dlpi_subs = 0
+loading `firstobj.so'
+  size = 64
+  dlpi_adds = 5 dlpi_subs = 0
+loading `globalmod1.so'
+  size = 64
+  dlpi_adds = 6 dlpi_subs = 0
+unloading `firstobj.so'
+  size = 64
+  dlpi_adds = 6 dlpi_subs = 1
+unloading `globalmod1.so'
+  size = 64
+  dlpi_adds = 6 dlpi_subs = 2

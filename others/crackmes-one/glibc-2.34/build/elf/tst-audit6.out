@@ -1,0 +1,159 @@
+version: 1
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6c.so, LA_SET_ORIG
+objopen: 2, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6c.so
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objopen: 2, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+objsearch: ld-linux-x86-64.so.2, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/math/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/glibc-hwcaps/x86-64-v3/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/glibc-hwcaps/x86-64-v2/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/x86_64/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2, LA_SER_LIBPATH
+activity: consistent
+version: 1
+objopen: 0, 
+objopen: 0, 
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/ld-linux-x86-64.so.2
+activity: add
+activity: add
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6a.so, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6a.so, LA_SET_ORIG
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6a.so
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/elf/tst-auditmod6a.so
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: libc.so.6, LA_SET_ORIG
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objsearch: /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6, LA_SER_LIBPATH
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+objopen: 0, /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6
+symbind64: symname=calloc, st_value=0x7fd2988c47e0, ndx=2921, flags=8
+symbind64: symname=calloc, st_value=0x7fd2988c47e0, ndx=2921, flags=8
+symbind64: symname=free, st_value=0x7fd2988c4010, ndx=1468, flags=8
+symbind64: symname=free, st_value=0x7fd2988c4010, ndx=1468, flags=8
+symbind64: symname=malloc, st_value=0x7fd2988c3ac0, ndx=375, flags=8
+symbind64: symname=malloc, st_value=0x7fd2988c3ac0, ndx=375, flags=8
+symbind64: symname=realloc, st_value=0x7fd2988c4240, ndx=1934, flags=8
+symbind64: symname=realloc, st_value=0x7fd2988c4240, ndx=1934, flags=8
+symbind64: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+symbind64: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+pltenter: symname=__tunable_get_val, st_value=0x7fd299069740, ndx=20, flags=0
+activity: consistent
+activity: consistent
+symbind64: symname=mmap, st_value=0x7fd2989307d0, ndx=2951, flags=0
+symbind64: symname=mmap, st_value=0x7fd2989307d0, ndx=2951, flags=0
+pltenter: symname=mmap, st_value=0x7fd2989307d0, ndx=2951, flags=0
+pltenter: symname=mmap, st_value=0x7fd2989307d0, ndx=2951, flags=0
+preinit
+preinit
+symbind64: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+symbind64: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+symbind64: symname=getopt_long, st_value=0x7fd29891d9c0, ndx=1390, flags=0
+symbind64: symname=getopt_long, st_value=0x7fd29891d9c0, ndx=1390, flags=0
+pltenter: symname=getopt_long, st_value=0x7fd29891d9c0, ndx=1390, flags=0
+pltenter: symname=getopt_long, st_value=0x7fd29891d9c0, ndx=1390, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+symbind64: symname=setvbuf, st_value=0x7fd2988a3a50, ndx=1269, flags=0
+symbind64: symname=setvbuf, st_value=0x7fd2988a3a50, ndx=1269, flags=0
+pltenter: symname=setvbuf, st_value=0x7fd2988a3a50, ndx=1269, flags=0
+pltenter: symname=setvbuf, st_value=0x7fd2988a3a50, ndx=1269, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+symbind64: symname=fork, st_value=0x7fd298903bf0, ndx=2228, flags=0
+symbind64: symname=fork, st_value=0x7fd298903bf0, ndx=2228, flags=0
+pltenter: symname=fork, st_value=0x7fd298903bf0, ndx=2228, flags=0
+pltenter: symname=fork, st_value=0x7fd298903bf0, ndx=2228, flags=0
+symbind64: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+symbind64: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+pltenter: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+pltenter: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+symbind64: symname=alarm, st_value=0x7fd298903ab0, ndx=331, flags=0
+symbind64: symname=alarm, st_value=0x7fd298903ab0, ndx=331, flags=0
+pltenter: symname=alarm, st_value=0x7fd298903ab0, ndx=331, flags=0
+pltenter: symname=alarm, st_value=0x7fd298903ab0, ndx=331, flags=0
+pltenter: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+pltenter: symname=signal, st_value=0x7fd29886a9f0, ndx=923, flags=0
+symbind64: symname=waitpid, st_value=0x7fd298903910, ndx=2771, flags=0
+symbind64: symname=waitpid, st_value=0x7fd298903910, ndx=2771, flags=0
+pltenter: symname=waitpid, st_value=0x7fd298903910, ndx=2771, flags=0
+pltenter: symname=waitpid, st_value=0x7fd298903910, ndx=2771, flags=0
+symbind64: symname=setrlimit, st_value=0x7fd29892cad0, ndx=2442, flags=0
+symbind64: symname=setrlimit, st_value=0x7fd29892cad0, ndx=2442, flags=0
+pltenter: symname=setrlimit, st_value=0x7fd29892cad0, ndx=2442, flags=0
+pltenter: symname=setrlimit, st_value=0x7fd29892cad0, ndx=2442, flags=0
+symbind64: symname=setpgid, st_value=0x7fd298905270, ndx=1743, flags=0
+symbind64: symname=setpgid, st_value=0x7fd298905270, ndx=1743, flags=0
+pltenter: symname=setpgid, st_value=0x7fd298905270, ndx=1743, flags=0
+pltenter: symname=setpgid, st_value=0x7fd298905270, ndx=1743, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+pltenter: symname=getenv, st_value=0x7fd29886c4d0, ndx=1803, flags=0
+symbind64: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, flags=0
+symbind64: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, flags=0
+pltenter: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, flags=0
+pltenter: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, flags=0
+pltexit: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, retval=0
+pltexit: symname=audit_test, st_value=0x7fd298a2d120, ndx=6, retval=0
+symbind64: symname=exit, st_value=0x7fd29886cf00, ndx=2753, flags=0
+symbind64: symname=exit, st_value=0x7fd29886cf00, ndx=2753, flags=0
+pltenter: symname=exit, st_value=0x7fd29886cf00, ndx=2753, flags=0
+pltenter: symname=exit, st_value=0x7fd29886cf00, ndx=2753, flags=0
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose
+objclose

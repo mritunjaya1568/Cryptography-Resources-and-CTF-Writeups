@@ -1,0 +1,6 @@
+Begining random package test using 3 sequences of length 50.
+Generating random sequences.
+Regenerating and checking sequences.
+Creating and checking state vector for each sequence.
+Regenerating and checking sequences in interleaved order.
+All tests passed!

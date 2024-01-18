@@ -1,0 +1,11 @@
+info: *** subprocess output starts ***
+tst-test_compare.c:28: numeric comparison failure
+   left: 1 (0x1); from: ch
+  right: -1 (0xffffffff); from: -1
+tst-test_compare.c:29: numeric comparison failure
+   left: 2 (0x2); from: 2LL
+  right: -2 (0xfffffffffffffffe); from: -2LL
+tst-test_compare.c:30: numeric comparison failure (widths 64 and 32)
+   left: 3 (0x3); from: 3LL
+  right: -3 (0xfffffffd); from: (short) -3
+info: *** subprocess output ends ***

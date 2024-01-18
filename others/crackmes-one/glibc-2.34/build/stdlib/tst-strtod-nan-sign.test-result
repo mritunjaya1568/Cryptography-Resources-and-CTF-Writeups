@@ -1,0 +1,2 @@
+PASS: stdlib/tst-strtod-nan-sign
+original exit status 0

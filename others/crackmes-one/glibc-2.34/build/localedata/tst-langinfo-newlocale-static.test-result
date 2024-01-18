@@ -1,0 +1,2 @@
+XFAIL: localedata/tst-langinfo-newlocale-static
+original exit status 1

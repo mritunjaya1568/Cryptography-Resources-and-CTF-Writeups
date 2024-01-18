@@ -1,0 +1,14 @@
+In file included from /tmp/tmp1s3plw_y/test.c:1:
+/usr/lib/gcc/x86_64-linux-gnu/8/include/varargs.h:4:2: error: #error "GCC no longer implements <varargs.h>."
+ #error "GCC no longer implements <varargs.h>."
+  ^~~~~
+/usr/lib/gcc/x86_64-linux-gnu/8/include/varargs.h:5:2: error: #error "Revise your code to use <stdarg.h>."
+ #error "Revise your code to use <stdarg.h>."
+  ^~~~~
+FAIL: Availability of <varargs.h>
+SKIP: Namespace of <varargs.h>
+----------------------------------------------------------------------------
+  Total number of tests   :    1
+  Number of failed tests  :    1
+  Number of xfailed tests :    0
+  Number of skipped tests :    1

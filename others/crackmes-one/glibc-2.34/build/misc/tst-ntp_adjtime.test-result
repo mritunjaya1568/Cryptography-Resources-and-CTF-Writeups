@@ -1,0 +1,2 @@
+UNSUPPORTED: misc/tst-ntp_adjtime
+original exit status 77

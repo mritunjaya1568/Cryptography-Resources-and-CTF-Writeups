@@ -1,0 +1,2 @@
+PASS: malloc/check-abi-libc_malloc_debug
+original exit status 0

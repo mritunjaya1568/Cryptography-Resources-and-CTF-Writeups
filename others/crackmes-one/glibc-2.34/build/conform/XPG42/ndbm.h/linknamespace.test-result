@@ -1,0 +1,2 @@
+XFAIL: conform/XPG42/ndbm.h/linknamespace
+original exit status 1

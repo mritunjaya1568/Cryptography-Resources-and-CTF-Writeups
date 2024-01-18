@@ -1,0 +1,20 @@
+* standard error
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/locale/locale: Cannot set LC_CTYPE to default locale: No such file or directory
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/locale/locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+/home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/locale/locale: Cannot set LC_ALL to default locale: No such file or directory
+warning: The LOCPATH variable is set to "does-not-exist"
+* standard output
+LANG=
+LC_CTYPE="invalid-locale"
+LC_NUMERIC="invalid-locale"
+LC_TIME="invalid-locale"
+LC_COLLATE="invalid-locale"
+LC_MONETARY="invalid-locale"
+LC_MESSAGES="invalid-locale"
+LC_PAPER="invalid-locale"
+LC_NAME="invalid-locale"
+LC_ADDRESS="invalid-locale"
+LC_TELEPHONE="invalid-locale"
+LC_MEASUREMENT="invalid-locale"
+LC_IDENTIFICATION="invalid-locale"
+LC_ALL=invalid-locale

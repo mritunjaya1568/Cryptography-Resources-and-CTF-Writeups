@@ -1,0 +1,93 @@
+PASS: Availability of <math.h>
+PASS: Combined <math.h> test
+PASSCOMBINED: Availability of macro HUGE_VAL
+PASSCOMBINED: Availability of constant HUGE_VAL
+PASSCOMBINED: Type of symbol HUGE_VAL
+PASSCOMBINED: Availability of function isnan
+PASSCOMBINED: Type of function isnan
+PASSCOMBINED: Availability of constant M_E
+PASSCOMBINED: Availability of constant M_LOG2E
+PASSCOMBINED: Availability of constant M_LOG10E
+PASSCOMBINED: Availability of constant M_LN2
+PASSCOMBINED: Availability of constant M_LN10
+PASSCOMBINED: Availability of constant M_PI
+PASSCOMBINED: Availability of constant M_PI_2
+PASSCOMBINED: Availability of constant M_PI_4
+PASSCOMBINED: Availability of constant M_1_PI
+PASSCOMBINED: Availability of constant M_2_PI
+PASSCOMBINED: Availability of constant M_2_SQRTPI
+PASSCOMBINED: Availability of constant M_SQRT2
+PASSCOMBINED: Availability of constant M_SQRT1_2
+PASSCOMBINED: Availability of constant MAXFLOAT
+PASSCOMBINED: Availability of function acos
+PASSCOMBINED: Type of function acos
+PASSCOMBINED: Availability of function asin
+PASSCOMBINED: Type of function asin
+PASSCOMBINED: Availability of function atan
+PASSCOMBINED: Type of function atan
+PASSCOMBINED: Availability of function atan2
+PASSCOMBINED: Type of function atan2
+PASSCOMBINED: Availability of function ceil
+PASSCOMBINED: Type of function ceil
+PASSCOMBINED: Availability of function cos
+PASSCOMBINED: Type of function cos
+PASSCOMBINED: Availability of function cosh
+PASSCOMBINED: Type of function cosh
+PASSCOMBINED: Availability of function exp
+PASSCOMBINED: Type of function exp
+PASSCOMBINED: Availability of function fabs
+PASSCOMBINED: Type of function fabs
+PASSCOMBINED: Availability of function floor
+PASSCOMBINED: Type of function floor
+PASSCOMBINED: Availability of function fmod
+PASSCOMBINED: Type of function fmod
+PASSCOMBINED: Availability of function frexp
+PASSCOMBINED: Type of function frexp
+PASSCOMBINED: Availability of function ldexp
+PASSCOMBINED: Type of function ldexp
+PASSCOMBINED: Availability of function log
+PASSCOMBINED: Type of function log
+PASSCOMBINED: Availability of function log10
+PASSCOMBINED: Type of function log10
+PASSCOMBINED: Availability of function modf
+PASSCOMBINED: Type of function modf
+PASSCOMBINED: Availability of function pow
+PASSCOMBINED: Type of function pow
+PASSCOMBINED: Availability of function sin
+PASSCOMBINED: Type of function sin
+PASSCOMBINED: Availability of function sinh
+PASSCOMBINED: Type of function sinh
+PASSCOMBINED: Availability of function sqrt
+PASSCOMBINED: Type of function sqrt
+PASSCOMBINED: Availability of function tan
+PASSCOMBINED: Type of function tan
+PASSCOMBINED: Availability of function tanh
+PASSCOMBINED: Type of function tanh
+PASSCOMBINED: Availability of function erf
+PASSCOMBINED: Type of function erf
+PASSCOMBINED: Availability of function erfc
+PASSCOMBINED: Type of function erfc
+PASSCOMBINED: Availability of function gamma
+PASSCOMBINED: Type of function gamma
+PASSCOMBINED: Availability of function hypot
+PASSCOMBINED: Type of function hypot
+PASSCOMBINED: Availability of function j0
+PASSCOMBINED: Type of function j0
+PASSCOMBINED: Availability of function j1
+PASSCOMBINED: Type of function j1
+PASSCOMBINED: Availability of function jn
+PASSCOMBINED: Type of function jn
+PASSCOMBINED: Availability of function lgamma
+PASSCOMBINED: Type of function lgamma
+PASSCOMBINED: Availability of function y0
+PASSCOMBINED: Type of function y0
+PASSCOMBINED: Availability of function y1
+PASSCOMBINED: Type of function y1
+PASSCOMBINED: Availability of function yn
+PASSCOMBINED: Type of function yn
+PASS: Namespace of <math.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   87
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

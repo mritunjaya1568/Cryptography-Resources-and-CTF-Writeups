@@ -1,0 +1,4 @@
+info: f    0    1189   /var/cache/ldconfig/aux-cache            20 aux-cache
+info: f    0     793   /var/cache/ldconfig/aux-cache            20 aux-cache
+info: f    0     396   /var/cache/ldconfig/aux-cache            20 aux-cache
+running post-clean rsync

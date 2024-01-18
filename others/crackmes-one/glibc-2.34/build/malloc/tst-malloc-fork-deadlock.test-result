@@ -1,0 +1,2 @@
+PASS: malloc/tst-malloc-fork-deadlock
+original exit status 0

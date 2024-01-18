@@ -1,0 +1,16 @@
+= Start
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+28)[0x7fa72559adf8] + 0x5555565ed6b0 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fopencookie+5f)[0x7fa725591f4f] + 0x5555565ed6e0 0x118
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(_IO_file_doallocate+7d)[0x7fa72559129d] + 0x5555565ed800 0x2000
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:[0x7fa72559ac67] - 0x5555565ed6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(_IO_setb+53)[0x7fa72559e7f3] - 0x5555565ed800
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(_IO_fclose+ab)[0x7fa7255913fb] - 0x5555565ed6e0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+28)[0x7fa72559adf8] + 0x5555565ed6b0 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+19e)[0x7fa72559af6e] - 0x5555565ed6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+28)[0x7fa72559adf8] + 0x5555565ed6b0 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+100)[0x7fa72559aed0] + 0x5555565ed800 0x2a
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+18c)[0x7fa72559af5c] - 0x5555565ed800
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+19e)[0x7fa72559af6e] - 0x5555565ed6b0
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+28)[0x7fa72559adf8] + 0x5555565ed6b0 0x28
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+100)[0x7fa72559aed0] + (nil) 0xffffffffffffffff
+@ /home/mritunjya/rooms/cryptography/crypto-hack/crackmes-one/glibc-2.34/build/libc.so.6:(fmemopen+19e)[0x7fa72559af6e] - 0x5555565ed6b0

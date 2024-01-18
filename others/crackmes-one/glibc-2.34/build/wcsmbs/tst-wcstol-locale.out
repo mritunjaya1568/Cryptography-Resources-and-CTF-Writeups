@@ -1,0 +1,1248 @@
+C: wcstol (L"A") == 10
+PASS: C: wcstol (L"A")
+C: wcstoul (L"A") == 10
+PASS: C: wcstoul (L"A")
+C: wcstoll (L"A") == 10
+PASS: C: wcstoll (L"A")
+C: wcstoull (L"A") == 10
+PASS: C: wcstoull (L"A")
+C: wcstol (L"a") == 10
+PASS: C: wcstol (L"a")
+C: wcstoul (L"a") == 10
+PASS: C: wcstoul (L"a")
+C: wcstoll (L"a") == 10
+PASS: C: wcstoll (L"a")
+C: wcstoull (L"a") == 10
+PASS: C: wcstoull (L"a")
+C: wcstol (L"B") == 11
+PASS: C: wcstol (L"B")
+C: wcstoul (L"B") == 11
+PASS: C: wcstoul (L"B")
+C: wcstoll (L"B") == 11
+PASS: C: wcstoll (L"B")
+C: wcstoull (L"B") == 11
+PASS: C: wcstoull (L"B")
+C: wcstol (L"b") == 11
+PASS: C: wcstol (L"b")
+C: wcstoul (L"b") == 11
+PASS: C: wcstoul (L"b")
+C: wcstoll (L"b") == 11
+PASS: C: wcstoll (L"b")
+C: wcstoull (L"b") == 11
+PASS: C: wcstoull (L"b")
+C: wcstol (L"C") == 12
+PASS: C: wcstol (L"C")
+C: wcstoul (L"C") == 12
+PASS: C: wcstoul (L"C")
+C: wcstoll (L"C") == 12
+PASS: C: wcstoll (L"C")
+C: wcstoull (L"C") == 12
+PASS: C: wcstoull (L"C")
+C: wcstol (L"c") == 12
+PASS: C: wcstol (L"c")
+C: wcstoul (L"c") == 12
+PASS: C: wcstoul (L"c")
+C: wcstoll (L"c") == 12
+PASS: C: wcstoll (L"c")
+C: wcstoull (L"c") == 12
+PASS: C: wcstoull (L"c")
+C: wcstol (L"D") == 13
+PASS: C: wcstol (L"D")
+C: wcstoul (L"D") == 13
+PASS: C: wcstoul (L"D")
+C: wcstoll (L"D") == 13
+PASS: C: wcstoll (L"D")
+C: wcstoull (L"D") == 13
+PASS: C: wcstoull (L"D")
+C: wcstol (L"d") == 13
+PASS: C: wcstol (L"d")
+C: wcstoul (L"d") == 13
+PASS: C: wcstoul (L"d")
+C: wcstoll (L"d") == 13
+PASS: C: wcstoll (L"d")
+C: wcstoull (L"d") == 13
+PASS: C: wcstoull (L"d")
+C: wcstol (L"E") == 14
+PASS: C: wcstol (L"E")
+C: wcstoul (L"E") == 14
+PASS: C: wcstoul (L"E")
+C: wcstoll (L"E") == 14
+PASS: C: wcstoll (L"E")
+C: wcstoull (L"E") == 14
+PASS: C: wcstoull (L"E")
+C: wcstol (L"e") == 14
+PASS: C: wcstol (L"e")
+C: wcstoul (L"e") == 14
+PASS: C: wcstoul (L"e")
+C: wcstoll (L"e") == 14
+PASS: C: wcstoll (L"e")
+C: wcstoull (L"e") == 14
+PASS: C: wcstoull (L"e")
+C: wcstol (L"F") == 15
+PASS: C: wcstol (L"F")
+C: wcstoul (L"F") == 15
+PASS: C: wcstoul (L"F")
+C: wcstoll (L"F") == 15
+PASS: C: wcstoll (L"F")
+C: wcstoull (L"F") == 15
+PASS: C: wcstoull (L"F")
+C: wcstol (L"f") == 15
+PASS: C: wcstol (L"f")
+C: wcstoul (L"f") == 15
+PASS: C: wcstoul (L"f")
+C: wcstoll (L"f") == 15
+PASS: C: wcstoll (L"f")
+C: wcstoull (L"f") == 15
+PASS: C: wcstoull (L"f")
+C: wcstol (L"G") == 16
+PASS: C: wcstol (L"G")
+C: wcstoul (L"G") == 16
+PASS: C: wcstoul (L"G")
+C: wcstoll (L"G") == 16
+PASS: C: wcstoll (L"G")
+C: wcstoull (L"G") == 16
+PASS: C: wcstoull (L"G")
+C: wcstol (L"g") == 16
+PASS: C: wcstol (L"g")
+C: wcstoul (L"g") == 16
+PASS: C: wcstoul (L"g")
+C: wcstoll (L"g") == 16
+PASS: C: wcstoll (L"g")
+C: wcstoull (L"g") == 16
+PASS: C: wcstoull (L"g")
+C: wcstol (L"H") == 17
+PASS: C: wcstol (L"H")
+C: wcstoul (L"H") == 17
+PASS: C: wcstoul (L"H")
+C: wcstoll (L"H") == 17
+PASS: C: wcstoll (L"H")
+C: wcstoull (L"H") == 17
+PASS: C: wcstoull (L"H")
+C: wcstol (L"h") == 17
+PASS: C: wcstol (L"h")
+C: wcstoul (L"h") == 17
+PASS: C: wcstoul (L"h")
+C: wcstoll (L"h") == 17
+PASS: C: wcstoll (L"h")
+C: wcstoull (L"h") == 17
+PASS: C: wcstoull (L"h")
+C: wcstol (L"I") == 18
+PASS: C: wcstol (L"I")
+C: wcstoul (L"I") == 18
+PASS: C: wcstoul (L"I")
+C: wcstoll (L"I") == 18
+PASS: C: wcstoll (L"I")
+C: wcstoull (L"I") == 18
+PASS: C: wcstoull (L"I")
+C: wcstol (L"i") == 18
+PASS: C: wcstol (L"i")
+C: wcstoul (L"i") == 18
+PASS: C: wcstoul (L"i")
+C: wcstoll (L"i") == 18
+PASS: C: wcstoll (L"i")
+C: wcstoull (L"i") == 18
+PASS: C: wcstoull (L"i")
+C: wcstol (L"J") == 19
+PASS: C: wcstol (L"J")
+C: wcstoul (L"J") == 19
+PASS: C: wcstoul (L"J")
+C: wcstoll (L"J") == 19
+PASS: C: wcstoll (L"J")
+C: wcstoull (L"J") == 19
+PASS: C: wcstoull (L"J")
+C: wcstol (L"j") == 19
+PASS: C: wcstol (L"j")
+C: wcstoul (L"j") == 19
+PASS: C: wcstoul (L"j")
+C: wcstoll (L"j") == 19
+PASS: C: wcstoll (L"j")
+C: wcstoull (L"j") == 19
+PASS: C: wcstoull (L"j")
+C: wcstol (L"K") == 20
+PASS: C: wcstol (L"K")
+C: wcstoul (L"K") == 20
+PASS: C: wcstoul (L"K")
+C: wcstoll (L"K") == 20
+PASS: C: wcstoll (L"K")
+C: wcstoull (L"K") == 20
+PASS: C: wcstoull (L"K")
+C: wcstol (L"k") == 20
+PASS: C: wcstol (L"k")
+C: wcstoul (L"k") == 20
+PASS: C: wcstoul (L"k")
+C: wcstoll (L"k") == 20
+PASS: C: wcstoll (L"k")
+C: wcstoull (L"k") == 20
+PASS: C: wcstoull (L"k")
+C: wcstol (L"L") == 21
+PASS: C: wcstol (L"L")
+C: wcstoul (L"L") == 21
+PASS: C: wcstoul (L"L")
+C: wcstoll (L"L") == 21
+PASS: C: wcstoll (L"L")
+C: wcstoull (L"L") == 21
+PASS: C: wcstoull (L"L")
+C: wcstol (L"l") == 21
+PASS: C: wcstol (L"l")
+C: wcstoul (L"l") == 21
+PASS: C: wcstoul (L"l")
+C: wcstoll (L"l") == 21
+PASS: C: wcstoll (L"l")
+C: wcstoull (L"l") == 21
+PASS: C: wcstoull (L"l")
+C: wcstol (L"M") == 22
+PASS: C: wcstol (L"M")
+C: wcstoul (L"M") == 22
+PASS: C: wcstoul (L"M")
+C: wcstoll (L"M") == 22
+PASS: C: wcstoll (L"M")
+C: wcstoull (L"M") == 22
+PASS: C: wcstoull (L"M")
+C: wcstol (L"m") == 22
+PASS: C: wcstol (L"m")
+C: wcstoul (L"m") == 22
+PASS: C: wcstoul (L"m")
+C: wcstoll (L"m") == 22
+PASS: C: wcstoll (L"m")
+C: wcstoull (L"m") == 22
+PASS: C: wcstoull (L"m")
+C: wcstol (L"N") == 23
+PASS: C: wcstol (L"N")
+C: wcstoul (L"N") == 23
+PASS: C: wcstoul (L"N")
+C: wcstoll (L"N") == 23
+PASS: C: wcstoll (L"N")
+C: wcstoull (L"N") == 23
+PASS: C: wcstoull (L"N")
+C: wcstol (L"n") == 23
+PASS: C: wcstol (L"n")
+C: wcstoul (L"n") == 23
+PASS: C: wcstoul (L"n")
+C: wcstoll (L"n") == 23
+PASS: C: wcstoll (L"n")
+C: wcstoull (L"n") == 23
+PASS: C: wcstoull (L"n")
+C: wcstol (L"O") == 24
+PASS: C: wcstol (L"O")
+C: wcstoul (L"O") == 24
+PASS: C: wcstoul (L"O")
+C: wcstoll (L"O") == 24
+PASS: C: wcstoll (L"O")
+C: wcstoull (L"O") == 24
+PASS: C: wcstoull (L"O")
+C: wcstol (L"o") == 24
+PASS: C: wcstol (L"o")
+C: wcstoul (L"o") == 24
+PASS: C: wcstoul (L"o")
+C: wcstoll (L"o") == 24
+PASS: C: wcstoll (L"o")
+C: wcstoull (L"o") == 24
+PASS: C: wcstoull (L"o")
+C: wcstol (L"P") == 25
+PASS: C: wcstol (L"P")
+C: wcstoul (L"P") == 25
+PASS: C: wcstoul (L"P")
+C: wcstoll (L"P") == 25
+PASS: C: wcstoll (L"P")
+C: wcstoull (L"P") == 25
+PASS: C: wcstoull (L"P")
+C: wcstol (L"p") == 25
+PASS: C: wcstol (L"p")
+C: wcstoul (L"p") == 25
+PASS: C: wcstoul (L"p")
+C: wcstoll (L"p") == 25
+PASS: C: wcstoll (L"p")
+C: wcstoull (L"p") == 25
+PASS: C: wcstoull (L"p")
+C: wcstol (L"Q") == 26
+PASS: C: wcstol (L"Q")
+C: wcstoul (L"Q") == 26
+PASS: C: wcstoul (L"Q")
+C: wcstoll (L"Q") == 26
+PASS: C: wcstoll (L"Q")
+C: wcstoull (L"Q") == 26
+PASS: C: wcstoull (L"Q")
+C: wcstol (L"q") == 26
+PASS: C: wcstol (L"q")
+C: wcstoul (L"q") == 26
+PASS: C: wcstoul (L"q")
+C: wcstoll (L"q") == 26
+PASS: C: wcstoll (L"q")
+C: wcstoull (L"q") == 26
+PASS: C: wcstoull (L"q")
+C: wcstol (L"R") == 27
+PASS: C: wcstol (L"R")
+C: wcstoul (L"R") == 27
+PASS: C: wcstoul (L"R")
+C: wcstoll (L"R") == 27
+PASS: C: wcstoll (L"R")
+C: wcstoull (L"R") == 27
+PASS: C: wcstoull (L"R")
+C: wcstol (L"r") == 27
+PASS: C: wcstol (L"r")
+C: wcstoul (L"r") == 27
+PASS: C: wcstoul (L"r")
+C: wcstoll (L"r") == 27
+PASS: C: wcstoll (L"r")
+C: wcstoull (L"r") == 27
+PASS: C: wcstoull (L"r")
+C: wcstol (L"S") == 28
+PASS: C: wcstol (L"S")
+C: wcstoul (L"S") == 28
+PASS: C: wcstoul (L"S")
+C: wcstoll (L"S") == 28
+PASS: C: wcstoll (L"S")
+C: wcstoull (L"S") == 28
+PASS: C: wcstoull (L"S")
+C: wcstol (L"s") == 28
+PASS: C: wcstol (L"s")
+C: wcstoul (L"s") == 28
+PASS: C: wcstoul (L"s")
+C: wcstoll (L"s") == 28
+PASS: C: wcstoll (L"s")
+C: wcstoull (L"s") == 28
+PASS: C: wcstoull (L"s")
+C: wcstol (L"T") == 29
+PASS: C: wcstol (L"T")
+C: wcstoul (L"T") == 29
+PASS: C: wcstoul (L"T")
+C: wcstoll (L"T") == 29
+PASS: C: wcstoll (L"T")
+C: wcstoull (L"T") == 29
+PASS: C: wcstoull (L"T")
+C: wcstol (L"t") == 29
+PASS: C: wcstol (L"t")
+C: wcstoul (L"t") == 29
+PASS: C: wcstoul (L"t")
+C: wcstoll (L"t") == 29
+PASS: C: wcstoll (L"t")
+C: wcstoull (L"t") == 29
+PASS: C: wcstoull (L"t")
+C: wcstol (L"U") == 30
+PASS: C: wcstol (L"U")
+C: wcstoul (L"U") == 30
+PASS: C: wcstoul (L"U")
+C: wcstoll (L"U") == 30
+PASS: C: wcstoll (L"U")
+C: wcstoull (L"U") == 30
+PASS: C: wcstoull (L"U")
+C: wcstol (L"u") == 30
+PASS: C: wcstol (L"u")
+C: wcstoul (L"u") == 30
+PASS: C: wcstoul (L"u")
+C: wcstoll (L"u") == 30
+PASS: C: wcstoll (L"u")
+C: wcstoull (L"u") == 30
+PASS: C: wcstoull (L"u")
+C: wcstol (L"V") == 31
+PASS: C: wcstol (L"V")
+C: wcstoul (L"V") == 31
+PASS: C: wcstoul (L"V")
+C: wcstoll (L"V") == 31
+PASS: C: wcstoll (L"V")
+C: wcstoull (L"V") == 31
+PASS: C: wcstoull (L"V")
+C: wcstol (L"v") == 31
+PASS: C: wcstol (L"v")
+C: wcstoul (L"v") == 31
+PASS: C: wcstoul (L"v")
+C: wcstoll (L"v") == 31
+PASS: C: wcstoll (L"v")
+C: wcstoull (L"v") == 31
+PASS: C: wcstoull (L"v")
+C: wcstol (L"W") == 32
+PASS: C: wcstol (L"W")
+C: wcstoul (L"W") == 32
+PASS: C: wcstoul (L"W")
+C: wcstoll (L"W") == 32
+PASS: C: wcstoll (L"W")
+C: wcstoull (L"W") == 32
+PASS: C: wcstoull (L"W")
+C: wcstol (L"w") == 32
+PASS: C: wcstol (L"w")
+C: wcstoul (L"w") == 32
+PASS: C: wcstoul (L"w")
+C: wcstoll (L"w") == 32
+PASS: C: wcstoll (L"w")
+C: wcstoull (L"w") == 32
+PASS: C: wcstoull (L"w")
+C: wcstol (L"X") == 33
+PASS: C: wcstol (L"X")
+C: wcstoul (L"X") == 33
+PASS: C: wcstoul (L"X")
+C: wcstoll (L"X") == 33
+PASS: C: wcstoll (L"X")
+C: wcstoull (L"X") == 33
+PASS: C: wcstoull (L"X")
+C: wcstol (L"x") == 33
+PASS: C: wcstol (L"x")
+C: wcstoul (L"x") == 33
+PASS: C: wcstoul (L"x")
+C: wcstoll (L"x") == 33
+PASS: C: wcstoll (L"x")
+C: wcstoull (L"x") == 33
+PASS: C: wcstoull (L"x")
+C: wcstol (L"Y") == 34
+PASS: C: wcstol (L"Y")
+C: wcstoul (L"Y") == 34
+PASS: C: wcstoul (L"Y")
+C: wcstoll (L"Y") == 34
+PASS: C: wcstoll (L"Y")
+C: wcstoull (L"Y") == 34
+PASS: C: wcstoull (L"Y")
+C: wcstol (L"y") == 34
+PASS: C: wcstol (L"y")
+C: wcstoul (L"y") == 34
+PASS: C: wcstoul (L"y")
+C: wcstoll (L"y") == 34
+PASS: C: wcstoll (L"y")
+C: wcstoull (L"y") == 34
+PASS: C: wcstoull (L"y")
+C: wcstol (L"Z") == 35
+PASS: C: wcstol (L"Z")
+C: wcstoul (L"Z") == 35
+PASS: C: wcstoul (L"Z")
+C: wcstoll (L"Z") == 35
+PASS: C: wcstoll (L"Z")
+C: wcstoull (L"Z") == 35
+PASS: C: wcstoull (L"Z")
+C: wcstol (L"z") == 35
+PASS: C: wcstol (L"z")
+C: wcstoul (L"z") == 35
+PASS: C: wcstoul (L"z")
+C: wcstoll (L"z") == 35
+PASS: C: wcstoll (L"z")
+C: wcstoull (L"z") == 35
+PASS: C: wcstoull (L"z")
+tr_TR.UTF-8: wcstol (L"A") == 10
+PASS: tr_TR.UTF-8: wcstol (L"A")
+tr_TR.UTF-8: wcstoul (L"A") == 10
+PASS: tr_TR.UTF-8: wcstoul (L"A")
+tr_TR.UTF-8: wcstoll (L"A") == 10
+PASS: tr_TR.UTF-8: wcstoll (L"A")
+tr_TR.UTF-8: wcstoull (L"A") == 10
+PASS: tr_TR.UTF-8: wcstoull (L"A")
+tr_TR.UTF-8: wcstol (L"a") == 10
+PASS: tr_TR.UTF-8: wcstol (L"a")
+tr_TR.UTF-8: wcstoul (L"a") == 10
+PASS: tr_TR.UTF-8: wcstoul (L"a")
+tr_TR.UTF-8: wcstoll (L"a") == 10
+PASS: tr_TR.UTF-8: wcstoll (L"a")
+tr_TR.UTF-8: wcstoull (L"a") == 10
+PASS: tr_TR.UTF-8: wcstoull (L"a")
+tr_TR.UTF-8: wcstol (L"B") == 11
+PASS: tr_TR.UTF-8: wcstol (L"B")
+tr_TR.UTF-8: wcstoul (L"B") == 11
+PASS: tr_TR.UTF-8: wcstoul (L"B")
+tr_TR.UTF-8: wcstoll (L"B") == 11
+PASS: tr_TR.UTF-8: wcstoll (L"B")
+tr_TR.UTF-8: wcstoull (L"B") == 11
+PASS: tr_TR.UTF-8: wcstoull (L"B")
+tr_TR.UTF-8: wcstol (L"b") == 11
+PASS: tr_TR.UTF-8: wcstol (L"b")
+tr_TR.UTF-8: wcstoul (L"b") == 11
+PASS: tr_TR.UTF-8: wcstoul (L"b")
+tr_TR.UTF-8: wcstoll (L"b") == 11
+PASS: tr_TR.UTF-8: wcstoll (L"b")
+tr_TR.UTF-8: wcstoull (L"b") == 11
+PASS: tr_TR.UTF-8: wcstoull (L"b")
+tr_TR.UTF-8: wcstol (L"C") == 12
+PASS: tr_TR.UTF-8: wcstol (L"C")
+tr_TR.UTF-8: wcstoul (L"C") == 12
+PASS: tr_TR.UTF-8: wcstoul (L"C")
+tr_TR.UTF-8: wcstoll (L"C") == 12
+PASS: tr_TR.UTF-8: wcstoll (L"C")
+tr_TR.UTF-8: wcstoull (L"C") == 12
+PASS: tr_TR.UTF-8: wcstoull (L"C")
+tr_TR.UTF-8: wcstol (L"c") == 12
+PASS: tr_TR.UTF-8: wcstol (L"c")
+tr_TR.UTF-8: wcstoul (L"c") == 12
+PASS: tr_TR.UTF-8: wcstoul (L"c")
+tr_TR.UTF-8: wcstoll (L"c") == 12
+PASS: tr_TR.UTF-8: wcstoll (L"c")
+tr_TR.UTF-8: wcstoull (L"c") == 12
+PASS: tr_TR.UTF-8: wcstoull (L"c")
+tr_TR.UTF-8: wcstol (L"D") == 13
+PASS: tr_TR.UTF-8: wcstol (L"D")
+tr_TR.UTF-8: wcstoul (L"D") == 13
+PASS: tr_TR.UTF-8: wcstoul (L"D")
+tr_TR.UTF-8: wcstoll (L"D") == 13
+PASS: tr_TR.UTF-8: wcstoll (L"D")
+tr_TR.UTF-8: wcstoull (L"D") == 13
+PASS: tr_TR.UTF-8: wcstoull (L"D")
+tr_TR.UTF-8: wcstol (L"d") == 13
+PASS: tr_TR.UTF-8: wcstol (L"d")
+tr_TR.UTF-8: wcstoul (L"d") == 13
+PASS: tr_TR.UTF-8: wcstoul (L"d")
+tr_TR.UTF-8: wcstoll (L"d") == 13
+PASS: tr_TR.UTF-8: wcstoll (L"d")
+tr_TR.UTF-8: wcstoull (L"d") == 13
+PASS: tr_TR.UTF-8: wcstoull (L"d")
+tr_TR.UTF-8: wcstol (L"E") == 14
+PASS: tr_TR.UTF-8: wcstol (L"E")
+tr_TR.UTF-8: wcstoul (L"E") == 14
+PASS: tr_TR.UTF-8: wcstoul (L"E")
+tr_TR.UTF-8: wcstoll (L"E") == 14
+PASS: tr_TR.UTF-8: wcstoll (L"E")
+tr_TR.UTF-8: wcstoull (L"E") == 14
+PASS: tr_TR.UTF-8: wcstoull (L"E")
+tr_TR.UTF-8: wcstol (L"e") == 14
+PASS: tr_TR.UTF-8: wcstol (L"e")
+tr_TR.UTF-8: wcstoul (L"e") == 14
+PASS: tr_TR.UTF-8: wcstoul (L"e")
+tr_TR.UTF-8: wcstoll (L"e") == 14
+PASS: tr_TR.UTF-8: wcstoll (L"e")
+tr_TR.UTF-8: wcstoull (L"e") == 14
+PASS: tr_TR.UTF-8: wcstoull (L"e")
+tr_TR.UTF-8: wcstol (L"F") == 15
+PASS: tr_TR.UTF-8: wcstol (L"F")
+tr_TR.UTF-8: wcstoul (L"F") == 15
+PASS: tr_TR.UTF-8: wcstoul (L"F")
+tr_TR.UTF-8: wcstoll (L"F") == 15
+PASS: tr_TR.UTF-8: wcstoll (L"F")
+tr_TR.UTF-8: wcstoull (L"F") == 15
+PASS: tr_TR.UTF-8: wcstoull (L"F")
+tr_TR.UTF-8: wcstol (L"f") == 15
+PASS: tr_TR.UTF-8: wcstol (L"f")
+tr_TR.UTF-8: wcstoul (L"f") == 15
+PASS: tr_TR.UTF-8: wcstoul (L"f")
+tr_TR.UTF-8: wcstoll (L"f") == 15
+PASS: tr_TR.UTF-8: wcstoll (L"f")
+tr_TR.UTF-8: wcstoull (L"f") == 15
+PASS: tr_TR.UTF-8: wcstoull (L"f")
+tr_TR.UTF-8: wcstol (L"G") == 16
+PASS: tr_TR.UTF-8: wcstol (L"G")
+tr_TR.UTF-8: wcstoul (L"G") == 16
+PASS: tr_TR.UTF-8: wcstoul (L"G")
+tr_TR.UTF-8: wcstoll (L"G") == 16
+PASS: tr_TR.UTF-8: wcstoll (L"G")
+tr_TR.UTF-8: wcstoull (L"G") == 16
+PASS: tr_TR.UTF-8: wcstoull (L"G")
+tr_TR.UTF-8: wcstol (L"g") == 16
+PASS: tr_TR.UTF-8: wcstol (L"g")
+tr_TR.UTF-8: wcstoul (L"g") == 16
+PASS: tr_TR.UTF-8: wcstoul (L"g")
+tr_TR.UTF-8: wcstoll (L"g") == 16
+PASS: tr_TR.UTF-8: wcstoll (L"g")
+tr_TR.UTF-8: wcstoull (L"g") == 16
+PASS: tr_TR.UTF-8: wcstoull (L"g")
+tr_TR.UTF-8: wcstol (L"H") == 17
+PASS: tr_TR.UTF-8: wcstol (L"H")
+tr_TR.UTF-8: wcstoul (L"H") == 17
+PASS: tr_TR.UTF-8: wcstoul (L"H")
+tr_TR.UTF-8: wcstoll (L"H") == 17
+PASS: tr_TR.UTF-8: wcstoll (L"H")
+tr_TR.UTF-8: wcstoull (L"H") == 17
+PASS: tr_TR.UTF-8: wcstoull (L"H")
+tr_TR.UTF-8: wcstol (L"h") == 17
+PASS: tr_TR.UTF-8: wcstol (L"h")
+tr_TR.UTF-8: wcstoul (L"h") == 17
+PASS: tr_TR.UTF-8: wcstoul (L"h")
+tr_TR.UTF-8: wcstoll (L"h") == 17
+PASS: tr_TR.UTF-8: wcstoll (L"h")
+tr_TR.UTF-8: wcstoull (L"h") == 17
+PASS: tr_TR.UTF-8: wcstoull (L"h")
+tr_TR.UTF-8: wcstol (L"I") == 18
+PASS: tr_TR.UTF-8: wcstol (L"I")
+tr_TR.UTF-8: wcstoul (L"I") == 18
+PASS: tr_TR.UTF-8: wcstoul (L"I")
+tr_TR.UTF-8: wcstoll (L"I") == 18
+PASS: tr_TR.UTF-8: wcstoll (L"I")
+tr_TR.UTF-8: wcstoull (L"I") == 18
+PASS: tr_TR.UTF-8: wcstoull (L"I")
+tr_TR.UTF-8: wcstol (L"i") == 18
+PASS: tr_TR.UTF-8: wcstol (L"i")
+tr_TR.UTF-8: wcstoul (L"i") == 18
+PASS: tr_TR.UTF-8: wcstoul (L"i")
+tr_TR.UTF-8: wcstoll (L"i") == 18
+PASS: tr_TR.UTF-8: wcstoll (L"i")
+tr_TR.UTF-8: wcstoull (L"i") == 18
+PASS: tr_TR.UTF-8: wcstoull (L"i")
+tr_TR.UTF-8: wcstol (L"J") == 19
+PASS: tr_TR.UTF-8: wcstol (L"J")
+tr_TR.UTF-8: wcstoul (L"J") == 19
+PASS: tr_TR.UTF-8: wcstoul (L"J")
+tr_TR.UTF-8: wcstoll (L"J") == 19
+PASS: tr_TR.UTF-8: wcstoll (L"J")
+tr_TR.UTF-8: wcstoull (L"J") == 19
+PASS: tr_TR.UTF-8: wcstoull (L"J")
+tr_TR.UTF-8: wcstol (L"j") == 19
+PASS: tr_TR.UTF-8: wcstol (L"j")
+tr_TR.UTF-8: wcstoul (L"j") == 19
+PASS: tr_TR.UTF-8: wcstoul (L"j")
+tr_TR.UTF-8: wcstoll (L"j") == 19
+PASS: tr_TR.UTF-8: wcstoll (L"j")
+tr_TR.UTF-8: wcstoull (L"j") == 19
+PASS: tr_TR.UTF-8: wcstoull (L"j")
+tr_TR.UTF-8: wcstol (L"K") == 20
+PASS: tr_TR.UTF-8: wcstol (L"K")
+tr_TR.UTF-8: wcstoul (L"K") == 20
+PASS: tr_TR.UTF-8: wcstoul (L"K")
+tr_TR.UTF-8: wcstoll (L"K") == 20
+PASS: tr_TR.UTF-8: wcstoll (L"K")
+tr_TR.UTF-8: wcstoull (L"K") == 20
+PASS: tr_TR.UTF-8: wcstoull (L"K")
+tr_TR.UTF-8: wcstol (L"k") == 20
+PASS: tr_TR.UTF-8: wcstol (L"k")
+tr_TR.UTF-8: wcstoul (L"k") == 20
+PASS: tr_TR.UTF-8: wcstoul (L"k")
+tr_TR.UTF-8: wcstoll (L"k") == 20
+PASS: tr_TR.UTF-8: wcstoll (L"k")
+tr_TR.UTF-8: wcstoull (L"k") == 20
+PASS: tr_TR.UTF-8: wcstoull (L"k")
+tr_TR.UTF-8: wcstol (L"L") == 21
+PASS: tr_TR.UTF-8: wcstol (L"L")
+tr_TR.UTF-8: wcstoul (L"L") == 21
+PASS: tr_TR.UTF-8: wcstoul (L"L")
+tr_TR.UTF-8: wcstoll (L"L") == 21
+PASS: tr_TR.UTF-8: wcstoll (L"L")
+tr_TR.UTF-8: wcstoull (L"L") == 21
+PASS: tr_TR.UTF-8: wcstoull (L"L")
+tr_TR.UTF-8: wcstol (L"l") == 21
+PASS: tr_TR.UTF-8: wcstol (L"l")
+tr_TR.UTF-8: wcstoul (L"l") == 21
+PASS: tr_TR.UTF-8: wcstoul (L"l")
+tr_TR.UTF-8: wcstoll (L"l") == 21
+PASS: tr_TR.UTF-8: wcstoll (L"l")
+tr_TR.UTF-8: wcstoull (L"l") == 21
+PASS: tr_TR.UTF-8: wcstoull (L"l")
+tr_TR.UTF-8: wcstol (L"M") == 22
+PASS: tr_TR.UTF-8: wcstol (L"M")
+tr_TR.UTF-8: wcstoul (L"M") == 22
+PASS: tr_TR.UTF-8: wcstoul (L"M")
+tr_TR.UTF-8: wcstoll (L"M") == 22
+PASS: tr_TR.UTF-8: wcstoll (L"M")
+tr_TR.UTF-8: wcstoull (L"M") == 22
+PASS: tr_TR.UTF-8: wcstoull (L"M")
+tr_TR.UTF-8: wcstol (L"m") == 22
+PASS: tr_TR.UTF-8: wcstol (L"m")
+tr_TR.UTF-8: wcstoul (L"m") == 22
+PASS: tr_TR.UTF-8: wcstoul (L"m")
+tr_TR.UTF-8: wcstoll (L"m") == 22
+PASS: tr_TR.UTF-8: wcstoll (L"m")
+tr_TR.UTF-8: wcstoull (L"m") == 22
+PASS: tr_TR.UTF-8: wcstoull (L"m")
+tr_TR.UTF-8: wcstol (L"N") == 23
+PASS: tr_TR.UTF-8: wcstol (L"N")
+tr_TR.UTF-8: wcstoul (L"N") == 23
+PASS: tr_TR.UTF-8: wcstoul (L"N")
+tr_TR.UTF-8: wcstoll (L"N") == 23
+PASS: tr_TR.UTF-8: wcstoll (L"N")
+tr_TR.UTF-8: wcstoull (L"N") == 23
+PASS: tr_TR.UTF-8: wcstoull (L"N")
+tr_TR.UTF-8: wcstol (L"n") == 23
+PASS: tr_TR.UTF-8: wcstol (L"n")
+tr_TR.UTF-8: wcstoul (L"n") == 23
+PASS: tr_TR.UTF-8: wcstoul (L"n")
+tr_TR.UTF-8: wcstoll (L"n") == 23
+PASS: tr_TR.UTF-8: wcstoll (L"n")
+tr_TR.UTF-8: wcstoull (L"n") == 23
+PASS: tr_TR.UTF-8: wcstoull (L"n")
+tr_TR.UTF-8: wcstol (L"O") == 24
+PASS: tr_TR.UTF-8: wcstol (L"O")
+tr_TR.UTF-8: wcstoul (L"O") == 24
+PASS: tr_TR.UTF-8: wcstoul (L"O")
+tr_TR.UTF-8: wcstoll (L"O") == 24
+PASS: tr_TR.UTF-8: wcstoll (L"O")
+tr_TR.UTF-8: wcstoull (L"O") == 24
+PASS: tr_TR.UTF-8: wcstoull (L"O")
+tr_TR.UTF-8: wcstol (L"o") == 24
+PASS: tr_TR.UTF-8: wcstol (L"o")
+tr_TR.UTF-8: wcstoul (L"o") == 24
+PASS: tr_TR.UTF-8: wcstoul (L"o")
+tr_TR.UTF-8: wcstoll (L"o") == 24
+PASS: tr_TR.UTF-8: wcstoll (L"o")
+tr_TR.UTF-8: wcstoull (L"o") == 24
+PASS: tr_TR.UTF-8: wcstoull (L"o")
+tr_TR.UTF-8: wcstol (L"P") == 25
+PASS: tr_TR.UTF-8: wcstol (L"P")
+tr_TR.UTF-8: wcstoul (L"P") == 25
+PASS: tr_TR.UTF-8: wcstoul (L"P")
+tr_TR.UTF-8: wcstoll (L"P") == 25
+PASS: tr_TR.UTF-8: wcstoll (L"P")
+tr_TR.UTF-8: wcstoull (L"P") == 25
+PASS: tr_TR.UTF-8: wcstoull (L"P")
+tr_TR.UTF-8: wcstol (L"p") == 25
+PASS: tr_TR.UTF-8: wcstol (L"p")
+tr_TR.UTF-8: wcstoul (L"p") == 25
+PASS: tr_TR.UTF-8: wcstoul (L"p")
+tr_TR.UTF-8: wcstoll (L"p") == 25
+PASS: tr_TR.UTF-8: wcstoll (L"p")
+tr_TR.UTF-8: wcstoull (L"p") == 25
+PASS: tr_TR.UTF-8: wcstoull (L"p")
+tr_TR.UTF-8: wcstol (L"Q") == 26
+PASS: tr_TR.UTF-8: wcstol (L"Q")
+tr_TR.UTF-8: wcstoul (L"Q") == 26
+PASS: tr_TR.UTF-8: wcstoul (L"Q")
+tr_TR.UTF-8: wcstoll (L"Q") == 26
+PASS: tr_TR.UTF-8: wcstoll (L"Q")
+tr_TR.UTF-8: wcstoull (L"Q") == 26
+PASS: tr_TR.UTF-8: wcstoull (L"Q")
+tr_TR.UTF-8: wcstol (L"q") == 26
+PASS: tr_TR.UTF-8: wcstol (L"q")
+tr_TR.UTF-8: wcstoul (L"q") == 26
+PASS: tr_TR.UTF-8: wcstoul (L"q")
+tr_TR.UTF-8: wcstoll (L"q") == 26
+PASS: tr_TR.UTF-8: wcstoll (L"q")
+tr_TR.UTF-8: wcstoull (L"q") == 26
+PASS: tr_TR.UTF-8: wcstoull (L"q")
+tr_TR.UTF-8: wcstol (L"R") == 27
+PASS: tr_TR.UTF-8: wcstol (L"R")
+tr_TR.UTF-8: wcstoul (L"R") == 27
+PASS: tr_TR.UTF-8: wcstoul (L"R")
+tr_TR.UTF-8: wcstoll (L"R") == 27
+PASS: tr_TR.UTF-8: wcstoll (L"R")
+tr_TR.UTF-8: wcstoull (L"R") == 27
+PASS: tr_TR.UTF-8: wcstoull (L"R")
+tr_TR.UTF-8: wcstol (L"r") == 27
+PASS: tr_TR.UTF-8: wcstol (L"r")
+tr_TR.UTF-8: wcstoul (L"r") == 27
+PASS: tr_TR.UTF-8: wcstoul (L"r")
+tr_TR.UTF-8: wcstoll (L"r") == 27
+PASS: tr_TR.UTF-8: wcstoll (L"r")
+tr_TR.UTF-8: wcstoull (L"r") == 27
+PASS: tr_TR.UTF-8: wcstoull (L"r")
+tr_TR.UTF-8: wcstol (L"S") == 28
+PASS: tr_TR.UTF-8: wcstol (L"S")
+tr_TR.UTF-8: wcstoul (L"S") == 28
+PASS: tr_TR.UTF-8: wcstoul (L"S")
+tr_TR.UTF-8: wcstoll (L"S") == 28
+PASS: tr_TR.UTF-8: wcstoll (L"S")
+tr_TR.UTF-8: wcstoull (L"S") == 28
+PASS: tr_TR.UTF-8: wcstoull (L"S")
+tr_TR.UTF-8: wcstol (L"s") == 28
+PASS: tr_TR.UTF-8: wcstol (L"s")
+tr_TR.UTF-8: wcstoul (L"s") == 28
+PASS: tr_TR.UTF-8: wcstoul (L"s")
+tr_TR.UTF-8: wcstoll (L"s") == 28
+PASS: tr_TR.UTF-8: wcstoll (L"s")
+tr_TR.UTF-8: wcstoull (L"s") == 28
+PASS: tr_TR.UTF-8: wcstoull (L"s")
+tr_TR.UTF-8: wcstol (L"T") == 29
+PASS: tr_TR.UTF-8: wcstol (L"T")
+tr_TR.UTF-8: wcstoul (L"T") == 29
+PASS: tr_TR.UTF-8: wcstoul (L"T")
+tr_TR.UTF-8: wcstoll (L"T") == 29
+PASS: tr_TR.UTF-8: wcstoll (L"T")
+tr_TR.UTF-8: wcstoull (L"T") == 29
+PASS: tr_TR.UTF-8: wcstoull (L"T")
+tr_TR.UTF-8: wcstol (L"t") == 29
+PASS: tr_TR.UTF-8: wcstol (L"t")
+tr_TR.UTF-8: wcstoul (L"t") == 29
+PASS: tr_TR.UTF-8: wcstoul (L"t")
+tr_TR.UTF-8: wcstoll (L"t") == 29
+PASS: tr_TR.UTF-8: wcstoll (L"t")
+tr_TR.UTF-8: wcstoull (L"t") == 29
+PASS: tr_TR.UTF-8: wcstoull (L"t")
+tr_TR.UTF-8: wcstol (L"U") == 30
+PASS: tr_TR.UTF-8: wcstol (L"U")
+tr_TR.UTF-8: wcstoul (L"U") == 30
+PASS: tr_TR.UTF-8: wcstoul (L"U")
+tr_TR.UTF-8: wcstoll (L"U") == 30
+PASS: tr_TR.UTF-8: wcstoll (L"U")
+tr_TR.UTF-8: wcstoull (L"U") == 30
+PASS: tr_TR.UTF-8: wcstoull (L"U")
+tr_TR.UTF-8: wcstol (L"u") == 30
+PASS: tr_TR.UTF-8: wcstol (L"u")
+tr_TR.UTF-8: wcstoul (L"u") == 30
+PASS: tr_TR.UTF-8: wcstoul (L"u")
+tr_TR.UTF-8: wcstoll (L"u") == 30
+PASS: tr_TR.UTF-8: wcstoll (L"u")
+tr_TR.UTF-8: wcstoull (L"u") == 30
+PASS: tr_TR.UTF-8: wcstoull (L"u")
+tr_TR.UTF-8: wcstol (L"V") == 31
+PASS: tr_TR.UTF-8: wcstol (L"V")
+tr_TR.UTF-8: wcstoul (L"V") == 31
+PASS: tr_TR.UTF-8: wcstoul (L"V")
+tr_TR.UTF-8: wcstoll (L"V") == 31
+PASS: tr_TR.UTF-8: wcstoll (L"V")
+tr_TR.UTF-8: wcstoull (L"V") == 31
+PASS: tr_TR.UTF-8: wcstoull (L"V")
+tr_TR.UTF-8: wcstol (L"v") == 31
+PASS: tr_TR.UTF-8: wcstol (L"v")
+tr_TR.UTF-8: wcstoul (L"v") == 31
+PASS: tr_TR.UTF-8: wcstoul (L"v")
+tr_TR.UTF-8: wcstoll (L"v") == 31
+PASS: tr_TR.UTF-8: wcstoll (L"v")
+tr_TR.UTF-8: wcstoull (L"v") == 31
+PASS: tr_TR.UTF-8: wcstoull (L"v")
+tr_TR.UTF-8: wcstol (L"W") == 32
+PASS: tr_TR.UTF-8: wcstol (L"W")
+tr_TR.UTF-8: wcstoul (L"W") == 32
+PASS: tr_TR.UTF-8: wcstoul (L"W")
+tr_TR.UTF-8: wcstoll (L"W") == 32
+PASS: tr_TR.UTF-8: wcstoll (L"W")
+tr_TR.UTF-8: wcstoull (L"W") == 32
+PASS: tr_TR.UTF-8: wcstoull (L"W")
+tr_TR.UTF-8: wcstol (L"w") == 32
+PASS: tr_TR.UTF-8: wcstol (L"w")
+tr_TR.UTF-8: wcstoul (L"w") == 32
+PASS: tr_TR.UTF-8: wcstoul (L"w")
+tr_TR.UTF-8: wcstoll (L"w") == 32
+PASS: tr_TR.UTF-8: wcstoll (L"w")
+tr_TR.UTF-8: wcstoull (L"w") == 32
+PASS: tr_TR.UTF-8: wcstoull (L"w")
+tr_TR.UTF-8: wcstol (L"X") == 33
+PASS: tr_TR.UTF-8: wcstol (L"X")
+tr_TR.UTF-8: wcstoul (L"X") == 33
+PASS: tr_TR.UTF-8: wcstoul (L"X")
+tr_TR.UTF-8: wcstoll (L"X") == 33
+PASS: tr_TR.UTF-8: wcstoll (L"X")
+tr_TR.UTF-8: wcstoull (L"X") == 33
+PASS: tr_TR.UTF-8: wcstoull (L"X")
+tr_TR.UTF-8: wcstol (L"x") == 33
+PASS: tr_TR.UTF-8: wcstol (L"x")
+tr_TR.UTF-8: wcstoul (L"x") == 33
+PASS: tr_TR.UTF-8: wcstoul (L"x")
+tr_TR.UTF-8: wcstoll (L"x") == 33
+PASS: tr_TR.UTF-8: wcstoll (L"x")
+tr_TR.UTF-8: wcstoull (L"x") == 33
+PASS: tr_TR.UTF-8: wcstoull (L"x")
+tr_TR.UTF-8: wcstol (L"Y") == 34
+PASS: tr_TR.UTF-8: wcstol (L"Y")
+tr_TR.UTF-8: wcstoul (L"Y") == 34
+PASS: tr_TR.UTF-8: wcstoul (L"Y")
+tr_TR.UTF-8: wcstoll (L"Y") == 34
+PASS: tr_TR.UTF-8: wcstoll (L"Y")
+tr_TR.UTF-8: wcstoull (L"Y") == 34
+PASS: tr_TR.UTF-8: wcstoull (L"Y")
+tr_TR.UTF-8: wcstol (L"y") == 34
+PASS: tr_TR.UTF-8: wcstol (L"y")
+tr_TR.UTF-8: wcstoul (L"y") == 34
+PASS: tr_TR.UTF-8: wcstoul (L"y")
+tr_TR.UTF-8: wcstoll (L"y") == 34
+PASS: tr_TR.UTF-8: wcstoll (L"y")
+tr_TR.UTF-8: wcstoull (L"y") == 34
+PASS: tr_TR.UTF-8: wcstoull (L"y")
+tr_TR.UTF-8: wcstol (L"Z") == 35
+PASS: tr_TR.UTF-8: wcstol (L"Z")
+tr_TR.UTF-8: wcstoul (L"Z") == 35
+PASS: tr_TR.UTF-8: wcstoul (L"Z")
+tr_TR.UTF-8: wcstoll (L"Z") == 35
+PASS: tr_TR.UTF-8: wcstoll (L"Z")
+tr_TR.UTF-8: wcstoull (L"Z") == 35
+PASS: tr_TR.UTF-8: wcstoull (L"Z")
+tr_TR.UTF-8: wcstol (L"z") == 35
+PASS: tr_TR.UTF-8: wcstol (L"z")
+tr_TR.UTF-8: wcstoul (L"z") == 35
+PASS: tr_TR.UTF-8: wcstoul (L"z")
+tr_TR.UTF-8: wcstoll (L"z") == 35
+PASS: tr_TR.UTF-8: wcstoll (L"z")
+tr_TR.UTF-8: wcstoull (L"z") == 35
+PASS: tr_TR.UTF-8: wcstoull (L"z")
+tr_TR.ISO-8859-9: wcstol (L"A") == 10
+PASS: tr_TR.ISO-8859-9: wcstol (L"A")
+tr_TR.ISO-8859-9: wcstoul (L"A") == 10
+PASS: tr_TR.ISO-8859-9: wcstoul (L"A")
+tr_TR.ISO-8859-9: wcstoll (L"A") == 10
+PASS: tr_TR.ISO-8859-9: wcstoll (L"A")
+tr_TR.ISO-8859-9: wcstoull (L"A") == 10
+PASS: tr_TR.ISO-8859-9: wcstoull (L"A")
+tr_TR.ISO-8859-9: wcstol (L"a") == 10
+PASS: tr_TR.ISO-8859-9: wcstol (L"a")
+tr_TR.ISO-8859-9: wcstoul (L"a") == 10
+PASS: tr_TR.ISO-8859-9: wcstoul (L"a")
+tr_TR.ISO-8859-9: wcstoll (L"a") == 10
+PASS: tr_TR.ISO-8859-9: wcstoll (L"a")
+tr_TR.ISO-8859-9: wcstoull (L"a") == 10
+PASS: tr_TR.ISO-8859-9: wcstoull (L"a")
+tr_TR.ISO-8859-9: wcstol (L"B") == 11
+PASS: tr_TR.ISO-8859-9: wcstol (L"B")
+tr_TR.ISO-8859-9: wcstoul (L"B") == 11
+PASS: tr_TR.ISO-8859-9: wcstoul (L"B")
+tr_TR.ISO-8859-9: wcstoll (L"B") == 11
+PASS: tr_TR.ISO-8859-9: wcstoll (L"B")
+tr_TR.ISO-8859-9: wcstoull (L"B") == 11
+PASS: tr_TR.ISO-8859-9: wcstoull (L"B")
+tr_TR.ISO-8859-9: wcstol (L"b") == 11
+PASS: tr_TR.ISO-8859-9: wcstol (L"b")
+tr_TR.ISO-8859-9: wcstoul (L"b") == 11
+PASS: tr_TR.ISO-8859-9: wcstoul (L"b")
+tr_TR.ISO-8859-9: wcstoll (L"b") == 11
+PASS: tr_TR.ISO-8859-9: wcstoll (L"b")
+tr_TR.ISO-8859-9: wcstoull (L"b") == 11
+PASS: tr_TR.ISO-8859-9: wcstoull (L"b")
+tr_TR.ISO-8859-9: wcstol (L"C") == 12
+PASS: tr_TR.ISO-8859-9: wcstol (L"C")
+tr_TR.ISO-8859-9: wcstoul (L"C") == 12
+PASS: tr_TR.ISO-8859-9: wcstoul (L"C")
+tr_TR.ISO-8859-9: wcstoll (L"C") == 12
+PASS: tr_TR.ISO-8859-9: wcstoll (L"C")
+tr_TR.ISO-8859-9: wcstoull (L"C") == 12
+PASS: tr_TR.ISO-8859-9: wcstoull (L"C")
+tr_TR.ISO-8859-9: wcstol (L"c") == 12
+PASS: tr_TR.ISO-8859-9: wcstol (L"c")
+tr_TR.ISO-8859-9: wcstoul (L"c") == 12
+PASS: tr_TR.ISO-8859-9: wcstoul (L"c")
+tr_TR.ISO-8859-9: wcstoll (L"c") == 12
+PASS: tr_TR.ISO-8859-9: wcstoll (L"c")
+tr_TR.ISO-8859-9: wcstoull (L"c") == 12
+PASS: tr_TR.ISO-8859-9: wcstoull (L"c")
+tr_TR.ISO-8859-9: wcstol (L"D") == 13
+PASS: tr_TR.ISO-8859-9: wcstol (L"D")
+tr_TR.ISO-8859-9: wcstoul (L"D") == 13
+PASS: tr_TR.ISO-8859-9: wcstoul (L"D")
+tr_TR.ISO-8859-9: wcstoll (L"D") == 13
+PASS: tr_TR.ISO-8859-9: wcstoll (L"D")
+tr_TR.ISO-8859-9: wcstoull (L"D") == 13
+PASS: tr_TR.ISO-8859-9: wcstoull (L"D")
+tr_TR.ISO-8859-9: wcstol (L"d") == 13
+PASS: tr_TR.ISO-8859-9: wcstol (L"d")
+tr_TR.ISO-8859-9: wcstoul (L"d") == 13
+PASS: tr_TR.ISO-8859-9: wcstoul (L"d")
+tr_TR.ISO-8859-9: wcstoll (L"d") == 13
+PASS: tr_TR.ISO-8859-9: wcstoll (L"d")
+tr_TR.ISO-8859-9: wcstoull (L"d") == 13
+PASS: tr_TR.ISO-8859-9: wcstoull (L"d")
+tr_TR.ISO-8859-9: wcstol (L"E") == 14
+PASS: tr_TR.ISO-8859-9: wcstol (L"E")
+tr_TR.ISO-8859-9: wcstoul (L"E") == 14
+PASS: tr_TR.ISO-8859-9: wcstoul (L"E")
+tr_TR.ISO-8859-9: wcstoll (L"E") == 14
+PASS: tr_TR.ISO-8859-9: wcstoll (L"E")
+tr_TR.ISO-8859-9: wcstoull (L"E") == 14
+PASS: tr_TR.ISO-8859-9: wcstoull (L"E")
+tr_TR.ISO-8859-9: wcstol (L"e") == 14
+PASS: tr_TR.ISO-8859-9: wcstol (L"e")
+tr_TR.ISO-8859-9: wcstoul (L"e") == 14
+PASS: tr_TR.ISO-8859-9: wcstoul (L"e")
+tr_TR.ISO-8859-9: wcstoll (L"e") == 14
+PASS: tr_TR.ISO-8859-9: wcstoll (L"e")
+tr_TR.ISO-8859-9: wcstoull (L"e") == 14
+PASS: tr_TR.ISO-8859-9: wcstoull (L"e")
+tr_TR.ISO-8859-9: wcstol (L"F") == 15
+PASS: tr_TR.ISO-8859-9: wcstol (L"F")
+tr_TR.ISO-8859-9: wcstoul (L"F") == 15
+PASS: tr_TR.ISO-8859-9: wcstoul (L"F")
+tr_TR.ISO-8859-9: wcstoll (L"F") == 15
+PASS: tr_TR.ISO-8859-9: wcstoll (L"F")
+tr_TR.ISO-8859-9: wcstoull (L"F") == 15
+PASS: tr_TR.ISO-8859-9: wcstoull (L"F")
+tr_TR.ISO-8859-9: wcstol (L"f") == 15
+PASS: tr_TR.ISO-8859-9: wcstol (L"f")
+tr_TR.ISO-8859-9: wcstoul (L"f") == 15
+PASS: tr_TR.ISO-8859-9: wcstoul (L"f")
+tr_TR.ISO-8859-9: wcstoll (L"f") == 15
+PASS: tr_TR.ISO-8859-9: wcstoll (L"f")
+tr_TR.ISO-8859-9: wcstoull (L"f") == 15
+PASS: tr_TR.ISO-8859-9: wcstoull (L"f")
+tr_TR.ISO-8859-9: wcstol (L"G") == 16
+PASS: tr_TR.ISO-8859-9: wcstol (L"G")
+tr_TR.ISO-8859-9: wcstoul (L"G") == 16
+PASS: tr_TR.ISO-8859-9: wcstoul (L"G")
+tr_TR.ISO-8859-9: wcstoll (L"G") == 16
+PASS: tr_TR.ISO-8859-9: wcstoll (L"G")
+tr_TR.ISO-8859-9: wcstoull (L"G") == 16
+PASS: tr_TR.ISO-8859-9: wcstoull (L"G")
+tr_TR.ISO-8859-9: wcstol (L"g") == 16
+PASS: tr_TR.ISO-8859-9: wcstol (L"g")
+tr_TR.ISO-8859-9: wcstoul (L"g") == 16
+PASS: tr_TR.ISO-8859-9: wcstoul (L"g")
+tr_TR.ISO-8859-9: wcstoll (L"g") == 16
+PASS: tr_TR.ISO-8859-9: wcstoll (L"g")
+tr_TR.ISO-8859-9: wcstoull (L"g") == 16
+PASS: tr_TR.ISO-8859-9: wcstoull (L"g")
+tr_TR.ISO-8859-9: wcstol (L"H") == 17
+PASS: tr_TR.ISO-8859-9: wcstol (L"H")
+tr_TR.ISO-8859-9: wcstoul (L"H") == 17
+PASS: tr_TR.ISO-8859-9: wcstoul (L"H")
+tr_TR.ISO-8859-9: wcstoll (L"H") == 17
+PASS: tr_TR.ISO-8859-9: wcstoll (L"H")
+tr_TR.ISO-8859-9: wcstoull (L"H") == 17
+PASS: tr_TR.ISO-8859-9: wcstoull (L"H")
+tr_TR.ISO-8859-9: wcstol (L"h") == 17
+PASS: tr_TR.ISO-8859-9: wcstol (L"h")
+tr_TR.ISO-8859-9: wcstoul (L"h") == 17
+PASS: tr_TR.ISO-8859-9: wcstoul (L"h")
+tr_TR.ISO-8859-9: wcstoll (L"h") == 17
+PASS: tr_TR.ISO-8859-9: wcstoll (L"h")
+tr_TR.ISO-8859-9: wcstoull (L"h") == 17
+PASS: tr_TR.ISO-8859-9: wcstoull (L"h")
+tr_TR.ISO-8859-9: wcstol (L"I") == 18
+PASS: tr_TR.ISO-8859-9: wcstol (L"I")
+tr_TR.ISO-8859-9: wcstoul (L"I") == 18
+PASS: tr_TR.ISO-8859-9: wcstoul (L"I")
+tr_TR.ISO-8859-9: wcstoll (L"I") == 18
+PASS: tr_TR.ISO-8859-9: wcstoll (L"I")
+tr_TR.ISO-8859-9: wcstoull (L"I") == 18
+PASS: tr_TR.ISO-8859-9: wcstoull (L"I")
+tr_TR.ISO-8859-9: wcstol (L"i") == 18
+PASS: tr_TR.ISO-8859-9: wcstol (L"i")
+tr_TR.ISO-8859-9: wcstoul (L"i") == 18
+PASS: tr_TR.ISO-8859-9: wcstoul (L"i")
+tr_TR.ISO-8859-9: wcstoll (L"i") == 18
+PASS: tr_TR.ISO-8859-9: wcstoll (L"i")
+tr_TR.ISO-8859-9: wcstoull (L"i") == 18
+PASS: tr_TR.ISO-8859-9: wcstoull (L"i")
+tr_TR.ISO-8859-9: wcstol (L"J") == 19
+PASS: tr_TR.ISO-8859-9: wcstol (L"J")
+tr_TR.ISO-8859-9: wcstoul (L"J") == 19
+PASS: tr_TR.ISO-8859-9: wcstoul (L"J")
+tr_TR.ISO-8859-9: wcstoll (L"J") == 19
+PASS: tr_TR.ISO-8859-9: wcstoll (L"J")
+tr_TR.ISO-8859-9: wcstoull (L"J") == 19
+PASS: tr_TR.ISO-8859-9: wcstoull (L"J")
+tr_TR.ISO-8859-9: wcstol (L"j") == 19
+PASS: tr_TR.ISO-8859-9: wcstol (L"j")
+tr_TR.ISO-8859-9: wcstoul (L"j") == 19
+PASS: tr_TR.ISO-8859-9: wcstoul (L"j")
+tr_TR.ISO-8859-9: wcstoll (L"j") == 19
+PASS: tr_TR.ISO-8859-9: wcstoll (L"j")
+tr_TR.ISO-8859-9: wcstoull (L"j") == 19
+PASS: tr_TR.ISO-8859-9: wcstoull (L"j")
+tr_TR.ISO-8859-9: wcstol (L"K") == 20
+PASS: tr_TR.ISO-8859-9: wcstol (L"K")
+tr_TR.ISO-8859-9: wcstoul (L"K") == 20
+PASS: tr_TR.ISO-8859-9: wcstoul (L"K")
+tr_TR.ISO-8859-9: wcstoll (L"K") == 20
+PASS: tr_TR.ISO-8859-9: wcstoll (L"K")
+tr_TR.ISO-8859-9: wcstoull (L"K") == 20
+PASS: tr_TR.ISO-8859-9: wcstoull (L"K")
+tr_TR.ISO-8859-9: wcstol (L"k") == 20
+PASS: tr_TR.ISO-8859-9: wcstol (L"k")
+tr_TR.ISO-8859-9: wcstoul (L"k") == 20
+PASS: tr_TR.ISO-8859-9: wcstoul (L"k")
+tr_TR.ISO-8859-9: wcstoll (L"k") == 20
+PASS: tr_TR.ISO-8859-9: wcstoll (L"k")
+tr_TR.ISO-8859-9: wcstoull (L"k") == 20
+PASS: tr_TR.ISO-8859-9: wcstoull (L"k")
+tr_TR.ISO-8859-9: wcstol (L"L") == 21
+PASS: tr_TR.ISO-8859-9: wcstol (L"L")
+tr_TR.ISO-8859-9: wcstoul (L"L") == 21
+PASS: tr_TR.ISO-8859-9: wcstoul (L"L")
+tr_TR.ISO-8859-9: wcstoll (L"L") == 21
+PASS: tr_TR.ISO-8859-9: wcstoll (L"L")
+tr_TR.ISO-8859-9: wcstoull (L"L") == 21
+PASS: tr_TR.ISO-8859-9: wcstoull (L"L")
+tr_TR.ISO-8859-9: wcstol (L"l") == 21
+PASS: tr_TR.ISO-8859-9: wcstol (L"l")
+tr_TR.ISO-8859-9: wcstoul (L"l") == 21
+PASS: tr_TR.ISO-8859-9: wcstoul (L"l")
+tr_TR.ISO-8859-9: wcstoll (L"l") == 21
+PASS: tr_TR.ISO-8859-9: wcstoll (L"l")
+tr_TR.ISO-8859-9: wcstoull (L"l") == 21
+PASS: tr_TR.ISO-8859-9: wcstoull (L"l")
+tr_TR.ISO-8859-9: wcstol (L"M") == 22
+PASS: tr_TR.ISO-8859-9: wcstol (L"M")
+tr_TR.ISO-8859-9: wcstoul (L"M") == 22
+PASS: tr_TR.ISO-8859-9: wcstoul (L"M")
+tr_TR.ISO-8859-9: wcstoll (L"M") == 22
+PASS: tr_TR.ISO-8859-9: wcstoll (L"M")
+tr_TR.ISO-8859-9: wcstoull (L"M") == 22
+PASS: tr_TR.ISO-8859-9: wcstoull (L"M")
+tr_TR.ISO-8859-9: wcstol (L"m") == 22
+PASS: tr_TR.ISO-8859-9: wcstol (L"m")
+tr_TR.ISO-8859-9: wcstoul (L"m") == 22
+PASS: tr_TR.ISO-8859-9: wcstoul (L"m")
+tr_TR.ISO-8859-9: wcstoll (L"m") == 22
+PASS: tr_TR.ISO-8859-9: wcstoll (L"m")
+tr_TR.ISO-8859-9: wcstoull (L"m") == 22
+PASS: tr_TR.ISO-8859-9: wcstoull (L"m")
+tr_TR.ISO-8859-9: wcstol (L"N") == 23
+PASS: tr_TR.ISO-8859-9: wcstol (L"N")
+tr_TR.ISO-8859-9: wcstoul (L"N") == 23
+PASS: tr_TR.ISO-8859-9: wcstoul (L"N")
+tr_TR.ISO-8859-9: wcstoll (L"N") == 23
+PASS: tr_TR.ISO-8859-9: wcstoll (L"N")
+tr_TR.ISO-8859-9: wcstoull (L"N") == 23
+PASS: tr_TR.ISO-8859-9: wcstoull (L"N")
+tr_TR.ISO-8859-9: wcstol (L"n") == 23
+PASS: tr_TR.ISO-8859-9: wcstol (L"n")
+tr_TR.ISO-8859-9: wcstoul (L"n") == 23
+PASS: tr_TR.ISO-8859-9: wcstoul (L"n")
+tr_TR.ISO-8859-9: wcstoll (L"n") == 23
+PASS: tr_TR.ISO-8859-9: wcstoll (L"n")
+tr_TR.ISO-8859-9: wcstoull (L"n") == 23
+PASS: tr_TR.ISO-8859-9: wcstoull (L"n")
+tr_TR.ISO-8859-9: wcstol (L"O") == 24
+PASS: tr_TR.ISO-8859-9: wcstol (L"O")
+tr_TR.ISO-8859-9: wcstoul (L"O") == 24
+PASS: tr_TR.ISO-8859-9: wcstoul (L"O")
+tr_TR.ISO-8859-9: wcstoll (L"O") == 24
+PASS: tr_TR.ISO-8859-9: wcstoll (L"O")
+tr_TR.ISO-8859-9: wcstoull (L"O") == 24
+PASS: tr_TR.ISO-8859-9: wcstoull (L"O")
+tr_TR.ISO-8859-9: wcstol (L"o") == 24
+PASS: tr_TR.ISO-8859-9: wcstol (L"o")
+tr_TR.ISO-8859-9: wcstoul (L"o") == 24
+PASS: tr_TR.ISO-8859-9: wcstoul (L"o")
+tr_TR.ISO-8859-9: wcstoll (L"o") == 24
+PASS: tr_TR.ISO-8859-9: wcstoll (L"o")
+tr_TR.ISO-8859-9: wcstoull (L"o") == 24
+PASS: tr_TR.ISO-8859-9: wcstoull (L"o")
+tr_TR.ISO-8859-9: wcstol (L"P") == 25
+PASS: tr_TR.ISO-8859-9: wcstol (L"P")
+tr_TR.ISO-8859-9: wcstoul (L"P") == 25
+PASS: tr_TR.ISO-8859-9: wcstoul (L"P")
+tr_TR.ISO-8859-9: wcstoll (L"P") == 25
+PASS: tr_TR.ISO-8859-9: wcstoll (L"P")
+tr_TR.ISO-8859-9: wcstoull (L"P") == 25
+PASS: tr_TR.ISO-8859-9: wcstoull (L"P")
+tr_TR.ISO-8859-9: wcstol (L"p") == 25
+PASS: tr_TR.ISO-8859-9: wcstol (L"p")
+tr_TR.ISO-8859-9: wcstoul (L"p") == 25
+PASS: tr_TR.ISO-8859-9: wcstoul (L"p")
+tr_TR.ISO-8859-9: wcstoll (L"p") == 25
+PASS: tr_TR.ISO-8859-9: wcstoll (L"p")
+tr_TR.ISO-8859-9: wcstoull (L"p") == 25
+PASS: tr_TR.ISO-8859-9: wcstoull (L"p")
+tr_TR.ISO-8859-9: wcstol (L"Q") == 26
+PASS: tr_TR.ISO-8859-9: wcstol (L"Q")
+tr_TR.ISO-8859-9: wcstoul (L"Q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoul (L"Q")
+tr_TR.ISO-8859-9: wcstoll (L"Q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoll (L"Q")
+tr_TR.ISO-8859-9: wcstoull (L"Q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoull (L"Q")
+tr_TR.ISO-8859-9: wcstol (L"q") == 26
+PASS: tr_TR.ISO-8859-9: wcstol (L"q")
+tr_TR.ISO-8859-9: wcstoul (L"q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoul (L"q")
+tr_TR.ISO-8859-9: wcstoll (L"q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoll (L"q")
+tr_TR.ISO-8859-9: wcstoull (L"q") == 26
+PASS: tr_TR.ISO-8859-9: wcstoull (L"q")
+tr_TR.ISO-8859-9: wcstol (L"R") == 27
+PASS: tr_TR.ISO-8859-9: wcstol (L"R")
+tr_TR.ISO-8859-9: wcstoul (L"R") == 27
+PASS: tr_TR.ISO-8859-9: wcstoul (L"R")
+tr_TR.ISO-8859-9: wcstoll (L"R") == 27
+PASS: tr_TR.ISO-8859-9: wcstoll (L"R")
+tr_TR.ISO-8859-9: wcstoull (L"R") == 27
+PASS: tr_TR.ISO-8859-9: wcstoull (L"R")
+tr_TR.ISO-8859-9: wcstol (L"r") == 27
+PASS: tr_TR.ISO-8859-9: wcstol (L"r")
+tr_TR.ISO-8859-9: wcstoul (L"r") == 27
+PASS: tr_TR.ISO-8859-9: wcstoul (L"r")
+tr_TR.ISO-8859-9: wcstoll (L"r") == 27
+PASS: tr_TR.ISO-8859-9: wcstoll (L"r")
+tr_TR.ISO-8859-9: wcstoull (L"r") == 27
+PASS: tr_TR.ISO-8859-9: wcstoull (L"r")
+tr_TR.ISO-8859-9: wcstol (L"S") == 28
+PASS: tr_TR.ISO-8859-9: wcstol (L"S")
+tr_TR.ISO-8859-9: wcstoul (L"S") == 28
+PASS: tr_TR.ISO-8859-9: wcstoul (L"S")
+tr_TR.ISO-8859-9: wcstoll (L"S") == 28
+PASS: tr_TR.ISO-8859-9: wcstoll (L"S")
+tr_TR.ISO-8859-9: wcstoull (L"S") == 28
+PASS: tr_TR.ISO-8859-9: wcstoull (L"S")
+tr_TR.ISO-8859-9: wcstol (L"s") == 28
+PASS: tr_TR.ISO-8859-9: wcstol (L"s")
+tr_TR.ISO-8859-9: wcstoul (L"s") == 28
+PASS: tr_TR.ISO-8859-9: wcstoul (L"s")
+tr_TR.ISO-8859-9: wcstoll (L"s") == 28
+PASS: tr_TR.ISO-8859-9: wcstoll (L"s")
+tr_TR.ISO-8859-9: wcstoull (L"s") == 28
+PASS: tr_TR.ISO-8859-9: wcstoull (L"s")
+tr_TR.ISO-8859-9: wcstol (L"T") == 29
+PASS: tr_TR.ISO-8859-9: wcstol (L"T")
+tr_TR.ISO-8859-9: wcstoul (L"T") == 29
+PASS: tr_TR.ISO-8859-9: wcstoul (L"T")
+tr_TR.ISO-8859-9: wcstoll (L"T") == 29
+PASS: tr_TR.ISO-8859-9: wcstoll (L"T")
+tr_TR.ISO-8859-9: wcstoull (L"T") == 29
+PASS: tr_TR.ISO-8859-9: wcstoull (L"T")
+tr_TR.ISO-8859-9: wcstol (L"t") == 29
+PASS: tr_TR.ISO-8859-9: wcstol (L"t")
+tr_TR.ISO-8859-9: wcstoul (L"t") == 29
+PASS: tr_TR.ISO-8859-9: wcstoul (L"t")
+tr_TR.ISO-8859-9: wcstoll (L"t") == 29
+PASS: tr_TR.ISO-8859-9: wcstoll (L"t")
+tr_TR.ISO-8859-9: wcstoull (L"t") == 29
+PASS: tr_TR.ISO-8859-9: wcstoull (L"t")
+tr_TR.ISO-8859-9: wcstol (L"U") == 30
+PASS: tr_TR.ISO-8859-9: wcstol (L"U")
+tr_TR.ISO-8859-9: wcstoul (L"U") == 30
+PASS: tr_TR.ISO-8859-9: wcstoul (L"U")
+tr_TR.ISO-8859-9: wcstoll (L"U") == 30
+PASS: tr_TR.ISO-8859-9: wcstoll (L"U")
+tr_TR.ISO-8859-9: wcstoull (L"U") == 30
+PASS: tr_TR.ISO-8859-9: wcstoull (L"U")
+tr_TR.ISO-8859-9: wcstol (L"u") == 30
+PASS: tr_TR.ISO-8859-9: wcstol (L"u")
+tr_TR.ISO-8859-9: wcstoul (L"u") == 30
+PASS: tr_TR.ISO-8859-9: wcstoul (L"u")
+tr_TR.ISO-8859-9: wcstoll (L"u") == 30
+PASS: tr_TR.ISO-8859-9: wcstoll (L"u")
+tr_TR.ISO-8859-9: wcstoull (L"u") == 30
+PASS: tr_TR.ISO-8859-9: wcstoull (L"u")
+tr_TR.ISO-8859-9: wcstol (L"V") == 31
+PASS: tr_TR.ISO-8859-9: wcstol (L"V")
+tr_TR.ISO-8859-9: wcstoul (L"V") == 31
+PASS: tr_TR.ISO-8859-9: wcstoul (L"V")
+tr_TR.ISO-8859-9: wcstoll (L"V") == 31
+PASS: tr_TR.ISO-8859-9: wcstoll (L"V")
+tr_TR.ISO-8859-9: wcstoull (L"V") == 31
+PASS: tr_TR.ISO-8859-9: wcstoull (L"V")
+tr_TR.ISO-8859-9: wcstol (L"v") == 31
+PASS: tr_TR.ISO-8859-9: wcstol (L"v")
+tr_TR.ISO-8859-9: wcstoul (L"v") == 31
+PASS: tr_TR.ISO-8859-9: wcstoul (L"v")
+tr_TR.ISO-8859-9: wcstoll (L"v") == 31
+PASS: tr_TR.ISO-8859-9: wcstoll (L"v")
+tr_TR.ISO-8859-9: wcstoull (L"v") == 31
+PASS: tr_TR.ISO-8859-9: wcstoull (L"v")
+tr_TR.ISO-8859-9: wcstol (L"W") == 32
+PASS: tr_TR.ISO-8859-9: wcstol (L"W")
+tr_TR.ISO-8859-9: wcstoul (L"W") == 32
+PASS: tr_TR.ISO-8859-9: wcstoul (L"W")
+tr_TR.ISO-8859-9: wcstoll (L"W") == 32
+PASS: tr_TR.ISO-8859-9: wcstoll (L"W")
+tr_TR.ISO-8859-9: wcstoull (L"W") == 32
+PASS: tr_TR.ISO-8859-9: wcstoull (L"W")
+tr_TR.ISO-8859-9: wcstol (L"w") == 32
+PASS: tr_TR.ISO-8859-9: wcstol (L"w")
+tr_TR.ISO-8859-9: wcstoul (L"w") == 32
+PASS: tr_TR.ISO-8859-9: wcstoul (L"w")
+tr_TR.ISO-8859-9: wcstoll (L"w") == 32
+PASS: tr_TR.ISO-8859-9: wcstoll (L"w")
+tr_TR.ISO-8859-9: wcstoull (L"w") == 32
+PASS: tr_TR.ISO-8859-9: wcstoull (L"w")
+tr_TR.ISO-8859-9: wcstol (L"X") == 33
+PASS: tr_TR.ISO-8859-9: wcstol (L"X")
+tr_TR.ISO-8859-9: wcstoul (L"X") == 33
+PASS: tr_TR.ISO-8859-9: wcstoul (L"X")
+tr_TR.ISO-8859-9: wcstoll (L"X") == 33
+PASS: tr_TR.ISO-8859-9: wcstoll (L"X")
+tr_TR.ISO-8859-9: wcstoull (L"X") == 33
+PASS: tr_TR.ISO-8859-9: wcstoull (L"X")
+tr_TR.ISO-8859-9: wcstol (L"x") == 33
+PASS: tr_TR.ISO-8859-9: wcstol (L"x")
+tr_TR.ISO-8859-9: wcstoul (L"x") == 33
+PASS: tr_TR.ISO-8859-9: wcstoul (L"x")
+tr_TR.ISO-8859-9: wcstoll (L"x") == 33
+PASS: tr_TR.ISO-8859-9: wcstoll (L"x")
+tr_TR.ISO-8859-9: wcstoull (L"x") == 33
+PASS: tr_TR.ISO-8859-9: wcstoull (L"x")
+tr_TR.ISO-8859-9: wcstol (L"Y") == 34
+PASS: tr_TR.ISO-8859-9: wcstol (L"Y")
+tr_TR.ISO-8859-9: wcstoul (L"Y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoul (L"Y")
+tr_TR.ISO-8859-9: wcstoll (L"Y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoll (L"Y")
+tr_TR.ISO-8859-9: wcstoull (L"Y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoull (L"Y")
+tr_TR.ISO-8859-9: wcstol (L"y") == 34
+PASS: tr_TR.ISO-8859-9: wcstol (L"y")
+tr_TR.ISO-8859-9: wcstoul (L"y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoul (L"y")
+tr_TR.ISO-8859-9: wcstoll (L"y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoll (L"y")
+tr_TR.ISO-8859-9: wcstoull (L"y") == 34
+PASS: tr_TR.ISO-8859-9: wcstoull (L"y")
+tr_TR.ISO-8859-9: wcstol (L"Z") == 35
+PASS: tr_TR.ISO-8859-9: wcstol (L"Z")
+tr_TR.ISO-8859-9: wcstoul (L"Z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoul (L"Z")
+tr_TR.ISO-8859-9: wcstoll (L"Z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoll (L"Z")
+tr_TR.ISO-8859-9: wcstoull (L"Z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoull (L"Z")
+tr_TR.ISO-8859-9: wcstol (L"z") == 35
+PASS: tr_TR.ISO-8859-9: wcstol (L"z")
+tr_TR.ISO-8859-9: wcstoul (L"z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoul (L"z")
+tr_TR.ISO-8859-9: wcstoll (L"z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoll (L"z")
+tr_TR.ISO-8859-9: wcstoull (L"z") == 35
+PASS: tr_TR.ISO-8859-9: wcstoull (L"z")

@@ -1,0 +1,105 @@
+:: resolv.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c++98
+:::: -std=c++98 -D_DEFAULT_SOURCE=1
+:::: -std=c++98 -D_GNU_SOURCE=1
+:::: -std=c++98 -D_XOPEN_SOURCE=700
+:::: -std=gnu++98
+:::: -std=gnu++98 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++98 -D_GNU_SOURCE=1
+:::: -std=gnu++98 -D_XOPEN_SOURCE=700
+:::: -std=c++11
+:::: -std=c++11 -D_DEFAULT_SOURCE=1
+:::: -std=c++11 -D_GNU_SOURCE=1
+:::: -std=c++11 -D_XOPEN_SOURCE=700
+:::: -std=gnu++11
+:::: -std=gnu++11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++11 -D_GNU_SOURCE=1
+:::: -std=gnu++11 -D_XOPEN_SOURCE=700
+:: netdb.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c++98
+:::: -std=c++98 -D_DEFAULT_SOURCE=1
+:::: -std=c++98 -D_GNU_SOURCE=1
+:::: -std=c++98 -D_XOPEN_SOURCE=700
+:::: -std=gnu++98
+:::: -std=gnu++98 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++98 -D_GNU_SOURCE=1
+:::: -std=gnu++98 -D_XOPEN_SOURCE=700
+:::: -std=c++11
+:::: -std=c++11 -D_DEFAULT_SOURCE=1
+:::: -std=c++11 -D_GNU_SOURCE=1
+:::: -std=c++11 -D_XOPEN_SOURCE=700
+:::: -std=gnu++11
+:::: -std=gnu++11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++11 -D_GNU_SOURCE=1
+:::: -std=gnu++11 -D_XOPEN_SOURCE=700
+:: arpa/nameser.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c++98
+:::: -std=c++98 -D_DEFAULT_SOURCE=1
+:::: -std=c++98 -D_GNU_SOURCE=1
+:::: -std=c++98 -D_XOPEN_SOURCE=700
+:::: -std=gnu++98
+:::: -std=gnu++98 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++98 -D_GNU_SOURCE=1
+:::: -std=gnu++98 -D_XOPEN_SOURCE=700
+:::: -std=c++11
+:::: -std=c++11 -D_DEFAULT_SOURCE=1
+:::: -std=c++11 -D_GNU_SOURCE=1
+:::: -std=c++11 -D_XOPEN_SOURCE=700
+:::: -std=gnu++11
+:::: -std=gnu++11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++11 -D_GNU_SOURCE=1
+:::: -std=gnu++11 -D_XOPEN_SOURCE=700
+:: arpa/nameser_compat.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c++98
+:::: -std=c++98 -D_DEFAULT_SOURCE=1
+:::: -std=c++98 -D_GNU_SOURCE=1
+:::: -std=c++98 -D_XOPEN_SOURCE=700
+:::: -std=gnu++98
+:::: -std=gnu++98 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++98 -D_GNU_SOURCE=1
+:::: -std=gnu++98 -D_XOPEN_SOURCE=700
+:::: -std=c++11
+:::: -std=c++11 -D_DEFAULT_SOURCE=1
+:::: -std=c++11 -D_GNU_SOURCE=1
+:::: -std=c++11 -D_XOPEN_SOURCE=700
+:::: -std=gnu++11
+:::: -std=gnu++11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++11 -D_GNU_SOURCE=1
+:::: -std=gnu++11 -D_XOPEN_SOURCE=700
+:: sys/bitypes.h
+::::
+:::: -D_DEFAULT_SOURCE=1
+:::: -D_GNU_SOURCE=1
+:::: -D_XOPEN_SOURCE=700
+:::: -std=c++98
+:::: -std=c++98 -D_DEFAULT_SOURCE=1
+:::: -std=c++98 -D_GNU_SOURCE=1
+:::: -std=c++98 -D_XOPEN_SOURCE=700
+:::: -std=gnu++98
+:::: -std=gnu++98 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++98 -D_GNU_SOURCE=1
+:::: -std=gnu++98 -D_XOPEN_SOURCE=700
+:::: -std=c++11
+:::: -std=c++11 -D_DEFAULT_SOURCE=1
+:::: -std=c++11 -D_GNU_SOURCE=1
+:::: -std=c++11 -D_XOPEN_SOURCE=700
+:::: -std=gnu++11
+:::: -std=gnu++11 -D_DEFAULT_SOURCE=1
+:::: -std=gnu++11 -D_GNU_SOURCE=1
+:::: -std=gnu++11 -D_XOPEN_SOURCE=700

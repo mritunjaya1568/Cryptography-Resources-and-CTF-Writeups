@@ -1,0 +1,18 @@
+
+Symbol table '.dynsym' contains 15 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     2: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND __ksc5601_hanja_to_ucs
+     3: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND __ksc5601_sym_from_ucs
+     4: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __gconv_transliterate@GLIBC_PRIVATE (2)
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __assert_fail@GLIBC_2.2.5 (3)
+     6: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND __ksc5601_hanja_from_ucs
+     7: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     8: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND __ksc5601_sym_to_ucs
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND _dl_mcount_wrapper_check@GLIBC_2.2.5 (3)
+    10: 0000000000000000     0 OBJECT  GLOBAL DEFAULT  UND __ksc5601_hangul_to_ucs
+    11: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    12: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (3)
+    13: 0000000000001210  7303 FUNC    GLOBAL DEFAULT   16 gconv
+    14: 0000000000001160   166 FUNC    GLOBAL DEFAULT   16 gconv_init

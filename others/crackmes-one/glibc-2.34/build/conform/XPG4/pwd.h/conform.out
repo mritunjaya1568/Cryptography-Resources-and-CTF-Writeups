@@ -1,0 +1,29 @@
+PASS: Availability of <pwd.h>
+PASS: Combined <pwd.h> test
+PASSCOMBINED: Availability of type struct passwd
+PASSCOMBINED: Availability of member pw_name
+PASSCOMBINED: Type of member pw_name
+PASSCOMBINED: Availability of member pw_uid
+PASSCOMBINED: Type of member pw_uid
+PASSCOMBINED: Availability of member pw_gid
+PASSCOMBINED: Type of member pw_gid
+PASSCOMBINED: Availability of member pw_dir
+PASSCOMBINED: Type of member pw_dir
+PASSCOMBINED: Availability of member pw_shell
+PASSCOMBINED: Type of member pw_shell
+PASSCOMBINED: Availability of type uid_t
+PASSCOMBINED: Availability of type gid_t
+PASSCOMBINED: Availability of function getpwnam
+PASSCOMBINED: Type of function getpwnam
+PASSCOMBINED: Availability of function getpwuid
+PASSCOMBINED: Type of function getpwuid
+PASSCOMBINED: Availability of function getpwnam_r
+PASSCOMBINED: Type of function getpwnam_r
+PASSCOMBINED: Availability of function getpwuid_r
+PASSCOMBINED: Type of function getpwuid_r
+PASS: Namespace of <pwd.h>
+----------------------------------------------------------------------------
+  Total number of tests   :   23
+  Number of failed tests  :    0
+  Number of xfailed tests :    0
+  Number of skipped tests :    0

@@ -1,0 +1,5 @@
+info: wordexp returned 0
+info: we_wordv[0] = "2nd"
+info: we_wordv[1] = "3rd"
+info: we_wordv[2] = "4"
+info: we_wordv[3] = "th"

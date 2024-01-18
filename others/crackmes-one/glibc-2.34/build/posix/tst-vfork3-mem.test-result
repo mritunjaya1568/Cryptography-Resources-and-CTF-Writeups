@@ -1,0 +1,2 @@
+PASS: posix/tst-vfork3-mem
+original exit status 0
